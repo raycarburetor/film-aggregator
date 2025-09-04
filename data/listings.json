@@ -1,68 +1,5 @@
 [
   {
-    "id": "pccMrHulotsHolidayLesvacancesdeMonsieurHulot20250904T144500000Z",
-    "filmTitle": "Mr. Hulot's Holiday [Les vacances de Monsieur Hulot]",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-04T14:45:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31621688",
-    "tmdbId": 778,
-    "releaseDate": "1953-02-25",
-    "synopsis": "Monsieur Hulot, Jacques Tati’s endearing clown, takes a holiday at a seaside resort, where his presence provokes one catastrophe after another. Tati’s masterpiece of gentle slapstick is a series of effortlessly well-choreographed sight gags involving dogs, boats, and firecrackers; it was the first entry in the Hulot series and the film that launched its maker to international stardom.",
-    "genres": [
-      "Comedy"
-    ],
-    "director": "Jacques Tati",
-    "imdbId": "tt0046487"
-  },
-  {
-    "id": "pccWolfChildren20250904T170000000Z",
-    "filmTitle": "Wolf Children",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-04T17:00:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31621789",
-    "tmdbId": 110420,
-    "releaseDate": "2012-07-21",
-    "synopsis": "After her werewolf lover unexpectedly dies in an accident, a woman must find a way to raise the son and daughter that she had with him. However, their inheritance of their father's traits prove to be a challenge for her.",
-    "genres": [
-      "Animation",
-      "Family",
-      "Drama",
-      "Fantasy"
-    ],
-    "director": "Mamoru Hosoda",
-    "imdbId": "tt2140203"
-  },
-  {
-    "id": "pccTheRegulars20250904T171500000Z",
-    "filmTitle": "The Regulars",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-04T17:15:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622719",
-    "tmdbId": 1208803,
-    "releaseDate": "2025-08-22",
-    "synopsis": "Set in London's iconic Prince Charles Cinema, The Regulars follows a day in the life of its hapless employees. During their shift they watch movies, argue with customers, and, above all, deal with each other.",
-    "genres": [
-      "Comedy"
-    ],
-    "director": "Fil Freitas",
-    "imdbId": "tt20123486"
-  },
-  {
-    "id": "pccTheRegulars20250924T194500000Z",
-    "filmTitle": "The Regulars",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-24T19:45:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622997",
-    "tmdbId": 1208803,
-    "releaseDate": "2025-08-22",
-    "synopsis": "Set in London's iconic Prince Charles Cinema, The Regulars follows a day in the life of its hapless employees. During their shift they watch movies, argue with customers, and, above all, deal with each other.",
-    "genres": [
-      "Comedy"
-    ],
-    "director": "Fil Freitas",
-    "imdbId": "tt20123486"
-  },
-  {
     "id": "pccInTheMoodForLove25thAnniversary20250904T194000000Z",
     "filmTitle": "In The Mood For Love - 25th Anniversary",
     "cinema": "princecharles",
@@ -275,7 +212,7 @@
     "filmTitle": "Big Shark with Tommy Wiseau live on stage",
     "cinema": "princecharles",
     "screeningStart": "2025-09-05T20:15:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31619925"
+    "bookingUrl": "https://princecharlescinema.com"
   },
   {
     "id": "pccBigSharkwithTommyWiseauliveonstage20250906T115500000Z",
@@ -331,7 +268,7 @@
     "filmTitle": "The Room with Tommy Wiseau live on stage",
     "cinema": "princecharles",
     "screeningStart": "2025-09-05T19:45:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31619922"
+    "bookingUrl": "https://princecharlescinema.com"
   },
   {
     "id": "pccTheRoomwithTommyWiseauliveonstage20250906T112000000Z",
@@ -359,14 +296,14 @@
     "filmTitle": "The Room with Tommy Wiseau live on stage",
     "cinema": "princecharles",
     "screeningStart": "2025-09-06T19:30:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31619929"
+    "bookingUrl": "https://princecharlescinema.com"
   },
   {
     "id": "pccTheRoomwithTommyWiseauliveonstage20250907T135000000Z",
     "filmTitle": "The Room with Tommy Wiseau live on stage",
     "cinema": "princecharles",
     "screeningStart": "2025-09-07T13:50:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31621476"
+    "bookingUrl": "https://princecharlescinema.com"
   },
   {
     "id": "pccTheRoomwithTommyWiseauliveonstage20250907T163000000Z",
@@ -960,6 +897,23 @@
     "imdbId": "tt0166924"
   },
   {
+    "id": "pccMulhollandDr20251111T204500000Z",
+    "filmTitle": "Mulholland Dr.",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-11T20:45:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623161",
+    "tmdbId": 1018,
+    "releaseDate": "2001-06-06",
+    "synopsis": "Blonde Betty Elms has only just arrived in Hollywood to become a movie star when she meets an enigmatic brunette with amnesia. Meanwhile, as the two set off to solve the second woman's identity, filmmaker Adam Kesher runs into ominous trouble while casting his latest project.",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Mystery"
+    ],
+    "director": "David Lynch",
+    "imdbId": "tt0166924"
+  },
+  {
     "id": "pccMysteryMovieStaffPicks20250910T194500000Z",
     "filmTitle": "Mystery Movie : Staff Picks!",
     "cinema": "princecharles",
@@ -988,11 +942,11 @@
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31621600"
   },
   {
-    "id": "pccMysteryMovieStaffPicks20251111T203000000Z",
+    "id": "pccMysteryMovieStaffPicks20251111T181500000Z",
     "filmTitle": "Mystery Movie : Staff Picks!",
     "cinema": "princecharles",
-    "screeningStart": "2025-11-11T20:30:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31621601"
+    "screeningStart": "2025-11-11T18:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623160"
   },
   {
     "id": "pccMysteryMovieStaffPicks20251119T210000000Z",
@@ -1645,7 +1599,7 @@
       "Music",
       "Documentary"
     ],
-    "director": "Joe Massot",
+    "director": "Peter Clifton",
     "imdbId": "tt0075244"
   },
   {
@@ -3666,6 +3620,23 @@
     "imdbId": "tt0083658"
   },
   {
+    "id": "pccBladeRunnerTheFinalCut20251109T143500000Z",
+    "filmTitle": "Blade Runner : The Final Cut",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-09T14:35:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623152",
+    "tmdbId": 78,
+    "releaseDate": "1982-06-25",
+    "synopsis": "In the smog-choked dystopian Los Angeles of 2019, blade runner Rick Deckard is called out of retirement to terminate a quartet of replicants who have escaped to Earth seeking their creator for a way to extend their short life spans.",
+    "genres": [
+      "Science Fiction",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Ridley Scott",
+    "imdbId": "tt0083658"
+  },
+  {
     "id": "pccTheUmbrellasofCherbourgLesparapluiesdeCherbourg20250930T110500000Z",
     "filmTitle": "The Umbrellas of Cherbourg [Les parapluies de Cherbourg]",
     "cinema": "princecharles",
@@ -3704,6 +3675,20 @@
     "cinema": "princecharles",
     "screeningStart": "2025-09-30T16:45:00.000Z",
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622328",
+    "tmdbId": 1386711,
+    "releaseDate": "2024-11-20",
+    "synopsis": "Paul and Mary fall in love in the pottery factory. However, the seemingly innocent clay mugs have their own vision of the budding romance. By manipulating with lively messages, the mugs take it upon themselves to decide the fate of the characters.",
+    "genres": [
+      "Animation"
+    ],
+    "director": "Riho Unt"
+  },
+  {
+    "id": "pccCasablanca20251108T121500000Z",
+    "filmTitle": "Casablanca",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-08T12:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623149",
     "tmdbId": 1386711,
     "releaseDate": "2024-11-20",
     "synopsis": "Paul and Mary fall in love in the pottery factory. However, the seemingly innocent clay mugs have their own vision of the budding romance. By manipulating with lively messages, the mugs take it upon themselves to decide the fate of the characters.",
@@ -7051,6 +7036,22 @@
     "imdbId": "tt0074486"
   },
   {
+    "id": "pccEraserhead20251112T182500000Z",
+    "filmTitle": "Eraserhead",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-12T18:25:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623164",
+    "tmdbId": 985,
+    "releaseDate": "1977-09-28",
+    "synopsis": "First-time father Henry Spencer tries to survive his industrial environment, his angry girlfriend, and the unbearable screams of his newly born mutant child.",
+    "genres": [
+      "Horror",
+      "Fantasy"
+    ],
+    "director": "David Lynch",
+    "imdbId": "tt0074486"
+  },
+  {
     "id": "pccInlandEmpire20251103T141500000Z",
     "filmTitle": "Inland Empire",
     "cinema": "princecharles",
@@ -7070,8 +7071,8 @@
     "imdbId": "tt0460829"
   },
   {
-    "id": "pccMOON20251103T180000000Z",
-    "filmTitle": "MOON",
+    "id": "pccMoon20251103T180000000Z",
+    "filmTitle": "Moon",
     "cinema": "princecharles",
     "screeningStart": "2025-11-03T18:00:00.000Z",
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623036",
@@ -7215,6 +7216,21 @@
     "imdbId": "tt0001027"
   },
   {
+    "id": "pccGoodWillHunting20251104T204500000Z",
+    "filmTitle": "Good Will Hunting",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-04T20:45:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623143",
+    "tmdbId": 489,
+    "releaseDate": "1997-12-05",
+    "synopsis": "Headstrong yet aimless, Will Hunting has a genius-level IQ but chooses to work as a janitor at MIT. When he secretly solves highly difficult graduate-level math problems, his talents are discovered by Professor Gerald Lambeau, who decides to help the misguided youth reach his potential. When Will is arrested for attacking a police officer, Professor Lambeau makes a deal to get leniency for him if he gets court-ordered therapy. Eventually, therapist Dr. Sean Maguire helps Will confront the demons that are holding him back.",
+    "genres": [
+      "Drama"
+    ],
+    "director": "Gus Van Sant",
+    "imdbId": "tt0119217"
+  },
+  {
     "id": "pccTheWickerManTheFinalCut20251105T131000000Z",
     "filmTitle": "The Wicker Man - The Final Cut",
     "cinema": "princecharles",
@@ -7222,8 +7238,8 @@
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623112"
   },
   {
-    "id": "pccVFORVENDETTA20251105T151500000Z",
-    "filmTitle": "V FOR VENDETTA",
+    "id": "pccVForVendetta20251105T151500000Z",
+    "filmTitle": "V For Vendetta",
     "cinema": "princecharles",
     "screeningStart": "2025-11-05T15:15:00.000Z",
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623108",
@@ -7304,6 +7320,23 @@
     "imdbId": "tt0067885"
   },
   {
+    "id": "pccHardcore20251106T120000000Z",
+    "filmTitle": "Hardcore",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-06T12:00:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623144",
+    "tmdbId": 42172,
+    "releaseDate": "1979-02-09",
+    "synopsis": "A conservative Midwest businessman ventures into the sordid underworld of pornography in search of his runaway teenage daughter who’s making hardcore films in the pits of Los Angeles.",
+    "genres": [
+      "Mystery",
+      "Drama",
+      "Crime"
+    ],
+    "director": "Paul Schrader",
+    "imdbId": "tt0079271"
+  },
+  {
     "id": "pccBlowOut20251106T150000000Z",
     "filmTitle": "Blow Out",
     "cinema": "princecharles",
@@ -7321,8 +7354,8 @@
     "imdbId": "tt0082085"
   },
   {
-    "id": "pccSLEEPLESSINSEATTLE20251106T174500000Z",
-    "filmTitle": "SLEEPLESS IN SEATTLE",
+    "id": "pccSleeplessInSeattle20251106T174500000Z",
+    "filmTitle": "Sleepless In Seattle",
     "cinema": "princecharles",
     "screeningStart": "2025-11-06T17:45:00.000Z",
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623042",
@@ -7398,6 +7431,13 @@
     "cinema": "princecharles",
     "screeningStart": "2025-11-10T15:00:00.000Z",
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622756"
+  },
+  {
+    "id": "pccDogmaResurrectedA25thAnniversaryCelebration20251111T203000000Z",
+    "filmTitle": "Dogma: Resurrected! A 25th Anniversary Celebration",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-11T20:30:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623162"
   },
   {
     "id": "pccDogmaResurrectedA25thAnniversaryCelebration20251112T153000000Z",
@@ -7481,6 +7521,24 @@
     "imdbId": "tt10370710"
   },
   {
+    "id": "pccETTHEEXTRATERRESTRIAL20251108T144000000Z",
+    "filmTitle": "E.T. THE EXTRA-TERRESTRIAL",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-08T14:40:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623150",
+    "tmdbId": 601,
+    "releaseDate": "1982-06-11",
+    "synopsis": "An alien is left behind on Earth and saved by the 10-year-old Elliot who decides to keep him hidden in his home. While a task force hunts for the extra-terrestrial, Elliot, his brother, and his little sister Gertie form an emotional bond with their new friend, and try to help him find his way home.",
+    "genres": [
+      "Science Fiction",
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ],
+    "director": "Steven Spielberg",
+    "imdbId": "tt0083866"
+  },
+  {
     "id": "pccPinkFlamingos20251108T180000000Z",
     "filmTitle": "Pink Flamingos",
     "cinema": "princecharles",
@@ -7497,11 +7555,11 @@
     "imdbId": "tt0069089"
   },
   {
-    "id": "pccAngusThongsandPerfectSnogging20251108T204500000Z",
+    "id": "pccAngusThongsandPerfectSnogging20251108T201500000Z",
     "filmTitle": "Angus, Thongs and Perfect Snogging",
     "cinema": "princecharles",
-    "screeningStart": "2025-11-08T20:45:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623140",
+    "screeningStart": "2025-11-08T20:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623148",
     "tmdbId": 12689,
     "releaseDate": "2008-07-25",
     "synopsis": "Georgia Nicolson is fourteen, lives with nosey parents who don't understand her, an annoying three year old sister and has to wear a beret to school. She would, however, rather be blonde, have a smaller nose and a boyfriend. Revolving around her hilarious journal entries, prepare to be engulfed in the world of the soaring joys and bottomless angst of being a teenager.",
@@ -7513,6 +7571,121 @@
     ],
     "director": "Gurinder Chadha",
     "imdbId": "tt0963743"
+  },
+  {
+    "id": "pccMatilda20251109T121500000Z",
+    "filmTitle": "Matilda",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-09T12:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623151",
+    "tmdbId": 10830,
+    "releaseDate": "1996-08-02",
+    "synopsis": "Matilda Wormwood is an exquisite and intelligent little girl. Unfortunately, her parents, Harry and Zinnia misunderstand her because they think she is so different. As time passes, she finally starts school and has a kind teacher, loyal friends, and a sadistic headmistress. As she gets fed up with the constant cruelty, she begins to realize that she has a gift of telekinetic powers. After some days of practice, she suddenly turns the tables to stand up to Harry and Zinnia and outwit the headmistress.",
+    "genres": [
+      "Comedy",
+      "Family",
+      "Fantasy"
+    ],
+    "director": "Danny DeVito",
+    "imdbId": "tt0117008"
+  },
+  {
+    "id": "pccBattleRoyaleBatorurowaiaru20251109T171500000Z",
+    "filmTitle": "Battle Royale [Batoru rowaiaru]",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-09T17:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623157",
+    "tmdbId": 147957,
+    "releaseDate": "2011-11-02",
+    "synopsis": "Let the ultimate sexy death games begin! A handful of mysterious Japanese women take part in a deranged web show that makes them strip off their clothes when they lose a round of Mahjong. When there is nothing left to hide, the losers secrets are revealed and the nubile contestants must take their punishment. Can anyone survive, or keep their clothes on, in the dangerous game of STRIP MAHJONG: BATTLE ROYALE? Gleefully adding a risqué, wry twist to an ancient game of strategy, this erotic thriller delivers voyeuristic thrills with the friskiness of Seventies sexploitation flicks, providing strange gameplay at every turn!",
+    "genres": [
+      "Thriller",
+      "Horror"
+    ],
+    "director": "Mac P. Forever",
+    "imdbId": "tt2367954"
+  },
+  {
+    "id": "pccKnivesOut20251109T201500000Z",
+    "filmTitle": "Knives Out",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-09T20:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623158",
+    "tmdbId": 546554,
+    "releaseDate": "2019-11-27",
+    "synopsis": "When renowned crime novelist Harlan Thrombey is found dead at his estate just after his 85th birthday, the inquisitive and debonair Detective Benoit Blanc is mysteriously enlisted to investigate. From Harlan's dysfunctional family to his devoted staff, Blanc sifts through a web of red herrings and self-serving lies to uncover the truth behind Harlan's untimely death.",
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Mystery"
+    ],
+    "director": "Rian Johnson",
+    "imdbId": "tt8946378"
+  },
+  {
+    "id": "pccMoonstruck20251110T180000000Z",
+    "filmTitle": "Moonstruck",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-10T18:00:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623167",
+    "tmdbId": 2039,
+    "releaseDate": "1987-12-16",
+    "synopsis": "37-year-old Italian-American widow Loretta Castorini believes she is unlucky in love, and so accepts a marriage proposal from her boyfriend Johnny, even though she doesn't love him. When she meets his estranged younger brother Ronny, an emotional and passionate man, she finds herself drawn to him. She tries to resist, but Ronny, who blames his brother for the loss of his hand, has no scruples about aggressively pursuing her while Johnny is out of the country. As Loretta falls for Ronny, she learns that she's not the only one in her family with a secret romance.",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "director": "Norman Jewison",
+    "imdbId": "tt0093565"
+  },
+  {
+    "id": "pccTheKingofComedy20251110T204500000Z",
+    "filmTitle": "The King of Comedy",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-10T20:45:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623169",
+    "tmdbId": 262,
+    "releaseDate": "1982-12-18",
+    "synopsis": "Aspiring comic Rupert Pupkin attempts to achieve success in show business by stalking his idol, a late night talk-show host who craves his own privacy.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": "Martin Scorsese",
+    "imdbId": "tt0085794"
+  },
+  {
+    "id": "pccGoodfellas20251111T141000000Z",
+    "filmTitle": "Goodfellas",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-11T14:10:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623168",
+    "tmdbId": 769,
+    "releaseDate": "1990-09-12",
+    "synopsis": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "director": "Martin Scorsese",
+    "imdbId": "tt0099685"
+  },
+  {
+    "id": "pccGoodfellas20251211T201500000Z",
+    "filmTitle": "Goodfellas",
+    "cinema": "princecharles",
+    "screeningStart": "2025-12-11T20:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622883",
+    "tmdbId": 769,
+    "releaseDate": "1990-09-12",
+    "synopsis": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "director": "Martin Scorsese",
+    "imdbId": "tt0099685"
   },
   {
     "id": "pccWanda20251111T180000000Z",
@@ -7546,6 +7719,22 @@
     ],
     "director": "Shinya Tsukamoto",
     "imdbId": "tt0105569"
+  },
+  {
+    "id": "pccAlmostFamous20251112T203000000Z",
+    "filmTitle": "Almost Famous",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-12T20:30:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623170",
+    "tmdbId": 786,
+    "releaseDate": "2000-09-15",
+    "synopsis": "In 1973, 15-year-old William Miller's unabashed love of music and aspiration to become a rock journalist lands him an assignment from Rolling Stone magazine to interview and tour with the up-and-coming band, Stillwater.",
+    "genres": [
+      "Drama",
+      "Music"
+    ],
+    "director": "Cameron Crowe",
+    "imdbId": "tt0181875"
   },
   {
     "id": "pccTheDevil197220251112T204500000Z",
@@ -10380,22 +10569,6 @@
     "imdbId": "tt3486392"
   },
   {
-    "id": "pccGoodfellas20251211T201500000Z",
-    "filmTitle": "Goodfellas",
-    "cinema": "princecharles",
-    "screeningStart": "2025-12-11T20:15:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622883",
-    "tmdbId": 769,
-    "releaseDate": "1990-09-12",
-    "synopsis": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
-    "genres": [
-      "Drama",
-      "Crime"
-    ],
-    "director": "Martin Scorsese",
-    "imdbId": "tt0099685"
-  },
-  {
     "id": "pccThePrincessBride20251212T151500000Z",
     "filmTitle": "The Princess Bride",
     "cinema": "princecharles",
@@ -10519,59 +10692,6 @@
     ],
     "director": "Joel Coen",
     "imdbId": "tt0190590"
-  },
-  {
-    "id": "icameasuresforafuneral20250904T144000000Z",
-    "filmTitle": "Measures for a Funeral",
-    "cinema": "ica",
-    "screeningStart": "2025-09-04T14:40:00.000Z",
-    "bookingUrl": "https://ica.art/films/measures-for-a-funeral",
-    "tmdbId": 1313637,
-    "releaseDate": "2024-09-07",
-    "synopsis": "Follows a young woman named Audrey Benac on a research odyssey of ghostly possession in which she endeavours to restore the legacy of the forgotten Canadian violinist Kathleen Parlow.",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Sofia Bohdanowicz",
-    "imdbId": "tt33077335"
-  },
-  {
-    "id": "icalittletroublegirls20250904T154000000Z",
-    "filmTitle": "Little Trouble Girls",
-    "cinema": "ica",
-    "screeningStart": "2025-09-04T15:40:00.000Z",
-    "bookingUrl": "https://ica.art/films/little-trouble-girls",
-    "tmdbId": 1019871,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Introverted 16-year-old Lucia joins her Catholic school's all-girls choir, where she befriends Ana-Maria, a popular and flirty third-year student. But when the choir travels to a countryside convent for a weekend of intensive rehearsals, Lucia’s interest in a dark-eyed restoration worker tests her friendship with Ana-Maria and the other girls. As she navigates unfamiliar surroundings and her budding sexuality, Lucia begins to question her beliefs and values, disrupting the harmony within the choir.",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "director": "Urška Djukić",
-    "imdbId": "tt28834646"
-  },
-  {
-    "id": "icamothervera20250904T173000000Z",
-    "filmTitle": "Mother Vera",
-    "cinema": "ica",
-    "screeningStart": "2025-09-04T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films/mother-vera",
-    "tmdbId": 639908,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Shot in black and white in a lyrical, documentary style, Vera takes us from the hidden, religious world of the Belarusian convent to rural farmland, where men and women facing personal and social difficulties live and work. It is here that Vera expresses her deep connection with the horses that she looks after as part of her obedience (religious duty). The film is narrated by Vera as she tells her story of finding faith as a young woman and the impact it has had on her emotionally and spiritually.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Alys Tomlinson",
-    "imdbId": "tt32123163"
-  },
-  {
-    "id": "icadaneycityofpirates20250904T173000000Z",
-    "filmTitle": "City of Pirates on 35mm",
-    "cinema": "ica",
-    "screeningStart": "2025-09-04T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films/daney-city-of-pirates"
   },
   {
     "id": "icainthenguyenkitchen20250904T192000000Z",
@@ -12357,5 +12477,1277 @@
     "cinema": "ica",
     "screeningStart": "2025-10-03T17:30:00.000Z",
     "bookingUrl": "https://ica.art/films/angela-schanelec-in-conversation"
+  },
+  {
+    "id": "castleEddington20250904T195000000Z",
+    "filmTitle": "Eddington",
+    "cinema": "castle",
+    "screeningStart": "2025-09-04T19:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14412/eddington",
+    "tmdbId": 648878,
+    "releaseDate": "2025-07-16",
+    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "genres": [
+      "Western",
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ari Aster",
+    "imdbId": "tt31176520"
+  },
+  {
+    "id": "castleCaughtStealing20250904T200000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-04T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14408/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleCaughtStealing20250905T101500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-05T10:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14417/show",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleCaughtStealing20250905T150000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-05T15:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14421/show",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleCaughtStealing20250905T174000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-05T17:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14424/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleOnSwiftHorses20250905T103000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-05T10:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14418/show",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleOnSwiftHorses20250905T151000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-05T15:10:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14422/show",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleOnSwiftHorses20250905T195000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-05T19:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14425/on-swift-horses",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleMaterialists20250905T124000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-05T12:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14419/show",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleMaterialists20250905T172000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-05T17:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14423/materialists",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleHoneyDont20250905T130000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-05T13:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14420/show",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleHoneyDont20250905T200000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-05T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14426/honey-don-t",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleMaterialists20250906T101500000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-06T10:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/pwyc/14427/show",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleMaterialists20250906T123000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-06T12:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14429/materialists",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleHoneyDont20250906T103000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-06T10:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14428/honey-don-t",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleHoneyDont20250906T174500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-06T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14432/honey-don-t",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleCaughtStealing20250906T124500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-06T12:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14430/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleCaughtStealing20250906T194500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-06T19:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14433/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleOnSwiftHorses20250906T151000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-06T15:10:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14431/on-swift-horses",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleOnSwiftHorses20250906T200000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-06T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14434/on-swift-horses",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleOnSwiftHorses20250907T093000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-07T09:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14435/on-swift-horses",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleOnSwiftHorses20250907T165000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-07T16:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14441/on-swift-horses",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleCaughtStealing20250907T114500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-07T11:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14436/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleCaughtStealing20250907T161500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-07T16:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14440/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleCaughtStealing20250907T192000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-07T19:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14443/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleHoneyDont20250907T121000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-07T12:10:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14437/honey-don-t",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleHoneyDont20250907T141000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-07T14:10:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14438/honey-don-t",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleMaterialists20250907T142000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-07T14:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14439/materialists",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleMaterialists20250907T184000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-07T18:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14442/materialists",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleMaterialists20250908T101000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-08T10:10:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14444/materialists",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleMaterialists20250908T173000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-08T17:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14451/materialists",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleCaughtStealing20250908T103000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-08T10:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14445/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleCaughtStealing20250908T171500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-08T17:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14450/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleHoneyDont20250908T124000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-08T12:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14446/honey-don-t",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleHoneyDont20250908T152000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-08T15:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14449/honey-don-t",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleHoneyDont20250908T194000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-08T19:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14452/honey-don-t",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleOnSwiftHorses20250908T125000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-08T12:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14447/on-swift-horses",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleOnSwiftHorses20250908T144500000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-08T14:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14448/on-swift-horses",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleOnSwiftHorses20250908T200000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-08T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14453/on-swift-horses",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleHoneyDont20250909T100000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T10:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/parent-baby/14454/show",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleHoneyDont20250909T123000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T12:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14457/show",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleHoneyDont20250909T174500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14459/honey-don-t",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleMaterialists20250909T101000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T10:10:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14455/show",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleMaterialists20250909T200000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14462/materialists",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleOnSwiftHorses20250909T124000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T12:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14456/show",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleOnSwiftHorses20250909T173000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T17:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14460/on-swift-horses",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleCaughtStealing20250909T152000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T15:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14458/show",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleCaughtStealing20250909T194500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T19:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14461/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleOnSwiftHorses20250910T095000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T09:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14463/show",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleOnSwiftHorses20250910T150000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T15:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14468/show",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleCaughtStealing20250910T104000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T10:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14464/show",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleCaughtStealing20250910T145000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T14:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14467/show",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleCaughtStealing20250910T201000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T20:10:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14470/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleMaterialists20250910T122000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T12:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14465/show",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleMaterialists20250910T173000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T17:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14469/materialists",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleHoneyDont20250910T130000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T13:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14466/show",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleHoneyDont20250910T200000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14471/honey-don-t",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleOnSwiftHorses20250911T100000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T10:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/parent-baby/14472/show",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleOnSwiftHorses20250911T130000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T13:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14474/show",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleOnSwiftHorses20250911T194500000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T19:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14480/on-swift-horses",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Daniel Minahan",
+    "imdbId": "tt15042300"
+  },
+  {
+    "id": "castleMaterialists20250911T104500000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T10:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14473/show",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleMaterialists20250911T153000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T15:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14476/show",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "director": "Celine Song",
+    "imdbId": "tt30253473"
+  },
+  {
+    "id": "castleHoneyDont20250911T131500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T13:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14475/show",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleHoneyDont20250911T174500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14478/honey-don-t",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201"
+  },
+  {
+    "id": "castleCaughtStealing20250911T152000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T15:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14477/show",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleCaughtStealing20250911T200000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14479/caught-stealing",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "director": "Darren Aronofsky",
+    "imdbId": "tt1493274"
+  },
+  {
+    "id": "castleREALLIFEpresentedbyJelliedReels20250911T180000000Z",
+    "filmTitle": "REAL LIFE presented by Jellied Reels",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T18:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14135/real-life-presented-by-jellied-reels"
+  },
+  {
+    "id": "castleEddington20250914T100000000Z",
+    "filmTitle": "Eddington",
+    "cinema": "castle",
+    "screeningStart": "2025-09-14T10:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14343/eddington",
+    "tmdbId": 648878,
+    "releaseDate": "2025-07-16",
+    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "genres": [
+      "Western",
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ari Aster",
+    "imdbId": "tt31176520"
+  },
+  {
+    "id": "castleGazaDoctorsUnderAttack20250916T173000000Z",
+    "filmTitle": "Gaza: Doctors Under Attack",
+    "cinema": "castle",
+    "screeningStart": "2025-09-16T17:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14344/gaza-doctors-under-attack",
+    "tmdbId": 1486460,
+    "releaseDate": "2025-06-06",
+    "synopsis": "A forensic investigation into the impact of Israeli military operations on Gaza’s healthcare system. This urgent documentary examines evidence of widespread destruction across the territory’s medical infrastructure, where all 36 main hospitals have reportedly been damaged or destroyed. Hundreds of healthcare workers — including doctors and surgeons — are known to have been killed, injured or detained, with some alleging imprisonment and mistreatment",
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Karim Shah",
+    "imdbId": "tt37504739"
+  },
+  {
+    "id": "castleTheBigBikeFilmNight202520250918T170000000Z",
+    "filmTitle": "The Big Bike Film Night 2025",
+    "cinema": "castle",
+    "screeningStart": "2025-09-18T17:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/13704/the-big-bike-film-night-2025"
+  },
+  {
+    "id": "castleVioletHourVNightGallery20250921T123000000Z",
+    "filmTitle": "Violet Hour V: Night Gallery",
+    "cinema": "castle",
+    "screeningStart": "2025-09-21T12:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14297/violet-hour-v-night-gallery"
+  },
+  {
+    "id": "castleTHEOTHERWAYAROUNDpresentedbyJelliedReels20250924T174500000Z",
+    "filmTitle": "THE OTHER WAY AROUND presented by Jellied Reels",
+    "cinema": "castle",
+    "screeningStart": "2025-09-24T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14134/the-other-way-around-presented-by-jellied-reels"
+  },
+  {
+    "id": "castleTheBigBikeFilmNight202520250924T200000000Z",
+    "filmTitle": "The Big Bike Film Night 2025",
+    "cinema": "castle",
+    "screeningStart": "2025-09-24T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14345/the-big-bike-film-night-2025"
+  },
+  {
+    "id": "castleCineRealpresentsHiroshimaMonAmour20250925T183000000Z",
+    "filmTitle": "Cine-Real presents: Hiroshima Mon Amour",
+    "cinema": "castle",
+    "screeningStart": "2025-09-25T18:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14481/cine-real-presents-hiroshima-mon-amour"
+  },
+  {
+    "id": "castleCineRealpresentsHiroshimaMonAmour20250928T130000000Z",
+    "filmTitle": "Cine-Real presents: Hiroshima Mon Amour",
+    "cinema": "castle",
+    "screeningStart": "2025-09-28T13:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14482/cine-real-presents-hiroshima-mon-amour"
+  },
+  {
+    "id": "castleNTLiveInterAlia20250930T174500000Z",
+    "filmTitle": "NT Live: Inter Alia",
+    "cinema": "castle",
+    "screeningStart": "2025-09-30T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14206/nt-live-inter-alia",
+    "tmdbId": 1454209,
+    "releaseDate": "2025-09-04",
+    "synopsis": "Jessica Parks is a smart Crown Court Judge at the top of her career. Behind the robe, she is a karaoke fiend, loving wife and a supportive parent. When an event threatens to throw her life completely off balance, can she hold her family upright?",
+    "genres": [
+      "Drama"
+    ],
+    "director": "Justin Martin",
+    "imdbId": "tt36364878"
+  },
+  {
+    "id": "castleCineRealpresentsStirCrazy20251002T183000000Z",
+    "filmTitle": "Cine-Real presents: Stir Crazy",
+    "cinema": "castle",
+    "screeningStart": "2025-10-02T18:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14484/cine-real-presents-stir-crazy"
+  },
+  {
+    "id": "castleNTLiveInterAlia20251008T174500000Z",
+    "filmTitle": "NT Live: Inter Alia",
+    "cinema": "castle",
+    "screeningStart": "2025-10-08T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14207/nt-live-inter-alia",
+    "tmdbId": 1454209,
+    "releaseDate": "2025-09-04",
+    "synopsis": "Jessica Parks is a smart Crown Court Judge at the top of her career. Behind the robe, she is a karaoke fiend, loving wife and a supportive parent. When an event threatens to throw her life completely off balance, can she hold her family upright?",
+    "genres": [
+      "Drama"
+    ],
+    "director": "Justin Martin",
+    "imdbId": "tt36364878"
+  },
+  {
+    "id": "castleItDoesntGetAnyBetterThanThis20251022T174500000Z",
+    "filmTitle": "It Doesn’t Get Any Better Than This",
+    "cinema": "castle",
+    "screeningStart": "2025-10-22T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14204/it-doesnt-get-any-better-than-this",
+    "tmdbId": 1174492,
+    "releaseDate": "2025-01-10",
+    "synopsis": "This found footage horror film blends fact and fiction from nearly 20 years of archival video. Following a decades-long fascination with the horror genre, a married couple buys an abandoned duplex to use as a location for filming their low-budget scary movie. They soon notice that random strangers are drawn to the old building, but never approach it, merely standing outside and staring at it in a sort of trance. Delighted to find themselves embroiled in a real-life scary story, the two team up with an old friend and put their years of horror expertise, amateur ghost hunting, and paranormal obsession to use in the hope of discovering why this building holds such a strange power over people.",
+    "genres": [
+      "Horror"
+    ],
+    "director": "Rachel Kempf",
+    "imdbId": "tt31912070"
+  },
+  {
+    "id": "castleNTLiveMrsWarrensProfession20251023T174500000Z",
+    "filmTitle": "NT Live: Mrs. Warren’s Profession",
+    "cinema": "castle",
+    "screeningStart": "2025-10-23T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14137/nt-live-mrs-warrens-profession"
+  },
+  {
+    "id": "castleCAPTAINVOLKONOGOVESCAPEDpresentedbyKlassikiJelliedReels20251029T184500000Z",
+    "filmTitle": "CAPTAIN VOLKONOGOV ESCAPED presented by Klassiki & Jellied Reels",
+    "cinema": "castle",
+    "screeningStart": "2025-10-29T18:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14346/captain-volkonogov-escaped-presented-by-klassiki-jellied-reels"
+  },
+  {
+    "id": "castleCAMPCLASSICSpresentsTheCraft199620251106T190000000Z",
+    "filmTitle": "CAMP CLASSICS presents: The Craft (1996)",
+    "cinema": "castle",
+    "screeningStart": "2025-11-06T19:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14485/camp-classics-presents-the-craft-1996"
+  },
+  {
+    "id": "castleLUOMOINPIpresentedbyJelliedReels20251113T190000000Z",
+    "filmTitle": "L'UOMO IN PIÙ presented by Jellied Reels",
+    "cinema": "castle",
+    "screeningStart": "2025-11-13T19:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14136/l-uomo-in-piu-presented-by-jellied-reels"
+  },
+  {
+    "id": "castleNTLiveTheFifthStep20251127T190000000Z",
+    "filmTitle": "NT Live: The Fifth Step",
+    "cinema": "castle",
+    "screeningStart": "2025-11-27T19:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14184/nt-live-the-fifth-step"
+  },
+  {
+    "id": "castleMerryHitchmasSpellbound80thAnniversaryScreeningQA20251202T181500000Z",
+    "filmTitle": "Merry Hitchmas: Spellbound - 80th Anniversary Screening + Q&A",
+    "cinema": "castle",
+    "screeningStart": "2025-12-02T18:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/13709/merry-hitchmas-spellbound-80th-anniversary-screening-q-a"
+  },
+  {
+    "id": "castleMerryHitchmasSpellbound80thAnniversaryScreeningQA20251207T141500000Z",
+    "filmTitle": "Merry Hitchmas: Spellbound - 80th Anniversary Screening + Q&A",
+    "cinema": "castle",
+    "screeningStart": "2025-12-07T14:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/13710/merry-hitchmas-spellbound-80th-anniversary-screening-q-a"
+  },
+  {
+    "id": "castleNTLiveHamlet20260122T190000000Z",
+    "filmTitle": "NT Live: Hamlet",
+    "cinema": "castle",
+    "screeningStart": "2026-01-22T19:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14201/nt-live-hamlet",
+    "tmdbId": 436484,
+    "releaseDate": "2010-12-09",
+    "synopsis": "A 2010 broadcast of Hamlet returns to cinemas as part of the NT's 50th anniversary celebrations.  Following his celebrated performances at the National Theatre in Burnt by the Sun, The Revenger's Tragedy, Philistines and The Man of Mode, Rory Kinnear plays Hamlet in a dynamic new production of Shakespeare’s complex and profound play about the human condition, directed by Nicholas Hytner.  He is joined by Clare Higgins (Gertrude), Patrick Malahide (Claudius), David Calder (Polonius), James Laurenson (Ghost/Player King) and Ruth Negga (Ophelia).",
+    "genres": [
+      "Drama"
+    ],
+    "director": "Nicholas Hytner",
+    "imdbId": "tt1795370"
   }
 ]
