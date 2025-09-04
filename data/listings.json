@@ -1,21 +1,5 @@
 [
   {
-    "id": "pccLeCercleRouge20250904T140500000Z",
-    "filmTitle": "Le Cercle Rouge",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-04T14:05:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622067",
-    "tmdbId": 11657,
-    "releaseDate": "1970-10-19",
-    "synopsis": "When French criminal Corey gets released from prison, he resolves to never return. He is quickly pulled back into the underworld, however, after a chance encounter with escaped murderer Vogel. Along with former policeman and current alcoholic Jansen, they plot an intricate jewel heist. All the while, quirky Police Commissioner Mattei, who was the one to lose custody of Vogel, is determined to find him.",
-    "genres": [
-      "Crime",
-      "Thriller"
-    ],
-    "director": "Jean-Pierre Melville",
-    "imdbId": "tt0065531"
-  },
-  {
     "id": "pccMrHulotsHolidayLesvacancesdeMonsieurHulot20250904T144500000Z",
     "filmTitle": "Mr. Hulot's Holiday [Les vacances de Monsieur Hulot]",
     "cinema": "princecharles",
@@ -181,7 +165,7 @@
     "filmTitle": "In The Mood For Love - 25th Anniversary",
     "cinema": "princecharles",
     "screeningStart": "2025-11-05T12:45:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623099"
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623111"
   },
   {
     "id": "pccInTheMoodForLove25thAnniversary20251108T153500000Z",
@@ -601,6 +585,23 @@
     "cinema": "princecharles",
     "screeningStart": "2025-10-17T13:35:00.000Z",
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622530",
+    "tmdbId": 11104,
+    "releaseDate": "1994-07-14",
+    "synopsis": "Two melancholic Hong Kong policemen fall in love: one with a mysterious underworld figure, the other with a beautiful and ethereal server at a late-night restaurant.",
+    "genres": [
+      "Drama",
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Wong Kar-Wai",
+    "imdbId": "tt0109424"
+  },
+  {
+    "id": "pccChungkingExpress20251109T120000000Z",
+    "filmTitle": "Chungking Express",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-09T12:00:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623141",
     "tmdbId": 11104,
     "releaseDate": "1994-07-14",
     "synopsis": "Two melancholic Hong Kong policemen fall in love: one with a mysterious underworld figure, the other with a beautiful and ethereal server at a late-night restaurant.",
@@ -2832,6 +2833,22 @@
     "cinema": "princecharles",
     "screeningStart": "2025-10-20T11:15:00.000Z",
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622539",
+    "tmdbId": 739474,
+    "releaseDate": "2020-06-21",
+    "synopsis": "One night, two friends decide to relax by taking a mysterious substance that promises to give them an unforgettable high, but when things take a turn for the worse, their friendship is tested... with bloody results.",
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
+    "director": "Kieran H. Bothwell",
+    "imdbId": "tt9011996"
+  },
+  {
+    "id": "pccCure20251109T203000000Z",
+    "filmTitle": "Cure",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-09T20:30:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623142",
     "tmdbId": 739474,
     "releaseDate": "2020-06-21",
     "synopsis": "One night, two friends decide to relax by taking a mysterious substance that promises to give them an unforgettable high, but when things take a turn for the worse, their friendship is tested... with bloody results.",
@@ -6680,6 +6697,22 @@
     "imdbId": "tt0068646"
   },
   {
+    "id": "pccTheGodfather20251107T143000000Z",
+    "filmTitle": "The Godfather",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-07T14:30:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623139",
+    "tmdbId": 238,
+    "releaseDate": "1972-03-14",
+    "synopsis": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "director": "Francis Ford Coppola",
+    "imdbId": "tt0068646"
+  },
+  {
     "id": "pccTheGodfather20251203T194500000Z",
     "filmTitle": "The Godfather",
     "cinema": "princecharles",
@@ -7037,23 +7070,6 @@
     "imdbId": "tt0460829"
   },
   {
-    "id": "pccDEEPCOVER20251103T173000000Z",
-    "filmTitle": "DEEP COVER",
-    "cinema": "princecharles",
-    "screeningStart": "2025-11-03T17:30:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623051",
-    "tmdbId": 1239193,
-    "releaseDate": "2025-06-12",
-    "synopsis": "Kat is an improv comedy teacher beginning to question if she’s missed her shot at success. When an undercover cop offers her the role of a lifetime, she recruits two of her students to infiltrate London’s gangland by impersonating dangerous criminals.",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Tom Kingsley",
-    "imdbId": "tt31121295"
-  },
-  {
     "id": "pccMOON20251103T180000000Z",
     "filmTitle": "MOON",
     "cinema": "princecharles",
@@ -7199,11 +7215,18 @@
     "imdbId": "tt0001027"
   },
   {
+    "id": "pccTheWickerManTheFinalCut20251105T131000000Z",
+    "filmTitle": "The Wicker Man - The Final Cut",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-05T13:10:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623112"
+  },
+  {
     "id": "pccVFORVENDETTA20251105T151500000Z",
     "filmTitle": "V FOR VENDETTA",
     "cinema": "princecharles",
     "screeningStart": "2025-11-05T15:15:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623097",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623108",
     "tmdbId": 752,
     "releaseDate": "2006-02-23",
     "synopsis": "In a world in which Great Britain has become a fascist state, a masked vigilante known only as “V” conducts guerrilla warfare against the oppressive British government. When V rescues a young woman from the secret police, he finds in her an ally with whom he can continue his fight to free the people of Britain.",
@@ -7216,11 +7239,19 @@
     "imdbId": "tt0434409"
   },
   {
-    "id": "pccTheWickerManTheFinalCut20251105T154500000Z",
-    "filmTitle": "The Wicker Man - The Final Cut",
+    "id": "pccTheWickerMan20251105T153000000Z",
+    "filmTitle": "The Wicker Man",
     "cinema": "princecharles",
-    "screeningStart": "2025-11-05T15:45:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623101"
+    "screeningStart": "2025-11-05T15:30:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623105",
+    "tmdbId": 16307,
+    "releaseDate": "1973-12-06",
+    "synopsis": "Police sergeant Neil Howie is called to an island village in search of a missing girl whom the locals claim never existed. Stranger still, however, are the rituals that take place there.",
+    "genres": [
+      "Horror"
+    ],
+    "director": "Robin Hardy",
+    "imdbId": "tt0070917"
   },
   {
     "id": "pccPlayMistyforMe20251105T180000000Z",
@@ -7273,38 +7304,6 @@
     "imdbId": "tt0067885"
   },
   {
-    "id": "pccPinkFlamingos20251106T121500000Z",
-    "filmTitle": "Pink Flamingos",
-    "cinema": "princecharles",
-    "screeningStart": "2025-11-06T12:15:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623076",
-    "tmdbId": 692,
-    "releaseDate": "1972-03-17",
-    "synopsis": "Notorious Baltimore criminal and underground figure Divine goes up against Connie & Raymond Marble, a sleazy married couple who make a passionate attempt to humiliate her and seize her tabloid-given title as \"The Filthiest Person Alive\".",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "John Waters",
-    "imdbId": "tt0069089"
-  },
-  {
-    "id": "pccPinkFlamingos20251108T180000000Z",
-    "filmTitle": "Pink Flamingos",
-    "cinema": "princecharles",
-    "screeningStart": "2025-11-08T18:00:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622735",
-    "tmdbId": 692,
-    "releaseDate": "1972-03-17",
-    "synopsis": "Notorious Baltimore criminal and underground figure Divine goes up against Connie & Raymond Marble, a sleazy married couple who make a passionate attempt to humiliate her and seize her tabloid-given title as \"The Filthiest Person Alive\".",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "John Waters",
-    "imdbId": "tt0069089"
-  },
-  {
     "id": "pccBlowOut20251106T150000000Z",
     "filmTitle": "Blow Out",
     "cinema": "princecharles",
@@ -7353,6 +7352,24 @@
     ],
     "director": "Robert Altman",
     "imdbId": "tt0073440"
+  },
+  {
+    "id": "pccOldboyOldeuboi20251107T114500000Z",
+    "filmTitle": "Oldboy [Oldeuboi]",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-07T11:45:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623138",
+    "tmdbId": 670,
+    "releaseDate": "2003-11-21",
+    "synopsis": "With no clue how he came to be imprisoned, drugged and tortured for 15 years, a desperate man seeks revenge on his captors.",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Mystery",
+      "Action"
+    ],
+    "director": "Park Chan-wook",
+    "imdbId": "tt0364569"
   },
   {
     "id": "pccDogmaResurrectedA25thAnniversaryCelebration20251107T120000000Z",
@@ -7431,52 +7448,71 @@
     "imdbId": "tt0112887"
   },
   {
-    "id": "pccRearWindow20251109T145000000Z",
-    "filmTitle": "Rear Window",
+    "id": "pccClue20251107T181500000Z",
+    "filmTitle": "Clue",
     "cinema": "princecharles",
-    "screeningStart": "2025-11-09T14:50:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623095",
-    "tmdbId": 567,
-    "releaseDate": "1954-08-01",
-    "synopsis": "A wheelchair-bound photographer spies on his neighbors from his apartment window and becomes convinced one of them has committed murder.",
+    "screeningStart": "2025-11-07T18:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623134",
+    "tmdbId": 938442,
+    "releaseDate": "2022-02-09",
+    "synopsis": "Murder and blackmail are on the menu when six mysterious guests assemble for a dinner party at Boddy Manor. Was it Mrs. Peacock in the study with the knife? Or Colonel Mustard in the library with the wrench? Based on the cult 1985 Paramount movie and inspired by the classic Hasbro game, this farce-meets-murder-mystery is bloody good fun.",
     "genres": [
-      "Thriller",
-      "Mystery"
+      "Mystery",
+      "Comedy"
     ],
-    "director": "Alfred Hitchcock",
-    "imdbId": "tt0047396"
+    "director": "Casey Hushion",
+    "imdbId": "tt23379618"
   },
   {
-    "id": "pccRearWindow20251201T151500000Z",
-    "filmTitle": "Rear Window",
+    "id": "pccTheWorstPersonintheWorld20251107T204500000Z",
+    "filmTitle": "The Worst Person in the World",
     "cinema": "princecharles",
-    "screeningStart": "2025-12-01T15:15:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622820",
-    "tmdbId": 567,
-    "releaseDate": "1954-08-01",
-    "synopsis": "A wheelchair-bound photographer spies on his neighbors from his apartment window and becomes convinced one of them has committed murder.",
+    "screeningStart": "2025-11-07T20:45:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623131",
+    "tmdbId": 660120,
+    "releaseDate": "2021-10-13",
+    "synopsis": "The chronicles of four years in the life of Julie, a young woman who navigates the troubled waters of her love life and struggles to find her career path, leading her to take a realistic look at who she really is.",
     "genres": [
-      "Thriller",
-      "Mystery"
+      "Drama",
+      "Romance",
+      "Comedy"
     ],
-    "director": "Alfred Hitchcock",
-    "imdbId": "tt0047396"
+    "director": "Joachim Trier",
+    "imdbId": "tt10370710"
   },
   {
-    "id": "pccRearWindow20251215T114500000Z",
-    "filmTitle": "Rear Window",
+    "id": "pccPinkFlamingos20251108T180000000Z",
+    "filmTitle": "Pink Flamingos",
     "cinema": "princecharles",
-    "screeningStart": "2025-12-15T11:45:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622906",
-    "tmdbId": 567,
-    "releaseDate": "1954-08-01",
-    "synopsis": "A wheelchair-bound photographer spies on his neighbors from his apartment window and becomes convinced one of them has committed murder.",
+    "screeningStart": "2025-11-08T18:00:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622735",
+    "tmdbId": 692,
+    "releaseDate": "1972-03-17",
+    "synopsis": "Notorious Baltimore criminal and underground figure Divine goes up against Connie & Raymond Marble, a sleazy married couple who make a passionate attempt to humiliate her and seize her tabloid-given title as \"The Filthiest Person Alive\".",
     "genres": [
-      "Thriller",
-      "Mystery"
+      "Comedy",
+      "Crime"
     ],
-    "director": "Alfred Hitchcock",
-    "imdbId": "tt0047396"
+    "director": "John Waters",
+    "imdbId": "tt0069089"
+  },
+  {
+    "id": "pccAngusThongsandPerfectSnogging20251108T204500000Z",
+    "filmTitle": "Angus, Thongs and Perfect Snogging",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-08T20:45:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623140",
+    "tmdbId": 12689,
+    "releaseDate": "2008-07-25",
+    "synopsis": "Georgia Nicolson is fourteen, lives with nosey parents who don't understand her, an annoying three year old sister and has to wear a beret to school. She would, however, rather be blonde, have a smaller nose and a boyfriend. Revolving around her hilarious journal entries, prepare to be engulfed in the world of the soaring joys and bottomless angst of being a teenager.",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Family",
+      "Romance"
+    ],
+    "director": "Gurinder Chadha",
+    "imdbId": "tt0963743"
   },
   {
     "id": "pccWanda20251111T180000000Z",
@@ -7542,6 +7578,74 @@
     ],
     "director": "Sun Chung",
     "imdbId": "tt0068482"
+  },
+  {
+    "id": "pccDeathBecomesHer20251113T124000000Z",
+    "filmTitle": "Death Becomes Her",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-13T12:40:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623122",
+    "tmdbId": 9374,
+    "releaseDate": "1992-07-30",
+    "synopsis": "Madeline is married to Ernest, who was once her arch-rival Helen's fiancé. After recovering from a mental breakdown, Helen vows to kill Madeline and steal back Ernest. Unfortunately for everyone, the introduction of a magic potion causes things to be a great deal more complicated than a mere murder plot.",
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Horror"
+    ],
+    "director": "Robert Zemeckis",
+    "imdbId": "tt0104070"
+  },
+  {
+    "id": "pccHocusPocus20251113T151500000Z",
+    "filmTitle": "Hocus Pocus",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-13T15:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623123",
+    "tmdbId": 181870,
+    "releaseDate": "1984-01-12",
+    "synopsis": "This movie follows in the same spirit as Mr. Vampire, Dead and the deadly and Spooky encounters, mixing comedy and horror!",
+    "genres": [
+      "Action",
+      "Horror",
+      "Fantasy"
+    ],
+    "director": "Chin Yuet-Sang",
+    "imdbId": "tt0087993"
+  },
+  {
+    "id": "pccTheCraft20251113T174500000Z",
+    "filmTitle": "The Craft",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-13T17:45:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623124",
+    "tmdbId": 9100,
+    "releaseDate": "1996-05-03",
+    "synopsis": "A Catholic school newcomer falls in with a clique of teen witches who wield their powers against all who dare to cross them -- be they teachers, rivals or meddlesome parents.",
+    "genres": [
+      "Horror",
+      "Drama",
+      "Fantasy"
+    ],
+    "director": "Andrew Fleming",
+    "imdbId": "tt0115963"
+  },
+  {
+    "id": "pccPracticalMagic20251113T201500000Z",
+    "filmTitle": "Practical Magic",
+    "cinema": "princecharles",
+    "screeningStart": "2025-11-13T20:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31623116",
+    "tmdbId": 6435,
+    "releaseDate": "1998-10-16",
+    "synopsis": "Sally and Gillian Owens, born into a magical family, have mostly avoided witchcraft themselves. But when Gillian's vicious boyfriend, Jimmy Angelov, dies unexpectedly, the Owens sisters give themselves a crash course in hard magic. With policeman Gary Hallet growing suspicious, the girls struggle to resurrect Angelov -- and unwittingly inject his corpse with an evil spirit that threatens to end their family line.",
+    "genres": [
+      "Romance",
+      "Comedy",
+      "Fantasy"
+    ],
+    "director": "Griffin Dunne",
+    "imdbId": "tt0120791"
   },
   {
     "id": "pccNowhere20251114T122000000Z",
@@ -9395,6 +9499,38 @@
     "imdbId": "tt0314331"
   },
   {
+    "id": "pccRearWindow20251201T151500000Z",
+    "filmTitle": "Rear Window",
+    "cinema": "princecharles",
+    "screeningStart": "2025-12-01T15:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622820",
+    "tmdbId": 567,
+    "releaseDate": "1954-08-01",
+    "synopsis": "A wheelchair-bound photographer spies on his neighbors from his apartment window and becomes convinced one of them has committed murder.",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
+    "director": "Alfred Hitchcock",
+    "imdbId": "tt0047396"
+  },
+  {
+    "id": "pccRearWindow20251215T114500000Z",
+    "filmTitle": "Rear Window",
+    "cinema": "princecharles",
+    "screeningStart": "2025-12-15T11:45:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622906",
+    "tmdbId": 567,
+    "releaseDate": "1954-08-01",
+    "synopsis": "A wheelchair-bound photographer spies on his neighbors from his apartment window and becomes convinced one of them has committed murder.",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
+    "director": "Alfred Hitchcock",
+    "imdbId": "tt0047396"
+  },
+  {
     "id": "pccTokyoGodfathers20251201T180000000Z",
     "filmTitle": "Tokyo Godfathers",
     "cinema": "princecharles",
@@ -11134,691 +11270,11 @@
     "imdbId": "tt32086052"
   },
   {
-    "id": "icafilms20250904T144000000Z",
-    "filmTitle": "Measures for a Funeral",
-    "cinema": "ica",
-    "screeningStart": "2025-09-04T14:40:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1313637,
-    "releaseDate": "2024-09-07",
-    "synopsis": "Follows a young woman named Audrey Benac on a research odyssey of ghostly possession in which she endeavours to restore the legacy of the forgotten Canadian violinist Kathleen Parlow.",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Sofia Bohdanowicz",
-    "imdbId": "tt33077335"
-  },
-  {
-    "id": "icafilms20250904T154000000Z",
-    "filmTitle": "Little Trouble Girls",
-    "cinema": "ica",
-    "screeningStart": "2025-09-04T15:40:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1019871,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Introverted 16-year-old Lucia joins her Catholic school's all-girls choir, where she befriends Ana-Maria, a popular and flirty third-year student. But when the choir travels to a countryside convent for a weekend of intensive rehearsals, Lucia’s interest in a dark-eyed restoration worker tests her friendship with Ana-Maria and the other girls. As she navigates unfamiliar surroundings and her budding sexuality, Lucia begins to question her beliefs and values, disrupting the harmony within the choir.",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "director": "Urška Djukić",
-    "imdbId": "tt28834646"
-  },
-  {
-    "id": "icafilms20250904T173000000Z",
-    "filmTitle": "Mother Vera",
-    "cinema": "ica",
-    "screeningStart": "2025-09-04T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 639908,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Shot in black and white in a lyrical, documentary style, Vera takes us from the hidden, religious world of the Belarusian convent to rural farmland, where men and women facing personal and social difficulties live and work. It is here that Vera expresses her deep connection with the horses that she looks after as part of her obedience (religious duty). The film is narrated by Vera as she tells her story of finding faith as a young woman and the impact it has had on her emotionally and spiritually.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Alys Tomlinson",
-    "imdbId": "tt32123163"
-  },
-  {
-    "id": "icafilms20250904T192000000Z",
-    "filmTitle": "In The Nguyen Kitchen",
-    "cinema": "ica",
-    "screeningStart": "2025-09-04T19:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1001248,
-    "releaseDate": "2025-03-05",
-    "synopsis": "French-Vietnamese actress Yvonne Nguyen dreams of a successful career in musicals, to the great displeasure of her mother, who would like her to pursue a more serious path. When Yvonne has no choice but to move back home, both women are strangers to each other. But in the intimacy of the Vietnamese family restaurant’s kitchen, they grow closer. Meanwhile, Yvonne is still after her dreams and finally gets the chance to audition for a big show.",
-    "genres": [
-      "Comedy",
-      "Music"
-    ],
-    "director": "Stéphane Ly-Cuong",
-    "imdbId": "tt31047957"
-  },
-  {
-    "id": "icafilms20250904T200000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "ica",
-    "screeningStart": "2025-09-04T20:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "director": "Eva Victor",
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "icafilms20250905T110000000Z",
-    "filmTitle": "In The Nguyen Kitchen",
-    "cinema": "ica",
-    "screeningStart": "2025-09-05T11:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1001248,
-    "releaseDate": "2025-03-05",
-    "synopsis": "French-Vietnamese actress Yvonne Nguyen dreams of a successful career in musicals, to the great displeasure of her mother, who would like her to pursue a more serious path. When Yvonne has no choice but to move back home, both women are strangers to each other. But in the intimacy of the Vietnamese family restaurant’s kitchen, they grow closer. Meanwhile, Yvonne is still after her dreams and finally gets the chance to audition for a big show.",
-    "genres": [
-      "Comedy",
-      "Music"
-    ],
-    "director": "Stéphane Ly-Cuong",
-    "imdbId": "tt31047957"
-  },
-  {
-    "id": "icafilms20250905T120000000Z",
-    "filmTitle": "Eddington",
-    "cinema": "ica",
-    "screeningStart": "2025-09-05T12:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-    "genres": [
-      "Western",
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ari Aster",
-    "imdbId": "tt31176520"
-  },
-  {
-    "id": "icafilms20250905T130000000Z",
-    "filmTitle": "Viêt and Nam",
-    "cinema": "ica",
-    "screeningStart": "2025-09-05T13:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 846586,
-    "releaseDate": "2024-09-25",
-    "synopsis": "In the depths of the underground coal mines, where danger awaits and darkness prevails, Nam and Việt, both young miners, cherish fleeting moments, knowing that one of them will soon leave for a new life across the sea.",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Trương Minh Quý",
-    "imdbId": "tt32086052"
-  },
-  {
-    "id": "icafilms20250905T151000000Z",
-    "filmTitle": "Mother Vera",
-    "cinema": "ica",
-    "screeningStart": "2025-09-05T15:10:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 639908,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Shot in black and white in a lyrical, documentary style, Vera takes us from the hidden, religious world of the Belarusian convent to rural farmland, where men and women facing personal and social difficulties live and work. It is here that Vera expresses her deep connection with the horses that she looks after as part of her obedience (religious duty). The film is narrated by Vera as she tells her story of finding faith as a young woman and the impact it has had on her emotionally and spiritually.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Alys Tomlinson",
-    "imdbId": "tt32123163"
-  },
-  {
-    "id": "icafilms20250905T152000000Z",
-    "filmTitle": "Put Your Soul on Your Hand and Walk",
-    "cinema": "ica",
-    "screeningStart": "2025-09-05T15:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1465560,
-    "releaseDate": "2025-08-22",
-    "synopsis": "An Iranian filmmaker participates in a series of video calls with a young Palestinian photojournalist who describes her life confined in Gaza during the current regional conflict.",
-    "genres": [
-      "Documentary",
-      "Drama",
-      "War"
-    ],
-    "director": "Sepideh Farsi",
-    "imdbId": "tt36598711"
-  },
-  {
-    "id": "icafilms20250905T173000000Z",
-    "filmTitle": "Sanatorium",
-    "cinema": "ica",
-    "screeningStart": "2025-09-05T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1137514,
-    "releaseDate": "2023-01-12",
-    "synopsis": "Jethro is a young man happily speeding through his youth, but when his reality starts to literally fall apart around him, he has to make a hard decision that'll affect the time he has left.",
-    "genres": [
-      "Science Fiction",
-      "Drama"
-    ],
-    "director": "Davis Kersey",
-    "imdbId": "tt26699833"
-  },
-  {
-    "id": "icafilms20250905T192000000Z",
-    "filmTitle": "Young Mothers",
-    "cinema": "ica",
-    "screeningStart": "2025-09-05T19:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 357458,
-    "releaseDate": "2015-04-30",
-    "synopsis": "Father, son and even grandson, are all mesmerized by this 29-year-old sexy mom.  Yong-tae is a dying cancer patient whose wife passed away. Seong-min is a nuisance of a son who is of no use. Yeong-chan is Yong-tae’s grandson who is addicted to porn.  A sexy mom comes into the lives of these three men one day. Jin-hee brings positive feelings into the house and prescribes her personal methods of treatment for the three men. Who will get it on with mom?",
-    "genres": [
-      "Comedy",
-      "Romance"
-    ],
-    "director": "Kim Jong-il"
-  },
-  {
-    "id": "icafilms20250905T203000000Z",
-    "filmTitle": "Little Trouble Girls",
-    "cinema": "ica",
-    "screeningStart": "2025-09-05T20:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1019871,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Introverted 16-year-old Lucia joins her Catholic school's all-girls choir, where she befriends Ana-Maria, a popular and flirty third-year student. But when the choir travels to a countryside convent for a weekend of intensive rehearsals, Lucia’s interest in a dark-eyed restoration worker tests her friendship with Ana-Maria and the other girls. As she navigates unfamiliar surroundings and her budding sexuality, Lucia begins to question her beliefs and values, disrupting the harmony within the choir.",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "director": "Urška Djukić",
-    "imdbId": "tt28834646"
-  },
-  {
-    "id": "icafilms20250906T110000000Z",
-    "filmTitle": "Mother Vera",
-    "cinema": "ica",
-    "screeningStart": "2025-09-06T11:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 639908,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Shot in black and white in a lyrical, documentary style, Vera takes us from the hidden, religious world of the Belarusian convent to rural farmland, where men and women facing personal and social difficulties live and work. It is here that Vera expresses her deep connection with the horses that she looks after as part of her obedience (religious duty). The film is narrated by Vera as she tells her story of finding faith as a young woman and the impact it has had on her emotionally and spiritually.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Alys Tomlinson",
-    "imdbId": "tt32123163"
-  },
-  {
-    "id": "icafilms20250906T193000000Z",
-    "filmTitle": "Sanatorium",
-    "cinema": "ica",
-    "screeningStart": "2025-09-06T19:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1137514,
-    "releaseDate": "2023-01-12",
-    "synopsis": "Jethro is a young man happily speeding through his youth, but when his reality starts to literally fall apart around him, he has to make a hard decision that'll affect the time he has left.",
-    "genres": [
-      "Science Fiction",
-      "Drama"
-    ],
-    "director": "Davis Kersey",
-    "imdbId": "tt26699833"
-  },
-  {
-    "id": "icafilms20250906T130000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "ica",
-    "screeningStart": "2025-09-06T13:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "director": "Eva Victor",
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "icafilms20250906T150000000Z",
-    "filmTitle": "Afternoons of Solitude",
-    "cinema": "ica",
-    "screeningStart": "2025-09-06T15:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 975324,
-    "releaseDate": "2025-03-07",
-    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Albert Serra",
-    "imdbId": "tt26245982"
-  },
-  {
-    "id": "icafilms20250906T180000000Z",
-    "filmTitle": "Afternoons of Solitude",
-    "cinema": "ica",
-    "screeningStart": "2025-09-06T18:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 975324,
-    "releaseDate": "2025-03-07",
-    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Albert Serra",
-    "imdbId": "tt26245982"
-  },
-  {
-    "id": "icafilms20250906T172500000Z",
-    "filmTitle": "Young Mothers",
-    "cinema": "ica",
-    "screeningStart": "2025-09-06T17:25:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 357458,
-    "releaseDate": "2015-04-30",
-    "synopsis": "Father, son and even grandson, are all mesmerized by this 29-year-old sexy mom.  Yong-tae is a dying cancer patient whose wife passed away. Seong-min is a nuisance of a son who is of no use. Yeong-chan is Yong-tae’s grandson who is addicted to porn.  A sexy mom comes into the lives of these three men one day. Jin-hee brings positive feelings into the house and prescribes her personal methods of treatment for the three men. Who will get it on with mom?",
-    "genres": [
-      "Comedy",
-      "Romance"
-    ],
-    "director": "Kim Jong-il"
-  },
-  {
-    "id": "icafilms20250906T203000000Z",
-    "filmTitle": "Little Trouble Girls",
-    "cinema": "ica",
-    "screeningStart": "2025-09-06T20:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1019871,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Introverted 16-year-old Lucia joins her Catholic school's all-girls choir, where she befriends Ana-Maria, a popular and flirty third-year student. But when the choir travels to a countryside convent for a weekend of intensive rehearsals, Lucia’s interest in a dark-eyed restoration worker tests her friendship with Ana-Maria and the other girls. As she navigates unfamiliar surroundings and her budding sexuality, Lucia begins to question her beliefs and values, disrupting the harmony within the choir.",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "director": "Urška Djukić",
-    "imdbId": "tt28834646"
-  },
-  {
-    "id": "icafilms20250907T110000000Z",
-    "filmTitle": "Eddington",
-    "cinema": "ica",
-    "screeningStart": "2025-09-07T11:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-    "genres": [
-      "Western",
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ari Aster",
-    "imdbId": "tt31176520"
-  },
-  {
-    "id": "icafilms20250907T120000000Z",
-    "filmTitle": "Measures for a Funeral",
-    "cinema": "ica",
-    "screeningStart": "2025-09-07T12:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1313637,
-    "releaseDate": "2024-09-07",
-    "synopsis": "Follows a young woman named Audrey Benac on a research odyssey of ghostly possession in which she endeavours to restore the legacy of the forgotten Canadian violinist Kathleen Parlow.",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Sofia Bohdanowicz",
-    "imdbId": "tt33077335"
-  },
-  {
-    "id": "icafilms20250907T150000000Z",
-    "filmTitle": "Afternoons of Solitude",
-    "cinema": "ica",
-    "screeningStart": "2025-09-07T15:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 975324,
-    "releaseDate": "2025-03-07",
-    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Albert Serra",
-    "imdbId": "tt26245982"
-  },
-  {
-    "id": "icafilms20250907T191500000Z",
-    "filmTitle": "Afternoons of Solitude",
-    "cinema": "ica",
-    "screeningStart": "2025-09-07T19:15:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 975324,
-    "releaseDate": "2025-03-07",
-    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Albert Serra",
-    "imdbId": "tt26245982"
-  },
-  {
-    "id": "icafilms20250907T160000000Z",
-    "filmTitle": "Van Gogh",
-    "cinema": "ica",
-    "screeningStart": "2025-09-07T16:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 78174,
-    "releaseDate": "2009-03-25",
-    "synopsis": "An artistic view of Van Gogh as if this movie is self narrated by himself.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "François Bertrand",
-    "imdbId": "tt1410248"
-  },
-  {
-    "id": "icafilms20250907T173000000Z",
-    "filmTitle": "Sanatorium",
-    "cinema": "ica",
-    "screeningStart": "2025-09-07T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1137514,
-    "releaseDate": "2023-01-12",
-    "synopsis": "Jethro is a young man happily speeding through his youth, but when his reality starts to literally fall apart around him, he has to make a hard decision that'll affect the time he has left.",
-    "genres": [
-      "Science Fiction",
-      "Drama"
-    ],
-    "director": "Davis Kersey",
-    "imdbId": "tt26699833"
-  },
-  {
-    "id": "icafilms20250907T192000000Z",
-    "filmTitle": "Young Mothers",
-    "cinema": "ica",
-    "screeningStart": "2025-09-07T19:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 357458,
-    "releaseDate": "2015-04-30",
-    "synopsis": "Father, son and even grandson, are all mesmerized by this 29-year-old sexy mom.  Yong-tae is a dying cancer patient whose wife passed away. Seong-min is a nuisance of a son who is of no use. Yeong-chan is Yong-tae’s grandson who is addicted to porn.  A sexy mom comes into the lives of these three men one day. Jin-hee brings positive feelings into the house and prescribes her personal methods of treatment for the three men. Who will get it on with mom?",
-    "genres": [
-      "Comedy",
-      "Romance"
-    ],
-    "director": "Kim Jong-il"
-  },
-  {
-    "id": "icafilms20250909T111000000Z",
-    "filmTitle": "Sex",
-    "cinema": "ica",
-    "screeningStart": "2025-09-09T11:10:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 547205,
-    "releaseDate": "2003-12-04",
-    "genres": [
-      "Science Fiction"
-    ],
-    "director": "Antonio Dyaz",
-    "imdbId": "tt0435370"
-  },
-  {
-    "id": "icafilms20250909T124500000Z",
-    "filmTitle": "Afternoons of Solitude",
-    "cinema": "ica",
-    "screeningStart": "2025-09-09T12:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 975324,
-    "releaseDate": "2025-03-07",
-    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Albert Serra",
-    "imdbId": "tt26245982"
-  },
-  {
-    "id": "icafilms20250909T173000000Z",
-    "filmTitle": "Afternoons of Solitude",
-    "cinema": "ica",
-    "screeningStart": "2025-09-09T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 975324,
-    "releaseDate": "2025-03-07",
-    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Albert Serra",
-    "imdbId": "tt26245982"
-  },
-  {
-    "id": "icafilms20250909T133000000Z",
-    "filmTitle": "In The Nguyen Kitchen",
-    "cinema": "ica",
-    "screeningStart": "2025-09-09T13:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1001248,
-    "releaseDate": "2025-03-05",
-    "synopsis": "French-Vietnamese actress Yvonne Nguyen dreams of a successful career in musicals, to the great displeasure of her mother, who would like her to pursue a more serious path. When Yvonne has no choice but to move back home, both women are strangers to each other. But in the intimacy of the Vietnamese family restaurant’s kitchen, they grow closer. Meanwhile, Yvonne is still after her dreams and finally gets the chance to audition for a big show.",
-    "genres": [
-      "Comedy",
-      "Music"
-    ],
-    "director": "Stéphane Ly-Cuong",
-    "imdbId": "tt31047957"
-  },
-  {
-    "id": "icafilms20250909T151500000Z",
-    "filmTitle": "Put Your Soul on Your Hand and Walk",
-    "cinema": "ica",
-    "screeningStart": "2025-09-09T15:15:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1465560,
-    "releaseDate": "2025-08-22",
-    "synopsis": "An Iranian filmmaker participates in a series of video calls with a young Palestinian photojournalist who describes her life confined in Gaza during the current regional conflict.",
-    "genres": [
-      "Documentary",
-      "Drama",
-      "War"
-    ],
-    "director": "Sepideh Farsi",
-    "imdbId": "tt36598711"
-  },
-  {
-    "id": "icafilms20250909T153000000Z",
-    "filmTitle": "Little Trouble Girls",
-    "cinema": "ica",
-    "screeningStart": "2025-09-09T15:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1019871,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Introverted 16-year-old Lucia joins her Catholic school's all-girls choir, where she befriends Ana-Maria, a popular and flirty third-year student. But when the choir travels to a countryside convent for a weekend of intensive rehearsals, Lucia’s interest in a dark-eyed restoration worker tests her friendship with Ana-Maria and the other girls. As she navigates unfamiliar surroundings and her budding sexuality, Lucia begins to question her beliefs and values, disrupting the harmony within the choir.",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "director": "Urška Djukić",
-    "imdbId": "tt28834646"
-  },
-  {
-    "id": "icafilms20250909T194000000Z",
-    "filmTitle": "Young Mothers",
-    "cinema": "ica",
-    "screeningStart": "2025-09-09T19:40:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 357458,
-    "releaseDate": "2015-04-30",
-    "synopsis": "Father, son and even grandson, are all mesmerized by this 29-year-old sexy mom.  Yong-tae is a dying cancer patient whose wife passed away. Seong-min is a nuisance of a son who is of no use. Yeong-chan is Yong-tae’s grandson who is addicted to porn.  A sexy mom comes into the lives of these three men one day. Jin-hee brings positive feelings into the house and prescribes her personal methods of treatment for the three men. Who will get it on with mom?",
-    "genres": [
-      "Comedy",
-      "Romance"
-    ],
-    "director": "Kim Jong-il"
-  },
-  {
-    "id": "icafilms20250909T195000000Z",
-    "filmTitle": "Mother Vera",
-    "cinema": "ica",
-    "screeningStart": "2025-09-09T19:50:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 639908,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Shot in black and white in a lyrical, documentary style, Vera takes us from the hidden, religious world of the Belarusian convent to rural farmland, where men and women facing personal and social difficulties live and work. It is here that Vera expresses her deep connection with the horses that she looks after as part of her obedience (religious duty). The film is narrated by Vera as she tells her story of finding faith as a young woman and the impact it has had on her emotionally and spiritually.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Alys Tomlinson",
-    "imdbId": "tt32123163"
-  },
-  {
-    "id": "icafilms20250910T110000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T11:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "director": "Eva Victor",
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "icafilms20250910T123000000Z",
-    "filmTitle": "Measures for a Funeral",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T12:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1313637,
-    "releaseDate": "2024-09-07",
-    "synopsis": "Follows a young woman named Audrey Benac on a research odyssey of ghostly possession in which she endeavours to restore the legacy of the forgotten Canadian violinist Kathleen Parlow.",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Sofia Bohdanowicz",
-    "imdbId": "tt33077335"
-  },
-  {
-    "id": "icafilms20250910T130000000Z",
-    "filmTitle": "Afternoons of Solitude",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T13:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 975324,
-    "releaseDate": "2025-03-07",
-    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Albert Serra",
-    "imdbId": "tt26245982"
-  },
-  {
-    "id": "icafilms20250910T193000000Z",
-    "filmTitle": "Afternoons of Solitude",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T19:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 975324,
-    "releaseDate": "2025-03-07",
-    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Albert Serra",
-    "imdbId": "tt26245982"
-  },
-  {
-    "id": "icafilms20250910T152000000Z",
-    "filmTitle": "Young Mothers",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T15:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 357458,
-    "releaseDate": "2015-04-30",
-    "synopsis": "Father, son and even grandson, are all mesmerized by this 29-year-old sexy mom.  Yong-tae is a dying cancer patient whose wife passed away. Seong-min is a nuisance of a son who is of no use. Yeong-chan is Yong-tae’s grandson who is addicted to porn.  A sexy mom comes into the lives of these three men one day. Jin-hee brings positive feelings into the house and prescribes her personal methods of treatment for the three men. Who will get it on with mom?",
-    "genres": [
-      "Comedy",
-      "Romance"
-    ],
-    "director": "Kim Jong-il"
-  },
-  {
-    "id": "icafilms20250910T153000000Z",
-    "filmTitle": "Mother Vera",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T15:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 639908,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Shot in black and white in a lyrical, documentary style, Vera takes us from the hidden, religious world of the Belarusian convent to rural farmland, where men and women facing personal and social difficulties live and work. It is here that Vera expresses her deep connection with the horses that she looks after as part of her obedience (religious duty). The film is narrated by Vera as she tells her story of finding faith as a young woman and the impact it has had on her emotionally and spiritually.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Alys Tomlinson",
-    "imdbId": "tt32123163"
-  },
-  {
-    "id": "icafilms20250910T172000000Z",
-    "filmTitle": "Sex",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T17:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 547205,
-    "releaseDate": "2003-12-04",
-    "genres": [
-      "Science Fiction"
-    ],
-    "director": "Antonio Dyaz",
-    "imdbId": "tt0435370"
-  },
-  {
-    "id": "icafilms20250910T173000000Z",
-    "filmTitle": "Sanatorium",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1137514,
-    "releaseDate": "2023-01-12",
-    "synopsis": "Jethro is a young man happily speeding through his youth, but when his reality starts to literally fall apart around him, he has to make a hard decision that'll affect the time he has left.",
-    "genres": [
-      "Science Fiction",
-      "Drama"
-    ],
-    "director": "Davis Kersey",
-    "imdbId": "tt26699833"
-  },
-  {
-    "id": "icafilms20250910T194000000Z",
-    "filmTitle": "Viêt and Nam",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T19:40:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 846586,
-    "releaseDate": "2024-09-25",
-    "synopsis": "In the depths of the underground coal mines, where danger awaits and darkness prevails, Nam and Việt, both young miners, cherish fleeting moments, knowing that one of them will soon leave for a new life across the sea.",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Trương Minh Quý",
-    "imdbId": "tt32086052"
-  },
-  {
-    "id": "icafilms20250911T110500000Z",
+    "id": "icaafternoonsofsolitude20250911T110500000Z",
     "filmTitle": "Afternoons of Solitude",
     "cinema": "ica",
     "screeningStart": "2025-09-11T11:05:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/afternoons-of-solitude",
     "tmdbId": 975324,
     "releaseDate": "2025-03-07",
     "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
@@ -11829,11 +11285,11 @@
     "imdbId": "tt26245982"
   },
   {
-    "id": "icafilms20250911T173000000Z",
+    "id": "icaafternoonsofsolitude20250911T173000000Z",
     "filmTitle": "Afternoons of Solitude",
     "cinema": "ica",
     "screeningStart": "2025-09-11T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/afternoons-of-solitude",
     "tmdbId": 975324,
     "releaseDate": "2025-03-07",
     "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
@@ -11844,11 +11300,11 @@
     "imdbId": "tt26245982"
   },
   {
-    "id": "icafilms20250911T133500000Z",
+    "id": "icayoungmothers20250911T133500000Z",
     "filmTitle": "Young Mothers",
     "cinema": "ica",
     "screeningStart": "2025-09-11T13:35:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/young-mothers",
     "tmdbId": 357458,
     "releaseDate": "2015-04-30",
     "synopsis": "Father, son and even grandson, are all mesmerized by this 29-year-old sexy mom.  Yong-tae is a dying cancer patient whose wife passed away. Seong-min is a nuisance of a son who is of no use. Yeong-chan is Yong-tae’s grandson who is addicted to porn.  A sexy mom comes into the lives of these three men one day. Jin-hee brings positive feelings into the house and prescribes her personal methods of treatment for the three men. Who will get it on with mom?",
@@ -11859,11 +11315,11 @@
     "director": "Kim Jong-il"
   },
   {
-    "id": "icafilms20250911T150000000Z",
+    "id": "icalittletroublegirls20250911T150000000Z",
     "filmTitle": "Little Trouble Girls",
     "cinema": "ica",
     "screeningStart": "2025-09-11T15:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/little-trouble-girls",
     "tmdbId": 1019871,
     "releaseDate": "2025-08-29",
     "synopsis": "Introverted 16-year-old Lucia joins her Catholic school's all-girls choir, where she befriends Ana-Maria, a popular and flirty third-year student. But when the choir travels to a countryside convent for a weekend of intensive rehearsals, Lucia’s interest in a dark-eyed restoration worker tests her friendship with Ana-Maria and the other girls. As she navigates unfamiliar surroundings and her budding sexuality, Lucia begins to question her beliefs and values, disrupting the harmony within the choir.",
@@ -11875,11 +11331,11 @@
     "imdbId": "tt28834646"
   },
   {
-    "id": "icafilms20250911T154000000Z",
+    "id": "icasanatorium20250911T154000000Z",
     "filmTitle": "Sanatorium",
     "cinema": "ica",
     "screeningStart": "2025-09-11T15:40:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/sanatorium",
     "tmdbId": 1137514,
     "releaseDate": "2023-01-12",
     "synopsis": "Jethro is a young man happily speeding through his youth, but when his reality starts to literally fall apart around him, he has to make a hard decision that'll affect the time he has left.",
@@ -11891,25 +11347,25 @@
     "imdbId": "tt26699833"
   },
   {
-    "id": "icafilms20250911T170000000Z",
+    "id": "icashortfilmsofthepuertoricanfilmunit20250911T170000000Z",
     "filmTitle": "The Short Films of the Puerto Rican film unit + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-11T17:00:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/short-films-of-the-puerto-rican-film-unit"
   },
   {
-    "id": "icafilms20250911T193000000Z",
+    "id": "icalifeonvenus20250911T193000000Z",
     "filmTitle": "Life on Venus",
     "cinema": "ica",
     "screeningStart": "2025-09-11T19:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/life-on-venus"
   },
   {
-    "id": "icafilms20250911T195000000Z",
+    "id": "icaputyoursoulonyourhandandwalk20250911T195000000Z",
     "filmTitle": "Put Your Soul on Your Hand and Walk",
     "cinema": "ica",
     "screeningStart": "2025-09-11T19:50:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/put-your-soul-on-your-hand-and-walk",
     "tmdbId": 1465560,
     "releaseDate": "2025-08-22",
     "synopsis": "An Iranian filmmaker participates in a series of video calls with a young Palestinian photojournalist who describes her life confined in Gaza during the current regional conflict.",
@@ -11922,11 +11378,11 @@
     "imdbId": "tt36598711"
   },
   {
-    "id": "icafilms20250912T130000000Z",
+    "id": "icadeaf20250912T130000000Z",
     "filmTitle": "Deaf",
     "cinema": "ica",
     "screeningStart": "2025-09-12T13:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/deaf",
     "tmdbId": 114426,
     "releaseDate": "1986-12-02",
     "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
@@ -11937,11 +11393,11 @@
     "imdbId": "tt0090918"
   },
   {
-    "id": "icafilms20250912T154500000Z",
+    "id": "icadeaf20250912T154500000Z",
     "filmTitle": "Deaf",
     "cinema": "ica",
     "screeningStart": "2025-09-12T15:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/deaf",
     "tmdbId": 114426,
     "releaseDate": "1986-12-02",
     "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
@@ -11952,11 +11408,11 @@
     "imdbId": "tt0090918"
   },
   {
-    "id": "icafilms20250912T132000000Z",
+    "id": "icaafternoonsofsolitude20250912T132000000Z",
     "filmTitle": "Afternoons of Solitude",
     "cinema": "ica",
     "screeningStart": "2025-09-12T13:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/afternoons-of-solitude",
     "tmdbId": 975324,
     "releaseDate": "2025-03-07",
     "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
@@ -11967,11 +11423,11 @@
     "imdbId": "tt26245982"
   },
   {
-    "id": "icafilms20250912T150000000Z",
+    "id": "icaislands20250912T150000000Z",
     "filmTitle": "Islands",
     "cinema": "ica",
     "screeningStart": "2025-09-12T15:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/islands",
     "tmdbId": 1128547,
     "releaseDate": "2025-05-08",
     "synopsis": "Tom is the tennis coach at a luxurious island hotel, filling the time between lessons with alcohol and one-night stands. The arrival of the Maguire family pulls Tom out of his normal routine and he strikes up a relationship with Anne, her husband Dave, and their son Anton. Tom is unable to shake the feeling that he has met Anne before. This tension grows until one night, Dave goes missing and the investigation points to both Anne and Tom as suspects.",
@@ -11983,18 +11439,18 @@
     "imdbId": "tt27796126"
   },
   {
-    "id": "icafilms20250912T173000000Z",
+    "id": "icaistayedinberlinallsummer20250912T173000000Z",
     "filmTitle": "Opening Night I Stayed in Berlin All Summer + Shorts",
     "cinema": "ica",
     "screeningStart": "2025-09-12T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/i-stayed-in-berlin-all-summer"
   },
   {
-    "id": "icafilms20250912T174500000Z",
+    "id": "icatodopareciaposible20250912T174500000Z",
     "filmTitle": "Todo parecía posible (Everything Seemed Possible)",
     "cinema": "ica",
     "screeningStart": "2025-09-12T17:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/todo-parecia-posible",
     "tmdbId": 1408259,
     "releaseDate": "2025-01-31",
     "synopsis": "Ramón Rivera Moret remembers Puerto Rico at a utopian moment through the films produced in rural communities in the 1950s and 60s by the Film Unit of the Division of Community Education alongside stories from his own family.",
@@ -12004,11 +11460,11 @@
     "director": "Ramón Rivera Moret"
   },
   {
-    "id": "icafilms20250912T194500000Z",
+    "id": "icafromgroundzero20250912T194500000Z",
     "filmTitle": "From Ground Zero",
     "cinema": "ica",
     "screeningStart": "2025-09-12T19:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/from-ground-zero",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -12021,11 +11477,11 @@
     "imdbId": "tt32606918"
   },
   {
-    "id": "icafilms20250913T131500000Z",
+    "id": "icadeaf20250913T131500000Z",
     "filmTitle": "Deaf",
     "cinema": "ica",
     "screeningStart": "2025-09-13T13:15:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/deaf",
     "tmdbId": 114426,
     "releaseDate": "1986-12-02",
     "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
@@ -12036,11 +11492,11 @@
     "imdbId": "tt0090918"
   },
   {
-    "id": "icafilms20250913T175000000Z",
+    "id": "icadeaf20250913T175000000Z",
     "filmTitle": "Deaf",
     "cinema": "ica",
     "screeningStart": "2025-09-13T17:50:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/deaf",
     "tmdbId": 114426,
     "releaseDate": "1986-12-02",
     "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
@@ -12051,11 +11507,11 @@
     "imdbId": "tt0090918"
   },
   {
-    "id": "icafilms20250913T132000000Z",
+    "id": "icaafternoonsofsolitude20250913T132000000Z",
     "filmTitle": "Afternoons of Solitude",
     "cinema": "ica",
     "screeningStart": "2025-09-13T13:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/afternoons-of-solitude",
     "tmdbId": 975324,
     "releaseDate": "2025-03-07",
     "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
@@ -12066,11 +11522,11 @@
     "imdbId": "tt26245982"
   },
   {
-    "id": "icafilms20250913T151500000Z",
+    "id": "icamysistersgoodfortune20250913T151500000Z",
     "filmTitle": "My Sister's Good Fortune",
     "cinema": "ica",
     "screeningStart": "2025-09-13T15:15:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/my-sisters-good-fortune",
     "tmdbId": 376844,
     "releaseDate": "1995-10-13",
     "synopsis": "A young photographer has fallen in love with his girlfriend's sister. Nobody knows quite what to do. A stylish variation on the problems of triolism made with striking stability of style and a great feeling for mise-en-scène.",
@@ -12081,11 +11537,11 @@
     "imdbId": "tt0113183"
   },
   {
-    "id": "icafilms20250913T154500000Z",
+    "id": "icatodopareciaposible20250913T154500000Z",
     "filmTitle": "Todo parecía posible (Everything Seemed Possible)",
     "cinema": "ica",
     "screeningStart": "2025-09-13T15:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/todo-parecia-posible",
     "tmdbId": 1408259,
     "releaseDate": "2025-01-31",
     "synopsis": "Ramón Rivera Moret remembers Puerto Rico at a utopian moment through the films produced in rural communities in the 1950s and 60s by the Film Unit of the Division of Community Education alongside stories from his own family.",
@@ -12095,18 +11551,18 @@
     "director": "Ramón Rivera Moret"
   },
   {
-    "id": "icafilms20250913T173000000Z",
+    "id": "icahkffshortsprogrammeqa20250913T173000000Z",
     "filmTitle": "Shorts Programme: Afterimage + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-13T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/hkff-shorts-programme-q-a"
   },
   {
-    "id": "icafilms20250913T195000000Z",
+    "id": "icaislands20250913T195000000Z",
     "filmTitle": "Islands",
     "cinema": "ica",
     "screeningStart": "2025-09-13T19:50:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/islands",
     "tmdbId": 1128547,
     "releaseDate": "2025-05-08",
     "synopsis": "Tom is the tennis coach at a luxurious island hotel, filling the time between lessons with alcohol and one-night stands. The arrival of the Maguire family pulls Tom out of his normal routine and he strikes up a relationship with Anne, her husband Dave, and their son Anton. Tom is unable to shake the feeling that he has met Anne before. This tension grows until one night, Dave goes missing and the investigation points to both Anne and Tom as suspects.",
@@ -12118,11 +11574,11 @@
     "imdbId": "tt27796126"
   },
   {
-    "id": "icafilms20250913T201500000Z",
+    "id": "icafromgroundzero20250913T201500000Z",
     "filmTitle": "From Ground Zero",
     "cinema": "ica",
     "screeningStart": "2025-09-13T20:15:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/from-ground-zero",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -12135,11 +11591,11 @@
     "imdbId": "tt32606918"
   },
   {
-    "id": "icafilms20250914T112000000Z",
+    "id": "icadeaf20250914T112000000Z",
     "filmTitle": "Deaf",
     "cinema": "ica",
     "screeningStart": "2025-09-14T11:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/deaf",
     "tmdbId": 114426,
     "releaseDate": "1986-12-02",
     "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
@@ -12150,11 +11606,11 @@
     "imdbId": "tt0090918"
   },
   {
-    "id": "icafilms20250914T175000000Z",
+    "id": "icadeaf20250914T175000000Z",
     "filmTitle": "Deaf",
     "cinema": "ica",
     "screeningStart": "2025-09-14T17:50:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/deaf",
     "tmdbId": 114426,
     "releaseDate": "1986-12-02",
     "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
@@ -12165,11 +11621,11 @@
     "imdbId": "tt0090918"
   },
   {
-    "id": "icafilms20250914T124500000Z",
+    "id": "icaschanelechailmary20250914T124500000Z",
     "filmTitle": "Hail Mary",
     "cinema": "ica",
     "screeningStart": "2025-09-14T12:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/schanelec-hail-mary",
     "tmdbId": 1182440,
     "releaseDate": "2023-10-09",
     "synopsis": "Mary, a devout Christian, goes to church to confess and talk to her parish priest. Mary tells him that her daughter has adopted a child, and they intend to baptize him. The priest, delighted, agrees to baptize the child until he discovers the sexual orientation of the child's mother: that she is a lesbian. From that moment on, the pastor will refuse to officiate the baptism and instead begins a discussion with his parishioner.",
@@ -12177,11 +11633,11 @@
     "director": "Marc M Díaz"
   },
   {
-    "id": "icafilms20250914T132000000Z",
+    "id": "icaafternoonsofsolitude20250914T132000000Z",
     "filmTitle": "Afternoons of Solitude",
     "cinema": "ica",
     "screeningStart": "2025-09-14T13:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/afternoons-of-solitude",
     "tmdbId": 975324,
     "releaseDate": "2025-03-07",
     "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
@@ -12192,11 +11648,11 @@
     "imdbId": "tt26245982"
   },
   {
-    "id": "icafilms20250914T143000000Z",
+    "id": "icaschanelecplacesinthecities20250914T143000000Z",
     "filmTitle": "Places in Cities",
     "cinema": "ica",
     "screeningStart": "2025-09-14T14:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/schanelec-places-in-the-cities",
     "tmdbId": 110380,
     "releaseDate": "1998-09-28",
     "synopsis": "Mimmi is a very lonely girl, not knowing what to do with her life. On the search for friends and boyfriends, she wanders around alone in different cities.",
@@ -12207,11 +11663,11 @@
     "imdbId": "tt0156465"
   },
   {
-    "id": "icafilms20250914T154500000Z",
+    "id": "icatodopareciaposible20250914T154500000Z",
     "filmTitle": "Todo parecía posible (Everything Seemed Possible)",
     "cinema": "ica",
     "screeningStart": "2025-09-14T15:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/todo-parecia-posible",
     "tmdbId": 1408259,
     "releaseDate": "2025-01-31",
     "synopsis": "Ramón Rivera Moret remembers Puerto Rico at a utopian moment through the films produced in rural communities in the 1950s and 60s by the Film Unit of the Division of Community Education alongside stories from his own family.",
@@ -12221,18 +11677,18 @@
     "director": "Ramón Rivera Moret"
   },
   {
-    "id": "icafilms20250914T173000000Z",
+    "id": "icafilmsfromuksstudentsencampmentsqa20250914T173000000Z",
     "filmTitle": "Films from UK's students encampments + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-14T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/films-from-uk-s-students-encampments-q-a"
   },
   {
-    "id": "icafilms20250914T194500000Z",
+    "id": "icafromgroundzero20250914T194500000Z",
     "filmTitle": "From Ground Zero",
     "cinema": "ica",
     "screeningStart": "2025-09-14T19:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/from-ground-zero",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -12245,11 +11701,11 @@
     "imdbId": "tt32606918"
   },
   {
-    "id": "icafilms20250914T195000000Z",
+    "id": "icaislands20250914T195000000Z",
     "filmTitle": "Islands",
     "cinema": "ica",
     "screeningStart": "2025-09-14T19:50:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/islands",
     "tmdbId": 1128547,
     "releaseDate": "2025-05-08",
     "synopsis": "Tom is the tennis coach at a luxurious island hotel, filling the time between lessons with alcohol and one-night stands. The arrival of the Maguire family pulls Tom out of his normal routine and he strikes up a relationship with Anne, her husband Dave, and their son Anton. Tom is unable to shake the feeling that he has met Anne before. This tension grows until one night, Dave goes missing and the investigation points to both Anne and Tom as suspects.",
@@ -12261,11 +11717,11 @@
     "imdbId": "tt27796126"
   },
   {
-    "id": "icafilms20250916T110000000Z",
+    "id": "icadeaf20250916T110000000Z",
     "filmTitle": "Deaf",
     "cinema": "ica",
     "screeningStart": "2025-09-16T11:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/deaf",
     "tmdbId": 114426,
     "releaseDate": "1986-12-02",
     "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
@@ -12276,11 +11732,11 @@
     "imdbId": "tt0090918"
   },
   {
-    "id": "icafilms20250916T152000000Z",
+    "id": "icadeaf20250916T152000000Z",
     "filmTitle": "Deaf",
     "cinema": "ica",
     "screeningStart": "2025-09-16T15:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/deaf",
     "tmdbId": 114426,
     "releaseDate": "1986-12-02",
     "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
@@ -12291,11 +11747,11 @@
     "imdbId": "tt0090918"
   },
   {
-    "id": "icafilms20250916T130000000Z",
+    "id": "icaafternoonsofsolitude20250916T130000000Z",
     "filmTitle": "Afternoons of Solitude",
     "cinema": "ica",
     "screeningStart": "2025-09-16T13:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/afternoons-of-solitude",
     "tmdbId": 975324,
     "releaseDate": "2025-03-07",
     "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
@@ -12306,11 +11762,11 @@
     "imdbId": "tt26245982"
   },
   {
-    "id": "icafilms20250916T150500000Z",
+    "id": "icaislands20250916T150500000Z",
     "filmTitle": "Islands",
     "cinema": "ica",
     "screeningStart": "2025-09-16T15:05:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/islands",
     "tmdbId": 1128547,
     "releaseDate": "2025-05-08",
     "synopsis": "Tom is the tennis coach at a luxurious island hotel, filling the time between lessons with alcohol and one-night stands. The arrival of the Maguire family pulls Tom out of his normal routine and he strikes up a relationship with Anne, her husband Dave, and their son Anton. Tom is unable to shake the feeling that he has met Anne before. This tension grows until one night, Dave goes missing and the investigation points to both Anne and Tom as suspects.",
@@ -12322,11 +11778,11 @@
     "imdbId": "tt27796126"
   },
   {
-    "id": "icafilms20250916T173000000Z",
+    "id": "icatodopareciaposible20250916T173000000Z",
     "filmTitle": "Todo parecía posible (Everything Seemed Possible)",
     "cinema": "ica",
     "screeningStart": "2025-09-16T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/todo-parecia-posible",
     "tmdbId": 1408259,
     "releaseDate": "2025-01-31",
     "synopsis": "Ramón Rivera Moret remembers Puerto Rico at a utopian moment through the films produced in rural communities in the 1950s and 60s by the Film Unit of the Division of Community Education alongside stories from his own family.",
@@ -12336,11 +11792,18 @@
     "director": "Ramón Rivera Moret"
   },
   {
-    "id": "icafilms20250916T194000000Z",
+    "id": "icatmtkbpfallinglessonsillusions20250916T173000000Z",
+    "filmTitle": "The Machine That Kills Bad People: Falling Lessons on 16mm + Illusions",
+    "cinema": "ica",
+    "screeningStart": "2025-09-16T17:30:00.000Z",
+    "bookingUrl": "https://ica.art/films/tmtkbp-falling-lessons-illusions"
+  },
+  {
+    "id": "icamysistersgoodfortune20250916T194000000Z",
     "filmTitle": "My Sister's Good Fortune",
     "cinema": "ica",
     "screeningStart": "2025-09-16T19:40:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/my-sisters-good-fortune",
     "tmdbId": 376844,
     "releaseDate": "1995-10-13",
     "synopsis": "A young photographer has fallen in love with his girlfriend's sister. Nobody knows quite what to do. A stylish variation on the problems of triolism made with striking stability of style and a great feeling for mise-en-scène.",
@@ -12351,11 +11814,11 @@
     "imdbId": "tt0113183"
   },
   {
-    "id": "icafilms20250916T194500000Z",
+    "id": "icafromgroundzero20250916T194500000Z",
     "filmTitle": "From Ground Zero",
     "cinema": "ica",
     "screeningStart": "2025-09-16T19:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/from-ground-zero",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -12368,11 +11831,11 @@
     "imdbId": "tt32606918"
   },
   {
-    "id": "icafilms20250917T110500000Z",
+    "id": "icadeaf20250917T110500000Z",
     "filmTitle": "Deaf",
     "cinema": "ica",
     "screeningStart": "2025-09-17T11:05:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/deaf",
     "tmdbId": 114426,
     "releaseDate": "1986-12-02",
     "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
@@ -12383,11 +11846,11 @@
     "imdbId": "tt0090918"
   },
   {
-    "id": "icafilms20250917T153000000Z",
+    "id": "icadeaf20250917T153000000Z",
     "filmTitle": "Deaf",
     "cinema": "ica",
     "screeningStart": "2025-09-17T15:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/deaf",
     "tmdbId": 114426,
     "releaseDate": "1986-12-02",
     "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
@@ -12398,11 +11861,11 @@
     "imdbId": "tt0090918"
   },
   {
-    "id": "icafilms20250917T124500000Z",
+    "id": "icaafternoonsofsolitude20250917T124500000Z",
     "filmTitle": "Afternoons of Solitude",
     "cinema": "ica",
     "screeningStart": "2025-09-17T12:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/afternoons-of-solitude",
     "tmdbId": 975324,
     "releaseDate": "2025-03-07",
     "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
@@ -12413,11 +11876,11 @@
     "imdbId": "tt26245982"
   },
   {
-    "id": "icafilms20250917T130500000Z",
+    "id": "icaislands20250917T130500000Z",
     "filmTitle": "Islands",
     "cinema": "ica",
     "screeningStart": "2025-09-17T13:05:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/islands",
     "tmdbId": 1128547,
     "releaseDate": "2025-05-08",
     "synopsis": "Tom is the tennis coach at a luxurious island hotel, filling the time between lessons with alcohol and one-night stands. The arrival of the Maguire family pulls Tom out of his normal routine and he strikes up a relationship with Anne, her husband Dave, and their son Anton. Tom is unable to shake the feeling that he has met Anne before. This tension grows until one night, Dave goes missing and the investigation points to both Anne and Tom as suspects.",
@@ -12429,11 +11892,11 @@
     "imdbId": "tt27796126"
   },
   {
-    "id": "icafilms20250917T151000000Z",
+    "id": "icatodopareciaposible20250917T151000000Z",
     "filmTitle": "Todo parecía posible (Everything Seemed Possible)",
     "cinema": "ica",
     "screeningStart": "2025-09-17T15:10:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/todo-parecia-posible",
     "tmdbId": 1408259,
     "releaseDate": "2025-01-31",
     "synopsis": "Ramón Rivera Moret remembers Puerto Rico at a utopian moment through the films produced in rural communities in the 1950s and 60s by the Film Unit of the Division of Community Education alongside stories from his own family.",
@@ -12443,11 +11906,11 @@
     "director": "Ramón Rivera Moret"
   },
   {
-    "id": "icafilms20250917T173000000Z",
+    "id": "icaschanelecplacesinthecities20250917T173000000Z",
     "filmTitle": "Places in Cities",
     "cinema": "ica",
     "screeningStart": "2025-09-17T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/schanelec-places-in-the-cities",
     "tmdbId": 110380,
     "releaseDate": "1998-09-28",
     "synopsis": "Mimmi is a very lonely girl, not knowing what to do with her life. On the search for friends and boyfriends, she wanders around alone in different cities.",
@@ -12458,69 +11921,18 @@
     "imdbId": "tt0156465"
   },
   {
-    "id": "icafilms20250917T194500000Z",
+    "id": "icapreviewghosttrailqa20250917T194500000Z",
     "filmTitle": "Ghost Trail + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-17T19:45:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/preview-ghost-trail-q-a"
   },
   {
-    "id": "icafilms20250918T124500000Z",
-    "filmTitle": "Afternoons of Solitude",
-    "cinema": "ica",
-    "screeningStart": "2025-09-18T12:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 975324,
-    "releaseDate": "2025-03-07",
-    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Albert Serra",
-    "imdbId": "tt26245982"
-  },
-  {
-    "id": "icafilms20250918T151000000Z",
-    "filmTitle": "Todo parecía posible (Everything Seemed Possible)",
-    "cinema": "ica",
-    "screeningStart": "2025-09-18T15:10:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 1408259,
-    "releaseDate": "2025-01-31",
-    "synopsis": "Ramón Rivera Moret remembers Puerto Rico at a utopian moment through the films produced in rural communities in the 1950s and 60s by the Film Unit of the Division of Community Education alongside stories from his own family.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Ramón Rivera Moret"
-  },
-  {
-    "id": "icafilms20250918T194000000Z",
-    "filmTitle": "Deaf",
-    "cinema": "ica",
-    "screeningStart": "2025-09-18T19:40:00.000Z",
-    "bookingUrl": "https://ica.art/films",
-    "tmdbId": 114426,
-    "releaseDate": "1986-12-02",
-    "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Frederick Wiseman",
-    "imdbId": "tt0090918"
-  },
-  {
-    "id": "icafilms20250918T171500000Z",
-    "filmTitle": "Happyend + DJ set",
-    "cinema": "ica",
-    "screeningStart": "2025-09-18T17:15:00.000Z",
-    "bookingUrl": "https://ica.art/films"
-  },
-  {
-    "id": "icafilms20250918T173000000Z",
+    "id": "icafromgroundzero20250917T194500000Z",
     "filmTitle": "From Ground Zero",
     "cinema": "ica",
-    "screeningStart": "2025-09-18T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "screeningStart": "2025-09-17T19:45:00.000Z",
+    "bookingUrl": "https://ica.art/films/from-ground-zero",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -12533,11 +11945,110 @@
     "imdbId": "tt32606918"
   },
   {
-    "id": "icafilms20250918T193000000Z",
+    "id": "icaafternoonsofsolitude20250918T124500000Z",
+    "filmTitle": "Afternoons of Solitude",
+    "cinema": "ica",
+    "screeningStart": "2025-09-18T12:45:00.000Z",
+    "bookingUrl": "https://ica.art/films/afternoons-of-solitude",
+    "tmdbId": 975324,
+    "releaseDate": "2025-03-07",
+    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Albert Serra",
+    "imdbId": "tt26245982"
+  },
+  {
+    "id": "icaislands20250918T124500000Z",
+    "filmTitle": "Islands",
+    "cinema": "ica",
+    "screeningStart": "2025-09-18T12:45:00.000Z",
+    "bookingUrl": "https://ica.art/films/islands",
+    "tmdbId": 1128547,
+    "releaseDate": "2025-05-08",
+    "synopsis": "Tom is the tennis coach at a luxurious island hotel, filling the time between lessons with alcohol and one-night stands. The arrival of the Maguire family pulls Tom out of his normal routine and he strikes up a relationship with Anne, her husband Dave, and their son Anton. Tom is unable to shake the feeling that he has met Anne before. This tension grows until one night, Dave goes missing and the investigation points to both Anne and Tom as suspects.",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Jan Ole Gerster",
+    "imdbId": "tt27796126"
+  },
+  {
+    "id": "icatodopareciaposible20250918T151000000Z",
+    "filmTitle": "Todo parecía posible (Everything Seemed Possible)",
+    "cinema": "ica",
+    "screeningStart": "2025-09-18T15:10:00.000Z",
+    "bookingUrl": "https://ica.art/films/todo-parecia-posible",
+    "tmdbId": 1408259,
+    "releaseDate": "2025-01-31",
+    "synopsis": "Ramón Rivera Moret remembers Puerto Rico at a utopian moment through the films produced in rural communities in the 1950s and 60s by the Film Unit of the Division of Community Education alongside stories from his own family.",
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Ramón Rivera Moret"
+  },
+  {
+    "id": "icadeaf20250918T151000000Z",
+    "filmTitle": "Deaf",
+    "cinema": "ica",
+    "screeningStart": "2025-09-18T15:10:00.000Z",
+    "bookingUrl": "https://ica.art/films/deaf",
+    "tmdbId": 114426,
+    "releaseDate": "1986-12-02",
+    "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Frederick Wiseman",
+    "imdbId": "tt0090918"
+  },
+  {
+    "id": "icadeaf20250918T194000000Z",
+    "filmTitle": "Deaf",
+    "cinema": "ica",
+    "screeningStart": "2025-09-18T19:40:00.000Z",
+    "bookingUrl": "https://ica.art/films/deaf",
+    "tmdbId": 114426,
+    "releaseDate": "1986-12-02",
+    "synopsis": "The School for the Deaf at the Alabama Institute is organized around a theory of total communication i.e. the use of signs and finger spelling in conjunction with speech, hearing aids, lip reading, gestures and the written word. The film shows sequences dealing with various aspects of this comprehensive training such as teaching students and parents to sign; speech therapy; psychological counseling; regular academic courses; vocational training; disciplinary problems; parents visits; sports and recreational activity; training in living and working independently; and developing skills in home and money management.",
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Frederick Wiseman",
+    "imdbId": "tt0090918"
+  },
+  {
+    "id": "icapreviewhappyend20250918T171500000Z",
+    "filmTitle": "Happyend + DJ set",
+    "cinema": "ica",
+    "screeningStart": "2025-09-18T17:15:00.000Z",
+    "bookingUrl": "https://ica.art/films/preview-happyend"
+  },
+  {
+    "id": "icafromgroundzero20250918T173000000Z",
+    "filmTitle": "From Ground Zero",
+    "cinema": "ica",
+    "screeningStart": "2025-09-18T17:30:00.000Z",
+    "bookingUrl": "https://ica.art/films/from-ground-zero",
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918"
+  },
+  {
+    "id": "icapassingsummer20250918T193000000Z",
     "filmTitle": "Passing Summer",
     "cinema": "ica",
     "screeningStart": "2025-09-18T19:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/passing-summer",
     "tmdbId": 49942,
     "releaseDate": "2001-09-20",
     "synopsis": "A woman faces a variety of emotional crises as she spends the summer interacting in various ways with friends, family, and lovers.",
@@ -12548,25 +12059,25 @@
     "imdbId": "tt0280933"
   },
   {
-    "id": "icafilms20250919T173000000Z",
+    "id": "icafrankenbergaintnothinwithoutyou20250919T173000000Z",
     "filmTitle": "The Assault on 35mm + Ain't Nothin' Without You (4K Restoration) + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-19T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/frankenberg-aint-nothin-without-you"
   },
   {
-    "id": "icafilms20250920T112000000Z",
+    "id": "icatheysaythemoonisfullerhere20250920T112000000Z",
     "filmTitle": "They Say the Moon is Fuller Here + online Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-20T11:20:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/they-say-the-moon-is-fuller-here"
   },
   {
-    "id": "icafilms20250920T130000000Z",
+    "id": "icapassingsummer20250920T130000000Z",
     "filmTitle": "Passing Summer",
     "cinema": "ica",
     "screeningStart": "2025-09-20T13:00:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/passing-summer",
     "tmdbId": 49942,
     "releaseDate": "2001-09-20",
     "synopsis": "A woman faces a variety of emotional crises as she spends the summer interacting in various ways with friends, family, and lovers.",
@@ -12577,11 +12088,11 @@
     "imdbId": "tt0280933"
   },
   {
-    "id": "icafilms20250920T153000000Z",
+    "id": "icaschanelecwewontgrowoldtogether20250920T153000000Z",
     "filmTitle": "We Won't Grow Old Together",
     "cinema": "ica",
     "screeningStart": "2025-09-20T15:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/schanelec-we-wont-grow-old-together",
     "tmdbId": 63230,
     "releaseDate": "1972-05-03",
     "synopsis": "Jean, a married 40-year-old filmmaker, and his young working class lover, Catherine, engage in a circular series of spectacular blow-ups and tentative reunions, their mutual desire a fire that burns them again and again.",
@@ -12593,53 +12104,53 @@
     "imdbId": "tt0069027"
   },
   {
-    "id": "icafilms20250920T180000000Z",
+    "id": "icathegoddessof196720250920T180000000Z",
     "filmTitle": "The Goddess of 1967 (2K Restoration)",
     "cinema": "ica",
     "screeningStart": "2025-09-20T18:00:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/the-goddess-of-1967"
   },
   {
-    "id": "icafilms20250921T112000000Z",
+    "id": "icafarewellchina20250921T112000000Z",
     "filmTitle": "Farewell China + online Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-21T11:20:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/farewell-china"
   },
   {
-    "id": "icafilms20250921T154500000Z",
+    "id": "icamarseilleon35mm20250921T154500000Z",
     "filmTitle": "Marseille on 35mm",
     "cinema": "ica",
     "screeningStart": "2025-09-21T15:45:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/marseille-on-35mm"
   },
   {
-    "id": "icafilms20250921T173500000Z",
+    "id": "icafrankenbergburningbeds20250921T173500000Z",
     "filmTitle": "Burning Beds (4K Restoration)",
     "cinema": "ica",
     "screeningStart": "2025-09-21T17:35:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/frankenberg-burning-beds"
   },
   {
-    "id": "icafilms20250921T193000000Z",
+    "id": "icajukeboxfilmclubdoppelgangers320250921T193000000Z",
     "filmTitle": "Armenia City in the Sky: Doppelgängers3 + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-21T19:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/jukebox-film-club-doppelgangers3"
   },
   {
-    "id": "icafilms20250923T130000000Z",
+    "id": "icamarseilleon35mm20250923T130000000Z",
     "filmTitle": "Marseille on 35mm",
     "cinema": "ica",
     "screeningStart": "2025-09-23T13:00:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/marseille-on-35mm"
   },
   {
-    "id": "icafilms20250923T173000000Z",
+    "id": "icahkffqueerpanorama20250923T173000000Z",
     "filmTitle": "Queerpanorama",
     "cinema": "ica",
     "screeningStart": "2025-09-23T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/hkff-queerpanorama",
     "tmdbId": 999689,
     "releaseDate": "2025-11-26",
     "synopsis": "A gay man impersonates men he has had sex with and brings this new persona with him to his next hook-up. Only by pretending to be someone else can he be truly himself.",
@@ -12650,74 +12161,74 @@
     "imdbId": "tt35453155"
   },
   {
-    "id": "icafilms20250923T193000000Z",
+    "id": "icafrankenbergneversleepagain20250923T193000000Z",
     "filmTitle": "Longing for Something Completely Different (4K Restoration) + Never Sleep Again (4K Restoration)",
     "cinema": "ica",
     "screeningStart": "2025-09-23T19:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/frankenberg-never-sleep-again"
   },
   {
-    "id": "icafilms20250925T173000000Z",
+    "id": "icaafternoonon35mm20250925T173000000Z",
     "filmTitle": "Afternoon on 35mm",
     "cinema": "ica",
     "screeningStart": "2025-09-25T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/afternoon-on-35mm"
   },
   {
-    "id": "icafilms20250926T120000000Z",
+    "id": "icaafternoonon35mm20250926T120000000Z",
     "filmTitle": "Afternoon on 35mm",
     "cinema": "ica",
     "screeningStart": "2025-09-26T12:00:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/afternoon-on-35mm"
   },
   {
-    "id": "icafilms20250926T173000000Z",
+    "id": "icainvention20250926T173000000Z",
     "filmTitle": "London Premiere Invention + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-26T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/invention"
   },
   {
-    "id": "icafilms20250926T194500000Z",
+    "id": "icaanavazdepartingfrombrasiliacolonialismandglobalextractivism20250926T194500000Z",
     "filmTitle": "Departing from Brasília + Colonialism and Global Extractivism +Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-26T19:45:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/ana-vaz-departing-from-brasilia-colonialism-and-global-extractivism"
   },
   {
-    "id": "icafilms20250927T133000000Z",
+    "id": "icainvention20250927T133000000Z",
     "filmTitle": "London Premiere Invention + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-27T13:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/invention"
   },
   {
-    "id": "icafilms20250927T173000000Z",
+    "id": "icaanavazcinematicmethodologieshumannonhuman20250927T173000000Z",
     "filmTitle": "Cinematic Methodologies + Human/Nonhuman + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-27T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/ana-vaz-cinematic-methodologies-human-nonhuman"
   },
   {
-    "id": "icafilms20250928T130000000Z",
+    "id": "icaclaralawdriftingpetals20250928T130000000Z",
     "filmTitle": "Drifting Petals + online Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-28T13:00:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/clara-law-drifting-petals"
   },
   {
-    "id": "icafilms20250928T151500000Z",
+    "id": "icainvention20250928T151500000Z",
     "filmTitle": "London Premiere Invention + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-09-28T15:15:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/invention"
   },
   {
-    "id": "icafilms20250928T154500000Z",
+    "id": "icaschaneleclargent20250928T154500000Z",
     "filmTitle": "L'Argent",
     "cinema": "ica",
     "screeningStart": "2025-09-28T15:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/schanelec-l-argent",
     "tmdbId": 42112,
     "releaseDate": "1983-05-18",
     "synopsis": "A forged 500-franc note is passed from person to person and shop to shop, until it falls into the hands of a genuine innocent who doesn't see it for what it is—which will have devastating consequences on his life.",
@@ -12729,18 +12240,11 @@
     "imdbId": "tt0085180"
   },
   {
-    "id": "icafilms20250928T173000000Z",
-    "filmTitle": "Chinatown Cha-Cha + Q&A",
-    "cinema": "ica",
-    "screeningStart": "2025-09-28T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
-  },
-  {
-    "id": "icafilms20250930T154500000Z",
+    "id": "icaorly20250928T154500000Z",
     "filmTitle": "Orly",
     "cinema": "ica",
-    "screeningStart": "2025-09-30T15:45:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "screeningStart": "2025-09-28T15:45:00.000Z",
+    "bookingUrl": "https://ica.art/films/orly",
     "tmdbId": 84849,
     "releaseDate": "2010-06-01",
     "synopsis": "At the Paris airport Orly, a woman falls for a stranger, a family heads to a funeral, a couple lose touch, a wife reads her husband’s break-up letter. All wait for their planes. Absorbed in their immediate fates, they move through the impeccably structured space, unaware of a looming threat outside.",
@@ -12751,11 +12255,33 @@
     "imdbId": "tt1390415"
   },
   {
-    "id": "icafilms20250930T173000000Z",
+    "id": "icachinatownchachaqa20250928T173000000Z",
+    "filmTitle": "Chinatown Cha-Cha + Q&A",
+    "cinema": "ica",
+    "screeningStart": "2025-09-28T17:30:00.000Z",
+    "bookingUrl": "https://ica.art/films/chinatown-cha-cha-q-a"
+  },
+  {
+    "id": "icaorly20250930T154500000Z",
+    "filmTitle": "Orly",
+    "cinema": "ica",
+    "screeningStart": "2025-09-30T15:45:00.000Z",
+    "bookingUrl": "https://ica.art/films/orly",
+    "tmdbId": 84849,
+    "releaseDate": "2010-06-01",
+    "synopsis": "At the Paris airport Orly, a woman falls for a stranger, a family heads to a funeral, a couple lose touch, a wife reads her husband’s break-up letter. All wait for their planes. Absorbed in their immediate fates, they move through the impeccably structured space, unaware of a looming threat outside.",
+    "genres": [
+      "Drama"
+    ],
+    "director": "Angela Schanelec",
+    "imdbId": "tt1390415"
+  },
+  {
+    "id": "icaschanelecthedreamedpath20250930T173000000Z",
     "filmTitle": "The Dreamed Path",
     "cinema": "ica",
     "screeningStart": "2025-09-30T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/schanelec-the-dreamed-path",
     "tmdbId": 376312,
     "releaseDate": "2017-04-27",
     "synopsis": "Theres and Kenneth are both young when they first meet whilst on holiday. They fall in love but are unable to prevent themselves from losing each other. Thirty years later, in another country, another couple: Ariane leaves her husband David because she no longer loves him. The paths they both take lead them to Kenneth and Theres.",
@@ -12766,32 +12292,39 @@
     "imdbId": "tt5025550"
   },
   {
-    "id": "icafilms20251001T194000000Z",
+    "id": "icainvention20250930T173000000Z",
+    "filmTitle": "London Premiere Invention + Q&A",
+    "cinema": "ica",
+    "screeningStart": "2025-09-30T17:30:00.000Z",
+    "bookingUrl": "https://ica.art/films/invention"
+  },
+  {
+    "id": "icainvention20251001T194000000Z",
     "filmTitle": "London Premiere Invention + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-10-01T19:40:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/invention"
   },
   {
-    "id": "icafilms20251002T171500000Z",
+    "id": "icathelinewecrossedpaneldiscussion20251002T171500000Z",
     "filmTitle": "The Line We Crossed + panel discussion",
     "cinema": "ica",
     "screeningStart": "2025-10-02T17:15:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/the-line-we-crossed-panel-discussion"
   },
   {
-    "id": "icafilms20251002T173000000Z",
+    "id": "icainvention20251002T173000000Z",
     "filmTitle": "London Premiere Invention + Q&A",
     "cinema": "ica",
     "screeningStart": "2025-10-02T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/invention"
   },
   {
-    "id": "icafilms20251003T152000000Z",
+    "id": "icaurchin20251003T152000000Z",
     "filmTitle": "Urchin",
     "cinema": "ica",
     "screeningStart": "2025-10-03T15:20:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/urchin",
     "tmdbId": 1283320,
     "releaseDate": "2025-10-03",
     "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
@@ -12803,11 +12336,11 @@
     "imdbId": "tt35715953"
   },
   {
-    "id": "icafilms20251003T193000000Z",
+    "id": "icaurchin20251003T193000000Z",
     "filmTitle": "Urchin",
     "cinema": "ica",
     "screeningStart": "2025-10-03T19:30:00.000Z",
-    "bookingUrl": "https://ica.art/films",
+    "bookingUrl": "https://ica.art/films/urchin",
     "tmdbId": 1283320,
     "releaseDate": "2025-10-03",
     "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
@@ -12819,10 +12352,10 @@
     "imdbId": "tt35715953"
   },
   {
-    "id": "icafilms20251003T173000000Z",
+    "id": "icaangelaschanelecinconversation20251003T173000000Z",
     "filmTitle": "Angela Schanelec in Conversation",
     "cinema": "ica",
     "screeningStart": "2025-10-03T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films"
+    "bookingUrl": "https://ica.art/films/angela-schanelec-in-conversation"
   }
 ]

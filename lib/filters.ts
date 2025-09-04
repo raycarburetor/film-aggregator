@@ -27,6 +27,7 @@ export function filterByTimeWindow(items: Screening[], window: 'today'|'week'|'m
   }
   return items.filter(i => {
     const t = new Date(i.screeningStart)
+    if (isNaN(t.getTime())) return false
     return t >= start && t < end
   })
 }

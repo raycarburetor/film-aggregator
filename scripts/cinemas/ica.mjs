@@ -65,8 +65,9 @@ export async function fetchICA() {
             if (dateText) currentDate = parseDateHeader(dateText)
           }
           if (el.classList?.contains('item') && el.classList?.contains('films')) {
-            const a = el.querySelector('a[href]')
-            const href = a?.getAttribute('href') || ''
+            // Prefer detail links under /films/<slug>
+            const linkEl = el.querySelector('a[href^="/films/"]') || el.querySelector('a[href*="/films/"]') || el.querySelector('a[href]')
+            const href = linkEl?.getAttribute('href') || ''
             const titleEls = Array.from(el.querySelectorAll('.title-container .title'))
             // Prefer a non-season title if present
             const mainTitleEl = titleEls.reverse().find(t => !t.classList.contains('season-item')) || titleEls[0]
@@ -87,7 +88,12 @@ export async function fetchICA() {
               const dstr = `${baseDate.toDateString()} ${t}`
               const when = new Date(dstr)
               if (isNaN(when)) continue
-              out.push({ url: new URL(href, location.origin).toString(), title, start: when.toISOString() })
+              // Canonicalise booking URL: drop query/hash and trailing slash
+              const u = new URL(href, location.origin)
+              u.hash = ''
+              u.search = ''
+              u.pathname = u.pathname.replace(/\/+$/, '')
+              out.push({ url: u.origin + u.pathname, title, start: when.toISOString() })
             }
           }
         }

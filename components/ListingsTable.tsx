@@ -50,15 +50,15 @@ export default function ListingsTable({ items }: { items: Item[] }) {
   const [open, setOpen] = useState<Record<string, boolean>>({})
   return (
     <div className="overflow-x-auto rounded-xl border">
-      <table className="w-full text-left text-sm">
+      <table className="w-full table-fixed text-left text-sm">
         <thead className="bg-gray-50">
           <tr>
-            <th className="px-3 py-2">Film</th>
-            <th className="px-3 py-2">Release</th>
-            <th className="px-3 py-2">Cinema</th>
-            <th className="px-3 py-2">Date</th>
-            <th className="px-3 py-2">Time</th>
-            <th className="px-3 py-2">Rotten Tomatoes</th>
+            <th className="px-3 py-2 w-[32%]">Film</th>
+            <th className="px-3 py-2 w-[8%]">Release</th>
+            <th className="px-3 py-2 w-[16%]">Cinema</th>
+            <th className="px-3 py-2 w-[13%]">Date</th>
+            <th className="px-3 py-2 w-[10%]">Time</th>
+            <th className="px-3 py-2 w-[14%] whitespace-nowrap">Rotten Tomatoes</th>
           </tr>
         </thead>
         <tbody>
@@ -69,28 +69,28 @@ export default function ListingsTable({ items }: { items: Item[] }) {
               // Use a keyed fragment so React can reconcile reliably
               <React.Fragment key={i.id}>
                 <tr className="border-t hover:bg-gray-50">
-                  <td className="px-3 py-2">
-                    <button onClick={()=>setOpen(o=>({...o,[i.id]:!o[i.id]}))} className="font-medium underline-offset-2 hover:underline">
+                  <td className="px-3 py-2 text-left break-words min-w-0" align="left">
+                    <button onClick={()=>setOpen(o=>({...o,[i.id]:!o[i.id]}))} className="block text-left font-medium underline-offset-2 hover:underline">
                       {i.filmTitle}
                     </button>
                   </td>
-                  <td className="px-3 py-2">{i.releaseDate?.slice(0,4) ?? '—'}</td>
-                  <td className="px-3 py-2">{CINEMA_LABELS[i.cinema] ?? i.cinema}</td>
-                  <td className="px-3 py-2">{date}</td>
-                  <td className="px-3 py-2">{time}</td>
-                  <td className="px-3 py-2">{typeof i.rottenTomatoesPct==='number' ? `${i.rottenTomatoesPct}%` : '—'}</td>
+                  <td className="px-3 py-2 min-w-0">{i.releaseDate?.slice(0,4) ?? '—'}</td>
+                  <td className="px-3 py-2 min-w-0">{CINEMA_LABELS[i.cinema] ?? i.cinema}</td>
+                  <td className="px-3 py-2 min-w-0">{date}</td>
+                  <td className="px-3 py-2 min-w-0">{time}</td>
+                  <td className="px-3 py-2 min-w-0 whitespace-nowrap">{typeof i.rottenTomatoesPct==='number' ? `${i.rottenTomatoesPct}%` : '—'}</td>
                 </tr>
                 {isOpen && (
                   <tr className="border-t bg-gray-50/60">
-                    <td colSpan={6} className="px-3 py-3">
-                      <div className="grid gap-3 md:grid-cols-3">
+                    <td colSpan={6} className="px-3 py-3 text-left max-w-full" align="left">
+                      <div className="grid gap-3 md:grid-cols-3 text-left">
                         <div>
                           <div className="text-xs text-gray-500">Director</div>
                           <div>{i.director || 'Unknown'}</div>
                         </div>
                         <div className="md:col-span-2">
                           <div className="text-xs text-gray-500">Synopsis</div>
-                          <div>{i.synopsis || 'No synopsis available.'}</div>
+                          <div className="break-words whitespace-normal">{i.synopsis || 'No synopsis available.'}</div>
                         </div>
                         <div>
                           <div className="text-xs text-gray-500">Genres</div>
