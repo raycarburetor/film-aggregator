@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "aggregate": "node scripts/aggregate.mjs",
+    "preview:ica": "node scripts/preview-ica-summary.mjs",
+    "preview:pcc": "node scripts/preview-princecharles.mjs"
   },
   "dependencies": {
     "next": "14.2.5",
