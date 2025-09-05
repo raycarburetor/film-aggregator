@@ -22,8 +22,11 @@ export function filterByTimeWindow(items: Screening[], window: 'today'|'week'|'m
     const sod = new Date(startOfDayISO(now))
     end = new Date(addDaysISO(sod, 7))
   } else {
+    // Treat "This Month" as a 30-day rolling horizon from today.
+    // Use an exclusive upper bound at start-of-day + 31 so that the
+    // 30th day is included (t < end).
     const sod = new Date(startOfDayISO(now))
-    end = new Date(addMonthsISO(sod, 1))
+    end = new Date(addDaysISO(sod, 31))
   }
   return items.filter(i => {
     const t = new Date(i.screeningStart)

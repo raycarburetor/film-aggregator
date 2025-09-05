@@ -2,7 +2,6 @@
 import { useRouter, useSearchParams } from 'next/navigation'
 
 const TABS = [
-  { key: 'all', label: 'All' },
   { key: 'today', label: 'Today' },
   { key: 'week', label: 'This Week' },
   { key: 'month', label: 'This Month' },
@@ -11,12 +10,13 @@ const TABS = [
 export default function TimeTabs() {
   const router = useRouter()
   const sp = useSearchParams()
-  const current = (sp.get('window') || 'all') as 'today'|'week'|'month'|'all'
+  const current = (sp.get('window') || 'week') as 'today'|'week'|'month'
 
   function setWindowTab(tab: string) {
     const params = new URLSearchParams(sp.toString())
-    if (tab && tab !== 'all') params.set('window', tab)
-    else params.delete('window')
+    // 'week' is the default; omit the param when selecting it
+    if (tab === 'week') params.delete('window')
+    else params.set('window', tab)
     router.push(`/?${params.toString()}`)
   }
 
@@ -27,7 +27,7 @@ export default function TimeTabs() {
           key={key}
           onClick={() => setWindowTab(key)}
           aria-selected={current===key}
-          className={`tab-btn px-3 py-2 text-sm font-normal ${current===key ? 'bg-[rgb(var(--hover))] text-white':''}`}
+          className={`tab-btn px-3 py-2 text-base ${current===key ? 'bg-[rgb(var(--hover))] text-white':''}`}
         >
           {label}
         </button>

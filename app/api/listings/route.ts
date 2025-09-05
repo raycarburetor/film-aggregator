@@ -7,7 +7,7 @@ export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url)
     const q = (searchParams.get('q') || '').toLowerCase().trim()
-    const window = (searchParams.get('window') || 'all') as 'today'|'week'|'month'|'all'
+    const window = (searchParams.get('window') || 'week') as 'today'|'week'|'month'|'all'
     const cinemas = (searchParams.get('cinemas') || '').split(',').filter(Boolean) as CinemaKey[]
     const genres = (searchParams.get('genres') || '').split(',').filter(Boolean)
     const minYear = parseNum(searchParams.get('minYear'))

@@ -78,6 +78,8 @@ function displayTitle(title: string): string {
 
 export default function ListingsTable({ items }: { items: Item[] }) {
   const [open, setOpen] = useState<Record<string, boolean>>({})
+  const dayKeyFmt = new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Europe/London' })
+  let prevDayKey: string | undefined
   return (
     <div className="overflow-x-auto">
       <div className="overflow-hidden">
@@ -93,12 +95,20 @@ export default function ListingsTable({ items }: { items: Item[] }) {
           </tr>
           </thead>
           <tbody>
-          {items.map(i => {
+          {items.map((i, idx) => {
             const { date, time } = formatDateTime(i.screeningStart)
             const isOpen = !!open[i.id]
+            const dayKey = dayKeyFmt.format(new Date(i.screeningStart))
+            const isNewDay = idx === 0 ? false : dayKey !== prevDayKey
+            prevDayKey = dayKey
             return (
               // Use a keyed fragment so React can reconcile reliably
               <React.Fragment key={i.id}>
+                {isNewDay && (
+                  <tr aria-hidden="true">
+                    <td colSpan={6} className="border-t border-white p-0 h-0" />
+                  </tr>
+                )}
                 <tr className={`peer group ${isOpen ? 'selected-row' : 'hover:bg-gray-50'}`}>
                   <td className="px-3 py-2 text-left break-words min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white" align="left">
                     <button onClick={()=>setOpen(o=>({...o,[i.id]:!o[i.id]}))} className="block text-left font-normal underline-offset-2 hover:underline">
