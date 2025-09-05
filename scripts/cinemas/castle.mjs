@@ -258,9 +258,14 @@ export async function fetchCastle() {
       })
     })
 
-    // Filter out past screenings
+    // Filter out past screenings and limit future horizon (default 60 days)
     const now = Date.now()
-    screenings = screenings.filter((s) => new Date(s.screeningStart).getTime() >= now)
+    const horizonDays = Number(process.env.CASTLE_HORIZON_DAYS || process.env.DEFAULT_HORIZON_DAYS || 60)
+    const maxTs = now + horizonDays * 24 * 60 * 60 * 1000
+    screenings = screenings.filter((s) => {
+      const t = new Date(s.screeningStart).getTime()
+      return t >= now && t <= maxTs
+    })
 
     // If nothing found, save raw HTML for debugging
     if (screenings.length === 0) {

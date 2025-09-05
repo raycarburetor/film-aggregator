@@ -16,6 +16,7 @@ export async function GET() {
       cinema: i.cinema,
       screeningStart: i.screeningStart,
       bookingUrl: i.bookingUrl,
+      websiteYear: (i as any).websiteYear,
     }))
     return NextResponse.json({ count: slim.length, items: slim })
   } catch (err) {
@@ -23,4 +24,3 @@ export async function GET() {
     return NextResponse.json({ error: 'Failed to fetch PCC listings' }, { status: 500 })
   }
 }
-

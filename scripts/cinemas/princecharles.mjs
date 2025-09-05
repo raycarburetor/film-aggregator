@@ -203,19 +203,34 @@ export async function fetchPrinceCharles() {
     } catch {}
   }
 
+  // Limit future horizon (default 60 days)
+  try {
+    const now = Date.now()
+    const horizonDays = Number(process.env.PCC_HORIZON_DAYS || process.env.DEFAULT_HORIZON_DAYS || 60)
+    const maxTs = now + horizonDays * 24 * 60 * 60 * 1000
+    screenings = screenings.filter(s => {
+      const t = new Date(s.screeningStart).getTime()
+      return t >= now && t <= maxTs
+    })
+  } catch {}
+
   // Visit film detail pages to capture website-stated release years
   try {
     const maxDetails = Number(process.env.PCC_MAX_DETAIL_PAGES || 30)
     const detailMap = new Map()
-    const uniqueUrls = Array.from(new Set(
-      screenings.map(s => s.filmUrl || s.bookingUrl).filter(Boolean)
-    )).slice(0, maxDetails)
+    // Use film detail pages only (explicit request)
+    const filmUrls = screenings.map(s => s.filmUrl).filter(Boolean)
+    const uniqueUrls = Array.from(new Set(filmUrls)).slice(0, maxDetails)
 
     const dpage = await ctx.newPage()
 
     for (const url of uniqueUrls) {
       try {
         await dpage.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 })
+        // Wait for film detail info list to appear
+        try {
+          await dpage.waitForSelector('ul.movie-info li:first-child', { timeout: 8000 })
+        } catch {}
         const year = await dpage.evaluate(() => {
           function valid(y) { const n = Number(y); const Y = new Date().getFullYear() + 1; return n >= 1895 && n <= Y }
           function pickAnnoYearFromTitle(s) {
@@ -227,12 +242,19 @@ export async function fetchPrinceCharles() {
             m = str.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]/)
             if (m) return Number(m[1])
           }
-          // 1) Title areas only (annotation patterns)
+          // STRICT: extract the first YYYY from the film detail UL
+          const ul = document.querySelector('ul.movie-info')
+          if (ul) {
+            const first = ul.querySelector('li:first-child')
+            const raw = (first?.textContent || '').trim()
+            const m = raw.match(/\b(19|20)\d{2}\b/)
+            if (m && valid(Number(m[0]))) return Number(m[0])
+          }
+          // Fallbacks only if UL missing
           const titleEl = document.querySelector('h1, .film-title, .liveeventtitle, .poster_name, .poster-name, .title')
           const titleText = titleEl?.textContent?.trim() || ''
           const y1 = pickAnnoYearFromTitle(titleText)
           if (valid(y1)) return y1
-          // 2) Labeled metadata blocks only (no body-wide scan)
           const labelSelectors = ['.meta', '.details', '.film-info', '.film_meta', 'dl', 'ul', 'section']
           let best
           for (const sel of labelSelectors) {
@@ -253,12 +275,13 @@ export async function fetchPrinceCharles() {
     // Apply discovered years back onto items when helpful
     if (detailMap.size) {
       for (const s of screenings) {
-        const key = s.filmUrl || s.bookingUrl
+        // Map strictly by filmUrl to avoid mismatches with booking pages
+        const key = s.filmUrl
         const y = detailMap.get(key)
         if (y) {
           const sy = new Date(s.screeningStart).getFullYear()
           const safe = (y >= 1895 && y <= sy) ? y : undefined
-          if (safe && (!s.websiteYear || safe < s.websiteYear)) s.websiteYear = safe
+          if (safe) s.websiteYear = safe
         }
       }
     }

@@ -8,5 +8,6 @@ console.log('Found', items.length, 'screenings (PCC)')
 console.log('Showing first 10 with times in', TZ)
 for (const i of items.slice(0, 10)) {
   const local = fmtDate.format(new Date(i.screeningStart))
-  console.log('-', i.filmTitle, '—', local, '—', i.bookingUrl)
+  const yr = typeof i.websiteYear === 'number' ? i.websiteYear : '—'
+  console.log('-', `${i.filmTitle} [${yr}]`, '—', local, '—', i.bookingUrl)
 }

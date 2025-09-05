@@ -22,7 +22,7 @@ export async function fetchICA() {
   ]
 
   // Expand to all upcoming by iterating daily pages for a configurable horizon
-  const horizonDays = Number(process.env.ICA_HORIZON_DAYS || 120)
+  const horizonDays = Number(process.env.ICA_HORIZON_DAYS || 60)
   const now = new Date()
   for (let i = 0; i < horizonDays; i++) {
     const d = new Date(now)
