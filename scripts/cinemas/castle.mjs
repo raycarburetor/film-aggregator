@@ -260,7 +260,7 @@ export async function fetchCastle() {
 
     // Filter out past screenings and limit future horizon (default 60 days)
     const now = Date.now()
-    const horizonDays = Number(process.env.CASTLE_HORIZON_DAYS || process.env.DEFAULT_HORIZON_DAYS || 60)
+    const horizonDays = Number(process.env.CASTLE_HORIZON_DAYS || process.env.DEFAULT_HORIZON_DAYS || 30)
     const maxTs = now + horizonDays * 24 * 60 * 60 * 1000
     screenings = screenings.filter((s) => {
       const t = new Date(s.screeningStart).getTime()
@@ -287,8 +287,9 @@ export async function fetchCastle() {
   try {
     const maxDetails = Number(process.env.CASTLE_MAX_DETAIL_PAGES || 40)
     const detailMap = new Map()
+    // Use film detail pages only for year extraction
     const uniqueUrls = Array.from(new Set(
-      screenings.map(s => s.filmUrl || s.bookingUrl).filter(Boolean)
+      screenings.map(s => s.filmUrl).filter(Boolean)
     )).slice(0, maxDetails)
 
     const dpage = await ctx.newPage()
@@ -305,6 +306,12 @@ export async function fetchCastle() {
             if (m) return Number(m[1])
             m = str.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]/)
             if (m) return Number(m[1])
+          }
+          // Prefer explicit film-year element
+          const fy = document.querySelector('div.film-year')
+          if (fy) {
+            const m = (fy.textContent || '').match(/\b(19|20)\d{2}\b/)
+            if (m && valid(Number(m[0]))) return Number(m[0])
           }
           const titleEl = document.querySelector('h1, .film-title, .title, .tile-name, .poster_name')
           const titleText = titleEl?.textContent?.trim() || ''
@@ -328,7 +335,7 @@ export async function fetchCastle() {
     }
     if (detailMap.size) {
       for (const s of screenings) {
-        const key = s.filmUrl || s.bookingUrl
+        const key = s.filmUrl
         const y = detailMap.get(key)
         if (y) {
           const sy = new Date(s.screeningStart).getFullYear()

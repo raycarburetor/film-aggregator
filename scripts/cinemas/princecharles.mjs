@@ -206,7 +206,7 @@ export async function fetchPrinceCharles() {
   // Limit future horizon (default 60 days)
   try {
     const now = Date.now()
-    const horizonDays = Number(process.env.PCC_HORIZON_DAYS || process.env.DEFAULT_HORIZON_DAYS || 60)
+    const horizonDays = Number(process.env.PCC_HORIZON_DAYS || process.env.DEFAULT_HORIZON_DAYS || 30)
     const maxTs = now + horizonDays * 24 * 60 * 60 * 1000
     screenings = screenings.filter(s => {
       const t = new Date(s.screeningStart).getTime()

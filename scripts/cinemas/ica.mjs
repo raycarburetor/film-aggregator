@@ -22,7 +22,7 @@ export async function fetchICA() {
   ]
 
   // Expand to all upcoming by iterating daily pages for a configurable horizon
-  const horizonDays = Number(process.env.ICA_HORIZON_DAYS || 60)
+  const horizonDays = Number(process.env.ICA_HORIZON_DAYS || 30)
   const now = new Date()
   for (let i = 0; i < horizonDays; i++) {
     const d = new Date(now)
@@ -161,6 +161,12 @@ export async function fetchICA() {
               if (m) return Number(m[1])
               m = str.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]/)
               if (m) return Number(m[1])
+            }
+            // Prefer the colophon caption for release year
+            const col = document.querySelector('div#colophon.caption')
+            if (col) {
+              const m = (col.textContent || '').match(/\b(19|20)\d{2}\b/)
+              if (m && valid(Number(m[0]))) return Number(m[0])
             }
             const tEl = document.querySelector('h1, .title, .film-title')
             const t = tEl?.textContent?.trim() || ''
