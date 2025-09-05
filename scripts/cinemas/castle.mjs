@@ -71,15 +71,38 @@ export async function fetchCastle() {
         }
       }
 
-      function pushItem(title, href, when) {
+      function extractYearFromTitle(title) {
+        const s = String(title || '')
+        let m = s.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]\s*$/)
+        if (m) return Number(m[1])
+        m = s.match(/[-–—]\s*((?:19|20)\d{2})\s*$/)
+        if (m) return Number(m[1])
+        m = s.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]/)
+        if (m) return Number(m[1])
+        return undefined
+      }
+
+      function findFilmUrl(scopeEl) {
+        try {
+          const a = scopeEl?.querySelector?.('a[href*="/film/"]') || scopeEl?.closest?.('.programme-tile')?.querySelector?.('a[href*="/film/"]')
+          const href = a?.getAttribute?.('href') || ''
+          return href ? normaliseUrl(href) : ''
+        } catch { return '' }
+      }
+
+      function pushItem(title, href, when, filmUrl) {
         if (!title || !href || !when) return
         const iso = when.toISOString()
+        const candidateYear = extractYearFromTitle(title)
+        const safeYear = (candidateYear && candidateYear >= 1895 && candidateYear <= when.getFullYear()) ? candidateYear : undefined
         out.push({
           id: `castle-${title}-${iso}`.replace(/\W+/g, ''),
           filmTitle: title,
           cinema: 'castle',
           screeningStart: iso,
           bookingUrl: normaliseUrl(href),
+          filmUrl: filmUrl || '',
+          websiteYear: safeYear,
         })
       }
 
@@ -105,6 +128,7 @@ export async function fetchCastle() {
             const title = (titleEl?.textContent || '').replace(/\s+/g, ' ').trim()
             const timeText = (s.textContent || '').match(/\b(\d{1,2}):(\d{2})\s*(am|pm)?\b/i)?.[0]
             if (!title || !timeText) continue
+            const filmUrl = findFilmUrl(s) || findFilmUrl(dn)
 
             // Parse base date with current year fallback
             let baseDate
@@ -130,7 +154,7 @@ export async function fetchCastle() {
             if (ap === 'am' && hour === 12) hour = 0
             const when = new Date(baseDate.getFullYear(), baseDate.getMonth(), baseDate.getDate(), hour, minute)
             if (isNaN(when)) continue
-            pushItem(title, href, when)
+            pushItem(title, href, when, filmUrl)
           }
         }
       }
@@ -145,6 +169,7 @@ export async function fetchCastle() {
         let baseDate = dateCtx ? new Date(dateCtx) : null
         if (baseDate && isNaN(baseDate)) baseDate = null
         const timePieces = (row.textContent || '').match(/\b(\d{1,2}):(\d{2})\s*(am|pm)?\b/gi) || []
+        const filmUrl = findFilmUrl(row)
         for (const t of timePieces) {
           const m = t.match(/(\d{1,2}):(\d{2})\s*(am|pm)?/i)
           if (!m) continue
@@ -157,7 +182,7 @@ export async function fetchCastle() {
           const d = baseDate || new Date(now.getFullYear(), now.getMonth(), now.getDate())
           const when = new Date(d.getFullYear(), d.getMonth(), d.getDate(), hour, minute)
           if (!title || !href || isNaN(when)) continue
-          pushItem(title, href, when)
+          pushItem(title, href, when, filmUrl)
         }
       }
 
@@ -203,6 +228,7 @@ export async function fetchCastle() {
             const title = (el.querySelector('.tile-name h1, .tile-name, .film-title, h2, h3')?.textContent || '').replace(/\s+/g, ' ').trim()
             const times = Array.from(el.querySelectorAll('.film-times a.performance-button')).map(a => (a.textContent || '').trim())
             const hrefs = Array.from(el.querySelectorAll('.film-times a.performance-button')).map(a => a.getAttribute('href') || '')
+            const filmUrl = findFilmUrl(el)
             for (let i = 0; i < times.length; i++) {
               const timeText = times[i]
               const href = hrefs[i] || ''
@@ -215,7 +241,7 @@ export async function fetchCastle() {
               if (ap === 'am' && hour === 12) hour = 0
               const when = new Date(baseDate.getFullYear(), baseDate.getMonth(), baseDate.getDate(), hour, minute)
               if (!title || !href || isNaN(when)) continue
-              pushItem(title, href, when)
+              pushItem(title, href, when, filmUrl)
             }
           }
           el = el.nextElementSibling
@@ -251,6 +277,62 @@ export async function fetchCastle() {
       await fs.writeFile('./tmp-castle-error.html', html, 'utf8')
     } catch {}
   }
+
+  // Visit film detail pages to capture release year as stated on the site
+  try {
+    const maxDetails = Number(process.env.CASTLE_MAX_DETAIL_PAGES || 40)
+    const detailMap = new Map()
+    const uniqueUrls = Array.from(new Set(
+      screenings.map(s => s.filmUrl || s.bookingUrl).filter(Boolean)
+    )).slice(0, maxDetails)
+
+    const dpage = await ctx.newPage()
+    for (const url of uniqueUrls) {
+      try {
+        await dpage.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 })
+        const year = await dpage.evaluate(() => {
+          function valid(y) { const n = Number(y); const Y = new Date().getFullYear() + 1; return n >= 1895 && n <= Y }
+          function pickAnnoYearFromTitle(s) {
+            const str = String(s||'')
+            let m = str.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]\s*$/)
+            if (m) return Number(m[1])
+            m = str.match(/[-–—]\s*((?:19|20)\d{2})\s*$/)
+            if (m) return Number(m[1])
+            m = str.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]/)
+            if (m) return Number(m[1])
+          }
+          const titleEl = document.querySelector('h1, .film-title, .title, .tile-name, .poster_name')
+          const titleText = titleEl?.textContent?.trim() || ''
+          const y1 = pickAnnoYearFromTitle(titleText)
+          if (valid(y1)) return y1
+          const labelSelectors = ['.meta', '.details', '.film-info', '.film_meta', 'dl', 'ul', 'section']
+          let best
+          for (const sel of labelSelectors) {
+            for (const el of Array.from(document.querySelectorAll(sel))) {
+              const tx = el.textContent || ''
+              if (/\b(year|release year|released)\b/i.test(tx)) {
+                const yrs = Array.from(tx.matchAll(/\b(19|20)\d{2}\b/g)).map(m => Number(m[0])).filter(valid)
+                if (yrs.length) best = Math.min(best ?? Infinity, Math.min(...yrs))
+              }
+            }
+          }
+          return best
+        })
+        if (year) detailMap.set(url, year)
+      } catch {}
+    }
+    if (detailMap.size) {
+      for (const s of screenings) {
+        const key = s.filmUrl || s.bookingUrl
+        const y = detailMap.get(key)
+        if (y) {
+          const sy = new Date(s.screeningStart).getFullYear()
+          const safe = (y >= 1895 && y <= sy) ? y : undefined
+          if (safe && (!s.websiteYear || safe < s.websiteYear)) s.websiteYear = safe
+        }
+      }
+    }
+  } catch {}
 
   await browser.close()
   console.log('[CASTLE] screenings collected:', screenings.length)

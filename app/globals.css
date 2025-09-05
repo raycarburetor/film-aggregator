@@ -2,5 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { --bg: 255 255 255; --fg: 17 24 39; }
-body { color: rgb(var(--fg)); background: rgb(var(--bg)); }
+/* Theme variables */
+:root {
+  --bg: 0 0 0;         /* black */
+  --fg: 255 255 255;   /* white */
+  --muted: 160 160 160;/* muted text */
+  --panel: 20 20 20;   /* panel bg */
+  --stroke: 255 255 255; /* white stroke */
+  --hover: 190 10 50;  /* darker crimson */
+  --gold: 212 175 55;  /* gold (#D4AF37) */
+}
+
+/* Base dark theme */
+@layer base {
+  html, body {
+    background: rgb(var(--bg));
+    color: rgb(var(--fg));
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+  }
+  /* Square corners globally */
+  * { border-radius: 0 !important; }
+  /* Links inherit context color */
+  ::selection { background: rgb(var(--stroke) / 0.35); color: rgb(var(--fg)); }
+
+  /* Form elements */
+  input, select, textarea {
+    background: rgb(var(--bg));
+    color: rgb(var(--fg));
+    border: 1px solid rgb(var(--stroke));
+  }
+  input::placeholder, textarea::placeholder { color: rgb(var(--muted)); }
+  button { color: rgb(var(--fg)); }
+
+  /* Focus visibility */
+  :focus-visible { outline: 1px solid rgb(var(--stroke) / 0.6); outline-offset: 2px; }
+}
+
+/* Accent stroke defaults for Tailwind border utilities used */
+@layer utilities {
+  .border, .border-t, .border-b, .border-l, .border-r {
+    border-color: rgb(var(--stroke)) !important;
+  }
+
+  /* Dark equivalents + hover behavior */
+  .bg-gray-50 { background-color: rgb(var(--panel)) !important; }
+  .bg-gray-900 { background-color: rgb(0 0 0) !important; }
+  .hover\:bg-gray-50:hover { background-color: rgb(var(--hover)) !important; color: rgb(var(--fg)) !important; }
+  .hover\:bg-gray-50:hover td { background-color: rgb(var(--hover)) !important; color: rgb(var(--fg)) !important; }
+  .hover\:bg-gray-50:hover td * { color: rgb(var(--fg)) !important; }
+  .bg-gray-50\/60 { background-color: rgb(var(--panel) / 0.6) !important; }
+  .text-gray-500 { color: rgb(var(--muted)) !important; }
+  .text-gray-600 { color: rgb(200 200 200) !important; }
+}
+
+/* Accent-on-hover behavior for interactive elements */
+@layer components {
+  /* removed column highlight utility */
+  /* Selected row: force full white text and crimson bg */
+  .selected-row,
+  .selected-row td,
+  .selected-row td * {
+    background-color: rgb(var(--hover)) !important;
+    color: rgb(var(--fg)) !important;
+  }
+
+  /* When hovering the summary row, also highlight the following details row */
+  tr.peer:hover + tr.details-row,
+  tr.peer:hover + tr.details-row td,
+  tr.peer:hover + tr.details-row td * {
+    background-color: rgb(var(--hover)) !important;
+    color: rgb(var(--fg)) !important;
+  }
+
+  /* When selected, keep the details row highlighted */
+  tr.selected-row + tr.details-row,
+  tr.selected-row + tr.details-row td,
+  tr.selected-row + tr.details-row td * {
+    background-color: rgb(var(--hover)) !important;
+    color: rgb(var(--fg)) !important;
+  }
+
+  /* Tabs: no borders; Chips: full white borders */
+  .tab-btn { border: 0 !important; }
+  .chip-btn { border: 1px solid rgb(var(--stroke)) !important; }
+  .tab-btn:hover,
+  .tab-btn[aria-selected="true"] {
+    background-color: rgb(var(--hover)) !important;
+    color: rgb(var(--fg)) !important;
+    border: 0 !important;
+  }
+  .chip-btn:hover,
+  .chip-btn.is-selected {
+    background-color: rgb(var(--hover)) !important;
+    color: rgb(var(--fg)) !important;
+    border-color: transparent !important; /* hide border when active */
+  }
+}

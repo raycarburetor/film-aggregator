@@ -15,8 +15,9 @@ export default function Filters({ genres }: { genres: string[] }) {
   const [q, setQ] = useState(sp.get('q') ?? '')
   const [selectedCinemas, setSelectedCinemas] = useState<string[]>((sp.get('cinemas') || '').split(',').filter(Boolean))
   const [selectedGenres, setSelectedGenres] = useState<string[]>((sp.get('genres') || '').split(',').filter(Boolean))
-  const [minYear, setMinYear] = useState(sp.get('minYear') ?? '1950')
-  const [maxYear, setMaxYear] = useState(sp.get('maxYear') ?? '2025')
+  // Leave year filters empty by default so they are opt-in
+  const [minYear, setMinYear] = useState(sp.get('minYear') ?? '')
+  const [maxYear, setMaxYear] = useState(sp.get('maxYear') ?? '')
   const [minTomato, setMinTomato] = useState(sp.get('minTomato') ?? '')
 
   function apply() {
@@ -41,10 +42,10 @@ export default function Filters({ genres }: { genres: string[] }) {
 
   return (
     <aside className="md:pl-4">
-      <div className="rounded-xl border p-3 md:p-4 space-y-4">
+      <div className="border p-3 md:p-4 space-y-4">
         <input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search film or cinema…" className="w-full rounded-lg border px-3 py-2" />
         <div>
-          <div className="text-sm font-medium mb-2">Cinemas</div>
+          <div className="text-sm font-normal mb-2">Cinemas</div>
           <div className="flex flex-col gap-2">
             {CINEMAS.map(c=> (
               <label key={c.key} className="inline-flex items-center gap-2">
@@ -55,23 +56,40 @@ export default function Filters({ genres }: { genres: string[] }) {
           </div>
         </div>
         <div>
-          <div className="text-sm font-medium mb-2">Genres</div>
+          <div className="text-sm font-normal mb-2">Genres</div>
           <div className="flex flex-wrap gap-2">
             {genres.map(g => (
-              <button key={g} onClick={()=>toggle(selectedGenres,g,setSelectedGenres)} className={`rounded-full border px-3 py-1 text-sm ${selectedGenres.includes(g) ? 'bg-gray-900 text-white':''}`}>{g}</button>
+              <button
+                key={g}
+                onClick={()=>toggle(selectedGenres,g,setSelectedGenres)}
+                aria-pressed={selectedGenres.includes(g)}
+                className={`chip-btn px-3 py-1 text-sm ${selectedGenres.includes(g) ? 'bg-[rgb(var(--hover))] text-white is-selected':''}`}
+              >{g}</button>
             ))}
           </div>
         </div>
         <div>
-          <div className="text-sm font-medium">Release year</div>
+          <div className="text-sm font-normal">Release year</div>
           <div className="flex items-center gap-2 mt-2">
-            <input type="number" className="w-24 rounded border px-2 py-1" value={minYear} onChange={e=>setMinYear(e.target.value)} />
+            <input
+              type="number"
+              placeholder="From"
+              className="w-24 rounded border px-2 py-1"
+              value={minYear}
+              onChange={e=>setMinYear(e.target.value)}
+            />
             <span>to</span>
-            <input type="number" className="w-24 rounded border px-2 py-1" value={maxYear} onChange={e=>setMaxYear(e.target.value)} />
+            <input
+              type="number"
+              placeholder="To"
+              className="w-24 rounded border px-2 py-1"
+              value={maxYear}
+              onChange={e=>setMaxYear(e.target.value)}
+            />
           </div>
         </div>
         <div>
-          <div className="text-sm font-medium">Min Rotten Tomatoes (%)</div>
+          <div className="text-sm font-normal">Min Rotten Tomatoes (%)</div>
           <input type="number" min={0} max={100} className="mt-2 w-28 rounded border px-2 py-1" value={minTomato} onChange={e=>setMinTomato(e.target.value)} />
           <div className="text-xs text-gray-500 mt-1">If missing, titles count as 0% for filtering.</div>
         </div>

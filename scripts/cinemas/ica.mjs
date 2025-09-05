@@ -100,6 +100,17 @@ export async function fetchICA() {
         return out
       }, page.url())
 
+      function extractYearFromTitle(title) {
+        const s = String(title || '')
+        let m = s.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]\s*$/)
+        if (m) return Number(m[1])
+        m = s.match(/[-–—]\s*((?:19|20)\d{2})\s*$/)
+        if (m) return Number(m[1])
+        m = s.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]/)
+        if (m) return Number(m[1])
+        return undefined
+      }
+
       for (const r of rows) {
         const when = new Date(r.start)
         if (isNaN(when)) continue
@@ -111,6 +122,7 @@ export async function fetchICA() {
           cinema: 'ica',
           screeningStart: when.toISOString(),
           bookingUrl: r.url,
+          websiteYear: extractYearFromTitle(r.title),
         })
       }
     } catch (e) {
@@ -126,6 +138,63 @@ export async function fetchICA() {
     seen.add(k)
     return true
   })
-  console.log('[ICA] screenings collected:', deduped.length)
-  return deduped
+  // Detail page pass: fetch film pages to capture website-stated release year
+  let enriched = deduped
+  try {
+    const maxDetails = Number(process.env.ICA_MAX_DETAIL_PAGES || 40)
+    const urls = Array.from(new Set(deduped.map(s => s.bookingUrl).filter(Boolean))).slice(0, maxDetails)
+    if (urls.length) {
+      const b2 = await pwChromium.launch({ headless: true })
+      const ctx2 = await b2.newContext({ locale: 'en-GB', timezoneId: 'Europe/London' })
+      const p2 = await ctx2.newPage()
+      const detailMap = new Map()
+      for (const url of urls) {
+        try {
+          await p2.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 })
+          const year = await p2.evaluate(() => {
+            function valid(y) { const n = Number(y); const Y = new Date().getFullYear() + 1; return n >= 1895 && n <= Y }
+            function pickAnnoYearFromTitle(s) {
+              const str = String(s||'')
+              let m = str.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]\s*$/)
+              if (m) return Number(m[1])
+              m = str.match(/[-–—]\s*((?:19|20)\d{2})\s*$/)
+              if (m) return Number(m[1])
+              m = str.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]/)
+              if (m) return Number(m[1])
+            }
+            const tEl = document.querySelector('h1, .title, .film-title')
+            const t = tEl?.textContent?.trim() || ''
+            const y1 = pickAnnoYearFromTitle(t)
+            if (valid(y1)) return y1
+            // Labeled metadata only
+            const labelSelectors = ['.meta', '.details', '.film-info', '.film_meta', 'dl', 'ul', 'section']
+            let best
+            for (const sel of labelSelectors) {
+              for (const el of Array.from(document.querySelectorAll(sel))) {
+                const tx = el.textContent || ''
+                if (/\b(year|release year|released)\b/i.test(tx)) {
+                  const yrs = Array.from(tx.matchAll(/\b(19|20)\d{2}\b/g)).map(m => Number(m[0])).filter(valid)
+                  if (yrs.length) best = Math.min(best ?? Infinity, Math.min(...yrs))
+                }
+              }
+            }
+            return best
+          })
+          if (year) detailMap.set(url, year)
+        } catch {}
+      }
+      if (detailMap.size) {
+        enriched = deduped.map(s => {
+          const y = detailMap.get(s.bookingUrl)
+          if (!y) return s
+          const sy = new Date(s.screeningStart).getFullYear()
+          const safe = (y >= 1895 && y <= sy) ? y : undefined
+          return safe && (!s.websiteYear || safe < s.websiteYear) ? { ...s, websiteYear: safe } : s
+        })
+      }
+      await b2.close()
+    }
+  } catch {}
+  console.log('[ICA] screenings collected:', enriched.length)
+  return enriched
 }

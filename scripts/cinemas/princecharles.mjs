@@ -104,9 +104,40 @@ export async function fetchPrinceCharles() {
           return isNaN(d) ? null : d
         }
 
+        function cleanUrl(href) {
+          try {
+            const u = new URL(href, base)
+            u.hash = ''
+            return u.toString()
+          } catch { return href }
+        }
+
+        function extractFilmUrl(block) {
+          const a = block.querySelector('a[href*="/film/"], a[href*="/films/"]')
+          if (a) return cleanUrl(a.getAttribute('href') || '')
+          // Fallback: sometimes title is a link inside .poster_name or similar
+          const b = block.querySelector('.poster_name a[href]')
+          if (b) return cleanUrl(b.getAttribute('href') || '')
+          return ''
+        }
+
+        function extractYearFromTitle(title) {
+          const s = String(title || '')
+          // Prefer explicit annotations like "(1979)" or "- 1979" at the end
+          let m = s.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]\s*$/)
+          if (m) return Number(m[1])
+          m = s.match(/[-–—]\s*((?:19|20)\d{2})\s*$/)
+          if (m) return Number(m[1])
+          // Also accept bracketed year anywhere in title as annotation
+          m = s.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]/)
+          if (m) return Number(m[1])
+          return undefined
+        }
+
         for (const b of blocks) {
           const title = (b.querySelector('.liveeventtitle')?.textContent || '').trim()
           if (!title) continue
+          const filmUrl = extractFilmUrl(b)
 
           const lists = b.querySelectorAll('ul.performance-list-items')
           for (const ul of lists) {
@@ -132,6 +163,8 @@ export async function fetchPrinceCharles() {
                 cinema: 'princecharles',
                 screeningStart: when.toISOString(),
                 bookingUrl,
+                filmUrl,
+                websiteYear: (() => { const y = extractYearFromTitle(title); return (y && y >= 1895 && y <= when.getFullYear()) ? y : undefined })(),
               })
             }
           }
@@ -169,6 +202,67 @@ export async function fetchPrinceCharles() {
       console.log('[PCC] Saved raw HTML to ./tmp-pcc.html from', activeUrl)
     } catch {}
   }
+
+  // Visit film detail pages to capture website-stated release years
+  try {
+    const maxDetails = Number(process.env.PCC_MAX_DETAIL_PAGES || 30)
+    const detailMap = new Map()
+    const uniqueUrls = Array.from(new Set(
+      screenings.map(s => s.filmUrl || s.bookingUrl).filter(Boolean)
+    )).slice(0, maxDetails)
+
+    const dpage = await ctx.newPage()
+
+    for (const url of uniqueUrls) {
+      try {
+        await dpage.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 })
+        const year = await dpage.evaluate(() => {
+          function valid(y) { const n = Number(y); const Y = new Date().getFullYear() + 1; return n >= 1895 && n <= Y }
+          function pickAnnoYearFromTitle(s) {
+            const str = String(s||'')
+            let m = str.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]\s*$/)
+            if (m) return Number(m[1])
+            m = str.match(/[-–—]\s*((?:19|20)\d{2})\s*$/)
+            if (m) return Number(m[1])
+            m = str.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]/)
+            if (m) return Number(m[1])
+          }
+          // 1) Title areas only (annotation patterns)
+          const titleEl = document.querySelector('h1, .film-title, .liveeventtitle, .poster_name, .poster-name, .title')
+          const titleText = titleEl?.textContent?.trim() || ''
+          const y1 = pickAnnoYearFromTitle(titleText)
+          if (valid(y1)) return y1
+          // 2) Labeled metadata blocks only (no body-wide scan)
+          const labelSelectors = ['.meta', '.details', '.film-info', '.film_meta', 'dl', 'ul', 'section']
+          let best
+          for (const sel of labelSelectors) {
+            for (const el of Array.from(document.querySelectorAll(sel))) {
+              const tx = el.textContent || ''
+              if (/\b(year|release year|released)\b/i.test(tx)) {
+                const yrs = Array.from(tx.matchAll(/\b(19|20)\d{2}\b/g)).map(m => Number(m[0])).filter(valid)
+                if (yrs.length) best = Math.min(best ?? Infinity, Math.min(...yrs))
+              }
+            }
+          }
+          return best
+        })
+        if (year) detailMap.set(url, year)
+      } catch {}
+    }
+
+    // Apply discovered years back onto items when helpful
+    if (detailMap.size) {
+      for (const s of screenings) {
+        const key = s.filmUrl || s.bookingUrl
+        const y = detailMap.get(key)
+        if (y) {
+          const sy = new Date(s.screeningStart).getFullYear()
+          const safe = (y >= 1895 && y <= sy) ? y : undefined
+          if (safe && (!s.websiteYear || safe < s.websiteYear)) s.websiteYear = safe
+        }
+      }
+    }
+  } catch {}
 
   await browser.close()
   console.log('[PCC] screenings collected:', screenings.length)

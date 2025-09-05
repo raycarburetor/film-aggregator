@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "aggregate": "node scripts/aggregate.mjs",
+    "enrich:omdb": "node scripts/enrich-omdb-only.mjs",
     "preview:ica": "node scripts/preview-ica-summary.mjs",
     "preview:pcc": "node scripts/preview-princecharles.mjs",
     "preview:castle": "node scripts/preview-castle.mjs"

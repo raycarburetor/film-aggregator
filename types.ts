@@ -8,6 +8,8 @@ export type Screening = {
   screeningEnd?: string
   bookingUrl?: string
   releaseDate?: string
+  // Optional: release year as stated on the cinema website (parsed from listing)
+  websiteYear?: number
   director?: string
   synopsis?: string
   genres?: string[]

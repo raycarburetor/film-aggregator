@@ -12,15 +12,33 @@ import { fetchICA } from './cinemas/ica.mjs'
 import { fetchCastle } from './cinemas/castle.mjs'
 import { enrichWithTMDb, enrichWithOMDb } from './enrich.mjs'
 
+function isNonFilmEvent(title) {
+  if (!title) return false
+  const s = String(title)
+  // Very conservative filters for obvious non-film events
+  const patterns = [
+    /\bfilm\s+quiz\b/i,
+    /\bmystery\s+movie\b/i,
+    /\bmarathon\b/i,
+    /\bsolve[- ]along\b/i,
+    /with\s+[^,]+\s+live\s+on\s+stage/i,
+    /\blive\s+on\s+stage\b/i,
+  ]
+  return patterns.some((re) => re.test(s))
+}
+
 const region = process.env.DEFAULT_REGION || 'GB'
 const useOMDb = !!process.env.OMDB_API_KEY
 
-const items = [
+let items = [
   ...(await fetchBFI()),
   ...(await fetchPrinceCharles()),
   ...(await fetchICA()),
   ...(await fetchCastle()),
 ]
+
+// Drop obvious non-film events
+items = items.filter((it) => !isNonFilmEvent(it.filmTitle))
 
 await enrichWithTMDb(items, region)
 if (useOMDb) await enrichWithOMDb(items, process.env.OMDB_API_KEY)

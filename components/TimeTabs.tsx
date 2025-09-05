@@ -26,7 +26,8 @@ export default function TimeTabs() {
         <button
           key={key}
           onClick={() => setWindowTab(key)}
-          className={`rounded-xl border px-3 py-2 text-sm ${current===key ? 'bg-gray-900 text-white':''}`}
+          aria-selected={current===key}
+          className={`tab-btn px-3 py-2 text-sm font-normal ${current===key ? 'bg-[rgb(var(--hover))] text-white':''}`}
         >
           {label}
         </button>
