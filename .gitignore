@@ -18,3 +18,9 @@ build/
 # Editor/system
 .vscode/
 .DS_Store
+
+# Debug snapshots and temp files
+tmp-*.html
+tmp-*.json
+tmp-*.txt
+.tmp-*.log

@@ -17,9 +17,10 @@ type Item = {
 
 const CINEMA_LABELS: Record<string, string> = {
   bfi: 'BFI Southbank',
-  princecharles: 'Prince Charles',
+  princecharles: 'Prince Charles Cinema',
   ica: 'ICA',
-  castle: 'The Castle',
+  castle: 'The Castle Cinema',
+  garden: 'The Garden Cinema',
 }
 
 function formatDateTime(iso: string) {
@@ -67,6 +68,11 @@ function displayTitle(title: string): string {
   s = s.replace(/\s*\((?:19|20)\d{2}\)\s*$/i, '')
   // Drop trailing (Uncut)
   s = s.replace(/\s*\(uncut\)\s*$/i, '')
+  // Drop trailing age ratings (UK/US common): e.g., "PG", "12", "12A", "15", "18", "PG-13", "NC-17"
+  s = s.replace(/\s*(?:\((?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\)|(?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17))\s*$/i, '')
+  // Drop trailing bracketed marketing qualifiers: (100th Anniversary), (4K Restoration), (Director's Cut), etc.
+  // Simpler, robust pattern to avoid parser issues
+  s = s.replace(/\s*[\[(][^)\]]*(?:anniversary|restoration|remastered|director'?s\s+cut|theatrical\s+cut|preview|q&a|qa|uncut(?:\s+version)?|(?:35|70)mm|[24]k|imax|extended|special\s+edition|double\s+bill)[^)\]]*[\])]\s*$/i, '')
   // Drop common marketing suffixes after a hyphen
   s = s.replace(/\s*[-–—]\s*(\d+\w*\s+anniversary|\d+k\s+restoration|restored|director'?s\s+cut|theatrical\s+cut|remastered|preview|qa|q&a|uncut(?:\s+version)?)\s*$/i, '')
   // Drop trailing standalone 'Uncut'

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Screening, CinemaKey } from '@/types'
-import { filterByTimeWindow, parseNum } from '@/lib/filters'
+import { filterByTimeWindow, parseNum, isClearlyNonFilm } from '@/lib/filters'
 import data from '@/data/listings.json'
 
 export async function GET(req: NextRequest) {
@@ -18,6 +18,11 @@ export async function GET(req: NextRequest) {
     // Drop any malformed entries lacking a valid start time or title
     items = items.filter(i => i && typeof i.filmTitle === 'string' && typeof i.screeningStart === 'string' && !isNaN(new Date(i.screeningStart).getTime()))
 
+    // Remove obvious non-film events
+    items = items.filter(i => !isClearlyNonFilm(i.filmTitle))
+    // Hide BFI from frontend (feature-flagged)
+    const hideBFI = String(process.env.HIDE_BFI ?? process.env.NEXT_PUBLIC_HIDE_BFI ?? 'true').toLowerCase() === 'true'
+    if (hideBFI) items = items.filter(i => i.cinema !== 'bfi')
     items = filterByTimeWindow(items, window)
 
     if (q) items = items.filter(i => i.filmTitle.toLowerCase().includes(q) || i.cinema.toLowerCase().includes(q))

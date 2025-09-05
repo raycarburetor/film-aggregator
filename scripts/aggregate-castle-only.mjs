@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-import { fetchPrinceCharles } from './cinemas/princecharles.mjs'
+import { fetchCastle } from './cinemas/castle.mjs'
 import { enrichWithTMDb } from './enrich.mjs'
 
 const region = process.env.DEFAULT_REGION || 'GB'
@@ -18,8 +18,8 @@ try {
   existing = JSON.parse(raw)
 } catch {}
 
-// Remove current PCC items
-existing = Array.isArray(existing) ? existing.filter(i => i?.cinema !== 'princecharles') : []
+// Remove current Castle items
+existing = Array.isArray(existing) ? existing.filter(i => i?.cinema !== 'castle') : []
 
 function isNonFilmEvent(title) {
   if (!title) return false
@@ -44,11 +44,11 @@ function isNonFilmEvent(title) {
   return patterns.some((re) => re.test(s))
 }
 
-// Fetch new PCC items and enrich
-let pcc = await fetchPrinceCharles()
-pcc = pcc.filter(i => !isNonFilmEvent(i.filmTitle))
-await enrichWithTMDb(pcc, region)
+// Fetch new Castle items and enrich
+let castle = await fetchCastle()
+castle = castle.filter(i => !isNonFilmEvent(i.filmTitle))
+await enrichWithTMDb(castle, region)
 
-const merged = [...existing, ...pcc]
+const merged = [...existing, ...castle]
 await fs.writeFile(dataPath, JSON.stringify(merged, null, 2), 'utf8')
-console.log('Updated PCC listings in', dataPath, 'PCC items:', pcc.length, 'Total:', merged.length)
+console.log('Updated Castle listings in', dataPath, 'Castle items:', castle.length, 'Total:', merged.length)

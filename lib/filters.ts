@@ -39,3 +39,28 @@ export function parseNum(s: string | null) {
   const n = Number(s)
   return Number.isFinite(n) ? n : undefined
 }
+
+// Heuristic filter for non-film events across cinemas
+export function isClearlyNonFilm(title: string): boolean {
+  if (!title) return false
+  const s = String(title).toLowerCase()
+  const patterns: RegExp[] = [
+    /\bindustry\s+panel\b/,
+    /\bnetworking\b/,
+    /\bpanel\s+discussion\b/,
+    /^panel\b/,
+    /\bmasterclass\b/,
+    /\bworkshop\b/,
+    /\bbook\s+(?:talk|launch|reading)\b/,
+    /\bquiz\b/, // film quiz etc.
+    /\bkaraoke\b/,
+    /\bstand[- ]?up\b/,
+    /\bcomedy\b/,
+    /\blive\s+(?:event|on\s+stage|music)\b/,
+    /\bmystery\s+movie\b/,
+    /\bmarathon\b/,
+    /\bsolve[- ]along\b/,
+    /\bwftv\b/, // Women in Film & TV networking nights etc.
+  ]
+  return patterns.some((re) => re.test(s))
+}

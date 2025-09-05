@@ -4,9 +4,10 @@ import { useRouter, useSearchParams } from 'next/navigation'
 
 export const CINEMAS = [
   { key: 'bfi', label: 'BFI Southbank' },
-  { key: 'princecharles', label: 'Prince Charles' },
+  { key: 'princecharles', label: 'Prince Charles Cinema' },
   { key: 'ica', label: 'ICA' },
-  { key: 'castle', label: 'The Castle' },
+  { key: 'castle', label: 'The Castle Cinema' },
+  { key: 'garden', label: 'The Garden Cinema' },
 ] as const
 
 export default function Filters({ genres }: { genres: string[] }) {
@@ -47,7 +48,7 @@ export default function Filters({ genres }: { genres: string[] }) {
         <div>
           <div className="text-sm font-normal mb-2">Cinemas</div>
           <div className="flex flex-col gap-2">
-            {CINEMAS.map(c=> (
+            {CINEMAS.filter(c => !((process.env.NEXT_PUBLIC_HIDE_BFI ?? 'true') === 'true' && c.key === 'bfi')).map(c=> (
               <label key={c.key} className="inline-flex items-center gap-2">
                 <input type="checkbox" checked={selectedCinemas.includes(c.key)} onChange={()=>toggle(selectedCinemas,c.key,setSelectedCinemas)} />
                 {c.label}

@@ -12,8 +12,11 @@
     "preview:ica": "node scripts/preview-ica-summary.mjs",
     "preview:pcc": "node scripts/preview-princecharles.mjs",
     "aggregate:pcc": "node scripts/aggregate-pcc-only.mjs",
+    "aggregate:garden": "node scripts/aggregate-garden-only.mjs",
+    "aggregate:castle": "node scripts/aggregate-castle-only.mjs",
     "debug:pcc-year": "node scripts/debug-pcc-year.mjs",
-    "preview:castle": "node scripts/preview-castle.mjs"
+    "preview:castle": "node scripts/preview-castle.mjs",
+    "preview:garden": "node scripts/preview-garden.mjs"
   },
   "dependencies": {
     "next": "14.2.5",

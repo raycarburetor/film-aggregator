@@ -6204,5 +6204,1544 @@
     ],
     "director": "Sidney Poitier",
     "imdbId": "tt0081562"
+  },
+  {
+    "id": "gardenCarsPG20250906T100000000Z",
+    "filmTitle": "Cars PG",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T10:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3826159.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/cars/",
+    "websiteYear": 2006
+  },
+  {
+    "id": "gardenEddington1520250906T120000000Z",
+    "filmTitle": "Eddington 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T12:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130096.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/eddington/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenYoungMothers12A20250906T121500000Z",
+    "filmTitle": "Young Mothers 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T12:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130100.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/young-mothers/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenCaughtStealing1520250906T125000000Z",
+    "filmTitle": "Caught Stealing 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T12:50:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130106.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenCaughtStealing1520250906T194500000Z",
+    "filmTitle": "Caught Stealing 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T19:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4062890.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenBattleshipPotemkin100thAnniversary12A20250906T143000000Z",
+    "filmTitle": "Battleship Potemkin (100th Anniversary) 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T14:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130089.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/battleship-potemkin-music-by-pet-shop-boys/",
+    "websiteYear": 1925
+  },
+  {
+    "id": "gardenTheWeddingBanquet1520250906T150000000Z",
+    "filmTitle": "The Wedding Banquet 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T15:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959179.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-wedding-banquet/",
+    "websiteYear": 1993
+  },
+  {
+    "id": "gardenJaws50thAnniversary12A20250906T151500000Z",
+    "filmTitle": "Jaws (50th Anniversary) 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T15:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130104.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/jaws-50th-anniversary/",
+    "websiteYear": 1975
+  },
+  {
+    "id": "gardenPaulPauletteTakeaBath1520250906T164500000Z",
+    "filmTitle": "Paul & Paulette Take a Bath 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T16:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3963324.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/paul-paulette-take-a-bath/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenSorryBaby1520250906T173500000Z",
+    "filmTitle": "Sorry, Baby 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T17:35:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130098.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/sorry-baby/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenMurderMysteryNoirBodyHeat1820250906T180000000Z",
+    "filmTitle": "Murder Mystery: Noir + Body Heat 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T18:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3811266.TcsSection_3067646",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/noir-murder-mystery-body-heat/",
+    "websiteYear": 1981
+  },
+  {
+    "id": "gardenSex1520250906T191000000Z",
+    "filmTitle": "Sex 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-06T19:10:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130102.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/sex/",
+    "websiteYear": 2024,
+    "tmdbId": 1341256,
+    "releaseDate": "2024-08-24",
+    "synopsis": "Ninja Sex Party celebrate 15 years as a band with an hour long special filled to the brim with tasty jams",
+    "genres": [
+      "Music",
+      "Comedy"
+    ]
+  },
+  {
+    "id": "gardenCarsPG20250907T100000000Z",
+    "filmTitle": "Cars PG",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T10:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3826167.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/cars/",
+    "websiteYear": 2006
+  },
+  {
+    "id": "gardenDreams1520250907T110000000Z",
+    "filmTitle": "Dreams 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130113.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/dreams/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenPutYourSoulonYourHandandWalk12A20250907T114000000Z",
+    "filmTitle": "Put Your Soul on Your Hand and Walk 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T11:40:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130111.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/put-your-soul-on-your-hand-and-walk/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenCaughtStealing1520250907T123500000Z",
+    "filmTitle": "Caught Stealing 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T12:35:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130085.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenCaughtStealing1520250907T194000000Z",
+    "filmTitle": "Caught Stealing 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T19:40:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4062892.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenPushingHands12A20250907T140000000Z",
+    "filmTitle": "Pushing Hands 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T14:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959211.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/pushing-hands/",
+    "websiteYear": 1991
+  },
+  {
+    "id": "gardenJaws50thAnniversary12A20250907T145000000Z",
+    "filmTitle": "Jaws (50th Anniversary) 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T14:50:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130087.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/jaws-50th-anniversary/",
+    "websiteYear": 1975
+  },
+  {
+    "id": "gardenEddington1520250907T151500000Z",
+    "filmTitle": "Eddington 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T15:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130117.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/eddington/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenSorryBaby1520250907T170000000Z",
+    "filmTitle": "Sorry, Baby 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130109.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/sorry-baby/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDogtooth1820250907T172000000Z",
+    "filmTitle": "Dogtooth 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T17:20:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130119.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/dogtooth/",
+    "websiteYear": 2009
+  },
+  {
+    "id": "gardenPaulPauletteTakeaBath1520250907T183000000Z",
+    "filmTitle": "Paul & Paulette Take a Bath 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T18:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3963326.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/paul-paulette-take-a-bath/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenSerialMom1820250907T193000000Z",
+    "filmTitle": "Serial Mom 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-07T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3808733.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/serial-mom/",
+    "websiteYear": 1994
+  },
+  {
+    "id": "gardenBattleshipPotemkin100thAnniversary12A20250908T151500000Z",
+    "filmTitle": "Battleship Potemkin (100th Anniversary) 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-08T15:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130124.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/battleship-potemkin-music-by-pet-shop-boys/",
+    "websiteYear": 1925
+  },
+  {
+    "id": "gardenPaulPauletteTakeaBath1520250908T153000000Z",
+    "filmTitle": "Paul & Paulette Take a Bath 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-08T15:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3963328.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/paul-paulette-take-a-bath/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenDustintheWind1520250908T170000000Z",
+    "filmTitle": "Dust in the Wind 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-08T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959224.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/dust-in-the-wind/",
+    "websiteYear": 1986
+  },
+  {
+    "id": "gardenIndustryPanelSustainableProductionClimateconsciousStorytellingU20250908T180000000Z",
+    "filmTitle": "Industry Panel: Sustainable Production & Climate-conscious Storytelling U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-08T18:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3998958.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/industry-panel-sustainable-production/"
+  },
+  {
+    "id": "gardenLove1520250908T192000000Z",
+    "filmTitle": "Love 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-08T19:20:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130122.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/love/",
+    "websiteYear": 2024,
+    "tmdbId": 1009654,
+    "releaseDate": "2023-10-02",
+    "synopsis": "In pre-Spanish era Philippines, a young native princess with goddess-like beauty falls in love with a dashing Spanish soldier. Against all odds, and pulled apart by their loyalties to their own people, they fight for their clandestine romance.",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "History"
+    ],
+    "director": "Michael Barder",
+    "imdbId": "tt12802672"
+  },
+  {
+    "id": "gardenCaughtStealing1520250908T193000000Z",
+    "filmTitle": "Caught Stealing 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-08T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4062894.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenJaws50thAnniversary12A20250909T141000000Z",
+    "filmTitle": "Jaws (50th Anniversary) 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-09T14:10:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130146.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/jaws-50th-anniversary/",
+    "websiteYear": 1975
+  },
+  {
+    "id": "gardenCaughtStealing1520250909T143000000Z",
+    "filmTitle": "Caught Stealing 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-09T14:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4062886.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenCaughtStealing1520250909T191500000Z",
+    "filmTitle": "Caught Stealing 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-09T19:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4062896.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenSorryBaby1520250909T150000000Z",
+    "filmTitle": "Sorry, Baby 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-09T15:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130138.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/sorry-baby/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenEddington1520250909T164500000Z",
+    "filmTitle": "Eddington 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-09T16:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130144.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/eddington/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenYoungMothers12A20250909T170000000Z",
+    "filmTitle": "Young Mothers 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-09T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130140.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/young-mothers/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenBattleshipPotemkin100thAnniversary12A20250909T173000000Z",
+    "filmTitle": "Battleship Potemkin (100th Anniversary) 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-09T17:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130136.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/battleship-potemkin-music-by-pet-shop-boys/",
+    "websiteYear": 1925
+  },
+  {
+    "id": "gardenPaulPauletteTakeaBath1520250909T193000000Z",
+    "filmTitle": "Paul & Paulette Take a Bath 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-09T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3963330.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/paul-paulette-take-a-bath/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenDogtooth1820250909T194500000Z",
+    "filmTitle": "Dogtooth 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-09T19:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130142.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/dogtooth/",
+    "websiteYear": 2009
+  },
+  {
+    "id": "gardenPutYourSoulonYourHandandWalk12A20250910T142000000Z",
+    "filmTitle": "Put Your Soul on Your Hand and Walk 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-10T14:20:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130175.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/put-your-soul-on-your-hand-and-walk/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenPaulPauletteTakeaBath1520250910T143000000Z",
+    "filmTitle": "Paul & Paulette Take a Bath 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-10T14:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3963332.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/paul-paulette-take-a-bath/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenYoungMothers12A20250910T144500000Z",
+    "filmTitle": "Young Mothers 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-10T14:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130173.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/young-mothers/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenSorryBaby1520250910T164500000Z",
+    "filmTitle": "Sorry, Baby 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-10T16:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130177.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/sorry-baby/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenCaughtStealing1520250910T170000000Z",
+    "filmTitle": "Caught Stealing 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-10T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4062898.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenCaughtStealing1520250910T194000000Z",
+    "filmTitle": "Caught Stealing 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-10T19:40:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130171.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDogtooth1820250910T171500000Z",
+    "filmTitle": "Dogtooth 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-10T17:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130169.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/dogtooth/",
+    "websiteYear": 2009
+  },
+  {
+    "id": "gardenJaws50thAnniversary12A20250910T190000000Z",
+    "filmTitle": "Jaws (50th Anniversary) 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-10T19:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130179.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/jaws-50th-anniversary/",
+    "websiteYear": 1975
+  },
+  {
+    "id": "gardenYtumamtambin1820250910T193000000Z",
+    "filmTitle": "Y tu mamá también 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-10T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3940043.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/y-tu-mama-tambien/",
+    "websiteYear": 2001
+  },
+  {
+    "id": "gardenCaughtStealing1520250911T150000000Z",
+    "filmTitle": "Caught Stealing 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-11T15:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130185.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenCaughtStealing1520250911T171500000Z",
+    "filmTitle": "Caught Stealing 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-11T17:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4062900.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenBattleshipPotemkin100thAnniversary12A20250911T151500000Z",
+    "filmTitle": "Battleship Potemkin (100th Anniversary) 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-11T15:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130183.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/battleship-potemkin-music-by-pet-shop-boys/",
+    "websiteYear": 1925
+  },
+  {
+    "id": "gardenEddington1520250911T153000000Z",
+    "filmTitle": "Eddington 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-11T15:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130181.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/eddington/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenWFTVxTheGardenCinemanetworking1820250911T173000000Z",
+    "filmTitle": "WFTV x The Garden Cinema networking 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-11T17:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4106829.TcsSection_3448696",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/wftv-x-the-garden-cinema-networking/"
+  },
+  {
+    "id": "gardenIslands1520250911T183000000Z",
+    "filmTitle": "Islands 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-11T18:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4075638.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/islands/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDustintheWind1520250911T193000000Z",
+    "filmTitle": "Dust in the Wind 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-11T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959237.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/dust-in-the-wind/",
+    "websiteYear": 1986
+  },
+  {
+    "id": "gardenPaulPauletteTakeaBath1520250911T194500000Z",
+    "filmTitle": "Paul & Paulette Take a Bath 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-11T19:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3963334.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/paul-paulette-take-a-bath/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenTheGoldenSpurtleU20250912T140000000Z",
+    "filmTitle": "The Golden Spurtle U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-12T14:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4029126.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-golden-spurtle/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDeaf12A20250912T143000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-12T14:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076411.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDeaf12A20250912T191500000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-12T19:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076409.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenChristy1520250912T160000000Z",
+    "filmTitle": "Christy 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-12T16:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4142618.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/christy/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenRebornIndiaFilmpresentsCourage1820250912T170000000Z",
+    "filmTitle": "Reborn India Film presents Courage 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-12T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3973040.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/reborn-india-film-presents-courage/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenIslands1520250912T171500000Z",
+    "filmTitle": "Islands 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-12T17:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4061896.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/islands/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenTheWaywardCloud1820250912T193000000Z",
+    "filmTitle": "The Wayward Cloud 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-12T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959309.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-wayward-cloud/",
+    "websiteYear": 2005
+  },
+  {
+    "id": "gardenPolyesterOdoramaScreening1520250912T200000000Z",
+    "filmTitle": "Polyester: Odorama Screening 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-12T20:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3994245.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/polyester-odorama-screening/",
+    "websiteYear": 1981
+  },
+  {
+    "id": "gardenFascinatorTrilbyworkshopMyFairLadyU20250913T093000000Z",
+    "filmTitle": "Fascinator/Trilby workshop + My Fair Lady U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-13T09:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4064921.TcsSection_3067646",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/fascinator-trilby-workshop-my-fair-lady/"
+  },
+  {
+    "id": "gardenTheSecretofKellsPG20250913T100000000Z",
+    "filmTitle": "The Secret of Kells PG",
+    "cinema": "garden",
+    "screeningStart": "2025-09-13T10:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3807760.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-secret-of-kells/",
+    "websiteYear": 2009
+  },
+  {
+    "id": "gardenDeaf12A20250913T120000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-13T12:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076415.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDeaf12A20250913T170000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-13T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076413.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenMyFairLadyU20250913T130000000Z",
+    "filmTitle": "My Fair Lady U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-13T13:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4065091.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/my-fair-lady/",
+    "websiteYear": 1964
+  },
+  {
+    "id": "gardenTheGoldenSpurtleU20250913T150000000Z",
+    "filmTitle": "The Golden Spurtle U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-13T15:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4029128.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-golden-spurtle/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenACityofSadness1520250913T160000000Z",
+    "filmTitle": "A City of Sadness 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-13T16:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3972977.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/a-city-of-sadness/",
+    "websiteYear": 1989
+  },
+  {
+    "id": "gardenChristy1520250913T191000000Z",
+    "filmTitle": "Christy 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-13T19:10:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4142620.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/christy/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenIslands1520250913T193000000Z",
+    "filmTitle": "Islands 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-13T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4061898.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/islands/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenTheSecretofKellsPG20250914T100000000Z",
+    "filmTitle": "The Secret of Kells PG",
+    "cinema": "garden",
+    "screeningStart": "2025-09-14T10:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3807762.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-secret-of-kells/",
+    "websiteYear": 2009
+  },
+  {
+    "id": "gardenTheGoldenSpurtleU20250914T120000000Z",
+    "filmTitle": "The Golden Spurtle U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-14T12:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4029164.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-golden-spurtle/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDeaf12A20250914T140000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-14T14:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076417.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDeaf12A20250914T184500000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-14T18:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076419.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenChristy1520250914T161500000Z",
+    "filmTitle": "Christy 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-14T16:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4142622.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/christy/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenIslands1520250914T180000000Z",
+    "filmTitle": "Islands 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-14T18:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4061900.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/islands/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenPushingHands12A20250915T140000000Z",
+    "filmTitle": "Pushing Hands 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-15T14:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959319.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/pushing-hands/",
+    "websiteYear": 1991
+  },
+  {
+    "id": "gardenDeaf12A20250915T143000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-15T14:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076727.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDeaf12A20250915T193000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-15T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076725.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenIslands1520250915T164500000Z",
+    "filmTitle": "Islands 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-15T16:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4061902.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/islands/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenChristy1520250915T170000000Z",
+    "filmTitle": "Christy 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-15T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4142624.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/christy/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenTheGoldenSpurtleU20250915T173000000Z",
+    "filmTitle": "The Golden Spurtle U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-15T17:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4029166.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-golden-spurtle/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDeaf12A20250916T143000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-16T14:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076729.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDeaf12A20250916T193000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-16T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076731.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenTheGoldenSpurtleU20250916T150000000Z",
+    "filmTitle": "The Golden Spurtle U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-16T15:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4029168.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-golden-spurtle/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenChristy1520250916T153000000Z",
+    "filmTitle": "Christy 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-16T15:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4142626.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/christy/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenYtumamtambin1820250916T164500000Z",
+    "filmTitle": "Y tu mamá también 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-16T16:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4061906.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/y-tu-mama-tambien/",
+    "websiteYear": 2001
+  },
+  {
+    "id": "gardenThatDayontheBeach1820250916T180000000Z",
+    "filmTitle": "That Day, on the Beach 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-16T18:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959333.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/that-day-on-the-beach/",
+    "websiteYear": 1983
+  },
+  {
+    "id": "gardenIslands1520250916T191500000Z",
+    "filmTitle": "Islands 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-16T19:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4061904.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/islands/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenTheWeddingBanquet1520250917T142500000Z",
+    "filmTitle": "The Wedding Banquet 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-17T14:25:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959346.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-wedding-banquet/",
+    "websiteYear": 1993
+  },
+  {
+    "id": "gardenDeaf12A20250917T150000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-17T15:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076873.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDeaf12A20250917T193000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-17T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076735.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenIslands1520250917T170000000Z",
+    "filmTitle": "Islands 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-17T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4061908.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/islands/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenChristy1520250917T171500000Z",
+    "filmTitle": "Christy 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-17T17:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4142628.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/christy/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenTheGoldenSpurtleU20250917T173000000Z",
+    "filmTitle": "The Golden Spurtle U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-17T17:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4029170.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-golden-spurtle/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDeaf12A20250918T143000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-18T14:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076739.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDeaf12A20250918T163000000Z",
+    "filmTitle": "Deaf 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-18T16:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4076737.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/deaf/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenTheGoldenSpurtleU20250918T164500000Z",
+    "filmTitle": "The Golden Spurtle U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-18T16:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4029172.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-golden-spurtle/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenHongKongFilmFestivalUKpresentsContoursofMigrationLifeGoesOnintheInbetween1820250918T170000000Z",
+    "filmTitle": "Hong Kong Film Festival UK presents Contours of Migration: Life Goes On in the In-between 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-18T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4028717.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/hong-kong-film-festival-uk-presents-contours-of-migration/"
+  },
+  {
+    "id": "gardenChristy1520250918T184000000Z",
+    "filmTitle": "Christy 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-18T18:40:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4142630.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/christy/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenIslands1520250918T190000000Z",
+    "filmTitle": "Islands 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-18T19:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4061910.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/islands/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenHongKongFilmFestivalUKpresentsLvivDiaryWorldPremiere1820250918T192000000Z",
+    "filmTitle": "Hong Kong Film Festival UK presents Lviv Diary (World Premiere) 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-18T19:20:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4028725.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/hong-kong-film-festival-uk-presents-lviv-diary-world-premiere/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenHappyendRatingTBC20250919T134500000Z",
+    "filmTitle": "Happyend Rating TBC",
+    "cinema": "garden",
+    "screeningStart": "2025-09-19T13:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4143015.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/happyend/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenHappyendRatingTBC20250919T164500000Z",
+    "filmTitle": "Happyend Rating TBC",
+    "cinema": "garden",
+    "screeningStart": "2025-09-19T16:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4143013.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/happyend/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenSteve1520250919T144500000Z",
+    "filmTitle": "Steve 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-19T14:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115200.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/steve/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenSteve1520250919T191000000Z",
+    "filmTitle": "Steve 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-19T19:10:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115198.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/steve/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenEatDrinkManWomanPG20250919T170000000Z",
+    "filmTitle": "Eat Drink Man Woman PG",
+    "cinema": "garden",
+    "screeningStart": "2025-09-19T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959359.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/eat-drink-man-woman/",
+    "websiteYear": 1994
+  },
+  {
+    "id": "gardenLaVitticocktailstiramisLEclisse1820250919T183000000Z",
+    "filmTitle": "La Vitti cocktails, tiramisù + L'Eclisse 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-19T18:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4016526.TcsSection_3067646",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/vitti-cocktails-tiramisu-leclisse/",
+    "websiteYear": 1963
+  },
+  {
+    "id": "gardenSavagesFamilyScreeningPG20250920T100000000Z",
+    "filmTitle": "Savages- Family Screening PG",
+    "cinema": "garden",
+    "screeningStart": "2025-09-20T10:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4030414.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/savages-family-screening/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenHappyendRatingTBC20250920T121000000Z",
+    "filmTitle": "Happyend Rating TBC",
+    "cinema": "garden",
+    "screeningStart": "2025-09-20T12:10:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4143017.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/happyend/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenHappyendRatingTBC20250920T191500000Z",
+    "filmTitle": "Happyend Rating TBC",
+    "cinema": "garden",
+    "screeningStart": "2025-09-20T19:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4143019.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/happyend/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenHongKongFilmFestivalUKpresentsNextStopSomeWhereUKPremiere1820250920T150000000Z",
+    "filmTitle": "Hong Kong Film Festival UK presents Next Stop, SomeWhere (UK Premiere) 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-20T15:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4028739.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/hong-kong-film-festival-uk-presents-next-stop-somewhere-uk-premiere/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenSteve1520250920T171500000Z",
+    "filmTitle": "Steve 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-20T17:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115202.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/steve/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenJaneAusten250MansfieldParkwithPatriciaRozema1520250920T180000000Z",
+    "filmTitle": "Jane Austen 250: Mansfield Park with Patricia Rozema 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-20T18:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4036792.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/jane-austen-250-mansfield-park-with-patricia-rozema/",
+    "websiteYear": 1999
+  },
+  {
+    "id": "gardenGPSurgerypresentsJohnnyPanicExperimentalShorts1820250920T183000000Z",
+    "filmTitle": "GP Surgery presents: Johnny Panic + Experimental Shorts 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-20T18:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4134421.TcsSection_3448696",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/gp-surgery-presents-johnny-panic-experimental-shorts/",
+    "websiteYear": 2000
+  },
+  {
+    "id": "gardenSavagesFamilyScreeningPG20250921T100000000Z",
+    "filmTitle": "Savages- Family Screening PG",
+    "cinema": "garden",
+    "screeningStart": "2025-09-21T10:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4030426.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/savages-family-screening/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenLegendoftheMountain1220250921T123000000Z",
+    "filmTitle": "Legend of the Mountain 12",
+    "cinema": "garden",
+    "screeningStart": "2025-09-21T12:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959384.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/legend-of-the-mountain/",
+    "websiteYear": 1979
+  },
+  {
+    "id": "gardenLAvventuraPG20250921T153000000Z",
+    "filmTitle": "L’Avventura PG",
+    "cinema": "garden",
+    "screeningStart": "2025-09-21T15:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4029760.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/lavventura/",
+    "websiteYear": 1960
+  },
+  {
+    "id": "gardenHappyendRatingTBC20250921T154000000Z",
+    "filmTitle": "Happyend Rating TBC",
+    "cinema": "garden",
+    "screeningStart": "2025-09-21T15:40:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4143021.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/happyend/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenSteve1520250921T181500000Z",
+    "filmTitle": "Steve 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-21T18:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115204.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/steve/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenDustintheWind1520250922T140000000Z",
+    "filmTitle": "Dust in the Wind 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-22T14:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959397.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/dust-in-the-wind/",
+    "websiteYear": 1986
+  },
+  {
+    "id": "gardenSteve1520250922T144500000Z",
+    "filmTitle": "Steve 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-22T14:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115206.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/steve/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenHappyendRatingTBC20250922T165000000Z",
+    "filmTitle": "Happyend Rating TBC",
+    "cinema": "garden",
+    "screeningStart": "2025-09-22T16:50:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4143023.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/happyend/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenSecuringtheStoryFrontlineFilmmakingandDigitalSafetyResistersinBorderlandPanel1820250922T170000000Z",
+    "filmTitle": "Securing the Story - Frontline Filmmaking and Digital Safety: Resisters in Borderland + Panel 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-22T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4028753.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/securing-the-story-frontline-filmmaking-and-digital-safety-resisters-in-borderland-panel/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenWeAreDocWomenPresentsMotherVera12A20250922T193000000Z",
+    "filmTitle": "We Are Doc Women Presents Mother Vera 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-09-22T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4033207.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/we-are-doc-women-presents-mother-vera/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenHappyendRatingTBC20250923T170000000Z",
+    "filmTitle": "Happyend Rating TBC",
+    "cinema": "garden",
+    "screeningStart": "2025-09-23T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4143025.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/happyend/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenSteve1520250923T193000000Z",
+    "filmTitle": "Steve 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-23T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115208.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/steve/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenSteve1520250924T150000000Z",
+    "filmTitle": "Steve 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-24T15:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115210.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/steve/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenHappyendRatingTBC20250924T153000000Z",
+    "filmTitle": "Happyend Rating TBC",
+    "cinema": "garden",
+    "screeningStart": "2025-09-24T15:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4143031.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/happyend/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenHappyendRatingTBC20250924T194500000Z",
+    "filmTitle": "Happyend Rating TBC",
+    "cinema": "garden",
+    "screeningStart": "2025-09-24T19:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4143027.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/happyend/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenThatDayontheBeach1820250925T133500000Z",
+    "filmTitle": "That Day, on the Beach 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-25T13:35:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959407.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/that-day-on-the-beach/",
+    "websiteYear": 1983
+  },
+  {
+    "id": "gardenHappyendRatingTBC20250925T162000000Z",
+    "filmTitle": "Happyend Rating TBC",
+    "cinema": "garden",
+    "screeningStart": "2025-09-25T16:20:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4143029.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/happyend/",
+    "websiteYear": 2024
+  },
+  {
+    "id": "gardenSteve1520250925T193000000Z",
+    "filmTitle": "Steve 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-25T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115212.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/steve/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenKenLoachseasonlaunchscreeningofRiffRaff1820250926T183000000Z",
+    "filmTitle": "Ken Loach season launch + screening of Riff Raff 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-26T18:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4107082.TcsSection_3067646",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/ken-loach-season-launch-screening-of-riff-raff/",
+    "websiteYear": 1991
+  },
+  {
+    "id": "gardenBeethovenU20250927T100000000Z",
+    "filmTitle": "Beethoven U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-27T10:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4109595.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/beethoven/",
+    "websiteYear": 1992,
+    "tmdbId": 54785,
+    "releaseDate": "1992-09-30",
+    "synopsis": "When his mother rents their vacant room to a peculiar composer, Christoph can't believe his bad luck. But as the abrasive boarder, Ludwig Van Beethoven, begins creating his masterful 9th Symphony, Christoph is won over by the majesty of his music. This lighthearted family drama was awarded the 1993 Emmy for Outstanding Children's Program.",
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Science Fiction",
+      "Family",
+      "TV Movie"
+    ],
+    "director": "David Devine",
+    "imdbId": "tt0096903"
+  },
+  {
+    "id": "gardenTakeOut1520250927T120000000Z",
+    "filmTitle": "Take Out 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-27T12:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959429.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/take-out/",
+    "websiteYear": 2004
+  },
+  {
+    "id": "gardenCrazyLove1820250927T170000000Z",
+    "filmTitle": "Crazy Love 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-27T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4061593.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/crazy-love/",
+    "websiteYear": 1968
+  },
+  {
+    "id": "gardenBeethovenU20250928T100000000Z",
+    "filmTitle": "Beethoven U",
+    "cinema": "garden",
+    "screeningStart": "2025-09-28T10:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4109597.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/beethoven/",
+    "websiteYear": 1992,
+    "tmdbId": 54785,
+    "releaseDate": "1992-09-30",
+    "synopsis": "When his mother rents their vacant room to a peculiar composer, Christoph can't believe his bad luck. But as the abrasive boarder, Ludwig Van Beethoven, begins creating his masterful 9th Symphony, Christoph is won over by the majesty of his music. This lighthearted family drama was awarded the 1993 Emmy for Outstanding Children's Program.",
+    "genres": [
+      "Fantasy",
+      "Drama",
+      "Science Fiction",
+      "Family",
+      "TV Movie"
+    ],
+    "director": "David Devine",
+    "imdbId": "tt0096903"
+  },
+  {
+    "id": "gardenSmallTalk1820250928T110000000Z",
+    "filmTitle": "Small Talk 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-28T11:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959442.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/small-talk/",
+    "websiteYear": 2016
+  },
+  {
+    "id": "gardenUndertheOpenSky1820250928T144500000Z",
+    "filmTitle": "Under the Open Sky 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-28T14:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3994048.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/under-the-open-sky-qa/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenFilmsFromTheUKsStudentEncampments1820250928T173000000Z",
+    "filmTitle": "Films From The UK’s Student Encampments 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-28T17:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4042677.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/films-from-the-uks-student-encampments/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenUptheJunction1220250928T180000000Z",
+    "filmTitle": "Up the Junction 12",
+    "cinema": "garden",
+    "screeningStart": "2025-09-28T18:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3884054.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/up-the-junction/",
+    "websiteYear": 1968
+  },
+  {
+    "id": "gardenTheCinemaofMichioOkabe1820250929T170000000Z",
+    "filmTitle": "The Cinema of Michio Okabe 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-29T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4061599.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-cinema-of-michio-okabe/",
+    "websiteYear": 1967
+  },
+  {
+    "id": "gardenACityofSadness1520250929T190000000Z",
+    "filmTitle": "A City of Sadness 15",
+    "cinema": "garden",
+    "screeningStart": "2025-09-29T19:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3972991.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/a-city-of-sadness/",
+    "websiteYear": 1989
+  },
+  {
+    "id": "gardenBarShortspresentsaneveningofshortfilmsandanimationcuratedbyLupusFilms1820250930T184000000Z",
+    "filmTitle": "Bar Shorts presents an evening of short films and animation curated by Lupus Films 18",
+    "cinema": "garden",
+    "screeningStart": "2025-09-30T18:40:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4134749.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/bar-shorts-presents-an-evening-of-short-films-and-animation-curated-by-lupus-films/"
+  },
+  {
+    "id": "gardenSorryWeMissedYou1520251001T143000000Z",
+    "filmTitle": "Sorry We Missed You 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-01T14:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3884056.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/sorry-we-missed-you/",
+    "websiteYear": 2019
+  },
+  {
+    "id": "garden10101820251001T170000000Z",
+    "filmTitle": "10 + 10 18",
+    "cinema": "garden",
+    "screeningStart": "2025-10-01T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959454.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/10-10/",
+    "websiteYear": 2011
+  },
+  {
+    "id": "gardenUndertheOpenSky1820251002T184500000Z",
+    "filmTitle": "Under the Open Sky 18",
+    "cinema": "garden",
+    "screeningStart": "2025-10-02T18:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3994079.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/under-the-open-sky-qa/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenAConfucianConfusion1520251002T190000000Z",
+    "filmTitle": "A Confucian Confusion 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-02T19:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959477.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/a-confucian-confusion/",
+    "websiteYear": 1994
+  },
+  {
+    "id": "gardenUrchin1520251003T143000000Z",
+    "filmTitle": "Urchin 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-03T14:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4116117.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/urchin/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenUrchin1520251003T194500000Z",
+    "filmTitle": "Urchin 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-03T19:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4116119.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/urchin/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenStrangeJourneyTheStoryofRockyHorror1520251003T173000000Z",
+    "filmTitle": "Strange Journey: The Story of Rocky Horror 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-03T17:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115387.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/strange-journey-the-story-of-rocky-horror/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenTheRockyHorrorPictureShow50thAnniversary12A20251003T193000000Z",
+    "filmTitle": "The Rocky Horror Picture Show (50th Anniversary) 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-10-03T19:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115385.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/rocky-horror-picture-show/",
+    "websiteYear": 1975
+  },
+  {
+    "id": "gardenTheSimpsonsMoviePG20251004T100000000Z",
+    "filmTitle": "The Simpsons Movie PG",
+    "cinema": "garden",
+    "screeningStart": "2025-10-04T10:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4109593.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-simpsons-movie/",
+    "websiteYear": 2007
+  },
+  {
+    "id": "gardenTheWaywardCloud1820251004T110000000Z",
+    "filmTitle": "The Wayward Cloud 18",
+    "cinema": "garden",
+    "screeningStart": "2025-10-04T11:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959520.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-wayward-cloud/",
+    "websiteYear": 2005
+  },
+  {
+    "id": "gardenUrchin1520251004T141500000Z",
+    "filmTitle": "Urchin 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-04T14:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4116121.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/urchin/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenUrchin1520251004T194000000Z",
+    "filmTitle": "Urchin 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-04T19:40:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4116123.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/urchin/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenTheSimpsonsMoviePG20251005T100000000Z",
+    "filmTitle": "The Simpsons Movie PG",
+    "cinema": "garden",
+    "screeningStart": "2025-10-05T10:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4109589.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-simpsons-movie/",
+    "websiteYear": 2007
+  },
+  {
+    "id": "gardenThatDayontheBeach1820251005T120000000Z",
+    "filmTitle": "That Day, on the Beach 18",
+    "cinema": "garden",
+    "screeningStart": "2025-10-05T12:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3959532.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/that-day-on-the-beach/",
+    "websiteYear": 1983
+  },
+  {
+    "id": "gardenUrchin1520251005T140000000Z",
+    "filmTitle": "Urchin 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-05T14:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4116127.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/urchin/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenUrchin1520251005T183000000Z",
+    "filmTitle": "Urchin 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-05T18:30:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4116125.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/urchin/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenStrangeJourneyTheStoryofRockyHorror1520251005T161500000Z",
+    "filmTitle": "Strange Journey: The Story of Rocky Horror 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-05T16:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115391.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/strange-journey-the-story-of-rocky-horror/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "gardenCathyComeHomePG20251005T180000000Z",
+    "filmTitle": "Cathy Come Home PG",
+    "cinema": "garden",
+    "screeningStart": "2025-10-05T18:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3884064.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/cathy-come-home/",
+    "websiteYear": 1966
+  },
+  {
+    "id": "gardenTheRockyHorrorPictureShow50thAnniversary12A20251005T181500000Z",
+    "filmTitle": "The Rocky Horror Picture Show (50th Anniversary) 12A",
+    "cinema": "garden",
+    "screeningStart": "2025-10-05T18:15:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4115389.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/rocky-horror-picture-show/",
+    "websiteYear": 1975
   }
 ]
