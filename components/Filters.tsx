@@ -51,7 +51,7 @@ export default function Filters({ genres }: { genres: string[] }) {
           <div className="flex flex-col gap-2">
             {CINEMAS.filter(c => !((process.env.NEXT_PUBLIC_HIDE_BFI ?? 'true') === 'true' && c.key === 'bfi')).map(c=> (
               <label key={c.key} className="inline-flex items-center gap-2">
-                <input type="checkbox" checked={selectedCinemas.includes(c.key)} onChange={()=>toggle(selectedCinemas,c.key,setSelectedCinemas)} />
+                <input type="checkbox" className="cinema-checkbox" checked={selectedCinemas.includes(c.key)} onChange={()=>toggle(selectedCinemas,c.key,setSelectedCinemas)} />
                 {c.label}
               </label>
             ))}

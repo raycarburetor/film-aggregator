@@ -39,6 +39,21 @@
   :focus-visible { outline: 1px solid rgb(var(--stroke) / 0.6); outline-offset: 2px; }
 }
 
+/* Remove number input spinners (year fields) */
+@layer base {
+  /* Chrome, Safari, Edge, Opera */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+}
+
 /* Accent stroke defaults for Tailwind border utilities used */
 @layer utilities {
   .border, .border-t, .border-b, .border-l, .border-r {
@@ -98,4 +113,39 @@
     color: rgb(var(--fg)) !important;
     border-color: transparent !important; /* hide border when active */
   }
+
+  /* Cinema filter checkboxes: custom style, no tick when selected */
+  .cinema-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid rgb(var(--stroke));
+    background: rgb(var(--bg));
+    display: inline-grid;
+    place-content: center;
+  }
+  .cinema-checkbox:hover { border-color: rgb(var(--hover)); }
+  .cinema-checkbox:checked {
+    background-color: rgb(var(--hover));
+    border-color: rgb(var(--hover));
+  }
+
+  /* Inputs: red border only when containing text (not on focus alone) */
+  input:not([type]):not(:placeholder-shown),
+  input[type="text"]:not(:placeholder-shown),
+  input[type="search"]:not(:placeholder-shown),
+  input[type="number"]:not(:placeholder-shown),
+  textarea:not(:placeholder-shown) {
+    border-color: rgb(var(--hover)) !important;
+  }
+
+  /* Inputs: remove extra outline to avoid double border when focused */
+  input:not([type]):focus-visible,
+  input[type="text"]:focus-visible,
+  input[type="search"]:focus-visible,
+  input[type="number"]:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible { outline: none; }
 }
