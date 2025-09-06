@@ -11,20 +11,25 @@ function normalizeTitleForSearch(title) {
   }
   // Drop common suffix adornments that hurt search matching
   s = s
+    // remove leading marketing prefixes like "Preview:", "Relaxed Screening:", "Members' Screening:", "Parent & Baby Screening:" and any generic "* Screening:" or series labels like "Parent and Baby:", "Family Film Club:"
+    .replace(/^\s*(?:preview|relaxed\s+screening|members'?\s*screening|parent\s*&\s*baby\s*screening)\s*[:\-–—]\s*/i, '')
+    .replace(/^\s*(?:parent\s*(?:and|&)?\s*baby|family\s*film\s*club)\s*[:\-–—]\s*/i, '')
+    .replace(/^\s*[^:]{0,80}\bscreening\s*[:\-–—]\s*/i, '')
     // remove any parenthetical/trailing bracketed notes e.g. (1972), (Q&A), (4K), [35mm]
     .replace(/\s*[\[(][^\])]*[\])]/g, ' ')
     // remove hyphenated marketing suffixes e.g. "- 25th Anniversary", "- 4K Restoration", "- Director's Cut"
     .replace(/\s*[-–—]\s*(\d+\w*\s+anniversary|\d+k\s+restoration|restored|director'?s\s+cut|theatrical\s+cut|remastered|preview|qa|q&a|uncut(?:\s+version)?)\s*$/i, '')
     // remove trailing segments with series/format/venue/promotional info (after colon or hyphen)
     .replace(/\s*[:\-–—]\s*(classics\s+presented.*|presented\s+by.*|halloween\s+at.*|at\s+genesis.*|soft\s+limit\s+cinema.*|cult\s+classic\s+collective.*|studio\s+screening.*|double\s+bill.*|film\s+festival.*|in\s+(?:35|70)\s*mm.*|on\s+(?:35|70)\s*mm.*)\s*$/i, '')
-    // remove trailing UK/US rating tokens (parenthesized or standalone)
-    .replace(/\s*\((?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\)\s*$/i, '')
-    .replace(/\s+\b(?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\b\s*$/i, '')
+    // remove trailing UK/US rating tokens (parenthesized or standalone), allow optional *
+    .replace(/\s*\((?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\*?\)\s*$/i, '')
+    .replace(/\s+\b(?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\*?\b\s*$/i, '')
     // remove trailing + Q&A / + QA / + Q and A
     .replace(/\s*\+\s*(?:post[- ]?screening\s+)?(?:q\s*&\s*a|q\s*and\s*a|qa)(?:[^)]*)?\s*$/i, '')
     // remove trailing "with ... Q&A" segments
     .replace(/\s*(?:[-:])?\s*with\s+[^)]*(?:q\s*&\s*a|q\s*and\s*a|qa)\s*$/i, '')
-    // remove trailing standalone format hints so search uses bare title
+    // remove trailing 4K restoration phrase and standalone format hints so search uses bare title
+    .replace(/\s*\b4\s*k\s*restoration\b\s*$/i, '')
     .replace(/\s*\b(?:in|on)\s+(?:35|70)\s*mm\b\s*$/i, '')
     // remove a trailing standalone 'uncut' if present
     .replace(/\s+uncut\s*$/i, '')
@@ -51,10 +56,10 @@ function extractYearHint(title, existingReleaseDate, websiteYear) {
   const t = annotationYearFromTitle(title)
   if (t) return t
   if (existingReleaseDate && /^\d{4}/.test(existingReleaseDate)) return Number(existingReleaseDate.slice(0, 4))
-  // Only use websiteYear as a hint if it looks like an actual film year, not an event date
+  // Use websiteYear as a hint if it looks like a plausible film year (allow current/upcoming year)
   const Y = new Date().getFullYear()
   if (typeof websiteYear === 'number' && Number.isFinite(websiteYear)) {
-    if (websiteYear >= 1895 && websiteYear <= Y - 1) return websiteYear
+    if (websiteYear >= 1895 && websiteYear <= Y + 1) return websiteYear
   }
   return undefined
 }
@@ -113,6 +118,23 @@ export async function enrichWithTMDb(items, region='GB') {
             const cands = results.filter(r => sharesWord(r.title) || sharesWord(r.original_title))
             const pool = cands.length ? cands : results
             m = pool.slice().sort((a,b) => score(b) - score(a))[0]
+          }
+        }
+        // If we have a websiteYear on the item and the chosen result's year
+        // does not match, try to switch to a result that does; otherwise skip
+        // enrichment to avoid polluting with the wrong film metadata.
+        const siteYear = typeof it.websiteYear === 'number' ? it.websiteYear : undefined
+        const mYear = m ? (m.release_date && /^\d{4}-/.test(m.release_date) ? Number(m.release_date.slice(0,4)) : undefined) : undefined
+        if (siteYear && m && mYear && mYear !== siteYear) {
+          const bySiteYear = results.find(r => {
+            const ry = r.release_date && /^\d{4}-/.test(r.release_date) ? Number(r.release_date.slice(0,4)) : undefined
+            return ry === siteYear
+          })
+          if (bySiteYear) {
+            m = bySiteYear
+          } else {
+            // Bail out on enrichment for this item due to year mismatch
+            m = null
           }
         }
       }

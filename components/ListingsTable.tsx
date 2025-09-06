@@ -22,6 +22,8 @@ const CINEMA_LABELS: Record<string, string> = {
   castle: 'The Castle Cinema',
   garden: 'The Garden Cinema',
   genesis: 'Genesis Cinema',
+  closeup: 'Close-Up',
+  barbican: 'Barbican',
 }
 
 function formatDateTime(iso: string) {
@@ -73,8 +75,19 @@ function displayTitle(title: string): string {
     if (/(^|[^\d])70\s*mm\b/.test(t) || /\bpresented\s+in\s+70\s*mm\b/.test(t) || /\b(?:on|in)\s+70\s*mm\b/.test(t)) return '70mm'
     return undefined
   })()
+  // Detect 4K restoration anywhere in the original title
+  const has4k = (() => {
+    const t = original.toLowerCase()
+    return /(\b4\s*k\b\s*restoration\b|\brestoration\b\s*(?:in\s*)?\b4\s*k\b|\b4\s*k\b\s*restored\b)/i.test(t)
+  })()
 
   let s = original
+  // Remove leading marketing prefixes (keep core film title)
+  s = s.replace(/^\s*(?:preview|relaxed\s+screening|members'?\s*screening|parent\s*&\s*baby\s*screening)\s*[:\-–—]\s*/i, '')
+  // Also strip series/section prefixes like "Parent and Baby:" or "Family Film Club:"
+  s = s.replace(/^\s*(?:parent\s*(?:and|&)?\s*baby|family\s*film\s*club)\s*[:\-–—]\s*/i, '')
+  // Generic: strip any "* Screening:" prefix at start
+  s = s.replace(/^\s*[^:]{0,80}\bscreening\s*[:\-–—]\s*/i, '')
   // Drop trailing parenthetical year e.g. "(1972)"
   s = s.replace(/\s*\((?:19|20)\d{2}\)\s*$/i, '')
   // Drop trailing (Uncut)
@@ -84,14 +97,16 @@ function displayTitle(title: string): string {
   // Drop trailing "with ... Q&A" segments, with or without preceding punctuation
   s = s.replace(/\s*(?:[-:])?\s*with\s+[^)]*(?:q\s*&\s*a|q\s*and\s*a|qa)\s*$/i, '')
   // Drop trailing age ratings (UK/US common): handle parenthesized and standalone tokens safely.
-  // 1) Parenthesized rating at the end: e.g., "(PG-13)"
-  s = s.replace(/\s*\((?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\)\s*$/i, '')
-  // 2) Standalone rating preceded by whitespace: e.g., "Title PG-13"
-  s = s.replace(/\s+\b(?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\b\s*$/i, '')
+  // 1) Parenthesized rating at the end: e.g., "(PG-13)" or "(12A*)"
+  s = s.replace(/\s*\((?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\*?\)\s*$/i, '')
+  // 2) Standalone rating preceded by whitespace: e.g., "Title PG-13" or "Title 12A*"
+  s = s.replace(/\s+\b(?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\*?\b\s*$/i, '')
   // Drop trailing bracketed marketing qualifiers (includes 35/70mm; we'll re-append standardized suffix)
   s = s.replace(/\s*[\[(][^)\]]*(?:anniversary|restoration|remastered|director'?s\s+cut|theatrical\s+cut|preview|q&a|qa|uncut(?:\s+version)?|(?:35|70)\s*mm|[24]k|imax|extended|special\s+edition|double\s+bill|presented\s+in\s+(?:35|70)\s*mm)[^)\]]*[\])]\s*$/i, '')
   // Drop common marketing suffixes after a hyphen/colon that often include format/series info
   s = s.replace(/\s*[:\-–—]\s*(?:classics\s+presented.*|presented\s+by.*|halloween\s+at.*|at\s+genesis.*|soft\s+limit\s+cinema.*|cult\s+classic\s+collective.*|studio\s+screening.*|double\s+bill.*|film\s+festival.*|in\s+(?:35|70)\s*mm.*|on\s+(?:35|70)\s*mm.*)\s*$/i, '')
+  // If a plain "4K restoration" phrase trails, drop it from base (we'll append standardized suffix)
+  s = s.replace(/\s*\b4\s*k\s*restoration\b\s*$/i, '')
   // Drop trailing standalone 'Uncut'
   s = s.replace(/\s+uncut\s*$/i, '')
   // Clean extra whitespace
@@ -99,6 +114,7 @@ function displayTitle(title: string): string {
 
   // Append standardized format flag
   if (fmt && !new RegExp(`\\(${fmt}\\)$`, 'i').test(s)) s += ` (${fmt})`
+  if (has4k && !/\(4\s*K\s*Restoration\)$/i.test(s)) s += ' (4K Restoration)'
   return s
 }
 

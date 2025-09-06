@@ -65,7 +65,11 @@ export async function GET(req: NextRequest) {
       const ranges = decades.map(intoRange).filter(Boolean) as [number, number][]
       if (ranges.length) {
         items = items.filter(i => {
-          const y = i.releaseDate ? Number(i.releaseDate.slice(0,4)) : (typeof i.websiteYear === 'number' ? i.websiteYear : undefined)
+          // Prefer the website-stated year for decade filtering when available and plausible,
+          // otherwise fall back to enriched releaseDate year.
+          const wy = typeof i.websiteYear === 'number' ? i.websiteYear : undefined
+          const rd = i.releaseDate ? Number(i.releaseDate.slice(0,4)) : undefined
+          const y = wy ?? rd
           if (!y) return false
           return ranges.some(([a,b]) => y >= a && y <= b)
         })
