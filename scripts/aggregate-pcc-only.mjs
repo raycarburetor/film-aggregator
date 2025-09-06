@@ -40,6 +40,9 @@ function isNonFilmEvent(title) {
     /\bworkshop\b/i,
     /\bbook\s+(?:talk|launch|reading)\b/i,
     /\bwftv\b/i,
+    /\bwrestling\b/i,
+    /\bpro\s*wrestling\b/i,
+    /emporium\s+pro\s+wrestling/i,
   ]
   return patterns.some((re) => re.test(s))
 }

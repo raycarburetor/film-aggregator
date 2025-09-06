@@ -15,6 +15,17 @@ function normalizeTitleForSearch(title) {
     .replace(/\s*[\[(][^\])]*[\])]/g, ' ')
     // remove hyphenated marketing suffixes e.g. "- 25th Anniversary", "- 4K Restoration", "- Director's Cut"
     .replace(/\s*[-–—]\s*(\d+\w*\s+anniversary|\d+k\s+restoration|restored|director'?s\s+cut|theatrical\s+cut|remastered|preview|qa|q&a|uncut(?:\s+version)?)\s*$/i, '')
+    // remove trailing segments with series/format/venue/promotional info (after colon or hyphen)
+    .replace(/\s*[:\-–—]\s*(classics\s+presented.*|presented\s+by.*|halloween\s+at.*|at\s+genesis.*|soft\s+limit\s+cinema.*|cult\s+classic\s+collective.*|studio\s+screening.*|double\s+bill.*|film\s+festival.*|in\s+(?:35|70)\s*mm.*|on\s+(?:35|70)\s*mm.*)\s*$/i, '')
+    // remove trailing UK/US rating tokens (parenthesized or standalone)
+    .replace(/\s*\((?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\)\s*$/i, '')
+    .replace(/\s+\b(?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\b\s*$/i, '')
+    // remove trailing + Q&A / + QA / + Q and A
+    .replace(/\s*\+\s*(?:post[- ]?screening\s+)?(?:q\s*&\s*a|q\s*and\s*a|qa)(?:[^)]*)?\s*$/i, '')
+    // remove trailing "with ... Q&A" segments
+    .replace(/\s*(?:[-:])?\s*with\s+[^)]*(?:q\s*&\s*a|q\s*and\s*a|qa)\s*$/i, '')
+    // remove trailing standalone format hints so search uses bare title
+    .replace(/\s*\b(?:in|on)\s+(?:35|70)\s*mm\b\s*$/i, '')
     // remove a trailing standalone 'uncut' if present
     .replace(/\s+uncut\s*$/i, '')
     // collapse extra spaces
@@ -37,10 +48,14 @@ function annotationYearFromTitle(title) {
 }
 
 function extractYearHint(title, existingReleaseDate, websiteYear) {
-  if (typeof websiteYear === 'number' && Number.isFinite(websiteYear)) return websiteYear
   const t = annotationYearFromTitle(title)
   if (t) return t
   if (existingReleaseDate && /^\d{4}/.test(existingReleaseDate)) return Number(existingReleaseDate.slice(0, 4))
+  // Only use websiteYear as a hint if it looks like an actual film year, not an event date
+  const Y = new Date().getFullYear()
+  if (typeof websiteYear === 'number' && Number.isFinite(websiteYear)) {
+    if (websiteYear >= 1895 && websiteYear <= Y - 1) return websiteYear
+  }
   return undefined
 }
 
@@ -62,12 +77,18 @@ export async function enrichWithTMDb(items, region='GB') {
 
       let m = results[0]
       if (results.length) {
+        const sigWords = qTitle.toLowerCase().split(/[^a-z0-9]+/).filter(w => w.length >= 3)
+        const sharesWord = (t) => {
+          const nt = normalizeTitleForSearch(t || '').toLowerCase()
+          return sigWords.length === 0 || sigWords.some(w => nt.includes(w))
+        }
         // Prefer exact year match if we have a hint (websiteYear takes precedence)
         if (yearHint) {
           const byYear = results.find(r => yearFrom(r.release_date) === yearHint)
           if (byYear) m = byYear
         }
-        // Prefer exact title match (case-insensitive), and if multiple, choose earliest year
+        // Prefer exact title match (case-insensitive). If multiple, prefer highest popularity/vote_count.
+        const score = (r) => (Number(r.vote_count)||0)*2 + (Number(r.popularity)||0)
         const exacts = results.filter(r => {
           const t = (r.title || '').trim().toLowerCase()
           const ot = (r.original_title || '').trim().toLowerCase()
@@ -75,7 +96,7 @@ export async function enrichWithTMDb(items, region='GB') {
           return t === ql || ot === ql
         })
         if (exacts.length) {
-          m = exacts.slice().sort((a,b) => (yearFrom(a.release_date) || 9999) - (yearFrom(b.release_date) || 9999))[0]
+          m = exacts.slice().sort((a,b) => score(b) - score(a))[0]
         }
         // Fallback: prefer normalized-title match using same cleanup, then earliest
         if (!exacts.length) {
@@ -86,10 +107,12 @@ export async function enrichWithTMDb(items, region='GB') {
             return t === ql || ot === ql
           })
           if (nExacts.length) {
-            m = nExacts.slice().sort((a,b) => (yearFrom(a.release_date) || 9999) - (yearFrom(b.release_date) || 9999))[0]
+            m = nExacts.slice().sort((a,b) => score(b) - score(a))[0]
           } else {
-            // Absolute fallback: earliest year overall
-            m = results.slice().sort((a,b) => (yearFrom(a.release_date) || 9999) - (yearFrom(b.release_date) || 9999))[0]
+            // Fallback: pick by popularity among candidates sharing a significant word
+            const cands = results.filter(r => sharesWord(r.title) || sharesWord(r.original_title))
+            const pool = cands.length ? cands : results
+            m = pool.slice().sort((a,b) => score(b) - score(a))[0]
           }
         }
       }

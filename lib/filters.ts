@@ -61,6 +61,9 @@ export function isClearlyNonFilm(title: string): boolean {
     /\bmarathon\b/,
     /\bsolve[- ]along\b/,
     /\bwftv\b/, // Women in Film & TV networking nights etc.
+    /\bwrestling\b/, // pro wrestling events
+    /\bpro\s*wrestling\b/,
+    /emporium\s+pro\s+wrestling/,
   ]
   return patterns.some((re) => re.test(s))
 }

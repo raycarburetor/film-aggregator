@@ -20,8 +20,12 @@ async function fetchListings(searchParams: Record<string, string | string[] | un
 }
 
 export default async function Page({ searchParams }: { searchParams: Record<string, string | undefined> }) {
+  // Fetch filtered items (respecting selected genre)
   const items = await fetchListings(searchParams)
-  const allGenres = Array.from(new Set(items.flatMap((i: any) => i.genres || []))).sort()
+  // Fetch items without genre filter to compute a stable, alphabetical genre list
+  // Build genre chips from the full upcoming set, ignoring all filters
+  const itemsNoGenre = await fetchListings({ window: 'all' })
+  const allGenres = Array.from(new Set(itemsNoGenre.flatMap((i: any) => i.genres || []))).sort()
 
   return (
     <div className="space-y-4">

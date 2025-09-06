@@ -11,6 +11,7 @@ import { fetchPrinceCharles } from './cinemas/princecharles.mjs'
 import { fetchICA } from './cinemas/ica.mjs'
 import { fetchCastle } from './cinemas/castle.mjs'
 import { fetchGarden } from './cinemas/garden.mjs'
+import { fetchGenesis } from './cinemas/genesis.mjs'
 import { enrichWithTMDb, enrichWithLetterboxd } from './enrich.mjs'
 
 function isNonFilmEvent(title) {
@@ -33,6 +34,9 @@ function isNonFilmEvent(title) {
     /\bworkshop\b/i,
     /\bbook\s+(?:talk|launch|reading)\b/i,
     /\bwftv\b/i,
+    /\bwrestling\b/i,
+    /\bpro\s*wrestling\b/i,
+    /emporium\s+pro\s+wrestling/i,
   ]
   return patterns.some((re) => re.test(s))
 }
@@ -45,6 +49,7 @@ let items = [
   ...(await fetchICA()),
   ...(await fetchCastle()),
   ...(await fetchGarden()),
+  ...(await fetchGenesis()),
 ]
 
 // Drop obvious non-film events

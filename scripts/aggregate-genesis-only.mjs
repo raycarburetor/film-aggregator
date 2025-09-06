@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-import { fetchGarden } from './cinemas/garden.mjs'
+import { fetchGenesis } from './cinemas/genesis.mjs'
 import { enrichWithTMDb } from './enrich.mjs'
 
 const region = process.env.DEFAULT_REGION || 'GB'
@@ -18,8 +18,8 @@ try {
   existing = JSON.parse(raw)
 } catch {}
 
-// Remove current Garden items
-existing = Array.isArray(existing) ? existing.filter(i => i?.cinema !== 'garden') : []
+// Remove current Genesis items
+existing = Array.isArray(existing) ? existing.filter(i => i?.cinema !== 'genesis') : []
 
 function isNonFilmEvent(title) {
   if (!title) return false
@@ -47,11 +47,11 @@ function isNonFilmEvent(title) {
   return patterns.some((re) => re.test(s))
 }
 
-// Fetch new Garden items and enrich
-let garden = await fetchGarden()
-garden = garden.filter(i => !isNonFilmEvent(i.filmTitle))
-await enrichWithTMDb(garden, region)
+// Fetch new Genesis items and enrich
+let genesis = await fetchGenesis()
+genesis = genesis.filter(i => !isNonFilmEvent(i.filmTitle))
+await enrichWithTMDb(genesis, region)
 
-const merged = [...existing, ...garden]
+const merged = [...existing, ...genesis]
 await fs.writeFile(dataPath, JSON.stringify(merged, null, 2), 'utf8')
-console.log('Updated Garden listings in', dataPath, 'Garden items:', garden.length, 'Total:', merged.length)
+console.log('Updated Genesis listings in', dataPath, 'Genesis items:', genesis.length, 'Total:', merged.length)

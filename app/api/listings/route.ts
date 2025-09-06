@@ -16,6 +16,7 @@ export async function GET(req: NextRequest) {
     const genres = (searchParams.get('genres') || '').split(',').filter(Boolean)
     const minYear = parseNum(searchParams.get('minYear'))
     const maxYear = parseNum(searchParams.get('maxYear'))
+    const decades = (searchParams.get('decades') || '').split(',').filter(Boolean)
     // Min Letterboxd rating (0–5)
     const minLb = parseNum(searchParams.get('minLb'))
     const debug = (searchParams.get('debug') || '').toLowerCase() === '1'
@@ -43,7 +44,7 @@ export async function GET(req: NextRequest) {
     if (hideBFI) items = items.filter(i => i.cinema !== 'bfi')
     items = filterByTimeWindow(items, window)
 
-    if (q) items = items.filter(i => i.filmTitle.toLowerCase().includes(q) || i.cinema.toLowerCase().includes(q))
+    if (q) items = items.filter(i => i.filmTitle.toLowerCase().includes(q))
     if (cinemas.length) items = items.filter(i => cinemas.includes(i.cinema))
     if (genres.length) items = items.filter(i => (i.genres || []).some(g => genres.includes(g)))
     if (minYear || maxYear) items = items.filter(i => {
@@ -53,6 +54,23 @@ export async function GET(req: NextRequest) {
       if (maxYear && y > maxYear) return false
       return true
     })
+    if (decades.length) {
+      const intoRange = (d: string): [number, number] | null => {
+        const m = d.match(/^(\d{4})s$/)
+        if (!m) return null
+        const start = Number(m[1])
+        if (!Number.isFinite(start)) return null
+        return [start, start + 9]
+      }
+      const ranges = decades.map(intoRange).filter(Boolean) as [number, number][]
+      if (ranges.length) {
+        items = items.filter(i => {
+          const y = i.releaseDate ? Number(i.releaseDate.slice(0,4)) : (typeof i.websiteYear === 'number' ? i.websiteYear : undefined)
+          if (!y) return false
+          return ranges.some(([a,b]) => y >= a && y <= b)
+        })
+      }
+    }
     if (typeof minLb === 'number') items = items.filter(i => ((i as any).letterboxdRating ?? 0) >= minLb)
 
     items = items.slice().sort((a,b) => a.screeningStart.localeCompare(b.screeningStart))

@@ -21,6 +21,7 @@ const CINEMA_LABELS: Record<string, string> = {
   ica: 'ICA',
   castle: 'The Castle Cinema',
   garden: 'The Garden Cinema',
+  genesis: 'Genesis Cinema',
 }
 
 function formatDateTime(iso: string) {
@@ -63,22 +64,41 @@ function fallbackYearFromTitle(title: string): string | undefined {
 
 function displayTitle(title: string): string {
   if (!title) return title
-  let s = String(title)
+  const original = String(title)
+
+  // Detect format hints (35mm/70mm) anywhere in the original title
+  const fmt = (() => {
+    const t = original.toLowerCase()
+    if (/(^|[^\d])35\s*mm\b/.test(t) || /\bpresented\s+in\s+35\s*mm\b/.test(t) || /\b(?:on|in)\s+35\s*mm\b/.test(t)) return '35mm'
+    if (/(^|[^\d])70\s*mm\b/.test(t) || /\bpresented\s+in\s+70\s*mm\b/.test(t) || /\b(?:on|in)\s+70\s*mm\b/.test(t)) return '70mm'
+    return undefined
+  })()
+
+  let s = original
   // Drop trailing parenthetical year e.g. "(1972)"
   s = s.replace(/\s*\((?:19|20)\d{2}\)\s*$/i, '')
   // Drop trailing (Uncut)
   s = s.replace(/\s*\(uncut\)\s*$/i, '')
-  // Drop trailing age ratings (UK/US common): e.g., "PG", "12", "12A", "15", "18", "PG-13", "NC-17"
-  s = s.replace(/\s*(?:\((?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\)|(?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17))\s*$/i, '')
-  // Drop trailing bracketed marketing qualifiers: (100th Anniversary), (4K Restoration), (Director's Cut), etc.
-  // Simpler, robust pattern to avoid parser issues
-  s = s.replace(/\s*[\[(][^)\]]*(?:anniversary|restoration|remastered|director'?s\s+cut|theatrical\s+cut|preview|q&a|qa|uncut(?:\s+version)?|(?:35|70)mm|[24]k|imax|extended|special\s+edition|double\s+bill)[^)\]]*[\])]\s*$/i, '')
-  // Drop common marketing suffixes after a hyphen
-  s = s.replace(/\s*[-–—]\s*(\d+\w*\s+anniversary|\d+k\s+restoration|restored|director'?s\s+cut|theatrical\s+cut|remastered|preview|qa|q&a|uncut(?:\s+version)?)\s*$/i, '')
+  // Drop trailing + Q&A / + QA / + Q and A and variants
+  s = s.replace(/\s*\+\s*(?:post[- ]?screening\s+)?(?:q\s*&\s*a|q\s*and\s*a|qa)(?:[^)]*)?\s*$/i, '')
+  // Drop trailing "with ... Q&A" segments, with or without preceding punctuation
+  s = s.replace(/\s*(?:[-:])?\s*with\s+[^)]*(?:q\s*&\s*a|q\s*and\s*a|qa)\s*$/i, '')
+  // Drop trailing age ratings (UK/US common): handle parenthesized and standalone tokens safely.
+  // 1) Parenthesized rating at the end: e.g., "(PG-13)"
+  s = s.replace(/\s*\((?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\)\s*$/i, '')
+  // 2) Standalone rating preceded by whitespace: e.g., "Title PG-13"
+  s = s.replace(/\s+\b(?:U|PG|12A?|15|18|R|NR|PG-13|PG13|NC-17)\b\s*$/i, '')
+  // Drop trailing bracketed marketing qualifiers (includes 35/70mm; we'll re-append standardized suffix)
+  s = s.replace(/\s*[\[(][^)\]]*(?:anniversary|restoration|remastered|director'?s\s+cut|theatrical\s+cut|preview|q&a|qa|uncut(?:\s+version)?|(?:35|70)\s*mm|[24]k|imax|extended|special\s+edition|double\s+bill|presented\s+in\s+(?:35|70)\s*mm)[^)\]]*[\])]\s*$/i, '')
+  // Drop common marketing suffixes after a hyphen/colon that often include format/series info
+  s = s.replace(/\s*[:\-–—]\s*(?:classics\s+presented.*|presented\s+by.*|halloween\s+at.*|at\s+genesis.*|soft\s+limit\s+cinema.*|cult\s+classic\s+collective.*|studio\s+screening.*|double\s+bill.*|film\s+festival.*|in\s+(?:35|70)\s*mm.*|on\s+(?:35|70)\s*mm.*)\s*$/i, '')
   // Drop trailing standalone 'Uncut'
   s = s.replace(/\s+uncut\s*$/i, '')
-  // Clean up extra whitespace
+  // Clean extra whitespace
   s = s.replace(/\s{2,}/g, ' ').trim()
+
+  // Append standardized format flag
+  if (fmt && !new RegExp(`\\(${fmt}\\)$`, 'i').test(s)) s += ` (${fmt})`
   return s
 }
 
