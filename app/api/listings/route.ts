@@ -2,6 +2,10 @@ import { NextRequest, NextResponse } from 'next/server'
 import { Screening, CinemaKey } from '@/types'
 import { filterByTimeWindow, parseNum, isClearlyNonFilm } from '@/lib/filters'
 import data from '@/data/listings.json'
+import { getAllListings } from '@/lib/db'
+
+// Ensure Node.js runtime so the 'pg' driver works
+export const runtime = 'nodejs'
 
 export async function GET(req: NextRequest) {
   try {
@@ -12,9 +16,23 @@ export async function GET(req: NextRequest) {
     const genres = (searchParams.get('genres') || '').split(',').filter(Boolean)
     const minYear = parseNum(searchParams.get('minYear'))
     const maxYear = parseNum(searchParams.get('maxYear'))
-    const minTomato = parseNum(searchParams.get('minTomato'))
+    // Min Letterboxd rating (0–5)
+    const minLb = parseNum(searchParams.get('minLb'))
+    const debug = (searchParams.get('debug') || '').toLowerCase() === '1'
 
-    let items: Screening[] = Array.isArray(data) ? (data as any) : []
+    // Prefer Postgres if configured; otherwise fall back to local JSON
+    let items: Screening[] = []
+    let source: 'db' | 'json' = 'json'
+    try {
+      const dbItems = await getAllListings()
+      if (dbItems && Array.isArray(dbItems) && dbItems.length) {
+        items = dbItems
+        source = 'db'
+      }
+    } catch (e) {
+      console.warn('[API] getAllListings failed; falling back to listings.json')
+    }
+    if (!items.length) items = Array.isArray(data) ? (data as any) : []
     // Drop any malformed entries lacking a valid start time or title
     items = items.filter(i => i && typeof i.filmTitle === 'string' && typeof i.screeningStart === 'string' && !isNaN(new Date(i.screeningStart).getTime()))
 
@@ -35,9 +53,10 @@ export async function GET(req: NextRequest) {
       if (maxYear && y > maxYear) return false
       return true
     })
-    if (typeof minTomato === 'number') items = items.filter(i => (i.rottenTomatoesPct ?? 0) >= minTomato)
+    if (typeof minLb === 'number') items = items.filter(i => ((i as any).letterboxdRating ?? 0) >= minLb)
 
     items = items.slice().sort((a,b) => a.screeningStart.localeCompare(b.screeningStart))
+    if (debug) return NextResponse.json({ items, source })
     return NextResponse.json({ items })
   } catch (err) {
     console.error('GET /api/listings failed:', err)

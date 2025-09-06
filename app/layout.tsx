@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               className="text-xl font-medium"
               style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
             >Indie Cinemas London</a>
-            <nav className="text-sm">Spec build</nav>
+            
           </div>
         </header>
         <main className="container py-6">{children}</main>

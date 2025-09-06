@@ -19,7 +19,7 @@ export default function Filters({ genres }: { genres: string[] }) {
   // Leave year filters empty by default so they are opt-in
   const [minYear, setMinYear] = useState(sp.get('minYear') ?? '')
   const [maxYear, setMaxYear] = useState(sp.get('maxYear') ?? '')
-  const [minTomato, setMinTomato] = useState(sp.get('minTomato') ?? '')
+  // Removed Letterboxd filter from UI
 
   function apply() {
     // Start from existing params so we preserve the time window selected in TimeTabs
@@ -29,13 +29,14 @@ export default function Filters({ genres }: { genres: string[] }) {
     if (selectedGenres.length) params.set('genres', selectedGenres.join(',')); else params.delete('genres')
     if (minYear) params.set('minYear', minYear); else params.delete('minYear')
     if (maxYear) params.set('maxYear', maxYear); else params.delete('maxYear')
-    if (minTomato) params.set('minTomato', minTomato); else params.delete('minTomato')
+    // Letterboxd filter removed; ensure any legacy param is cleared
+    params.delete('minLb')
     router.push(`/?${params.toString()}`)
   }
   useEffect(() => {
     const t = setTimeout(apply, 200); return () => clearTimeout(t)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, selectedCinemas, selectedGenres, minYear, maxYear, minTomato])
+  }, [q, selectedCinemas, selectedGenres, minYear, maxYear])
 
   function toggle(list: string[], value: string, setter: (v: string[])=>void) {
     setter(list.includes(value) ? list.filter(x => x !== value) : [...list, value])
@@ -43,7 +44,7 @@ export default function Filters({ genres }: { genres: string[] }) {
 
   return (
     <aside className="md:pl-4">
-      <div className="border p-3 md:p-4 space-y-4">
+      <div className="p-3 md:p-4 space-y-4">
         <input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search film or cinema…" className="w-full rounded-lg border px-3 py-2" />
         <div>
           <div className="text-sm font-normal mb-2">Cinemas</div>
@@ -89,11 +90,7 @@ export default function Filters({ genres }: { genres: string[] }) {
             />
           </div>
         </div>
-        <div>
-          <div className="text-sm font-normal">Min Rotten Tomatoes (%)</div>
-          <input type="number" min={0} max={100} className="mt-2 w-28 rounded border px-2 py-1" value={minTomato} onChange={e=>setMinTomato(e.target.value)} />
-          <div className="text-xs text-gray-500 mt-1">If missing, titles count as 0% for filtering.</div>
-        </div>
+        {/* Letterboxd rating filter removed */}
       </div>
     </aside>
   )

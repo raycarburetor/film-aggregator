@@ -17,4 +17,6 @@ export type Screening = {
   tmdbId?: number
   imdbId?: string
   rottenTomatoesPct?: number | null
+  // Letterboxd average rating (0–5). Preferred over Rotten Tomatoes in UI.
+  letterboxdRating?: number | null
 }

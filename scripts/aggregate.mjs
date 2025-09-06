@@ -11,7 +11,7 @@ import { fetchPrinceCharles } from './cinemas/princecharles.mjs'
 import { fetchICA } from './cinemas/ica.mjs'
 import { fetchCastle } from './cinemas/castle.mjs'
 import { fetchGarden } from './cinemas/garden.mjs'
-import { enrichWithTMDb } from './enrich.mjs'
+import { enrichWithTMDb, enrichWithLetterboxd } from './enrich.mjs'
 
 function isNonFilmEvent(title) {
   if (!title) return false
@@ -51,6 +51,7 @@ let items = [
 items = items.filter((it) => !isNonFilmEvent(it.filmTitle))
 
 await enrichWithTMDb(items, region)
+await enrichWithLetterboxd(items)
 
 const out = path.join(__dirname, '..', 'data', 'listings.json')
 await fs.writeFile(out, JSON.stringify(items, null, 2), 'utf8')
