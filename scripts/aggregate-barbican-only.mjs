@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 import { fetchBarbican } from './cinemas/barbican.mjs'
-import { enrichWithTMDb } from './enrich.mjs'
+import { enrichWithTMDb, enrichWithLetterboxd } from './enrich.mjs'
 
 const region = process.env.DEFAULT_REGION || 'GB'
 
@@ -48,8 +48,8 @@ function isNonFilmEvent(title) {
 let barbican = await fetchBarbican()
 barbican = barbican.filter(i => !isNonFilmEvent(i.filmTitle))
 await enrichWithTMDb(barbican, region)
+await enrichWithLetterboxd(barbican)
 
 const merged = [...existing, ...barbican]
 await fs.writeFile(dataPath, JSON.stringify(merged, null, 2), 'utf8')
 console.log('Updated Barbican listings in', dataPath, 'Barbican items:', barbican.length, 'Total:', merged.length)
-

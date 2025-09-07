@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 import { fetchPrinceCharles } from './cinemas/princecharles.mjs'
-import { enrichWithTMDb } from './enrich.mjs'
+import { enrichWithTMDb, enrichWithLetterboxd } from './enrich.mjs'
 
 const region = process.env.DEFAULT_REGION || 'GB'
 
@@ -51,6 +51,7 @@ function isNonFilmEvent(title) {
 let pcc = await fetchPrinceCharles()
 pcc = pcc.filter(i => !isNonFilmEvent(i.filmTitle))
 await enrichWithTMDb(pcc, region)
+await enrichWithLetterboxd(pcc)
 
 const merged = [...existing, ...pcc]
 await fs.writeFile(dataPath, JSON.stringify(merged, null, 2), 'utf8')
