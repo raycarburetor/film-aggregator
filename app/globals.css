@@ -126,7 +126,10 @@
     display: inline-grid;
     place-content: center;
   }
-  .cinema-checkbox:hover { border-color: rgb(var(--hover)); }
+  .cinema-checkbox:hover {
+    border-color: rgb(var(--hover));
+    background-color: rgb(var(--hover));
+  }
   .cinema-checkbox:checked {
     background-color: rgb(var(--hover));
     border-color: rgb(var(--hover));

@@ -13,6 +13,7 @@ type Item = {
   synopsis?: string
   genres?: string[]
   rottenTomatoesPct?: number | null
+  letterboxdRating?: number | null
 }
 
 const CINEMA_LABELS: Record<string, string> = {
@@ -128,11 +129,12 @@ export default function ListingsTable({ items }: { items: Item[] }) {
         <table className="w-full table-fixed text-left text-sm">
           <thead className="bg-black text-white border-b border-white">
           <tr>
-            <th className="px-3 py-2 w-[36%]">Film</th>
+            <th className="px-3 py-2 w-[38%]">Film</th>
             <th className="px-3 py-2 w-[10%]">Release</th>
-            <th className="px-3 py-2 w-[20%]">Cinema</th>
-            <th className="px-3 py-2 w-[17%]">Date</th>
-            <th className="px-3 py-2 w-[17%]">Time</th>
+            <th className="px-3 py-2 w-[19%]">Cinema</th>
+            <th className="px-3 py-2 w-[14%]">Date</th>
+            <th className="px-3 py-2 w-[9%]">Time</th>
+            <th className="px-3 py-2 w-[10%]">Letterboxd</th>
           </tr>
           </thead>
           <tbody>
@@ -147,7 +149,7 @@ export default function ListingsTable({ items }: { items: Item[] }) {
               <React.Fragment key={i.id}>
                 {isNewDay && (
                   <tr aria-hidden="true">
-                    <td colSpan={5} className="border-t border-white p-0 h-0" />
+                    <td colSpan={6} className="border-t border-white p-0 h-0" />
                   </tr>
                 )}
                 <tr className={`peer group ${isOpen ? 'selected-row' : 'hover:bg-gray-50'}`}>
@@ -160,10 +162,11 @@ export default function ListingsTable({ items }: { items: Item[] }) {
                   <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{CINEMA_LABELS[i.cinema] ?? i.cinema}</td>
                   <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{date}</td>
                   <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{time}</td>
+                  <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{typeof i.letterboxdRating === 'number' ? (Math.ceil(i.letterboxdRating * 10) / 10).toFixed(1) : '—'}</td>
                 </tr>
                 {isOpen && (
                   <tr className="details-row">
-                    <td colSpan={5} className="px-3 py-3 text-left max-w-full" align="left">
+                    <td colSpan={6} className="px-3 py-3 text-left max-w-full" align="left">
                       <div className="grid gap-3 md:grid-cols-3 text-left">
                         <div>
                           <div className="text-xs text-gray-500">Director</div>

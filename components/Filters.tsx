@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 
 export const CINEMAS = [
@@ -23,7 +23,14 @@ export default function Filters({ genres }: { genres: string[] }) {
   // Decades: multi-select, newest → oldest chips
   const initialDecades = (sp.get('decades') || '').split(',').filter(Boolean)
   const [selectedDecades, setSelectedDecades] = useState<string[]>(initialDecades)
-  // Removed Letterboxd filter from UI
+  // Minimum Letterboxd rating (0–5 in 0.5 steps); null = no minimum
+  const initialMinLb = useMemo(() => {
+    const s = sp.get('minLb')
+    if (s == null) return null as number | null
+    const n = Number(s)
+    return Number.isFinite(n) ? n : null
+  }, [sp])
+  const [minLb, setMinLb] = useState<number | null>(initialMinLb)
 
   function apply() {
     // Start from existing params so we preserve the time window selected in TimeTabs
@@ -32,8 +39,7 @@ export default function Filters({ genres }: { genres: string[] }) {
     if (selectedCinemas.length) params.set('cinemas', selectedCinemas.join(',')); else params.delete('cinemas')
     if (selectedGenre) params.set('genres', selectedGenre); else params.delete('genres')
     if (selectedDecades.length) params.set('decades', selectedDecades.join(',')); else params.delete('decades')
-    // Letterboxd filter removed; ensure any legacy param is cleared
-    params.delete('minLb')
+    if (minLb != null) params.set('minLb', String(minLb)); else params.delete('minLb')
     // Also clear legacy year params if present
     params.delete('minYear'); params.delete('maxYear')
     router.push(`/?${params.toString()}`)
@@ -41,7 +47,66 @@ export default function Filters({ genres }: { genres: string[] }) {
   useEffect(() => {
     const t = setTimeout(apply, 200); return () => clearTimeout(t)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, selectedCinemas, selectedGenre, selectedDecades])
+  }, [q, selectedCinemas, selectedGenre, selectedDecades, minLb])
+
+  function Star({ filledFrac = 0, size = 22 }: { filledFrac?: number; size?: number }) {
+    // Clamp 0..1
+    const f = Math.max(0, Math.min(1, filledFrac))
+    const px = `${size}px`
+    return (
+      <span className="relative inline-block align-middle" style={{ width: px, height: px }}>
+        {/* Base star outline (white stroke) */}
+        <svg viewBox="0 0 24 24" width={size} height={size} className="absolute top-0 left-0">
+          <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="none" stroke="white" strokeWidth="1.5" />
+        </svg>
+        {/* Filled portion: red fill + red stroke, clipped to fraction */}
+        <span className="absolute top-0 left-0 overflow-hidden" style={{ width: `${f * 100}%`, height: px }}>
+          <svg viewBox="0 0 24 24" width={size} height={size}>
+            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="#dc2626" />
+            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="none" stroke="#dc2626" strokeWidth="1.5" />
+          </svg>
+        </span>
+      </span>
+    )
+  }
+
+  function StarPicker() {
+    const [hover, setHover] = useState<number | null>(null)
+    const display = hover != null ? hover : (minLb ?? 0)
+    // Compute per-star fill fraction based on display value
+    const fills = [1,2,3,4,5].map(i => Math.max(0, Math.min(1, display - (i-1))))
+    function setVal(v: number | null) { setMinLb(v) }
+    return (
+      <div onMouseLeave={() => setHover(null)} className="flex items-center gap-1 select-none">
+        {fills.map((frac, idx) => {
+          const starIndex = idx + 1
+          return (
+            <span key={starIndex} className="relative" style={{ lineHeight: 0 }}>
+              <Star filledFrac={frac} />
+              {/* Left half */}
+              <button
+                type="button"
+                aria-label={`${starIndex - 0.5} stars minimum`}
+                className="absolute inset-y-0 left-0 w-1/2 cursor-pointer"
+                onMouseEnter={() => setHover(starIndex - 0.5)}
+                onFocus={() => setHover(starIndex - 0.5)}
+                onClick={() => setVal(starIndex - 0.5)}
+              />
+              {/* Right half */}
+              <button
+                type="button"
+                aria-label={`${starIndex} stars minimum`}
+                className="absolute inset-y-0 right-0 w-1/2 cursor-pointer"
+                onMouseEnter={() => setHover(starIndex)}
+                onFocus={() => setHover(starIndex)}
+                onClick={() => setVal(starIndex)}
+              />
+            </span>
+          )
+        })}
+      </div>
+    )
+  }
 
   function toggle(list: string[], value: string, setter: (v: string[])=>void) {
     setter(list.includes(value) ? list.filter(x => x !== value) : [...list, value])
@@ -77,6 +142,19 @@ export default function Filters({ genres }: { genres: string[] }) {
               </label>
             ))}
           </div>
+        </div>
+        <div>
+          <div className="text-sm font-normal mb-2 flex items-center justify-between">
+            <span>Minimum Letterboxd Rating</span>
+            {minLb != null ? (
+              <button
+                type="button"
+                className="text-xs text-red-600 hover:underline"
+                onClick={() => setMinLb(null)}
+              >clear</button>
+            ) : null}
+          </div>
+          <StarPicker />
         </div>
         <div>
           <div className="text-sm font-normal mb-2 flex items-center justify-between">

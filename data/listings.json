@@ -1,5 +1,162 @@
 [
   {
+    "id": "bfiLunanaAYakintheClassroom20250907T110000000Z",
+    "filmTitle": "Lunana: A Yak in the Classroom",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EDD72824-62B2-4DEE-83E4-17403AD42EFF&BOparam::WScontent::loadArticle::context_id=9C5D630B-1F3C-40A2-BD80-75AC75B00FF3",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=EDD72824-62B2-4DEE-83E4-17403AD42EFF&BOparam::WScontent::loadArticle::context_id=9C5D630B-1F3C-40A2-BD80-75AC75B00FF3",
+    "tmdbId": 627087,
+    "releaseDate": "2019-11-16",
+    "synopsis": "A teacher, in search of inspiration, travels to the most remote school in the world, where he ends up realizing how important his job is and appreciating the value of yak dung.",
+    "genres": [
+      "Drama"
+    ],
+    "director": "Pawo Choyning Dorji",
+    "imdbId": "tt10189300"
+  },
+  {
+    "id": "bfiLittleTroubleGirlsprerecordedintroandQA20250907T110000000Z",
+    "filmTitle": "Little Trouble Girls + pre-recorded intro and Q&A",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9201879F-3ED2-4F08-AC22-8D199DD76154&BOparam::WScontent::loadArticle::context_id=F43937F3-AFFA-4666-92B3-8C5FED4EF10D",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9201879F-3ED2-4F08-AC22-8D199DD76154&BOparam::WScontent::loadArticle::context_id=F43937F3-AFFA-4666-92B3-8C5FED4EF10D"
+  },
+  {
+    "id": "bfiTheTolloftheSeaintrobyAnnaWongAnnaMayWongsniece20250907T110000000Z",
+    "filmTitle": "The Toll of the Sea + intro by Anna Wong, Anna May Wong’s niece",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E1890D45-5A70-4F78-8BC9-E2F36406F8E1&BOparam::WScontent::loadArticle::context_id=D4BEDEA1-A853-48F2-B0DF-E2015B715F70",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E1890D45-5A70-4F78-8BC9-E2F36406F8E1&BOparam::WScontent::loadArticle::context_id=D4BEDEA1-A853-48F2-B0DF-E2015B715F70"
+  },
+  {
+    "id": "bfiSorryBaby20250907T110000000Z",
+    "filmTitle": "Sorry, Baby",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=01A6DFA0-E02A-4788-9C26-25D5753A3929&BOparam::WScontent::loadArticle::context_id=B56488EE-F176-41D3-9A0A-9776F4DDBEA4",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=01A6DFA0-E02A-4788-9C26-25D5753A3929&BOparam::WScontent::loadArticle::context_id=B56488EE-F176-41D3-9A0A-9776F4DDBEA4",
+    "tmdbId": 1205515,
+    "releaseDate": "2025-06-27",
+    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": "Eva Victor",
+    "imdbId": "tt32843349"
+  },
+  {
+    "id": "bfiSongQAwithAnnaWongandKatieGeeSalisbury20250907T110000000Z",
+    "filmTitle": "Song + Q&A with Anna Wong and Katie Gee Salisbury",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=67C42DF9-FB11-462F-8B48-134D83C6440B&BOparam::WScontent::loadArticle::context_id=D02777C7-D1D0-4156-86B4-1ABC2FB8CAEB",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=67C42DF9-FB11-462F-8B48-134D83C6440B&BOparam::WScontent::loadArticle::context_id=D02777C7-D1D0-4156-86B4-1ABC2FB8CAEB",
+    "tmdbId": 220070,
+    "releaseDate": "2013-05-02",
+    "synopsis": "Shot in San Francisco from autumn of last year through the winter solstice, Nathaniel Dorsky's Song evinces a cool, mysterious tone as it captures the pulse (supernal at 18fps) of the city.",
+    "genres": [],
+    "director": "Nathaniel Dorsky"
+  },
+  {
+    "id": "bfiLittleTroubleGirlsprerecordedintro20250907T110000000Z",
+    "filmTitle": "Little Trouble Girls + pre-recorded intro",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=04E98BB0-9429-4DA9-ADBE-47FE11B6AD4A&BOparam::WScontent::loadArticle::context_id=ABA91535-852D-4DA7-9555-A15B0C7A6FB1",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=04E98BB0-9429-4DA9-ADBE-47FE11B6AD4A&BOparam::WScontent::loadArticle::context_id=ABA91535-852D-4DA7-9555-A15B0C7A6FB1"
+  },
+  {
+    "id": "bfiBattleshipPotemkin20250907T110000000Z",
+    "filmTitle": "Battleship Potemkin",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=57D4DAA0-241B-4E3C-A98A-B6FB3A701416&BOparam::WScontent::loadArticle::context_id=88C4A649-65BA-4D18-98C1-91C8392E6834",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=57D4DAA0-241B-4E3C-A98A-B6FB3A701416&BOparam::WScontent::loadArticle::context_id=88C4A649-65BA-4D18-98C1-91C8392E6834",
+    "tmdbId": 643,
+    "releaseDate": "1925-12-24",
+    "synopsis": "A dramatized account of a great Russian naval mutiny and a resultant public demonstration, showing support, which brought on a police massacre. The film had an incredible impact on the development of cinema and is a masterful example of montage editing.",
+    "genres": [
+      "Drama",
+      "History",
+      "War"
+    ],
+    "director": "Sergei Eisenstein",
+    "imdbId": "tt0015648"
+  },
+  {
+    "id": "bfiTheLifeofChuck20250907T110000000Z",
+    "filmTitle": "The Life of Chuck",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E35C4A54-869C-4068-8819-0D746F327A9D&BOparam::WScontent::loadArticle::context_id=63431AD9-9123-479B-A09C-5156BE2CB2A4",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=E35C4A54-869C-4068-8819-0D746F327A9D&BOparam::WScontent::loadArticle::context_id=63431AD9-9123-479B-A09C-5156BE2CB2A4",
+    "tmdbId": 842924,
+    "releaseDate": "2025-06-05",
+    "synopsis": "In this extraordinary story of an ordinary man, Charles 'Chuck' Krantz experiences the wonder of love, the heartbreak of loss, and the multitudes contained in all of us.",
+    "genres": [
+      "Fantasy",
+      "Drama"
+    ],
+    "director": "Mike Flanagan",
+    "imdbId": "tt12908150"
+  },
+  {
+    "id": "bfiDrama1TheEntertainingMrOrton20250907T110000000Z",
+    "filmTitle": "Drama 1: The Entertaining Mr Orton",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9639CB6A-767F-46A6-BFA4-43F66000155F&BOparam::WScontent::loadArticle::context_id=3738BE69-06EA-4B24-9ED9-064F72A68E92",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9639CB6A-767F-46A6-BFA4-43F66000155F&BOparam::WScontent::loadArticle::context_id=3738BE69-06EA-4B24-9ED9-064F72A68E92"
+  },
+  {
+    "id": "bfiLittleTroubleGirlsprerecordedintro20250907T110000000Z",
+    "filmTitle": "Little Trouble Girls + pre-recorded intro",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=04E98BB0-9429-4DA9-ADBE-47FE11B6AD4A&BOparam::WScontent::loadArticle::context_id=F4183F8B-D80B-4F5F-8E8C-C76E5AE4269D",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=04E98BB0-9429-4DA9-ADBE-47FE11B6AD4A&BOparam::WScontent::loadArticle::context_id=F4183F8B-D80B-4F5F-8E8C-C76E5AE4269D"
+  },
+  {
+    "id": "bfiBladeRunnerTheFinalCut20250907T110000000Z",
+    "filmTitle": "Blade Runner: The Final Cut",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=92D9FEBB-6F71-4B65-B91D-2DA46A911B87&BOparam::WScontent::loadArticle::context_id=761A1575-BB6E-439E-BBF2-14A53E0B07C0",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=92D9FEBB-6F71-4B65-B91D-2DA46A911B87&BOparam::WScontent::loadArticle::context_id=761A1575-BB6E-439E-BBF2-14A53E0B07C0",
+    "tmdbId": 78,
+    "releaseDate": "1982-06-25",
+    "synopsis": "In the smog-choked dystopian Los Angeles of 2019, blade runner Rick Deckard is called out of retirement to terminate a quartet of replicants who have escaped to Earth seeking their creator for a way to extend their short life spans.",
+    "genres": [
+      "Science Fiction",
+      "Drama",
+      "Thriller"
+    ],
+    "director": "Ridley Scott",
+    "imdbId": "tt0083658"
+  },
+  {
+    "id": "bfiBattleshipPotemkin20250907T110000000Z",
+    "filmTitle": "Battleship Potemkin",
+    "cinema": "bfi",
+    "screeningStart": "2025-09-07T11:00:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=57D4DAA0-241B-4E3C-A98A-B6FB3A701416&BOparam::WScontent::loadArticle::context_id=1608EE63-8BE6-4B63-94E5-853B8575AD32",
+    "filmUrl": "https://whatson.bfi.org.uk/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=57D4DAA0-241B-4E3C-A98A-B6FB3A701416&BOparam::WScontent::loadArticle::context_id=1608EE63-8BE6-4B63-94E5-853B8575AD32",
+    "tmdbId": 643,
+    "releaseDate": "1925-12-24",
+    "synopsis": "A dramatized account of a great Russian naval mutiny and a resultant public demonstration, showing support, which brought on a police massacre. The film had an incredible impact on the development of cinema and is a masterful example of montage editing.",
+    "genres": [
+      "Drama",
+      "History",
+      "War"
+    ],
+    "director": "Sergei Eisenstein",
+    "imdbId": "tt0015648"
+  },
+  {
     "id": "pccStalker20250907T105000000Z",
     "filmTitle": "Stalker",
     "cinema": "princecharles",
@@ -4142,14 +4299,6 @@
     "websiteYear": 2024
   },
   {
-    "id": "icaistayedinberlinallsummer20250912T173000000Z",
-    "filmTitle": "Opening Night I Stayed in Berlin All Summer + Shorts",
-    "cinema": "ica",
-    "screeningStart": "2025-09-12T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films/i-stayed-in-berlin-all-summer",
-    "websiteYear": 1994
-  },
-  {
     "id": "icadeaf20250913T131500000Z",
     "filmTitle": "Deaf",
     "cinema": "ica",
@@ -4190,22 +4339,6 @@
     "websiteYear": 2024
   },
   {
-    "id": "icamysistersgoodfortune20250913T151500000Z",
-    "filmTitle": "My Sister's Good Fortune",
-    "cinema": "ica",
-    "screeningStart": "2025-09-13T15:15:00.000Z",
-    "bookingUrl": "https://ica.art/films/my-sisters-good-fortune",
-    "websiteYear": 1995,
-    "tmdbId": 376844,
-    "releaseDate": "1995-10-13",
-    "synopsis": "A young photographer has fallen in love with his girlfriend's sister. Nobody knows quite what to do. A stylish variation on the problems of triolism made with striking stability of style and a great feeling for mise-en-scène.",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Angela Schanelec",
-    "imdbId": "tt0113183"
-  },
-  {
     "id": "icatodopareciaposible20250913T154500000Z",
     "filmTitle": "Todo parecía posible (Everything Seemed Possible)",
     "cinema": "ica",
@@ -4219,14 +4352,6 @@
       "Documentary"
     ],
     "director": "Ramón Rivera Moret"
-  },
-  {
-    "id": "icahkffshortsprogrammeqa20250913T173000000Z",
-    "filmTitle": "Shorts Programme: Afterimage + Q&A",
-    "cinema": "ica",
-    "screeningStart": "2025-09-13T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films/hkff-shorts-programme-q-a",
-    "websiteYear": 2024
   },
   {
     "id": "icaislands20250913T195000000Z",
@@ -4251,6 +4376,38 @@
     "cinema": "ica",
     "screeningStart": "2025-09-13T20:15:00.000Z",
     "bookingUrl": "https://ica.art/films/from-ground-zero",
+    "websiteYear": 2024
+  },
+  {
+    "id": "icaistayedinberlinallsummer20250912T173000000Z",
+    "filmTitle": "Opening Night I Stayed in Berlin All Summer + Shorts",
+    "cinema": "ica",
+    "screeningStart": "2025-09-12T17:30:00.000Z",
+    "bookingUrl": "https://ica.art/films/i-stayed-in-berlin-all-summer",
+    "websiteYear": 1994
+  },
+  {
+    "id": "icamysistersgoodfortune20250913T151500000Z",
+    "filmTitle": "My Sister's Good Fortune",
+    "cinema": "ica",
+    "screeningStart": "2025-09-13T15:15:00.000Z",
+    "bookingUrl": "https://ica.art/films/my-sisters-good-fortune",
+    "websiteYear": 1995,
+    "tmdbId": 376844,
+    "releaseDate": "1995-10-13",
+    "synopsis": "A young photographer has fallen in love with his girlfriend's sister. Nobody knows quite what to do. A stylish variation on the problems of triolism made with striking stability of style and a great feeling for mise-en-scène.",
+    "genres": [
+      "Drama"
+    ],
+    "director": "Angela Schanelec",
+    "imdbId": "tt0113183"
+  },
+  {
+    "id": "icahkffshortsprogrammeqa20250913T173000000Z",
+    "filmTitle": "Shorts Programme: Afterimage + Q&A",
+    "cinema": "ica",
+    "screeningStart": "2025-09-13T17:30:00.000Z",
+    "bookingUrl": "https://ica.art/films/hkff-shorts-programme-q-a",
     "websiteYear": 2024
   },
   {

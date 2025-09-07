@@ -39,8 +39,8 @@ export async function GET(req: NextRequest) {
 
     // Remove obvious non-film events
     items = items.filter(i => !isClearlyNonFilm(i.filmTitle))
-    // Hide BFI from frontend (feature-flagged)
-    const hideBFI = String(process.env.HIDE_BFI ?? process.env.NEXT_PUBLIC_HIDE_BFI ?? 'true').toLowerCase() === 'true'
+    // Hide BFI from frontend (feature-flagged) — default is now visible
+    const hideBFI = String(process.env.HIDE_BFI ?? process.env.NEXT_PUBLIC_HIDE_BFI ?? 'false').toLowerCase() === 'true'
     if (hideBFI) items = items.filter(i => i.cinema !== 'bfi')
     items = filterByTimeWindow(items, window)
 
@@ -75,7 +75,16 @@ export async function GET(req: NextRequest) {
         })
       }
     }
-    if (typeof minLb === 'number') items = items.filter(i => ((i as any).letterboxdRating ?? 0) >= minLb)
+    if (typeof minLb === 'number') {
+      // Apply minimum Letterboxd rating using the same 1dp rounding-up as the UI.
+      // Unrated counts as 0 for filtering.
+      const roundUp1dp = (n: number) => Math.min(5, Math.ceil(n * 10) / 10)
+      items = items.filter(i => {
+        const raw = (i as any).letterboxdRating
+        const eff = (typeof raw === 'number' && Number.isFinite(raw)) ? roundUp1dp(raw) : 0
+        return eff >= minLb
+      })
+    }
 
     items = items.slice().sort((a,b) => a.screeningStart.localeCompare(b.screeningStart))
     if (debug) return NextResponse.json({ items, source })
