@@ -79,7 +79,8 @@ async function main() {
         tmdb_id = excluded.tmdb_id,
         imdb_id = excluded.imdb_id,
         rotten_tomatoes_pct = excluded.rotten_tomatoes_pct,
-        letterboxd_rating = excluded.letterboxd_rating
+        -- Preserve existing DB rating if JSON has null/undefined
+        letterboxd_rating = coalesce(excluded.letterboxd_rating, ${table}.letterboxd_rating)
     `
 
     // Batch in chunks to avoid huge single transaction
@@ -133,4 +134,3 @@ main().catch((e) => {
   console.error('[db-seed] failed:', e)
   process.exitCode = 1
 })
-

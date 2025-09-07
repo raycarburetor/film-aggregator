@@ -33,6 +33,12 @@ function argNum(name, def) {
   const v = Number(m.split('=')[1])
   return Number.isFinite(v) ? v : def
 }
+function argVal(name) {
+  const m = process.argv.slice(2).find(a => a.startsWith(`${name}=`))
+  if (!m) return undefined
+  const v = m.slice(name.length + 1)
+  return v || undefined
+}
 
 async function loadCache() {
   try { const t = await fs.readFile(cachePath, 'utf8'); return JSON.parse(t) || {} } catch { return {} }
@@ -245,7 +251,15 @@ async function main() {
       where tmdb_id is not null
       ${force ? '' : 'and letterboxd_rating is null'}
     `
-    const { rows } = await client.query(baseSql)
+    // Optional cinema filter: --cinema=genesis (uses DB values)
+    const cinema = argVal('--cinema')
+    let sql = baseSql
+    const params = []
+    if (cinema) {
+      sql += ` and cinema = $1`
+      params.push(cinema)
+    }
+    const { rows } = await client.query(sql, params)
     if (!rows.length) { console.log(`[LB][HTTP] Nothing to enrich (force=${force}).`); return }
 
     // Consolidate by tmdb_id
@@ -259,46 +273,59 @@ async function main() {
     if (typeof limit === 'number' && limit > 0) entries = entries.slice(0, limit)
 
     const cache = await loadCache()
-    const updates = new Map()
-    let i = 0
-    for (const [tmdbId, sample] of entries) {
-      i++
-      const title = sample.film_title
-      const releaseDate = sample.release_date ? new Date(sample.release_date).toISOString() : undefined
-      const websiteYear = typeof sample.website_year === 'number' ? sample.website_year : undefined
-      try {
-        const url = await resolveLetterboxdUrlFor(cache, tmdbId, title, releaseDate, websiteYear)
-        if (!url) { console.log(`[${i}/${entries.length}] tmdb=${tmdbId} no URL`); await sleep(600); continue }
-        const rating = await extractAverageRating(url)
-        if (typeof rating === 'number' && rating >= 0 && rating <= 5) {
-          updates.set(tmdbId, rating)
-          console.log(`[${i}/${entries.length}] tmdb=${tmdbId} rating=${rating.toFixed(2)} url=${url}`)
-        } else {
-          console.log(`[${i}/${entries.length}] tmdb=${tmdbId} no rating url=${url}`)
+    const chunkSize = argNum('--chunk', 100)
+    const total = entries.length
+    let processed = 0
+    let seq = 0
+
+    while (processed < total) {
+      const batch = entries.slice(processed, Math.min(total, processed + chunkSize))
+      const updates = new Map()
+      for (const [tmdbId, sample] of batch) {
+        seq++
+        const title = sample.film_title
+        const releaseDate = sample.release_date ? new Date(sample.release_date).toISOString() : undefined
+        const websiteYear = typeof sample.website_year === 'number' ? sample.website_year : undefined
+        try {
+          const url = await resolveLetterboxdUrlFor(cache, tmdbId, title, releaseDate, websiteYear)
+          if (!url) { console.log(`[${seq}/${total}] tmdb=${tmdbId} no URL`); await sleep(600); continue }
+          const rating = await extractAverageRating(url)
+          if (typeof rating === 'number' && rating >= 0 && rating <= 5) {
+            updates.set(tmdbId, rating)
+            console.log(`[${seq}/${total}] tmdb=${tmdbId} rating=${rating.toFixed(2)} url=${url}`)
+          } else {
+            console.log(`[${seq}/${total}] tmdb=${tmdbId} no rating url=${url}`)
+          }
+        } catch (e) {
+          console.log(`[${seq}/${total}] tmdb=${tmdbId} error:`, e?.message || e)
         }
-      } catch (e) {
-        console.log(`[${i}/${entries.length}] tmdb=${tmdbId} error:`, e?.message || e)
+        await sleep(800 + Math.random()*500)
       }
-      await sleep(800 + Math.random()*500)
-    }
 
-    if (!updates.size) { console.log('[LB][HTTP] No ratings extracted; nothing to update.'); return }
-
-    await client.query('begin')
-    try {
-      let changed = 0
-      for (const [tmdbId, rating] of updates) {
-        const res = await client.query(
-          `update ${table} set letterboxd_rating = $1 where tmdb_id = $2`,
-          [rating, tmdbId]
-        )
-        changed += res.rowCount || 0
+      if (updates.size) {
+        await client.query('begin')
+        try {
+          let changed = 0
+          for (const [tmdbId, rating] of updates) {
+            const res = await client.query(
+              `update ${table} set letterboxd_rating = $1 where tmdb_id = $2`,
+              [rating, tmdbId]
+            )
+            changed += res.rowCount || 0
+          }
+          await client.query('commit')
+          console.log(`[LB][HTTP] Chunk updated: ${changed} rows across ${updates.size} tmdb_id(s). Progress: ${processed + batch.length}/${total}`)
+        } catch (e) {
+          await client.query('rollback')
+          throw e
+        }
+        await saveCache(cache)
+      } else {
+        console.log('[LB][HTTP] No ratings found in this chunk.')
       }
-      await client.query('commit')
-      console.log(`[LB][HTTP] Updated letterboxd_rating on ${changed} rows across ${updates.size} tmdb_id(s).`)
-    } catch (e) {
-      await client.query('rollback')
-      throw e
+      processed += batch.length
+      // short breather between chunks
+      await sleep(1000)
     }
   } finally {
     client.release()

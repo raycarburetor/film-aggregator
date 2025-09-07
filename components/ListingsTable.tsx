@@ -158,7 +158,7 @@ export default function ListingsTable({ items }: { items: Item[] }) {
                       {displayTitle(i.filmTitle)}
                     </button>
                   </td>
-                  <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{i.websiteYear ?? i.releaseDate?.slice(0,4) ?? fallbackYearFromTitle(i.filmTitle) ?? '—'}</td>
+                  <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{i.releaseDate?.slice(0,4) ?? i.websiteYear ?? fallbackYearFromTitle(i.filmTitle) ?? '—'}</td>
                   <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{CINEMA_LABELS[i.cinema] ?? i.cinema}</td>
                   <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{date}</td>
                   <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{time}</td>

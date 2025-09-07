@@ -46,6 +46,7 @@ export async function fetchCloseUp() {
     const dpage = await ctx.newPage()
     const detailYear = new Map()
     const detailTitle = new Map()
+    const detailDirector = new Map()
     const uniqueUrls = Array.from(new Set((shows || []).map(s => s.film_url).filter(Boolean)))
     for (const rel of uniqueUrls) {
       const url = new URL(rel, START_URL).toString()
@@ -53,6 +54,74 @@ export async function fetchCloseUp() {
         await dpage.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 })
         const yearAndTitle = await dpage.evaluate(() => {
           function valid(y) { const n = Number(y); const Y = new Date().getFullYear() + 1; return n >= 1895 && n <= Y }
+          function cleanName(name, title) {
+            try {
+              let s = String(name || '').replace(/\s{2,}/g, ' ').trim()
+              if (!s) return null
+              const norm = (x) => String(x||'').normalize('NFD').replace(/\p{Diacritic}+/gu,'').toLowerCase()
+              if (title) {
+                const nt = norm(title).split(/\s+/).filter(Boolean)
+                let tokens = s.split(/\s+/).filter(Boolean)
+                let i=0
+                while (i<nt.length && tokens[0] && norm(tokens[0])===nt[i]) { tokens.shift(); i++ }
+                s = tokens.join(' ').trim() || s
+              }
+              const stops = new Set(['demonstration','conversation','talk','introduction','intro','performance','screentalk','screen','lecture','panel','qa','q&a','with','presented','presentedby','hosted','hostedby','in'])
+              let toks = s.split(/\s+/)
+              while (toks.length && stops.has(norm(toks[0]).replace(/\s+/g,''))) toks.shift()
+              s = toks.join(' ').trim()
+              s = s.replace(/\s*,\s*(?:19|20)\d{2}\s*,\s*\d{1,3}\s*min[\s\S]*$/i,'').trim()
+              s = s.replace(/\s*[,–—-]\s*(?:UK|USA|US|France|Italy|Iran|India|Canada)(?:\s*[,–—-].*)?$/i,'').trim()
+              s = s.replace(/^(?:and|with)\s+/i,'').trim()
+              s = s.replace(/\s{2,}/g,' ')
+              return s || null
+            } catch { return null }
+          }
+          function nameFromInlineStats(text, title) {
+            const re = /([A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+(?:\s+and\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+)?)\s*,\s*(?:[A-Za-z\s]+,\s*)?(?:19|20)\d{2}\s*,\s*\d{1,3}\s*m(?:in)?\b/
+            const m = String(text||'').match(re)
+            return m ? cleanName(m[1], title) : null
+          }
+          function pickDirector() {
+            // Try JSON-LD first
+            try {
+              const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
+              for (const s of scripts) {
+                const data = JSON.parse(s.textContent || 'null')
+                const arr = Array.isArray(data) ? data : [data]
+                for (const obj of arr) {
+                  const d = obj?.director
+                  if (!d) continue
+                  if (typeof d === 'string') return d
+                  if (Array.isArray(d)) {
+                    const name = d.map(x => x?.name || '').filter(Boolean).join(', ')
+                    if (name) return name
+                  } else if (typeof d === 'object') {
+                    const name = d?.name || ''
+                    if (name) return name
+                  }
+                }
+              }
+            } catch {}
+            // Labels / free text
+            const scope = document.querySelector('div#film_program_support.inner_block_2_l, #film_program_support') || document
+            const nodes = Array.from(scope.querySelectorAll('p, div, li, dt, dd, .meta, .details'))
+            for (const el of nodes) {
+              const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
+              if (/^director[s]?\b/i.test(tx) || /directed\s+by/i.test(tx)) {
+                const sib = el.nextElementSibling
+                if (sib) {
+                  const v = (sib.textContent || '').replace(/\s+/g, ' ').trim()
+                  if (v) return v
+                }
+                const m = tx.match(/(?:director[s]?\s*:|directed\s+by)\s*([^;|\n]+)(?:[;|\n]|$)/i)
+                if (m && m[1]) return m[1].trim()
+              }
+            }
+            const body = (document.body.textContent || '').replace(/\s+/g, ' ')
+            const m = body.match(/directed\s+by\s*([^.;|\n]+)(?:[.;|\n]|$)/i)
+            return m ? m[1].trim() : undefined
+          }
           const scope = document.querySelector('div#film_program_support.inner_block_2_l, #film_program_support') || document
           let years = []
           let scheduleYear
@@ -95,10 +164,17 @@ export async function fetchCloseUp() {
             }
           }
           const ttl = document.querySelector('h1, title')?.textContent?.trim() || ''
-          return { year, title: ttl }
+          let director = pickDirector()
+          if (!director) {
+            const plain = (scope?.textContent || document.body.textContent || '').replace(/\s+/g,' ').trim()
+            director = nameFromInlineStats(plain, ttl)
+          }
+          director = cleanName(director, ttl)
+          return { year, title: ttl, director }
         })
         if (yearAndTitle?.year) detailYear.set(url, yearAndTitle.year)
         if (yearAndTitle?.title) detailTitle.set(url, yearAndTitle.title)
+        if (yearAndTitle?.director) detailDirector.set(url, yearAndTitle.director)
       } catch {}
     }
 
@@ -129,6 +205,7 @@ export async function fetchCloseUp() {
           filmUrl,
           websiteYear: y,
           releaseDate: `${y}-01-01`,
+          director: detailDirector.get(filmUrl),
         })
       } catch {}
     }
