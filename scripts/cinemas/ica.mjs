@@ -141,7 +141,7 @@ export async function fetchICA() {
   // Detail page pass: fetch film pages to capture website-stated release year and director
   let enriched = deduped
   try {
-    const maxDetails = Number(process.env.ICA_MAX_DETAIL_PAGES || 40)
+    const maxDetails = Number(process.env.ICA_MAX_DETAIL_PAGES ?? Number.MAX_SAFE_INTEGER)
     const urls = Array.from(new Set(deduped.map(s => s.bookingUrl).filter(Boolean))).slice(0, maxDetails)
     if (urls.length) {
       const b2 = await pwChromium.launch({ headless: true })

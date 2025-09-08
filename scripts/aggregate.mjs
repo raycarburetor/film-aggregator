@@ -14,7 +14,7 @@ import { fetchGarden } from './cinemas/garden.mjs'
 import { fetchGenesis } from './cinemas/genesis.mjs'
 import { fetchCloseUp } from './cinemas/closeup.mjs'
 import { fetchBarbican } from './cinemas/barbican.mjs'
-import { enrichWithTMDb, enrichWithLetterboxd } from './enrich.mjs'
+import { enrichWithTMDb, enrichWithLetterboxd, propagateByDirectorYear } from './enrich.mjs'
 
 function isNonFilmEvent(title) {
   if (!title) return false
@@ -60,6 +60,7 @@ let items = [
 items = items.filter((it) => !isNonFilmEvent(it.filmTitle))
 
 await enrichWithTMDb(items, region)
+propagateByDirectorYear(items)
 await enrichWithLetterboxd(items)
 
 const out = path.join(__dirname, '..', 'data', 'listings.json')

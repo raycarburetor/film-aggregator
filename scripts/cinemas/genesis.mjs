@@ -174,7 +174,7 @@ export async function fetchGenesis() {
 
     // Fetch film detail pages to extract website "Release Date:" year and director
     try {
-      const maxDetails = Number(process.env.GENESIS_MAX_DETAIL_PAGES || 40)
+      const maxDetails = Number(process.env.GENESIS_MAX_DETAIL_PAGES ?? Number.MAX_SAFE_INTEGER)
       const detailMap = new Map()
       const dirMap = new Map()
       const filmUrls = Array.from(new Set((screenings || []).map(s => s.filmUrl).filter(Boolean))).slice(0, maxDetails)

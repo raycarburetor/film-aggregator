@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 import { fetchICA } from './cinemas/ica.mjs'
-import { enrichWithTMDb, enrichWithLetterboxd } from './enrich.mjs'
+import { enrichWithTMDb, enrichWithLetterboxd, propagateByDirectorYear } from './enrich.mjs'
 
 const region = process.env.DEFAULT_REGION || 'GB'
 
@@ -47,9 +47,13 @@ function isNonFilmEvent(title) {
 let ica = await fetchICA()
 ica = ica.filter(i => !isNonFilmEvent(i.filmTitle))
 await enrichWithTMDb(ica, region)
+{
+  const mergedTmp = [...existing, ...ica]
+  propagateByDirectorYear(mergedTmp)
+  ica = mergedTmp.filter(i => i.cinema === 'ica')
+}
 await enrichWithLetterboxd(ica)
 
 const merged = [...existing, ...ica]
 await fs.writeFile(dataPath, JSON.stringify(merged, null, 2), 'utf8')
 console.log('Updated ICA listings in', dataPath, 'ICA items:', ica.length, 'Total:', merged.length)
-

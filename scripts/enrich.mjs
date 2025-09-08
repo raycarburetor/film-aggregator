@@ -98,7 +98,9 @@ export async function enrichWithTMDb(items, region='GB') {
         if (!directorName || !candidates?.length) return null
         const want = norm(directorName)
         if (!want) return null
-        const top = candidates.slice(0, 6)
+        // Scan a broader set of candidates; some common titles bury the
+        // correct match beyond the first handful of results.
+        const top = candidates.slice(0, 20)
         const scored = []
         for (const r of top) {
           try {
@@ -129,7 +131,8 @@ export async function enrichWithTMDb(items, region='GB') {
         return pool[0].r
       }
 
-      let m = results[0]
+      // Do not default to the first result; select by director/year/title instead.
+      let m = null
       if (results.length) {
         const sigWords = qTitle.toLowerCase().split(/[^a-z0-9]+/).filter(w => w.length >= 3)
         const sharesWord = (t) => {
@@ -142,7 +145,7 @@ export async function enrichWithTMDb(items, region='GB') {
           if (byDir) m = byDir
         }
         // Prefer exact year match if we have a hint (as a soft preference only)
-        if (!it.director && yearHint) {
+        if (!m && yearHint) {
           const byYear = results.find(r => yearFrom(r.release_date) === yearHint)
           if (byYear) m = byYear
         }
@@ -154,20 +157,20 @@ export async function enrichWithTMDb(items, region='GB') {
           const ql = qTitle.trim().toLowerCase()
           return t === ql || ot === ql
         })
-        if (exacts.length) {
+        if (!m && exacts.length) {
           m = exacts.slice().sort((a,b) => score(b) - score(a))[0]
         }
         // Fallback: prefer normalized-title match using same cleanup, then earliest
-        if (!exacts.length) {
+        if (!m && !exacts.length) {
           const nExacts = results.filter(r => {
             const t = normalizeTitleForSearch(r.title || '').toLowerCase()
             const ot = normalizeTitleForSearch(r.original_title || '').toLowerCase()
             const ql = qTitle.toLowerCase()
             return t === ql || ot === ql
           })
-          if (nExacts.length) {
+          if (!m && nExacts.length) {
             m = nExacts.slice().sort((a,b) => score(b) - score(a))[0]
-          } else {
+          } else if (!m) {
             // Fallback: pick by popularity among candidates sharing a significant word
             const cands = results.filter(r => sharesWord(r.title) || sharesWord(r.original_title))
             const pool = cands.length ? cands : results
@@ -187,41 +190,125 @@ export async function enrichWithTMDb(items, region='GB') {
             const ot = normalizeTitleForSearch(r.original_title || '').toLowerCase()
             return t === ql || ot === ql
           })
-          if (nExacts.length) m = nExacts.slice().sort((a,b) => score(b) - score(a))[0]
-          else m = alt.slice().sort((a,b) => score(b) - score(a))[0]
+          // If we have a director from the website, try to match candidates by director first (broader set)
+          if (it.director) {
+            const byDirAlt = await findByDirector(alt, it.director)
+            if (byDirAlt) m = byDirAlt
+          }
+          if (!m) {
+            if (nExacts.length) m = nExacts.slice().sort((a,b) => score(b) - score(a))[0]
+            else m = alt.slice().sort((a,b) => score(b) - score(a))[0]
+          }
         }
       }
       if (!m) continue
       const detRes = await fetchFn(`https://api.themoviedb.org/3/movie/${m.id}?api_key=${apiKey}&append_to_response=credits,external_ids`)
       if (!detRes.ok) continue
       const det = await detRes.json()
-      // If we have a site director, ensure the chosen TMDb movie's director matches; otherwise skip to avoid wrong enrichment.
-      const siteDir = typeof it.director === 'string' ? it.director : undefined
+      // Validate the chosen match against the website director when available.
+      // We still prefer TMDb as the source of truth for the final director value,
+      // but if a site-provided director exists and does not match this TMDb item,
+      // try to reselect a candidate by director; if none matches, skip enrichment
+      // to avoid attaching the wrong TMDb ID.
       const tmdbDirs = (det?.credits?.crew || []).filter(c => c?.job === 'Director').map(c => c?.name).filter(Boolean)
-      const hasMatch = !siteDir || tmdbDirs.some(nm => {
-        const a = norm(nm)
-        const b = norm(siteDir)
-        return a === b || a.includes(b) || b.includes(a)
-      })
-      if (!hasMatch && siteDir) {
-        // Do not enrich this item to avoid overwriting with a mismatched film
-        continue
+      const siteDirector = typeof it.director === 'string' ? it.director : undefined
+      const namesMatch = (a, b) => {
+        const A = norm(a), B = norm(b)
+        return !!A && !!B && (A === B || A.includes(B) || B.includes(A))
       }
-      // Safe to apply enrichment
+      if (siteDirector) {
+        const hasMatch = tmdbDirs.some(d => namesMatch(d, siteDirector))
+        if (!hasMatch) {
+          // Attempt to switch to a candidate whose credits match the site director
+          const alt = await findByDirector(results, siteDirector)
+          if (alt && alt.id !== m.id) {
+            const altRes = await fetchFn(`https://api.themoviedb.org/3/movie/${alt.id}?api_key=${apiKey}&append_to_response=credits,external_ids`)
+            if (altRes.ok) {
+              const det2 = await altRes.json()
+              const dirs2 = (det2?.credits?.crew || []).filter(c => c?.job === 'Director').map(c => c?.name).filter(Boolean)
+              if (dirs2.some(d => namesMatch(d, siteDirector))) {
+                m = alt
+                // overwrite details with director-matched movie
+                Object.keys(det).forEach(k => delete det[k])
+                Object.assign(det, det2)
+              }
+            }
+          }
+          // If still mismatched, skip
+          const finalDirs = (det?.credits?.crew || []).filter(c => c?.job === 'Director').map(c => c?.name).filter(Boolean)
+          if (!finalDirs.some(d => namesMatch(d, siteDirector))) {
+            continue
+          }
+        }
+      }
+
+      // Apply enrichment details from TMDb
       it.tmdbId = m.id
       it.releaseDate = det.release_date || m.release_date || it.releaseDate
       it.synopsis = det.overview || it.synopsis
       it.genres = (det.genres || []).map(g => g.name)
       const dir = tmdbDirs[0]
-      // Only override director if not already present or if it matches the site value
-      if (dir) {
-        if (!siteDir) it.director = dir
-        else if (norm(dir) === norm(siteDir) || norm(dir).includes(norm(siteDir)) || norm(siteDir).includes(norm(dir))) {
-          it.director = dir
-        }
-      }
+      // Director should only ever be populated by TMDb
+      it.director = dir || undefined
       it.imdbId = det.external_ids?.imdb_id || it.imdbId
     } catch {}
+  }
+  // After attempting per-item TMDb matching, propagate enrichment across
+  // items that share (director, releaseYear) even if their titles differ
+  // due to extra marketing text.
+  try { propagateByDirectorYear(items) } catch {}
+}
+
+// Propagate TMDb enrichment between items that share the same director and
+// release year. Useful when one cinema lists a clean title and another adds
+// extra qualifiers, preventing a direct TMDb match.
+export function propagateByDirectorYear(items) {
+  if (!Array.isArray(items) || items.length === 0) return
+  const norm = (s) => String(s || '')
+    .normalize('NFD')
+    .replace(/\p{Diacritic}+/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+  const yearOf = (it) => {
+    if (it?.releaseDate && /^\d{4}/.test(it.releaseDate)) return Number(it.releaseDate.slice(0,4))
+    if (typeof it?.websiteYear === 'number') return it.websiteYear
+    return undefined
+  }
+  const keyOf = (it) => {
+    const dir = norm(it?.director)
+    const y = yearOf(it)
+    if (!dir || !y) return null
+    return dir + '|' + y
+  }
+  const groups = new Map()
+  for (const it of items) {
+    const k = keyOf(it)
+    if (!k) continue
+    if (!groups.has(k)) groups.set(k, [])
+    groups.get(k).push(it)
+  }
+  for (const [k, arr] of groups) {
+    const withTmdb = arr.filter(i => i && i.tmdbId)
+    const without = arr.filter(i => i && !i.tmdbId)
+    if (!withTmdb.length || !without.length) continue
+    // Ensure there's a single source TMDb id to avoid ambiguity
+    const ids = Array.from(new Set(withTmdb.map(i => i.tmdbId)))
+    if (ids.length !== 1) continue
+    const src = withTmdb[0]
+    for (const tgt of without) {
+      try {
+        tgt.tmdbId = src.tmdbId
+        // Prefer precise TMDb releaseDate if target lacks one
+        if (!tgt.releaseDate && src.releaseDate) tgt.releaseDate = src.releaseDate
+        // Fill synopsis/genres/imdbId if missing
+        if (!tgt.synopsis && src.synopsis) tgt.synopsis = src.synopsis
+        if ((!Array.isArray(tgt.genres) || !tgt.genres.length) && Array.isArray(src.genres)) tgt.genres = src.genres.slice()
+        if (!tgt.imdbId && src.imdbId) tgt.imdbId = src.imdbId
+        // Always normalize director to TMDb-provided value for consistency
+        if (src.director) tgt.director = src.director
+      } catch {}
+    }
   }
 }
 

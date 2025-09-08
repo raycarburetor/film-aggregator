@@ -285,7 +285,7 @@ export async function fetchCastle() {
 
   // Visit film detail pages to capture release year and director as stated on the site
   try {
-    const maxDetails = Number(process.env.CASTLE_MAX_DETAIL_PAGES || 40)
+    const maxDetails = Number(process.env.CASTLE_MAX_DETAIL_PAGES ?? Number.MAX_SAFE_INTEGER)
     const detailMap = new Map()
     const dirMap = new Map()
     // Use film detail pages only for year extraction

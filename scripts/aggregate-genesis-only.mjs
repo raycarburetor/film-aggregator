@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 import { fetchGenesis } from './cinemas/genesis.mjs'
-import { enrichWithTMDb, enrichWithLetterboxd } from './enrich.mjs'
+import { enrichWithTMDb, enrichWithLetterboxd, propagateByDirectorYear } from './enrich.mjs'
 
 const region = process.env.DEFAULT_REGION || 'GB'
 
@@ -51,6 +51,11 @@ function isNonFilmEvent(title) {
 let genesis = await fetchGenesis()
 genesis = genesis.filter(i => !isNonFilmEvent(i.filmTitle))
 await enrichWithTMDb(genesis, region)
+{
+  const mergedTmp = [...existing, ...genesis]
+  propagateByDirectorYear(mergedTmp)
+  genesis = mergedTmp.filter(i => i.cinema === 'genesis')
+}
 await enrichWithLetterboxd(genesis)
 
 const merged = [...existing, ...genesis]

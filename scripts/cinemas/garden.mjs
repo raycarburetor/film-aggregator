@@ -473,7 +473,7 @@ export async function fetchGarden() {
     // Detail pass for director on any remaining items missing one
     try {
       const dpage = await ctx.newPage()
-      const maxDetails = Number(process.env.GARDEN_MAX_DETAIL_PAGES || 40)
+      const maxDetails = Number(process.env.GARDEN_MAX_DETAIL_PAGES ?? Number.MAX_SAFE_INTEGER)
       const urls = Array.from(new Set((screenings || []).filter(s => !s.director && s.filmUrl).map(s => s.filmUrl))).slice(0, maxDetails)
       const dMap = new Map()
       for (const url of urls) {

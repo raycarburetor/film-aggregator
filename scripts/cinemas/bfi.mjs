@@ -114,7 +114,7 @@ export async function fetchBFI() {
   // Fetch detail pages for release year (YYYY) and director name
   try {
     const dpage = await ctx.newPage()
-    const maxDetails = Number(process.env.BFI_MAX_DETAIL_PAGES || 40)
+    const maxDetails = Number(process.env.BFI_MAX_DETAIL_PAGES ?? Number.MAX_SAFE_INTEGER)
     const unique = Array.from(new Set(screenings.map(s => s.filmUrl).filter(Boolean))).slice(0, maxDetails)
     const yMap = new Map()
     const dMap = new Map()

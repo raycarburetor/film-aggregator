@@ -216,7 +216,7 @@ export async function fetchPrinceCharles() {
 
   // Visit film detail pages to capture website-stated release years and director
   try {
-    const maxDetails = Number(process.env.PCC_MAX_DETAIL_PAGES || 30)
+    const maxDetails = Number(process.env.PCC_MAX_DETAIL_PAGES ?? Number.MAX_SAFE_INTEGER)
     const detailMap = new Map()
     const dirMap = new Map()
     // Use film detail pages only (explicit request)

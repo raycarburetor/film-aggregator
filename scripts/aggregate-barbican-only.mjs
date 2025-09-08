@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 import { fetchBarbican } from './cinemas/barbican.mjs'
-import { enrichWithTMDb, enrichWithLetterboxd } from './enrich.mjs'
+import { enrichWithTMDb, enrichWithLetterboxd, propagateByDirectorYear } from './enrich.mjs'
 
 const region = process.env.DEFAULT_REGION || 'GB'
 
@@ -48,6 +48,13 @@ function isNonFilmEvent(title) {
 let barbican = await fetchBarbican()
 barbican = barbican.filter(i => !isNonFilmEvent(i.filmTitle))
 await enrichWithTMDb(barbican, region)
+// Cross-propagate enrichment from existing listings (e.g., other cinemas with the same
+// director + year) back into these new Barbican items before Letterboxd.
+{
+  const mergedTmp = [...existing, ...barbican]
+  propagateByDirectorYear(mergedTmp)
+  barbican = mergedTmp.filter(i => i.cinema === 'barbican')
+}
 await enrichWithLetterboxd(barbican)
 
 const merged = [...existing, ...barbican]
