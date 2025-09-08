@@ -1230,1445 +1230,6 @@
     "genres": []
   },
   {
-    "id": "genesisEddington20250907T160000000Z",
-    "filmTitle": "Eddington",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-07T16:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6666",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
-    "websiteYear": 2025,
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-    "genres": [
-      "Western",
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ari Aster",
-    "imdbId": "tt31176520"
-  },
-  {
-    "id": "genesisEddington20250907T191000000Z",
-    "filmTitle": "Eddington",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-07T19:10:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6667",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
-    "websiteYear": 2025,
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-    "genres": [
-      "Western",
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ari Aster",
-    "imdbId": "tt31176520"
-  },
-  {
-    "id": "genesisEddington20250908T165000000Z",
-    "filmTitle": "Eddington",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T16:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6682",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
-    "websiteYear": 2025,
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-    "genres": [
-      "Western",
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ari Aster",
-    "imdbId": "tt31176520"
-  },
-  {
-    "id": "genesisEddington20250909T165000000Z",
-    "filmTitle": "Eddington",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T16:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6693",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
-    "websiteYear": 2025,
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-    "genres": [
-      "Western",
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ari Aster",
-    "imdbId": "tt31176520"
-  },
-  {
-    "id": "genesisEddington20250910T193500000Z",
-    "filmTitle": "Eddington",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T19:35:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6709",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
-    "websiteYear": 2025,
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-    "genres": [
-      "Western",
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ari Aster",
-    "imdbId": "tt31176520"
-  },
-  {
-    "id": "genesisEddington20250911T165000000Z",
-    "filmTitle": "Eddington",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T16:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6719",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
-    "websiteYear": 2025,
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-    "genres": [
-      "Western",
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ari Aster",
-    "imdbId": "tt31176520"
-  },
-  {
-    "id": "genesisEddington20250911T194500000Z",
-    "filmTitle": "Eddington",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T19:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6722",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
-    "websiteYear": 2025,
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-    "genres": [
-      "Western",
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ari Aster",
-    "imdbId": "tt31176520"
-  },
-  {
-    "id": "genesisHoneyDont20250907T171000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-07T17:10:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6659",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250907T194500000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-07T19:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6658",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250908T144500000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T14:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6678",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250908T171000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T17:10:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6674",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250908T200000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6673",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250909T144500000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T14:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6685",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250909T171000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T17:10:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6688",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250909T200000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6684",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250910T144500000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T14:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6698",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250910T171000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T17:10:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6701",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250910T200000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6697",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250911T133000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T13:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6723",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250911T171000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T17:10:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6714",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250911T200000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6710",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250907T164500000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-07T16:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6657",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250907T192500000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-07T19:25:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6660",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250908T142000000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T14:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6677",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250908T170000000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T17:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6671",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250908T192500000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T19:25:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6672",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250909T142000000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T14:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6692",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250909T170000000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T17:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6686",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250909T192500000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T19:25:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6687",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250910T142000000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T14:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6705",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250910T170000000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T17:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6699",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250910T192500000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T19:25:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6700",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250911T142000000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T14:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6718",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250911T170000000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T17:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6712",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250911T192500000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T19:25:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6713",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "director": "Michael Chaves",
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheRoses20250907T171500000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-07T17:15:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6662",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250907T194500000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-07T19:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6663",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250908T143500000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T14:35:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6679",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250908T172000000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T17:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6675",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250908T200000000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6676",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250909T143500000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T14:35:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6689",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250909T172000000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T17:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6690",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250909T195000000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T19:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6691",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250910T143500000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T14:35:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6702",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250910T172000000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T17:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6703",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250910T195000000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T19:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6704",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250911T143000000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T14:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6715",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250911T172000000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T17:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6716",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250911T195000000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T19:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6717",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jay Roach",
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisWeapons20250907T163000000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-07T16:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6664",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "director": "Zach Cregger",
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisWeapons20250907T193000000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-07T19:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6665",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "director": "Zach Cregger",
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisWeapons20250908T165000000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T16:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6680",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "director": "Zach Cregger",
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisWeapons20250908T194500000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T19:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6681",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "director": "Zach Cregger",
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisWeapons20250909T165500000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T16:55:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6695",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "director": "Zach Cregger",
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisWeapons20250909T195000000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T19:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6696",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "director": "Zach Cregger",
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisWeapons20250910T165000000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T16:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6707",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "director": "Zach Cregger",
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisWeapons20250910T194500000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T19:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6708",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "director": "Zach Cregger",
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisWeapons20250911T165000000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T16:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6721",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "director": "Zach Cregger",
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisWeapons20250911T200000000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6720",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "director": "Zach Cregger",
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisSorryBaby20250908T195000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-08T19:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6683",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100600",
-    "websiteYear": 2025,
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "director": "Eva Victor",
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "genesisSorryBaby20250909T200000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-09T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6694",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100600",
-    "websiteYear": 2025,
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "director": "Eva Victor",
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "genesisSorryBaby20250910T170500000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T17:05:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6726",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100600",
-    "websiteYear": 2025,
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "director": "Eva Victor",
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "genesisSorryBaby20250911T144000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-11T14:40:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6734",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100600",
-    "websiteYear": 2025,
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "director": "Eva Victor",
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "genesisFROMGROUNDZEROSTORIESFROMGAZAUKTHEATRICALRELEASEPREMIEREwithDirectorQA20250912T181500000Z",
-    "filmTitle": "FROM GROUND ZERO: STORIES FROM GAZA - UK THEATRICAL RELEASE PREMIERE with Director Q&A",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-12T18:15:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=5893",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100618",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesisCitizenKaneClassicsPresentedin35mm20250914T140000000Z",
-    "filmTitle": "Citizen Kane- Classics Presented in 35mm",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-14T14:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=4911",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/708",
-    "websiteYear": 1942,
-    "tmdbId": 15,
-    "releaseDate": "1941-04-17",
-    "synopsis": "Newspaper magnate Charles Foster Kane is taken from his mother as a boy and made the ward of a rich industrialist. As a result, every well-meaning, tyrannical or self-destructive move he makes for the rest of his life appears in some way to be a reaction to that deeply wounding event.",
-    "genres": [
-      "Mystery",
-      "Drama"
-    ],
-    "director": "Orson Welles",
-    "imdbId": "tt0033467"
-  },
-  {
-    "id": "genesisItsComplicatedFringe20250915T173000000Z",
-    "filmTitle": "It’s Complicated - Fringe!",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-15T17:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6577",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101332",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesishealingvibesFringe20250916T173000000Z",
-    "filmTitle": "((( healing vibes ))) - Fringe!",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-16T17:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6578",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101331",
-    "websiteYear": 2025,
-    "tmdbId": 714339,
-    "releaseDate": "2022-10-07",
-    "synopsis": "A day in the life of Azucena, who is running out of time to keep herself and her family from being evicted; Rafael, a lawyer who sets out to reunite a mother with her daughter; and Teodora, a sick old woman who searches for her long-lost son before it is too late.",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Juan Diego Botto",
-    "imdbId": "tt12306964"
-  },
-  {
-    "id": "genesisALifeInTandemQA20250917T172000000Z",
-    "filmTitle": "A Life In Tandem + Q&A",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-17T17:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6343",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100604",
-    "websiteYear": 2025,
-    "tmdbId": 1505919,
-    "releaseDate": "2025-07-10",
-    "synopsis": "Follows Luke Grenfell-Shaw's mission to cycle from Brighton to Beijing after being diagnosed with cancer at the age of twenty-four.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Mike Rumsey",
-    "imdbId": "tt34672243"
-  },
-  {
-    "id": "genesisCircuitBreakersFringe20250917T200000000Z",
-    "filmTitle": "Circuit Breakers - Fringe!",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-17T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6579",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101330",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesisBacktotheQtureFringe20250918T174500000Z",
-    "filmTitle": "Back to the Q-ture - Fringe!",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-18T17:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6617",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101329",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesisDarkStarPresentedbytheCultClassicCollective20250918T174000000Z",
-    "filmTitle": "Dark Star Presented by the Cult Classic Collective",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-18T17:40:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6623",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101322",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesisForgivenessQAIWillTellInternationalFilmFestival20250921T172000000Z",
-    "filmTitle": "Forgiveness + Q&A - I Will Tell International Film Festival",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-21T17:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6620",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101325",
-    "websiteYear": 2025,
-    "tmdbId": 1203653,
-    "releaseDate": "2024-09-08",
-    "synopsis": "A Black artist on the path to success is derailed by an unexpected visit from his estranged father, a recovering addict desperate to reconcile. Together, they struggle and learn that forgetting might be a greater challenge than forgiving.",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Titus Kaphar",
-    "imdbId": "tt28523838"
-  },
-  {
-    "id": "genesisStillSheRisesQAIWillTellInternationalFilmFestival20250921T120000000Z",
-    "filmTitle": "Still She Rises + Q&A - I Will Tell International Film Festival",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-21T12:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6622",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101323",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesisStepbyStepQAIWillTellInternationalFilmFestival20250922T174500000Z",
-    "filmTitle": "Step by Step + Q&A - I Will Tell International Film Festival",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-22T17:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6621",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101324",
-    "websiteYear": 2025,
-    "tmdbId": 1461358,
-    "releaseDate": "2025-04-24",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Cheng An-Chun"
-  },
-  {
-    "id": "genesisTheDatingGame20250923T174000000Z",
-    "filmTitle": "The Dating Game",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-23T17:40:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6344",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100603",
-    "websiteYear": 2025,
-    "tmdbId": 1400769,
-    "releaseDate": "2025-01-23",
-    "synopsis": "In a country where eligible men greatly outnumber women, three perpetual bachelors join an intensive seven-day dating camp led by one of China’s most sought-after dating coaches in what may be their last-ditch effort to find love.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Violet Du Feng",
-    "imdbId": "tt34909040"
-  },
-  {
-    "id": "genesisAckroydHarveyTheArtOfActivismQA20250924T173000000Z",
-    "filmTitle": "Ackroyd & Harvey: The Art Of Activism + Q&A",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-24T17:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6345",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100601",
-    "websiteYear": 2025,
-    "tmdbId": 1527411,
-    "releaseDate": "2025-09-19",
-    "synopsis": "Award-winning documentary filmmaker Fiona Cunningham-Reid presents an intimate portrait of internationally acclaimed artists Heather Ackroyd and Dan Harvey, who work at the intersection of art, activism, biology and ecology.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Fiona Cunningham-Reid",
-    "imdbId": "tt37723360"
-  },
-  {
-    "id": "genesisAmericanPieSoftLimitCinema20250924T172500000Z",
-    "filmTitle": "American Pie: Soft Limit Cinema",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-24T17:25:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6475",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101334",
-    "websiteYear": 2025,
-    "tmdbId": 2105,
-    "releaseDate": "1999-07-09",
-    "synopsis": "At a high-school party, four friends find that losing their collective virginity isn't as easy as they had thought. But they still believe that they need to do so before college. To motivate themselves, they enter a pact to all \"score\" by their senior prom.",
-    "genres": [
-      "Comedy",
-      "Romance"
-    ],
-    "director": "Paul Weitz",
-    "imdbId": "tt0163651"
-  },
-  {
-    "id": "genesisBarTrashOpeningNightDAYOFTHEDEAD40THANNIVERSARY198520250924T193000000Z",
-    "filmTitle": "Bar Trash: Opening Night: DAY OF THE DEAD: 40TH ANNIVERSARY (1985)",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-24T19:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6735",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101319",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesisThisJungoLifeQAAFundraiserforCaptainSupportUK20250925T173000000Z",
-    "filmTitle": "This Jungo Life + Q&A - A Fundraiser for Captain Support UK",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-25T17:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6733",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101321",
-    "websiteYear": 2025,
-    "tmdbId": 1375334,
-    "releaseDate": "2024-06-22",
-    "synopsis": "This Jungo Life offers an intimate and raw look into the hidden lives of young refugees and asylum seekers from Sudan and South Sudan, living on the streets of Morocco. Forced to flee violence and chaos, they remain stranded, unable to return home due to the ongoing wars ravaging their countries.\r Filmed entirely on mobile phones, the documentary provides unprecedented access to their world, capturing the reality of their daily struggles. The resilience of the human spirit and the fierce drive for survival is underscored, as they fight to build a better future for themselves and the families they’ve left behind.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "David Fedele"
-  },
-  {
-    "id": "genesisHamilton10thAnniversary20250926T180000000Z",
-    "filmTitle": "Hamilton (10th Anniversary)",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-26T18:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6469",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101314",
-    "websiteYear": 2025,
-    "tmdbId": 556574,
-    "releaseDate": "2020-07-03",
-    "synopsis": "Presenting the tale of American founding father Alexander Hamilton, this filmed version of the original Broadway smash hit is the story of America then, told by America now.",
-    "genres": [
-      "History",
-      "Drama"
-    ],
-    "director": "Thomas Kail",
-    "imdbId": "tt8503618"
-  },
-  {
-    "id": "genesisThroneofBlood20250928T140000000Z",
-    "filmTitle": "Throne of Blood",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-28T14:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=4939",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99089",
-    "websiteYear": 1957,
-    "tmdbId": 3777,
-    "releaseDate": "1957-01-15",
-    "synopsis": "Returning to their lord's castle, samurai warriors Washizu and Miki are waylaid by a spirit who predicts their futures. When the first part of the spirit's prophecy comes true, Washizu's scheming wife, Asaji, presses him to speed up the rest of the spirit's prophecy by murdering his lord and usurping his place. Director Akira Kurosawa's resetting of William Shakespeare's \"Macbeth\" in feudal Japan is one of his most acclaimed films.",
-    "genres": [
-      "Drama",
-      "History"
-    ],
-    "director": "Akira Kurosawa",
-    "imdbId": "tt0050613"
-  },
-  {
-    "id": "genesisShottheVoiceofFreedomQAIWillTellInternationalFilmFestival20250929T174500000Z",
-    "filmTitle": "Shot, the Voice of Freedom + Q&A - I Will Tell International Film Festival",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-29T17:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6619",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101326",
-    "websiteYear": 2025,
-    "tmdbId": 1374371,
-    "releaseDate": "2024-11-15",
-    "synopsis": "Since the withdrawal of US troops from Afghanistan in 2021, the Taliban have imposed a reign of terror that is particularly brutal towards women. Risking their own lives and those of their loved ones, groups of women are protesting against the regime, and standing up for the right to freedom, education and security. The filmmaker follows and interviews two of these women, Reshmin and her sister.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Zainab Entezar"
-  },
-  {
-    "id": "genesisChinatownChaChaQA20251001T173000000Z",
-    "filmTitle": "Chinatown Cha-Cha + Q&A",
-    "cinema": "genesis",
-    "screeningStart": "2025-10-01T17:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6618",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101327",
-    "websiteYear": 2025,
-    "tmdbId": 1314763,
-    "releaseDate": "2024-10-27",
-    "synopsis": "The 92-year-old previous nightclub dancer Coby Yee decides to get back on stage again after joining the senior dance troupe Grant Avenue Follies. Together they go on a tour for the last time, bridging once isolated Chinese communities in the US, Cuba and China.",
-    "genres": [
-      "Documentary",
-      "History",
-      "Music"
-    ],
-    "director": "Luka Yuanyuan Yang"
-  },
-  {
-    "id": "genesisEbonyandIvoryQA20251001T170000000Z",
-    "filmTitle": "Ebony and Ivory + Q&A",
-    "cinema": "genesis",
-    "screeningStart": "2025-10-01T17:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6771",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101315",
-    "websiteYear": 2025,
-    "tmdbId": 1254787,
-    "releaseDate": "2025-08-01",
-    "synopsis": "Two musical legends gather at a Scottish Cottage on The Mull Of Kintyre for a tense summit to discuss a potential collaboration that will ultimately result in a Global Number One smash hit single.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jim Hosking",
-    "imdbId": "tt33131034"
-  },
-  {
-    "id": "genesisSilentsSyncedRadioheadXNosferatuASymphonyofHorrorHalloweenatGenesis20251002T200000000Z",
-    "filmTitle": "Silents Synced - Radiohead X Nosferatu: A Symphony of Horror- Halloween at Genesis",
-    "cinema": "genesis",
-    "screeningStart": "2025-10-02T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=5141",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99229",
-    "websiteYear": 2025
-  },
-  {
     "id": "pccTheToxicAvengerUncut20250907T194500000Z",
     "filmTitle": "The Toxic Avenger Uncut",
     "cinema": "princecharles",
@@ -11636,5 +10197,2491 @@
     ],
     "imdbId": "tt35715953",
     "letterboxdRating": 3.58
+  },
+  {
+    "id": "genesisEddington20250909T165000000Z",
+    "filmTitle": "Eddington",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T16:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6693",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
+    "websiteYear": 2025,
+    "director": "Ari Aster",
+    "tmdbId": 648878,
+    "releaseDate": "2025-07-16",
+    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "genres": [
+      "Western",
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt31176520",
+    "letterboxdRating": 3.36
+  },
+  {
+    "id": "genesisEddington20250910T193500000Z",
+    "filmTitle": "Eddington",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T19:35:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6709",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
+    "websiteYear": 2025,
+    "director": "Ari Aster",
+    "tmdbId": 648878,
+    "releaseDate": "2025-07-16",
+    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "genres": [
+      "Western",
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt31176520",
+    "letterboxdRating": 3.36
+  },
+  {
+    "id": "genesisEddington20250911T165000000Z",
+    "filmTitle": "Eddington",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T16:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6719",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
+    "websiteYear": 2025,
+    "director": "Ari Aster",
+    "tmdbId": 648878,
+    "releaseDate": "2025-07-16",
+    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "genres": [
+      "Western",
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt31176520",
+    "letterboxdRating": 3.36
+  },
+  {
+    "id": "genesisEddington20250911T194500000Z",
+    "filmTitle": "Eddington",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T19:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6722",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
+    "websiteYear": 2025,
+    "director": "Ari Aster",
+    "tmdbId": 648878,
+    "releaseDate": "2025-07-16",
+    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "genres": [
+      "Western",
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt31176520",
+    "letterboxdRating": 3.36
+  },
+  {
+    "id": "genesisEddington20250914T133000000Z",
+    "filmTitle": "Eddington",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T13:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6864",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
+    "websiteYear": 2025,
+    "director": "Ari Aster",
+    "tmdbId": 648878,
+    "releaseDate": "2025-07-16",
+    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "genres": [
+      "Western",
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt31176520",
+    "letterboxdRating": 3.36
+  },
+  {
+    "id": "genesisEddington20250916T193500000Z",
+    "filmTitle": "Eddington",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T19:35:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6875",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
+    "websiteYear": 2025,
+    "director": "Ari Aster",
+    "tmdbId": 648878,
+    "releaseDate": "2025-07-16",
+    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "genres": [
+      "Western",
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt31176520",
+    "letterboxdRating": 3.36
+  },
+  {
+    "id": "genesisEddington20250918T194000000Z",
+    "filmTitle": "Eddington",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T19:40:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6874",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
+    "websiteYear": 2025,
+    "director": "Ari Aster",
+    "tmdbId": 648878,
+    "releaseDate": "2025-07-16",
+    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "genres": [
+      "Western",
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt31176520",
+    "letterboxdRating": 3.36
+  },
+  {
+    "id": "genesisHoneyDont20250909T144500000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T14:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6685",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250909T171000000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T17:10:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6688",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250909T200000000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6684",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250910T144500000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T14:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6698",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250910T171000000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T17:10:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6701",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250910T200000000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6697",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250911T133000000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T13:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6723",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250911T171000000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T17:10:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6714",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250911T200000000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6710",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250913T140000000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T14:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6794",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250914T165500000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T16:55:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6836",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250915T171500000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T17:15:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6866",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250916T200000000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6872",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250917T172000000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T17:20:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6870",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisHoneyDont20250918T152500000Z",
+    "filmTitle": "Honey Don’t",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T15:25:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6858",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
+    "websiteYear": 2025,
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "director": "Ethan Coen",
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "genesisSorryBaby20250909T200000000Z",
+    "filmTitle": "Sorry, Baby",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6694",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/100600",
+    "websiteYear": 2025,
+    "tmdbId": 1205515,
+    "releaseDate": "2025-06-27",
+    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": "Eva Victor",
+    "imdbId": "tt32843349",
+    "letterboxdRating": 4.08
+  },
+  {
+    "id": "genesisSorryBaby20250910T170500000Z",
+    "filmTitle": "Sorry, Baby",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T17:05:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6726",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/100600",
+    "websiteYear": 2025,
+    "tmdbId": 1205515,
+    "releaseDate": "2025-06-27",
+    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": "Eva Victor",
+    "imdbId": "tt32843349",
+    "letterboxdRating": 4.08
+  },
+  {
+    "id": "genesisSorryBaby20250911T144000000Z",
+    "filmTitle": "Sorry, Baby",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T14:40:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6734",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/100600",
+    "websiteYear": 2025,
+    "tmdbId": 1205515,
+    "releaseDate": "2025-06-27",
+    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": "Eva Victor",
+    "imdbId": "tt32843349",
+    "letterboxdRating": 4.08
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250909T142000000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T14:20:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6692",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250909T170000000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T17:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6686",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250909T192500000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T19:25:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6687",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250910T142000000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T14:20:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6705",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250910T170000000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T17:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6699",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250910T192500000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T19:25:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6700",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250911T142000000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T14:20:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6718",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250911T170000000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T17:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6712",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250911T192500000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T19:25:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6713",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250912T200000000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6781",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250913T195500000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T19:55:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6793",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250914T191500000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T19:15:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6862",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250918T195500000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T19:55:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6867",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462",
+    "letterboxdRating": 2.99
+  },
+  {
+    "id": "genesisTheRoses20250909T143500000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T14:35:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6689",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250909T172000000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T17:20:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6690",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250909T195000000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T19:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6691",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250910T143500000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T14:35:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6702",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250910T172000000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T17:20:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6703",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250910T195000000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T19:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6704",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250911T143000000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T14:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6715",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250911T172000000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T17:20:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6716",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250911T195000000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T19:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6717",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250913T171000000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T17:10:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6848",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250914T194000000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T19:40:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6863",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250916T170500000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T17:05:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6873",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250917T144000000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T14:40:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6854",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisTheRoses20250918T171000000Z",
+    "filmTitle": "The Roses",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T17:10:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6868",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
+    "websiteYear": 2025,
+    "director": "Jay Roach",
+    "tmdbId": 1267905,
+    "releaseDate": "2025-08-27",
+    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt31973693",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "genesisWeapons20250909T165500000Z",
+    "filmTitle": "Weapons",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T16:55:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6695",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
+    "websiteYear": 2025,
+    "director": "Zach Cregger",
+    "tmdbId": 1078605,
+    "releaseDate": "2025-08-04",
+    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdbId": "tt26581740",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "genesisWeapons20250909T195000000Z",
+    "filmTitle": "Weapons",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-09T19:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6696",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
+    "websiteYear": 2025,
+    "director": "Zach Cregger",
+    "tmdbId": 1078605,
+    "releaseDate": "2025-08-04",
+    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdbId": "tt26581740",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "genesisWeapons20250910T165000000Z",
+    "filmTitle": "Weapons",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T16:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6707",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
+    "websiteYear": 2025,
+    "director": "Zach Cregger",
+    "tmdbId": 1078605,
+    "releaseDate": "2025-08-04",
+    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdbId": "tt26581740",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "genesisWeapons20250910T194500000Z",
+    "filmTitle": "Weapons",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-10T19:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6708",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
+    "websiteYear": 2025,
+    "director": "Zach Cregger",
+    "tmdbId": 1078605,
+    "releaseDate": "2025-08-04",
+    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdbId": "tt26581740",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "genesisWeapons20250911T165000000Z",
+    "filmTitle": "Weapons",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T16:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6721",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
+    "websiteYear": 2025,
+    "director": "Zach Cregger",
+    "tmdbId": 1078605,
+    "releaseDate": "2025-08-04",
+    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdbId": "tt26581740",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "genesisWeapons20250911T200000000Z",
+    "filmTitle": "Weapons",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-11T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6720",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
+    "websiteYear": 2025,
+    "director": "Zach Cregger",
+    "tmdbId": 1078605,
+    "releaseDate": "2025-08-04",
+    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdbId": "tt26581740",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "genesisWeapons20250912T170500000Z",
+    "filmTitle": "Weapons",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T17:05:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6887",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
+    "websiteYear": 2025,
+    "director": "Zach Cregger",
+    "tmdbId": 1078605,
+    "releaseDate": "2025-08-04",
+    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdbId": "tt26581740",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "genesisWeapons20250913T194500000Z",
+    "filmTitle": "Weapons",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T19:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6861",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
+    "websiteYear": 2025,
+    "director": "Zach Cregger",
+    "tmdbId": 1078605,
+    "releaseDate": "2025-08-04",
+    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdbId": "tt26581740",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "genesisWeapons20250915T194000000Z",
+    "filmTitle": "Weapons",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T19:40:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6888",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
+    "websiteYear": 2025,
+    "director": "Zach Cregger",
+    "tmdbId": 1078605,
+    "releaseDate": "2025-08-04",
+    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdbId": "tt26581740",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "genesisWeapons20250917T193500000Z",
+    "filmTitle": "Weapons",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T19:35:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6871",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
+    "websiteYear": 2025,
+    "director": "Zach Cregger",
+    "tmdbId": 1078605,
+    "releaseDate": "2025-08-04",
+    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "imdbId": "tt26581740",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "genesisDemonSlayerKimetsuNoYaibaInfinityCastleDubbed20250912T142500000Z",
+    "filmTitle": "Demon Slayer: Kimetsu No Yaiba Infinity Castle- Dubbed",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T14:25:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6782",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101209",
+    "websiteYear": 2025,
+    "director": "Haruo Sotozaki"
+  },
+  {
+    "id": "genesisDemonSlayerKimetsuNoYaibaInfinityCastleDubbed20250913T140000000Z",
+    "filmTitle": "Demon Slayer: Kimetsu No Yaiba Infinity Castle- Dubbed",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T14:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6789",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101209",
+    "websiteYear": 2025,
+    "director": "Haruo Sotozaki"
+  },
+  {
+    "id": "genesisDemonSlayerKimetsuNoYaibaInfinityCastleDubbed20250914T130000000Z",
+    "filmTitle": "Demon Slayer: Kimetsu No Yaiba Infinity Castle- Dubbed",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T13:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6828",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101209",
+    "websiteYear": 2025,
+    "director": "Haruo Sotozaki"
+  },
+  {
+    "id": "genesisDemonSlayerKimetsuNoYaibaInfinityCastleDubbed20250915T140000000Z",
+    "filmTitle": "Demon Slayer: Kimetsu No Yaiba Infinity Castle- Dubbed",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T14:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6851",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101209",
+    "websiteYear": 2025,
+    "director": "Haruo Sotozaki"
+  },
+  {
+    "id": "genesisDemonSlayerKimetsuNoYaibaInfinityCastleDubbed20250916T140000000Z",
+    "filmTitle": "Demon Slayer: Kimetsu No Yaiba Infinity Castle- Dubbed",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T14:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6843",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101209",
+    "websiteYear": 2025,
+    "director": "Haruo Sotozaki"
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250912T164500000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T16:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6889",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250912T193500000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T19:35:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6876",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250913T161000000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T16:10:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6877",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250913T193000000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T19:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6878",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250914T164500000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T16:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6879",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250914T190000000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T19:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6880",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250915T164500000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T16:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6881",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250915T194500000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T19:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6882",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250916T194500000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T19:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6883",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250917T164500000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T16:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6885",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250917T194500000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T19:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6884",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250918T140500000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T14:05:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6891",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDemonSlayerKimetsunoYaibaInfinityCastleSubtitled20250918T194500000Z",
+    "filmTitle": "Demon Slayer: Kimetsu no Yaiba Infinity Castle - Subtitled",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T19:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6886",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99440",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250912T141000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T14:10:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6777",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250912T170000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T17:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6775",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250912T195000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T19:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6776",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250913T132000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T13:20:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6783",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250913T161500000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T16:15:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6784",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250913T191000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T19:10:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6785",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250914T140000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T14:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6839",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250914T165000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T16:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6834",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250914T193500000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T19:35:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6835",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250915T140000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T14:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6849",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250915T170000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T17:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6795",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250915T193000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T19:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6796",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250916T140000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T14:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6824",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250916T170000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T17:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6820",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250916T195000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T19:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6821",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250917T140000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T14:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6852",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250917T170000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T17:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6801",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250917T195000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T19:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6802",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250918T133000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T13:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6857",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250918T170000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T17:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6809",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisDowntonAbbeyTheGrandFinale20250918T195000000Z",
+    "filmTitle": "Downton Abbey: The Grand Finale",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T19:50:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6810",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95768",
+    "websiteYear": 2025,
+    "director": "Simon Curtis",
+    "tmdbId": 1289936,
+    "releaseDate": "2025-09-10",
+    "synopsis": "When Mary finds herself at the center of a public scandal and the family faces financial strife, the entire household grapples with the threat of social disgrace. The Crawleys must embrace change as the staff prepares for a new chapter with the next generation leading Downton Abbey into the future.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "History"
+    ],
+    "imdbId": "tt31888477"
+  },
+  {
+    "id": "genesisFROMGROUNDZEROSTORIESFROMGAZAUKTHEATRICALRELEASEPREMIEREwithDirectorQA20250912T181500000Z",
+    "filmTitle": "FROM GROUND ZERO: STORIES FROM GAZA - UK THEATRICAL RELEASE PREMIERE with Director Q&A",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T18:15:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=5893",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/100618",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisTheLongWalk20250912T141000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T14:10:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6780",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250912T170000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T17:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6779",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250912T200000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-12T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6778",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250913T143500000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T14:35:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6786",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250913T172500000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T17:25:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6787",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250913T200000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6788",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250914T133000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T13:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6833",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250914T162000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T16:20:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6831",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250914T200000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6832",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250915T142500000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T14:25:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6850",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250915T170500000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T17:05:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6799",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250915T200000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6798",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250916T143500000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T14:35:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6825",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250916T171000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T17:10:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6818",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250916T195500000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T19:55:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6819",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250917T143000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T14:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6853",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250917T170500000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T17:05:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6805",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250917T200000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6804",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250918T150000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T15:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6856",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250918T172500000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T17:25:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6811",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheLongWalk20250918T200000000Z",
+    "filmTitle": "The Long Walk",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6813",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "websiteYear": 2025,
+    "director": "Francis Lawrence",
+    "tmdbId": 604079,
+    "releaseDate": "2025-09-10",
+    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "genres": [
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt10374610",
+    "letterboxdRating": 3.65
+  },
+  {
+    "id": "genesisTheBadGuys220250913T113000000Z",
+    "filmTitle": "The Bad Guys 2",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-13T11:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6826",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/95764",
+    "websiteYear": 2025,
+    "director": "Pierre Perifel",
+    "tmdbId": 1175942,
+    "releaseDate": "2025-07-24",
+    "synopsis": "The now-reformed Bad Guys are trying (very, very hard) to be good, but instead find themselves hijacked into a high-stakes, globe-trotting heist, masterminded by a new team of criminals they never saw coming: The Bad Girls.",
+    "genres": [
+      "Animation",
+      "Family",
+      "Comedy",
+      "Crime",
+      "Adventure"
+    ],
+    "imdbId": "tt30017619",
+    "letterboxdRating": 3.58
+  },
+  {
+    "id": "genesisCitizenKaneClassicsPresentedin35mm20250914T140000000Z",
+    "filmTitle": "Citizen Kane- Classics Presented in 35mm",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-14T14:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=4911",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/708",
+    "websiteYear": 1942,
+    "director": "Orson Welles",
+    "tmdbId": 15,
+    "releaseDate": "1941-04-17",
+    "synopsis": "Newspaper magnate Charles Foster Kane is taken from his mother as a boy and made the ward of a rich industrialist. As a result, every well-meaning, tyrannical or self-destructive move he makes for the rest of his life appears in some way to be a reaction to that deeply wounding event.",
+    "genres": [
+      "Mystery",
+      "Drama"
+    ],
+    "imdbId": "tt0033467",
+    "letterboxdRating": 4.19
+  },
+  {
+    "id": "genesisItsComplicatedFringe20250915T173000000Z",
+    "filmTitle": "It’s Complicated - Fringe!",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T17:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6577",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101332",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesishealingvibesFringe20250916T173000000Z",
+    "filmTitle": "((( healing vibes ))) - Fringe!",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T17:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6578",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101331",
+    "websiteYear": 2025,
+    "tmdbId": 714339,
+    "releaseDate": "2022-10-07",
+    "synopsis": "A day in the life of Azucena, who is running out of time to keep herself and her family from being evicted; Rafael, a lawyer who sets out to reunite a mother with her daughter; and Teodora, a sick old woman who searches for her long-lost son before it is too late.",
+    "genres": [
+      "Drama"
+    ],
+    "director": "Juan Diego Botto",
+    "imdbId": "tt12306964"
+  },
+  {
+    "id": "genesisALifeInTandemQA20250917T172000000Z",
+    "filmTitle": "A Life In Tandem + Q&A",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T17:20:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6343",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/100604",
+    "websiteYear": 2025,
+    "director": "Mike Rumsey",
+    "tmdbId": 1505919,
+    "releaseDate": "2025-07-10",
+    "synopsis": "Follows Luke Grenfell-Shaw's mission to cycle from Brighton to Beijing after being diagnosed with cancer at the age of twenty-four.",
+    "genres": [
+      "Documentary"
+    ],
+    "imdbId": "tt34672243"
+  },
+  {
+    "id": "genesisCircuitBreakersFringe20250917T200000000Z",
+    "filmTitle": "Circuit Breakers - Fringe!",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6579",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101330",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisSomeLikeitSwing20250917T183000000Z",
+    "filmTitle": "Some Like it Swing",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-17T18:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6827",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/92488"
+  },
+  {
+    "id": "genesisBacktotheQtureFringe20250918T174500000Z",
+    "filmTitle": "Back to the Q-ture - Fringe!",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T17:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6617",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101329",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisDarkStarPresentedbytheCultClassicCollective20250918T174000000Z",
+    "filmTitle": "Dark Star Presented by the Cult Classic Collective",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-18T17:40:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6623",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101322",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisForgivenessQAIWillTellInternationalFilmFestival20250921T172000000Z",
+    "filmTitle": "Forgiveness + Q&A - I Will Tell International Film Festival",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-21T17:20:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6620",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101325",
+    "websiteYear": 2025,
+    "tmdbId": 1515105,
+    "releaseDate": "2025-07-17",
+    "synopsis": "A friend does something at game night and everyone loves it.",
+    "genres": [
+      "Comedy"
+    ],
+    "director": "Alex Sovoda"
+  },
+  {
+    "id": "genesisStillSheRisesQAIWillTellInternationalFilmFestival20250921T120000000Z",
+    "filmTitle": "Still She Rises + Q&A - I Will Tell International Film Festival",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-21T12:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6622",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101323",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisStepbyStepQAIWillTellInternationalFilmFestival20250922T174500000Z",
+    "filmTitle": "Step by Step + Q&A - I Will Tell International Film Festival",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-22T17:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6621",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101324",
+    "websiteYear": 2025,
+    "tmdbId": 1461358,
+    "releaseDate": "2025-04-24",
+    "genres": [
+      "Drama"
+    ],
+    "director": "Cheng An-Chun"
+  },
+  {
+    "id": "genesisTheDatingGame20250923T174000000Z",
+    "filmTitle": "The Dating Game",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-23T17:40:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6344",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/100603",
+    "websiteYear": 2025,
+    "tmdbId": 1400769,
+    "releaseDate": "2025-01-23",
+    "synopsis": "In a country where eligible men greatly outnumber women, three perpetual bachelors join an intensive seven-day dating camp led by one of China’s most sought-after dating coaches in what may be their last-ditch effort to find love.",
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Violet Du Feng",
+    "imdbId": "tt34909040",
+    "letterboxdRating": 3.36
+  },
+  {
+    "id": "genesisAckroydHarveyTheArtOfActivismQA20250924T173000000Z",
+    "filmTitle": "Ackroyd & Harvey: The Art Of Activism + Q&A",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-24T17:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6345",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/100601",
+    "websiteYear": 2025,
+    "tmdbId": 1527411,
+    "releaseDate": "2025-09-19",
+    "synopsis": "Award-winning documentary filmmaker Fiona Cunningham-Reid presents an intimate portrait of internationally acclaimed artists Heather Ackroyd and Dan Harvey, who work at the intersection of art, activism, biology and ecology.",
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Fiona Cunningham-Reid",
+    "imdbId": "tt37723360"
+  },
+  {
+    "id": "genesisAmericanPieSoftLimitCinema20250924T172500000Z",
+    "filmTitle": "American Pie: Soft Limit Cinema",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-24T17:25:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6475",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101334",
+    "websiteYear": 2025,
+    "tmdbId": 2105,
+    "releaseDate": "1999-07-09",
+    "synopsis": "At a high-school party, four friends find that losing their collective virginity isn't as easy as they had thought. But they still believe that they need to do so before college. To motivate themselves, they enter a pact to all \"score\" by their senior prom.",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "director": "Paul Weitz",
+    "imdbId": "tt0163651",
+    "letterboxdRating": 3.13
+  },
+  {
+    "id": "genesisBarTrashOpeningNightDAYOFTHEDEAD40THANNIVERSARY198520250924T193000000Z",
+    "filmTitle": "Bar Trash: Opening Night: DAY OF THE DEAD: 40TH ANNIVERSARY (1985)",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-24T19:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6735",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101319",
+    "websiteYear": 2025
+  },
+  {
+    "id": "genesisThisJungoLifeQAAFundraiserforCaptainSupportUK20250925T173000000Z",
+    "filmTitle": "This Jungo Life + Q&A - A Fundraiser for Captain Support UK",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-25T17:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6733",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101321",
+    "websiteYear": 2025,
+    "tmdbId": 1375334,
+    "releaseDate": "2024-06-22",
+    "synopsis": "This Jungo Life offers an intimate and raw look into the hidden lives of young refugees and asylum seekers from Sudan and South Sudan, living on the streets of Morocco. Forced to flee violence and chaos, they remain stranded, unable to return home due to the ongoing wars ravaging their countries.\r Filmed entirely on mobile phones, the documentary provides unprecedented access to their world, capturing the reality of their daily struggles. The resilience of the human spirit and the fierce drive for survival is underscored, as they fight to build a better future for themselves and the families they’ve left behind.",
+    "genres": [
+      "Documentary"
+    ],
+    "director": "David Fedele"
+  },
+  {
+    "id": "genesisHamilton10thAnniversary20250926T180000000Z",
+    "filmTitle": "Hamilton (10th Anniversary)",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-26T18:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6469",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101314",
+    "websiteYear": 2025,
+    "tmdbId": 556574,
+    "releaseDate": "2025-09-05",
+    "synopsis": "Presenting the tale of American founding father Alexander Hamilton, this filmed version of the original Broadway smash hit is the story of America then, told by America now.",
+    "genres": [
+      "History",
+      "Drama"
+    ],
+    "director": "Thomas Kail",
+    "imdbId": "tt8503618",
+    "letterboxdRating": 4.24
+  },
+  {
+    "id": "genesisThroneofBlood20250928T140000000Z",
+    "filmTitle": "Throne of Blood",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-28T14:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=4939",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99089",
+    "websiteYear": 1957,
+    "tmdbId": 3777,
+    "releaseDate": "1957-01-15",
+    "synopsis": "Returning to their lord's castle, samurai warriors Washizu and Miki are waylaid by a spirit who predicts their futures. When the first part of the spirit's prophecy comes true, Washizu's scheming wife, Asaji, presses him to speed up the rest of the spirit's prophecy by murdering his lord and usurping his place. Director Akira Kurosawa's resetting of William Shakespeare's \"Macbeth\" in feudal Japan is one of his most acclaimed films.",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "director": "Akira Kurosawa",
+    "imdbId": "tt0050613",
+    "letterboxdRating": 4.27
+  },
+  {
+    "id": "genesisShottheVoiceofFreedomQAIWillTellInternationalFilmFestival20250929T174500000Z",
+    "filmTitle": "Shot, the Voice of Freedom + Q&A - I Will Tell International Film Festival",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-29T17:45:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6619",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101326",
+    "websiteYear": 2025,
+    "tmdbId": 1374371,
+    "releaseDate": "2024-11-15",
+    "synopsis": "Since the withdrawal of US troops from Afghanistan in 2021, the Taliban have imposed a reign of terror that is particularly brutal towards women. Risking their own lives and those of their loved ones, groups of women are protesting against the regime, and standing up for the right to freedom, education and security. The filmmaker follows and interviews two of these women, Reshmin and her sister.",
+    "genres": [
+      "Documentary"
+    ],
+    "director": "Zainab Entezar"
+  },
+  {
+    "id": "genesisChinatownChaChaQA20251001T173000000Z",
+    "filmTitle": "Chinatown Cha-Cha + Q&A",
+    "cinema": "genesis",
+    "screeningStart": "2025-10-01T17:30:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6618",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101327",
+    "websiteYear": 2025,
+    "tmdbId": 1314763,
+    "releaseDate": "2024-10-27",
+    "synopsis": "The 92-year-old previous nightclub dancer Coby Yee decides to get back on stage again after joining the senior dance troupe Grant Avenue Follies. Together they go on a tour for the last time, bridging once isolated Chinese communities in the US, Cuba and China.",
+    "genres": [
+      "Documentary",
+      "History",
+      "Music"
+    ],
+    "director": "Luka Yuanyuan Yang",
+    "letterboxdRating": 3.52
+  },
+  {
+    "id": "genesisEbonyandIvoryQA20251001T170000000Z",
+    "filmTitle": "Ebony and Ivory + Q&A",
+    "cinema": "genesis",
+    "screeningStart": "2025-10-01T17:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6771",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/101315",
+    "websiteYear": 2025,
+    "tmdbId": 1254787,
+    "releaseDate": "2025-08-01",
+    "synopsis": "Two musical legends gather at a Scottish Cottage on The Mull Of Kintyre for a tense summit to discuss a potential collaboration that will ultimately result in a Global Number One smash hit single.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "director": "Jim Hosking",
+    "imdbId": "tt33131034",
+    "letterboxdRating": 3.13
+  },
+  {
+    "id": "genesisSilentsSyncedRadioheadXNosferatuASymphonyofHorrorHalloweenatGenesis20251002T200000000Z",
+    "filmTitle": "Silents Synced - Radiohead X Nosferatu: A Symphony of Horror- Halloween at Genesis",
+    "cinema": "genesis",
+    "screeningStart": "2025-10-02T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=5141",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/99229",
+    "websiteYear": 2025,
+    "director": "F.W. Murnau"
   }
 ]

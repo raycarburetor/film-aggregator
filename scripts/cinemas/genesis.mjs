@@ -182,6 +182,8 @@ export async function fetchGenesis() {
       for (const url of filmUrls) {
         try {
           await dpage.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 })
+          try { await dpage.waitForLoadState('networkidle', { timeout: 8000 }) } catch {}
+          try { await dpage.waitForSelector("p, .text-gray-600, script[type='application/ld+json']", { timeout: 8000 }) } catch {}
           const info = await dpage.evaluate(() => {
             function valid(y) { const n = Number(y); const Y = new Date().getFullYear() + 1; return n >= 1895 && n <= Y }
             function cleanName(name, title) {
@@ -207,6 +209,25 @@ export async function fetchGenesis() {
                   }
                 }
               } catch {}
+              // Explicit "Directed by:" field commonly appears inside a <p>
+              try {
+                const paras = Array.from(document.querySelectorAll('p, .text-gray-600'))
+                for (const p of paras) {
+                  const raw = (p.textContent || '').replace(/\s+/g, ' ').trim()
+                  if (/^directed\s*by\s*:?/i.test(raw)) {
+                    const val = raw.replace(/^directed\s*by\s*:?/i, '').trim()
+                    if (val) return val
+                  }
+                  // Also handle <b>Directed by:</b> Name structure
+                  const b = p.querySelector('b,strong')
+                  const lab = (b?.textContent || '').replace(/\s+/g, ' ').trim()
+                  if (/^directed\s*by\s*:?/i.test(lab)) {
+                    // Get the text of the p without the label
+                    let t = raw.replace(new RegExp('^\n?\s*' + lab.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*', 'i'),'').trim()
+                    if (t) return t
+                  }
+                }
+              } catch {}
               const nodes = Array.from(document.querySelectorAll('p, li, div, span, dt, dd, section, article'))
               for (const el of nodes) {
                 const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
@@ -226,23 +247,27 @@ export async function fetchGenesis() {
               const t = document.querySelector('h1, .title, .film-title')?.textContent || ''
               return nameFromInlineStats(body, t)
             }
-            // Find elements that mention "Release Date:" and pull a year
-            const nodes = Array.from(document.querySelectorAll('p, li, div, span, dt, dd, section, article'))
-            for (const el of nodes) {
-              const tx = (el.textContent || '').trim()
-              if (!/release\s*date\s*:/.test(tx.toLowerCase())) continue
-              // Prefer DD/MM/YYYY or YYYY
-              let m = tx.match(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/)
-              if (m && valid(Number(m[3]))) return Number(m[3])
-              m = tx.match(/\b(19|20)\d{2}\b/)
-              if (m && valid(Number(m[0]))) return Number(m[0])
-            }
+            // Find elements that mention "Release Date:" and pull a year (do not early-return)
+            let yFromRelease
+            try {
+              const nodes = Array.from(document.querySelectorAll('p, li, div, span, dt, dd, section, article'))
+              for (const el of nodes) {
+                const tx = (el.textContent || '').trim()
+                if (!/release\s*date\s*:/.test(tx.toLowerCase())) continue
+                // Prefer DD/MM/YYYY or YYYY
+                let m = tx.match(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/)
+                if (m && valid(Number(m[3]))) { yFromRelease = Number(m[3]); break }
+                m = tx.match(/\b(19|20)\d{2}\b/)
+                if (m && valid(Number(m[0]))) { yFromRelease = Number(m[0]); break }
+              }
+            } catch {}
             // Fallback: annotation year in title
             const tEl = document.querySelector('h1, .title, .film-title')
             const t = tEl?.textContent?.trim() || ''
             let mm = t.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]\s*$/) || t.match(/[-–—]\s*((?:19|20)\d{2})\s*$/) || t.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]/)
-            if (mm) { const y = Number(mm[1] || mm[0]); if (valid(y)) return y }
-            const year = undefined
+            let yFromTitle
+            if (mm) { const y = Number(mm[1] || mm[0]); if (valid(y)) yFromTitle = y }
+            const year = yFromRelease ?? yFromTitle
             let director = getDirector()
             director = cleanName(director, t)
             return { year, director }
