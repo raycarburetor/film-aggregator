@@ -193,6 +193,23 @@ export async function fetchICA() {
             function cleanName(name, title) {
               try { let s=String(name||'').replace(/\s{2,}/g,' ').trim(); if(!s) return null; const norm=(x)=>String(x||'').normalize('NFD').replace(/\p{Diacritic}+/gu,'').toLowerCase(); if(title){ const nt=norm(title).split(/\s+/).filter(Boolean); let toks=s.split(/\s+/).filter(Boolean); let i=0; while(i<nt.length && toks[0] && norm(toks[0])===nt[i]){ toks.shift(); i++ } s=toks.join(' ').trim()||s } const stops=new Set(['demonstration','conversation','talk','introduction','intro','performance','screentalk','screen','lecture','panel','qa','q&a','with','presented','presentedby','hosted','hostedby','in']); let toks=s.split(/\s+/); while(toks.length && stops.has(norm(toks[0]).replace(/\s+/g,''))) toks.shift(); s=toks.join(' ').trim(); s=s.replace(/\s*,\s*(?:19|20)\d{2}\s*,\s*\d{1,3}\s*min[\s\S]*$/i,'').trim(); s=s.replace(/\s*[,–—-]\s*(?:UK|USA|US|France|Italy|Iran|India|Canada)(?:\s*[,–—-].*)?$/i,'').trim(); s=s.replace(/^(?:and|with)\s+/i,'').trim(); return s||null } catch { return null } }
             function nameFromInlineStats(text, title) { const re=/([A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+(?:\s+and\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+)?)\s*,\s*(?:[A-Za-z\s]+,\s*)?(?:19|20)\d{2}\s*,\s*\d{1,3}\s*m(?:in)?\b/; const m=String(text||'').match(re); return m?cleanName(m[1], title):null }
+            function fromColophon() {
+              try {
+                const col = document.querySelector('#colophon.caption, div#colophon.caption, #colophon .caption, .caption#colophon')
+                if (!col) return undefined
+                let txt = (col.textContent || '').replace(/\s+/g, ' ').trim()
+                // Remove leading italicised title remnants like "Modesta, " if present
+                txt = txt.replace(/^\s*[^,]+,\s*dir\.?\s*/i, 'dir. ')
+                txt = txt.replace(/^\s*dir\.?\s*/i, '')
+                const ym = txt.match(/\b(19|20)\d{2}\b/)
+                const head = ym && ym.index != null ? txt.slice(0, ym.index) : txt
+                const parts = head.split(',').map(s => s.trim()).filter(Boolean)
+                const isName = (p) => /[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+/.test(p)
+                const names = parts.filter(isName)
+                if (names.length) return names.join(', ')
+              } catch {}
+              return undefined
+            }
             function fromJSONLD() {
               try {
                 const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
@@ -236,7 +253,7 @@ export async function fetchICA() {
               return nameFromInlineStats(body, t)
             }
             const t = document.querySelector('h1, .title, .film-title')?.textContent || ''
-            let d = fromJSONLD() || fromLabels()
+            let d = fromColophon() || fromJSONLD() || fromLabels()
             d = cleanName(d, t)
             return d
           })

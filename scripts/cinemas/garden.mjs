@@ -307,7 +307,7 @@ export async function fetchGarden() {
 
             // Extract year from stats or title
             try {
-              const stats = document.querySelector('div.films-list__by-date__film__stats, .film-year, .details, .meta')
+              const stats = document.querySelector('div.films-list__by-date__film__stats, div.film-detail__film__stats, .film-year, .details, .meta')
               if (stats) {
                 const m = (stats.textContent || '').match(/\b(19|20)\d{2}\b/)
                 if (m && validYear(Number(m[0]))) res.year = Number(m[0])
@@ -323,9 +323,20 @@ export async function fetchGarden() {
             function cleanName(name, title) {
               try { let s=String(name||'').replace(/\s{2,}/g,' ').trim(); if(!s) return null; const norm=(x)=>String(x||'').normalize('NFD').replace(/\p{Diacritic}+/gu,'').toLowerCase(); if(title){ const nt=norm(title).split(/\s+/).filter(Boolean); let toks=s.split(/\s+/).filter(Boolean); let i=0; while(i<nt.length && toks[0] && norm(toks[0])===nt[i]){ toks.shift(); i++ } s=toks.join(' ').trim()||s } const stops=new Set(['demonstration','conversation','talk','introduction','intro','performance','screentalk','screen','lecture','panel','qa','q&a','with','presented','presentedby','hosted','hostedby','in']); let toks=s.split(/\s+/); while(toks.length && stops.has(norm(toks[0]).replace(/\s+/g,''))) toks.shift(); s=toks.join(' ').trim(); s=s.replace(/\s*,\s*(?:19|20)\d{2}\s*,\s*\d{1,3}\s*min[\s\S]*$/i,'').trim(); s=s.replace(/\s*[,–—-]\s*(?:UK|USA|US|France|Italy|Iran|India|Canada)(?:\s*[,–—-].*)?$/i,'').trim(); s=s.replace(/^(?:and|with)\s+/i,'').trim(); return s||null } catch { return null } }
             function nameFromInlineStats(text, title) {
-              // Match patterns like "Name, 2024, 119m" and "Name, Country, 2024, 119 min"
-              const re = /([A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+(?:\s+and\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+)?)\s*,\s*(?:[A-Za-z\s]+,\s*)?(?:19|20)\d{2}\s*,\s*\d{1,3}\s*m(?:in)?\b/
-              const m = String(text||'').match(re)
+              // Handle multiple directors before the country/year: e.g.
+              // "Luc Dardenne, Jean-Pierre Dardenne, Belgium, France, 2025, 105m."
+              const s = String(text || '')
+              const ym = s.match(/\b(19|20)\d{2}\b/)
+              if (ym && ym.index != null) {
+                const left = s.slice(0, ym.index)
+                const parts = left.split(',').map(x => x.trim()).filter(Boolean)
+                const isName = (p) => /[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+/.test(p)
+                const names = parts.filter(isName)
+                if (names.length) return names.join(', ')
+              }
+              // Fallback to single-name pattern like "Name, 2024, 119m"
+              const re = /([A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+)\s*,\s*(?:[A-Za-z\s]+,\s*)?(?:19|20)\d{2}\s*,\s*\d{1,3}\s*m(?:in)?\b/
+              const m = s.match(re)
               return m ? cleanName(m[1], document.querySelector('h1, .film-title, .title')?.textContent) : null
             }
             try {
@@ -347,6 +358,15 @@ export async function fetchGarden() {
                 }
               }
             } catch {}
+            // Try dedicated stats block for inline pattern: "Name, Country, YYYY, 124m"
+            if (!res.director) {
+              try {
+                const statsEl = document.querySelector('div.film-detail__film__stats')
+                const txt = (statsEl?.textContent || '').replace(/\s+/g, ' ').trim()
+                const fromStats = nameFromInlineStats(txt)
+                if (fromStats) res.director = fromStats
+              } catch {}
+            }
             if (!res.director) {
               const nodes = Array.from(document.querySelectorAll('.film-year, .details, .meta, p, li, dt, dd, section, article'))
               for (const el of nodes) {
@@ -503,6 +523,27 @@ export async function fetchGarden() {
               } catch {}
               return undefined
             }
+            function fromStats() {
+              try {
+                const statsEl = document.querySelector('div.film-detail__film__stats')
+                if (!statsEl) return undefined
+                const txt = (statsEl.textContent || '').replace(/\s+/g, ' ').trim()
+                // Use inline multi-name parser
+                const names = (() => {
+                  const ym = txt.match(/\b(19|20)\d{2}\b/)
+                  if (ym && ym.index != null) {
+                    const left = txt.slice(0, ym.index)
+                    const parts = left.split(',').map(x => x.trim()).filter(Boolean)
+                    const isName = (p) => /[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+/.test(p)
+                    const names = parts.filter(isName)
+                    if (names.length) return names.join(', ')
+                  }
+                  return undefined
+                })()
+                if (names) return names
+              } catch {}
+              return undefined
+            }
             function fromLabels() {
               const nodes = Array.from(document.querySelectorAll('.meta, .details, dl, ul, section, p, li, dt, dd'))
               for (const el of nodes) {
@@ -528,7 +569,7 @@ export async function fetchGarden() {
               return undefined
             }
             const t = document.querySelector('h1, .film-title, .title')?.textContent || ''
-            let d = fromJSONLD() || fromLabels()
+            let d = fromJSONLD() || fromStats() || fromLabels()
             d = cleanName(d, t)
             return d
           })
