@@ -11,6 +11,7 @@ export const CINEMAS = [
   { key: 'genesis', label: 'Genesis Cinema' },
   { key: 'closeup', label: 'Close-Up' },
   { key: 'barbican', label: 'Barbican' },
+  { key: 'rio', label: 'Rio Cinema' },
 ] as const
 
 export default function Filters({ genres }: { genres: string[] }) {

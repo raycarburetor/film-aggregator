@@ -13,7 +13,7 @@ Cinema listings aggregator for London indie cinemas, built with Next.js 14 + Typ
 - Expand a film row → Director, Synopsis, Genres, Booking link
 - Filters: search (film/cinema), time tabs (Today/This Week/This Month), sidebar (cinemas, decades, genres, min Letterboxd)
 - API: `/api/listings` returns filtered JSON (from Postgres if configured, else `data/listings.json`)
-- Scrapers for BFI, Prince Charles, ICA, Castle, Garden, Genesis, Close-Up, Barbican; metadata enrichment via TMDb; optional OMDb for Rotten Tomatoes; optional Letterboxd average rating
+- Scrapers for BFI, Prince Charles, ICA, Castle, Garden, Genesis, Close-Up, Barbican, Rio; metadata enrichment via TMDb; optional OMDb for Rotten Tomatoes; optional Letterboxd average rating
 
 ## How It Works
 - Frontend (Next.js App Router)
@@ -73,7 +73,7 @@ Add to `.env.local` (see `.env.example` for the full list and defaults):
 - Aggregate JSON: `npm run aggregate`
 - Aggregate + DB: `npm run aggregate:db` (JSON → seed → prune)
 - All cinemas to DB (with Letterboxd HTTP enrichment): `npm run aggregate:all:db`
-- Per‑cinema: `npm run aggregate:barbican|castle|garden|genesis|ica|pcc|closeup|bfi`
+- Per‑cinema: `npm run aggregate:barbican|castle|garden|genesis|ica|pcc|closeup|rio|bfi`
 - DB utilities: `npm run db:seed`, `npm run db:prune`, `npm run db:drop`
 - Letterboxd: `npm run enrich:letterboxd` (JSON), `npm run enrich:letterboxd:db:http` (DB)
 - OMDb (Rotten Tomatoes): `npm run enrich:omdb`
@@ -87,4 +87,4 @@ Add to `.env.local` (see `.env.example` for the full list and defaults):
   - `GET /api/preview/castle` → runs `scripts/cinemas/castle.mjs`
 
 ## Cinema Keys
-- `bfi` (BFI Southbank), `princecharles` (Prince Charles Cinema), `ica` (ICA), `castle` (The Castle Cinema), `garden` (The Garden Cinema), `genesis` (Genesis Cinema), `closeup` (Close‑Up), `barbican` (Barbican)
+- `bfi` (BFI Southbank), `princecharles` (Prince Charles Cinema), `ica` (ICA), `castle` (The Castle Cinema), `garden` (The Garden Cinema), `genesis` (Genesis Cinema), `closeup` (Close‑Up), `barbican` (Barbican), `rio` (Rio Cinema)

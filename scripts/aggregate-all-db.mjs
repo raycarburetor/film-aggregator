@@ -55,6 +55,7 @@ async function main() {
     'aggregate-genesis-only.mjs',
     'aggregate-ica-only.mjs',
     'aggregate-pcc-only.mjs',
+    'aggregate-rio-only.mjs',
   ]
   for (const s of steps) {
     console.log(`[ALL] Running ${s} (LB disabled during scrape) ...`)
