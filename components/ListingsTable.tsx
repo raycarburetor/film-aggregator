@@ -164,7 +164,7 @@ export default function ListingsTable({ items }: { items: Item[] }) {
                   <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{CINEMA_LABELS[i.cinema] ?? i.cinema}</td>
                   <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{date}</td>
                   <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{time}</td>
-                  <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{typeof i.letterboxdRating === 'number' ? (Math.ceil(i.letterboxdRating * 10) / 10).toFixed(1) : '—'}</td>
+                  <td className="px-3 py-2 min-w-0 group-hover:bg-[rgb(var(--hover))] group-hover:text-white">{typeof i.letterboxdRating === 'number' ? (Math.round(i.letterboxdRating * 10) / 10).toFixed(1) : '—'}</td>
                 </tr>
                 {isOpen && (
                   <tr className="details-row">

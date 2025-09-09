@@ -223,7 +223,17 @@ export async function enrichWithTMDb(items, region='GB') {
       const siteDirector = typeof it.director === 'string' ? it.director : undefined
       const namesMatch = (a, b) => {
         const A = norm(a), B = norm(b)
-        return !!A && !!B && (A === B || A.includes(B) || B.includes(A))
+        if (!A || !B) return false
+        if (A === B || A.includes(B) || B.includes(A)) return true
+        // Alias handling: Charles Chaplin vs Charlie Chaplin
+        const [af, ...aRest] = A.split(' ')
+        const [bf, ...bRest] = B.split(' ')
+        const al = aRest[aRest.length - 1] || ''
+        const bl = bRest[bRest.length - 1] || ''
+        if (al === 'chaplin' && bl === 'chaplin') {
+          if ((af === 'charlie' && bf === 'charles') || (af === 'charles' && bf === 'charlie')) return true
+        }
+        return false
       }
       if (siteDirector) {
         const hasMatch = tmdbDirs.some(d => namesMatch(d, siteDirector))
@@ -465,6 +475,16 @@ export async function enrichWithLetterboxd(items, options = {}) {
         }
         return undefined
       }
+      function extractMetaRating(html) {
+        try {
+          const m = html.match(/name=["']twitter:data2["'][^>]*content=["']\s*([0-9]+(?:\.[0-9]+)?)\s*out\s*of\s*5["']/i)
+          if (m) {
+            const n = Number(m[1])
+            if (Number.isFinite(n)) return n
+          }
+        } catch {}
+        return undefined
+      }
       function slugify(s) {
         if (!s) return ''
         s = s.normalize('NFKD').replace(/[\u0300-\u036f]/g, '')
@@ -491,8 +511,18 @@ export async function enrichWithLetterboxd(items, options = {}) {
         const yearHint = extractYearHint(title, releaseDate, websiteYear)
         const normTitle = normalizeTitleForSearch(title)
         const base = slugify(normTitle)
-        const slugCandidates = [base]
-        if (yearHint) slugCandidates.push(`${base}-${yearHint}`)
+        const slugCandidates = []
+        const push = (x) => { if (x && !slugCandidates.includes(x)) slugCandidates.push(x) }
+        push(base)
+        if (yearHint) push(`${base}-${yearHint}`)
+        if (/[&]/.test(normTitle)) {
+          const noAmp = slugify(normTitle.replace(/&/g, ''))
+          push(noAmp)
+          if (yearHint) push(`${noAmp}-${yearHint}`)
+          const noAndWord = slugify(normTitle.replace(/\b(?:&|and)\b/gi, ' '))
+          push(noAndWord)
+          if (yearHint) push(`${noAndWord}-${yearHint}`)
+        }
         for (const slug of slugCandidates) {
           if (!slug) continue
           const url = `https://letterboxd.com/film/${slug}/`
@@ -513,13 +543,14 @@ export async function enrichWithLetterboxd(items, options = {}) {
       for (const tmdbId of tmdbSet) {
         try {
           const sample = items.find(i => i.tmdbId === tmdbId)
-          const url = await resolveLetterboxdUrlFor(tmdbId, sample?.filmTitle, sample?.releaseDate, sample?.websiteYear)
-          if (!url) continue
-          const html = await fetchText(url)
-          const rating = extractLdRating(html)
-          if (typeof rating === 'number') {
-            for (const it of items) if (it.tmdbId === tmdbId) it.letterboxdRating = rating
-          }
+        const url = await resolveLetterboxdUrlFor(tmdbId, sample?.filmTitle, sample?.releaseDate, sample?.websiteYear)
+        if (!url) continue
+        const html = await fetchText(url)
+        let rating = extractLdRating(html)
+        if (typeof rating !== 'number') rating = extractMetaRating(html)
+        if (typeof rating === 'number') {
+          for (const it of items) if (it.tmdbId === tmdbId) it.letterboxdRating = rating
+        }
           await new Promise(r => setTimeout(r, 400))
         } catch {}
       }

@@ -29,7 +29,7 @@ Cinema listings aggregator for London indie cinemas, built with Next.js 14 + Typ
 - `cinemas=bfi,princecharles,...`: filter by cinema keys.
 - `genres=Genre`: intersects item genres.
 - `decades=1970s,1980s`: prefers `websiteYear`, else TMDb `releaseDate` year.
-- `minLb=0..5` (0.5 steps): minimum Letterboxd avg; rounded up to 1dp to match UI.
+- `minLb=0..5` (0.5 steps): minimum Letterboxd average; compared with 1dp half-up rounding to match UI (e.g., 3.44 → 3.4, 3.45 → 3.5).
 - `debug=1`: include `{ source: 'db'|'json' }` in response.
 
 Examples:

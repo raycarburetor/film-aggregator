@@ -140,6 +140,17 @@ function extractLdRating(html) {
   return undefined
 }
 
+function extractMetaRating(html) {
+  try {
+    const m = html.match(/name=["']twitter:data2["'][^>]*content=["']\s*([0-9]+(?:\.[0-9]+)?)\s*out\s*of\s*5["']/i)
+    if (m) {
+      const n = Number(m[1])
+      if (Number.isFinite(n)) return n
+    }
+  } catch {}
+  return undefined
+}
+
 function pageHasTmdbId(html, tmdbId) {
   const id = String(tmdbId)
   return new RegExp(`themoviedb\\.org\\/movie\\/${id}(?:[^\\d]|$)`).test(html) || new RegExp(`themoviedb\\.org[^>]*${id}`).test(html)
@@ -184,8 +195,18 @@ async function resolveLetterboxdUrlFor(cache, tmdbId, title, releaseDate, websit
     return s.toLowerCase()
   }
   const base = slugify(normTitle)
-  const slugCandidates = [base]
-  if (yearHint) slugCandidates.push(`${base}-${yearHint}`)
+  const slugCandidates = []
+  const push = (x) => { if (x && !slugCandidates.includes(x)) slugCandidates.push(x) }
+  push(base)
+  if (yearHint) push(`${base}-${yearHint}`)
+  if (/[&]/.test(normTitle)) {
+    const noAmp = slugify(normTitle.replace(/&/g, ''))
+    push(noAmp)
+    if (yearHint) push(`${noAmp}-${yearHint}`)
+    const noAndWord = slugify(normTitle.replace(/\b(?:&|and)\b/gi, ' '))
+    push(noAndWord)
+    if (yearHint) push(`${noAndWord}-${yearHint}`)
+  }
   for (const slug of slugCandidates) {
     if (!slug) continue
     const url = `https://letterboxd.com/film/${slug}/`
@@ -223,7 +244,7 @@ async function resolveLetterboxdUrlFor(cache, tmdbId, title, releaseDate, websit
 async function extractAverageRating(url) {
   try {
     const html = await fetchText(url)
-    return extractLdRating(html)
+    return extractLdRating(html) ?? extractMetaRating(html)
   } catch {
     return undefined
   }

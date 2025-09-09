@@ -81,12 +81,12 @@ export async function GET(req: NextRequest) {
       }
     }
     if (typeof minLb === 'number') {
-      // Apply minimum Letterboxd rating using the same 1dp rounding-up as the UI.
+      // Apply minimum Letterboxd rating using 1dp half-up rounding to match UI.
       // Unrated counts as 0 for filtering.
-      const roundUp1dp = (n: number) => Math.min(5, Math.ceil(n * 10) / 10)
+      const round1dp = (n: number) => Math.max(0, Math.min(5, Math.round(n * 10) / 10))
       items = items.filter(i => {
         const raw = (i as any).letterboxdRating
-        const eff = (typeof raw === 'number' && Number.isFinite(raw)) ? roundUp1dp(raw) : 0
+        const eff = (typeof raw === 'number' && Number.isFinite(raw)) ? round1dp(raw) : 0
         return eff >= minLb
       })
     }
