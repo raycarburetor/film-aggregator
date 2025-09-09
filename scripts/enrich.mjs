@@ -69,6 +69,11 @@ export async function enrichWithTMDb(items, region='GB') {
   if (!apiKey) { console.warn('No TMDB_API_KEY set; skipping TMDb enrichment'); return }
   for (const it of items) {
     try {
+      // Skip enrichment only for Close-Up programme-only items, identified by a
+      // flag set by the scraper. Also retain support for older 'N/A' sentinel.
+      if ((it && it.cinema === 'closeup') && ((it && it.programmeOnly === true) || String((it && it.releaseDate) || '').toUpperCase() === 'N/A')) {
+        continue
+      }
       const qTitle = normalizeTitleForSearch(it.filmTitle)
       const q = encodeURIComponent(qTitle)
       const yearHint = extractYearHint(it.filmTitle, it.releaseDate, it.websiteYear)

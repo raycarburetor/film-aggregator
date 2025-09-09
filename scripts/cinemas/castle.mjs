@@ -84,7 +84,11 @@ export async function fetchCastle() {
 
       function findFilmUrl(scopeEl) {
         try {
-          const a = scopeEl?.querySelector?.('a[href*="/film/"]') || scopeEl?.closest?.('.programme-tile')?.querySelector?.('a[href*="/film/"]')
+          // Castle uses programme detail pages under /programme/<id>/<slug>/
+          const a = scopeEl?.querySelector?.('a[href*="/programme/"]')
+            || scopeEl?.closest?.('.programme-tile')?.querySelector?.('a[href*="/programme/"]')
+            || scopeEl?.querySelector?.('a[href*="/film/"]')
+            || scopeEl?.closest?.('.programme-tile')?.querySelector?.('a[href*="/film/"]')
           const href = a?.getAttribute?.('href') || ''
           return href ? normaliseUrl(href) : ''
         } catch { return '' }
@@ -169,7 +173,7 @@ export async function fetchCastle() {
         let baseDate = dateCtx ? new Date(dateCtx) : null
         if (baseDate && isNaN(baseDate)) baseDate = null
         const timePieces = (row.textContent || '').match(/\b(\d{1,2}):(\d{2})\s*(am|pm)?\b/gi) || []
-        const filmUrl = findFilmUrl(row)
+          const filmUrl = findFilmUrl(row)
         for (const t of timePieces) {
           const m = t.match(/(\d{1,2}):(\d{2})\s*(am|pm)?/i)
           if (!m) continue
@@ -290,13 +294,15 @@ export async function fetchCastle() {
     const dirMap = new Map()
     // Use film detail pages only for year extraction
     const uniqueUrls = Array.from(new Set(
-      screenings.map(s => s.filmUrl).filter(Boolean)
+      screenings.map(s => s.filmUrl || s.bookingUrl).filter(Boolean)
     )).slice(0, maxDetails)
 
     const dpage = await ctx.newPage()
     for (const url of uniqueUrls) {
       try {
         await dpage.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 })
+        try { await dpage.waitForLoadState('networkidle', { timeout: 8000 }) } catch {}
+        try { await dpage.waitForSelector('span.film-director, .meta .meta-line, script[type="application/ld+json"]', { timeout: 8000 }) } catch {}
         const year = await dpage.evaluate(() => {
           function valid(y) { const n = Number(y); const Y = new Date().getFullYear() + 1; return n >= 1895 && n <= Y }
           function pickAnnoYearFromTitle(s) {
@@ -333,10 +339,32 @@ export async function fetchCastle() {
         })
         if (year) detailMap.set(url, year)
         // Director
-        const director = await dpage.evaluate(() => {
-          function cleanName(name, title) {
-            try { let s=String(name||'').replace(/\s{2,}/g,' ').trim(); if(!s) return null; const norm=(x)=>String(x||'').normalize('NFD').replace(/\p{Diacritic}+/gu,'').toLowerCase(); if(title){ const nt=norm(title).split(/\s+/).filter(Boolean); let toks=s.split(/\s+/).filter(Boolean); let i=0; while(i<nt.length && toks[0] && norm(toks[0])===nt[i]){ toks.shift(); i++ } s=toks.join(' ').trim()||s } const stops=new Set(['demonstration','conversation','talk','introduction','intro','performance','screentalk','screen','lecture','panel','qa','q&a','with','presented','presentedby','hosted','hostedby','in']); let toks=s.split(/\s+/); while(toks.length && stops.has(norm(toks[0]).replace(/\s+/g,''))) toks.shift(); s=toks.join(' ').trim(); s=s.replace(/\s*,\s*(?:19|20)\d{2}\s*,\s*\d{1,3}\s*min[\s\S]*$/i,'').trim(); s=s.replace(/\s*[,–—-]\s*(?:UK|USA|US|France|Italy|Iran|India|Canada)(?:\s*[,–—-].*)?$/i,'').trim(); s=s.replace(/^(?:and|with)\s+/i,'').trim(); return s||null } catch { return null } }
-          function nameFromInlineStats(text, title) { const re=/([A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+(?:\s+and\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+)?)\s*,\s*(?:[A-Za-z\s]+,\s*)?(?:19|20)\d{2}\s*,\s*\d{1,3}\s*m(?:in)?\b/; const m=String(text||'').match(re); return m?cleanName(m[1], title):null }
+        async function grabDirector() {
+          return await dpage.evaluate(() => {
+            function cleanName(name, title) {
+              try { let s=String(name||'').replace(/\s{2,}/g,' ').trim(); if(!s) return null; const norm=(x)=>String(x||'').normalize('NFD').replace(/\p{Diacritic}+/gu,'').toLowerCase(); if(title){ const nt=norm(title).split(/\s+/).filter(Boolean); let toks=s.split(/\s+/).filter(Boolean); let i=0; while(i<nt.length && toks[0] && norm(toks[0])===nt[i]){ toks.shift(); i++ } s=toks.join(' ').trim()||s } const stops=new Set(['demonstration','conversation','talk','introduction','intro','performance','screentalk','screen','lecture','panel','qa','q&a','with','presented','presentedby','hosted','hostedby','in']); let toks=s.split(/\s+/); while(toks.length && stops.has(norm(toks[0]).replace(/\s+/g,''))) toks.shift(); s=toks.join(' ').trim(); s=s.replace(/\s*,\s*(?:19|20)\d{2}\s*,\s*\d{1,3}\s*min[\s\S]*$/i,'').trim(); s=s.replace(/\s*[,–—-]\s*(?:UK|USA|US|France|Italy|Iran|India|Canada)(?:\s*[,–—-].*)?$/i,'').trim(); s=s.replace(/^(?:and|with)\s+/i,'').trim(); return s||null } catch { return null } }
+            function nameFromInlineStats(text, title) { const re=/([A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+(?:\s+and\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+)?)\s*,\s*(?:[A-Za-z\s]+,\s*)?(?:19|20)\d{2}\s*,\s*\d{1,3}\s*m(?:in)?\b/; const m=String(text||'').match(re); return m?cleanName(m[1], title):null }
+            function fromCastleMeta() {
+            try {
+              const span = document.querySelector('span.film-director')
+              if (span) {
+                const t = (span.textContent || '').replace(/\s+/g,' ').trim()
+                if (t) return t
+              }
+              const lines = Array.from(document.querySelectorAll('.meta .meta-line'))
+              for (const line of lines) {
+                const strong = (line.querySelector('strong')?.textContent || '').replace(/\s+/g,' ').trim().toLowerCase()
+                if (strong === 'director' || strong === 'directors') {
+                  const v = (line.querySelector('.film-director')?.textContent || '').replace(/\s+/g,' ').trim()
+                  if (v) return v
+                  const raw = (line.textContent || '').replace(/\s+/g,' ').trim()
+                  const val = raw.replace(/^director[s]?\s*:?\s*/i,'').trim()
+                  if (val) return val
+                }
+              }
+            } catch {}
+            return undefined
+          }
           function fromJSONLD() {
             try {
               const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
@@ -378,12 +406,30 @@ export async function fetchCastle() {
             if (m && m[1]) return cleanName(m[1].trim(), document.querySelector('h1, .film-title, .title, .tile-name, .poster_name')?.textContent)
             const t = document.querySelector('h1, .film-title, .title, .tile-name, .poster_name')?.textContent || ''
             return nameFromInlineStats(body, t)
-          }
-          const t = document.querySelector('h1, .film-title, .title, .tile-name, .poster_name')?.textContent || ''
-          let d = fromJSONLD() || fromLabels()
-          d = cleanName(d, t)
-          return d
-        })
+            }
+            const t = document.querySelector('h1, .film-title, .title, .tile-name, .poster_name')?.textContent || ''
+            let d = fromCastleMeta() || fromJSONLD() || fromLabels()
+            d = cleanName(d, t)
+            return d
+          })
+        }
+        let director = await grabDirector()
+        // If we landed on a booking/interstitial page, attempt to follow a link to the film detail page
+        if (!director) {
+          try {
+            const filmHref = await dpage.evaluate(() => {
+              const a = document.querySelector('a[href*="/programme/"]') || document.querySelector('a[href*="/film/"]')
+              if (!a) return undefined
+              try { return new URL(a.getAttribute('href') || '', location.origin).toString() } catch { return a.getAttribute('href') || '' }
+            })
+            if (filmHref) {
+              await dpage.goto(filmHref, { waitUntil: 'domcontentloaded', timeout: 30000 })
+              try { await dpage.waitForLoadState('networkidle', { timeout: 8000 }) } catch {}
+              try { await dpage.waitForSelector('span.film-director, .meta .meta-line, script[type="application/ld+json"]', { timeout: 8000 }) } catch {}
+              director = await grabDirector()
+            }
+          } catch {}
+        }
         if (director) dirMap.set(url, director)
       } catch {}
     }

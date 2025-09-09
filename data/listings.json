@@ -1,1235 +1,5 @@
 [
   {
-    "id": "castleMaterialists20250907T184000000Z",
-    "filmTitle": "Materialists",
-    "cinema": "castle",
-    "screeningStart": "2025-09-07T18:40:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14442/materialists",
-    "filmUrl": "",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Celine Song",
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "castleCaughtStealing20250907T161500000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-07T16:15:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14440/caught-stealing",
-    "filmUrl": "",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "director": "Darren Aronofsky",
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleCaughtStealing20250907T192000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-07T19:20:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14443/caught-stealing",
-    "filmUrl": "",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "director": "Darren Aronofsky",
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleOnSwiftHorses20250907T165000000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-07T16:50:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14441/on-swift-horses",
-    "filmUrl": "",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Daniel Minahan",
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleMaterialists20250908T101000000Z",
-    "filmTitle": "Materialists",
-    "cinema": "castle",
-    "screeningStart": "2025-09-08T10:10:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14444/materialists",
-    "filmUrl": "",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Celine Song",
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "castleMaterialists20250908T173000000Z",
-    "filmTitle": "Materialists",
-    "cinema": "castle",
-    "screeningStart": "2025-09-08T17:30:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14451/materialists",
-    "filmUrl": "",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Celine Song",
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "castleCaughtStealing20250908T103000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-08T10:30:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14445/caught-stealing",
-    "filmUrl": "",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "director": "Darren Aronofsky",
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleCaughtStealing20250908T171500000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-08T17:15:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14450/caught-stealing",
-    "filmUrl": "",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "director": "Darren Aronofsky",
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleHoneyDont20250908T124000000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-08T12:40:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14446/honey-don-t",
-    "filmUrl": "",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "castleHoneyDont20250908T152000000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-08T15:20:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14449/honey-don-t",
-    "filmUrl": "",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "castleHoneyDont20250908T194000000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-08T19:40:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14452/honey-don-t",
-    "filmUrl": "",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "castleOnSwiftHorses20250908T125000000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-08T12:50:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14447/on-swift-horses",
-    "filmUrl": "",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Daniel Minahan",
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleOnSwiftHorses20250908T144500000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-08T14:45:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14448/on-swift-horses",
-    "filmUrl": "",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Daniel Minahan",
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleOnSwiftHorses20250908T200000000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-08T20:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14453/on-swift-horses",
-    "filmUrl": "",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Daniel Minahan",
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleHoneyDont20250909T100000000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-09T10:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/parent-baby/14454/show",
-    "filmUrl": "",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "castleHoneyDont20250909T123000000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-09T12:30:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14457/show",
-    "filmUrl": "",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "castleHoneyDont20250909T174500000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-09T17:45:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14459/honey-don-t",
-    "filmUrl": "",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "castleMaterialists20250909T101000000Z",
-    "filmTitle": "Materialists",
-    "cinema": "castle",
-    "screeningStart": "2025-09-09T10:10:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14455/show",
-    "filmUrl": "",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Celine Song",
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "castleMaterialists20250909T200000000Z",
-    "filmTitle": "Materialists",
-    "cinema": "castle",
-    "screeningStart": "2025-09-09T20:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14462/materialists",
-    "filmUrl": "",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Celine Song",
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "castleOnSwiftHorses20250909T124000000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-09T12:40:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14456/show",
-    "filmUrl": "",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Daniel Minahan",
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleOnSwiftHorses20250909T173000000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-09T17:30:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14460/on-swift-horses",
-    "filmUrl": "",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Daniel Minahan",
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleCaughtStealing20250909T152000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-09T15:20:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14458/show",
-    "filmUrl": "",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "director": "Darren Aronofsky",
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleCaughtStealing20250909T194500000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-09T19:45:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14461/caught-stealing",
-    "filmUrl": "",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "director": "Darren Aronofsky",
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleOnSwiftHorses20250910T095000000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T09:50:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14463/show",
-    "filmUrl": "",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Daniel Minahan",
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleOnSwiftHorses20250910T150000000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T15:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14468/show",
-    "filmUrl": "",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Daniel Minahan",
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleCaughtStealing20250910T104000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T10:40:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14464/show",
-    "filmUrl": "",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "director": "Darren Aronofsky",
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleCaughtStealing20250910T145000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T14:50:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14467/show",
-    "filmUrl": "",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "director": "Darren Aronofsky",
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleCaughtStealing20250910T201000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T20:10:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14470/caught-stealing",
-    "filmUrl": "",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "director": "Darren Aronofsky",
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleMaterialists20250910T122000000Z",
-    "filmTitle": "Materialists",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T12:20:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14465/show",
-    "filmUrl": "",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Celine Song",
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "castleMaterialists20250910T173000000Z",
-    "filmTitle": "Materialists",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T17:30:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14469/materialists",
-    "filmUrl": "",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Celine Song",
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "castleHoneyDont20250910T130000000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T13:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14466/show",
-    "filmUrl": "",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "castleHoneyDont20250910T200000000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T20:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14471/honey-don-t",
-    "filmUrl": "",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "castleOnSwiftHorses20250911T100000000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-11T10:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/parent-baby/14472/show",
-    "filmUrl": "",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Daniel Minahan",
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleOnSwiftHorses20250911T130000000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-11T13:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14474/show",
-    "filmUrl": "",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Daniel Minahan",
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleOnSwiftHorses20250911T194500000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-11T19:45:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14480/on-swift-horses",
-    "filmUrl": "",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Daniel Minahan",
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleMaterialists20250911T104500000Z",
-    "filmTitle": "Materialists",
-    "cinema": "castle",
-    "screeningStart": "2025-09-11T10:45:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14473/show",
-    "filmUrl": "",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Celine Song",
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "castleMaterialists20250911T153000000Z",
-    "filmTitle": "Materialists",
-    "cinema": "castle",
-    "screeningStart": "2025-09-11T15:30:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14476/show",
-    "filmUrl": "",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "director": "Celine Song",
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "castleHoneyDont20250911T131500000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-11T13:15:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14475/show",
-    "filmUrl": "",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "castleHoneyDont20250911T174500000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-11T17:45:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14478/honey-don-t",
-    "filmUrl": "",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "castleCaughtStealing20250911T152000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-11T15:20:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14477/show",
-    "filmUrl": "",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "director": "Darren Aronofsky",
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleCaughtStealing20250911T200000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-11T20:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14479/caught-stealing",
-    "filmUrl": "",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "director": "Darren Aronofsky",
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleREALLIFEpresentedbyJelliedReels20250911T180000000Z",
-    "filmTitle": "REAL LIFE presented by Jellied Reels",
-    "cinema": "castle",
-    "screeningStart": "2025-09-11T18:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14135/real-life-presented-by-jellied-reels",
-    "filmUrl": ""
-  },
-  {
-    "id": "castleEddington20250914T100000000Z",
-    "filmTitle": "Eddington",
-    "cinema": "castle",
-    "screeningStart": "2025-09-14T10:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14343/eddington",
-    "filmUrl": "",
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-    "genres": [
-      "Western",
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ari Aster",
-    "imdbId": "tt31176520"
-  },
-  {
-    "id": "castleGazaDoctorsUnderAttack20250916T173000000Z",
-    "filmTitle": "Gaza: Doctors Under Attack",
-    "cinema": "castle",
-    "screeningStart": "2025-09-16T17:30:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14344/gaza-doctors-under-attack",
-    "filmUrl": "",
-    "tmdbId": 1486460,
-    "releaseDate": "2025-06-06",
-    "synopsis": "A forensic investigation into the impact of Israeli military operations on Gaza’s healthcare system. This urgent documentary examines evidence of widespread destruction across the territory’s medical infrastructure, where all 36 main hospitals have reportedly been damaged or destroyed. Hundreds of healthcare workers — including doctors and surgeons — are known to have been killed, injured or detained, with some alleging imprisonment and mistreatment",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Karim Shah",
-    "imdbId": "tt37504739"
-  },
-  {
-    "id": "castleTheBigBikeFilmNight202520250918T170000000Z",
-    "filmTitle": "The Big Bike Film Night 2025",
-    "cinema": "castle",
-    "screeningStart": "2025-09-18T17:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/13704/the-big-bike-film-night-2025",
-    "filmUrl": ""
-  },
-  {
-    "id": "castleVioletHourVNightGallery20250921T123000000Z",
-    "filmTitle": "Violet Hour V: Night Gallery",
-    "cinema": "castle",
-    "screeningStart": "2025-09-21T12:30:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14297/violet-hour-v-night-gallery",
-    "filmUrl": ""
-  },
-  {
-    "id": "castleTHEOTHERWAYAROUNDpresentedbyJelliedReels20250924T174500000Z",
-    "filmTitle": "THE OTHER WAY AROUND presented by Jellied Reels",
-    "cinema": "castle",
-    "screeningStart": "2025-09-24T17:45:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14134/the-other-way-around-presented-by-jellied-reels",
-    "filmUrl": ""
-  },
-  {
-    "id": "castleTheBigBikeFilmNight202520250924T200000000Z",
-    "filmTitle": "The Big Bike Film Night 2025",
-    "cinema": "castle",
-    "screeningStart": "2025-09-24T20:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14345/the-big-bike-film-night-2025",
-    "filmUrl": ""
-  },
-  {
-    "id": "castleCineRealpresentsHiroshimaMonAmour20250925T183000000Z",
-    "filmTitle": "Cine-Real presents: Hiroshima Mon Amour",
-    "cinema": "castle",
-    "screeningStart": "2025-09-25T18:30:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14481/cine-real-presents-hiroshima-mon-amour",
-    "filmUrl": "",
-    "tmdbId": 5544,
-    "releaseDate": "1959-06-10",
-    "synopsis": "The deep conversation between a Japanese architect and a French actress forms the basis of this celebrated French film, considered one of the vanguard productions of the French New Wave. Set in Hiroshima after the end of World War II, the couple -- lovers turned friends -- recount, over many hours, previous romances and life experiences. The two intertwine their stories about the past with pondering the devastation wrought by the atomic bomb dropped on the city.",
-    "genres": [
-      "Drama",
-      "History",
-      "Romance"
-    ],
-    "director": "Alain Resnais",
-    "imdbId": "tt0052893"
-  },
-  {
-    "id": "castleCineRealpresentsHiroshimaMonAmour20250928T130000000Z",
-    "filmTitle": "Cine-Real presents: Hiroshima Mon Amour",
-    "cinema": "castle",
-    "screeningStart": "2025-09-28T13:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14482/cine-real-presents-hiroshima-mon-amour",
-    "filmUrl": "",
-    "tmdbId": 5544,
-    "releaseDate": "1959-06-10",
-    "synopsis": "The deep conversation between a Japanese architect and a French actress forms the basis of this celebrated French film, considered one of the vanguard productions of the French New Wave. Set in Hiroshima after the end of World War II, the couple -- lovers turned friends -- recount, over many hours, previous romances and life experiences. The two intertwine their stories about the past with pondering the devastation wrought by the atomic bomb dropped on the city.",
-    "genres": [
-      "Drama",
-      "History",
-      "Romance"
-    ],
-    "director": "Alain Resnais",
-    "imdbId": "tt0052893"
-  },
-  {
-    "id": "castleNTLiveInterAlia20250930T174500000Z",
-    "filmTitle": "NT Live: Inter Alia",
-    "cinema": "castle",
-    "screeningStart": "2025-09-30T17:45:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14206/nt-live-inter-alia",
-    "filmUrl": "",
-    "tmdbId": 1454209,
-    "releaseDate": "2025-09-04",
-    "synopsis": "Jessica Parks is a smart Crown Court Judge at the top of her career. Behind the robe, she is a karaoke fiend, loving wife and a supportive parent. When an event threatens to throw her life completely off balance, can she hold her family upright?",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Justin Martin",
-    "imdbId": "tt36364878"
-  },
-  {
-    "id": "castleCineRealpresentsStirCrazy20251002T183000000Z",
-    "filmTitle": "Cine-Real presents: Stir Crazy",
-    "cinema": "castle",
-    "screeningStart": "2025-10-02T18:30:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14484/cine-real-presents-stir-crazy",
-    "filmUrl": "",
-    "tmdbId": 21629,
-    "releaseDate": "1980-12-12",
-    "synopsis": "New Yorkers Skip Donahue and Harry Monroe have no jobs and no prospects, so they decide to flee the city and find work elsewhere, landing jobs wearing woodpecker costumes to promote the opening of a bank. When their feathery costumes are stolen and used in a bank robbery, they no longer have to worry about employment — they're sent to prison.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Sidney Poitier",
-    "imdbId": "tt0081562"
-  },
-  {
-    "id": "closeupHxan20250907T190000000Z",
-    "filmTitle": "Häxan",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-07T19:00:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-nolmqlv",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/haexan",
-    "websiteYear": 1922,
-    "releaseDate": "1922-09-18",
-    "director": "Benjamin Christensen",
-    "tmdbId": 57283,
-    "synopsis": "Grave robbing, torture, possessed nuns, and a satanic Sabbath: Benjamin Christensen's legendary film uses a series of dramatic vignettes to explore the scientific hypothesis that the witches of the Middle Ages suffered the same hysteria as turn-of-the-century psychiatric patients. But the film itself is far from serious-- instead it's a witches' brew of the scary, gross, and darkly humorous.",
-    "genres": [
-      "Documentary",
-      "Horror",
-      "History"
-    ],
-    "imdbId": "tt0013257"
-  },
-  {
-    "id": "closeupAConfucianConfusion20250909T193000000Z",
-    "filmTitle": "A Confucian Confusion",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-09T19:30:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-gpvyby",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/a-confucian-confusion",
-    "websiteYear": 1994,
-    "releaseDate": "1994-10-13",
-    "director": "Edward Yang",
-    "tmdbId": 54233,
-    "synopsis": "Over the course of a few days, the paths of a group of young friends, lovers, and acquaintances in Taipei crisscross, prompting them to arrive at realizations about their lives.",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "imdbId": "tt0109685"
-  },
-  {
-    "id": "closeupCloseUp20250911T191500000Z",
-    "filmTitle": "Close-Up",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-11T19:15:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-erxpxz",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/close-up",
-    "websiteYear": 1990,
-    "releaseDate": "1990-05-09",
-    "director": "Abbas Kiarostami",
-    "tmdbId": 30017,
-    "synopsis": "This fiction-documentary hybrid uses a sensational real-life event—the arrest of a young man on charges that he fraudulently impersonated the well-known filmmaker Mohsen Makhmalbaf—as the basis for a stunning, multilayered investigation into movies, identity, artistic creation, and existence, in which the real people from the case play themselves.",
-    "genres": [
-      "Crime",
-      "Drama"
-    ],
-    "imdbId": "tt0100234"
-  },
-  {
-    "id": "closeupKillerofSheep20250912T191500000Z",
-    "filmTitle": "Killer of Sheep",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-12T19:15:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-mqxdeb",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/killer-of-sheep",
-    "websiteYear": 1977,
-    "releaseDate": "1978-11-14",
-    "director": "Charles Burnett",
-    "tmdbId": 27432,
-    "synopsis": "An African-American man working at a slaughterhouse in the Watts area of Los Angeles leads a dissatisfied and listless existence.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt0076263"
-  },
-  {
-    "id": "closeupMotherIndia20250913T153000000Z",
-    "filmTitle": "Mother India",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-13T15:30:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-xmpzzel",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-mother-india-i-am-cuba/mother-india",
-    "websiteYear": 1957,
-    "releaseDate": "1957-02-13",
-    "director": "Mehboob Khan",
-    "tmdbId": 917,
-    "synopsis": "A poverty-stricken woman raises her sons through many trials and tribulations. But no matter the struggles, always sticks to her own moral code.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt0050188"
-  },
-  {
-    "id": "closeupIAmCuba20250913T190000000Z",
-    "filmTitle": "I Am Cuba",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-13T19:00:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-ojnzzgg",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-mother-india-i-am-cuba/i-am-cuba",
-    "websiteYear": 1964,
-    "releaseDate": "1964-10-26",
-    "director": "Mikhail Kalatozov",
-    "tmdbId": 32015,
-    "synopsis": "Four vignettes on the lives of the Cuban people in the pre-revolutionary era. In Havana, Maria is ashamed when a man she loves discovers how she makes a living. Pedro, an old farmer, discovers that the land he cultivates is being sold to an American company. A student sees his friends attacked by the police while they distribute leaflets supporting Fidel Castro. Finally, a peasant family is threatened by Batista's army.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt0058604"
-  },
-  {
-    "id": "closeupAConfucianConfusion20250914T163000000Z",
-    "filmTitle": "A Confucian Confusion",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-14T16:30:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-gpvyby",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/a-confucian-confusion",
-    "websiteYear": 1994,
-    "releaseDate": "1994-10-13",
-    "director": "Edward Yang",
-    "tmdbId": 54233,
-    "synopsis": "Over the course of a few days, the paths of a group of young friends, lovers, and acquaintances in Taipei crisscross, prompting them to arrive at realizations about their lives.",
-    "genres": [
-      "Comedy",
-      "Drama",
-      "Romance"
-    ],
-    "imdbId": "tt0109685"
-  },
-  {
-    "id": "closeupCloseUp20250914T190000000Z",
-    "filmTitle": "Close-Up",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-14T19:00:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-erxpxz",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/close-up",
-    "websiteYear": 1990,
-    "releaseDate": "1990-05-09",
-    "director": "Abbas Kiarostami",
-    "tmdbId": 30017,
-    "synopsis": "This fiction-documentary hybrid uses a sensational real-life event—the arrest of a young man on charges that he fraudulently impersonated the well-known filmmaker Mohsen Makhmalbaf—as the basis for a stunning, multilayered investigation into movies, identity, artistic creation, and existence, in which the real people from the case play themselves.",
-    "genres": [
-      "Crime",
-      "Drama"
-    ],
-    "imdbId": "tt0100234"
-  },
-  {
-    "id": "closeupInOurSleep20250918T191500000Z",
-    "filmTitle": "In Our Sleep",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-18T19:15:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-vvljmva",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/in-our-sleep",
-    "websiteYear": 2022,
-    "releaseDate": "2023-11-18",
-    "director": "Elsa Aloisio",
-    "tmdbId": 1187938,
-    "synopsis": "Reb, a social worker, fights body and soul to restore a semblance of dignity to a forgotten fringe of society: sex workers. One summer night, Maria, a transgender prostitute, is murdered. Reb and the prostitutes finally get the chance to speak out, as no one else will.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt27604538"
-  },
-  {
-    "id": "closeupCloseUp20250919T190000000Z",
-    "filmTitle": "Close-Up",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-19T19:00:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-erxpxz",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/close-up",
-    "websiteYear": 1990,
-    "releaseDate": "1990-05-09",
-    "director": "Abbas Kiarostami",
-    "tmdbId": 30017,
-    "synopsis": "This fiction-documentary hybrid uses a sensational real-life event—the arrest of a young man on charges that he fraudulently impersonated the well-known filmmaker Mohsen Makhmalbaf—as the basis for a stunning, multilayered investigation into movies, identity, artistic creation, and existence, in which the real people from the case play themselves.",
-    "genres": [
-      "Crime",
-      "Drama"
-    ],
-    "imdbId": "tt0100234"
-  },
-  {
-    "id": "closeupFathersHouse20250920T160000000Z",
-    "filmTitle": "Father's House",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-20T16:00:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-vvlzzrl",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-father-s-house-our-mother-s-house/father-s-house",
-    "websiteYear": 1950,
-    "releaseDate": "1950-12-15",
-    "director": "S.U. Sunny",
-    "tmdbId": 279228,
-    "synopsis": "Two fathers, one poor and the other rich, hope that a wealthy postmaster will wed one of their daughters.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt0331186"
-  },
-  {
-    "id": "closeupOurMothersHouse20250920T190000000Z",
-    "filmTitle": "Our Mother's House",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-20T19:00:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-avrllra",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-father-s-house-our-mother-s-house/our-mother-s-house",
-    "websiteYear": 1967,
-    "releaseDate": "1967-09-14",
-    "director": "Jack Clayton",
-    "tmdbId": 2516,
-    "synopsis": "Seven British children bury their mother and hide her death, until their long-lost father returns.",
-    "genres": [
-      "Drama",
-      "Thriller"
-    ],
-    "imdbId": "tt0062089"
-  },
-  {
-    "id": "closeupAllMemoriesWereOnceStrange20250921T170000000Z",
-    "filmTitle": "All Memories Were Once Strange",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-21T17:00:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-vvlmzoo",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/all-memories-were-once-strange",
-    "websiteYear": 1990,
-    "releaseDate": "1990-01-01",
-    "director": "DiversionEllen Pau"
-  },
-  {
-    "id": "closeupKillerofSheep20250921T190000000Z",
-    "filmTitle": "Killer of Sheep",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-21T19:00:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-mqxdeb",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/killer-of-sheep",
-    "websiteYear": 1977,
-    "releaseDate": "1978-11-14",
-    "director": "Charles Burnett",
-    "tmdbId": 27432,
-    "synopsis": "An African-American man working at a slaughterhouse in the Watts area of Los Angeles leads a dissatisfied and listless existence.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt0076263"
-  },
-  {
-    "id": "closeupCloseUp20250923T191500000Z",
-    "filmTitle": "Close-Up",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-23T19:15:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-erxpxz",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/close-up",
-    "websiteYear": 1990,
-    "releaseDate": "1990-05-09",
-    "director": "Abbas Kiarostami",
-    "tmdbId": 30017,
-    "synopsis": "This fiction-documentary hybrid uses a sensational real-life event—the arrest of a young man on charges that he fraudulently impersonated the well-known filmmaker Mohsen Makhmalbaf—as the basis for a stunning, multilayered investigation into movies, identity, artistic creation, and existence, in which the real people from the case play themselves.",
-    "genres": [
-      "Crime",
-      "Drama"
-    ],
-    "imdbId": "tt0100234"
-  },
-  {
-    "id": "closeupTrilogy20250925T191500000Z",
-    "filmTitle": "Trilogy",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-25T19:15:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-lnydyjy",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/sasha-litvintseva-and-beny-wagner-trilogy",
-    "websiteYear": 2020,
-    "releaseDate": "2020-01-01",
-    "director": "Silke Abendschein",
-    "tmdbId": 951851,
-    "synopsis": "TRILOGY is a tribute to the infinite circle of life and a dialogue with my late grandmother. In three chapters I walk in her footsteps, follow the notes from her annual calendars and do the work on the old farm - the center of her life. In the constant change of generations, the cycle of nature provides a reliable rhythm on which we all depend, no matter where we live and what we do.",
-    "genres": [
-      "Documentary"
-    ]
-  },
-  {
-    "id": "closeupCloseUp20250926T191500000Z",
-    "filmTitle": "Close-Up",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-26T19:15:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-erxpxz",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/close-up",
-    "websiteYear": 1990,
-    "releaseDate": "1990-05-09",
-    "director": "Abbas Kiarostami",
-    "tmdbId": 30017,
-    "synopsis": "This fiction-documentary hybrid uses a sensational real-life event—the arrest of a young man on charges that he fraudulently impersonated the well-known filmmaker Mohsen Makhmalbaf—as the basis for a stunning, multilayered investigation into movies, identity, artistic creation, and existence, in which the real people from the case play themselves.",
-    "genres": [
-      "Crime",
-      "Drama"
-    ],
-    "imdbId": "tt0100234"
-  },
-  {
-    "id": "closeupLetItGoMates20250927T163000000Z",
-    "filmTitle": "Let It Go, Mates",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-27T16:30:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-ganzznj",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-let-it-go-mates-blow-up/let-it-go-mates",
-    "websiteYear": 1983,
-    "releaseDate": "1983-08-12",
-    "director": "Kundan Shah",
-    "tmdbId": 25499,
-    "synopsis": "Two zanies open a photography studio. They score a partnership with a gossip magazine that suddenly thrusts them into a world of corruption, murder, and hijinks.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "imdbId": "tt0085743"
-  },
-  {
-    "id": "closeupBlowUp20250927T191500000Z",
-    "filmTitle": "Blow-Up",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-27T19:15:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-lnyvvyv",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-let-it-go-mates-blow-up/blow-up",
-    "websiteYear": 1966,
-    "releaseDate": "1966-12-18",
-    "director": "Michelangelo Antonioni",
-    "tmdbId": 1052,
-    "synopsis": "A successful mod photographer in London whose world is bounded by fashion, pop music, marijuana, and easy sex, feels his life is boring and despairing. But in the course of a single day he unknowingly captures a death on film.",
-    "genres": [
-      "Drama",
-      "Mystery",
-      "Thriller"
-    ],
-    "imdbId": "tt0060176"
-  },
-  {
-    "id": "closeupKillerofSheep20250928T170000000Z",
-    "filmTitle": "Killer of Sheep",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-28T17:00:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-mqxdeb",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/killer-of-sheep",
-    "websiteYear": 1977,
-    "releaseDate": "1978-11-14",
-    "director": "Charles Burnett",
-    "tmdbId": 27432,
-    "synopsis": "An African-American man working at a slaughterhouse in the Watts area of Los Angeles leads a dissatisfied and listless existence.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt0076263"
-  },
-  {
-    "id": "closeupWinterKeptUsWarm20250928T190000000Z",
-    "filmTitle": "Winter Kept Us Warm",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-28T19:00:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-eagjgnv",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/never-on-sunday/winter-kept-us-warm",
-    "websiteYear": 1965,
-    "releaseDate": "1965-09-25",
-    "director": "David Secter",
-    "tmdbId": 169796,
-    "synopsis": "It is the 1960s at the University of Toronto. Doug is a well-liked senior with an equally popular girlfriend. Peter is a shy Finnish freshman who is new to the big city. The two become best friends and begin doing all sorts of activities together — until Doug starts viewing their relationship differently.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt0232954"
-  },
-  {
-    "id": "closeupFrictions20250929T193000000Z",
-    "filmTitle": "Frictions",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-29T19:30:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-mogqqkq",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/frictions",
-    "websiteYear": 2024,
-    "releaseDate": "2024-06-08",
-    "director": "Gilles Doiron",
-    "tmdbId": 1497853,
-    "synopsis": "Throughout a versatile and multifaceted career, Demers has reinvented the language of dance with her company, MAYDAY.",
-    "genres": []
-  },
-  {
     "id": "pccTheToxicAvengerUncut20250907T194500000Z",
     "filmTitle": "The Toxic Avenger Uncut",
     "cinema": "princecharles",
@@ -12041,647 +10811,2326 @@
     "letterboxdRating": 3.65
   },
   {
-    "id": "genesisTheLongWalk20250913T200000000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-13T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6788",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
+    "id": "castleHoneyDont20250909T100000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T10:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/parent-baby/14454/show",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
     "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
     "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250914T133000000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-14T13:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6833",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250914T162000000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-14T16:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6831",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250914T200000000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-14T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6832",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250915T142500000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-15T14:25:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6850",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250915T170500000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-15T17:05:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6799",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250915T200000000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-15T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6798",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250916T143500000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-16T14:35:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6825",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250916T171000000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-16T17:10:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6818",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250916T195500000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-16T19:55:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6819",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250917T143000000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-17T14:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6853",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250917T170500000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-17T17:05:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6805",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250917T200000000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-17T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6804",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250918T150000000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-18T15:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6856",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250918T172500000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-18T17:25:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6811",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheLongWalk20250918T200000000Z",
-    "filmTitle": "The Long Walk",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-18T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6813",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
-    "websiteYear": 2025,
-    "director": "Francis Lawrence",
-    "tmdbId": 604079,
-    "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
-    "genres": [
-      "Horror",
-      "Science Fiction"
-    ],
-    "imdbId": "tt10374610",
-    "letterboxdRating": 3.65
-  },
-  {
-    "id": "genesisTheBadGuys220250913T113000000Z",
-    "filmTitle": "The Bad Guys 2",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-13T11:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6826",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/95764",
-    "websiteYear": 2025,
-    "director": "Pierre Perifel",
-    "tmdbId": 1175942,
-    "releaseDate": "2025-07-24",
-    "synopsis": "The now-reformed Bad Guys are trying (very, very hard) to be good, but instead find themselves hijacked into a high-stakes, globe-trotting heist, masterminded by a new team of criminals they never saw coming: The Bad Girls.",
-    "genres": [
-      "Animation",
-      "Family",
       "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleHoneyDont20250909T123000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T12:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14457/show",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleHoneyDont20250909T174500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14459/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleMaterialists20250909T101000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T10:10:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14455/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99560/materialists/",
+    "websiteYear": 2025,
+    "director": "Celine Song",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt30253473",
+    "letterboxdRating": 3.04
+  },
+  {
+    "id": "castleMaterialists20250909T200000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14462/materialists",
+    "filmUrl": "https://thecastlecinema.com/programme/99560/materialists/",
+    "websiteYear": 2025,
+    "director": "Celine Song",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt30253473",
+    "letterboxdRating": 3.04
+  },
+  {
+    "id": "castleOnSwiftHorses20250909T124000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T12:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14456/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101617/on-swift-horses/",
+    "websiteYear": 2025,
+    "director": "Daniel Minahan",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt15042300",
+    "letterboxdRating": 3.07
+  },
+  {
+    "id": "castleOnSwiftHorses20250909T173000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T17:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14460/on-swift-horses",
+    "filmUrl": "https://thecastlecinema.com/programme/101617/on-swift-horses/",
+    "websiteYear": 2025,
+    "director": "Daniel Minahan",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt15042300",
+    "letterboxdRating": 3.07
+  },
+  {
+    "id": "castleCaughtStealing20250909T152000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T15:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14458/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
       "Crime",
-      "Adventure"
-    ],
-    "imdbId": "tt30017619",
-    "letterboxdRating": 3.58
-  },
-  {
-    "id": "genesisCitizenKaneClassicsPresentedin35mm20250914T140000000Z",
-    "filmTitle": "Citizen Kane- Classics Presented in 35mm",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-14T14:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=4911",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/708",
-    "websiteYear": 1942,
-    "director": "Orson Welles",
-    "tmdbId": 15,
-    "releaseDate": "1941-04-17",
-    "synopsis": "Newspaper magnate Charles Foster Kane is taken from his mother as a boy and made the ward of a rich industrialist. As a result, every well-meaning, tyrannical or self-destructive move he makes for the rest of his life appears in some way to be a reaction to that deeply wounding event.",
-    "genres": [
-      "Mystery",
-      "Drama"
-    ],
-    "imdbId": "tt0033467",
-    "letterboxdRating": 4.19
-  },
-  {
-    "id": "genesisItsComplicatedFringe20250915T173000000Z",
-    "filmTitle": "It’s Complicated - Fringe!",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-15T17:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6577",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101332",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesishealingvibesFringe20250916T173000000Z",
-    "filmTitle": "((( healing vibes ))) - Fringe!",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-16T17:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6578",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101331",
-    "websiteYear": 2025,
-    "tmdbId": 714339,
-    "releaseDate": "2022-10-07",
-    "synopsis": "A day in the life of Azucena, who is running out of time to keep herself and her family from being evicted; Rafael, a lawyer who sets out to reunite a mother with her daughter; and Teodora, a sick old woman who searches for her long-lost son before it is too late.",
-    "genres": [
-      "Drama"
-    ],
-    "director": "Juan Diego Botto",
-    "imdbId": "tt12306964"
-  },
-  {
-    "id": "genesisALifeInTandemQA20250917T172000000Z",
-    "filmTitle": "A Life In Tandem + Q&A",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-17T17:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6343",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100604",
-    "websiteYear": 2025,
-    "director": "Mike Rumsey",
-    "tmdbId": 1505919,
-    "releaseDate": "2025-07-10",
-    "synopsis": "Follows Luke Grenfell-Shaw's mission to cycle from Brighton to Beijing after being diagnosed with cancer at the age of twenty-four.",
-    "genres": [
-      "Documentary"
-    ],
-    "imdbId": "tt34672243"
-  },
-  {
-    "id": "genesisCircuitBreakersFringe20250917T200000000Z",
-    "filmTitle": "Circuit Breakers - Fringe!",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-17T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6579",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101330",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesisSomeLikeitSwing20250917T183000000Z",
-    "filmTitle": "Some Like it Swing",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-17T18:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6827",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/92488"
-  },
-  {
-    "id": "genesisBacktotheQtureFringe20250918T174500000Z",
-    "filmTitle": "Back to the Q-ture - Fringe!",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-18T17:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6617",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101329",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesisDarkStarPresentedbytheCultClassicCollective20250918T174000000Z",
-    "filmTitle": "Dark Star Presented by the Cult Classic Collective",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-18T17:40:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6623",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101322",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesisForgivenessQAIWillTellInternationalFilmFestival20250921T172000000Z",
-    "filmTitle": "Forgiveness + Q&A - I Will Tell International Film Festival",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-21T17:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6620",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101325",
-    "websiteYear": 2025,
-    "tmdbId": 1515105,
-    "releaseDate": "2025-07-17",
-    "synopsis": "A friend does something at game night and everyone loves it.",
-    "genres": [
+      "Thriller",
       "Comedy"
     ],
-    "director": "Alex Sovoda"
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
   },
   {
-    "id": "genesisStillSheRisesQAIWillTellInternationalFilmFestival20250921T120000000Z",
-    "filmTitle": "Still She Rises + Q&A - I Will Tell International Film Festival",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-21T12:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6622",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101323",
-    "websiteYear": 2025
-  },
-  {
-    "id": "genesisStepbyStepQAIWillTellInternationalFilmFestival20250922T174500000Z",
-    "filmTitle": "Step by Step + Q&A - I Will Tell International Film Festival",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-22T17:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6621",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101324",
+    "id": "castleCaughtStealing20250909T194500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-09T19:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14461/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
     "websiteYear": 2025,
-    "tmdbId": 1461358,
-    "releaseDate": "2025-04-24",
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
     "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleOnSwiftHorses20250910T095000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T09:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14463/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101617/on-swift-horses/",
+    "websiteYear": 2025,
+    "director": "Daniel Minahan",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
       "Drama"
     ],
-    "director": "Cheng An-Chun"
+    "imdbId": "tt15042300",
+    "letterboxdRating": 3.07
   },
   {
-    "id": "genesisTheDatingGame20250923T174000000Z",
-    "filmTitle": "The Dating Game",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-23T17:40:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6344",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100603",
+    "id": "castleOnSwiftHorses20250910T150000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T15:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14468/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101617/on-swift-horses/",
     "websiteYear": 2025,
-    "tmdbId": 1400769,
-    "releaseDate": "2025-01-23",
-    "synopsis": "In a country where eligible men greatly outnumber women, three perpetual bachelors join an intensive seven-day dating camp led by one of China’s most sought-after dating coaches in what may be their last-ditch effort to find love.",
+    "director": "Daniel Minahan",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
     "genres": [
-      "Documentary"
+      "Romance",
+      "Drama"
     ],
-    "director": "Violet Du Feng",
-    "imdbId": "tt34909040",
+    "imdbId": "tt15042300",
+    "letterboxdRating": 3.07
+  },
+  {
+    "id": "castleCaughtStealing20250910T104000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T10:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14464/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250910T145000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T14:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14467/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250910T201000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T20:10:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14470/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleMaterialists20250910T122000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T12:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14465/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99560/materialists/",
+    "websiteYear": 2025,
+    "director": "Celine Song",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt30253473",
+    "letterboxdRating": 3.04
+  },
+  {
+    "id": "castleMaterialists20250910T173000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T17:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14469/materialists",
+    "filmUrl": "https://thecastlecinema.com/programme/99560/materialists/",
+    "websiteYear": 2025,
+    "director": "Celine Song",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt30253473",
+    "letterboxdRating": 3.04
+  },
+  {
+    "id": "castleHoneyDont20250910T130000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T13:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14466/show",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleHoneyDont20250910T200000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-10T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14471/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleOnSwiftHorses20250911T100000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T10:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/parent-baby/14472/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101617/on-swift-horses/",
+    "websiteYear": 2025,
+    "director": "Daniel Minahan",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt15042300",
+    "letterboxdRating": 3.07
+  },
+  {
+    "id": "castleOnSwiftHorses20250911T130000000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T13:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14474/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101617/on-swift-horses/",
+    "websiteYear": 2025,
+    "director": "Daniel Minahan",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt15042300",
+    "letterboxdRating": 3.07
+  },
+  {
+    "id": "castleOnSwiftHorses20250911T194500000Z",
+    "filmTitle": "On Swift Horses",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T19:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14480/on-swift-horses",
+    "filmUrl": "https://thecastlecinema.com/programme/101617/on-swift-horses/",
+    "websiteYear": 2025,
+    "director": "Daniel Minahan",
+    "tmdbId": 1092506,
+    "releaseDate": "2025-04-24",
+    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt15042300",
+    "letterboxdRating": 3.07
+  },
+  {
+    "id": "castleMaterialists20250911T104500000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T10:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14473/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99560/materialists/",
+    "websiteYear": 2025,
+    "director": "Celine Song",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt30253473",
+    "letterboxdRating": 3.04
+  },
+  {
+    "id": "castleMaterialists20250911T153000000Z",
+    "filmTitle": "Materialists",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T15:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14476/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99560/materialists/",
+    "websiteYear": 2025,
+    "director": "Celine Song",
+    "tmdbId": 1136867,
+    "releaseDate": "2025-06-12",
+    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt30253473",
+    "letterboxdRating": 3.04
+  },
+  {
+    "id": "castleHoneyDont20250911T131500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T13:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14475/show",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleHoneyDont20250911T174500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14478/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleCaughtStealing20250911T152000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T15:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14477/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250911T200000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14479/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleREALLIFEpresentedbyJelliedReels20250911T180000000Z",
+    "filmTitle": "REAL LIFE presented by Jellied Reels",
+    "cinema": "castle",
+    "screeningStart": "2025-09-11T18:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14135/real-life-presented-by-jellied-reels",
+    "filmUrl": "https://thecastlecinema.com/programme/100924/real-life-presented-by-jellied-reels/",
+    "websiteYear": 1979,
+    "director": "Albert Brooks"
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250912T103000000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-12T10:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14486/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250912T150000000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-12T15:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14498/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250912T200000000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-12T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14501/from-ground-zero-stories-from-gaza",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250912T104500000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-12T10:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14555/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250912T195000000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-12T19:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14558/spinal-tap-ii-the-end-continues",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleCaughtStealing20250912T124000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-12T12:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14487/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250912T174000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-12T17:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14499/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleHoneyDont20250912T130000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-12T13:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14497/show",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleHoneyDont20250912T175000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-12T17:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14500/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250913T100000000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-13T10:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/pwyc/14502/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250913T123000000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-13T12:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14516/from-ground-zero-stories-from-gaza",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250913T171500000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-13T17:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14525/from-ground-zero-stories-from-gaza",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleCaughtStealing20250913T104500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-13T10:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14503/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250913T151000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-13T15:10:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14524/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250913T194500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-13T19:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14527/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250913T131500000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-13T13:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14554/spinal-tap-ii-the-end-continues",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250913T173000000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-13T17:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14553/spinal-tap-ii-the-end-continues",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleHoneyDont20250913T150000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-13T15:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14523/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleHoneyDont20250913T193000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-13T19:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14526/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleEddington20250914T100000000Z",
+    "filmTitle": "Eddington",
+    "cinema": "castle",
+    "screeningStart": "2025-09-14T10:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14343/eddington",
+    "filmUrl": "https://thecastlecinema.com/programme/100919/eddington/",
+    "websiteYear": 2025,
+    "director": "Ari Aster",
+    "tmdbId": 648878,
+    "releaseDate": "2025-07-16",
+    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "genres": [
+      "Western",
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt31176520",
     "letterboxdRating": 3.36
   },
   {
-    "id": "genesisAckroydHarveyTheArtOfActivismQA20250924T173000000Z",
-    "filmTitle": "Ackroyd & Harvey: The Art Of Activism + Q&A",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-24T17:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6345",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100601",
+    "id": "castleHoneyDont20250914T104500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-14T10:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14528/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
     "websiteYear": 2025,
-    "tmdbId": 1527411,
-    "releaseDate": "2025-09-19",
-    "synopsis": "Award-winning documentary filmmaker Fiona Cunningham-Reid presents an intimate portrait of internationally acclaimed artists Heather Ackroyd and Dan Harvey, who work at the intersection of art, activism, biology and ecology.",
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleHoneyDont20250914T171500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-14T17:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14531/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleCaughtStealing20250914T140000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-14T14:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14529/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250914T190000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-14T19:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14532/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250914T151500000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-14T15:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14552/spinal-tap-ii-the-end-continues",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250914T163000000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-14T16:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14530/from-ground-zero-stories-from-gaza",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250914T191500000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-14T19:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14533/from-ground-zero-stories-from-gaza",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleCaughtStealing20250915T101500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-15T10:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14534/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250915T151500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-15T15:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14538/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250915T200000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-15T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14551/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250915T104500000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-15T10:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14535/from-ground-zero-stories-from-gaza",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250915T150000000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-15T15:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14537/from-ground-zero-stories-from-gaza",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250915T195000000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-15T19:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14550/from-ground-zero-stories-from-gaza",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleHoneyDont20250915T124500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-15T12:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14536/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleHoneyDont20250915T175000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-15T17:50:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14539/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250915T131500000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-15T13:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14548/spinal-tap-ii-the-end-continues",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250915T174000000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-15T17:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14541/spinal-tap-ii-the-end-continues",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250916T092000000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-16T09:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14522/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250916T100000000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-16T10:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/parent-baby/14515/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250916T154500000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-16T15:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14519/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250916T111500000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-16T11:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14521/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250916T150000000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-16T15:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14513/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleCaughtStealing20250916T123000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-16T12:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14514/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250916T194500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-16T19:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14517/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleHoneyDont20250916T134000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-16T13:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14520/show",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleHoneyDont20250916T174500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-16T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14518/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleGazaDoctorsUnderAttack20250916T173000000Z",
+    "filmTitle": "Gaza: Doctors Under Attack",
+    "cinema": "castle",
+    "screeningStart": "2025-09-16T17:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14344/gaza-doctors-under-attack",
+    "filmUrl": "https://thecastlecinema.com/programme/100935/gaza-doctors-under-attack/",
+    "websiteYear": 2025,
+    "tmdbId": 1486460,
+    "releaseDate": "2025-06-06",
+    "synopsis": "A forensic investigation into the impact of Israeli military operations on Gaza’s healthcare system. This urgent documentary examines evidence of widespread destruction across the territory’s medical infrastructure, where all 36 main hospitals have reportedly been damaged or destroyed. Hundreds of healthcare workers — including doctors and surgeons — are known to have been killed, injured or detained, with some alleging imprisonment and mistreatment",
     "genres": [
       "Documentary"
     ],
-    "director": "Fiona Cunningham-Reid",
-    "imdbId": "tt37723360"
+    "director": "Karim Shah",
+    "imdbId": "tt37504739",
+    "letterboxdRating": 4.02
   },
   {
-    "id": "genesisAmericanPieSoftLimitCinema20250924T172500000Z",
-    "filmTitle": "American Pie: Soft Limit Cinema",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-24T17:25:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6475",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101334",
+    "id": "castleSpinalTapIITheEndContinues20250917T092000000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-17T09:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14512/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
     "websiteYear": 2025,
-    "tmdbId": 2105,
-    "releaseDate": "1999-07-09",
-    "synopsis": "At a high-school party, four friends find that losing their collective virginity isn't as easy as they had thought. But they still believe that they need to do so before college. To motivate themselves, they enter a pact to all \"score\" by their senior prom.",
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250917T134000000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-17T13:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14510/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250917T174500000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-17T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14508/spinal-tap-ii-the-end-continues",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleHoneyDont20250917T101500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-17T10:15:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14506/show",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
     "genres": [
       "Comedy",
-      "Romance"
+      "Crime"
     ],
-    "director": "Paul Weitz",
-    "imdbId": "tt0163651",
-    "letterboxdRating": 3.13
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
   },
   {
-    "id": "genesisBarTrashOpeningNightDAYOFTHEDEAD40THANNIVERSARY198520250924T193000000Z",
-    "filmTitle": "Bar Trash: Opening Night: DAY OF THE DEAD: 40TH ANNIVERSARY (1985)",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-24T19:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6735",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101319",
+    "id": "castleHoneyDont20250917T154000000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-17T15:40:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14509/show",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleCaughtStealing20250917T112000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-17T11:20:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14511/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250917T150000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-17T15:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14504/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250917T123000000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-17T12:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14505/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleFromGroundZeroStoriesfromGaza20250917T194500000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-17T19:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14507/from-ground-zero-stories-from-gaza",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
+    "websiteYear": 2025,
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
+    "genres": [
+      "Documentary",
+      "Drama",
+      "Animation"
+    ],
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleHoneyDont20250918T094500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-18T09:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14496/show",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleHoneyDont20250918T134500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-18T13:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14494/show",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleHoneyDont20250918T174500000Z",
+    "filmTitle": "Honey Don't!",
+    "cinema": "castle",
+    "screeningStart": "2025-09-18T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14492/honey-don-t",
+    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201",
+    "letterboxdRating": 2.38
+  },
+  {
+    "id": "castleCaughtStealing20250918T100000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-18T10:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/parent-baby/14490/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250918T143000000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-18T14:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14489/show",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleCaughtStealing20250918T194500000Z",
+    "filmTitle": "Caught Stealing",
+    "cinema": "castle",
+    "screeningStart": "2025-09-18T19:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14491/caught-stealing",
+    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
+    "websiteYear": 2025,
+    "director": "Darren Aronofsky",
+    "tmdbId": 1245993,
+    "releaseDate": "2025-08-26",
+    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy"
+    ],
+    "imdbId": "tt1493274",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250918T114500000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-18T11:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14495/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleSpinalTapIITheEndContinues20250918T154500000Z",
+    "filmTitle": "Spinal Tap II: The End Continues",
+    "cinema": "castle",
+    "screeningStart": "2025-09-18T15:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14493/show",
+    "filmUrl": "https://thecastlecinema.com/programme/101144/spinal-tap-ii-the-end-continues/",
+    "websiteYear": 2025,
+    "director": "Rob Reiner",
+    "tmdbId": 975225,
+    "releaseDate": "2025-09-12",
+    "synopsis": "The now estranged bandmates of Spinal Tap are forced to reunite for one final concert, hoping it will solidify their place in the pantheon of rock 'n' roll.",
+    "genres": [
+      "Music",
+      "Comedy"
+    ],
+    "imdbId": "tt20222166"
+  },
+  {
+    "id": "castleTheBigBikeFilmNight202520250918T170000000Z",
+    "filmTitle": "The Big Bike Film Night 2025",
+    "cinema": "castle",
+    "screeningStart": "2025-09-18T17:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/13704/the-big-bike-film-night-2025",
+    "filmUrl": "https://thecastlecinema.com/programme/98369/the-big-bike-film-night-2025/",
     "websiteYear": 2025
   },
   {
-    "id": "genesisThisJungoLifeQAAFundraiserforCaptainSupportUK20250925T173000000Z",
-    "filmTitle": "This Jungo Life + Q&A - A Fundraiser for Captain Support UK",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-25T17:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6733",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101321",
+    "id": "castleFromGroundZeroStoriesfromGaza20250918T200000000Z",
+    "filmTitle": "From Ground Zero: Stories from Gaza",
+    "cinema": "castle",
+    "screeningStart": "2025-09-18T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14488/from-ground-zero-stories-from-gaza",
+    "filmUrl": "https://thecastlecinema.com/programme/101631/from-ground-zero-stories-from-gaza/",
     "websiteYear": 2025,
-    "tmdbId": 1375334,
-    "releaseDate": "2024-06-22",
-    "synopsis": "This Jungo Life offers an intimate and raw look into the hidden lives of young refugees and asylum seekers from Sudan and South Sudan, living on the streets of Morocco. Forced to flee violence and chaos, they remain stranded, unable to return home due to the ongoing wars ravaging their countries.\r Filmed entirely on mobile phones, the documentary provides unprecedented access to their world, capturing the reality of their daily struggles. The resilience of the human spirit and the fierce drive for survival is underscored, as they fight to build a better future for themselves and the families they’ve left behind.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "David Fedele"
-  },
-  {
-    "id": "genesisHamilton10thAnniversary20250926T180000000Z",
-    "filmTitle": "Hamilton (10th Anniversary)",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-26T18:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6469",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101314",
-    "websiteYear": 2025,
-    "tmdbId": 556574,
-    "releaseDate": "2025-09-05",
-    "synopsis": "Presenting the tale of American founding father Alexander Hamilton, this filmed version of the original Broadway smash hit is the story of America then, told by America now.",
-    "genres": [
-      "History",
-      "Drama"
-    ],
-    "director": "Thomas Kail",
-    "imdbId": "tt8503618",
-    "letterboxdRating": 4.24
-  },
-  {
-    "id": "genesisThroneofBlood20250928T140000000Z",
-    "filmTitle": "Throne of Blood",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-28T14:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=4939",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99089",
-    "websiteYear": 1957,
-    "tmdbId": 3777,
-    "releaseDate": "1957-01-15",
-    "synopsis": "Returning to their lord's castle, samurai warriors Washizu and Miki are waylaid by a spirit who predicts their futures. When the first part of the spirit's prophecy comes true, Washizu's scheming wife, Asaji, presses him to speed up the rest of the spirit's prophecy by murdering his lord and usurping his place. Director Akira Kurosawa's resetting of William Shakespeare's \"Macbeth\" in feudal Japan is one of his most acclaimed films.",
-    "genres": [
-      "Drama",
-      "History"
-    ],
-    "director": "Akira Kurosawa",
-    "imdbId": "tt0050613",
-    "letterboxdRating": 4.27
-  },
-  {
-    "id": "genesisShottheVoiceofFreedomQAIWillTellInternationalFilmFestival20250929T174500000Z",
-    "filmTitle": "Shot, the Voice of Freedom + Q&A - I Will Tell International Film Festival",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-29T17:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6619",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101326",
-    "websiteYear": 2025,
-    "tmdbId": 1374371,
-    "releaseDate": "2024-11-15",
-    "synopsis": "Since the withdrawal of US troops from Afghanistan in 2021, the Taliban have imposed a reign of terror that is particularly brutal towards women. Risking their own lives and those of their loved ones, groups of women are protesting against the regime, and standing up for the right to freedom, education and security. The filmmaker follows and interviews two of these women, Reshmin and her sister.",
-    "genres": [
-      "Documentary"
-    ],
-    "director": "Zainab Entezar"
-  },
-  {
-    "id": "genesisChinatownChaChaQA20251001T173000000Z",
-    "filmTitle": "Chinatown Cha-Cha + Q&A",
-    "cinema": "genesis",
-    "screeningStart": "2025-10-01T17:30:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6618",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101327",
-    "websiteYear": 2025,
-    "tmdbId": 1314763,
-    "releaseDate": "2024-10-27",
-    "synopsis": "The 92-year-old previous nightclub dancer Coby Yee decides to get back on stage again after joining the senior dance troupe Grant Avenue Follies. Together they go on a tour for the last time, bridging once isolated Chinese communities in the US, Cuba and China.",
+    "tmdbId": 1326649,
+    "releaseDate": "2025-01-03",
+    "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
     "genres": [
       "Documentary",
-      "History",
-      "Music"
+      "Drama",
+      "Animation"
     ],
-    "director": "Luka Yuanyuan Yang",
+    "director": "Wissam Moussa",
+    "imdbId": "tt32606918",
+    "letterboxdRating": 4.2
+  },
+  {
+    "id": "castleVioletHourVNightGallery20250921T123000000Z",
+    "filmTitle": "Violet Hour V: Night Gallery",
+    "cinema": "castle",
+    "screeningStart": "2025-09-21T12:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14297/violet-hour-v-night-gallery",
+    "filmUrl": "https://thecastlecinema.com/programme/100932/violet-hour-v-night-gallery/",
+    "websiteYear": 1969,
+    "director": "Steven Spielberg, Boris Sagal, Barry Shear"
+  },
+  {
+    "id": "castleTHEOTHERWAYAROUNDpresentedbyJelliedReels20250924T174500000Z",
+    "filmTitle": "THE OTHER WAY AROUND presented by Jellied Reels",
+    "cinema": "castle",
+    "screeningStart": "2025-09-24T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14134/the-other-way-around-presented-by-jellied-reels",
+    "filmUrl": "https://thecastlecinema.com/programme/100925/the-other-way-around-presented-by-jellied-reels/",
+    "websiteYear": 2024,
+    "director": "Jonás Trueba"
+  },
+  {
+    "id": "castleTheBigBikeFilmNight202520250924T200000000Z",
+    "filmTitle": "The Big Bike Film Night 2025",
+    "cinema": "castle",
+    "screeningStart": "2025-09-24T20:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14345/the-big-bike-film-night-2025",
+    "filmUrl": "https://thecastlecinema.com/programme/98369/the-big-bike-film-night-2025/",
+    "websiteYear": 2025
+  },
+  {
+    "id": "castleCineRealpresentsHiroshimaMonAmour20250925T183000000Z",
+    "filmTitle": "Cine-Real presents: Hiroshima Mon Amour",
+    "cinema": "castle",
+    "screeningStart": "2025-09-25T18:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14481/cine-real-presents-hiroshima-mon-amour",
+    "filmUrl": "https://thecastlecinema.com/programme/101619/cine-real-presents-hiroshima-mon-amour/",
+    "websiteYear": 1959,
+    "director": "Alain Resnais",
+    "tmdbId": 5544,
+    "releaseDate": "1959-06-10",
+    "synopsis": "The deep conversation between a Japanese architect and a French actress forms the basis of this celebrated French film, considered one of the vanguard productions of the French New Wave. Set in Hiroshima after the end of World War II, the couple -- lovers turned friends -- recount, over many hours, previous romances and life experiences. The two intertwine their stories about the past with pondering the devastation wrought by the atomic bomb dropped on the city.",
+    "genres": [
+      "Drama",
+      "History",
+      "Romance"
+    ],
+    "imdbId": "tt0052893",
+    "letterboxdRating": 4.17
+  },
+  {
+    "id": "castleCineRealpresentsHiroshimaMonAmour20250928T130000000Z",
+    "filmTitle": "Cine-Real presents: Hiroshima Mon Amour",
+    "cinema": "castle",
+    "screeningStart": "2025-09-28T13:00:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14482/cine-real-presents-hiroshima-mon-amour",
+    "filmUrl": "https://thecastlecinema.com/programme/101619/cine-real-presents-hiroshima-mon-amour/",
+    "websiteYear": 1959,
+    "director": "Alain Resnais",
+    "tmdbId": 5544,
+    "releaseDate": "1959-06-10",
+    "synopsis": "The deep conversation between a Japanese architect and a French actress forms the basis of this celebrated French film, considered one of the vanguard productions of the French New Wave. Set in Hiroshima after the end of World War II, the couple -- lovers turned friends -- recount, over many hours, previous romances and life experiences. The two intertwine their stories about the past with pondering the devastation wrought by the atomic bomb dropped on the city.",
+    "genres": [
+      "Drama",
+      "History",
+      "Romance"
+    ],
+    "imdbId": "tt0052893",
+    "letterboxdRating": 4.17
+  },
+  {
+    "id": "castleNTLiveInterAlia20250930T174500000Z",
+    "filmTitle": "NT Live: Inter Alia",
+    "cinema": "castle",
+    "screeningStart": "2025-09-30T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14206/nt-live-inter-alia",
+    "filmUrl": "https://thecastlecinema.com/programme/96993/nt-live-inter-alia/",
+    "websiteYear": 2025,
+    "director": "Justin Martin",
+    "tmdbId": 1454209,
+    "releaseDate": "2025-09-04",
+    "synopsis": "Jessica Parks is a smart Crown Court Judge at the top of her career. Behind the robe, she is a karaoke fiend, loving wife and a supportive parent. When an event threatens to throw her life completely off balance, can she hold her family upright?",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt36364878"
+  },
+  {
+    "id": "castleCineRealpresentsStirCrazy20251002T183000000Z",
+    "filmTitle": "Cine-Real presents: Stir Crazy",
+    "cinema": "castle",
+    "screeningStart": "2025-10-02T18:30:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14484/cine-real-presents-stir-crazy",
+    "filmUrl": "https://thecastlecinema.com/programme/101621/cine-real-presents-stir-crazy/",
+    "websiteYear": 1980,
+    "director": "Sidney Poitier",
+    "tmdbId": 21629,
+    "releaseDate": "1980-12-12",
+    "synopsis": "New Yorkers Skip Donahue and Harry Monroe have no jobs and no prospects, so they decide to flee the city and find work elsewhere, landing jobs wearing woodpecker costumes to promote the opening of a bank. When their feathery costumes are stolen and used in a bank robbery, they no longer have to worry about employment — they're sent to prison.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt0081562",
+    "letterboxdRating": 3.28
+  },
+  {
+    "id": "castleNTLiveInterAlia20251008T174500000Z",
+    "filmTitle": "NT Live: Inter Alia",
+    "cinema": "castle",
+    "screeningStart": "2025-10-08T17:45:00.000Z",
+    "bookingUrl": "https://thecastlecinema.com/bookings/14207/nt-live-inter-alia",
+    "filmUrl": "https://thecastlecinema.com/programme/96993/nt-live-inter-alia/",
+    "websiteYear": 2025,
+    "director": "Justin Martin",
+    "tmdbId": 1454209,
+    "releaseDate": "2025-09-04",
+    "synopsis": "Jessica Parks is a smart Crown Court Judge at the top of her career. Behind the robe, she is a karaoke fiend, loving wife and a supportive parent. When an event threatens to throw her life completely off balance, can she hold her family upright?",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt36364878"
+  },
+  {
+    "id": "closeupAConfucianConfusion20250909T193000000Z",
+    "filmTitle": "A Confucian Confusion",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-09T19:30:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-gpvyby",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/a-confucian-confusion",
+    "websiteYear": 1994,
+    "releaseDate": "1994-10-13",
+    "director": "Edward Yang",
+    "tmdbId": 54233,
+    "synopsis": "Over the course of a few days, the paths of a group of young friends, lovers, and acquaintances in Taipei crisscross, prompting them to arrive at realizations about their lives.",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "imdbId": "tt0109685",
+    "letterboxdRating": 3.98
+  },
+  {
+    "id": "closeupMishimaALifeinFourChapters20250910T190000000Z",
+    "filmTitle": "Mishima: A Life in Four Chapters",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-10T19:00:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-agmrax",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/mishima-a-life-in-four-chapters",
+    "websiteYear": 1985,
+    "releaseDate": "1985-09-20",
+    "director": "Paul Schrader",
+    "tmdbId": 27064,
+    "synopsis": "A fictional account of the life of Japanese author Yukio Mishima, combining dramatizations of three of his novels and a depiction of the events of November 25th, 1970.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0089603",
+    "letterboxdRating": 4.42
+  },
+  {
+    "id": "closeupCloseUp20250911T191500000Z",
+    "filmTitle": "Close-Up",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-11T19:15:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-erxpxz",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/close-up",
+    "websiteYear": 1990,
+    "releaseDate": "1990-05-09",
+    "director": "Abbas Kiarostami",
+    "tmdbId": 30017,
+    "synopsis": "This fiction-documentary hybrid uses a sensational real-life event—the arrest of a young man on charges that he fraudulently impersonated the well-known filmmaker Mohsen Makhmalbaf—as the basis for a stunning, multilayered investigation into movies, identity, artistic creation, and existence, in which the real people from the case play themselves.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "imdbId": "tt0100234",
+    "letterboxdRating": 4.42
+  },
+  {
+    "id": "closeupKillerofSheep20250912T191500000Z",
+    "filmTitle": "Killer of Sheep",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-12T19:15:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-mqxdeb",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/killer-of-sheep",
+    "websiteYear": 1977,
+    "releaseDate": "1978-11-14",
+    "director": "Charles Burnett",
+    "tmdbId": 27432,
+    "synopsis": "An African-American man working at a slaughterhouse in the Watts area of Los Angeles leads a dissatisfied and listless existence.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0076263",
+    "letterboxdRating": 3.97
+  },
+  {
+    "id": "closeupMotherIndia20250913T153000000Z",
+    "filmTitle": "Mother India",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-13T15:30:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-xmpzzel",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-mother-india-i-am-cuba/mother-india",
+    "websiteYear": 1957,
+    "releaseDate": "1957-02-13",
+    "director": "Mehboob Khan",
+    "tmdbId": 917,
+    "synopsis": "A poverty-stricken woman raises her sons through many trials and tribulations. But no matter the struggles, always sticks to her own moral code.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0050188",
+    "letterboxdRating": 3.57
+  },
+  {
+    "id": "closeupIAmCuba20250913T190000000Z",
+    "filmTitle": "I Am Cuba",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-13T19:00:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-ojnzzgg",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-mother-india-i-am-cuba/i-am-cuba",
+    "websiteYear": 1964,
+    "releaseDate": "1964-10-26",
+    "director": "Mikhail Kalatozov",
+    "tmdbId": 32015,
+    "synopsis": "Four vignettes on the lives of the Cuban people in the pre-revolutionary era. In Havana, Maria is ashamed when a man she loves discovers how she makes a living. Pedro, an old farmer, discovers that the land he cultivates is being sold to an American company. A student sees his friends attacked by the police while they distribute leaflets supporting Fidel Castro. Finally, a peasant family is threatened by Batista's army.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0058604",
+    "letterboxdRating": 4.42
+  },
+  {
+    "id": "closeupAConfucianConfusion20250914T163000000Z",
+    "filmTitle": "A Confucian Confusion",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-14T16:30:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-gpvyby",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/a-confucian-confusion",
+    "websiteYear": 1994,
+    "releaseDate": "1994-10-13",
+    "director": "Edward Yang",
+    "tmdbId": 54233,
+    "synopsis": "Over the course of a few days, the paths of a group of young friends, lovers, and acquaintances in Taipei crisscross, prompting them to arrive at realizations about their lives.",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "imdbId": "tt0109685",
+    "letterboxdRating": 3.98
+  },
+  {
+    "id": "closeupCloseUp20250914T190000000Z",
+    "filmTitle": "Close-Up",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-14T19:00:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-erxpxz",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/close-up",
+    "websiteYear": 1990,
+    "releaseDate": "1990-05-09",
+    "director": "Abbas Kiarostami",
+    "tmdbId": 30017,
+    "synopsis": "This fiction-documentary hybrid uses a sensational real-life event—the arrest of a young man on charges that he fraudulently impersonated the well-known filmmaker Mohsen Makhmalbaf—as the basis for a stunning, multilayered investigation into movies, identity, artistic creation, and existence, in which the real people from the case play themselves.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "imdbId": "tt0100234",
+    "letterboxdRating": 4.42
+  },
+  {
+    "id": "closeupMishimaALifeinFourChapters20250916T193000000Z",
+    "filmTitle": "Mishima: A Life in Four Chapters",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-16T19:30:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-agmrax",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/mishima-a-life-in-four-chapters",
+    "websiteYear": 1985,
+    "releaseDate": "1985-09-20",
+    "director": "Paul Schrader",
+    "tmdbId": 27064,
+    "synopsis": "A fictional account of the life of Japanese author Yukio Mishima, combining dramatizations of three of his novels and a depiction of the events of November 25th, 1970.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0089603",
+    "letterboxdRating": 4.42
+  },
+  {
+    "id": "closeupInOurSleep20250918T191500000Z",
+    "filmTitle": "In Our Sleep",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-18T19:15:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-vvljmva",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/in-our-sleep",
+    "programmeOnly": true
+  },
+  {
+    "id": "closeupCloseUp20250919T190000000Z",
+    "filmTitle": "Close-Up",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-19T19:00:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-erxpxz",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/close-up",
+    "websiteYear": 1990,
+    "releaseDate": "1990-05-09",
+    "director": "Abbas Kiarostami",
+    "tmdbId": 30017,
+    "synopsis": "This fiction-documentary hybrid uses a sensational real-life event—the arrest of a young man on charges that he fraudulently impersonated the well-known filmmaker Mohsen Makhmalbaf—as the basis for a stunning, multilayered investigation into movies, identity, artistic creation, and existence, in which the real people from the case play themselves.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "imdbId": "tt0100234",
+    "letterboxdRating": 4.42
+  },
+  {
+    "id": "closeupFathersHouse20250920T160000000Z",
+    "filmTitle": "Father's House",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-20T16:00:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-vvlzzrl",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-father-s-house-our-mother-s-house/father-s-house",
+    "websiteYear": 1950,
+    "releaseDate": "1950-12-15",
+    "director": "S.U. Sunny",
+    "tmdbId": 279228,
+    "synopsis": "Two fathers, one poor and the other rich, hope that a wealthy postmaster will wed one of their daughters.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0331186"
+  },
+  {
+    "id": "closeupOurMothersHouse20250920T190000000Z",
+    "filmTitle": "Our Mother's House",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-20T19:00:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-avrllra",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-father-s-house-our-mother-s-house/our-mother-s-house",
+    "websiteYear": 1967,
+    "releaseDate": "1967-09-14",
+    "director": "Jack Clayton",
+    "tmdbId": 2516,
+    "synopsis": "Seven British children bury their mother and hide her death, until their long-lost father returns.",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "imdbId": "tt0062089",
+    "letterboxdRating": 3.66
+  },
+  {
+    "id": "closeupAllMemoriesWereOnceStrange20250921T170000000Z",
+    "filmTitle": "All Memories Were Once Strange",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-21T17:00:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-vvlmzoo",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/all-memories-were-once-strange",
+    "programmeOnly": true
+  },
+  {
+    "id": "closeupKillerofSheep20250921T190000000Z",
+    "filmTitle": "Killer of Sheep",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-21T19:00:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-mqxdeb",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/killer-of-sheep",
+    "websiteYear": 1977,
+    "releaseDate": "1978-11-14",
+    "director": "Charles Burnett",
+    "tmdbId": 27432,
+    "synopsis": "An African-American man working at a slaughterhouse in the Watts area of Los Angeles leads a dissatisfied and listless existence.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0076263",
+    "letterboxdRating": 3.97
+  },
+  {
+    "id": "closeupCloseUp20250923T191500000Z",
+    "filmTitle": "Close-Up",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-23T19:15:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-erxpxz",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/close-up",
+    "websiteYear": 1990,
+    "releaseDate": "1990-05-09",
+    "director": "Abbas Kiarostami",
+    "tmdbId": 30017,
+    "synopsis": "This fiction-documentary hybrid uses a sensational real-life event—the arrest of a young man on charges that he fraudulently impersonated the well-known filmmaker Mohsen Makhmalbaf—as the basis for a stunning, multilayered investigation into movies, identity, artistic creation, and existence, in which the real people from the case play themselves.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "imdbId": "tt0100234",
+    "letterboxdRating": 4.42
+  },
+  {
+    "id": "closeupSashaLitvintsevaandBenyWagnerTrilogy20250925T191500000Z",
+    "filmTitle": "Sasha Litvintseva and Beny Wagner: Trilogy",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-25T19:15:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-lnydyjy",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/sasha-litvintseva-and-beny-wagner-trilogy",
+    "programmeOnly": true
+  },
+  {
+    "id": "closeupCloseUp20250926T191500000Z",
+    "filmTitle": "Close-Up",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-26T19:15:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-erxpxz",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/close-up",
+    "websiteYear": 1990,
+    "releaseDate": "1990-05-09",
+    "director": "Abbas Kiarostami",
+    "tmdbId": 30017,
+    "synopsis": "This fiction-documentary hybrid uses a sensational real-life event—the arrest of a young man on charges that he fraudulently impersonated the well-known filmmaker Mohsen Makhmalbaf—as the basis for a stunning, multilayered investigation into movies, identity, artistic creation, and existence, in which the real people from the case play themselves.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "imdbId": "tt0100234",
+    "letterboxdRating": 4.42
+  },
+  {
+    "id": "closeupLetItGoMates20250927T163000000Z",
+    "filmTitle": "Let It Go, Mates",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-27T16:30:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-ganzznj",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-let-it-go-mates-blow-up/let-it-go-mates",
+    "websiteYear": 1983,
+    "releaseDate": "1983-08-12",
+    "director": "Kundan Shah",
+    "tmdbId": 25499,
+    "synopsis": "Two zanies open a photography studio. They score a partnership with a gossip magazine that suddenly thrusts them into a world of corruption, murder, and hijinks.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt0085743"
+  },
+  {
+    "id": "closeupBlowUp20250927T191500000Z",
+    "filmTitle": "Blow-Up",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-27T19:15:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-lnyvvyv",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/take-two-let-it-go-mates-blow-up/blow-up",
+    "websiteYear": 1966,
+    "releaseDate": "1966-12-18",
+    "director": "Michelangelo Antonioni",
+    "tmdbId": 1052,
+    "synopsis": "A successful mod photographer in London whose world is bounded by fashion, pop music, marijuana, and easy sex, feels his life is boring and despairing. But in the course of a single day he unknowingly captures a death on film.",
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
+    "imdbId": "tt0060176",
+    "letterboxdRating": 3.81
+  },
+  {
+    "id": "closeupKillerofSheep20250928T170000000Z",
+    "filmTitle": "Killer of Sheep",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-28T17:00:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-mqxdeb",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/killer-of-sheep",
+    "websiteYear": 1977,
+    "releaseDate": "1978-11-14",
+    "director": "Charles Burnett",
+    "tmdbId": 27432,
+    "synopsis": "An African-American man working at a slaughterhouse in the Watts area of Los Angeles leads a dissatisfied and listless existence.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0076263",
+    "letterboxdRating": 3.97
+  },
+  {
+    "id": "closeupWinterKeptUsWarm20250928T190000000Z",
+    "filmTitle": "Winter Kept Us Warm",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-28T19:00:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-eagjgnv",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/never-on-sunday/winter-kept-us-warm",
+    "websiteYear": 1965,
+    "releaseDate": "1965-09-25",
+    "director": "David Secter",
+    "tmdbId": 169796,
+    "synopsis": "It is the 1960s at the University of Toronto. Doug is a well-liked senior with an equally popular girlfriend. Peter is a shy Finnish freshman who is new to the big city. The two become best friends and begin doing all sorts of activities together — until Doug starts viewing their relationship differently.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0232954",
     "letterboxdRating": 3.52
   },
   {
-    "id": "genesisEbonyandIvoryQA20251001T170000000Z",
-    "filmTitle": "Ebony and Ivory + Q&A",
-    "cinema": "genesis",
-    "screeningStart": "2025-10-01T17:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6771",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101315",
-    "websiteYear": 2025,
-    "tmdbId": 1254787,
-    "releaseDate": "2025-08-01",
-    "synopsis": "Two musical legends gather at a Scottish Cottage on The Mull Of Kintyre for a tense summit to discuss a potential collaboration that will ultimately result in a Global Number One smash hit single.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "director": "Jim Hosking",
-    "imdbId": "tt33131034",
-    "letterboxdRating": 3.13
+    "id": "closeupFrictions20250929T193000000Z",
+    "filmTitle": "Frictions",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-29T19:30:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/t-mogqqkq",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/frictions",
+    "websiteYear": 2024,
+    "releaseDate": "2024-01-01",
+    "director": "Erdem Taşdelen"
   },
   {
-    "id": "genesisSilentsSyncedRadioheadXNosferatuASymphonyofHorrorHalloweenatGenesis20251002T200000000Z",
-    "filmTitle": "Silents Synced - Radiohead X Nosferatu: A Symphony of Horror- Halloween at Genesis",
-    "cinema": "genesis",
-    "screeningStart": "2025-10-02T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=5141",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99229",
-    "websiteYear": 2025,
-    "director": "F.W. Murnau"
+    "id": "closeupMishimaALifeinFourChapters20250930T193000000Z",
+    "filmTitle": "Mishima: A Life in Four Chapters",
+    "cinema": "closeup",
+    "screeningStart": "2025-09-30T19:30:00.000Z",
+    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-agmrax",
+    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/mishima-a-life-in-four-chapters",
+    "websiteYear": 1985,
+    "releaseDate": "1985-09-20",
+    "director": "Paul Schrader",
+    "tmdbId": 27064,
+    "synopsis": "A fictional account of the life of Japanese author Yukio Mishima, combining dramatizations of three of his novels and a depiction of the events of November 25th, 1970.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0089603",
+    "letterboxdRating": 4.42
   }
 ]

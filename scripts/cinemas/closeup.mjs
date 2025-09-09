@@ -59,7 +59,11 @@ export async function fetchCloseUp() {
               let s = String(name || '').replace(/\s{2,}/g, ' ').trim()
               if (!s) return null
               const norm = (x) => String(x||'').normalize('NFD').replace(/\p{Diacritic}+/gu,'').toLowerCase()
+              // If the string begins with the film title (possibly glued without
+              // whitespace due to inline elements), strip that prefix first.
               if (title) {
+                const esc = String(title||'').replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+                s = s.replace(new RegExp('^\\s*' + esc + '(?:\\s*)', 'i'), '').trim()
                 const nt = norm(title).split(/\s+/).filter(Boolean)
                 let tokens = s.split(/\s+/).filter(Boolean)
                 let i=0
@@ -103,8 +107,40 @@ export async function fetchCloseUp() {
                 }
               }
             } catch {}
-            // Labels / free text
+            // Labels / free text — use the inline stats line only: "Name, Country, YYYY, NN min"
             const scope = document.querySelector('div#film_program_support.inner_block_2_l, #film_program_support') || document
+            try {
+              // Look for the first paragraph/div that contains year+minutes; ignore preceding title <p>
+              const blocks = Array.from(scope.querySelectorAll('p, div'))
+              const rawTitle = (document.querySelector('h1, title')?.textContent || '')
+              const pageTitle = rawTitle.replace(/^CLOSE[-\s]*UP\s*\|\s*/i, '').trim()
+              function directorFromStats(tx) {
+                if (!tx) return undefined
+                const s = String(tx).replace(/\s+/g,' ').trim()
+                const ym = s.match(/\b(19|20)\d{2}\b/)
+                if (!ym || ym.index == null) return undefined
+                let head = s.slice(0, ym.index)
+                // Strip leading film title if glued in front
+                if (pageTitle) {
+                  const esc = pageTitle.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')
+                  head = head.replace(new RegExp('^\n?\r?\s*'+esc+'\s*','i'),'').trim()
+                }
+                head = head.replace(/[“”"']/g,'').replace(/[\s,:;\-–—]*$/,'').trim()
+                const parts = head.split(',').map(p=>p.trim()).filter(Boolean)
+                const nameRe = /[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+/
+                const names = parts.filter(p => nameRe.test(p))
+                if (names.length) return names.join(', ')
+                return undefined
+              }
+              for (const el of blocks) {
+                const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
+                // Relax: require a plausible 4-digit year; minutes may not always be present
+                if (!/\b(19|20)\d{2}\b/.test(tx)) continue
+                const name = directorFromStats(tx)
+                if (name) return name
+              }
+            } catch {}
+            // Fallbacks: labeled text or generic "directed by" phrases
             const nodes = Array.from(scope.querySelectorAll('p, div, li, dt, dd, .meta, .details'))
             for (const el of nodes) {
               const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
@@ -134,14 +170,39 @@ export async function fetchCloseUp() {
           } catch {}
           let year
           if (scope) {
+            // Detect programme hub pages (no per-film stats line) by a standalone
+            // paragraph that just reads "Programme:" in bold. For these, we keep
+            // the listing but do not attach a director/year for enrichment.
+            let programmeOnly = false
+            try {
+              programmeOnly = Array.from(scope.querySelectorAll('p'))
+                .some(p => {
+                  const strong = p.querySelector('strong')
+                  if (!strong) return false
+                  const lab = (strong.textContent || '').replace(/\s+/g,' ').trim()
+                  const all = (p.textContent || '').replace(/\s+/g,' ').trim()
+                  return /^programme\s*:?$/i.test(lab) && /^programme\s*:?$/i.test(all)
+                })
+            } catch {}
+            // Strict pass: look for "..., YYYY, NN min" within the support block
+            try {
+              const blocks = Array.from(scope.querySelectorAll('p, div'))
+              for (const el of blocks) {
+                const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
+                const m = tx.match(/\b(19|20)\d{2}\b\s*,\s*\d{1,3}\s*m(?:in)?\b/i)
+                if (m) { const y = Number(m[0].match(/\b(19|20)\d{2}\b/)[0]); if (valid(y)) { year = y; break } }
+              }
+            } catch {}
             const paras = Array.from(scope.querySelectorAll('p, div'))
             // Heuristic A: a paragraph containing "YYYY ... N min"
-            for (const el of paras) {
-              const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
-              const m = tx.match(/\b(19|20)\d{2}\b[\s\S]{0,80}?\b\d{1,3}\s*min\b/i)
-              if (m) {
-                const y = Number((m[0].match(/\b(19|20)\d{2}\b/) || [])[0])
-                if (valid(y)) { year = y; break }
+            if (!year) {
+              for (const el of paras) {
+                const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
+                const m = tx.match(/\b(19|20)\d{2}\b[\s\S]{0,80}?\b\d{1,3}\s*min\b/i)
+                if (m) {
+                  const y = Number((m[0].match(/\b(19|20)\d{2}\b/) || [])[0])
+                  if (valid(y)) { year = y; break }
+                }
               }
             }
             // Heuristic B: a paragraph containing ", YYYY" pattern (director, year)
@@ -162,14 +223,21 @@ export async function fetchCloseUp() {
                 year = sorted.find(y => y !== scheduleYear && y <= cap)
               }
             }
+            if (programmeOnly) {
+              // Force programme pages to report no film year even if a stray
+              // page-level year (e.g., schedule header) was detected earlier.
+              year = -1 // sentinel for programme-only pages (no film stats line)
+            }
           }
-          const ttl = document.querySelector('h1, title')?.textContent?.trim() || ''
+          // Use title without the site prefix for all comparisons/cleanup
+          const rawTitle = document.querySelector('h1, title')?.textContent?.trim() || ''
+          const ttl = rawTitle.replace(/^CLOSE[-\s]*UP\s*\|\s*/i, '')
           let director = pickDirector()
           if (!director) {
             const plain = (scope?.textContent || document.body.textContent || '').replace(/\s+/g,' ').trim()
             director = nameFromInlineStats(plain, ttl)
           }
-          director = cleanName(director, ttl)
+          director = (year === -1) ? undefined : cleanName(director, ttl)
           return { year, title: ttl, director }
         })
         if (yearAndTitle?.year) detailYear.set(url, yearAndTitle.year)
@@ -183,7 +251,6 @@ export async function fetchCloseUp() {
       try {
         const filmUrl = new URL(s.film_url, START_URL).toString()
         const y = detailYear.get(filmUrl)
-        if (!y) continue // skip non-film items (no release year found)
         // Parse "YYYY-MM-DD HH:MM:SS" as local Europe/London wall time
         const m = String(s.show_time || '').match(/^(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})(?::(\d{2}))?$/)
         if (!m) continue
@@ -193,9 +260,10 @@ export async function fetchCloseUp() {
         // Prefer detail page title (cleaner encoding), then fallback to list title
         let rawTitle = (detailTitle.get(filmUrl) || '')
         if (!rawTitle) rawTitle = s.title || ''
-        // Clean prefixes like "Date: Title" and site prefix "CLOSE-UP | "
-        let title = rawTitle.replace(/^[^:]+:\s*/, '')
-        title = title.replace(/^CLOSE[-\s]*UP\s*\|\s*/i, '')
+        // Clean site prefix only; do NOT strip a leading segment before a colon
+        // because many film titles legitimately contain a colon (e.g.,
+        // "Mishima: A Life in Four Chapters").
+        let title = rawTitle.replace(/^CLOSE[-\s]*UP\s*\|\s*/i, '')
         parsed.push({
           id: `closeup-${(title || 'film')}-${iso}`.replace(/\W+/g, ''),
           filmTitle: title,
@@ -203,9 +271,14 @@ export async function fetchCloseUp() {
           screeningStart: iso,
           bookingUrl: s.blink ? String(s.blink) : filmUrl,
           filmUrl,
-          websiteYear: y,
-          releaseDate: `${y}-01-01`,
-          director: detailDirector.get(filmUrl),
+          websiteYear: (typeof y === 'number' && y >= 0) ? y : undefined,
+          // Leave releaseDate undefined for programme-only pages; UI will show '—'.
+          releaseDate: (typeof y === 'number' && y >= 0) ? `${y}-01-01` : undefined,
+          // Only attach director for normal film pages (y >= 0). Programme pages
+          // (y === -1) leave director undefined.
+          director: (typeof y === 'number' && y >= 0) ? detailDirector.get(filmUrl) : undefined,
+          // Mark programme-only pages so enrichment can skip safely.
+          programmeOnly: (y === -1) ? true : undefined,
         })
       } catch {}
     }

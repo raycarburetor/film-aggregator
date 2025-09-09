@@ -24,6 +24,7 @@
     "aggregate:genesis": "node scripts/aggregate-genesis-only.mjs",
     "aggregate:genesis:db": "node scripts/aggregate-genesis-only.mjs && node scripts/db-seed.mjs && node scripts/db-prune.mjs",
     "aggregate:garden": "node scripts/aggregate-garden-only.mjs",
+    "aggregate:castle:db": "node scripts/aggregate-castle-only.mjs && node scripts/db-seed.mjs && node scripts/db-prune.mjs",
     "aggregate:closeup": "node scripts/aggregate-closeup-only.mjs",
     "aggregate:barbican": "node scripts/aggregate-barbican-only.mjs",
     "aggregate:barbican:db": "node scripts/aggregate-barbican-only.mjs && node scripts/db-seed.mjs && node scripts/db-prune.mjs",
