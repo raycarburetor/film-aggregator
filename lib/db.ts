@@ -8,10 +8,21 @@ function getPool(): Pool | null {
   const cs = process.env.DATABASE_URL
   if (!cs) return null
   if (!pool) {
+    // Enable SSL when the connection string indicates it (e.g. Supabase, Neon),
+    // or when running in production. This avoids self-signed cert errors locally.
+    const needsSsl = /sslmode=require/i.test(cs) || /[?&]ssl=true/i.test(cs) || /(supabase|neon|vercel)/i.test(cs)
+    // If the URL has ssl=true, strip it so our explicit ssl options take effect.
+    let connectionString = cs
+    try {
+      const u = new URL(cs)
+      if (u.searchParams.get('ssl') === 'true') {
+        u.searchParams.delete('ssl')
+        connectionString = u.toString()
+      }
+    } catch {}
     pool = new Pool({
-      connectionString: cs,
-      // Most hosted Postgres (e.g. Vercel Postgres, Neon, Supabase) require SSL in prod
-      ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : undefined,
+      connectionString,
+      ssl: needsSsl || process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : undefined,
       max: 5,
     })
     pool.on('error', (err) => {
