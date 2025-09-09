@@ -12,6 +12,7 @@ process.env.GARDEN_HORIZON_DAYS ||= '2'
 process.env.GENESIS_HORIZON_DAYS ||= '2'
 process.env.CLOSEUP_HORIZON_DAYS ||= '2'
 process.env.BARBICAN_HORIZON_DAYS ||= '2'
+process.env.RIO_HORIZON_DAYS ||= '2'
 
 // Limit detail page passes for speed
 process.env.BFI_MAX_DETAIL_PAGES ||= '2'
@@ -30,6 +31,7 @@ import { fetchGarden } from './cinemas/garden.mjs'
 import { fetchGenesis } from './cinemas/genesis.mjs'
 import { fetchCloseUp } from './cinemas/closeup.mjs'
 import { fetchBarbican } from './cinemas/barbican.mjs'
+import { fetchRio } from './cinemas/rio.mjs'
 
 const MATCH = (process.argv.find(a => a.startsWith('--match='))?.slice('--match='.length) || '').toLowerCase()
 
@@ -83,3 +85,4 @@ if (want('garden')) await runOne('Garden', fetchGarden)
 if (want('genesis')) await runOne('Genesis', fetchGenesis)
 if (want('close-up') || want('closeup')) await runOne('Close-Up', fetchCloseUp)
 if (want('barbican')) await runOne('Barbican', fetchBarbican)
+if (want('rio') || want('rio cinema')) await runOne('Rio', fetchRio)

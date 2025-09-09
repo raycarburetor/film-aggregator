@@ -44,6 +44,7 @@ export function parseNum(s: string | null) {
 export function isClearlyNonFilm(title: string): boolean {
   if (!title) return false
   const s = String(title).toLowerCase()
+  const hasPlusSuffix = /\s\+\s*\S/.test(s)
   const patterns: RegExp[] = [
     /\bindustry\s+panel\b/,
     /\bnetworking\b/,
@@ -51,7 +52,8 @@ export function isClearlyNonFilm(title: string): boolean {
     /^panel\b/,
     /\bmasterclass\b/,
     /\bworkshop\b/,
-    /\bbook\s+(?:talk|launch|reading)\b/,
+    // Only treat book events as non-film when not a film + extras ("Title + ...")
+    ...(hasPlusSuffix ? [] : [/\bbook\s+(?:talk|launch|reading)\b/]),
     /\bquiz\b/, // film quiz etc.
     /\bkaraoke\b/,
     /\bstand[- ]?up\b/,

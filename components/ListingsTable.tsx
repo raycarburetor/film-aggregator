@@ -25,6 +25,7 @@ const CINEMA_LABELS: Record<string, string> = {
   genesis: 'Genesis Cinema',
   closeup: 'Close-Up',
   barbican: 'Barbican',
+  rio: 'Rio Cinema',
 }
 
 function formatDateTime(iso: string) {

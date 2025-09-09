@@ -24,6 +24,7 @@ existing = Array.isArray(existing) ? existing.filter(i => i?.cinema !== 'rio') :
 function isNonFilmEvent(title) {
   if (!title) return false
   const s = String(title)
+  const hasPlusSuffix = /\s\+\s*\S/.test(s)
   const patterns = [
     /\bfilm\s+quiz\b/i,
     /\bquiz\b/i,
@@ -38,7 +39,8 @@ function isNonFilmEvent(title) {
     /^panel\b/i,
     /\bmasterclass\b/i,
     /\bworkshop\b/i,
-    /\bbook\s+(?:talk|launch|reading)\b/i,
+    // Treat obvious book-only events as non-film unless it's a "Film + ..." composite
+    ...(hasPlusSuffix ? [] : [/\bbook\s+(?:talk|launch|reading)\b/i]),
     /\bwftv\b/i,
   ]
   return patterns.some((re) => re.test(s))
@@ -58,4 +60,3 @@ await enrichWithLetterboxd(rio)
 const merged = [...existing, ...rio]
 await fs.writeFile(dataPath, JSON.stringify(merged, null, 2), 'utf8')
 console.log('Updated Rio listings in', dataPath, 'Rio items:', rio.length, 'Total:', merged.length)
-

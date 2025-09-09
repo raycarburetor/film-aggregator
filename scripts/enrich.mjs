@@ -11,6 +11,10 @@ function normalizeTitleForSearch(title) {
   }
   // Drop common suffix adornments that hurt search matching
   s = s
+    // remove trailing ": Naturist Screening" style labels
+    .replace(/\s*[:\-–—]\s*Naturist\s+Screening\s*$/i, '')
+    // If a "+" suffix is present (e.g., "Film + Filmmakers Q&A"), drop everything after the plus
+    .replace(/\s*\+.*$/i, '')
     // remove leading marketing prefixes like "Preview:", "Relaxed Screening:", "Members' Screening:", "Parent & Baby Screening:" and any generic "* Screening:" or series labels like "Parent and Baby:", "Family Film Club:"
     .replace(/^\s*(?:preview|relaxed\s+screening|members'?\s*screening|parent\s*&\s*baby\s*screening)\s*[:\-–—]\s*/i, '')
     .replace(/^\s*(?:parent\s*(?:and|&)?\s*baby|family\s*film\s*club)\s*[:\-–—]\s*/i, '')
