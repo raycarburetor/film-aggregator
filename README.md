@@ -17,11 +17,11 @@ Cinema listings aggregator for London indie cinemas, built with Next.js 14 + Typ
 
 ## How It Works
 - Frontend (Next.js App Router)
-  - `app/page.tsx`: server component builds an absolute URL to `/api/listings` using request headers; fetches filtered items (no cache) and a separate “all upcoming” set for a stable genre list.
+  - `app/page.tsx`: server component loads all listings directly via a cached data helper (no self-HTTP); filters in-process based on `searchParams`, and derives a stable, alphabetical genre list from the full upcoming set. The underlying data load is cached (default `revalidate: 300s`, configurable via `LISTINGS_CACHE_SECONDS`) to avoid DB cold starts on Vercel.
   - UI components: `components/ListingsTable.tsx` (expandable rows, deterministic Europe/London formatting, cleaned titles with standardized 35mm/70mm/4K suffixes), `components/Filters.tsx` (debounced router updates; cinemas, decades, genre, min Letterboxd), `components/TimeTabs.tsx` (Today/Week/Month).
   - Styling: Tailwind + dark theme in `app/globals.css` with custom hover/selection.
 - API (Next.js Route Handler)
-  - `app/api/listings/route.ts` (runtime: Node.js so `pg` works). Prefers Postgres when `DATABASE_URL` is set; falls back to local JSON. Drops malformed entries and obvious non‑film events, applies time window + filters, sorts by start, returns `{ items }`.
+  - `app/api/listings/route.ts` (runtime: Node.js so `pg` works). Uses the same shared data + filter helpers as the page; prefers Postgres when `DATABASE_URL` is set, else local JSON. Drops malformed entries and obvious non‑film events, applies time window + filters, sorts by start, returns `{ items }`.
 
 ### API Query Params
 - `window=today|week|month|all` (default week): rolling horizon; “all” = all upcoming.
@@ -66,6 +66,7 @@ Add to `.env.local` (see `.env.example` for the full list and defaults):
 - `HIDE_BFI=true` and/or `NEXT_PUBLIC_HIDE_BFI=true` to hide BFI in API/UI
 - `LETTERBOXD_ENABLE=false|true` (default off), `LETTERBOXD_USE_PLAYWRIGHT=false|true`, `LETTERBOXD_STEALTH=false|true`
 - `DATABASE_URL=postgres://user:pass@host:5432/db` and optional `LISTINGS_TABLE`
+- `LISTINGS_CACHE_SECONDS=300` to control in-app cache TTL for loading all listings
 
 
 ## Scripts
