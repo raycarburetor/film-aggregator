@@ -26,6 +26,7 @@ const CINEMA_LABELS: Record<string, string> = {
   closeup: 'Close-Up',
   barbican: 'Barbican',
   rio: 'Rio Cinema',
+  cinelumiere: 'Ciné Lumière',
 }
 
 function formatDateTime(iso: string) {
