@@ -15,7 +15,7 @@ export const CINEMAS = [
   { key: 'cinelumiere', label: 'Ciné Lumière' },
 ] as const
 
-export default function Filters({ genres }: { genres: string[] }) {
+export default function Filters({ genres, hideSearch = false }: { genres: string[]; hideSearch?: boolean }) {
   const router = useRouter()
   const sp = useSearchParams()
   const [q, setQ] = useState(sp.get('q') ?? '')
@@ -117,7 +117,14 @@ export default function Filters({ genres }: { genres: string[] }) {
   return (
     <aside className="md:pl-4">
       <div className="p-3 md:p-4 space-y-4">
-        <input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search by film or director" className="w-full rounded-lg border px-3 py-2" />
+        {!hideSearch && (
+          <input
+            value={q}
+            onChange={e=>setQ(e.target.value)}
+            placeholder="Search by film or director"
+            className="w-full rounded-lg border px-3 py-2"
+          />
+        )}
         <div>
           <div className="text-sm font-normal mb-2 flex items-center justify-between">
             <span>Cinemas</span>
