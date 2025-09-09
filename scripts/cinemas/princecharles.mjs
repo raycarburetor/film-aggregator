@@ -270,56 +270,27 @@ export async function fetchPrinceCharles() {
           return best
         })
         if (year) detailMap.set(url, year)
-        // Director
+        // Director: prefer explicit "Directed by <Name>" text within the film info block.
         const director = await dpage.evaluate(() => {
-          function cleanName(name, title) { try { let s=String(name||'').replace(/\s{2,}/g,' ').trim(); if(!s) return null; const norm=(x)=>String(x||'').normalize('NFD').replace(/\p{Diacritic}+/gu,'').toLowerCase(); if(title){ const nt=norm(title).split(/\s+/).filter(Boolean); let toks=s.split(/\s+/).filter(Boolean); let i=0; while(i<nt.length && toks[0] && norm(toks[0])===nt[i]){ toks.shift(); i++ } s=toks.join(' ').trim()||s } const stops=new Set(['demonstration','conversation','talk','introduction','intro','performance','screentalk','screen','lecture','panel','qa','q&a','with','presented','presentedby','hosted','hostedby','in']); let toks=s.split(/\s+/); while(toks.length && stops.has(norm(toks[0]).replace(/\s+/g,''))) toks.shift(); s=toks.join(' ').trim(); s=s.replace(/\s*,\s*(?:19|20)\d{2}\s*,\s*\d{1,3}\s*m(?:in)?[\s\S]*$/i,'').trim(); s=s.replace(/\s*[,–—-]\s*(?:UK|USA|US|France|Italy|Iran|India|Canada)(?:\s*[,–—-].*)?$/i,'').trim(); s=s.replace(/^(?:and|with)\s+/i,'').trim(); return s||null } catch { return null } }
-          function nameFromInlineStats(text, title) { const re=/([A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+(?:\s+and\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+)?)\s*,\s*(?:[A-Za-z\s]+,\s*)?(?:19|20)\d{2}\s*,\s*\d{1,3}\s*m(?:in)?\b/; const m=String(text||'').match(re); return m?cleanName(m[1], document.querySelector('h1, .film-title, .liveeventtitle, .poster_name, .poster-name, .title')?.textContent):null }
-          function fromJSONLD() {
-            try {
-              const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
-              for (const s of scripts) {
-                const data = JSON.parse(s.textContent || 'null')
-                const arr = Array.isArray(data) ? data : [data]
-                for (const obj of arr) {
-                  const d = obj?.director
-                  if (!d) continue
-                  if (typeof d === 'string') return d
-                  if (Array.isArray(d)) {
-                    const name = d.map(x => x?.name || '').filter(Boolean).join(', ')
-                    if (name) return name
-                  } else if (typeof d === 'object') {
-                    const name = d?.name || ''
-                    if (name) return name
-                  }
-                }
-              }
-            } catch {}
-            return undefined
-          }
-          function fromLabels() {
-            const nodes = Array.from(document.querySelectorAll('.meta, .details, dl, ul, section, p, li, dt, dd, ul.movie-info, ul.movie-info li'))
-            for (const el of nodes) {
-              const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
-              if (/^director[s]?\b/i.test(tx) || /directed\s+by/i.test(tx)) {
-                const sib = el.nextElementSibling
-                if (sib) {
-                  const v = (sib.textContent || '').replace(/\s+/g, ' ').trim()
-                  if (v) return cleanName(v, document.querySelector('h1, .film-title, .liveeventtitle, .poster_name, .poster-name, .title')?.textContent)
-                }
-                const m = tx.match(/(?:director[s]?\s*:|directed\s+by)\s*([^;|\n]+)(?:[;|\n]|$)/i)
-                if (m && m[1]) return cleanName(m[1].trim(), document.querySelector('h1, .film-title, .liveeventtitle, .poster_name, .poster-name, .title')?.textContent)
+          function pickFromFilmInfo() {
+            const roots = [
+              document.querySelector('.jacrofilm-list-content .film-info'),
+              document.querySelector('.film-info'),
+            ].filter(Boolean)
+            for (const root of roots) {
+              const candidates = Array.from(root.querySelectorAll('span, p, li, div'))
+              for (const el of candidates) {
+                const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
+                const m = tx.match(/^Directed by\s+(.+?)\s*$/i) || tx.match(/\bDirected by\s+([^.;|\n]+)(?:[.;|\n]|$)/i)
+                if (m && m[1]) return m[1].trim()
               }
             }
-            const body = (document.body.textContent || '').replace(/\s+/g, ' ')
-            const m = body.match(/directed\s+by\s*([^.;|\n]+)(?:[.;|\n]|$)/i)
-            if (m && m[1]) return cleanName(m[1].trim(), document.querySelector('h1, .film-title, .liveeventtitle, .poster_name, .poster-name, .title')?.textContent)
-            const t = document.querySelector('h1, .film-title, .liveeventtitle, .poster_name, .poster-name, .title')?.textContent || ''
-            return nameFromInlineStats(body, t)
+            return undefined
           }
-          const t = document.querySelector('h1, .film-title, .liveeventtitle, .poster_name, .poster-name, .title')?.textContent || ''
-          let d = fromJSONLD() || fromLabels()
-          d = cleanName(d, t)
-          return d
+
+          // Only use the explicit film-info source for PCC. If absent, leave undefined.
+          const name = pickFromFilmInfo()
+          return name || undefined
         })
         if (director) dirMap.set(url, director)
       } catch {}

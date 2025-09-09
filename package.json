@@ -21,6 +21,7 @@
     "preview:ica": "node scripts/preview-ica-summary.mjs",
     "preview:pcc": "node scripts/preview-princecharles.mjs",
     "aggregate:pcc": "node scripts/aggregate-pcc-only.mjs",
+    "aggregate:pcc:db": "node scripts/aggregate-pcc-only.mjs && node scripts/db-seed.mjs && node scripts/db-prune.mjs",
     "aggregate:genesis": "node scripts/aggregate-genesis-only.mjs",
     "aggregate:genesis:db": "node scripts/aggregate-genesis-only.mjs && node scripts/db-seed.mjs && node scripts/db-prune.mjs",
     "aggregate:garden": "node scripts/aggregate-garden-only.mjs",

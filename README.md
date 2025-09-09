@@ -42,7 +42,7 @@ curl 'http://localhost:3000/api/listings?decades=1970s,1980s&genres=Horror&debug
 - Scrapers (Playwright): `scripts/cinemas/*.mjs`
   - Sites: BFI Southbank, Prince Charles, ICA, The Castle, The Garden, Genesis, Close‑Up, Barbican.
   - Parse titles/times in Europe/London, stabilize IDs, capture `bookingUrl`/`filmUrl`, and extract `websiteYear` and (for matching only) a candidate `director` from detail pages.
-  - Detail pages: by default, visit all unique film pages to read sidebar info (year + director). You can cap this for speed with env vars like `BARBICAN_MAX_DETAIL_PAGES`, `PCC_MAX_DETAIL_PAGES`, etc.
+  - Detail pages: visit all unique film pages to read sidebar info (year + director).
 - Enrichment: `scripts/enrich.mjs`
   - TMDb: normalized title + year/director matching; fills `releaseDate`, `genres`, `synopsis`, `director`, `imdbId`.
   - OMDb (optional): adds Rotten Tomatoes % (`rottenTomatoesPct`).
@@ -66,9 +66,7 @@ Add to `.env.local` (see `.env.example` for the full list and defaults):
 - `HIDE_BFI=true` and/or `NEXT_PUBLIC_HIDE_BFI=true` to hide BFI in API/UI
 - `LETTERBOXD_ENABLE=false|true` (default off), `LETTERBOXD_USE_PLAYWRIGHT=false|true`, `LETTERBOXD_STEALTH=false|true`
 - `DATABASE_URL=postgres://user:pass@host:5432/db` and optional `LISTINGS_TABLE`
-  
-Optional scrape limits (per cinema; defaults are “no cap”):
-- `BFI_MAX_DETAIL_PAGES`, `PCC_MAX_DETAIL_PAGES`, `ICA_MAX_DETAIL_PAGES`, `CASTLE_MAX_DETAIL_PAGES`, `GARDEN_MAX_DETAIL_PAGES`, `GENESIS_MAX_DETAIL_PAGES`, `BARBICAN_MAX_DETAIL_PAGES`
+
 
 ## Scripts
 - App: `npm run dev`, `npm run build`, `npm run start`
