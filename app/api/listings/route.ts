@@ -6,6 +6,8 @@ import { getAllListings } from '@/lib/db'
 
 // Ensure Node.js runtime so the 'pg' driver works
 export const runtime = 'nodejs'
+// This route parses `request.url`; mark dynamic to avoid static render attempts
+export const dynamic = 'force-dynamic'
 
 export async function GET(req: NextRequest) {
   try {

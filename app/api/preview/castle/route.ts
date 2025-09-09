@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import type { Screening } from '../../../../types'
 // Import the scraper directly for a live preview
 // Note: this uses Playwright and is intended for local development.
 // Relative path from app/api/preview/castle/route.ts to scripts/cinemas/castle.mjs
@@ -10,7 +11,7 @@ export const dynamic = 'force-dynamic'
 
 export async function GET() {
   try {
-    const items = await fetchCastle()
+    const items: Screening[] = await fetchCastle()
     // Keep payload concise while still useful
     const slim = items.map((i) => ({
       id: i.id,
@@ -25,4 +26,3 @@ export async function GET() {
     return NextResponse.json({ error: 'Failed to fetch Castle listings' }, { status: 500 })
   }
 }
-

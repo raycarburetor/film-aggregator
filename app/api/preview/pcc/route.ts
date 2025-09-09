@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server'
+import type { Screening } from '../../../../types'
 // Import the scraper directly for a live preview
 // Note: this uses Playwright and is intended for local development.
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -9,14 +10,14 @@ export const dynamic = 'force-dynamic'
 
 export async function GET() {
   try {
-    const items = await fetchPrinceCharles()
+    const items: Screening[] = await fetchPrinceCharles()
     const slim = items.map((i) => ({
       id: i.id,
       filmTitle: i.filmTitle,
       cinema: i.cinema,
       screeningStart: i.screeningStart,
       bookingUrl: i.bookingUrl,
-      websiteYear: (i as any).websiteYear,
+      websiteYear: i.websiteYear,
     }))
     return NextResponse.json({ count: slim.length, items: slim })
   } catch (err) {
