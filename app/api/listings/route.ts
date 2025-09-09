@@ -44,7 +44,12 @@ export async function GET(req: NextRequest) {
     if (hideBFI) items = items.filter(i => i.cinema !== 'bfi')
     items = filterByTimeWindow(items, window)
 
-    if (q) items = items.filter(i => i.filmTitle.toLowerCase().includes(q))
+    if (q) items = items.filter(i => {
+      const byTitle = i.filmTitle.toLowerCase().includes(q)
+      const dir = (i as any).director
+      const byDirector = typeof dir === 'string' ? dir.toLowerCase().includes(q) : false
+      return byTitle || byDirector
+    })
     if (cinemas.length) items = items.filter(i => cinemas.includes(i.cinema))
     if (genres.length) items = items.filter(i => (i.genres || []).some(g => genres.includes(g)))
     if (minYear || maxYear) items = items.filter(i => {

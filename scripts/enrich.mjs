@@ -321,6 +321,48 @@ export function propagateByDirectorYear(items) {
   }
 }
 
+// After Letterboxd enrichment, propagate ratings between items that share the
+// same (director, releaseYear). Useful when only one listing received a
+// Letterboxd rating (e.g., found via search) but others didn’t.
+export function propagateRatingsByDirectorYear(items) {
+  if (!Array.isArray(items) || !items.length) return
+  const norm = (s) => String(s || '')
+    .normalize('NFD')
+    .replace(/\p{Diacritic}+/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+  const yearOf = (it) => {
+    if (it?.releaseDate && /^\d{4}/.test(it.releaseDate)) return Number(it.releaseDate.slice(0,4))
+    if (typeof it?.websiteYear === 'number') return it.websiteYear
+    return undefined
+  }
+  const keyOf = (it) => {
+    const dir = norm(it?.director)
+    const y = yearOf(it)
+    if (!dir || !y) return null
+    return dir + '|' + y
+  }
+  const groups = new Map()
+  for (const it of items) {
+    const k = keyOf(it)
+    if (!k) continue
+    if (!groups.has(k)) groups.set(k, [])
+    groups.get(k).push(it)
+  }
+  for (const [k, arr] of groups) {
+    const withRating = arr.filter(i => typeof i.letterboxdRating === 'number' && Number.isFinite(i.letterboxdRating))
+    const without = arr.filter(i => !(typeof i.letterboxdRating === 'number' && Number.isFinite(i.letterboxdRating)))
+    if (!withRating.length || !without.length) continue
+    // Prefer a source that also has a TMDb id for reliability; otherwise first available
+    const src = withRating.find(i => i.tmdbId) || withRating[0]
+    const val = src.letterboxdRating
+    for (const tgt of without) {
+      try { tgt.letterboxdRating = val } catch {}
+    }
+  }
+}
+
 export async function enrichWithOMDb(items, omdbKey) {
   if (!omdbKey) return
   for (const it of items) {
@@ -482,6 +524,7 @@ export async function enrichWithLetterboxd(items, options = {}) {
         } catch {}
       }
       await saveCache(cache)
+      try { propagateRatingsByDirectorYear(items) } catch {}
       return
     }
 
@@ -574,6 +617,7 @@ export async function enrichWithLetterboxd(items, options = {}) {
       } catch {}
     }
     await saveCache(cache)
+    try { propagateRatingsByDirectorYear(items) } catch {}
   } catch (e) {
     console.warn('[LB] Letterboxd enrichment failed:', e?.message || e)
   }

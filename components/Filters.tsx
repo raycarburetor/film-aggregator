@@ -116,7 +116,7 @@ export default function Filters({ genres }: { genres: string[] }) {
   return (
     <aside className="md:pl-4">
       <div className="p-3 md:p-4 space-y-4">
-        <input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search for a film..." className="w-full rounded-lg border px-3 py-2" />
+        <input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search by film or director" className="w-full rounded-lg border px-3 py-2" />
         <div>
           <div className="text-sm font-normal mb-2 flex items-center justify-between">
             <span>Cinemas</span>
