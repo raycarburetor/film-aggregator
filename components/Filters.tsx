@@ -40,12 +40,15 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
     return Number.isFinite(n) ? n : null
   }, [sp])
   const [minLb, setMinLb] = useState<number | null>(initialMinLb)
+  // Letterboxd username (client-only watchlist filter)
+  const [lbUser, setLbUser] = useState<string>((sp.get('lbUser') || '').trim())
   const initialRef = useRef({
     q: sp.get('q') ?? '',
     cinemas: (sp.get('cinemas') || '').split(',').filter(Boolean),
     genre: initialGenre,
     decades: initialDecades,
     minLb: initialMinLb,
+    lbUser: (sp.get('lbUser') || '').trim(),
   })
 
   function apply() {
@@ -56,21 +59,29 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
     if (selectedGenre) params.set('genres', selectedGenre); else params.delete('genres')
     if (selectedDecades.length) params.set('decades', selectedDecades.join(',')); else params.delete('decades')
     if (minLb != null) params.set('minLb', String(minLb)); else params.delete('minLb')
+    // Letterboxd username filter
+    if (lbUser.trim()) params.set('lbUser', lbUser.trim().toLowerCase()); else params.delete('lbUser')
     // Also clear legacy year params if present
     params.delete('minYear'); params.delete('maxYear')
     router.push(`/?${params.toString()}`)
   }
+  // Auto-apply on desktop (non-deferred)
   useEffect(() => {
-    if (deferApply) {
-      const dirty = isDirty()
-      const anySel = hasAnySelected()
-      onDirtyChange && onDirtyChange(dirty)
-      onAnySelectedChange && onAnySelectedChange(anySel)
-      return
-    }
-    const t = setTimeout(apply, 200); return () => clearTimeout(t)
+    if (deferApply) return
+    const t = setTimeout(apply, 200)
+    return () => clearTimeout(t)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [q, selectedCinemas, selectedGenre, selectedDecades, minLb, deferApply])
+
+  // Dirty/selected indicators on mobile (deferred), including Letterboxd username changes
+  useEffect(() => {
+    if (!deferApply) return
+    const dirty = isDirty()
+    const anySel = hasAnySelected()
+    onDirtyChange && onDirtyChange(dirty)
+    onAnySelectedChange && onAnySelectedChange(anySel)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [q, selectedCinemas, selectedGenre, selectedDecades, minLb, lbUser, deferApply])
 
   // When using deferred mode, sync internal state to URL after navigation (e.g., after Save/Clear)
   useEffect(() => {
@@ -81,16 +92,18 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
     const nextDecades = (sp.get('decades') || '').split(',').filter(Boolean)
     const nextMinLbStr = sp.get('minLb')
     const nextMinLb = nextMinLbStr != null && nextMinLbStr !== '' ? Number(nextMinLbStr) : null
+    const nextLbUser = (sp.get('lbUser') || '').trim()
 
     setQ(nextQ)
     setSelectedCinemas(nextCinemas)
     setSelectedGenre(nextGenre)
     setSelectedDecades(nextDecades)
     setMinLb(Number.isFinite(nextMinLb as any) ? (nextMinLb as number) : null)
+    setLbUser(nextLbUser)
 
-    initialRef.current = { q: nextQ, cinemas: nextCinemas, genre: nextGenre, decades: nextDecades, minLb: (Number.isFinite(nextMinLb as any) ? (nextMinLb as number) : null) }
+    initialRef.current = { q: nextQ, cinemas: nextCinemas, genre: nextGenre, decades: nextDecades, minLb: (Number.isFinite(nextMinLb as any) ? (nextMinLb as number) : null), lbUser: nextLbUser }
     onDirtyChange && onDirtyChange(false)
-    const nextAny = (nextCinemas.length > 0) || !!nextGenre || (nextDecades.length > 0) || (nextMinLb != null)
+    const nextAny = (nextCinemas.length > 0) || !!nextGenre || (nextDecades.length > 0) || (nextMinLb != null) || (!!nextLbUser)
     onAnySelectedChange && onAnySelectedChange(nextAny)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sp, deferApply])
@@ -101,7 +114,8 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
       (selectedCinemas.length > 0) ||
       (!!selectedGenre) ||
       (selectedDecades.length > 0) ||
-      (minLb != null)
+      (minLb != null) ||
+      (!!lbUser.trim())
     )
   }
 
@@ -112,7 +126,8 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
       (selectedGenre === init.genre) &&
       (minLb === init.minLb) &&
       (selectedDecades.join(',') === init.decades.join(',')) &&
-      (selectedCinemas.join(',') === init.cinemas.join(','))
+      (selectedCinemas.join(',') === init.cinemas.join(',')) &&
+      (lbUser.trim() === (init.lbUser || '').trim())
     return !same
   }
 
@@ -120,6 +135,11 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
     // Clear all filters AND search query; preserve time window
     const params = new URLSearchParams(sp.toString())
     params.delete('q')
+    const u = (params.get('lbUser') || '').toLowerCase()
+    if (u) {
+      try { sessionStorage.removeItem(`lb_watchlist_${u}`) } catch {}
+    }
+    params.delete('lbUser')
     params.delete('cinemas'); params.delete('genres'); params.delete('decades'); params.delete('minLb'); params.delete('minYear'); params.delete('maxYear')
     router.push(`/?${params.toString()}`)
   }
@@ -206,6 +226,32 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
             autoCorrect="off"
           />
         )}
+        <div>
+          <div className="text-sm font-normal mb-2 flex items-center justify-between">
+            <span>Letterboxd Username</span>
+            {lbUser.trim() ? (
+              <button
+                type="button"
+                className="text-xs text-red-600 hover:underline"
+                onClick={() => { setLbUser(''); /* apply immediately to remove */ const p = new URLSearchParams(sp.toString()); p.delete('lbUser'); try { sessionStorage.removeItem(`lb_watchlist_${(sp.get('lbUser')||'').toLowerCase()}`) } catch {}; router.push(`/?${p.toString()}`) }}
+              >clear</button>
+            ) : null}
+          </div>
+          <div className="flex gap-2">
+            <input
+              type="text"
+              value={lbUser}
+              onChange={e=>setLbUser(e.target.value)}
+              onKeyDown={e=>{ if (e.key === 'Enter') apply() }}
+              placeholder="e.g. janedoe"
+              className="flex-1 rounded-lg border px-3 py-2"
+              autoComplete="off"
+              spellCheck={false}
+              autoCorrect="off"
+            />
+            <button type="button" className="px-3 py-2 border rounded hidden md:inline-block" onClick={apply}>Apply</button>
+          </div>
+        </div>
         <div>
           <div className="text-sm font-normal mb-2 flex items-center justify-between">
             <span>Cinemas</span>
