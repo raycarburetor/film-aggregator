@@ -228,8 +228,8 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
         )}
         <div>
           <div className="text-sm font-normal mb-2 flex items-center justify-between">
-            <span>Letterboxd Username</span>
-            {lbUser.trim() ? (
+            <span>Letterboxd Watchlist</span>
+            {(lbUser.trim() || (sp.get('lbUser') || '').trim()) ? (
               <button
                 type="button"
                 className="text-xs text-red-600 hover:underline"
@@ -237,29 +237,55 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
               >clear</button>
             ) : null}
           </div>
-          <div className="flex gap-2">
+          <div className="relative">
             <input
               type="text"
               value={lbUser}
               onChange={e=>setLbUser(e.target.value)}
-              onKeyDown={e=>{ if (e.key === 'Enter') apply() }}
-              placeholder="e.g. janedoe"
-              className="flex-1 rounded-lg border px-3 py-2"
+              onKeyDown={e=>{ if (e.key === 'Enter') { if (!deferApply) apply(); else e.preventDefault(); } }}
+              placeholder="Enter username"
+              className="w-full rounded-lg border pl-3 pr-10 py-2"
               autoComplete="off"
               spellCheck={false}
               autoCorrect="off"
             />
-            <button type="button" className="px-3 py-2 border rounded hidden md:inline-block" onClick={apply}>Apply</button>
+            <button
+              type="button"
+              aria-label="Apply Letterboxd watchlist filter"
+              className="hidden md:inline-flex items-center justify-center text-white absolute right-2 top-1/2 -translate-y-1/2"
+              onClick={apply}
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="currentColor"
+                strokeWidth="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <line x1="16.5" y1="16.5" x2="21" y2="21" />
+              </svg>
+            </button>
           </div>
         </div>
         <div>
           <div className="text-sm font-normal mb-2 flex items-center justify-between">
             <span>Cinemas</span>
-            {selectedCinemas.length > 0 ? (
+            {(selectedCinemas.length > 0 || (sp.get('cinemas')||'').trim()) ? (
               <button
                 type="button"
                 className="text-xs text-red-600 hover:underline"
-                onClick={() => setSelectedCinemas([])}
+                onClick={() => {
+                  setSelectedCinemas([])
+                  const params = new URLSearchParams(sp.toString())
+                  params.delete('cinemas')
+                  router.push(`/?${params.toString()}`)
+                }}
               >clear</button>
             ) : null}
           </div>
@@ -288,11 +314,16 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
         <div>
           <div className="text-sm font-normal mb-2 flex items-center justify-between">
             <span>Minimum Letterboxd Rating</span>
-            {minLb != null ? (
+            {(minLb != null || (sp.get('minLb')||'').trim()) ? (
               <button
                 type="button"
                 className="text-xs text-red-600 hover:underline"
-                onClick={() => setMinLb(null)}
+                onClick={() => {
+                  setMinLb(null)
+                  const params = new URLSearchParams(sp.toString())
+                  params.delete('minLb')
+                  router.push(`/?${params.toString()}`)
+                }}
               >clear</button>
             ) : null}
           </div>
@@ -301,11 +332,16 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
         <div>
           <div className="text-sm font-normal mb-2 flex items-center justify-between">
             <span>Decades</span>
-            {selectedDecades.length > 0 ? (
+            {(selectedDecades.length > 0 || (sp.get('decades')||'').trim()) ? (
               <button
                 type="button"
                 className="text-xs text-red-600 hover:underline"
-                onClick={()=> setSelectedDecades([])}
+                onClick={()=> {
+                  setSelectedDecades([])
+                  const params = new URLSearchParams(sp.toString())
+                  params.delete('decades')
+                  router.push(`/?${params.toString()}`)
+                }}
               >clear</button>
             ) : null}
           </div>
@@ -329,11 +365,16 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
         <div>
           <div className="text-sm font-normal mb-2 flex items-center justify-between">
             <span>Genres</span>
-            {selectedGenre ? (
+            {(!!selectedGenre || (sp.get('genres')||'').trim()) ? (
               <button
                 type="button"
                 className="text-xs text-red-600 hover:underline"
-                onClick={()=> setSelectedGenre('')}
+                onClick={()=> {
+                  setSelectedGenre('')
+                  const params = new URLSearchParams(sp.toString())
+                  params.delete('genres')
+                  router.push(`/?${params.toString()}`)
+                }}
               >clear</button>
             ) : null}
           </div>

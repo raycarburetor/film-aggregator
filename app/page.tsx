@@ -1,5 +1,6 @@
 import Filters from '@/components/Filters'
 import ListingsTable from '@/components/ListingsTable'
+import WatchlistFilterClient from '@/components/WatchlistFilterClient'
 import TimeTabs from '@/components/TimeTabs'
 import { applyFilters, filterParamsFromSearchParams, getAllGenres, loadAllListingsCached } from '@/lib/listings'
 import MobileSearch from '@/components/MobileSearch'
@@ -22,7 +23,7 @@ export default async function Page({ searchParams }: { searchParams: Record<stri
         <MobileFiltersPanel genres={allGenres} />
       </div>
       <div className="grid gap-4 md:grid-cols-[1fr,280px]">
-        <ListingsTable items={items} />
+        <WatchlistFilterClient items={items} />
         <div className="hidden md:block">
           <Filters genres={allGenres} />
         </div>

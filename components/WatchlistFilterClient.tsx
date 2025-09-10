@@ -100,7 +100,7 @@ export default function WatchlistFilterClient({ items }: { items: Screening[] })
                 <AnimatedEllipsis />
               </span>
             ) : error ? (
-              <span className="text-red-500">{error}</span>
+              <span className="text-white">{error}</span>
             ) : ids ? (
               (() => {
                 const win = (sp.get('window') || 'week').toLowerCase()

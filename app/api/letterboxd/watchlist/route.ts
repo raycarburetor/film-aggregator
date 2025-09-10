@@ -182,7 +182,7 @@ export async function GET(req: NextRequest) {
     const baseRes = await fetchText(`https://letterboxd.com/${encodeURIComponent(username)}/watchlist/`)
     if (!baseRes.ok) {
       // Treat 404/403 as not found/private
-      return NextResponse.json({ error: 'Watchlist not found or is private' }, { status: 404 })
+      return NextResponse.json({ error: 'User not found or is private.' }, { status: 404 })
     }
     // Empty
     return NextResponse.json({ ids: [] })

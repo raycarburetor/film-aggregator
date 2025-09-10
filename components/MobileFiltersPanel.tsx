@@ -6,7 +6,7 @@ import Filters, { FiltersHandle } from '@/components/Filters'
 
 function hasAnyAppliedFilters(sp: { get(name: string): string | null }): boolean {
   return [
-    'cinemas', 'genres', 'decades', 'minLb', 'minYear', 'maxYear'
+    'cinemas', 'genres', 'decades', 'minLb', 'minYear', 'maxYear', 'lbUser'
   ].some(k => (sp.get(k) || '').trim().length > 0)
 }
 
@@ -14,13 +14,15 @@ export default function MobileFiltersPanel({ genres }: { genres: string[] }) {
   const sp = useSearchParams()
   const [dirty, setDirty] = useState(false)
   const [anySelected, setAnySelected] = useState(false)
-  const appliedAny = useMemo(() => hasAnyAppliedFilters(sp), [sp])
+  // Recompute on every navigation; use the string signature to avoid stale memoization
+  const appliedAny = useMemo(() => hasAnyAppliedFilters(sp), [sp.toString()])
   const filtersRef = useRef<FiltersHandle>(null)
   const detailsRef = useRef<HTMLDetailsElement>(null)
 
-  // Show bar when there are unsaved changes, or when applied filters exist (for Clear)
-  const showSave = dirty && anySelected
-  const showClear = appliedAny && !showSave
+  // Show bar when there are unsaved changes (Apply),
+  // otherwise show Clear only when filters are applied and nothing is dirty.
+  const showSave = dirty
+  const showClear = appliedAny && !dirty
   const showBar = showSave || showClear
 
   function onSave() {
@@ -66,9 +68,9 @@ export default function MobileFiltersPanel({ genres }: { genres: string[] }) {
             type="button"
             onClick={showSave ? onSave : onClear}
             className="tappable hit-44 px-4 py-2 bg-[rgb(var(--hover))] text-white shadow-md"
-            aria-label={showSave ? 'Apply filters' : 'Clear filters'}
+            aria-label={showSave ? 'Apply Filters' : 'Clear Filters'}
           >
-            {showSave ? 'Apply filters' : 'Clear filters'}
+            {showSave ? 'Apply Filters' : 'Clear Filters'}
           </button>
         </div>
       )}
