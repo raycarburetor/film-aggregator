@@ -1,11 +1,11 @@
 # .github/workflows/aggregate-db.yml
 name: Aggregate listings daily
 
-on:
-  schedule:
+# on:
+  # schedule:
     # 10:00 UTC+1 = 09:00 UTC
-    - cron: "0 9 * * *"
-  workflow_dispatch:  # allow manual runs too
+    # - cron: "0 9 * * *"
+  # workflow_dispatch:  # allow manual runs too
 
 jobs:
   aggregate:
