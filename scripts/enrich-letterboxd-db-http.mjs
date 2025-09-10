@@ -259,9 +259,19 @@ async function main() {
   const force = argHas('--force')
   const limit = argNum('--limit', undefined)
 
+  // Detect SSL need and relax verification for common hosted DBs with self-signed chains
+  const needsSsl = /sslmode=require/i.test(cs) || /[?&]ssl=true/i.test(cs) || /(supabase|neon|vercel)/i.test(cs)
+  let connectionString = cs
+  try {
+    const u = new URL(cs)
+    if (u.searchParams.get('ssl') === 'true') {
+      u.searchParams.delete('ssl')
+      connectionString = u.toString()
+    }
+  } catch {}
   const pool = new pg.Pool({
-    connectionString: cs,
-    ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : undefined,
+    connectionString,
+    ssl: needsSsl || process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : undefined,
     max: 5,
   })
   const client = await pool.connect()

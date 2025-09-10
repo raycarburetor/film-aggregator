@@ -25,9 +25,18 @@ async function main() {
   const table = sanitizeTableName(process.env.LISTINGS_TABLE)
   const force = argHas('--force')
 
+  const needsSsl = /sslmode=require/i.test(cs) || /[?&]ssl=true/i.test(cs) || /(supabase|neon|vercel)/i.test(cs)
+  let connectionString = cs
+  try {
+    const u = new URL(cs)
+    if (u.searchParams.get('ssl') === 'true') {
+      u.searchParams.delete('ssl')
+      connectionString = u.toString()
+    }
+  } catch {}
   const pool = new pg.Pool({
-    connectionString: cs,
-    ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : undefined,
+    connectionString,
+    ssl: needsSsl || process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : undefined,
     max: 5,
   })
   const client = await pool.connect()
@@ -99,4 +108,3 @@ main().catch((e) => {
   console.error('[LB][DB] failed:', e)
   process.exitCode = 1
 })
-

@@ -20,9 +20,20 @@ async function main() {
   if (!cs) throw new Error('DATABASE_URL is not set in environment')
   const table = sanitizeTableName(process.env.LISTINGS_TABLE)
 
+  // Match db-seed SSL behavior: enable SSL when requested/hosted and
+  // relax cert verification to avoid SELF_SIGNED_CERT_IN_CHAIN locally.
+  const needsSsl = /sslmode=require/i.test(cs) || /[?&]ssl=true/i.test(cs) || /(supabase|neon|vercel)/i.test(cs)
+  let connectionString = cs
+  try {
+    const u = new URL(cs)
+    if (u.searchParams.get('ssl') === 'true') {
+      u.searchParams.delete('ssl')
+      connectionString = u.toString()
+    }
+  } catch {}
   const pool = new pg.Pool({
-    connectionString: cs,
-    ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : undefined,
+    connectionString,
+    ssl: needsSsl || process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : undefined,
     max: 5,
   })
 
@@ -55,4 +66,3 @@ main().catch((e) => {
   console.error('[db-prune] failed:', e)
   process.exitCode = 1
 })
-
