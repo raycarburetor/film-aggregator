@@ -11,20 +11,29 @@
   --stroke: 255 255 255; /* white stroke */
   --hover: 190 10 50;  /* darker crimson */
   --gold: 212 175 55;  /* gold (#D4AF37) */
+  /* Hint browsers we’re dark; improves controls/scrollbars on mobile */
+  color-scheme: dark;
 }
 
 /* Base dark theme */
 @layer base {
+  html { scroll-behavior: smooth; }
   html, body {
     background: rgb(var(--bg));
     color: rgb(var(--fg));
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
+    -webkit-text-size-adjust: 100%; /* prevent iOS text auto-zoom */
+    /* Reserve gutter to avoid layout shift when scrollbars appear/disappear */
+    scrollbar-gutter: stable both-edges;
   }
   /* Square corners globally */
   * { border-radius: 0 !important; }
   /* Links inherit context color */
   ::selection { background: rgb(var(--stroke) / 0.35); color: rgb(var(--fg)); }
+
+  /* Remove grey iOS tap highlight on common interactive elements */
+  a, button, summary, input, select, textarea { -webkit-tap-highlight-color: transparent; }
 
   /* Form elements */
   input, select, textarea {
@@ -73,6 +82,26 @@
 
 /* Accent-on-hover behavior for interactive elements */
 @layer components {
+  /* Ensure table-fixed columns include padding in width calc to avoid overflow */
+  table.table-fixed th, table.table-fixed td { box-sizing: border-box; }
+  /* Subtle mobile tap feedback + better touch behavior */
+  .tappable { transition: transform 120ms ease, background-color 120ms ease, color 120ms ease, border-color 120ms ease; touch-action: manipulation; }
+  @media (hover: none) and (pointer: coarse) {
+    .tappable:active { transform: scale(0.98); }
+    /* Prevent mobile tap-scale on top time tabs to avoid layout jiggle */
+    .tab-btn:active { transform: none !important; }
+    /* Suppress focus outlines on tap for selected rows/buttons to avoid white box on red */
+    .no-focus-outline:focus,
+    .no-focus-outline:focus-visible,
+    tr.selected-row *:focus,
+    tr.selected-row *:focus-visible { outline: none !important; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .tappable, summary.filters-summary .filters-arrow { transition: none !important; }
+  }
+  /* Minimum hit target utility (use sparingly) */
+  .hit-44 { min-height: 44px; }
+
   /* removed column highlight utility */
   /* Selected row: force full white text and crimson bg */
   .selected-row,
@@ -107,12 +136,38 @@
     color: rgb(var(--fg)) !important;
     border: 0 !important;
   }
-  .chip-btn:hover,
   .chip-btn.is-selected {
     background-color: rgb(var(--hover)) !important;
     color: rgb(var(--fg)) !important;
     border-color: transparent !important; /* hide border when active */
   }
+  /* Limit chip hover highlight to pointer devices to avoid sticky red on touch */
+  @media (hover: hover) and (pointer: fine) {
+    .chip-btn:hover {
+      background-color: rgb(var(--hover)) !important;
+      color: rgb(var(--fg)) !important;
+      border-color: transparent !important;
+    }
+  }
+
+  /* Hide default summary marker for custom-styled Filters summary */
+  summary.filters-summary::-webkit-details-marker { display: none; }
+  summary.filters-summary::marker { content: ''; }
+
+  /* Filters arrow direction: right when collapsed, down when expanded */
+  summary.filters-summary .filters-arrow {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: transform 150ms ease;
+  }
+  details[open] > summary.filters-summary .filters-arrow {
+    transform: rotate(0deg);
+  }
+
+  /* Applied filters: only the border turns red */
+  details.filters-details--applied { border-color: rgb(var(--hover)) !important; }
+
+  /* Removed applied state styles; only arrow changes color when filters are set */
 
   /* Cinema filter checkboxes: custom style, no tick when selected */
   .cinema-checkbox {
@@ -126,9 +181,12 @@
     display: inline-grid;
     place-content: center;
   }
-  .cinema-checkbox:hover {
-    border-color: rgb(var(--hover));
-    background-color: rgb(var(--hover));
+  /* Limit hover styling to non-touch devices to avoid sticky red after tap */
+  @media (hover: hover) and (pointer: fine) {
+    .cinema-checkbox:hover {
+      border-color: rgb(var(--hover));
+      background-color: rgb(var(--hover));
+    }
   }
   .cinema-checkbox:checked {
     background-color: rgb(var(--hover));

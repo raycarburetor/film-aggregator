@@ -19,6 +19,9 @@ jobs:
 
       - run: npm ci
 
+      - name: Install Playwright browsers (Chromium)
+        run: npx playwright install --with-deps chromium
+
       - name: Run aggregate and update DB
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}

@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useMemo, useState } from 'react'
+import { forwardRef, useEffect, useImperativeHandle, useMemo, useRef, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 
 export const CINEMAS = [
@@ -15,7 +15,14 @@ export const CINEMAS = [
   { key: 'cinelumiere', label: 'Ciné Lumière' },
 ] as const
 
-export default function Filters({ genres, hideSearch = false }: { genres: string[]; hideSearch?: boolean }) {
+export type FiltersHandle = {
+  apply: () => void
+  clearFilters: () => void
+  isDirty: () => boolean
+  hasAnySelected: () => boolean
+}
+
+export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolean; deferApply?: boolean; onDirtyChange?: (dirty: boolean) => void; onAnySelectedChange?: (hasAny: boolean) => void }>(function Filters({ genres, hideSearch = false, deferApply = false, onDirtyChange, onAnySelectedChange }, ref) {
   const router = useRouter()
   const sp = useSearchParams()
   const [q, setQ] = useState(sp.get('q') ?? '')
@@ -33,6 +40,13 @@ export default function Filters({ genres, hideSearch = false }: { genres: string
     return Number.isFinite(n) ? n : null
   }, [sp])
   const [minLb, setMinLb] = useState<number | null>(initialMinLb)
+  const initialRef = useRef({
+    q: sp.get('q') ?? '',
+    cinemas: (sp.get('cinemas') || '').split(',').filter(Boolean),
+    genre: initialGenre,
+    decades: initialDecades,
+    minLb: initialMinLb,
+  })
 
   function apply() {
     // Start from existing params so we preserve the time window selected in TimeTabs
@@ -47,9 +61,70 @@ export default function Filters({ genres, hideSearch = false }: { genres: string
     router.push(`/?${params.toString()}`)
   }
   useEffect(() => {
+    if (deferApply) {
+      const dirty = isDirty()
+      const anySel = hasAnySelected()
+      onDirtyChange && onDirtyChange(dirty)
+      onAnySelectedChange && onAnySelectedChange(anySel)
+      return
+    }
     const t = setTimeout(apply, 200); return () => clearTimeout(t)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, selectedCinemas, selectedGenre, selectedDecades, minLb])
+  }, [q, selectedCinemas, selectedGenre, selectedDecades, minLb, deferApply])
+
+  // When using deferred mode, sync internal state to URL after navigation (e.g., after Save/Clear)
+  useEffect(() => {
+    if (!deferApply) return
+    const nextQ = sp.get('q') ?? ''
+    const nextCinemas = (sp.get('cinemas') || '').split(',').filter(Boolean)
+    const nextGenre = (sp.get('genres') || '').split(',').filter(Boolean)[0] || ''
+    const nextDecades = (sp.get('decades') || '').split(',').filter(Boolean)
+    const nextMinLbStr = sp.get('minLb')
+    const nextMinLb = nextMinLbStr != null && nextMinLbStr !== '' ? Number(nextMinLbStr) : null
+
+    setQ(nextQ)
+    setSelectedCinemas(nextCinemas)
+    setSelectedGenre(nextGenre)
+    setSelectedDecades(nextDecades)
+    setMinLb(Number.isFinite(nextMinLb as any) ? (nextMinLb as number) : null)
+
+    initialRef.current = { q: nextQ, cinemas: nextCinemas, genre: nextGenre, decades: nextDecades, minLb: (Number.isFinite(nextMinLb as any) ? (nextMinLb as number) : null) }
+    onDirtyChange && onDirtyChange(false)
+    const nextAny = (nextCinemas.length > 0) || !!nextGenre || (nextDecades.length > 0) || (nextMinLb != null)
+    onAnySelectedChange && onAnySelectedChange(nextAny)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sp, deferApply])
+
+  function hasAnySelected(): boolean {
+    // Filters only (exclude q)
+    return (
+      (selectedCinemas.length > 0) ||
+      (!!selectedGenre) ||
+      (selectedDecades.length > 0) ||
+      (minLb != null)
+    )
+  }
+
+  function isDirty(): boolean {
+    const init = initialRef.current
+    // Dirty should reflect FILTERS only (exclude q)
+    const same =
+      (selectedGenre === init.genre) &&
+      (minLb === init.minLb) &&
+      (selectedDecades.join(',') === init.decades.join(',')) &&
+      (selectedCinemas.join(',') === init.cinemas.join(','))
+    return !same
+  }
+
+  function clearFilters() {
+    // Clear all filters AND search query; preserve time window
+    const params = new URLSearchParams(sp.toString())
+    params.delete('q')
+    params.delete('cinemas'); params.delete('genres'); params.delete('decades'); params.delete('minLb'); params.delete('minYear'); params.delete('maxYear')
+    router.push(`/?${params.toString()}`)
+  }
+
+  useImperativeHandle(ref, () => ({ apply, clearFilters, isDirty, hasAnySelected }))
 
   function Star({ filledFrac = 0, size = 22 }: { filledFrac?: number; size?: number }) {
     // Clamp 0..1
@@ -119,10 +194,16 @@ export default function Filters({ genres, hideSearch = false }: { genres: string
       <div className="p-3 md:p-4 space-y-4">
         {!hideSearch && (
           <input
+            type="search"
             value={q}
             onChange={e=>setQ(e.target.value)}
             placeholder="Search by film or director"
             className="w-full rounded-lg border px-3 py-2"
+            inputMode="search"
+            enterKeyHint="search"
+            autoComplete="off"
+            spellCheck={false}
+            autoCorrect="off"
           />
         )}
         <div>
@@ -145,10 +226,16 @@ export default function Filters({ genres, hideSearch = false }: { genres: string
                 return norm(a.label).localeCompare(norm(b.label))
               })
               .map(c=> (
-              <label key={c.key} className="inline-flex items-center gap-2">
-                <input type="checkbox" className="cinema-checkbox" checked={selectedCinemas.includes(c.key)} onChange={()=>toggle(selectedCinemas,c.key,setSelectedCinemas)} />
-                {c.label}
-              </label>
+              <div key={c.key} className="inline-flex items-center gap-2">
+                <input
+                  id={`cin-${c.key}`}
+                  type="checkbox"
+                  className="cinema-checkbox"
+                  checked={selectedCinemas.includes(c.key)}
+                  onChange={()=>toggle(selectedCinemas,c.key,setSelectedCinemas)}
+                />
+                <span className="select-none">{c.label}</span>
+              </div>
             ))}
           </div>
         </div>
@@ -188,7 +275,7 @@ export default function Filters({ genres, hideSearch = false }: { genres: string
                 key={d}
                 onClick={() => setSelectedDecades(prev => prev.includes(d) ? prev.filter(x => x !== d) : [...prev, d])}
                 aria-pressed={selectedDecades.includes(d)}
-                className={`chip-btn px-3 py-1 text-sm ${selectedDecades.includes(d) ? 'bg-[rgb(var(--hover))] text-white is-selected':''}`}
+                className={`chip-btn tappable px-3 py-1 text-sm ${selectedDecades.includes(d) ? 'bg-[rgb(var(--hover))] text-white is-selected':''}`}
               >{d}</button>
             ))}
           </div>
@@ -212,7 +299,7 @@ export default function Filters({ genres, hideSearch = false }: { genres: string
                   key={g}
                   onClick={()=> setSelectedGenre(isSel ? '' : g)}
                   aria-pressed={isSel}
-                  className={`chip-btn px-3 py-1 text-sm ${isSel ? 'bg-[rgb(var(--hover))] text-white is-selected':''}`}
+                  className={`chip-btn tappable px-3 py-1 text-sm ${isSel ? 'bg-[rgb(var(--hover))] text-white is-selected':''}`}
                 >{g}</button>
               )
             })}
@@ -222,4 +309,4 @@ export default function Filters({ genres, hideSearch = false }: { genres: string
       </div>
     </aside>
   )
-}
+})

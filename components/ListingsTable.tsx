@@ -122,27 +122,29 @@ function displayTitle(title: string): string {
 }
 
 export default function ListingsTable({ items }: { items: Item[] }) {
-  const [open, setOpen] = useState<Record<string, boolean>>({})
+  // Track a single open row at a time
+  const [openId, setOpenId] = useState<string | null>(null)
   const dayKeyFmt = new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Europe/London' })
   let prevDayKey: string | undefined
   return (
     <div className="overflow-x-auto">
       <div className="overflow-visible">
-        <table className="w-full table-auto md:table-fixed text-left text-sm">
+        <table className="w-full table-fixed border-collapse text-left text-sm">
           <thead className="bg-black text-white border-b border-white">
           <tr>
-            <th className="px-2 md:px-3 py-2 w-[40%] md:w-[38%]">Film</th>
-            <th className="px-2 md:px-3 py-2 hidden md:table-cell md:w-[10%]">Release</th>
-            <th className="px-2 md:px-3 py-2 w-[30%] md:w-[19%]">Cinema</th>
+            <th className="px-2 md:px-3 py-2 w-[37%] md:w-[33%]">Film</th>
+            <th className="px-2 md:px-3 py-2 hidden md:table-cell md:w-[12%]">Release</th>
+            <th className="px-2 md:px-3 py-2 w-[28%] md:w-[16%]">Cinema</th>
             <th className="px-2 md:px-3 py-2 w-[20%] md:w-[14%]">Date</th>
-            <th className="px-2 md:px-3 py-2 w-[10%] md:w-[9%] whitespace-nowrap">Time</th>
-            <th className="px-2 md:px-3 py-2 hidden md:table-cell md:w-[10%]">Letterboxd</th>
+            {/* On mobile, make widths add up to 100% exactly to prevent a right-side gap */}
+            <th className="px-1 md:px-3 py-2 w-[15%] md:w-[9%] whitespace-nowrap">Time</th>
+            <th className="px-2 md:px-3 py-2 hidden md:table-cell md:w-[16%]">Letterboxd</th>
           </tr>
           </thead>
           <tbody>
           {items.map((i, idx) => {
             const { date, time } = formatDateTime(i.screeningStart)
-            const isOpen = !!open[i.id]
+            const isOpen = openId === i.id
             const dayKey = dayKeyFmt.format(new Date(i.screeningStart))
             const isNewDay = idx === 0 ? false : dayKey !== prevDayKey
             prevDayKey = dayKey
@@ -157,16 +159,16 @@ export default function ListingsTable({ items }: { items: Item[] }) {
                   </tr>
                 )}
                 <tr className={`peer group ${isOpen ? 'selected-row' : ''}`}>
-                  <td className="px-2 md:px-3 py-2 text-left break-words min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white" align="left">
-                    <button onClick={()=>setOpen(o=>({...o,[i.id]:!o[i.id]}))} className="block text-left font-normal underline-offset-2 md:hover:underline md:focus-visible:underline md:active:underline">
+                  <td className="px-2 md:px-3 py-3 md:py-2 text-left break-words min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white" align="left">
+                    <button onClick={()=>setOpenId(prev => prev === i.id ? null : i.id)} className="no-focus-outline block text-left font-normal underline-offset-2 md:hover:underline md:focus-visible:underline md:active:underline">
                       {displayTitle(i.filmTitle)}
                     </button>
                   </td>
-                  <td className="px-2 md:px-3 py-2 min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white hidden md:table-cell">{i.releaseDate?.slice(0,4) ?? i.websiteYear ?? fallbackYearFromTitle(i.filmTitle) ?? '—'}</td>
-                  <td className="px-2 md:px-3 py-2 min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{CINEMA_LABELS[i.cinema] ?? i.cinema}</td>
-                  <td className="px-2 md:px-3 py-2 min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{date}</td>
-                  <td className="px-2 md:px-3 py-2 min-w-0 whitespace-nowrap md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{time}</td>
-                  <td className="px-2 md:px-3 py-2 min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white hidden md:table-cell">{typeof i.letterboxdRating === 'number' ? (Math.round(i.letterboxdRating * 10) / 10).toFixed(1) : '—'}</td>
+                  <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white hidden md:table-cell">{i.releaseDate?.slice(0,4) ?? i.websiteYear ?? fallbackYearFromTitle(i.filmTitle) ?? '—'}</td>
+                  <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{CINEMA_LABELS[i.cinema] ?? i.cinema}</td>
+                  <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{date}</td>
+                  <td className="px-1 md:px-3 py-3 md:py-2 min-w-0 whitespace-nowrap md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{time}</td>
+                  <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white hidden md:table-cell">{typeof i.letterboxdRating === 'number' ? (Math.round(i.letterboxdRating * 10) / 10).toFixed(1) : '—'}</td>
                 </tr>
                 {isOpen && (
                   <tr className="details-row">

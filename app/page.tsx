@@ -3,6 +3,7 @@ import ListingsTable from '@/components/ListingsTable'
 import TimeTabs from '@/components/TimeTabs'
 import { applyFilters, filterParamsFromSearchParams, getAllGenres, loadAllListingsCached } from '@/lib/listings'
 import MobileSearch from '@/components/MobileSearch'
+import MobileFiltersPanel from '@/components/MobileFiltersPanel'
 
 export default async function Page({ searchParams }: { searchParams: Record<string, string | undefined> }) {
   // Load all listings once (cached), then filter in-process
@@ -15,15 +16,10 @@ export default async function Page({ searchParams }: { searchParams: Record<stri
   return (
     <div className="space-y-4">
       <TimeTabs />
-      {/* Mobile-only controls: search + collapsible filters */}
+      {/* Mobile-only controls: search + deferred filters with sticky action */}
       <div className="md:hidden space-y-2">
         <MobileSearch />
-        <details className="border">
-          <summary className="cursor-pointer select-none px-3 py-2">Filters</summary>
-          <div className="border-t">
-            <Filters genres={allGenres} hideSearch />
-          </div>
-        </details>
+        <MobileFiltersPanel genres={allGenres} />
       </div>
       <div className="grid gap-4 md:grid-cols-[1fr,280px]">
         <ListingsTable items={items} />

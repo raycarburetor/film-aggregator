@@ -89,3 +89,89 @@ Add to `.env.local` (see `.env.example` for the full list and defaults):
 
 ## Cinema Keys
 - `bfi` (BFI Southbank), `princecharles` (Prince Charles Cinema), `ica` (ICA), `castle` (The Castle Cinema), `garden` (The Garden Cinema), `genesis` (Genesis Cinema), `closeup` (Close‑Up), `barbican` (Barbican), `rio` (Rio Cinema)
+
+## Requirements
+- Node: 20+ (uses global `fetch`, Next 14, and modern Intl APIs)
+- Playwright browsers: install once with `npx playwright install` (scrapers launch Chromium)
+- Postgres: optional, required only if using the DB-backed API
+- API keys: `TMDB_API_KEY` (required), `OMDB_API_KEY` (optional)
+
+## Project Structure
+- `app/`: App Router pages and API routes
+  - `app/page.tsx`: loads all listings (cached) then filters in-process
+  - `app/api/listings/route.ts`: Node runtime, returns filtered listings JSON
+  - `app/api/preview/*/route.ts`: dev-only preview routes that run scrapers
+- `components/`: UI components (table, filters, tabs, mobile variants)
+- `lib/`: shared server utilities
+  - `lib/listings.ts`: load/cache/filter helpers + genre derivation
+  - `lib/db.ts`: Postgres pool + row→`Screening` mapping
+  - `lib/filters.ts`: time-window and non‑film heuristics
+- `scripts/`: scrapers, enrichment, DB utilities
+  - `scripts/cinemas/*.mjs`: Playwright scrapers per cinema
+  - `scripts/enrich*.mjs`: TMDb, OMDb, Letterboxd enrichment
+  - `scripts/db-*.mjs`: seed/prune/drop DB; `scripts/smoke-db.ts` quick DB check
+- `data/`: JSON outputs and caches (`listings.json`, `letterboxd-cache.json`)
+- Config: `next.config.mjs`, `tailwind.config.ts`, `tsconfig.json`
+
+## Data Model
+- `types.ts` defines `Screening` and `CinemaKey` used across the app
+- `Screening` fields:
+  - `id`, `filmTitle`, `cinema`, `screeningStart`, optional `screeningEnd`
+  - Optional enrichment: `bookingUrl`, `releaseDate` (ISO), `websiteYear`, `director`, `synopsis`, `genres[]`, `posterPath`, `tmdbId`, `imdbId`, `rottenTomatoesPct`, `letterboxdRating`
+- Filtering behaviour (`lib/listings.ts`):
+  - Time window excludes past; `week` is default; `month` = rolling 30 days
+  - `q` matches title or director
+  - `decades` prefers `websiteYear`, then `releaseDate` year
+  - `minLb` compares 1dp half‑up rounded value; unrated counts as 0
+  - Optional hide BFI via `HIDE_BFI`/`NEXT_PUBLIC_HIDE_BFI`
+
+## Database Schema & Mapping
+- Table name: `LISTINGS_TABLE` (default `listings`)
+- Schema created by `scripts/db-seed.mjs`:
+  - Columns (snake_case): `id text primary key`, `film_title text`, `cinema text`, `screening_start timestamptz`, `screening_end timestamptz`, `booking_url text`, `release_date date`, `website_year integer`, `director text`, `synopsis text`, `genres text[]`, `poster_path text`, `tmdb_id integer`, `imdb_id text`, `rotten_tomatoes_pct integer`, `letterboxd_rating double precision`
+  - Indexes: `screening_start`, `cinema`
+- Mapping to app types (`lib/db.ts`):
+  - Converts snake_case keys to camelCase
+  - Coerces dates to ISO strings; numbers to `number`; `genres` accepts `text[]` or delimited string
+  - SSL: auto‑enables for Supabase/Neon/Vercel or when `ssl=true`; uses `rejectUnauthorized: false` in production (avoid self‑signed issues)
+
+## Caching & Performance
+- Listings cache: `loadAllListingsCached` uses `unstable_cache` keyed as `['all_listings']`
+  - TTL via `LISTINGS_CACHE_SECONDS` (default 300s)
+  - Applies when loading through the page as well as the API handler
+- Deterministic formatting: UI formats dates/times in `Europe/London` to avoid SSR/CSR mismatches
+- API runtime: `app/api/listings/route.ts` sets `runtime='nodejs'` so `pg` works on Vercel
+
+## Preview & Scraper Debugging
+- Dev‑only API routes:
+  - `GET /api/preview/pcc` → `scripts/cinemas/princecharles.mjs`
+  - `GET /api/preview/castle` → `scripts/cinemas/castle.mjs`
+- Node previews: `npm run preview:pcc`, `npm run preview:rio`, etc.
+- Playwright requirement: preview and scrapers launch Chromium — ensure `npx playwright install` has been run locally/CI
+
+## CI/CD
+- GitHub Actions: `.github/workflows/aggregate-all-db.yml` runs daily and on‑demand
+  - Expects secrets: `DATABASE_URL`, `TMDB_API_KEY`, `OMDB_API_KEY`
+  - Recommended: add a step before aggregation to install browsers
+    - `- run: npx playwright install --with-deps`
+- Deployment: set `NEXT_PUBLIC_BASE_URL` for correct OpenGraph URLs; set caching and feature flags via env
+
+## Adding A New Cinema
+- Create `scripts/cinemas/<key>.mjs` exporting `fetch<Key>()` that returns `Screening[]`
+  - Use stable `id` construction (e.g., based on film page slug and start time)
+  - Parse times in `Europe/London`; normalize URLs; capture `websiteYear` and `director` when available
+- Wire it up:
+  - Add to `scripts/aggregate.mjs` and/or create `scripts/aggregate-<key>-only.mjs`
+  - Update `components/Filters.tsx` `CINEMAS` list and `types.ts` `CinemaKey`
+  - Optionally add `app/api/preview/<key>/route.ts`
+
+## Gotchas & Tips
+- Playwright browsers: required for scrapers; without installing, scripts will fail to launch Chromium
+- Timezone: always build dates in `Europe/London`; UI assumes that for rendering
+- BFI feature flag: `aggregate-all-db.mjs` strips BFI items from JSON before DB sync; control visibility with `HIDE_BFI`/`NEXT_PUBLIC_HIDE_BFI`
+- Letterboxd enrichment:
+  - Two modes: HTTP (default, no Playwright) or Playwright (`LETTERBOXD_USE_PLAYWRIGHT=true`)
+  - Results cached in `data/letterboxd-cache.json`; `--force` in DB HTTP mode refreshes all
+  - Chunked DB updates via `--chunk`; be polite with rate limits
+- DB smoke test: `npm run db:test` prints a small sample and ensures env/SSL mapping is correct
+- Metadata base URL: set `NEXT_PUBLIC_BASE_URL` to avoid absolute URL issues in OG meta

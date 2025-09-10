@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Indie Cinemas London',
@@ -23,13 +24,28 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   viewportFit: 'cover',
+  // Dark status bar / address bar on mobile for smoother feel
+  themeColor: '#000000',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="min-h-screen">
-        <header className="border-b border-white border-t-0 border-l-0 border-r-0 bg-black text-white">
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-7NN225RZFN"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7NN225RZFN');
+          `}
+        </Script>
+        <header className="border-b border-white border-t-0 border-l-0 border-r-0 bg-black/85 text-white sticky top-0 z-50 backdrop-blur-sm">
           <div className="container py-4 flex items-center justify-between">
             <a
               href="/"
