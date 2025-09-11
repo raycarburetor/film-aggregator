@@ -2,6 +2,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import ListingsTable from '@/components/ListingsTable'
+import FilmsTable from '@/components/FilmsTable'
+// View toggle is rendered alongside TimeTabs in page layout
 import type { Screening } from '@/types'
 
 type CacheEntry = { username: string; ids: number[]; fetchedAt: number }
@@ -11,6 +13,7 @@ function storageKey(username: string) { return `lb_watchlist_${username.toLowerC
 export default function WatchlistFilterClient({ items }: { items: Screening[] }) {
   const sp = useSearchParams()
   const lbUser = (sp.get('lbUser') || '').trim().toLowerCase()
+  const view = ((sp.get('view') || 'screenings').trim().toLowerCase() === 'films') ? 'films' : 'screenings'
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [ids, setIds] = useState<number[] | null>(() => {
@@ -117,7 +120,12 @@ export default function WatchlistFilterClient({ items }: { items: Screening[] })
           </div>
         </div>
       )}
-      <ListingsTable items={filtered} />
+      {/* View toggle rendered in page header next to TimeTabs */}
+      {view === 'films' ? (
+        <FilmsTable items={filtered} />
+      ) : (
+        <ListingsTable items={filtered} />
+      )}
       {lbUser && !loading && !error && ids && filtered.length === 0 && (() => {
         const win = (sp.get('window') || 'week').toLowerCase()
         let msg = 'No films on your watchlist are showing this week.'

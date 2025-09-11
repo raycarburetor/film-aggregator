@@ -21,7 +21,7 @@ export default function TimeTabs() {
   }
 
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-0">
       {TABS.map(({ key, label }) => (
         <button
           key={key}

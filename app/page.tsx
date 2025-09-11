@@ -2,6 +2,7 @@ import Filters from '@/components/Filters'
 import ListingsTable from '@/components/ListingsTable'
 import WatchlistFilterClient from '@/components/WatchlistFilterClient'
 import TimeTabs from '@/components/TimeTabs'
+import ViewToggle from '@/components/ViewToggle'
 import { applyFilters, filterParamsFromSearchParams, getAllGenres, loadAllListingsCached } from '@/lib/listings'
 import MobileSearch from '@/components/MobileSearch'
 import MobileFiltersPanel from '@/components/MobileFiltersPanel'
@@ -16,7 +17,17 @@ export default async function Page({ searchParams }: { searchParams: Record<stri
 
   return (
     <div className="space-y-4">
-      <TimeTabs />
+      {/* Top controls aligned to left column width */}
+      <div className="grid gap-4 md:grid-cols-[1fr,280px] items-start">
+        <div className="flex items-center justify-between gap-3">
+          <TimeTabs />
+          <div className="hidden md:flex items-center gap-2">
+            <span className="text-base select-none">View by:</span>
+            <ViewToggle />
+          </div>
+        </div>
+        <div />
+      </div>
       {/* Mobile-only controls: search + deferred filters with sticky action */}
       <div className="md:hidden space-y-2">
         <MobileSearch />

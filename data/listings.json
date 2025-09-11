@@ -1,91 +1,5 @@
 [
   {
-    "id": "barbicanEverythingSeemedPossibleScreenTalk20250910T170000000Z",
-    "filmTitle": "Everything Seemed Possible + ScreenTalk",
-    "cinema": "barbican",
-    "screeningStart": "2025-09-10T17:00:00.000Z",
-    "bookingUrl": "https://www.barbican.org.uk/whats-on/2025/event/everything-seemed-possible-screentalk",
-    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/everything-seemed-possible-screentalk",
-    "websiteYear": 2025,
-    "director": "Ramón Rivera Moret",
-    "tmdbId": 1408259,
-    "releaseDate": "2025-01-31",
-    "synopsis": "Ramón Rivera Moret remembers Puerto Rico at a utopian moment through the films produced in rural communities in the 1950s and 60s by the Film Unit of the Division of Community Education alongside stories from his own family.",
-    "genres": [
-      "Documentary"
-    ]
-  },
-  {
-    "id": "barbicanMaterialists1520250910T170000000Z",
-    "filmTitle": "Materialists (15)",
-    "cinema": "barbican",
-    "screeningStart": "2025-09-10T17:00:00.000Z",
-    "bookingUrl": "https://www.barbican.org.uk/whats-on/2025/event/materialists",
-    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/materialists",
-    "websiteYear": 2025,
-    "director": "Celine Song",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "barbicanTheCourageous12A20250910T173000000Z",
-    "filmTitle": "The Courageous (12A)",
-    "cinema": "barbican",
-    "screeningStart": "2025-09-10T17:30:00.000Z",
-    "bookingUrl": "https://www.barbican.org.uk/whats-on/2025/event/the-courageous",
-    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/the-courageous",
-    "websiteYear": 2024,
-    "director": "Jasmin Gordon",
-    "tmdbId": 1321012,
-    "releaseDate": "2025-05-09",
-    "synopsis": "In a small town on the edge of wild country, an eccentric and delinquent mother has had enough of the rules. Crushed by her mistakes and by a society that doesn't give a damn – or a second chance – to people like her, she'll do anything to prove to her children, and to herself, that she still is a good person.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt33035860"
-  },
-  {
-    "id": "barbicanChristy1520250910T194500000Z",
-    "filmTitle": "Christy (15)",
-    "cinema": "barbican",
-    "screeningStart": "2025-09-10T19:45:00.000Z",
-    "bookingUrl": "https://www.barbican.org.uk/whats-on/2025/event/christy",
-    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/christy",
-    "websiteYear": 2025,
-    "director": "Brendan Canty",
-    "tmdbId": 1290242,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Seventeen-year-old Christy is at a crossroads. Thrown out of his suburban foster home, he has moved in temporarily with his estranged older brother, Shane, in Cork’s inner city.  But Shane wants something better for Christy. After so many years apart, the brothers are forced to reconcile their turbulent past, whilst deciding what the future looks like. Sometimes, to move forward, you have to go back.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt32263650"
-  },
-  {
-    "id": "barbicanSorryBaby1520250910T194500000Z",
-    "filmTitle": "Sorry, Baby (15)",
-    "cinema": "barbican",
-    "screeningStart": "2025-09-10T19:45:00.000Z",
-    "bookingUrl": "https://www.barbican.org.uk/whats-on/2025/event/sorry-baby",
-    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/sorry-baby",
-    "websiteYear": 2025,
-    "director": "Eva Victor",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdbId": "tt32843349"
-  },
-  {
     "id": "barbicanMaterialists1520250911T140000000Z",
     "filmTitle": "Materialists (15)",
     "cinema": "barbican",
@@ -1019,6 +933,24 @@
     "imdbId": "tt26923797"
   },
   {
+    "id": "barbicanHoneyDont1520250917T194500000Z",
+    "filmTitle": "Honey Don't! (15)",
+    "cinema": "barbican",
+    "screeningStart": "2025-09-17T19:45:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/whats-on/2025/event/honey-dont",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/honey-dont",
+    "websiteYear": 2025,
+    "director": "Ethan Coen",
+    "tmdbId": 1149504,
+    "releaseDate": "2025-08-21",
+    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "imdbId": "tt30645201"
+  },
+  {
     "id": "barbicanSorryBaby1520250918T143000000Z",
     "filmTitle": "Sorry, Baby (15)",
     "cinema": "barbican",
@@ -1427,6 +1359,14 @@
     "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/visions-of-ukraine-queer-shorts-from-ukraine"
   },
   {
+    "id": "barbicanFamilyFilmClubSAILFestNikhilJay20251004T100000000Z",
+    "filmTitle": "Family Film Club: SAILFest + Nikhil & Jay",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-04T10:00:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-club-sailfest-nikhil-jay",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-club-sailfest-nikhil-jay"
+  },
+  {
     "id": "barbicanFamilyFilmClubGetCreativewithChitraSoundar20251004T113000000Z",
     "filmTitle": "Family Film Club: Get Creative with Chitra Soundar",
     "cinema": "barbican",
@@ -1453,171 +1393,6 @@
       "Science Fiction"
     ],
     "imdbId": "tt0097444"
-  },
-  {
-    "id": "castleOnSwiftHorses20250910T095000000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T09:50:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14463/show",
-    "filmUrl": "https://thecastlecinema.com/programme/101617/on-swift-horses/",
-    "websiteYear": 2025,
-    "director": "Daniel Minahan",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleOnSwiftHorses20250910T150000000Z",
-    "filmTitle": "On Swift Horses",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T15:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14468/show",
-    "filmUrl": "https://thecastlecinema.com/programme/101617/on-swift-horses/",
-    "websiteYear": 2025,
-    "director": "Daniel Minahan",
-    "tmdbId": 1092506,
-    "releaseDate": "2025-04-24",
-    "synopsis": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "imdbId": "tt15042300"
-  },
-  {
-    "id": "castleCaughtStealing20250910T104000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T10:40:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14464/show",
-    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
-    "websiteYear": 2025,
-    "director": "Darren Aronofsky",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleCaughtStealing20250910T145000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T14:50:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14467/show",
-    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
-    "websiteYear": 2025,
-    "director": "Darren Aronofsky",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleCaughtStealing20250910T201000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T20:10:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14470/caught-stealing",
-    "filmUrl": "https://thecastlecinema.com/programme/99010/caught-stealing/",
-    "websiteYear": 2025,
-    "director": "Darren Aronofsky",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "castleMaterialists20250910T122000000Z",
-    "filmTitle": "Materialists",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T12:20:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14465/show",
-    "filmUrl": "https://thecastlecinema.com/programme/99560/materialists/",
-    "websiteYear": 2025,
-    "director": "Celine Song",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "castleMaterialists20250910T173000000Z",
-    "filmTitle": "Materialists",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T17:30:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14469/materialists",
-    "filmUrl": "https://thecastlecinema.com/programme/99560/materialists/",
-    "websiteYear": 2025,
-    "director": "Celine Song",
-    "tmdbId": 1136867,
-    "releaseDate": "2025-06-12",
-    "synopsis": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "imdbId": "tt30253473"
-  },
-  {
-    "id": "castleHoneyDont20250910T130000000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T13:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/interstitial/free-guest/14466/show",
-    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
-    "websiteYear": 2025,
-    "director": "Ethan Coen",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "castleHoneyDont20250910T200000000Z",
-    "filmTitle": "Honey Don't!",
-    "cinema": "castle",
-    "screeningStart": "2025-09-10T20:00:00.000Z",
-    "bookingUrl": "https://thecastlecinema.com/bookings/14471/honey-don-t",
-    "filmUrl": "https://thecastlecinema.com/programme/100942/honey-don-t/",
-    "websiteYear": 2025,
-    "director": "Ethan Coen",
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "imdbId": "tt30645201"
   },
   {
     "id": "castleOnSwiftHorses20250911T100000000Z",
@@ -1809,7 +1584,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -1828,7 +1603,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -1847,7 +1622,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -1976,7 +1751,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -1995,7 +1770,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -2014,7 +1789,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -2273,7 +2048,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -2292,7 +2067,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -2368,7 +2143,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -2387,7 +2162,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -2406,7 +2181,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -2551,7 +2326,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -2570,7 +2345,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -2808,7 +2583,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -2827,7 +2602,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -3002,7 +2777,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -3123,23 +2898,6 @@
       "Drama"
     ],
     "imdbId": "tt36364878"
-  },
-  {
-    "id": "closeupMishimaALifeinFourChapters20250910T190000000Z",
-    "filmTitle": "Mishima: A Life in Four Chapters",
-    "cinema": "closeup",
-    "screeningStart": "2025-09-10T19:00:00.000Z",
-    "bookingUrl": "https://www.ticketsource.co.uk/close-up-cinema/e-agmrax",
-    "filmUrl": "https://www.closeupfilmcentre.com/film_programmes/2025/histoires-du-cinema/mishima-a-life-in-four-chapters",
-    "websiteYear": 1985,
-    "releaseDate": "1985-09-20",
-    "director": "Paul Schrader",
-    "tmdbId": 27064,
-    "synopsis": "A fictional account of the life of Japanese author Yukio Mishima, combining dramatizations of three of his novels and a depiction of the events of November 25th, 1970.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt0089603"
   },
   {
     "id": "closeupCloseUp20250911T191500000Z",
@@ -3497,171 +3255,6 @@
     "imdbId": "tt0089603"
   },
   {
-    "id": "gardenPutYourSoulonYourHandandWalk12A20250910T142000000Z",
-    "filmTitle": "Put Your Soul on Your Hand and Walk 12A",
-    "cinema": "garden",
-    "screeningStart": "2025-09-10T14:20:00.000Z",
-    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130175.TcsSection_3060731",
-    "filmUrl": "https://www.thegardencinema.co.uk/film/put-your-soul-on-your-hand-and-walk/",
-    "websiteYear": 2025,
-    "director": "Sepideh Farsi",
-    "tmdbId": 1465560,
-    "releaseDate": "2025-08-22",
-    "synopsis": "An Iranian filmmaker participates in a series of video calls with a young Palestinian photojournalist who describes her life confined in Gaza during the current regional conflict.",
-    "genres": [
-      "Documentary",
-      "Drama",
-      "War"
-    ],
-    "imdbId": "tt36598711"
-  },
-  {
-    "id": "gardenPaulPauletteTakeaBath1520250910T143000000Z",
-    "filmTitle": "Paul & Paulette Take a Bath 15",
-    "cinema": "garden",
-    "screeningStart": "2025-09-10T14:30:00.000Z",
-    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3963332.TcsSection_971",
-    "filmUrl": "https://www.thegardencinema.co.uk/film/paul-paulette-take-a-bath/",
-    "websiteYear": 2024,
-    "director": "Jethro Massey",
-    "tmdbId": 1225467,
-    "releaseDate": "2025-09-05",
-    "synopsis": "An unconventional romantic comedy about a young American photographer and a French girl with a taste for the macabre. Paul and Paulette’s chance encounter on a Parisian boulevard sparks an unusual friendship that grows around a dark game; reenacting scenes of notorious crimes from bygone eras at the sites they occurred. As their morbid road trip approaches the more recent past it becomes more uncomfortable, blurring the lines between reality and fantasy, but finding a surprising joy in the darker corners of humanity.",
-    "genres": [
-      "Comedy",
-      "Romance",
-      "Drama"
-    ],
-    "imdbId": "tt26341960"
-  },
-  {
-    "id": "gardenYoungMothers12A20250910T144500000Z",
-    "filmTitle": "Young Mothers 12A",
-    "cinema": "garden",
-    "screeningStart": "2025-09-10T14:45:00.000Z",
-    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130173.TcsSection_638",
-    "filmUrl": "https://www.thegardencinema.co.uk/film/young-mothers/",
-    "websiteYear": 2025,
-    "director": "Jean-Pierre Dardenne",
-    "tmdbId": 1242015,
-    "releaseDate": "2025-05-23",
-    "synopsis": "Housed in a shelter for young mothers, Jessica, Perla, Julie, Naïma and Ariane, all of whom have grown up in difficult circumstances, struggle to obtain a better life for themselves and their children.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt32909489"
-  },
-  {
-    "id": "gardenSorryBaby1520250910T164500000Z",
-    "filmTitle": "Sorry, Baby 15",
-    "cinema": "garden",
-    "screeningStart": "2025-09-10T16:45:00.000Z",
-    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130177.TcsSection_3060731",
-    "filmUrl": "https://www.thegardencinema.co.uk/film/sorry-baby/",
-    "websiteYear": 2025,
-    "director": "Eva Victor",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "gardenCaughtStealing1520250910T170000000Z",
-    "filmTitle": "Caught Stealing 15",
-    "cinema": "garden",
-    "screeningStart": "2025-09-10T17:00:00.000Z",
-    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4062898.TcsSection_638",
-    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
-    "websiteYear": 2025,
-    "director": "Darren Aronofsky",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "gardenCaughtStealing1520250910T194000000Z",
-    "filmTitle": "Caught Stealing 15",
-    "cinema": "garden",
-    "screeningStart": "2025-09-10T19:40:00.000Z",
-    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130171.TcsSection_971",
-    "filmUrl": "https://www.thegardencinema.co.uk/film/caught-stealing/",
-    "websiteYear": 2025,
-    "director": "Darren Aronofsky",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
-    "genres": [
-      "Crime",
-      "Thriller",
-      "Comedy"
-    ],
-    "imdbId": "tt1493274"
-  },
-  {
-    "id": "gardenDogtooth1820250910T171500000Z",
-    "filmTitle": "Dogtooth 18",
-    "cinema": "garden",
-    "screeningStart": "2025-09-10T17:15:00.000Z",
-    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130169.TcsSection_971",
-    "filmUrl": "https://www.thegardencinema.co.uk/film/dogtooth/",
-    "websiteYear": 2009,
-    "director": "Yorgos Lanthimos",
-    "tmdbId": 38810,
-    "releaseDate": "2009-10-22",
-    "synopsis": "Three teenagers are confined to an isolated country estate that could very well be on another planet. The trio spend their days listening to endless homemade tapes that teach them a whole new vocabulary. Any word that comes from beyond their family abode is instantly assigned a new meaning. Hence 'the sea' refers to a large armchair and 'zombies' are little yellow flowers. Having invented a brother whom they claim to have ostracized for his disobedience, the uber-controlling parents terrorize their offspring into submission.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt1379182"
-  },
-  {
-    "id": "gardenJaws50thAnniversary12A20250910T190000000Z",
-    "filmTitle": "Jaws (50th Anniversary) 12A",
-    "cinema": "garden",
-    "screeningStart": "2025-09-10T19:00:00.000Z",
-    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4130179.TcsSection_3060731",
-    "filmUrl": "https://www.thegardencinema.co.uk/film/jaws-50th-anniversary/",
-    "websiteYear": 1975,
-    "director": "Steven Spielberg",
-    "tmdbId": 578,
-    "releaseDate": "1975-06-20",
-    "synopsis": "When the seaside community of Amity finds itself under attack by a dangerous great white shark, the town's chief of police, a young marine biologist, and a grizzled hunter embark on a desperate quest to destroy the beast before it strikes again.",
-    "genres": [
-      "Horror",
-      "Thriller",
-      "Adventure"
-    ],
-    "imdbId": "tt0073195"
-  },
-  {
-    "id": "gardenYtumamtambin1820250910T193000000Z",
-    "filmTitle": "Y tu mamá también 18",
-    "cinema": "garden",
-    "screeningStart": "2025-09-10T19:30:00.000Z",
-    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3940043.TcsSection_638",
-    "filmUrl": "https://www.thegardencinema.co.uk/film/y-tu-mama-tambien/",
-    "websiteYear": 2001,
-    "director": "Alfonso Cuarón",
-    "tmdbId": 1391,
-    "releaseDate": "2001-06-08",
-    "synopsis": "In Mexico, two teenage boys and an attractive older woman embark on a road trip and learn a thing or two about life, friendship, sex, and each other.",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "imdbId": "tt0245574"
-  },
-  {
     "id": "gardenCaughtStealing1520250911T150000000Z",
     "filmTitle": "Caught Stealing 15",
     "cinema": "garden",
@@ -3868,16 +3461,6 @@
       "Drama"
     ],
     "imdbId": "tt32263650"
-  },
-  {
-    "id": "gardenRebornIndiaFilmpresentsCourage1820250912T170000000Z",
-    "filmTitle": "Reborn India Film presents Courage 18",
-    "cinema": "garden",
-    "screeningStart": "2025-09-12T17:00:00.000Z",
-    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3973040.TcsSection_3060731",
-    "filmUrl": "https://www.thegardencinema.co.uk/film/reborn-india-film-presents-courage/",
-    "websiteYear": 2024,
-    "director": "Screened in partnership with Reborn India Film Ankur Arun Kakatkar"
   },
   {
     "id": "gardenIslands1520250912T171500000Z",
@@ -5554,6 +5137,16 @@
     "imdbId": "tt35715953"
   },
   {
+    "id": "gardenUnspokenAMentalHealthFilmFestivalpresentsProvokedPanel1820251004T160000000Z",
+    "filmTitle": "Unspoken - A Mental Health Film Festival presents Provoked + Panel 18",
+    "cinema": "garden",
+    "screeningStart": "2025-10-04T16:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4168590.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/unspoken-a-mental-health-film-festival-presents-provoked-panel/",
+    "websiteYear": 2006,
+    "director": "Screened in partnership with UK Asian Film Festival Jag Mundhra"
+  },
+  {
     "id": "gardenTheSimpsonsMoviePG20251005T100000000Z",
     "filmTitle": "The Simpsons Movie PG",
     "cinema": "garden",
@@ -5708,6 +5301,16 @@
       "Drama"
     ],
     "imdbId": "tt35715953"
+  },
+  {
+    "id": "gardenPeterWatkinsTheWarGameat60withPeterKennard1220251006T170000000Z",
+    "filmTitle": "Peter Watkins' The War Game at 60 with Peter Kennard 12",
+    "cinema": "garden",
+    "screeningStart": "2025-10-06T17:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4169535.TcsSection_3060731",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/peter-watkins-the-war-game-at-60-with-peter-kennard/",
+    "websiteYear": 1965,
+    "director": "Watkins"
   },
   {
     "id": "gardenStrangeJourneyTheStoryofRockyHorror1520251006T171500000Z",
@@ -5957,23 +5560,78 @@
     "imdbId": "tt0073629"
   },
   {
-    "id": "genesisEddington20250910T193500000Z",
-    "filmTitle": "Eddington",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T19:35:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6709",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
-    "websiteYear": 2025,
-    "director": "Ari Aster",
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "id": "gardenTheWindthatShakestheBarley1520251010T140000000Z",
+    "filmTitle": "The Wind that Shakes the Barley 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-10T14:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_3884111.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/the-wind-that-shakes-the-barley-2/",
+    "websiteYear": 2006,
+    "director": "Ken Loach",
+    "tmdbId": 1116,
+    "releaseDate": "2006-06-23",
+    "synopsis": "In 1920s Ireland young doctor Damien O'Donovan prepares to depart for a new job in a London hospital. As he says his goodbyes at a friend's farm, British Black and Tans arrive, and a young man is killed. Damien joins his brother Teddy in the Irish Republican Army, but political events are soon set in motion that tear the brothers apart.",
     "genres": [
-      "Western",
-      "Comedy",
+      "Drama",
+      "War"
+    ],
+    "imdbId": "tt0460989"
+  },
+  {
+    "id": "gardenPlainclothes1520251010T142000000Z",
+    "filmTitle": "Plainclothes 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-10T14:20:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4161202.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/plainclothes/",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
       "Crime"
     ],
-    "imdbId": "tt31176520"
+    "imdbId": "tt27550504"
+  },
+  {
+    "id": "gardenPlainclothes1520251010T200000000Z",
+    "filmTitle": "Plainclothes 15",
+    "cinema": "garden",
+    "screeningStart": "2025-10-10T20:00:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4161200.TcsSection_971",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/plainclothes/",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime"
+    ],
+    "imdbId": "tt27550504"
+  },
+  {
+    "id": "gardenPerfectBlue1820251010T194500000Z",
+    "filmTitle": "Perfect Blue 18",
+    "cinema": "garden",
+    "screeningStart": "2025-10-10T19:45:00.000Z",
+    "bookingUrl": "https://bookings.thegardencinema.co.uk/TheGardenCinema.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_4161869.TcsSection_638",
+    "filmUrl": "https://www.thegardencinema.co.uk/film/perfect-blue/",
+    "websiteYear": 1997,
+    "director": "Satoshi Kon",
+    "tmdbId": 10494,
+    "releaseDate": "1998-02-28",
+    "synopsis": "Rising pop star Mima quits singing to pursue a career as an actress. After she takes up a role on a popular detective show, her handlers and collaborators begin turning up murdered. Harboring feelings of guilt and haunted by visions of her former self, Mima's reality and fantasy meld into a frenzied paranoia.",
+    "genres": [
+      "Animation",
+      "Thriller"
+    ],
+    "imdbId": "tt0156887"
   },
   {
     "id": "genesisEddington20250911T165000000Z",
@@ -6033,25 +5691,6 @@
     "imdbId": "tt31176520"
   },
   {
-    "id": "genesisEddington20250916T193500000Z",
-    "filmTitle": "Eddington",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-16T19:35:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6875",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99419",
-    "websiteYear": 2025,
-    "director": "Ari Aster",
-    "tmdbId": 648878,
-    "releaseDate": "2025-07-16",
-    "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
-    "genres": [
-      "Western",
-      "Comedy",
-      "Crime"
-    ],
-    "imdbId": "tt31176520"
-  },
-  {
     "id": "genesisEddington20250918T194000000Z",
     "filmTitle": "Eddington",
     "cinema": "genesis",
@@ -6069,60 +5708,6 @@
       "Crime"
     ],
     "imdbId": "tt31176520"
-  },
-  {
-    "id": "genesisHoneyDont20250910T144500000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T14:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6698",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250910T171000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T17:10:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6701",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
-  },
-  {
-    "id": "genesisHoneyDont20250910T200000000Z",
-    "filmTitle": "Honey Don’t",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6697",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/101145",
-    "websiteYear": 2025,
-    "tmdbId": 1149504,
-    "releaseDate": "2025-08-21",
-    "synopsis": "Honey O'Donahue, a small-town private investigator, delves into a series of strange deaths tied to a mysterious church.",
-    "genres": [
-      "Comedy",
-      "Crime"
-    ],
-    "director": "Ethan Coen",
-    "imdbId": "tt30645201"
   },
   {
     "id": "genesisHoneyDont20250911T133000000Z",
@@ -6287,24 +5872,6 @@
     "imdbId": "tt30645201"
   },
   {
-    "id": "genesisSorryBaby20250910T170500000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T17:05:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6726",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/100600",
-    "websiteYear": 2025,
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "director": "Eva Victor",
-    "imdbId": "tt32843349"
-  },
-  {
     "id": "genesisSorryBaby20250911T144000000Z",
     "filmTitle": "Sorry, Baby",
     "cinema": "genesis",
@@ -6321,57 +5888,6 @@
     ],
     "director": "Eva Victor",
     "imdbId": "tt32843349"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250910T142000000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T14:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6705",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "director": "Michael Chaves",
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250910T170000000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T17:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6699",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "director": "Michael Chaves",
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheConjuringLastRites20250910T192500000Z",
-    "filmTitle": "The Conjuring: Last Rites",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T19:25:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6700",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
-    "websiteYear": 2025,
-    "director": "Michael Chaves",
-    "tmdbId": 1038392,
-    "releaseDate": "2025-09-03",
-    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
-    "genres": [
-      "Horror"
-    ],
-    "imdbId": "tt22898462"
   },
   {
     "id": "genesisTheConjuringLastRites20250911T142000000Z",
@@ -6476,6 +5992,40 @@
     "imdbId": "tt22898462"
   },
   {
+    "id": "genesisTheConjuringLastRites20250915T200000000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-15T20:00:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6911",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462"
+  },
+  {
+    "id": "genesisTheConjuringLastRites20250916T195500000Z",
+    "filmTitle": "The Conjuring: Last Rites",
+    "cinema": "genesis",
+    "screeningStart": "2025-09-16T19:55:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6913",
+    "filmUrl": "https://www.genesiscinema.co.uk/event/98547",
+    "websiteYear": 2025,
+    "director": "Michael Chaves",
+    "tmdbId": 1038392,
+    "releaseDate": "2025-09-03",
+    "synopsis": "Paranormal investigators Ed and Lorraine Warren take on one last terrifying case involving mysterious entities they must confront.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt22898462"
+  },
+  {
     "id": "genesisTheConjuringLastRites20250918T195500000Z",
     "filmTitle": "The Conjuring: Last Rites",
     "cinema": "genesis",
@@ -6491,60 +6041,6 @@
       "Horror"
     ],
     "imdbId": "tt22898462"
-  },
-  {
-    "id": "genesisTheRoses20250910T143500000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T14:35:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6702",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "director": "Jay Roach",
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250910T172000000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T17:20:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6703",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "director": "Jay Roach",
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "imdbId": "tt31973693"
-  },
-  {
-    "id": "genesisTheRoses20250910T195000000Z",
-    "filmTitle": "The Roses",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T19:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6704",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/99420",
-    "websiteYear": 2025,
-    "director": "Jay Roach",
-    "tmdbId": 1267905,
-    "releaseDate": "2025-08-27",
-    "synopsis": "Life seems easy for picture-perfect couple Ivy and Theo: successful careers, a loving marriage, great kids. But beneath the façade of their supposed ideal life, a storm is brewing – as Theo's career nosedives while Ivy's own ambitions take off, a tinderbox of fierce competition and hidden resentment ignites.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "imdbId": "tt31973693"
   },
   {
     "id": "genesisTheRoses20250911T143000000Z",
@@ -6691,42 +6187,6 @@
     "imdbId": "tt31973693"
   },
   {
-    "id": "genesisWeapons20250910T165000000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T16:50:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6707",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "director": "Zach Cregger",
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisWeapons20250910T194500000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-10T19:45:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6708",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "director": "Zach Cregger",
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "imdbId": "tt26581740"
-  },
-  {
     "id": "genesisWeapons20250911T165000000Z",
     "filmTitle": "Weapons",
     "cinema": "genesis",
@@ -6786,24 +6246,6 @@
     "cinema": "genesis",
     "screeningStart": "2025-09-13T19:45:00.000Z",
     "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6861",
-    "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
-    "websiteYear": 2025,
-    "director": "Zach Cregger",
-    "tmdbId": 1078605,
-    "releaseDate": "2025-08-04",
-    "synopsis": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "imdbId": "tt26581740"
-  },
-  {
-    "id": "genesisWeapons20250915T194000000Z",
-    "filmTitle": "Weapons",
-    "cinema": "genesis",
-    "screeningStart": "2025-09-15T19:40:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6888",
     "filmUrl": "https://www.genesiscinema.co.uk/event/98683",
     "websiteYear": 2025,
     "director": "Zach Cregger",
@@ -7405,7 +6847,7 @@
     "filmTitle": "FROM GROUND ZERO: STORIES FROM GAZA - UK THEATRICAL RELEASE PREMIERE with Director Q&A",
     "cinema": "genesis",
     "screeningStart": "2025-09-12T18:15:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=5893",
+    "bookingUrl": "https://www.genesiscinema.co.uk/",
     "filmUrl": "https://www.genesiscinema.co.uk/event/100618",
     "websiteYear": 2025
   },
@@ -7420,7 +6862,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7438,7 +6880,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7456,7 +6898,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7474,7 +6916,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7492,7 +6934,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7510,7 +6952,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7528,7 +6970,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7546,7 +6988,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7564,7 +7006,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7582,7 +7024,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7600,7 +7042,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7608,17 +7050,17 @@
     "imdbId": "tt10374610"
   },
   {
-    "id": "genesisTheLongWalk20250915T200000000Z",
+    "id": "genesisTheLongWalk20250915T194000000Z",
     "filmTitle": "The Long Walk",
     "cinema": "genesis",
-    "screeningStart": "2025-09-15T20:00:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6798",
+    "screeningStart": "2025-09-15T19:40:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6912",
     "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
     "websiteYear": 2025,
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7636,7 +7078,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7654,7 +7096,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7662,17 +7104,17 @@
     "imdbId": "tt10374610"
   },
   {
-    "id": "genesisTheLongWalk20250916T195500000Z",
+    "id": "genesisTheLongWalk20250916T193500000Z",
     "filmTitle": "The Long Walk",
     "cinema": "genesis",
-    "screeningStart": "2025-09-16T19:55:00.000Z",
-    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6819",
+    "screeningStart": "2025-09-16T19:35:00.000Z",
+    "bookingUrl": "https://genesis.admit-one.co.uk/seats/?perfCode=6914",
     "filmUrl": "https://www.genesiscinema.co.uk/event/99421",
     "websiteYear": 2025,
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7690,7 +7132,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7708,7 +7150,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7726,7 +7168,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7744,7 +7186,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7762,7 +7204,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7780,7 +7222,7 @@
     "director": "Francis Lawrence",
     "tmdbId": 604079,
     "releaseDate": "2025-09-10",
-    "synopsis": "Every year, fifty teenage boys meet for an event known throughout the country as \"The Long Walk.\" Among this year's chosen crop is \"Maine's Own,\" Ray Garraty. He knows the rules: that warnings are issued if you fall under speed, stumble, sit down. That after three warnings - you get your ticket. And what happens then serves as a chilling reminder that there can be only one winner in the Walk. The one that survives.",
+    "synopsis": "In a dystopian, alternate-America ruled by a totalitarian regime, 50 teenage boys take part in a deadly annual walking contest, forced to maintain a minimum pace or be executed, until only one survivor remains.",
     "genres": [
       "Horror",
       "Science Fiction"
@@ -7953,7 +7395,7 @@
     "filmUrl": "https://www.genesiscinema.co.uk/event/100603",
     "websiteYear": 2025,
     "tmdbId": 1400769,
-    "releaseDate": "2025-01-23",
+    "releaseDate": "2025-09-19",
     "synopsis": "In a country where eligible men greatly outnumber women, three perpetual bachelors join an intensive seven-day dating camp led by one of China’s most sought-after dating coaches in what may be their last-ditch effort to find love.",
     "genres": [
       "Documentary"
@@ -8135,151 +7577,6 @@
     ]
   },
   {
-    "id": "icasorrybaby20250910T110000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T11:00:00.000Z",
-    "bookingUrl": "https://ica.art/films/sorry-baby",
-    "websiteYear": 2025,
-    "director": "Eva Victor",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "icameasuresforafuneral20250910T123000000Z",
-    "filmTitle": "Measures for a Funeral",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T12:30:00.000Z",
-    "bookingUrl": "https://ica.art/films/measures-for-a-funeral",
-    "websiteYear": 2024,
-    "director": "Sofia Bohdanowicz",
-    "tmdbId": 1313637,
-    "releaseDate": "2024-09-07",
-    "synopsis": "Follows a young woman named Audrey Benac on a research odyssey of ghostly possession in which she endeavours to restore the legacy of the forgotten Canadian violinist Kathleen Parlow.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt33077335"
-  },
-  {
-    "id": "icaafternoonsofsolitude20250910T130000000Z",
-    "filmTitle": "Afternoons of Solitude",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T13:00:00.000Z",
-    "bookingUrl": "https://ica.art/films/afternoons-of-solitude",
-    "websiteYear": 2024,
-    "director": "Albert Serra",
-    "tmdbId": 975324,
-    "releaseDate": "2025-03-07",
-    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
-    "genres": [
-      "Documentary"
-    ],
-    "imdbId": "tt26245982"
-  },
-  {
-    "id": "icaafternoonsofsolitude20250910T193000000Z",
-    "filmTitle": "Afternoons of Solitude",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T19:30:00.000Z",
-    "bookingUrl": "https://ica.art/films/afternoons-of-solitude",
-    "websiteYear": 2024,
-    "director": "Albert Serra",
-    "tmdbId": 975324,
-    "releaseDate": "2025-03-07",
-    "synopsis": "The life of the bullfighter Andrés Roca Rey during a day of bullfighting, from the moment he dresses up to the moment he undresses.",
-    "genres": [
-      "Documentary"
-    ],
-    "imdbId": "tt26245982"
-  },
-  {
-    "id": "icayoungmothers20250910T152000000Z",
-    "filmTitle": "Young Mothers",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T15:20:00.000Z",
-    "bookingUrl": "https://ica.art/films/young-mothers",
-    "websiteYear": 2025,
-    "director": "Jean-Pierre Dardenne",
-    "tmdbId": 1242015,
-    "releaseDate": "2025-05-23",
-    "synopsis": "Housed in a shelter for young mothers, Jessica, Perla, Julie, Naïma and Ariane, all of whom have grown up in difficult circumstances, struggle to obtain a better life for themselves and their children.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt32909489"
-  },
-  {
-    "id": "icamothervera20250910T153000000Z",
-    "filmTitle": "Mother Vera",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T15:30:00.000Z",
-    "bookingUrl": "https://ica.art/films/mother-vera",
-    "websiteYear": 2024,
-    "director": "Alys Tomlinson",
-    "tmdbId": 639908,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Shot in black and white in a lyrical, documentary style, Vera takes us from the hidden, religious world of the Belarusian convent to rural farmland, where men and women facing personal and social difficulties live and work. It is here that Vera expresses her deep connection with the horses that she looks after as part of her obedience (religious duty). The film is narrated by Vera as she tells her story of finding faith as a young woman and the impact it has had on her emotionally and spiritually.",
-    "genres": [
-      "Documentary"
-    ],
-    "imdbId": "tt32123163"
-  },
-  {
-    "id": "icasex20250910T172000000Z",
-    "filmTitle": "Sex",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T17:20:00.000Z",
-    "bookingUrl": "https://ica.art/films/sex",
-    "websiteYear": 2024,
-    "director": "Dag Johan Haugerud",
-    "tmdbId": 1228681,
-    "releaseDate": "2024-03-01",
-    "synopsis": "Two men in heterosexual marriages whose unexpected experiences challenge their perceptions of sexuality, gender and identity.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt26270862"
-  },
-  {
-    "id": "icasanatorium20250910T173000000Z",
-    "filmTitle": "Sanatorium",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T17:30:00.000Z",
-    "bookingUrl": "https://ica.art/films/sanatorium",
-    "websiteYear": 2025,
-    "director": "Gar O'Rourke",
-    "tmdbId": 1415669,
-    "releaseDate": "2025-09-05",
-    "synopsis": "Despite a war raging close by, mud treatments and electroshock therapies continue at Kuyalnik Sanatorium, an enormous 1970s brutalist building on the shores of Odesa, where a small group search for love, healing, and happiness.",
-    "genres": [
-      "Documentary"
-    ],
-    "imdbId": "tt35820341"
-  },
-  {
-    "id": "icavietandnam20250910T194000000Z",
-    "filmTitle": "Viêt and Nam",
-    "cinema": "ica",
-    "screeningStart": "2025-09-10T19:40:00.000Z",
-    "bookingUrl": "https://ica.art/films/viet-and-nam",
-    "websiteYear": 2024,
-    "director": "Trương Minh Quý",
-    "tmdbId": 846586,
-    "releaseDate": "2024-09-25",
-    "synopsis": "In the depths of the underground coal mines, where danger awaits and darkness prevails, Nam and Việt, both young miners, cherish fleeting moments, knowing that one of them will soon leave for a new life across the sea.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt32086052"
-  },
-  {
     "id": "icaafternoonsofsolitude20250911T110500000Z",
     "filmTitle": "Afternoons of Solitude",
     "cinema": "ica",
@@ -8318,7 +7615,7 @@
     "screeningStart": "2025-09-11T13:35:00.000Z",
     "bookingUrl": "https://ica.art/films/young-mothers",
     "websiteYear": 2025,
-    "director": "Jean-Pierre Dardenne",
+    "director": "Luc Dardenne",
     "tmdbId": 1242015,
     "releaseDate": "2025-05-23",
     "synopsis": "Housed in a shelter for young mothers, Jessica, Perla, Julie, Naïma and Ariane, all of whom have grown up in difficult circumstances, struggle to obtain a better life for themselves and their children.",
@@ -8515,7 +7812,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -8537,7 +7834,7 @@
     "screeningStart": "2025-09-13T11:05:00.000Z",
     "bookingUrl": "https://ica.art/films/young-mothers",
     "websiteYear": 2025,
-    "director": "Jean-Pierre Dardenne",
+    "director": "Luc Dardenne",
     "tmdbId": 1242015,
     "releaseDate": "2025-05-23",
     "synopsis": "Housed in a shelter for young mothers, Jessica, Perla, Julie, Naïma and Ariane, all of whom have grown up in difficult circumstances, struggle to obtain a better life for themselves and their children.",
@@ -8682,7 +7979,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -8804,7 +8101,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -8871,7 +8168,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -8889,7 +8186,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -8915,7 +8212,7 @@
     "screeningStart": "2025-09-16T13:10:00.000Z",
     "bookingUrl": "https://ica.art/films/young-mothers",
     "websiteYear": 2025,
-    "director": "Jean-Pierre Dardenne",
+    "director": "Luc Dardenne",
     "tmdbId": 1242015,
     "releaseDate": "2025-05-23",
     "synopsis": "Housed in a shelter for young mothers, Jessica, Perla, Julie, Naïma and Ariane, all of whom have grown up in difficult circumstances, struggle to obtain a better life for themselves and their children.",
@@ -9125,7 +8422,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -9255,7 +8552,7 @@
       "Drama",
       "Animation"
     ],
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "imdbId": "tt32606918"
   },
   {
@@ -9474,6 +8771,42 @@
     "imdbId": "tt0856804"
   },
   {
+    "id": "icaonebattleafteranother20250926T135000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "ica",
+    "screeningStart": "2025-09-26T13:50:00.000Z",
+    "bookingUrl": "https://ica.art/films/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
+  },
+  {
+    "id": "icaonebattleafteranother20250926T193000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "ica",
+    "screeningStart": "2025-09-26T19:30:00.000Z",
+    "bookingUrl": "https://ica.art/films/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
+  },
+  {
     "id": "icainvention20250926T173000000Z",
     "filmTitle": "London Premiere Invention + Q&A",
     "cinema": "ica",
@@ -9491,13 +8824,31 @@
     "websiteYear": 2014
   },
   {
-    "id": "icainvention20250927T133000000Z",
+    "id": "icainvention20250927T150000000Z",
     "filmTitle": "London Premiere Invention + Q&A",
     "cinema": "ica",
-    "screeningStart": "2025-09-27T13:30:00.000Z",
+    "screeningStart": "2025-09-27T15:00:00.000Z",
     "bookingUrl": "https://ica.art/films/invention",
     "websiteYear": 2024,
     "director": "Courtney Stephens"
+  },
+  {
+    "id": "icaonebattleafteranother20250927T170000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "ica",
+    "screeningStart": "2025-09-27T17:00:00.000Z",
+    "bookingUrl": "https://ica.art/films/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
   },
   {
     "id": "icaanavazcinematicmethodologieshumannonhuman20250927T173000000Z",
@@ -9507,6 +8858,42 @@
     "bookingUrl": "https://ica.art/films/ana-vaz-cinematic-methodologies-human-nonhuman",
     "websiteYear": 2018,
     "director": "Atomic Garden (France/Japan"
+  },
+  {
+    "id": "icaonebattleafteranother20250928T120000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "ica",
+    "screeningStart": "2025-09-28T12:00:00.000Z",
+    "bookingUrl": "https://ica.art/films/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
+  },
+  {
+    "id": "icaonebattleafteranother20250928T173000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "ica",
+    "screeningStart": "2025-09-28T17:30:00.000Z",
+    "bookingUrl": "https://ica.art/films/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
   },
   {
     "id": "icaclaralawdriftingpetals20250928T130000000Z",
@@ -9584,6 +8971,42 @@
     ]
   },
   {
+    "id": "icaonebattleafteranother20250930T134500000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "ica",
+    "screeningStart": "2025-09-30T13:45:00.000Z",
+    "bookingUrl": "https://ica.art/films/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
+  },
+  {
+    "id": "icaonebattleafteranother20250930T193000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "ica",
+    "screeningStart": "2025-09-30T19:30:00.000Z",
+    "bookingUrl": "https://ica.art/films/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
+  },
+  {
     "id": "icaorly20250930T154500000Z",
     "filmTitle": "Orly",
     "cinema": "ica",
@@ -9625,6 +9048,42 @@
     "director": "Courtney Stephens"
   },
   {
+    "id": "icaonebattleafteranother20251001T135000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "ica",
+    "screeningStart": "2025-10-01T13:50:00.000Z",
+    "bookingUrl": "https://ica.art/films/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
+  },
+  {
+    "id": "icaonebattleafteranother20251001T193500000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "ica",
+    "screeningStart": "2025-10-01T19:35:00.000Z",
+    "bookingUrl": "https://ica.art/films/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
+  },
+  {
     "id": "icainvention20251001T194000000Z",
     "filmTitle": "London Premiere Invention + Q&A",
     "cinema": "ica",
@@ -9632,6 +9091,42 @@
     "bookingUrl": "https://ica.art/films/invention",
     "websiteYear": 2024,
     "director": "Courtney Stephens"
+  },
+  {
+    "id": "icaonebattleafteranother20251002T121500000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "ica",
+    "screeningStart": "2025-10-02T12:15:00.000Z",
+    "bookingUrl": "https://ica.art/films/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
+  },
+  {
+    "id": "icaonebattleafteranother20251002T190000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "ica",
+    "screeningStart": "2025-10-02T19:00:00.000Z",
+    "bookingUrl": "https://ica.art/films/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
   },
   {
     "id": "icainvention20251002T173000000Z",
@@ -9904,189 +9399,21 @@
     "imdbId": "tt35715953"
   },
   {
-    "id": "pccCallMeByYourName20250910T111500000Z",
-    "filmTitle": "Call Me By Your Name",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-10T11:15:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622147",
-    "filmUrl": "https://princecharlescinema.com/film/4402911/call-me-by-your-name",
-    "websiteYear": 2017,
-    "director": "Luca Guadagnino",
-    "tmdbId": 398818,
-    "releaseDate": "2017-07-28",
-    "synopsis": "In the summer of 1983, a 17-year-old Elio spends his days in his family's villa in Italy. One day Oliver, a graduate student, arrives to assist Elio's father, a professor of Greco-Roman culture. Soon, Elio and Oliver discover a summer that will alter their lives forever.",
+    "id": "icaperfectblue4krestoration20251010T193000000Z",
+    "filmTitle": "Perfect Blue (4K Restoration)",
+    "cinema": "ica",
+    "screeningStart": "2025-10-10T19:30:00.000Z",
+    "bookingUrl": "https://ica.art/films/perfect-blue-4k-restoration",
+    "websiteYear": 1998,
+    "director": "Satoshi Kon",
+    "tmdbId": 10494,
+    "releaseDate": "1998-02-28",
+    "synopsis": "Rising pop star Mima quits singing to pursue a career as an actress. After she takes up a role on a popular detective show, her handlers and collaborators begin turning up murdered. Harboring feelings of guilt and haunted by visions of her former self, Mima's reality and fantasy meld into a frenzied paranoia.",
     "genres": [
-      "Romance",
-      "Drama"
+      "Animation",
+      "Thriller"
     ],
-    "imdbId": "tt5726616"
-  },
-  {
-    "id": "pccCallMeByYourName20250921T133000000Z",
-    "filmTitle": "Call Me By Your Name",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-21T13:30:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622193",
-    "filmUrl": "https://princecharlescinema.com/film/4402911/call-me-by-your-name",
-    "websiteYear": 2017,
-    "director": "Luca Guadagnino",
-    "tmdbId": 398818,
-    "releaseDate": "2017-07-28",
-    "synopsis": "In the summer of 1983, a 17-year-old Elio spends his days in his family's villa in Italy. One day Oliver, a graduate student, arrives to assist Elio's father, a professor of Greco-Roman culture. Soon, Elio and Oliver discover a summer that will alter their lives forever.",
-    "genres": [
-      "Romance",
-      "Drama"
-    ],
-    "imdbId": "tt5726616"
-  },
-  {
-    "id": "pccGladiator20250910T114500000Z",
-    "filmTitle": "Gladiator",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-10T11:45:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622129",
-    "filmUrl": "https://princecharlescinema.com/film/21883005/gladiator",
-    "websiteYear": 2000,
-    "director": "Ridley Scott",
-    "tmdbId": 98,
-    "releaseDate": "2000-05-04",
-    "synopsis": "After the death of Emperor Marcus Aurelius, his devious son takes power and demotes Maximus, one of Rome's most capable generals who Marcus preferred. Eventually, Maximus is forced to become a gladiator and battle to the death against other men for the amusement of paying audiences.",
-    "genres": [
-      "Action",
-      "Drama",
-      "Adventure"
-    ],
-    "imdbId": "tt0172495"
-  },
-  {
-    "id": "pccAnora20250910T140500000Z",
-    "filmTitle": "Anora",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-10T14:05:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31621059",
-    "filmUrl": "https://princecharlescinema.com/film/31616893/anora",
-    "websiteYear": 2024,
-    "director": "Sean Baker",
-    "tmdbId": 1064213,
-    "releaseDate": "2024-10-14",
-    "synopsis": "A young sex worker from Brooklyn gets her chance at a Cinderella story when she meets and impulsively marries the son of an oligarch. Once the news reaches Russia, her fairytale is threatened as his parents set out to get the marriage annulled.",
-    "genres": [
-      "Drama",
-      "Comedy",
-      "Romance"
-    ],
-    "imdbId": "tt28607951"
-  },
-  {
-    "id": "pccThisIsSpinalTap20250910T150500000Z",
-    "filmTitle": "This Is Spinal Tap",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-10T15:05:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622963",
-    "filmUrl": "https://princecharlescinema.com/film/31617134/this-is-spinal-tap",
-    "websiteYear": 1984,
-    "director": "Rob Reiner",
-    "tmdbId": 11031,
-    "releaseDate": "1984-03-02",
-    "synopsis": "\"This Is Spinal Tap\" shines a light on the self-contained universe of a metal band struggling to get back on the charts, including everything from its complicated history of ups and downs, gold albums, name changes and undersold concert dates, along with the full host of requisite groupies, promoters, hangers-on and historians, sessions, release events and those special behind-the-scenes moments that keep it all real.",
-    "genres": [
-      "Comedy",
-      "Music"
-    ],
-    "imdbId": "tt0088258"
-  },
-  {
-    "id": "pccFourAdventuresofReinetteandMirabelle20250910T170000000Z",
-    "filmTitle": "Four Adventures of Reinette and Mirabelle",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-10T17:00:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31621689",
-    "filmUrl": "https://princecharlescinema.com/film/16732796/four-adventures-of-reinette-and-mirabelle",
-    "websiteYear": 1987,
-    "director": "Éric Rohmer",
-    "tmdbId": 37189,
-    "releaseDate": "1987-02-04",
-    "synopsis": "Two young girls meet, Reinette from the countryside and Mirabelle from Paris, and decide to take a flat together in Paris where they attend University. Four successive stories about their daily lives illustrate the very different views, characters and relation to the world of these two friends.",
-    "genres": [
-      "Comedy",
-      "Drama"
-    ],
-    "imdbId": "tt0090565"
-  },
-  {
-    "id": "pccDrStrangelove20250910T171500000Z",
-    "filmTitle": "Dr. Strangelove",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-10T17:15:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622073",
-    "filmUrl": "https://princecharlescinema.com/film/1865327/dr-strangelove",
-    "websiteYear": 1964,
-    "director": "Stanley Kubrick",
-    "tmdbId": 935,
-    "releaseDate": "1964-01-29",
-    "synopsis": "After the insane General Jack D. Ripper initiates a nuclear strike on the Soviet Union, a war room full of politicians, generals and a Russian diplomat all frantically try to stop it.",
-    "genres": [
-      "Comedy",
-      "War"
-    ],
-    "imdbId": "tt0057012"
-  },
-  {
-    "id": "pccMulhollandDr20250910T193000000Z",
-    "filmTitle": "Mulholland Dr.",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-10T19:30:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622443",
-    "filmUrl": "https://princecharlescinema.com/film/2666403/mulholland-dr",
-    "websiteYear": 2001,
-    "director": "David Lynch",
-    "tmdbId": 1018,
-    "releaseDate": "2001-06-06",
-    "synopsis": "Blonde Betty Elms has only just arrived in Hollywood to become a movie star when she meets an enigmatic brunette with amnesia. Meanwhile, as the two set off to solve the second woman's identity, filmmaker Adam Kesher runs into ominous trouble while casting his latest project.",
-    "genres": [
-      "Thriller",
-      "Drama",
-      "Mystery"
-    ],
-    "imdbId": "tt0166924"
-  },
-  {
-    "id": "pccMulhollandDr20250922T111500000Z",
-    "filmTitle": "Mulholland Dr.",
-    "cinema": "princecharles",
-    "screeningStart": "2025-09-22T11:15:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622200",
-    "filmUrl": "https://princecharlescinema.com/film/2666403/mulholland-dr",
-    "websiteYear": 2001,
-    "director": "David Lynch",
-    "tmdbId": 1018,
-    "releaseDate": "2001-06-06",
-    "synopsis": "Blonde Betty Elms has only just arrived in Hollywood to become a movie star when she meets an enigmatic brunette with amnesia. Meanwhile, as the two set off to solve the second woman's identity, filmmaker Adam Kesher runs into ominous trouble while casting his latest project.",
-    "genres": [
-      "Thriller",
-      "Drama",
-      "Mystery"
-    ],
-    "imdbId": "tt0166924"
-  },
-  {
-    "id": "pccMulhollandDr20251004T134000000Z",
-    "filmTitle": "Mulholland Dr.",
-    "cinema": "princecharles",
-    "screeningStart": "2025-10-04T13:40:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622455",
-    "filmUrl": "https://princecharlescinema.com/film/2666403/mulholland-dr",
-    "websiteYear": 2001,
-    "director": "David Lynch",
-    "tmdbId": 1018,
-    "releaseDate": "2001-06-06",
-    "synopsis": "Blonde Betty Elms has only just arrived in Hollywood to become a movie star when she meets an enigmatic brunette with amnesia. Meanwhile, as the two set off to solve the second woman's identity, filmmaker Adam Kesher runs into ominous trouble while casting his latest project.",
-    "genres": [
-      "Thriller",
-      "Drama",
-      "Mystery"
-    ],
-    "imdbId": "tt0166924"
+    "imdbId": "tt0156887"
   },
   {
     "id": "pcc2001ASpaceOdyssey20250911T110000000Z",
@@ -10404,7 +9731,7 @@
     "filmTitle": "Spinal Tap II: The End Continues",
     "cinema": "princecharles",
     "screeningStart": "2025-09-12T17:15:00.000Z",
-    "bookingUrl": "https://princecharlescinema.com",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622723",
     "filmUrl": "https://princecharlescinema.com/film/31617186/spinal-tap-ii-the-end-continues",
     "websiteYear": 2025,
     "director": "Rob Reiner",
@@ -10916,7 +10243,7 @@
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622155",
     "filmUrl": "https://princecharlescinema.com/film/31617059/hearts-of-darkness-a-filmmakers-apocalypse",
     "websiteYear": 1991,
-    "director": "Fax Bahr",
+    "director": "George Hickenlooper",
     "tmdbId": 4539,
     "releaseDate": "1991-11-27",
     "synopsis": "A chronicle of the production problems — including bad weather, actors' health, war near the filming locations, and more — which plagued the filming of Apocalypse Now, increasing costs and nearly destroying the life and career of Francis Ford Coppola.",
@@ -10958,7 +10285,7 @@
       "Music",
       "Documentary"
     ],
-    "director": "Peter Clifton",
+    "director": "Joe Massot",
     "imdbId": "tt0075244"
   },
   {
@@ -11990,6 +11317,24 @@
     "imdbId": "tt0072443"
   },
   {
+    "id": "pccCallMeByYourName20250921T133000000Z",
+    "filmTitle": "Call Me By Your Name",
+    "cinema": "princecharles",
+    "screeningStart": "2025-09-21T13:30:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622193",
+    "filmUrl": "https://princecharlescinema.com/film/4402911/call-me-by-your-name",
+    "websiteYear": 2017,
+    "director": "Luca Guadagnino",
+    "tmdbId": 398818,
+    "releaseDate": "2017-07-28",
+    "synopsis": "In the summer of 1983, a 17-year-old Elio spends his days in his family's villa in Italy. One day Oliver, a graduate student, arrives to assist Elio's father, a professor of Greco-Roman culture. Soon, Elio and Oliver discover a summer that will alter their lives forever.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "imdbId": "tt5726616"
+  },
+  {
     "id": "pccMemories20250921T162500000Z",
     "filmTitle": "Memories",
     "cinema": "princecharles",
@@ -12104,6 +11449,44 @@
     "imdbId": "tt14039582"
   },
   {
+    "id": "pccMulhollandDr20250922T111500000Z",
+    "filmTitle": "Mulholland Dr.",
+    "cinema": "princecharles",
+    "screeningStart": "2025-09-22T11:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622200",
+    "filmUrl": "https://princecharlescinema.com/film/2666403/mulholland-dr",
+    "websiteYear": 2001,
+    "director": "David Lynch",
+    "tmdbId": 1018,
+    "releaseDate": "2001-06-06",
+    "synopsis": "Blonde Betty Elms has only just arrived in Hollywood to become a movie star when she meets an enigmatic brunette with amnesia. Meanwhile, as the two set off to solve the second woman's identity, filmmaker Adam Kesher runs into ominous trouble while casting his latest project.",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Mystery"
+    ],
+    "imdbId": "tt0166924"
+  },
+  {
+    "id": "pccMulhollandDr20251004T134000000Z",
+    "filmTitle": "Mulholland Dr.",
+    "cinema": "princecharles",
+    "screeningStart": "2025-10-04T13:40:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622455",
+    "filmUrl": "https://princecharlescinema.com/film/2666403/mulholland-dr",
+    "websiteYear": 2001,
+    "director": "David Lynch",
+    "tmdbId": 1018,
+    "releaseDate": "2001-06-06",
+    "synopsis": "Blonde Betty Elms has only just arrived in Hollywood to become a movie star when she meets an enigmatic brunette with amnesia. Meanwhile, as the two set off to solve the second woman's identity, filmmaker Adam Kesher runs into ominous trouble while casting his latest project.",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Mystery"
+    ],
+    "imdbId": "tt0166924"
+  },
+  {
     "id": "pccTheGleanersandI20250922T143000000Z",
     "filmTitle": "The Gleaners and I",
     "cinema": "princecharles",
@@ -12208,7 +11591,7 @@
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622303",
     "filmUrl": "https://princecharlescinema.com/film/2187932/a-matter-of-life-and-death",
     "websiteYear": 1946,
-    "director": "Emeric Pressburger",
+    "director": "Michael Powell",
     "tmdbId": 28162,
     "releaseDate": "1946-12-15",
     "synopsis": "A British wartime aviator who cheats death must argue for his life before a celestial court, hoping to prolong his fledgling romance with an American girl.",
@@ -12337,7 +11720,7 @@
     "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622262",
     "filmUrl": "https://princecharlescinema.com/film/618646/singin-in-the-rain",
     "websiteYear": 1952,
-    "director": "Gene Kelly",
+    "director": "Stanley Donen",
     "tmdbId": 872,
     "releaseDate": "1952-04-10",
     "synopsis": "In 1927 Hollywood, a silent film star falls for a chorus girl just as he and his paranoid screen partner struggle to make the difficult transition to talking pictures.",
@@ -12957,6 +12340,25 @@
     "imdbId": "tt0076162"
   },
   {
+    "id": "pccHouseHausu20251010T121500000Z",
+    "filmTitle": "House [Hausu]",
+    "cinema": "princecharles",
+    "screeningStart": "2025-10-10T12:15:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622484",
+    "filmUrl": "https://princecharlescinema.com/film/19285283/house-hausu",
+    "websiteYear": 1977,
+    "director": "Nobuhiko Obayashi",
+    "tmdbId": 25623,
+    "releaseDate": "1977-08-26",
+    "synopsis": "Hoping to find a sense of connection to her late mother, Gorgeous takes a trip with her friends to visit her aunt's ancestral house in the countryside. The girls soon discover that there is more to the old house than meets the eye.",
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Horror"
+    ],
+    "imdbId": "tt0076162"
+  },
+  {
     "id": "pccTheMistBlackWhite20251001T113000000Z",
     "filmTitle": "The Mist (Black & White)",
     "cinema": "princecharles",
@@ -13255,7 +12657,7 @@
     "director": "Satoshi Kon",
     "tmdbId": 10494,
     "releaseDate": "1998-02-28",
-    "synopsis": "Encouraged by her managers, rising pop star Mima takes on a recurring role on a popular TV show, when suddenly her handlers and collaborators begin turning up murdered.",
+    "synopsis": "Rising pop star Mima quits singing to pursue a career as an actress. After she takes up a role on a popular detective show, her handlers and collaborators begin turning up murdered. Harboring feelings of guilt and haunted by visions of her former self, Mima's reality and fantasy meld into a frenzied paranoia.",
     "genres": [
       "Animation",
       "Thriller"
@@ -13273,7 +12675,7 @@
     "director": "Satoshi Kon",
     "tmdbId": 10494,
     "releaseDate": "1998-02-28",
-    "synopsis": "Encouraged by her managers, rising pop star Mima takes on a recurring role on a popular TV show, when suddenly her handlers and collaborators begin turning up murdered.",
+    "synopsis": "Rising pop star Mima quits singing to pursue a career as an actress. After she takes up a role on a popular detective show, her handlers and collaborators begin turning up murdered. Harboring feelings of guilt and haunted by visions of her former self, Mima's reality and fantasy meld into a frenzied paranoia.",
     "genres": [
       "Animation",
       "Thriller"
@@ -13612,6 +13014,24 @@
     "imdbId": "tt0013442"
   },
   {
+    "id": "pccNosferatu20251010T143000000Z",
+    "filmTitle": "Nosferatu",
+    "cinema": "princecharles",
+    "screeningStart": "2025-10-10T14:30:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622483",
+    "filmUrl": "https://princecharlescinema.com/film/17198089/nosferatu",
+    "websiteYear": 1922,
+    "director": "F. W. Murnau",
+    "tmdbId": 653,
+    "releaseDate": "1922-02-16",
+    "synopsis": "The mysterious Count Orlok summons Thomas Hutter to his remote Transylvanian castle in the mountains. The eerie Orlok seeks to buy a house near Hutter and his wife, Ellen. After Orlok reveals his vampire nature, Hutter struggles to escape the castle, knowing that Ellen is in grave danger. Meanwhile Orlok's servant, Knock, prepares for his master to arrive at his new home.",
+    "genres": [
+      "Horror",
+      "Fantasy"
+    ],
+    "imdbId": "tt0013442"
+  },
+  {
     "id": "pccMemoriesofMurderSalinuichueok20251007T114500000Z",
     "filmTitle": "Memories of Murder [Salinui chueok]",
     "cinema": "princecharles",
@@ -13848,23 +13268,254 @@
     "imdbId": "tt0084904"
   },
   {
-    "id": "rio151446120250910T200000000Z",
-    "filmTitle": "Caught Stealing",
-    "cinema": "rio",
-    "screeningStart": "2025-09-10T20:00:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1514461.TcsSection_1299",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1480539",
-    "websiteYear": 2025,
-    "director": "Darren Aronofsky",
-    "tmdbId": 1245993,
-    "releaseDate": "2025-08-26",
-    "synopsis": "Burned-out ex-baseball player Hank Thompson unexpectedly finds himself embroiled in a dangerous struggle for survival amidst the criminal underbelly of 1990s New York City, forced to navigate a treacherous underworld he never imagined.",
+    "id": "pccTheTexasChainSawMassacre20251010T123000000Z",
+    "filmTitle": "The Texas Chain Saw Massacre",
+    "cinema": "princecharles",
+    "screeningStart": "2025-10-10T12:30:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622493",
+    "filmUrl": "https://princecharlescinema.com/film/2949988/the-texas-chain-saw-massacre",
+    "websiteYear": 1974,
+    "director": "Tobe Hooper",
+    "tmdbId": 30497,
+    "releaseDate": "1974-10-11",
+    "synopsis": "Five friends head out to rural Texas to visit the grave of a grandfather. On the way they stumble across what appears to be a deserted house, only to discover something sinister within. Something armed with a chainsaw.",
     "genres": [
-      "Crime",
-      "Thriller",
+      "Horror"
+    ],
+    "imdbId": "tt0072271"
+  },
+  {
+    "id": "pccHellComestoFrogtown20251010T144500000Z",
+    "filmTitle": "Hell Comes to Frogtown",
+    "cinema": "princecharles",
+    "screeningStart": "2025-10-10T14:45:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622492",
+    "filmUrl": "https://princecharlescinema.com/film/31617160/hell-comes-to-frogtown",
+    "websiteYear": 1988,
+    "director": "Donald G. Jackson",
+    "tmdbId": 22572,
+    "releaseDate": "1988-01-29",
+    "synopsis": "'Hell' is the name of the hero of the story. He's a prisoner of the women who now run the USA after a nuclear/biological war. Results of the war are that mutants have evolved, and the human race is in danger of extinction due to infertility. Hell is given the task of helping in the rescue of a group of fertile women from the harem of the mutant leader (resembling a frog). Hell cannot escape since he has a bomb attached to his private parts which will detonate if he strays more than a few hundred yards from his guard.",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Science Fiction"
+    ],
+    "imdbId": "tt0093171"
+  },
+  {
+    "id": "pccLurker20251010T171500000Z",
+    "filmTitle": "Lurker",
+    "cinema": "princecharles",
+    "screeningStart": "2025-10-10T17:15:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/lff/Online/default.asp?BOparam::WScontent::loadArticle::permalink=lurker-lff25",
+    "filmUrl": "https://princecharlescinema.com/film/31617193/lurker",
+    "websiteYear": 2025,
+    "director": "Alex Russell",
+    "tmdbId": 1264573,
+    "releaseDate": "2025-08-22",
+    "synopsis": "When a twenty-something retail clerk meets a rising popstar, he takes the opportunity to edge his way into the in-crowd. But as the line between friend and fan blurs beyond recognition, access and proximity become a matter of life and death.",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "imdbId": "tt13651462"
+  },
+  {
+    "id": "pccShockTreatment20251010T173000000Z",
+    "filmTitle": "Shock Treatment",
+    "cinema": "princecharles",
+    "screeningStart": "2025-10-10T17:30:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622152",
+    "filmUrl": "https://princecharlescinema.com/film/5910056/shock-treatment",
+    "websiteYear": 1981,
+    "director": "Jim Sharman",
+    "tmdbId": 27997,
+    "releaseDate": "1981-08-21",
+    "synopsis": "Brad and Janet are now married and on the rocks. Ostensibly to fix their marriage, the couple goes on the game show 'Marriage Maze' with the eccentric Bert Schnick, who suggests Brad be imprisoned in the local mental hospital. Meanwhile, Janet's star potential is skyrocketing but who is her mysterious benefactor, and who exactly are these doctors?",
+    "genres": [
+      "Comedy",
+      "Music"
+    ],
+    "imdbId": "tt0083067"
+  },
+  {
+    "id": "pccHoneyBunch20251010T194500000Z",
+    "filmTitle": "Honey Bunch",
+    "cinema": "princecharles",
+    "screeningStart": "2025-10-10T19:45:00.000Z",
+    "bookingUrl": "https://whatson.bfi.org.uk/lff/Online/default.asp?BOparam::WScontent::loadArticle::permalink=honey-bunch-lff25",
+    "filmUrl": "https://princecharlescinema.com/film/31617195/honey-bunch",
+    "websiteYear": 2025,
+    "director": "Dusty Mancinelli",
+    "tmdbId": 1339173,
+    "releaseDate": "2025-02-18",
+    "synopsis": "Diana's husband is taking her to an experimental trauma facility deep in the wilderness, but she can't remember why... As her memories begin to creep back in so do some unwelcome sinister truths about her marriage.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt33270103"
+  },
+  {
+    "id": "pccStreetTrash20251010T200000000Z",
+    "filmTitle": "Street Trash",
+    "cinema": "princecharles",
+    "screeningStart": "2025-10-10T20:00:00.000Z",
+    "bookingUrl": "https://princecharlescinema.com/prince-charles-cinema/booknow/31622494",
+    "filmUrl": "https://princecharlescinema.com/film/31617159/street-trash",
+    "websiteYear": 1987,
+    "director": "J. Michael Muro",
+    "tmdbId": 22172,
+    "releaseDate": "1987-02-22",
+    "synopsis": "A group of hobos begin melting into multicolored piles of goo after drinking sixty-year-old liquor. At the same time, the psychotic Vietnam War vet who rules the hobo camp snaps and begins killing at random. Two brothers set out to stop the liquor and the killer.",
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
+    "imdbId": "tt0094057"
+  },
+  {
+    "id": "rio151447020250911T170000000Z",
+    "filmTitle": "Sorry, Baby",
+    "cinema": "rio",
+    "screeningStart": "2025-09-11T17:00:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1514470.TcsSection_936",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
+    "websiteYear": 2025,
+    "director": "Eva Victor",
+    "tmdbId": 1205515,
+    "releaseDate": "2025-06-27",
+    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
+    "genres": [
+      "Drama",
       "Comedy"
     ],
-    "imdbId": "tt1493274"
+    "imdbId": "tt32843349"
+  },
+  {
+    "id": "rio154069920250912T194500000Z",
+    "filmTitle": "Sorry, Baby",
+    "cinema": "rio",
+    "screeningStart": "2025-09-12T19:45:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540699.TcsSection_1299",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
+    "websiteYear": 2025,
+    "director": "Eva Victor",
+    "tmdbId": 1205515,
+    "releaseDate": "2025-06-27",
+    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdbId": "tt32843349"
+  },
+  {
+    "id": "rio154070120250913T170500000Z",
+    "filmTitle": "Sorry, Baby",
+    "cinema": "rio",
+    "screeningStart": "2025-09-13T17:05:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540701.TcsSection_1299",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
+    "websiteYear": 2025,
+    "director": "Eva Victor",
+    "tmdbId": 1205515,
+    "releaseDate": "2025-06-27",
+    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdbId": "tt32843349"
+  },
+  {
+    "id": "rio154070520250914T142000000Z",
+    "filmTitle": "Sorry, Baby",
+    "cinema": "rio",
+    "screeningStart": "2025-09-14T14:20:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540705.TcsSection_1299",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
+    "websiteYear": 2025,
+    "director": "Eva Victor",
+    "tmdbId": 1205515,
+    "releaseDate": "2025-06-27",
+    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdbId": "tt32843349"
+  },
+  {
+    "id": "rio154070820250915T170000000Z",
+    "filmTitle": "Sorry, Baby",
+    "cinema": "rio",
+    "screeningStart": "2025-09-15T17:00:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540708.TcsSection_936",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
+    "websiteYear": 2025,
+    "director": "Eva Victor",
+    "tmdbId": 1205515,
+    "releaseDate": "2025-06-27",
+    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdbId": "tt32843349"
+  },
+  {
+    "id": "rio154071920250916T171000000Z",
+    "filmTitle": "Sorry, Baby",
+    "cinema": "rio",
+    "screeningStart": "2025-09-16T17:10:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540719.TcsSection_1299",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
+    "websiteYear": 2025,
+    "director": "Eva Victor",
+    "tmdbId": 1205515,
+    "releaseDate": "2025-06-27",
+    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdbId": "tt32843349"
+  },
+  {
+    "id": "rio154072020250918T173000000Z",
+    "filmTitle": "Sorry, Baby",
+    "cinema": "rio",
+    "screeningStart": "2025-09-18T17:30:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540720.TcsSection_936",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
+    "websiteYear": 2025,
+    "director": "Eva Victor",
+    "tmdbId": 1205515,
+    "releaseDate": "2025-06-27",
+    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdbId": "tt32843349"
+  },
+  {
+    "id": "rio151447120250911T171500000Z",
+    "filmTitle": "Young Mothers",
+    "cinema": "rio",
+    "screeningStart": "2025-09-11T17:15:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1514471.TcsSection_1299",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1512151",
+    "websiteYear": 2025,
+    "director": "Luc Dardenne",
+    "tmdbId": 1242015,
+    "releaseDate": "2025-05-23",
+    "synopsis": "Housed in a shelter for young mothers, Jessica, Perla, Julie, Naïma and Ariane, all of whom have grown up in difficult circumstances, struggle to obtain a better life for themselves and their children.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt32909489"
   },
   {
     "id": "rio151447220250911T195000000Z",
@@ -14000,202 +13651,6 @@
     "imdbId": "tt1493274"
   },
   {
-    "id": "rio151446020250910T173000000Z",
-    "filmTitle": "Young Mothers",
-    "cinema": "rio",
-    "screeningStart": "2025-09-10T17:30:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1514460.TcsSection_1299",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1512151",
-    "websiteYear": 2025,
-    "director": "Jean-Pierre Dardenne",
-    "tmdbId": 1242015,
-    "releaseDate": "2025-05-23",
-    "synopsis": "Housed in a shelter for young mothers, Jessica, Perla, Julie, Naïma and Ariane, all of whom have grown up in difficult circumstances, struggle to obtain a better life for themselves and their children.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt32909489"
-  },
-  {
-    "id": "rio151447120250911T171500000Z",
-    "filmTitle": "Young Mothers",
-    "cinema": "rio",
-    "screeningStart": "2025-09-11T17:15:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1514471.TcsSection_1299",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1512151",
-    "websiteYear": 2025,
-    "director": "Jean-Pierre Dardenne",
-    "tmdbId": 1242015,
-    "releaseDate": "2025-05-23",
-    "synopsis": "Housed in a shelter for young mothers, Jessica, Perla, Julie, Naïma and Ariane, all of whom have grown up in difficult circumstances, struggle to obtain a better life for themselves and their children.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt32909489"
-  },
-  {
-    "id": "rio151445920250910T171500000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "rio",
-    "screeningStart": "2025-09-10T17:15:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1514459.TcsSection_936",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
-    "websiteYear": 2025,
-    "director": "Eva Victor",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "rio151447020250911T170000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "rio",
-    "screeningStart": "2025-09-11T17:00:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1514470.TcsSection_936",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
-    "websiteYear": 2025,
-    "director": "Eva Victor",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "rio154069920250912T194500000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "rio",
-    "screeningStart": "2025-09-12T19:45:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540699.TcsSection_1299",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
-    "websiteYear": 2025,
-    "director": "Eva Victor",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "rio154070120250913T170500000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "rio",
-    "screeningStart": "2025-09-13T17:05:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540701.TcsSection_1299",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
-    "websiteYear": 2025,
-    "director": "Eva Victor",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "rio154070520250914T142000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "rio",
-    "screeningStart": "2025-09-14T14:20:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540705.TcsSection_1299",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
-    "websiteYear": 2025,
-    "director": "Eva Victor",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "rio154070820250915T170000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "rio",
-    "screeningStart": "2025-09-15T17:00:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540708.TcsSection_936",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
-    "websiteYear": 2025,
-    "director": "Eva Victor",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "rio154071920250916T171000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "rio",
-    "screeningStart": "2025-09-16T17:10:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540719.TcsSection_1299",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
-    "websiteYear": 2025,
-    "director": "Eva Victor",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "rio154072020250918T173000000Z",
-    "filmTitle": "Sorry, Baby",
-    "cinema": "rio",
-    "screeningStart": "2025-09-18T17:30:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1540720.TcsSection_936",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1462895",
-    "websiteYear": 2025,
-    "director": "Eva Victor",
-    "tmdbId": 1205515,
-    "releaseDate": "2025-06-27",
-    "synopsis": "Something bad happened to Agnes. But life goes on… for everyone around her, at least.",
-    "genres": [
-      "Drama",
-      "Comedy"
-    ],
-    "imdbId": "tt32843349"
-  },
-  {
-    "id": "rio144690320250910T194500000Z",
-    "filmTitle": "Stop Making Sense",
-    "cinema": "rio",
-    "screeningStart": "2025-09-10T19:45:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1446903.TcsSection_936",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=252196",
-    "websiteYear": 1983,
-    "director": "Jonathan Demme",
-    "tmdbId": 24128,
-    "releaseDate": "1984-11-16",
-    "synopsis": "A concert film documenting Talking Heads at the height of their popularity, on tour for their 1983 album \"Speaking in Tongues.\" The band takes the stage one by one and is joined by a cadre of guest musicians for a career-spanning and cinematic performance that features creative choreography and visuals.",
-    "genres": [
-      "Documentary",
-      "Music"
-    ],
-    "imdbId": "tt0088178"
-  },
-  {
     "id": "rio148071420250911T193000000Z",
     "filmTitle": "Eraserhead + Book Launch & Intro",
     "cinema": "rio",
@@ -14221,7 +13676,7 @@
     "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1480465.TcsSection_1299",
     "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1480458",
     "websiteYear": 2024,
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -14240,7 +13695,7 @@
     "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1480466.TcsSection_1299",
     "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1480458",
     "websiteYear": 2024,
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -14259,7 +13714,7 @@
     "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1480467.TcsSection_1299",
     "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1480458",
     "websiteYear": 2024,
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -14278,7 +13733,7 @@
     "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1533176.TcsSection_1299",
     "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1480458",
     "websiteYear": 2024,
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -14297,7 +13752,7 @@
     "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1533122.TcsSection_1299",
     "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1480458",
     "websiteYear": 2024,
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -14316,7 +13771,7 @@
     "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1533174.TcsSection_1299",
     "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1480458",
     "websiteYear": 2024,
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -14335,7 +13790,7 @@
     "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1533175.TcsSection_1299",
     "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1480458",
     "websiteYear": 2024,
-    "director": "Bashar Al Babisi",
+    "director": "Wissam Moussa",
     "tmdbId": 1326649,
     "releaseDate": "2025-01-03",
     "synopsis": "\"From Ground Zero\" is a compelling project that brings together 22 short films created by talented filmmakers from Gaza. Launched by Rashid Masharawi, a notable Palestinian filmmaker, the initiative emerged amid the backdrop of conflict, aiming to provide a platform for young artists to express themselves through their craft.  Each film, ranging from 3 to 7 minutes, presents a unique perspective on the current reality in Gaza. The project captures the diverse experiences of life in the Palestinian enclave, including the challenges, tragedies, and moments of resilience faced by its people. With a mix of genres such as fiction, documentary, docu-fiction, animation, and experimental cinema, \"From Ground Zero\" showcases a rich tapestry of stories that reflect the sorrow, joy, and hope inherent in Gazan life.",
@@ -14746,7 +14201,7 @@
     "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1483742.TcsSection_1299",
     "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1483741",
     "websiteYear": 1949,
-    "director": "Gene Kelly",
+    "director": "Stanley Donen",
     "tmdbId": 31516,
     "releaseDate": "1949-12-08",
     "synopsis": "Three sailors wreak havoc as they search for love during a whirlwind 24-hour leave in New York City.",
@@ -14793,103 +14248,61 @@
     "imdbId": "tt30852384"
   },
   {
-    "id": "rio152905420250926T173000000Z",
-    "filmTitle": "Ellis Park + Warren Ellis Q&A",
+    "id": "rio154656120250926T140000000Z",
+    "filmTitle": "One Battle After Another",
     "cinema": "rio",
-    "screeningStart": "2025-09-26T17:30:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1529054.TcsSection_936",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1528631",
-    "websiteYear": 2024,
-    "director": "Justin Kurzel",
-    "tmdbId": 1315631,
-    "releaseDate": "2025-06-19",
-    "synopsis": "Australian musician Warren Ellis guides us through his musical career and his wildlife sanctuary in Sumatra, where rescued trafficked animals are nursed back to health by conservationists.",
-    "genres": [
-      "Documentary",
-      "Music"
-    ],
-    "imdbId": "tt32879751"
-  },
-  {
-    "id": "rio148567720250926T184500000Z",
-    "filmTitle": "Hamilton: The Original Broadway Production",
-    "cinema": "rio",
-    "screeningStart": "2025-09-26T18:45:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1485677.TcsSection_1299",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1485628",
+    "screeningStart": "2025-09-26T14:00:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1546561.TcsSection_936",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1543973",
     "websiteYear": 2025,
-    "director": "Thomas Kail",
-    "tmdbId": 556574,
-    "releaseDate": "2025-09-05",
-    "synopsis": "Presenting the tale of American founding father Alexander Hamilton, this filmed version of the original Broadway smash hit is the story of America then, told by America now.",
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
     "genres": [
-      "History",
-      "Drama"
-    ],
-    "imdbId": "tt8503618"
-  },
-  {
-    "id": "rio148567820250927T133000000Z",
-    "filmTitle": "Hamilton: The Original Broadway Production",
-    "cinema": "rio",
-    "screeningStart": "2025-09-27T13:30:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1485678.TcsSection_936",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1485628",
-    "websiteYear": 2025,
-    "director": "Thomas Kail",
-    "tmdbId": 556574,
-    "releaseDate": "2025-09-05",
-    "synopsis": "Presenting the tale of American founding father Alexander Hamilton, this filmed version of the original Broadway smash hit is the story of America then, told by America now.",
-    "genres": [
-      "History",
-      "Drama"
-    ],
-    "imdbId": "tt8503618"
-  },
-  {
-    "id": "rio148567920250928T130000000Z",
-    "filmTitle": "Hamilton: The Original Broadway Production",
-    "cinema": "rio",
-    "screeningStart": "2025-09-28T13:00:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1485679.TcsSection_936",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1485628",
-    "websiteYear": 2025,
-    "director": "Thomas Kail",
-    "tmdbId": 556574,
-    "releaseDate": "2025-09-05",
-    "synopsis": "Presenting the tale of American founding father Alexander Hamilton, this filmed version of the original Broadway smash hit is the story of America then, told by America now.",
-    "genres": [
-      "History",
-      "Drama"
-    ],
-    "imdbId": "tt8503618"
-  },
-  {
-    "id": "rio145820420250926T223000000Z",
-    "filmTitle": "Infected: A Resident Evil Rave",
-    "cinema": "rio",
-    "screeningStart": "2025-09-26T22:30:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1458204.TcsSection_936",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1458203"
-  },
-  {
-    "id": "rio147375620250927T173000000Z",
-    "filmTitle": "Valley of the Shadow of Death",
-    "cinema": "rio",
-    "screeningStart": "2025-09-27T17:30:00.000Z",
-    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1473756.TcsSection_936",
-    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1473752",
-    "websiteYear": 2024,
-    "director": "Lam Sen",
-    "tmdbId": 1361565,
-    "releaseDate": "2025-04-26",
-    "synopsis": "A Hong Kong pastor faces an impossible test of faith when the young man responsible for his daughter's death arrives at his church seeking both salvation and shelter.",
-    "genres": [
-      "Drama",
+      "Action",
       "Crime",
-      "Romance"
+      "Thriller"
     ],
-    "imdbId": "tt33982106"
+    "imdbId": "tt30144839"
+  },
+  {
+    "id": "rio154784520250926T190000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "rio",
+    "screeningStart": "2025-09-26T19:00:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1547845.TcsSection_1299",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1543973",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
+  },
+  {
+    "id": "rio154706920250927T140000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "rio",
+    "screeningStart": "2025-09-27T14:00:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1547069.TcsSection_936",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1543973",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-24",
+    "synopsis": "When their evil nemesis resurfaces after 16 years, a band of ex-revolutionaries reunite to rescue the daughter of one of their own.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "imdbId": "tt30144839"
   },
   {
     "id": "rio154425120250927T194500000Z",
@@ -14928,6 +14341,105 @@
       "Thriller"
     ],
     "imdbId": "tt30144839"
+  },
+  {
+    "id": "rio148567720250926T151500000Z",
+    "filmTitle": "Hamilton: The Original Broadway Production",
+    "cinema": "rio",
+    "screeningStart": "2025-09-26T15:15:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1485677.TcsSection_1299",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1485628",
+    "websiteYear": 2025,
+    "director": "Thomas Kail",
+    "tmdbId": 556574,
+    "releaseDate": "2025-09-05",
+    "synopsis": "Presenting the tale of American founding father Alexander Hamilton, this filmed version of the original Broadway smash hit is the story of America then, told by America now.",
+    "genres": [
+      "History",
+      "Drama"
+    ],
+    "imdbId": "tt8503618"
+  },
+  {
+    "id": "rio148567820250927T133000000Z",
+    "filmTitle": "Hamilton: The Original Broadway Production",
+    "cinema": "rio",
+    "screeningStart": "2025-09-27T13:30:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1485678.TcsSection_1299",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1485628",
+    "websiteYear": 2025,
+    "director": "Thomas Kail",
+    "tmdbId": 556574,
+    "releaseDate": "2025-09-05",
+    "synopsis": "Presenting the tale of American founding father Alexander Hamilton, this filmed version of the original Broadway smash hit is the story of America then, told by America now.",
+    "genres": [
+      "History",
+      "Drama"
+    ],
+    "imdbId": "tt8503618"
+  },
+  {
+    "id": "rio148567920250928T130000000Z",
+    "filmTitle": "Hamilton: The Original Broadway Production",
+    "cinema": "rio",
+    "screeningStart": "2025-09-28T13:00:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1485679.TcsSection_936",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1485628",
+    "websiteYear": 2025,
+    "director": "Thomas Kail",
+    "tmdbId": 556574,
+    "releaseDate": "2025-09-05",
+    "synopsis": "Presenting the tale of American founding father Alexander Hamilton, this filmed version of the original Broadway smash hit is the story of America then, told by America now.",
+    "genres": [
+      "History",
+      "Drama"
+    ],
+    "imdbId": "tt8503618"
+  },
+  {
+    "id": "rio152905420250926T173000000Z",
+    "filmTitle": "Ellis Park + Warren Ellis Q&A",
+    "cinema": "rio",
+    "screeningStart": "2025-09-26T17:30:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1529054.TcsSection_936",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1528631",
+    "websiteYear": 2024,
+    "director": "Justin Kurzel",
+    "tmdbId": 1315631,
+    "releaseDate": "2025-06-19",
+    "synopsis": "Australian musician Warren Ellis guides us through his musical career and his wildlife sanctuary in Sumatra, where rescued trafficked animals are nursed back to health by conservationists.",
+    "genres": [
+      "Documentary",
+      "Music"
+    ],
+    "imdbId": "tt32879751"
+  },
+  {
+    "id": "rio145820420250926T223000000Z",
+    "filmTitle": "Infected: A Resident Evil Rave",
+    "cinema": "rio",
+    "screeningStart": "2025-09-26T22:30:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1458204.TcsSection_936",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1458203"
+  },
+  {
+    "id": "rio147375620250927T173000000Z",
+    "filmTitle": "Valley of the Shadow of Death",
+    "cinema": "rio",
+    "screeningStart": "2025-09-27T17:30:00.000Z",
+    "bookingUrl": "https://riocinema.org.uk/Rio.dll/Booking?Booking=TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_0.TcsWebTab_0.TcsPerformance_1473756.TcsSection_936",
+    "filmUrl": "https://riocinema.org.uk/Rio.dll/WhatsOn?f=1473752",
+    "websiteYear": 2024,
+    "director": "Lam Sen",
+    "tmdbId": 1361565,
+    "releaseDate": "2025-04-26",
+    "synopsis": "A Hong Kong pastor faces an impossible test of faith when the young man responsible for his daughter's death arrives at his church seeking both salvation and shelter.",
+    "genres": [
+      "Drama",
+      "Crime",
+      "Romance"
+    ],
+    "imdbId": "tt33982106"
   },
   {
     "id": "rio147866120250928T133000000Z",
@@ -15017,110 +14529,6 @@
       "Drama"
     ],
     "imdbId": "tt19823156"
-  },
-  {
-    "id": "cinelumiereLittleTroubleGirls20250910T172500000Z",
-    "filmTitle": "Little Trouble Girls",
-    "cinema": "cinelumiere",
-    "screeningStart": "2025-09-10T17:25:00.000Z",
-    "bookingUrl": "https://cinelumiere.savoysystems.co.uk/CineLumiere.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_600.TcsWebTab_601.TcsPerformance_6435916.TcsSection_3841519",
-    "filmUrl": "https://www.institut-francais.org.uk/cinema/little-trouble-girls/",
-    "websiteYear": 2025,
-    "director": "Urška Djukić",
-    "tmdbId": 1019871,
-    "releaseDate": "2025-08-29",
-    "synopsis": "Introverted 16-year-old Lucia joins her Catholic school's all-girls choir, where she befriends Ana-Maria, a popular and flirty third-year student. But when the choir travels to a countryside convent for a weekend of intensive rehearsals, Lucia’s interest in a dark-eyed restoration worker tests her friendship with Ana-Maria and the other girls. As she navigates unfamiliar surroundings and her budding sexuality, Lucia begins to question her beliefs and values, disrupting the harmony within the choir.",
-    "genres": [
-      "Drama",
-      "Romance"
-    ],
-    "imdbId": "tt28834646"
-  },
-  {
-    "id": "cinelumiereInTheNguyenKitchen20250910T153000000Z",
-    "filmTitle": "In The Nguyen Kitchen",
-    "cinema": "cinelumiere",
-    "screeningStart": "2025-09-10T15:30:00.000Z",
-    "bookingUrl": "https://cinelumiere.savoysystems.co.uk/CineLumiere.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_600.TcsWebTab_601.TcsPerformance_6421387.TcsSection_3841519",
-    "filmUrl": "https://www.institut-francais.org.uk/cinema/in-the-nguyen-kitchen/",
-    "websiteYear": 2024,
-    "director": "Stéphane Ly-Cuong",
-    "tmdbId": 1001248,
-    "releaseDate": "2025-03-05",
-    "synopsis": "French-Vietnamese actress Yvonne Nguyen dreams of a successful career in musicals, to the great displeasure of her mother, who would like her to pursue a more serious path. When Yvonne has no choice but to move back home, both women are strangers to each other. But in the intimacy of the Vietnamese family restaurant’s kitchen, they grow closer. Meanwhile, Yvonne is still after her dreams and finally gets the chance to audition for a big show.",
-    "genres": [
-      "Comedy",
-      "Music"
-    ],
-    "imdbId": "tt31047957"
-  },
-  {
-    "id": "cinelumiereMrHulotsHoliday20250910T173000000Z",
-    "filmTitle": "Mr Hulot’s Holiday",
-    "cinema": "cinelumiere",
-    "screeningStart": "2025-09-10T17:30:00.000Z",
-    "bookingUrl": "https://cinelumiere.savoysystems.co.uk/CineLumiere.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_600.TcsWebTab_601.TcsPerformance_6435583.TcsSection_1928774",
-    "filmUrl": "https://www.institut-francais.org.uk/cinema/mr-hulots-holiday/",
-    "websiteYear": 1953,
-    "director": "Jacques Tati",
-    "tmdbId": 778,
-    "releaseDate": "1953-02-25",
-    "synopsis": "Monsieur Hulot, Jacques Tati’s endearing clown, takes a holiday at a seaside resort, where his presence provokes one catastrophe after another. Tati’s masterpiece of gentle slapstick is a series of effortlessly well-choreographed sight gags involving dogs, boats, and firecrackers; it was the first entry in the Hulot series and the film that launched its maker to international stardom.",
-    "genres": [
-      "Comedy"
-    ],
-    "imdbId": "tt0046487"
-  },
-  {
-    "id": "cinelumiereYoungMothers20250910T145000000Z",
-    "filmTitle": "Young Mothers",
-    "cinema": "cinelumiere",
-    "screeningStart": "2025-09-10T14:50:00.000Z",
-    "bookingUrl": "https://cinelumiere.savoysystems.co.uk/CineLumiere.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_600.TcsWebTab_601.TcsPerformance_6409820.TcsSection_1928774",
-    "filmUrl": "https://www.institut-francais.org.uk/cinema/young-mothers/",
-    "websiteYear": 2025,
-    "director": "Jean-Pierre Dardenne",
-    "tmdbId": 1242015,
-    "releaseDate": "2025-05-23",
-    "synopsis": "Housed in a shelter for young mothers, Jessica, Perla, Julie, Naïma and Ariane, all of whom have grown up in difficult circumstances, struggle to obtain a better life for themselves and their children.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt32909489"
-  },
-  {
-    "id": "cinelumiereYoungMothers20250910T192000000Z",
-    "filmTitle": "Young Mothers",
-    "cinema": "cinelumiere",
-    "screeningStart": "2025-09-10T19:20:00.000Z",
-    "bookingUrl": "https://cinelumiere.savoysystems.co.uk/CineLumiere.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_600.TcsWebTab_601.TcsPerformance_6440595.TcsSection_1928774",
-    "filmUrl": "https://www.institut-francais.org.uk/cinema/young-mothers/",
-    "websiteYear": 2025,
-    "director": "Jean-Pierre Dardenne",
-    "tmdbId": 1242015,
-    "releaseDate": "2025-05-23",
-    "synopsis": "Housed in a shelter for young mothers, Jessica, Perla, Julie, Naïma and Ariane, all of whom have grown up in difficult circumstances, struggle to obtain a better life for themselves and their children.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt32909489"
-  },
-  {
-    "id": "cinelumiereTheCourageous20250910T192000000Z",
-    "filmTitle": "The Courageous",
-    "cinema": "cinelumiere",
-    "screeningStart": "2025-09-10T19:20:00.000Z",
-    "bookingUrl": "https://cinelumiere.savoysystems.co.uk/CineLumiere.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_600.TcsWebTab_601.TcsPerformance_6385238.TcsSection_3841519",
-    "filmUrl": "https://www.institut-francais.org.uk/cinema/the-courageous/",
-    "websiteYear": 2024,
-    "director": "Jasmin Gordon",
-    "tmdbId": 1321012,
-    "releaseDate": "2025-05-09",
-    "synopsis": "In a small town on the edge of wild country, an eccentric and delinquent mother has had enough of the rules. Crushed by her mistakes and by a society that doesn't give a damn – or a second chance – to people like her, she'll do anything to prove to her children, and to herself, that she still is a good person.",
-    "genres": [
-      "Drama"
-    ],
-    "imdbId": "tt33035860"
   },
   {
     "id": "cinelumiereNobodysWife20250911T191500000Z",
@@ -15508,7 +14916,7 @@
     "bookingUrl": "https://cinelumiere.savoysystems.co.uk/CineLumiere.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_600.TcsWebTab_601.TcsPerformance_6414863.TcsSection_3841519",
     "filmUrl": "https://www.institut-francais.org.uk/cinema/little-nicholas-as-happy-as-can-be-2/",
     "websiteYear": 2022,
-    "director": "Benjamin Massoubre",
+    "director": "Amandine Fredon",
     "tmdbId": 893366,
     "releaseDate": "2022-02-15",
     "synopsis": "Somewhere between Montmartre and Saint-Germain-des-Prés, Jean-Jacques Sempé and René Goscinny lean over a large white sheet of paper and bring to life a mischievous and endearing boy, Little Nicolas. From schoolyard games and fights to summer camp pranks and camaraderie, Nicolas lives a merry and enriching childhood – and brings friendship and newfound life to his creators, too.",
@@ -15653,7 +15061,7 @@
     "bookingUrl": "https://cinelumiere.savoysystems.co.uk/CineLumiere.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_600.TcsWebTab_601.TcsPerformance_6414865.TcsSection_3841519",
     "filmUrl": "https://www.institut-francais.org.uk/cinema/little-nicholas-as-happy-as-can-be-2/",
     "websiteYear": 2022,
-    "director": "Benjamin Massoubre",
+    "director": "Amandine Fredon",
     "tmdbId": 893366,
     "releaseDate": "2022-02-15",
     "synopsis": "Somewhere between Montmartre and Saint-Germain-des-Prés, Jean-Jacques Sempé and René Goscinny lean over a large white sheet of paper and bring to life a mischievous and endearing boy, Little Nicolas. From schoolyard games and fights to summer camp pranks and camaraderie, Nicolas lives a merry and enriching childhood – and brings friendship and newfound life to his creators, too.",
@@ -16488,7 +15896,7 @@
     "genres": [
       "Documentary"
     ],
-    "imdbId": "tt35944814"
+    "imdbId": "tt31391025"
   },
   {
     "id": "cinelumiereGhostTrail20250924T144500000Z",
@@ -16955,7 +16363,7 @@
     "bookingUrl": "https://cinelumiere.savoysystems.co.uk/CineLumiere.dll/TSelectItems.waSelectItemsPrompt.TcsWebMenuItem_600.TcsWebTab_601.TcsPerformance_6418864.TcsSection_1928774",
     "filmUrl": "https://www.institut-francais.org.uk/cinema/zarafa/",
     "websiteYear": 2012,
-    "director": "Jean-Christophe Lie",
+    "director": "Rémi Bezançon",
     "tmdbId": 94196,
     "releaseDate": "2012-01-25",
     "synopsis": "Inspired by the true story of the first giraffe to visit France, Zarafa is a sumptuously animated and stirring adventure, and a throwback to a bygone era of hand-drawn animation and epic storytelling set among sweeping CinemaScope vistas of parched desert, wind-swept mountains and open skies.  Under the cover of darkness a small boy, Maki, loosens the shackles that bind him and escapes into the desert night. Pursued by slavers across the moon-lit savannah, Maki meets Zarafa, a baby giraffe – and an orphan, just like him – as well as the nomad Hassan, Prince of the Desert. Hassan takes them to Alexandria for an audience with the Pasha of Egypt, who orders him to deliver the exotic animal as a gift to King Charles of France.",
