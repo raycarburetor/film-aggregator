@@ -81,12 +81,48 @@ export async function enrichWithTMDb(items, region='GB') {
       const qTitle = normalizeTitleForSearch(it.filmTitle)
       const q = encodeURIComponent(qTitle)
       const yearHint = extractYearHint(it.filmTitle, it.releaseDate, it.websiteYear)
+      // Determine if we have any site-provided anchors that make TMDb matching safer
+      const hasSiteAnchor = Boolean(it.director) || (typeof it.websiteYear === 'number' && Number.isFinite(it.websiteYear)) || (typeof yearHint === 'number')
+      // ICA often lists seasons/events where titles are ambiguous and the page
+      // may lack explicit director/year. In that case, skip TMDb entirely to
+      // avoid attaching incorrect metadata.
+      if (String(it.cinema) === 'ica' && !hasSiteAnchor) {
+        continue
+      }
       async function searchTmdb(withYear) {
         const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-GB&query=${q}&include_adult=false${(withYear && yearHint) ? `&year=${yearHint}` : ''}`
         const res = await fetchFn(url)
         if (!res.ok) return []
         const data = await res.json()
         return Array.isArray(data.results) ? data.results : []
+      }
+      // Fallback: lookup by (director, year) if title search fails
+      async function findByDirectorAndYear(directorName, year) {
+        try {
+          if (!directorName || !Number.isFinite(year)) return null
+          const url = `https://api.themoviedb.org/3/search/person?api_key=${apiKey}&language=en-GB&query=${encodeURIComponent(directorName)}&include_adult=false`
+          const res = await fetchFn(url)
+          if (!res.ok) return null
+          const data = await res.json()
+          const people = Array.isArray(data?.results) ? data.results : []
+          // Prefer candidates known for directing, highest popularity first
+          const sorted = people.slice().sort((a,b) => (String(b.known_for_department||'') === 'Directing' ? 1 : 0) - (String(a.known_for_department||'') === 'Directing' ? 1 : 0) || (Number(b.popularity)||0) - (Number(a.popularity)||0))
+          for (const p of sorted) {
+            try {
+              const cr = await fetchFn(`https://api.themoviedb.org/3/person/${p.id}/movie_credits?api_key=${apiKey}&language=en-GB`)
+              if (!cr.ok) continue
+              const credits = await cr.json()
+              const crew = Array.isArray(credits?.crew) ? credits.crew : []
+              const match = crew.find(c => {
+                if (c?.job !== 'Director') return false
+                const y = (c?.release_date && /^\d{4}-/.test(c.release_date)) ? Number(c.release_date.slice(0,4)) : undefined
+                return y === year
+              })
+              if (match) return { id: match.id, title: match.title, release_date: match.release_date }
+            } catch {}
+          }
+        } catch {}
+        return null
       }
       let results = await searchTmdb(true)
       // If year-filtered search yields nothing, fall back to unfiltered to avoid missing "Killer of Sheep"-style year discrepancies
@@ -167,9 +203,26 @@ export async function enrichWithTMDb(items, region='GB') {
           return t === ql || ot === ql
         })
         if (!m && exacts.length) {
-          m = exacts.slice().sort((a,b) => score(b) - score(a))[0]
+          // If we have no anchors (director/year), only accept an exact-title
+          // hit when the exact-normalized title set is unambiguous by year.
+          if (!hasSiteAnchor) {
+            const nExacts2 = results.filter(r => {
+              const t = normalizeTitleForSearch(r.title || '').toLowerCase()
+              const ot = normalizeTitleForSearch(r.original_title || '').toLowerCase()
+              const ql = qTitle.toLowerCase()
+              return t === ql || ot === ql
+            })
+            const years = Array.from(new Set(nExacts2.map(r => yearFrom(r.release_date)).filter(y => typeof y === 'number')))
+            if (nExacts2.length === 1 || years.length === 1) {
+              m = nExacts2.slice().sort((a,b) => score(b) - score(a))[0]
+            } else {
+              m = null
+            }
+          } else {
+            m = exacts.slice().sort((a,b) => score(b) - score(a))[0]
+          }
         }
-        // Fallback: prefer normalized-title match using same cleanup, then earliest
+        // Fallback: prefer normalized-title match using same cleanup
         if (!m && !exacts.length) {
           const nExacts = results.filter(r => {
             const t = normalizeTitleForSearch(r.title || '').toLowerCase()
@@ -178,12 +231,28 @@ export async function enrichWithTMDb(items, region='GB') {
             return t === ql || ot === ql
           })
           if (!m && nExacts.length) {
-            m = nExacts.slice().sort((a,b) => score(b) - score(a))[0]
+            if (!hasSiteAnchor) {
+              const years = Array.from(new Set(nExacts.map(r => yearFrom(r.release_date)).filter(y => typeof y === 'number')))
+              if (nExacts.length === 1 || years.length === 1) {
+                m = nExacts.slice().sort((a,b) => score(b) - score(a))[0]
+              } else {
+                m = null
+              }
+            } else {
+              m = nExacts.slice().sort((a,b) => score(b) - score(a))[0]
+            }
           } else if (!m) {
-            // Fallback: pick by popularity among candidates sharing a significant word
-            const cands = results.filter(r => sharesWord(r.title) || sharesWord(r.original_title))
-            const pool = cands.length ? cands : results
-            m = pool.slice().sort((a,b) => score(b) - score(a))[0]
+            // If we have no anchors (director/year) to validate, avoid a loose
+            // popularity-based guess. Only allow a loose fallback when we have
+            // at least one site anchor to cross-check later.
+            if (hasSiteAnchor) {
+              const cands = results.filter(r => sharesWord(r.title) || sharesWord(r.original_title))
+              const pool = cands.length ? cands : results
+              m = pool.slice().sort((a,b) => score(b) - score(a))[0]
+            } else {
+              // No anchors and no exact title: skip to avoid incorrect match
+              m = null
+            }
           }
         }
         // Do not bail out on year mismatches from website; we will trust TMDb
@@ -205,10 +274,29 @@ export async function enrichWithTMDb(items, region='GB') {
             if (byDirAlt) m = byDirAlt
           }
           if (!m) {
-            if (nExacts.length) m = nExacts.slice().sort((a,b) => score(b) - score(a))[0]
-            else m = alt.slice().sort((a,b) => score(b) - score(a))[0]
+            if (nExacts.length) {
+              if (!hasSiteAnchor) {
+                const years = Array.from(new Set(nExacts.map(r => yearFrom(r.release_date)).filter(y => typeof y === 'number')))
+                if (nExacts.length === 1 || years.length === 1) {
+                  m = nExacts.slice().sort((a,b) => score(b) - score(a))[0]
+                } else {
+                  m = null
+                }
+              } else {
+                m = nExacts.slice().sort((a,b) => score(b) - score(a))[0]
+              }
+            } else if (hasSiteAnchor) {
+              m = alt.slice().sort((a,b) => score(b) - score(a))[0]
+            } else {
+              m = null
+            }
           }
         }
+      }
+      // Final fallback: if still no match and we have BOTH a director and a reliable year hint, try (director,year)
+      if (!m && it.director && Number.isFinite(yearHint)) {
+        const byDY = await findByDirectorAndYear(it.director, Number(yearHint))
+        if (byDY) m = byDY
       }
       if (!m) continue
       const detRes = await fetchFn(`https://api.themoviedb.org/3/movie/${m.id}?api_key=${apiKey}&append_to_response=credits,external_ids`)
