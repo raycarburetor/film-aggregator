@@ -43,7 +43,7 @@ async function main() {
   try {
     // Fetch required fields. If not forced, only include rows with NULL letterboxd_rating.
     const baseSql = `
-      select id, film_title, tmdb_id, release_date, website_year, letterboxd_rating
+      select id, film_title, tmdb_id, release_date, website_year, director, letterboxd_rating
       from ${table}
       where tmdb_id is not null
       ${force ? '' : 'and letterboxd_rating is null'}
@@ -61,6 +61,7 @@ async function main() {
       tmdbId: r.tmdb_id == null ? null : Number(r.tmdb_id),
       releaseDate: r.release_date ? new Date(r.release_date).toISOString() : undefined,
       websiteYear: (typeof r.website_year === 'number' ? r.website_year : undefined),
+      director: r.director ? String(r.director) : undefined,
       letterboxdRating: r.letterboxd_rating == null ? null : Number(r.letterboxd_rating),
     }))
 

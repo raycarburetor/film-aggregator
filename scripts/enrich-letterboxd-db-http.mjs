@@ -170,7 +170,7 @@ async function searchLetterboxdCandidates(q) {
   }
 }
 
-async function resolveLetterboxdUrlFor(cache, tmdbId, title, releaseDate, websiteYear) {
+async function resolveLetterboxdUrlFor(cache, tmdbId, title, releaseDate, websiteYear, director) {
   const key = String(tmdbId)
   const cached = cache[key]
   if (cached && cached.url) return cached.url
@@ -207,6 +207,27 @@ async function resolveLetterboxdUrlFor(cache, tmdbId, title, releaseDate, websit
     push(noAndWord)
     if (yearHint) push(`${noAndWord}-${yearHint}`)
   }
+  // Extra candidates from TMDb titles (official/original/alternatives)
+  try {
+    const apiKey = process.env.TMDB_API_KEY
+    if (apiKey && tmdbId) {
+      const url = `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${apiKey}&language=en-GB&append_to_response=alternative_titles`
+      const res = await fetch(url)
+      if (res.ok) {
+        const data = await res.json()
+        const titles = new Set()
+        if (data && typeof data.title === 'string') titles.add(String(data.title))
+        if (data && typeof data.original_title === 'string') titles.add(String(data.original_title))
+        const alts = Array.isArray(data?.alternative_titles?.titles) ? data.alternative_titles.titles : []
+        for (const t of alts) { if (t && typeof t.title === 'string') titles.add(String(t.title)) }
+        for (const t of titles) {
+          const st = slugify(normalizeTitleForSearch(t))
+          push(st)
+          if (yearHint) push(`${st}-${yearHint}`)
+        }
+      }
+    }
+  } catch {}
   for (const slug of slugCandidates) {
     if (!slug) continue
     const url = `https://letterboxd.com/film/${slug}/`
@@ -231,6 +252,27 @@ async function resolveLetterboxdUrlFor(cache, tmdbId, title, releaseDate, websit
         return url
       }
     } catch {}
+  }
+  // 3) Final fallback: search by director + year when available
+  if (director && yearHint) {
+    const dirQuery = [String(director || '').trim(), yearHint].filter(Boolean).join(' ')
+    const dc = await searchLetterboxdCandidates(dirQuery)
+    for (const url of dc.slice(0, 5)) {
+      try {
+        const html = await fetchText(url)
+        if (pageHasTmdbId(html, tmdbId)) {
+          cache[key] = { url, updatedAt: new Date().toISOString() }
+          await saveCache(cache)
+          return url
+        }
+      } catch {}
+    }
+    if (dc[0]) {
+      const url = dc[0]
+      cache[key] = { url, updatedAt: new Date().toISOString() }
+      await saveCache(cache)
+      return url
+    }
   }
   if (candidates[0]) {
     const url = candidates[0]
@@ -277,7 +319,7 @@ async function main() {
   const client = await pool.connect()
   try {
     const baseSql = `
-      select id, film_title, tmdb_id, release_date, website_year, letterboxd_rating
+      select id, film_title, tmdb_id, release_date, website_year, director, letterboxd_rating
       from ${table}
       where tmdb_id is not null
       ${force ? '' : 'and letterboxd_rating is null'}
@@ -317,8 +359,9 @@ async function main() {
         const title = sample.film_title
         const releaseDate = sample.release_date ? new Date(sample.release_date).toISOString() : undefined
         const websiteYear = typeof sample.website_year === 'number' ? sample.website_year : undefined
+        const director = sample.director ? String(sample.director) : undefined
         try {
-          const url = await resolveLetterboxdUrlFor(cache, tmdbId, title, releaseDate, websiteYear)
+        const url = await resolveLetterboxdUrlFor(cache, tmdbId, title, releaseDate, websiteYear, director)
           if (!url) { console.log(`[${seq}/${total}] tmdb=${tmdbId} no URL`); await sleep(600); continue }
           const rating = await extractAverageRating(url)
           if (typeof rating === 'number' && rating >= 0 && rating <= 5) {

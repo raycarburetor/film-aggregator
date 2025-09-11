@@ -504,7 +504,7 @@ export async function enrichWithLetterboxd(items, options = {}) {
           return Array.from(new Set(hrefs)).slice(0, 10).map(h => new URL(h, 'https://letterboxd.com').toString())
         } catch { return [] }
       }
-      async function resolveLetterboxdUrlFor(tmdbId, title, releaseDate, websiteYear) {
+      async function resolveLetterboxdUrlFor(tmdbId, title, releaseDate, websiteYear, director) {
         const key = String(tmdbId)
         const cached = cache[key]
         if (cached && cached.url) return cached.url
@@ -523,6 +523,27 @@ export async function enrichWithLetterboxd(items, options = {}) {
           push(noAndWord)
           if (yearHint) push(`${noAndWord}-${yearHint}`)
         }
+        // Extra candidates from TMDb titles (official/original/alternatives)
+        try {
+          const apiKey = process.env.TMDB_API_KEY
+          if (apiKey && tmdbId) {
+            const url = `https://api.themoviedb.org/3/movie/${tmdbId}?api_key=${apiKey}&language=en-GB&append_to_response=alternative_titles`
+            const res = await fetch(url)
+            if (res.ok) {
+              const data = await res.json()
+              const titles = new Set()
+              if (data && typeof data.title === 'string') titles.add(String(data.title))
+              if (data && typeof data.original_title === 'string') titles.add(String(data.original_title))
+              const alts = Array.isArray(data?.alternative_titles?.titles) ? data.alternative_titles.titles : []
+              for (const t of alts) { if (t && typeof t.title === 'string') titles.add(String(t.title)) }
+              for (const t of titles) {
+                const st = slugify(normalizeTitleForSearch(t))
+                push(st)
+                if (yearHint) push(`${st}-${yearHint}`)
+              }
+            }
+          }
+        } catch {}
         for (const slug of slugCandidates) {
           if (!slug) continue
           const url = `https://letterboxd.com/film/${slug}/`
@@ -536,6 +557,15 @@ export async function enrichWithLetterboxd(items, options = {}) {
         for (const u of cands.slice(0,5)) {
           try { const html = await fetchText(u); if (pageHasTmdbId(html, tmdbId)) { cache[key] = { url: u, updatedAt: new Date().toISOString() }; await saveCache(cache); return u } } catch {}
         }
+        // Final fallback: try searching by director + year when available
+        if (director && yearHint) {
+          const dirQuery = [String(director || '').trim(), yearHint].filter(Boolean).join(' ')
+          const dc = await searchLetterboxdCandidates(dirQuery)
+          for (const u of dc.slice(0,5)) {
+            try { const html = await fetchText(u); if (pageHasTmdbId(html, tmdbId)) { cache[key] = { url: u, updatedAt: new Date().toISOString() }; await saveCache(cache); return u } } catch {}
+          }
+          if (dc[0]) { const u = dc[0]; cache[key] = { url: u, updatedAt: new Date().toISOString() }; await saveCache(cache); return u }
+        }
         if (cands[0]) { const u = cands[0]; cache[key] = { url: u, updatedAt: new Date().toISOString() }; await saveCache(cache); return u }
         return undefined
       }
@@ -543,7 +573,7 @@ export async function enrichWithLetterboxd(items, options = {}) {
       for (const tmdbId of tmdbSet) {
         try {
           const sample = items.find(i => i.tmdbId === tmdbId)
-        const url = await resolveLetterboxdUrlFor(tmdbId, sample?.filmTitle, sample?.releaseDate, sample?.websiteYear)
+        const url = await resolveLetterboxdUrlFor(tmdbId, sample?.filmTitle, sample?.releaseDate, sample?.websiteYear, sample?.director)
         if (!url) continue
         const html = await fetchText(url)
         let rating = extractLdRating(html)
@@ -574,7 +604,7 @@ export async function enrichWithLetterboxd(items, options = {}) {
     const ctx = await browser.newContext({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36', locale: 'en-GB', timezoneId: 'Europe/London' })
     const page = await ctx.newPage()
 
-    async function findLetterboxdUrlFor(tmdbId, title, year) {
+    async function findLetterboxdUrlFor(tmdbId, title, year, director) {
       const key = String(tmdbId)
       const cached = cache[key]
       if (cached && cached.url) return cached.url
@@ -601,6 +631,36 @@ export async function enrichWithLetterboxd(items, options = {}) {
               return links.some(a => new RegExp(String(id)).test(a.getAttribute('href') || ''))
             }, tmdbId)
             if (match) { cache[key] = { url, updatedAt: new Date().toISOString() }; await saveCache(cache); return url }
+          } catch {}
+        }
+        // Director + year fallback search for tricky titles
+        if (director && year) {
+          try {
+            const q2 = encodeURIComponent(`${director} ${year}`)
+            const url2 = `https://letterboxd.com/search/films/${q2}/`
+            await page.goto(url2, { waitUntil: 'domcontentloaded', timeout: 45000 })
+            try { await page.waitForLoadState('networkidle', { timeout: 10000 }) } catch {}
+            const candidates2 = await page.evaluate(() => {
+              const out = []
+              const as = Array.from(document.querySelectorAll('a[href^="/film/"]'))
+              for (const a of as) {
+                const href = a.getAttribute('href') || ''
+                if (/^\/film\//.test(href)) { try { out.push(new URL(href, location.origin).toString()) } catch {} }
+              }
+              return Array.from(new Set(out))
+            })
+            for (const url of candidates2.slice(0, 3)) {
+              try {
+                await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 })
+                try { await page.waitForLoadState('networkidle', { timeout: 8000 }) } catch {}
+                const match = await page.evaluate((id) => {
+                  const links = Array.from(document.querySelectorAll('a[href*="themoviedb.org"]'))
+                  return links.some(a => new RegExp(String(id)).test(a.getAttribute('href') || ''))
+                }, tmdbId)
+                if (match) { cache[key] = { url, updatedAt: new Date().toISOString() }; await saveCache(cache); return url }
+              } catch {}
+            }
+            if (candidates2[0]) { cache[key] = { url: candidates2[0], updatedAt: new Date().toISOString() }; await saveCache(cache); return candidates2[0] }
           } catch {}
         }
         if (candidates[0]) { cache[key] = { url: candidates[0], updatedAt: new Date().toISOString() }; await saveCache(cache); return candidates[0] }
@@ -638,7 +698,7 @@ export async function enrichWithLetterboxd(items, options = {}) {
         const sample = items.find(i => i.tmdbId === tmdbId)
         const title = sample?.filmTitle
         const year = sample?.releaseDate?.slice(0,4)
-        const url = await findLetterboxdUrlFor(tmdbId, title, year)
+        const url = await findLetterboxdUrlFor(tmdbId, title, year, sample?.director)
         if (!url) continue
         const rating = await extractAverageRating(url)
         for (const it of items) {

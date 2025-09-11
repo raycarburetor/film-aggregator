@@ -26,7 +26,12 @@ export default async function Page({ searchParams }: { searchParams: Record<stri
             <ViewToggle />
           </div>
         </div>
-        <div />
+        <div className="hidden md:block" />
+        {/* Mobile: show label + view toggle below time tabs */}
+        <div className="md:hidden flex items-center gap-2">
+          <span className="text-base select-none">View by:</span>
+          <ViewToggle />
+        </div>
       </div>
       {/* Mobile-only controls: search + deferred filters with sticky action */}
       <div className="md:hidden space-y-2">

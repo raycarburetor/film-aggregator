@@ -173,7 +173,7 @@ export default function FilmsTable({ items }: { items: Screening[] }) {
               <tr>
                 <td
                   colSpan={5}
-                  className={`px-2 md:px-3 py-[6px] text-center font-normal tracking-wide leading-tight bg-[rgb(var(--hover))] text-white border-t border-white`}
+                  className={`px-2 md:px-3 py-[10px] text-center font-normal tracking-wide leading-tight border-t border-b border-white`}
                 >
                   {formatDayLabelFromKey(dayKey)}
                 </td>
@@ -184,6 +184,7 @@ export default function FilmsTable({ items }: { items: Screening[] }) {
                 const firstTime = formatTime(earliestIso)
                 const isOpen = openKey === g.key
                 const lb = typeof g.letterboxd === 'number' ? (Math.round(g.letterboxd * 10) / 10).toFixed(1) : '—'
+                const forceUnknownDirector = /films from uk'?s students? encampments/i.test(g.title)
                 // Build cinema -> times map
                 const byCinema = new Map<string, Screening[]>()
                 for (const it of g.items) {
@@ -205,7 +206,7 @@ export default function FilmsTable({ items }: { items: Screening[] }) {
                         </button>
                       </td>
                       <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 hidden md:table-cell md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{g.year ?? '—'}</td>
-                      <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 hidden md:table-cell md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{g.director || 'Unknown'}</td>
+                      <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 hidden md:table-cell md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{forceUnknownDirector ? 'Unknown' : (g.director || 'Unknown')}</td>
                       <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 whitespace-nowrap md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{firstTime}</td>
                       <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 hidden md:table-cell md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{lb}</td>
                     </tr>
@@ -214,10 +215,10 @@ export default function FilmsTable({ items }: { items: Screening[] }) {
                         <td colSpan={5} className="px-3 py-3 text-left max-w-full" align="left">
                           <div className="grid gap-3 md:grid-cols-2 text-left">
                             <div>
-                              <div className="text-xs text-gray-500">Synopsis</div>
-                              <div className="break-words whitespace-normal">{g.synopsis || 'No synopsis available.'}</div>
+                              <div className="text-xs text-gray-500 font-normal mb-1">Synopsis</div>
+                              <div className="break-words whitespace-normal pt-1">{g.synopsis || 'No synopsis available.'}</div>
                               <div className="mt-3">
-                                <div className="text-xs text-gray-500 mb-1">Screenings</div>
+                                <div className="text-xs text-gray-500 font-normal mb-1">Screenings</div>
                                 <div className="overflow-x-auto">
                                   <table className="w-full text-left text-sm">
                                     <tbody>
@@ -245,8 +246,8 @@ export default function FilmsTable({ items }: { items: Screening[] }) {
                               </div>
                             </div>
                             <div>
-                              <div className="text-xs text-gray-500">Genres</div>
-                              <div>{(g.genres || []).join(', ') || '—'}</div>
+                              <div className="text-xs text-gray-500 font-normal">Genres</div>
+                              <div className="pt-1">{(g.genres || []).join(', ') || '—'}</div>
                             </div>
                           </div>
                         </td>

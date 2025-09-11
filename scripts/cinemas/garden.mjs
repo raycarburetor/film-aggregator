@@ -322,6 +322,23 @@ export async function fetchGarden() {
             // Director from JSON-LD or labels
             function cleanName(name, title) {
               try { let s=String(name||'').replace(/\s{2,}/g,' ').trim(); if(!s) return null; const norm=(x)=>String(x||'').normalize('NFD').replace(/\p{Diacritic}+/gu,'').toLowerCase(); if(title){ const nt=norm(title).split(/\s+/).filter(Boolean); let toks=s.split(/\s+/).filter(Boolean); let i=0; while(i<nt.length && toks[0] && norm(toks[0])===nt[i]){ toks.shift(); i++ } s=toks.join(' ').trim()||s } const stops=new Set(['demonstration','conversation','talk','introduction','intro','performance','screentalk','screen','lecture','panel','qa','q&a','with','presented','presentedby','hosted','hostedby','in']); let toks=s.split(/\s+/); while(toks.length && stops.has(norm(toks[0]).replace(/\s+/g,''))) toks.shift(); s=toks.join(' ').trim(); s=s.replace(/\s*,\s*(?:19|20)\d{2}\s*,\s*\d{1,3}\s*min[\s\S]*$/i,'').trim(); s=s.replace(/\s*[,–—-]\s*(?:UK|USA|US|France|Italy|Iran|India|Canada)(?:\s*[,–—-].*)?$/i,'').trim(); s=s.replace(/^(?:and|with)\s+/i,'').trim(); return s||null } catch { return null } }
+            function isLikelyCountry(p) {
+              try {
+                const s = String(p||'').toLowerCase().replace(/\./g,'').trim()
+                const known = new Set([
+                  'uk','u.k','united kingdom','great britain','england','scotland','wales','northern ireland',
+                  'usa','us','u.s.a','u.s','united states','united states of america',
+                  'soviet union','ussr','russia','russian federation',
+                  'belgium','france','italy','spain','germany','austria','switzerland','portugal','netherlands','ireland','republic of ireland',
+                  'canada','mexico','brazil','argentina','chile','peru',
+                  'china','peoples republic of china','taiwan','hong kong','japan','south korea','korea','north korea','india','iran','iraq',
+                  'australia','new zealand','poland','romania','bulgaria','greece','turkey','egypt','morocco','tunisia','algeria','ukraine','georgia'
+                ])
+                if (known.has(s)) return true
+                if (/\b(republic|kingdom|states|union|federation)\b/.test(s)) return true
+              } catch {}
+              return false
+            }
             function nameFromInlineStats(text, title) {
               // Handle multiple directors before the country/year: e.g.
               // "Luc Dardenne, Jean-Pierre Dardenne, Belgium, France, 2025, 105m."
@@ -331,7 +348,7 @@ export async function fetchGarden() {
                 const left = s.slice(0, ym.index)
                 const parts = left.split(',').map(x => x.trim()).filter(Boolean)
                 const isName = (p) => /[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+/.test(p)
-                const names = parts.filter(isName)
+                const names = parts.filter(p => isName(p) && !isLikelyCountry(p))
                 if (names.length) return names.join(', ')
               }
               // Fallback to single-name pattern like "Name, 2024, 119m"
@@ -362,7 +379,22 @@ export async function fetchGarden() {
             if (!res.director) {
               try {
                 const statsEl = document.querySelector('div.film-detail__film__stats')
-                const txt = (statsEl?.textContent || '').replace(/\s+/g, ' ').trim()
+                // Garden sometimes prefixes this block with a season notice
+                // (e.g. "Part of <season link> 2025"), followed by a <br> and
+                // the actual "Director, Country, YYYY, 113m" text. Strip the
+                // season node before parsing so we don't latch onto the season title.
+                let txt = ''
+                if (statsEl) {
+                  try {
+                    const clone = statsEl.cloneNode(true)
+                    clone.querySelectorAll('.film-detail__film__season-link').forEach(n => n.remove())
+                    // Preserve structure a bit by converting <br> to spaces
+                    clone.querySelectorAll('br').forEach(br => br.replaceWith(document.createTextNode(' ')))
+                    txt = (clone.textContent || '').replace(/\s+/g, ' ').trim()
+                  } catch {
+                    txt = (statsEl.textContent || '').replace(/\s+/g, ' ').trim()
+                  }
+                }
                 const fromStats = nameFromInlineStats(txt)
                 if (fromStats) res.director = fromStats
               } catch {}
@@ -523,11 +555,37 @@ export async function fetchGarden() {
               } catch {}
               return undefined
             }
+            function isLikelyCountry(p) {
+              try {
+                const s = String(p||'').toLowerCase().replace(/\./g,'').trim()
+                const known = new Set([
+                  'uk','u.k','united kingdom','great britain','england','scotland','wales','northern ireland',
+                  'usa','us','u.s.a','u.s','united states','united states of america',
+                  'soviet union','ussr','russia','russian federation',
+                  'belgium','france','italy','spain','germany','austria','switzerland','portugal','netherlands','ireland','republic of ireland',
+                  'canada','mexico','brazil','argentina','chile','peru',
+                  'china','peoples republic of china','taiwan','hong kong','japan','south korea','korea','north korea','india','iran','iraq',
+                  'australia','new zealand','poland','romania','bulgaria','greece','turkey','egypt','morocco','tunisia','algeria','ukraine','georgia'
+                ])
+                if (known.has(s)) return true
+                if (/\b(republic|kingdom|states|union|federation)\b/.test(s)) return true
+              } catch {}
+              return false
+            }
             function fromStats() {
               try {
                 const statsEl = document.querySelector('div.film-detail__film__stats')
                 if (!statsEl) return undefined
-                const txt = (statsEl.textContent || '').replace(/\s+/g, ' ').trim()
+                // Remove season prefix ("Part of <season> 2025") before parsing
+                let txt = ''
+                try {
+                  const clone = statsEl.cloneNode(true)
+                  clone.querySelectorAll('.film-detail__film__season-link').forEach(n => n.remove())
+                  clone.querySelectorAll('br').forEach(br => br.replaceWith(document.createTextNode(' ')))
+                  txt = (clone.textContent || '').replace(/\s+/g, ' ').trim()
+                } catch {
+                  txt = (statsEl.textContent || '').replace(/\s+/g, ' ').trim()
+                }
                 // Use inline multi-name parser
                 const names = (() => {
                   const ym = txt.match(/\b(19|20)\d{2}\b/)
@@ -535,12 +593,16 @@ export async function fetchGarden() {
                     const left = txt.slice(0, ym.index)
                     const parts = left.split(',').map(x => x.trim()).filter(Boolean)
                     const isName = (p) => /[A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+/.test(p)
-                    const names = parts.filter(isName)
+                    const names = parts.filter(p => isName(p) && !isLikelyCountry(p))
                     if (names.length) return names.join(', ')
                   }
                   return undefined
                 })()
                 if (names) return names
+                // Fallback: single-name pattern anywhere in the text
+                const re = /([A-Z][A-Za-zÀ-ÿ.'’\-]+(?:\s+[A-Z][A-Za-zÀ-ÿ.'’\-]+)+)\s*,\s*(?:[A-Za-z\s]+,\s*)?(?:19|20)\d{2}\s*,\s*\d{1,3}\s*m(?:in)?\b/
+                const m = txt.match(re)
+                if (m) return m[1]
               } catch {}
               return undefined
             }

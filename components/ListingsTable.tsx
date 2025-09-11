@@ -150,6 +150,8 @@ export default function ListingsTable({ items }: { items: Item[] }) {
             prevDayKey = dayKey
             const relYear = i.releaseDate?.slice(0,4) ?? (typeof i.websiteYear === 'number' ? String(i.websiteYear) : undefined) ?? fallbackYearFromTitle(i.filmTitle)
             const lbRating = typeof i.letterboxdRating === 'number' ? (Math.round(i.letterboxdRating * 10) / 10).toFixed(1) : '—'
+            const titleNorm = displayTitle(i.filmTitle)
+            const forceUnknownDirector = /films from uk'?s students? encampments/i.test(titleNorm)
             return (
               // Use a keyed fragment so React can reconcile reliably
               <React.Fragment key={i.id}>
@@ -161,7 +163,7 @@ export default function ListingsTable({ items }: { items: Item[] }) {
                 <tr className={`peer group ${isOpen ? 'selected-row' : ''}`}>
                   <td className="px-2 md:px-3 py-3 md:py-2 text-left break-words min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white" align="left">
                     <button onClick={()=>setOpenId(prev => prev === i.id ? null : i.id)} className="no-focus-outline block text-left font-normal underline-offset-2 md:hover:underline md:focus-visible:underline md:active:underline">
-                      {displayTitle(i.filmTitle)}
+                      {titleNorm}
                     </button>
                   </td>
                   <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white hidden md:table-cell">{i.releaseDate?.slice(0,4) ?? i.websiteYear ?? fallbackYearFromTitle(i.filmTitle) ?? '—'}</td>
@@ -175,33 +177,37 @@ export default function ListingsTable({ items }: { items: Item[] }) {
                     <td colSpan={6} className="px-3 py-3 text-left max-w-full" align="left">
                       <div className="grid gap-3 md:grid-cols-3 text-left">
                         <div>
-                          <div className="text-xs text-gray-500">Director</div>
-                          <div>{i.director || 'Unknown'}</div>
+                          <div className="text-xs text-gray-500 font-normal">Director</div>
+                          <div className="pt-1">{forceUnknownDirector ? 'Unknown' : (i.director || 'Unknown')}</div>
                           {/* Mobile-only extra details under Director */}
                           <div className="mt-2 md:hidden space-y-2">
                             <div>
-                              <div className="text-xs text-gray-500">Release Year</div>
-                              <div>{relYear ?? '—'}</div>
+                              <div className="text-xs text-gray-500 font-normal">Release Year</div>
+                              <div className="pt-1">{relYear ?? '—'}</div>
                             </div>
                             <div>
-                              <div className="text-xs text-gray-500">Letterboxd Rating</div>
-                              <div>{lbRating}</div>
+                              <div className="text-xs text-gray-500 font-normal">Letterboxd Rating</div>
+                              <div className="pt-1">{lbRating}</div>
                             </div>
                           </div>
                         </div>
                         <div className="md:col-span-2">
-                          <div className="text-xs text-gray-500">Synopsis</div>
-                          <div className="break-words whitespace-normal">{i.synopsis || 'No synopsis available.'}</div>
+                          <div className="text-xs text-gray-500 font-normal mb-1">Synopsis</div>
+                          <div className="break-words whitespace-normal pt-1">{i.synopsis || 'No synopsis available.'}</div>
                         </div>
-                        <div>
-                          <div className="text-xs text-gray-500">Genres</div>
-                          <div>{(i.genres || []).join(', ') || '—'}</div>
-                        </div>
-                        {i.bookingUrl ? (
-                          <div>
-                            <a href={i.bookingUrl} target="_blank" className="underline">Book tickets</a>
+                        <div className="md:col-span-3">
+                          <div className="md:grid md:grid-cols-3 md:gap-3">
+                            <div>
+                              <div className="text-xs text-gray-500 font-normal">Genres</div>
+                              <div className="pt-1">{(i.genres || []).join(', ') || '—'}</div>
+                            </div>
+                            {i.bookingUrl ? (
+                              <div className="pt-1">
+                                <a href={i.bookingUrl} target="_blank" className="underline whitespace-nowrap">Book tickets</a>
+                              </div>
+                            ) : null}
                           </div>
-                        ) : null}
+                        </div>
                       </div>
                     </td>
                   </tr>
