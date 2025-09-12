@@ -1,5 +1,5 @@
 import type { Screening, CinemaKey } from '@/types'
-import { filterByTimeWindow, parseNum, isClearlyNonFilm } from '@/lib/filters'
+import { filterByTimeWindow, parseNum, isClearlyNonFilm, londonDayKey } from '@/lib/filters'
 import { getAllListings } from '@/lib/db'
 import { unstable_cache } from 'next/cache'
 import data from '@/data/listings.json'
@@ -13,6 +13,8 @@ export type FilterParams = {
   maxYear?: number
   decades?: string[]
   minLb?: number
+  start?: string // YYYY-MM-DD (Europe/London day)
+  end?: string   // YYYY-MM-DD (Europe/London day)
 }
 
 export function filterParamsFromSearchParams(sp: Record<string, string | undefined>): FilterParams {
@@ -24,7 +26,13 @@ export function filterParamsFromSearchParams(sp: Record<string, string | undefin
   const maxYear = parseNum(sp.maxYear || null)
   const decades = (sp.decades || '').split(',').filter(Boolean)
   const minLb = parseNum(sp.minLb || null)
-  return { q, window, cinemas, genres, minYear, maxYear, decades, minLb }
+  const normDate = (s?: string) => {
+    const v = (s || '').trim()
+    return /^\d{4}-\d{2}-\d{2}$/.test(v) ? v : undefined
+  }
+  const start = normDate(sp.start)
+  const end = normDate(sp.end)
+  return { q, window, cinemas, genres, minYear, maxYear, decades, minLb, start, end }
 }
 
 export async function loadAllListings(): Promise<Screening[]> {
@@ -68,8 +76,10 @@ export function applyFilters(items: Screening[], params: FilterParams): Screenin
 
   let out = items.slice()
 
-  // Time window (and exclude past screenings)
-  out = filterByTimeWindow(out, params.window || 'week')
+  // Time window (and exclude past screenings). If a specific date or range
+  // is provided, ignore the horizon tabs and treat as 'all upcoming'.
+  const win: 'today'|'week'|'month'|'all' = (params.start || params.end) ? 'all' : (params.window || 'week')
+  out = filterByTimeWindow(out, win)
 
   // Hide BFI if feature-flagged
   if (hideBFI) out = out.filter(i => i.cinema !== 'bfi')
@@ -131,6 +141,23 @@ export function applyFilters(items: Screening[], params: FilterParams): Screenin
       const raw = (i as any).letterboxdRating
       const eff = (typeof raw === 'number' && Number.isFinite(raw)) ? round1dp(raw) : 0
       return eff >= (params.minLb as number)
+    })
+  }
+
+  // Optional date or date-range (Europe/London day). Inclusive on both ends.
+  if (params.start || params.end) {
+    const s = (params.start || '').trim()
+    const e = (params.end || '').trim()
+    if (s && e && s > e) {
+      return []
+    }
+    const a = (s || e) as string
+    const b = (e || s) as string
+    const lo = a < b ? a : b
+    const hi = a < b ? b : a
+    out = out.filter(i => {
+      const day = londonDayKey(i.screeningStart)
+      return day >= lo && day <= hi
     })
   }
 

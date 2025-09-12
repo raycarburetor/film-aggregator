@@ -19,6 +19,8 @@ export async function GET(req: NextRequest) {
       maxYear: searchParams.get('maxYear') || undefined,
       decades: searchParams.get('decades') || undefined,
       minLb: searchParams.get('minLb') || undefined,
+      start: searchParams.get('start') || undefined,
+      end: searchParams.get('end') || undefined,
     })
     const debug = (searchParams.get('debug') || '').toLowerCase() === '1'
 

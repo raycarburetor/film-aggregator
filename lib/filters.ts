@@ -40,6 +40,13 @@ export function parseNum(s: string | null) {
   return Number.isFinite(n) ? n : undefined
 }
 
+// Get the Europe/London calendar day key (YYYY-MM-DD) for a given ISO datetime
+export function londonDayKey(iso: string): string {
+  const fmt = new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'Europe/London' })
+  const d = new Date(iso)
+  return fmt.format(d)
+}
+
 // Heuristic filter for non-film events across cinemas
 export function isClearlyNonFilm(title: string): boolean {
   if (!title) return false

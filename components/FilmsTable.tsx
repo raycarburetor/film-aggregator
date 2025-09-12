@@ -160,10 +160,10 @@ export default function FilmsTable({ items }: { items: Screening[] }) {
         <table className="w-full table-fixed border-collapse text-left text-sm">
           <thead className="bg-black text-white border-b border-white">
             <tr>
-              <th className="px-2 md:px-3 py-2 w-[60%] md:w-[33%]">Film</th>
+              <th className="px-2 md:px-3 py-2 w-[100%] md:w-[33%]">Film</th>
               <th className="px-2 md:px-3 py-2 hidden md:table-cell md:w-[12%]">Release</th>
               <th className="px-2 md:px-3 py-2 hidden md:table-cell md:w-[20%]">Director</th>
-              <th className="px-2 md:px-3 py-2 w-[40%] md:w-[19%] whitespace-nowrap">First&nbsp;Screening</th>
+              <th className="px-2 md:px-3 py-2 hidden md:table-cell md:w-[19%] whitespace-nowrap">First&nbsp;Screening</th>
               <th className="px-2 md:px-3 py-2 hidden md:table-cell md:w-[16%]">Letterboxd</th>
             </tr>
           </thead>
@@ -207,7 +207,7 @@ export default function FilmsTable({ items }: { items: Screening[] }) {
                       </td>
                       <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 hidden md:table-cell md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{g.year ?? '—'}</td>
                       <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 hidden md:table-cell md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{forceUnknownDirector ? 'Unknown' : (g.director || 'Unknown')}</td>
-                      <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 whitespace-nowrap md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{firstTime}</td>
+                      <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 whitespace-nowrap hidden md:table-cell md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{firstTime}</td>
                       <td className="px-2 md:px-3 py-3 md:py-2 min-w-0 hidden md:table-cell md:group-hover:bg-[rgb(var(--hover))] md:group-hover:text-white">{lb}</td>
                     </tr>
                     {isOpen && (

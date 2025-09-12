@@ -1,6 +1,7 @@
 'use client'
 import { forwardRef, useEffect, useImperativeHandle, useMemo, useRef, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
+// (Date picker moved to TimeTabs)
 
 export const CINEMAS = [
   { key: 'bfi', label: 'BFI Southbank' },
@@ -87,6 +88,7 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
   useEffect(() => {
     if (!deferApply) return
     const nextQ = sp.get('q') ?? ''
+    // Date range now controlled by TimeTabs; ignore here
     const nextCinemas = (sp.get('cinemas') || '').split(',').filter(Boolean)
     const nextGenre = (sp.get('genres') || '').split(',').filter(Boolean)[0] || ''
     const nextDecades = (sp.get('decades') || '').split(',').filter(Boolean)
@@ -103,7 +105,7 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
 
     initialRef.current = { q: nextQ, cinemas: nextCinemas, genre: nextGenre, decades: nextDecades, minLb: (Number.isFinite(nextMinLb as any) ? (nextMinLb as number) : null), lbUser: nextLbUser }
     onDirtyChange && onDirtyChange(false)
-    const nextAny = (nextCinemas.length > 0) || !!nextGenre || (nextDecades.length > 0) || (nextMinLb != null) || (!!nextLbUser)
+    const nextAny = !!((nextCinemas.length > 0) || !!nextGenre || (nextDecades.length > 0) || (nextMinLb != null) || (!!nextLbUser))
     onAnySelectedChange && onAnySelectedChange(nextAny)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sp, deferApply])
@@ -226,6 +228,7 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
             autoCorrect="off"
           />
         )}
+        {/* Date picker moved into TimeTabs calendar icon */}
         <div>
           <div className="text-sm font-normal mb-2 flex items-center justify-between">
             <span>Letterboxd Watchlist</span>

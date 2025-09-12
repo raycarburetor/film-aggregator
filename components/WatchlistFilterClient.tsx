@@ -2,7 +2,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import ListingsTable from '@/components/ListingsTable'
-import FilmsTable from '@/components/FilmsTable'
 // View toggle is rendered alongside TimeTabs in page layout
 import type { Screening } from '@/types'
 
@@ -13,7 +12,9 @@ function storageKey(username: string) { return `lb_watchlist_${username.toLowerC
 export default function WatchlistFilterClient({ items }: { items: Screening[] }) {
   const sp = useSearchParams()
   const lbUser = (sp.get('lbUser') || '').trim().toLowerCase()
-  const view = ((sp.get('view') || 'screenings').trim().toLowerCase() === 'films') ? 'films' : 'screenings'
+  const start = (sp.get('start') || '').trim()
+  const end = (sp.get('end') || '').trim()
+  const invalidDateRange = !!(start && end && start > end)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [ids, setIds] = useState<number[] | null>(() => {
@@ -120,9 +121,9 @@ export default function WatchlistFilterClient({ items }: { items: Screening[] })
           </div>
         </div>
       )}
-      {/* View toggle rendered in page header next to TimeTabs */}
-      {view === 'films' ? (
-        <FilmsTable items={filtered} />
+      {/* Film view disabled: always show screenings table */}
+      {invalidDateRange ? (
+        <div className="text-sm text-gray-400">No screenings found.</div>
       ) : (
         <ListingsTable items={filtered} />
       )}
