@@ -35,7 +35,7 @@ export function filterParamsFromSearchParams(sp: Record<string, string | undefin
   }
   const start = normDate(sp.start)
   const end = normDate(sp.end)
-  // Parse HH:mm into minutes since midnight; default slider window 09:00–23:00
+  // Parse HH:mm into minutes since midnight; undefined when absent (client-only filter by default)
   const parseHHMM = (s?: string): number | undefined => {
     const v = (s || '').trim()
     if (!/^\d{2}:\d{2}$/.test(v)) return undefined
@@ -44,12 +44,10 @@ export function filterParamsFromSearchParams(sp: Record<string, string | undefin
     if (hh < 0 || hh > 23 || mm < 0 || mm > 59) return undefined
     return hh * 60 + mm
   }
-  const DEFAULT_MIN = 9 * 60
-  const DEFAULT_MAX = 23 * 60
   const sm = parseHHMM(sp.startTime)
   const sx = parseHHMM(sp.endTime)
-  const startTimeMin = (typeof sm === 'number' ? sm : DEFAULT_MIN)
-  const startTimeMax = (typeof sx === 'number' ? sx : DEFAULT_MAX)
+  const startTimeMin = (typeof sm === 'number' ? sm : undefined)
+  const startTimeMax = (typeof sx === 'number' ? sx : undefined)
   return { q, window, cinemas, genres, minYear, maxYear, decades, minLb, start, end, startTimeMin, startTimeMax }
 }
 

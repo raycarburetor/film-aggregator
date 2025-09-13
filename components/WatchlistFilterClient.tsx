@@ -1,7 +1,9 @@
 'use client'
-import { useEffect, useMemo, useState } from 'react'
+import { useDeferredValue, useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import ListingsTable from '@/components/ListingsTable'
+import { useStartTimeFilter } from '@/components/StartTimeContext'
+import { londonMinutesOfDay } from '@/lib/filters'
 // View toggle is rendered alongside TimeTabs in page layout
 import type { Screening } from '@/types'
 
@@ -11,6 +13,9 @@ function storageKey(username: string) { return `lb_watchlist_${username.toLowerC
 
 export default function WatchlistFilterClient({ items }: { items: Screening[] }) {
   const sp = useSearchParams()
+  const { min: startTimeMin, max: startTimeMax, defaults } = useStartTimeFilter()
+  const dMin = useDeferredValue(startTimeMin)
+  const dMax = useDeferredValue(startTimeMax)
   const lbUser = (sp.get('lbUser') || '').trim().toLowerCase()
   const start = (sp.get('start') || '').trim()
   const end = (sp.get('end') || '').trim()
@@ -86,10 +91,22 @@ export default function WatchlistFilterClient({ items }: { items: Screening[] })
   // No need to refetch on time window toggles; filtering recomputes via `filtered` below.
 
   const filtered = useMemo(() => {
-    if (!lbUser || !ids) return items
-    const allow = new Set(ids)
-    return items.filter(i => typeof i.tmdbId === 'number' && allow.has(i.tmdbId as number))
-  }, [items, ids, lbUser])
+    let base = items
+    // Apply Letterboxd watchlist filter first (if any)
+    if (lbUser && ids) {
+      const allow = new Set(ids)
+      base = base.filter(i => typeof i.tmdbId === 'number' && allow.has(i.tmdbId as number))
+    }
+    // Apply client-only time-of-day filter only when deviating from full day
+    const isActive = (dMin !== defaults.min) || (dMax !== defaults.max)
+    if (!isActive) return base
+    const lo = Math.floor(Math.max(0, dMin))
+    const hi = Math.floor(Math.max(0, dMax))
+    return base.filter(i => {
+      const m = londonMinutesOfDay(i.screeningStart)
+      return m >= lo && m <= hi
+    })
+  }, [items, ids, lbUser, dMin, dMax, defaults.min, defaults.max])
 
   // No explicit clear button here; users can clear via Filters
 

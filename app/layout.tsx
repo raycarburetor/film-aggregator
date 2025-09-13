@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
+import { StartTimeProvider } from '@/components/StartTimeContext'
 
 export const metadata: Metadata = {
   title: 'Indie Cinemas London',
@@ -76,7 +77,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </a>
           </div>
         </header>
-        <main className="container py-6">{children}</main>
+        <StartTimeProvider>
+          <main className="container py-6">{children}</main>
+        </StartTimeProvider>
         <footer className="border-t">
           <div className="container py-6 text-sm text-gray-500">Built with Next.js</div>
         </footer>
