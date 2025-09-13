@@ -43,6 +43,21 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
   const [minLb, setMinLb] = useState<number | null>(initialMinLb)
   // Letterboxd username (client-only watchlist filter)
   const [lbUser, setLbUser] = useState<string>((sp.get('lbUser') || '').trim())
+  // Start Time slider (minutes since midnight, Europe/London)
+  const DEFAULT_START_MIN = 9 * 60
+  const DEFAULT_END_MIN = 23 * 60
+  const parseHHMM = (s: string | null): number | null => {
+    const v = (s || '').trim()
+    if (!/^\d{2}:\d{2}$/.test(v)) return null
+    const [hh, mm] = v.split(':').map(Number)
+    if (!Number.isFinite(hh) || !Number.isFinite(mm)) return null
+    if (hh < 0 || hh > 23 || mm < 0 || mm > 59) return null
+    return hh * 60 + mm
+  }
+  const initialStartTimeMin = parseHHMM(sp.get('startTime')) ?? DEFAULT_START_MIN
+  const initialStartTimeMax = parseHHMM(sp.get('endTime')) ?? DEFAULT_END_MIN
+  const [startTimeMin, setStartTimeMin] = useState<number>(initialStartTimeMin)
+  const [startTimeMax, setStartTimeMax] = useState<number>(initialStartTimeMax)
   const initialRef = useRef({
     q: sp.get('q') ?? '',
     cinemas: (sp.get('cinemas') || '').split(',').filter(Boolean),
@@ -50,6 +65,8 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
     decades: initialDecades,
     minLb: initialMinLb,
     lbUser: (sp.get('lbUser') || '').trim(),
+    startTimeMin: initialStartTimeMin,
+    startTimeMax: initialStartTimeMax,
   })
 
   function apply() {
@@ -62,6 +79,19 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
     if (minLb != null) params.set('minLb', String(minLb)); else params.delete('minLb')
     // Letterboxd username filter
     if (lbUser.trim()) params.set('lbUser', lbUser.trim().toLowerCase()); else params.delete('lbUser')
+    // Start time range (encode only when deviating from defaults)
+    const toHHMM = (mins: number) => {
+      const h = Math.floor(mins / 60)
+      const m = mins % 60
+      const pad = (n: number) => n < 10 ? `0${n}` : String(n)
+      return `${pad(h)}:${pad(m)}`
+    }
+    if (startTimeMin !== DEFAULT_START_MIN || startTimeMax !== DEFAULT_END_MIN) {
+      params.set('startTime', toHHMM(startTimeMin))
+      params.set('endTime', toHHMM(startTimeMax))
+    } else {
+      params.delete('startTime'); params.delete('endTime')
+    }
     // Also clear legacy year params if present
     params.delete('minYear'); params.delete('maxYear')
     router.push(`/?${params.toString()}`)
@@ -82,7 +112,7 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
     onDirtyChange && onDirtyChange(dirty)
     onAnySelectedChange && onAnySelectedChange(anySel)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, selectedCinemas, selectedGenre, selectedDecades, minLb, lbUser, deferApply])
+  }, [q, selectedCinemas, selectedGenre, selectedDecades, minLb, lbUser, startTimeMin, startTimeMax, deferApply])
 
   // When using deferred mode, sync internal state to URL after navigation (e.g., after Save/Clear)
   useEffect(() => {
@@ -95,6 +125,8 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
     const nextMinLbStr = sp.get('minLb')
     const nextMinLb = nextMinLbStr != null && nextMinLbStr !== '' ? Number(nextMinLbStr) : null
     const nextLbUser = (sp.get('lbUser') || '').trim()
+    const nextStartTimeMin = parseHHMM(sp.get('startTime')) ?? DEFAULT_START_MIN
+    const nextStartTimeMax = parseHHMM(sp.get('endTime')) ?? DEFAULT_END_MIN
 
     setQ(nextQ)
     setSelectedCinemas(nextCinemas)
@@ -102,10 +134,12 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
     setSelectedDecades(nextDecades)
     setMinLb(Number.isFinite(nextMinLb as any) ? (nextMinLb as number) : null)
     setLbUser(nextLbUser)
+    setStartTimeMin(nextStartTimeMin)
+    setStartTimeMax(nextStartTimeMax)
 
-    initialRef.current = { q: nextQ, cinemas: nextCinemas, genre: nextGenre, decades: nextDecades, minLb: (Number.isFinite(nextMinLb as any) ? (nextMinLb as number) : null), lbUser: nextLbUser }
+    initialRef.current = { q: nextQ, cinemas: nextCinemas, genre: nextGenre, decades: nextDecades, minLb: (Number.isFinite(nextMinLb as any) ? (nextMinLb as number) : null), lbUser: nextLbUser, startTimeMin: nextStartTimeMin, startTimeMax: nextStartTimeMax }
     onDirtyChange && onDirtyChange(false)
-    const nextAny = !!((nextCinemas.length > 0) || !!nextGenre || (nextDecades.length > 0) || (nextMinLb != null) || (!!nextLbUser))
+    const nextAny = !!((nextCinemas.length > 0) || !!nextGenre || (nextDecades.length > 0) || (nextMinLb != null) || (!!nextLbUser) || (nextStartTimeMin !== DEFAULT_START_MIN) || (nextStartTimeMax !== DEFAULT_END_MIN))
     onAnySelectedChange && onAnySelectedChange(nextAny)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sp, deferApply])
@@ -117,7 +151,9 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
       (!!selectedGenre) ||
       (selectedDecades.length > 0) ||
       (minLb != null) ||
-      (!!lbUser.trim())
+      (!!lbUser.trim()) ||
+      (startTimeMin !== DEFAULT_START_MIN) ||
+      (startTimeMax !== DEFAULT_END_MIN)
     )
   }
 
@@ -129,7 +165,9 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
       (minLb === init.minLb) &&
       (selectedDecades.join(',') === init.decades.join(',')) &&
       (selectedCinemas.join(',') === init.cinemas.join(',')) &&
-      (lbUser.trim() === (init.lbUser || '').trim())
+      (lbUser.trim() === (init.lbUser || '').trim()) &&
+      (startTimeMin === init.startTimeMin) &&
+      (startTimeMax === init.startTimeMax)
     return !same
   }
 
@@ -142,7 +180,7 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
       try { sessionStorage.removeItem(`lb_watchlist_${u}`) } catch {}
     }
     params.delete('lbUser')
-    params.delete('cinemas'); params.delete('genres'); params.delete('decades'); params.delete('minLb'); params.delete('minYear'); params.delete('maxYear')
+    params.delete('cinemas'); params.delete('genres'); params.delete('decades'); params.delete('minLb'); params.delete('minYear'); params.delete('maxYear'); params.delete('startTime'); params.delete('endTime')
     router.push(`/?${params.toString()}`)
   }
 
@@ -228,6 +266,8 @@ export default forwardRef<FiltersHandle, { genres: string[]; hideSearch?: boolea
             autoCorrect="off"
           />
         )}
+        
+
         {/* Date picker moved into TimeTabs calendar icon */}
         <div>
           <div className="text-sm font-normal mb-2 flex items-center justify-between">

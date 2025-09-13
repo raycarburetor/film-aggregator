@@ -1,5 +1,5 @@
 import type { Screening, CinemaKey } from '@/types'
-import { filterByTimeWindow, parseNum, isClearlyNonFilm, londonDayKey } from '@/lib/filters'
+import { filterByTimeWindow, parseNum, isClearlyNonFilm, londonDayKey, londonMinutesOfDay } from '@/lib/filters'
 import { getAllListings } from '@/lib/db'
 import { unstable_cache } from 'next/cache'
 import data from '@/data/listings.json'
@@ -15,6 +15,9 @@ export type FilterParams = {
   minLb?: number
   start?: string // YYYY-MM-DD (Europe/London day)
   end?: string   // YYYY-MM-DD (Europe/London day)
+  // Time-of-day window for screeningStart (minutes since midnight, Europe/London)
+  startTimeMin?: number
+  startTimeMax?: number
 }
 
 export function filterParamsFromSearchParams(sp: Record<string, string | undefined>): FilterParams {
@@ -32,7 +35,22 @@ export function filterParamsFromSearchParams(sp: Record<string, string | undefin
   }
   const start = normDate(sp.start)
   const end = normDate(sp.end)
-  return { q, window, cinemas, genres, minYear, maxYear, decades, minLb, start, end }
+  // Parse HH:mm into minutes since midnight; default slider window 09:00–23:00
+  const parseHHMM = (s?: string): number | undefined => {
+    const v = (s || '').trim()
+    if (!/^\d{2}:\d{2}$/.test(v)) return undefined
+    const [hh, mm] = v.split(':').map(Number)
+    if (!Number.isFinite(hh) || !Number.isFinite(mm)) return undefined
+    if (hh < 0 || hh > 23 || mm < 0 || mm > 59) return undefined
+    return hh * 60 + mm
+  }
+  const DEFAULT_MIN = 9 * 60
+  const DEFAULT_MAX = 23 * 60
+  const sm = parseHHMM(sp.startTime)
+  const sx = parseHHMM(sp.endTime)
+  const startTimeMin = (typeof sm === 'number' ? sm : DEFAULT_MIN)
+  const startTimeMax = (typeof sx === 'number' ? sx : DEFAULT_MAX)
+  return { q, window, cinemas, genres, minYear, maxYear, decades, minLb, start, end, startTimeMin, startTimeMax }
 }
 
 export async function loadAllListings(): Promise<Screening[]> {
@@ -158,6 +176,19 @@ export function applyFilters(items: Screening[], params: FilterParams): Screenin
     out = out.filter(i => {
       const day = londonDayKey(i.screeningStart)
       return day >= lo && day <= hi
+    })
+  }
+
+  // Time-of-day window (minutes since midnight, Europe/London). Inclusive bounds.
+  if (typeof params.startTimeMin === 'number' || typeof params.startTimeMax === 'number') {
+    let lo = typeof params.startTimeMin === 'number' ? params.startTimeMin! : 0
+    let hi = typeof params.startTimeMax === 'number' ? params.startTimeMax! : 23*60 + 59
+    if (lo > hi) { const t = lo; lo = hi; hi = t }
+    lo = Math.max(0, Math.min(1439, Math.floor(lo)))
+    hi = Math.max(0, Math.min(1439, Math.floor(hi)))
+    out = out.filter(i => {
+      const m = londonMinutesOfDay(i.screeningStart)
+      return m >= lo && m <= hi
     })
   }
 

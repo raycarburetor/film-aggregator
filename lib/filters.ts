@@ -47,6 +47,16 @@ export function londonDayKey(iso: string): string {
   return fmt.format(d)
 }
 
+// Get minutes since midnight in Europe/London for a given ISO datetime
+export function londonMinutesOfDay(iso: string): number {
+  const d = new Date(iso)
+  const fmt = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', hourCycle: 'h23', timeZone: 'Europe/London' })
+  const parts = fmt.formatToParts(d)
+  const h = Number(parts.find(p => p.type === 'hour')?.value || '0')
+  const m = Number(parts.find(p => p.type === 'minute')?.value || '0')
+  return (Number.isFinite(h) ? h : 0) * 60 + (Number.isFinite(m) ? m : 0)
+}
+
 // Heuristic filter for non-film events across cinemas
 export function isClearlyNonFilm(title: string): boolean {
   if (!title) return false

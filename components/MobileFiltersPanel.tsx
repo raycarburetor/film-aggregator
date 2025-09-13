@@ -6,7 +6,7 @@ import Filters, { FiltersHandle } from '@/components/Filters'
 
 function hasAnyAppliedFilters(sp: { get(name: string): string | null }): boolean {
   return [
-    'cinemas', 'genres', 'decades', 'minLb', 'minYear', 'maxYear', 'lbUser'
+    'cinemas', 'genres', 'decades', 'minLb', 'minYear', 'maxYear', 'lbUser', 'startTime', 'endTime'
   ].some(k => (sp.get(k) || '').trim().length > 0)
 }
 

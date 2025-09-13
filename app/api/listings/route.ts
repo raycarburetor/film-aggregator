@@ -21,6 +21,8 @@ export async function GET(req: NextRequest) {
       minLb: searchParams.get('minLb') || undefined,
       start: searchParams.get('start') || undefined,
       end: searchParams.get('end') || undefined,
+      startTime: searchParams.get('startTime') || undefined,
+      endTime: searchParams.get('endTime') || undefined,
     })
     const debug = (searchParams.get('debug') || '').toLowerCase() === '1'
 
