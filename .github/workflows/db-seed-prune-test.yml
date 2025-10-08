@@ -1,12 +1,10 @@
-name: Aggregate All Cinemas (DB)
+name: DB Seed/Prune Test
 
 on:
-  schedule:
-    - cron: '0 10 * * *'
   workflow_dispatch:
 
 jobs:
-  aggregate:
+  test-secrets:
     runs-on: ubuntu-latest
     environment:
       name: Production
@@ -31,8 +29,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
+      - name: Seed database
+        run: npm run db:seed
 
-      - name: Aggregate all cinemas and sync DB
-        run: npm run aggregate:all:db
+      - name: Prune database
+        run: npm run db:prune
