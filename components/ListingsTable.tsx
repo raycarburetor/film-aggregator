@@ -27,6 +27,7 @@ const CINEMA_LABELS: Record<string, string> = {
   barbican: 'Barbican',
   rio: 'Rio Cinema',
   cinelumiere: 'Ciné Lumière',
+  nickel: 'The Nickel',
 }
 
 function formatDateTime(iso: string) {
@@ -65,6 +66,50 @@ function fallbackYearFromTitle(title: string): string | undefined {
   m = s.match(/[\[(]\s*((?:19|20)\d{2})\s*[\])]/)
   if (m) return m[1]
   return undefined
+}
+
+function escapeICal(text: string): string {
+  return String(text || '')
+    .replace(/\\/g, '\\\\')
+    .replace(/;/g, '\\;')
+    .replace(/,/g, '\\,')
+    .replace(/\r?\n/g, '\\n')
+}
+
+function toICSDate(date: Date): string {
+  const pad = (n: number) => String(n).padStart(2, '0')
+  return `${date.getUTCFullYear()}${pad(date.getUTCMonth() + 1)}${pad(date.getUTCDate())}` +
+    `T${pad(date.getUTCHours())}${pad(date.getUTCMinutes())}${pad(date.getUTCSeconds())}Z`
+}
+
+function buildCalendarLink(item: Item, title: string, locationLabel: string | undefined): string | null {
+  const start = new Date(item.screeningStart)
+  if (!item.screeningStart || Number.isNaN(start.getTime())) return null
+  const end = new Date(start.getTime() + 2 * 60 * 60 * 1000)
+  const summary = title || displayTitle(item.filmTitle || '') || 'Screening'
+  const descriptionParts: string[] = []
+  if (item.bookingUrl) descriptionParts.push(`Tickets: ${item.bookingUrl}`)
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//filmaggregator//EN',
+    'BEGIN:VEVENT',
+    `UID:${escapeICal(`${item.id}@filmaggregator`)}`,
+    `DTSTAMP:${toICSDate(new Date())}`,
+    `DTSTART:${toICSDate(start)}`,
+    `DTEND:${toICSDate(end)}`,
+    `SUMMARY:${escapeICal(summary)}`,
+    locationLabel ? `LOCATION:${escapeICal(locationLabel)}` : null,
+    descriptionParts.length ? `DESCRIPTION:${escapeICal(descriptionParts.join('\n'))}` : null,
+    'END:VEVENT',
+    'END:VCALENDAR',
+  ].filter(Boolean).join('\r\n')
+  return `data:text/calendar;charset=utf-8,${encodeURIComponent(lines)}`
+}
+
+function calendarFileName(title: string): string {
+  const cleaned = title.replace(/[^A-Za-z0-9-_]+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '')
+  return `${cleaned || 'screening'}.ics`
 }
 
 function displayTitle(title: string): string {
@@ -151,6 +196,9 @@ export default function ListingsTable({ items }: { items: Item[] }) {
             const relYear = i.releaseDate?.slice(0,4) ?? (typeof i.websiteYear === 'number' ? String(i.websiteYear) : undefined) ?? fallbackYearFromTitle(i.filmTitle)
             const lbRating = typeof i.letterboxdRating === 'number' ? (Math.round(i.letterboxdRating * 10) / 10).toFixed(1) : '—'
             const titleNorm = displayTitle(i.filmTitle)
+            const locationLabel = CINEMA_LABELS[i.cinema] ?? i.cinema
+            const calendarHref = buildCalendarLink(i, titleNorm, locationLabel)
+            const calendarDownload = calendarHref ? calendarFileName(titleNorm) : null
             const forceUnknownDirector = /films from uk'?s students? encampments/i.test(titleNorm)
             return (
               // Use a keyed fragment so React can reconcile reliably
@@ -196,14 +244,27 @@ export default function ListingsTable({ items }: { items: Item[] }) {
                           <div className="break-words whitespace-normal pt-1">{i.synopsis || 'No synopsis available.'}</div>
                         </div>
                         <div className="md:col-span-3">
-                          <div className="md:grid md:grid-cols-3 md:gap-3">
+                          <div className="md:grid md:grid-cols-3 md:gap-3 space-y-4 md:space-y-0">
                             <div>
                               <div className="text-xs text-gray-500 font-normal">Genres</div>
                               <div className="pt-1">{(i.genres || []).join(', ') || '—'}</div>
                             </div>
-                            {i.bookingUrl ? (
+                            {(i.bookingUrl || calendarHref) ? (
                               <div className="pt-1">
-                                <a href={i.bookingUrl} target="_blank" className="underline whitespace-nowrap">Book tickets</a>
+                                <div className="flex flex-col md:flex-row md:items-center md:space-x-3 space-y-2 md:space-y-0">
+                                  {i.bookingUrl ? (
+                                    <a href={i.bookingUrl} target="_blank" className="underline whitespace-nowrap">Book tickets</a>
+                                  ) : null}
+                                  {calendarHref ? (
+                                    <a
+                                      href={calendarHref}
+                                      download={calendarDownload || undefined}
+                                      className="underline whitespace-nowrap"
+                                    >
+                                      Add to calendar
+                                    </a>
+                                  ) : null}
+                                </div>
                               </div>
                             ) : null}
                           </div>
