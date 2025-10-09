@@ -16010,5 +16010,502 @@
       "Romance"
     ],
     "imdbId": "tt0046511"
+  },
+  {
+    "id": "nickelENTERTAINMENT20251009T192500000Z",
+    "filmTitle": "Entertainment",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-09T19:25:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35364",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35364",
+    "websiteYear": 2015,
+    "director": "Rick Alverson",
+    "tmdbId": 246133,
+    "releaseDate": "2015-08-11",
+    "synopsis": "Set in the Mojave Desert, the film follows a broken-down comedian playing clubs across the Southwest, working his way to Los Angeles to meet his estranged daughter.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "imdbId": "tt3343784",
+    "letterboxdRating": 3.37
+  },
+  {
+    "id": "nickelHABIT20251010T163000000Z",
+    "filmTitle": "Habit",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-10T16:30:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35365",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35365",
+    "websiteYear": 1995,
+    "director": "Larry Fessenden",
+    "tmdbId": 28671,
+    "releaseDate": "1997-11-14",
+    "synopsis": "It's autumn in New York. Sam has broken up with his girlfriend and his father has recently died. World-weary and sloppy drunk, he finds temporary solace in the arms of Anna, a mysterious vampire who draws him away from his friends and into a web of addiction and madness.",
+    "genres": [
+      "Horror",
+      "Drama",
+      "Romance"
+    ],
+    "imdbId": "tt0113241",
+    "letterboxdRating": 3.47
+  },
+  {
+    "id": "nickelMYSTERYFILM20251010T193000000Z",
+    "filmTitle": "MYSTERY FILM ?",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-10T19:30:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35366",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35366"
+  },
+  {
+    "id": "nickelBABEPIGINTHECITY20251011T170000000Z",
+    "filmTitle": "BABE PIG IN THE CITY",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-11T17:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35367",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35367"
+  },
+  {
+    "id": "nickelPUTNEYSWOPE20251014T170000000Z",
+    "filmTitle": "Putney Swope",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-14T17:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35368",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35368",
+    "websiteYear": 1969,
+    "director": "Robert Downey Sr.",
+    "tmdbId": 32575,
+    "releaseDate": "1969-07-10",
+    "synopsis": "Swope—the only black man on the executive board of an advertising firm—is accidentally put in charge after the death of the chairman.",
+    "genres": [
+      "Comedy"
+    ],
+    "imdbId": "tt0064855",
+    "letterboxdRating": 3.68
+  },
+  {
+    "id": "nickelTHETEMPTATIONOFSTTONY20251014T191500000Z",
+    "filmTitle": "The Temptation of St. Tony",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-14T19:15:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35369",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35369",
+    "websiteYear": 2009,
+    "director": "Veiko Õunpuu",
+    "tmdbId": 46756,
+    "releaseDate": "2009-10-10",
+    "synopsis": "A mid-level manager who develops an aversion to being a good person questions his morality as he faces the challenges of middle age and loses control of his life.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt1247696",
+    "letterboxdRating": 3.98
+  },
+  {
+    "id": "nickelTHEOUTFIT20251015T170000000Z",
+    "filmTitle": "The Outfit",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-15T17:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35370",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35370",
+    "websiteYear": 1973,
+    "director": "John Flynn",
+    "tmdbId": 26762,
+    "releaseDate": "1973-10-19",
+    "synopsis": "A two-bit criminal takes on the Mafia to avenge his brother's death. Earl Macklin is a small time criminal who is released from prison after an unsuccessful bank robbery only to discover that a pair of gunmen killed his brother.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "imdbId": "tt0071960",
+    "letterboxdRating": 3.59
+  },
+  {
+    "id": "nickelTHEWORLDSGREATESTSINNER20251015T193000000Z",
+    "filmTitle": "The World's Greatest Sinner",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-15T19:30:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35371",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35371",
+    "websiteYear": 1962,
+    "director": "Timothy Carey",
+    "tmdbId": 41039,
+    "releaseDate": "1962-06-01",
+    "synopsis": "A bored insurance salesman quits his job to go into politics. He first starts preaching about how man is greater than he thinks and that man can live forever. He ends up forming his own political party, \"The Eternal Man\" party. He begins to be referred to as \"God\". Then he starts having doubts about the eternalness of man.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0056703",
+    "letterboxdRating": 3.38
+  },
+  {
+    "id": "nickelREWINDAKACELLULOIDNIGHTMARES20251016T170000000Z",
+    "filmTitle": "Re-Wind",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-16T17:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35372",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35372",
+    "websiteYear": 1988,
+    "director": "Hisayasu Satō",
+    "tmdbId": 87297,
+    "releaseDate": "1988-07-05",
+    "synopsis": "An investigation into a videotape that shows the results of a brutal murder committed using a knife-equipped camera.",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "imdbId": "tt0095961",
+    "letterboxdRating": 3.47
+  },
+  {
+    "id": "nickel964PINOCCHIO20251016T190000000Z",
+    "filmTitle": "964 Pinocchio",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-16T19:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35373",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35373",
+    "websiteYear": 1991,
+    "director": "Shozin Fukui",
+    "tmdbId": 50162,
+    "releaseDate": "1991-09-14",
+    "synopsis": "A memory-wiped and defective cyborg sex slave is tossed onto the streets and taken in by a homeless woman while his corporate creators hunt him down.",
+    "genres": [
+      "Horror",
+      "Science Fiction",
+      "Thriller"
+    ],
+    "imdbId": "tt0225009",
+    "letterboxdRating": 3.36
+  },
+  {
+    "id": "nickelMYSTERYFILM20251017T163000000Z",
+    "filmTitle": "MYSTERY FILM",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-17T16:30:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35374",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35374"
+  },
+  {
+    "id": "nickelDEFBYTEMPTATION20251018T170000000Z",
+    "filmTitle": "Def by Temptation",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-18T17:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35375",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35375",
+    "websiteYear": 1990,
+    "director": "James Bond III",
+    "tmdbId": 71853,
+    "releaseDate": "1990-03-23",
+    "synopsis": "An evil succubus is preying on libidinous black men in New York, and all that stands in her way is a minister-in-training, an aspiring actor, and a cop that specializes in cases involving the supernatural.",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Romance"
+    ],
+    "imdbId": "tt0099395",
+    "letterboxdRating": 3.21
+  },
+  {
+    "id": "nickelDEVILSTORY20251018T191500000Z",
+    "filmTitle": "Devil Story",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-18T19:15:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35376",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35376",
+    "websiteYear": 1986,
+    "director": "Bernard Launois",
+    "tmdbId": 74081,
+    "releaseDate": "1986-11-26",
+    "synopsis": "After their car breaks down in the French countryside, a young couple must fend off a Nazi mutant and his gypsy mother, a mummy, and a possessed horse.",
+    "genres": [
+      "Horror",
+      "Fantasy"
+    ],
+    "imdbId": "tt0233004",
+    "letterboxdRating": 2.59
+  },
+  {
+    "id": "nickelSHRIMETIMEANIGHTOFBIZARROUNDERSEENANIME20251021T170000000Z",
+    "filmTitle": "SHRIME TIME: A NIGHT OF BIZARRO UNDERSEEN ANIME",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-21T17:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35377",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35377"
+  },
+  {
+    "id": "nickelSHRIMETIMEANIGHTOFBIZARROUNDERSEENANIME20251021T191500000Z",
+    "filmTitle": "SHRIME TIME: A NIGHT OF BIZARRO UNDERSEEN ANIME",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-21T19:15:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35379",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35379"
+  },
+  {
+    "id": "nickelLICKERISHQUARTET20251022T170000000Z",
+    "filmTitle": "The Lickerish Quartet",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-22T17:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35380",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35380",
+    "websiteYear": 1970,
+    "director": "Radley Metzger",
+    "tmdbId": 70422,
+    "releaseDate": "1970-10-13",
+    "synopsis": "A jaded, wealthy couple watch a blue movie in their castle home along with her adult son. The son is testy, so they go into town and watch a circus-like thrill ride. The daredevil woman in the show looks exactly like one of the women in the movie, so the man invites her to join them for a nightcap. Tensions among the family seem to rise. She stays overnight, and during her 24 hours in the castle, each of its three residents involves her in a fantasy. She, in turn, keeps asking, \"Who has the gun?\" Will there be violence before it's over?",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "imdbId": "tt0065981",
+    "letterboxdRating": 3.33
+  },
+  {
+    "id": "nickelSCORE20251022T191500000Z",
+    "filmTitle": "Score",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-22T19:15:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35381",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35381",
+    "websiteYear": 1973,
+    "director": "Radley Metzger",
+    "tmdbId": 53897,
+    "releaseDate": "1973-11-05",
+    "synopsis": "In the mythical European city of Leisure, married couple Jack and Elvira have an ongoing bet regarding who can seduce whom. This comes up in the wake of a swinging night with a couple of tourists picked up via a newspaper ad. Elvira, a self-professed \"sexual snob\" has bet she can seduce newlywed Betsy, married to handsome marine biologist Eddie. If she fails by midnight, then Jack gets to seduce Eddie.",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "imdbId": "tt0069236",
+    "letterboxdRating": 3.5
+  },
+  {
+    "id": "nickelODYSSEYSpecialpreviewintroQAwithdirectorGerardJohnson20251023T160000000Z",
+    "filmTitle": "ODYSSEY Special preview + intro/Q&A with director Gerard Johnson",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-23T16:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35382",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35382",
+    "websiteYear": 2025,
+    "director": "Gerard Johnson",
+    "tmdbId": 1330747,
+    "releaseDate": "2025-03-09",
+    "synopsis": "Natasha Flynn, a coke-fueled London estate agent, hides her crumbling life behind luxury. When loan sharks offer cash to hide a kidnapped agent, she's dragged into London's seedy underworld, leading to a bloody, chaotic showdown.",
+    "genres": [
+      "Thriller"
+    ],
+    "imdbId": "tt31227740",
+    "letterboxdRating": 3.08
+  },
+  {
+    "id": "nickelODYSSEYSpecialpreviewintroQAwithdirectorGerardJohnson20251023T191500000Z",
+    "filmTitle": "ODYSSEY Special preview + intro/Q&A with director Gerard Johnson",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-23T19:15:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35383",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35383",
+    "websiteYear": 2025,
+    "director": "Gerard Johnson",
+    "tmdbId": 1330747,
+    "releaseDate": "2025-03-09",
+    "synopsis": "Natasha Flynn, a coke-fueled London estate agent, hides her crumbling life behind luxury. When loan sharks offer cash to hide a kidnapped agent, she's dragged into London's seedy underworld, leading to a bloody, chaotic showdown.",
+    "genres": [
+      "Thriller"
+    ],
+    "imdbId": "tt31227740",
+    "letterboxdRating": 3.08
+  },
+  {
+    "id": "nickelTENEMENT20251024T170000000Z",
+    "filmTitle": "Tenement",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-24T17:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35384",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35384",
+    "websiteYear": 1985,
+    "director": "Roberta Findlay",
+    "tmdbId": 87905,
+    "releaseDate": "1985-09-20",
+    "synopsis": "A drug-dealing band of violent street thugs terrorize the tenants of a South Bronx apartment building.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime",
+      "Horror"
+    ],
+    "imdbId": "tt0090145",
+    "letterboxdRating": 3.17
+  },
+  {
+    "id": "nickelMYSTERYFILM20251024T191500000Z",
+    "filmTitle": "MYSTERY FILM ?",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-24T19:15:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35385",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35385"
+  },
+  {
+    "id": "nickelTHETHRILLKILLERS20251025T170000000Z",
+    "filmTitle": "The Thrill Killers",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-25T17:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35386",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35386",
+    "websiteYear": 1964,
+    "director": "Ray Dennis Steckler",
+    "tmdbId": 63022,
+    "releaseDate": "1964-08-07",
+    "synopsis": "Three psychotic murderers escape from a mental institution and stalk women in Los Angeles.",
+    "genres": [
+      "Crime",
+      "Action",
+      "Thriller",
+      "Horror"
+    ],
+    "imdbId": "tt0058653",
+    "letterboxdRating": 3.19
+  },
+  {
+    "id": "nickelBODYFEVER20251025T191500000Z",
+    "filmTitle": "Body Fever",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-25T19:15:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35387",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35387",
+    "websiteYear": 1969,
+    "director": "Ray Dennis Steckler",
+    "tmdbId": 242789,
+    "releaseDate": "1969-01-01",
+    "synopsis": "Set in the sordid underworld of drug trafficking and prostitutes, this story involves Charlie Smith, private eye, whose job it is to find Carrie Friskine and fast! Carrie, a cat burglar, has ripped off the ring-leader of a drug racket and now he's after her blood.",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "imdbId": "tt0064101",
+    "letterboxdRating": 3.19
+  },
+  {
+    "id": "nickelTHEWICKERMAN20251028T180000000Z",
+    "filmTitle": "The Wicker Man",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-28T18:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35388",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35388",
+    "websiteYear": 1973,
+    "director": "Robin Hardy",
+    "tmdbId": 16307,
+    "releaseDate": "1973-12-06",
+    "synopsis": "Police sergeant Neil Howie is called to an island village in search of a missing girl whom the locals claim never existed. Stranger still, however, are the rituals that take place there.",
+    "genres": [
+      "Horror"
+    ],
+    "imdbId": "tt0070917",
+    "letterboxdRating": 3.97
+  },
+  {
+    "id": "nickelTHELASTSACRIFICE20251028T201500000Z",
+    "filmTitle": "The Last Sacrifice",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-28T20:15:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35389",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35389",
+    "websiteYear": 2024,
+    "director": "Rupert Russell",
+    "tmdbId": 1355281,
+    "releaseDate": "2024-09-29",
+    "synopsis": "The Last Sacrifice delves into the real-life 1945 witchcraft killing of Charles Walton—the terrifying event that inspired The Wicker Man and birthed the folk horror genre. This unsettling true-crime interrogation probes into the eerie, enigmatic cultural undercurrents that shaped 1970's folk horror genre, leaving an indelible mark on cinema and public psyche. The Last Sacrifice uncovers an unflinching portrayal of Britain's profound identity crisis, both during the tumultuous early 1970s and the resurgence of folk horror today, ominously coinciding with yet another national descent into madness. Its conclusion: The Wicker Man is more fact than fiction.",
+    "genres": [
+      "Documentary",
+      "Horror"
+    ],
+    "imdbId": "tt33499051",
+    "letterboxdRating": 3.33
+  },
+  {
+    "id": "nickelVIDEOBAZAARPRESENTSEYESOFFIRE20251029T180000000Z",
+    "filmTitle": "Eyes of Fire",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-29T18:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35390",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35390",
+    "websiteYear": 1983,
+    "director": "Avery Crounse",
+    "tmdbId": 72349,
+    "releaseDate": "1983-10-21",
+    "synopsis": "In 1750, an adulterous preacher is ejected from a small British colony with his motley crew of followers, who make their way downriver to establish a new settlement of their own beyond the western frontier.",
+    "genres": [
+      "Horror",
+      "Drama"
+    ],
+    "imdbId": "tt0085515",
+    "letterboxdRating": 3.42
+  },
+  {
+    "id": "nickelVIDEOBAZAARPRESENTSTORTUREDUNGEON20251029T201500000Z",
+    "filmTitle": "Torture Dungeon",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-29T20:15:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35391",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35391",
+    "websiteYear": 1970,
+    "director": "Andy Milligan",
+    "tmdbId": 114584,
+    "releaseDate": "1970-01-23",
+    "synopsis": "In Medieval England, a sadistic duke plots to kill off all the heirs to the throne so he can claim the crown for himself.",
+    "genres": [
+      "Drama",
+      "Horror"
+    ],
+    "imdbId": "tt0066475",
+    "letterboxdRating": 2.88
+  },
+  {
+    "id": "nickelFRANKENHOOKER20251030T180000000Z",
+    "filmTitle": "Frankenhooker",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-30T18:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35392",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35392",
+    "websiteYear": 1990,
+    "director": "Frank Henenlotter",
+    "tmdbId": 27274,
+    "releaseDate": "1990-06-01",
+    "synopsis": "A medical school dropout loses his fiancée in a tragic lawnmower incident and decides to bring her back to life. Unfortunately, he was only able to save her head, so he goes to the red light district in the city and lures prostitutes into a hotel room so he can collect body parts to reassemble her.",
+    "genres": [
+      "Comedy",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt0099611",
+    "letterboxdRating": 3.48
+  },
+  {
+    "id": "nickelBASKETCASE20251030T201500000Z",
+    "filmTitle": "Basket Case",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-30T20:15:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35393",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35393",
+    "websiteYear": 1982,
+    "director": "Frank Henenlotter",
+    "tmdbId": 27813,
+    "releaseDate": "1982-04-02",
+    "synopsis": "A young man carrying a big basket that contains his extremely deformed, formerly conjoined twin brother seeks vengeance on the doctors who separated them against their will.",
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
+    "imdbId": "tt0083624",
+    "letterboxdRating": 3.25
+  },
+  {
+    "id": "nickelTHEFIRSTANNUALNICKELCINEMAHALLOWEENPSYCHOTRONICALLDAYER20251031T120000000Z",
+    "filmTitle": "THE FIRST ANNUAL NICKEL CINEMA HALLOWEEN PSYCHOTRONIC ALL-DAYER!",
+    "cinema": "nickel",
+    "screeningStart": "2025-10-31T12:00:00.000Z",
+    "bookingUrl": "https://ticketlab.co.uk/event/id/35394",
+    "filmUrl": "https://ticketlab.co.uk/event/id/35394"
   }
 ]

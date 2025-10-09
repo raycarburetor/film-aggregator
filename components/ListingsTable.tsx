@@ -30,6 +30,19 @@ const CINEMA_LABELS: Record<string, string> = {
   nickel: 'The Nickel',
 }
 
+const CINEMA_ADDRESSES: Record<string, string> = {
+  barbican: 'Beech St, Barbican, London EC1Y 8AA',
+  castle: '64 - 66 Brooksby\'s Walk, London E9 6DA',
+  cinelumiere: '17 Queensberry Pl, South Kensington, London SW7 2DW',
+  closeup: '97 Sclater St, London E1 6HR',
+  garden: '39-41 Parker St, London WC2B 5PQ',
+  genesis: '93-95 Mile End Rd, Bethnal Green, London E1 4UJ',
+  ica: 'The Mall, London SW1Y 5AH',
+  nickel: '117-119 Clerkenwell Rd, London EC1R 5BY',
+  princecharles: '7 Leicester Pl, London WC2H 7BY',
+  rio: '107 Kingsland High St, London E8 2PB',
+}
+
 function formatDateTime(iso: string) {
   const d = new Date(iso)
   // Deterministic formatting to avoid SSR/CSR mismatches
@@ -196,7 +209,9 @@ export default function ListingsTable({ items }: { items: Item[] }) {
             const relYear = i.releaseDate?.slice(0,4) ?? (typeof i.websiteYear === 'number' ? String(i.websiteYear) : undefined) ?? fallbackYearFromTitle(i.filmTitle)
             const lbRating = typeof i.letterboxdRating === 'number' ? (Math.round(i.letterboxdRating * 10) / 10).toFixed(1) : '—'
             const titleNorm = displayTitle(i.filmTitle)
-            const locationLabel = CINEMA_LABELS[i.cinema] ?? i.cinema
+            const baseLabel = CINEMA_LABELS[i.cinema] ?? i.cinema
+            const locationAddress = CINEMA_ADDRESSES[i.cinema]
+            const locationLabel = locationAddress ? `${baseLabel}, ${locationAddress}` : baseLabel
             const calendarHref = buildCalendarLink(i, titleNorm, locationLabel)
             const calendarDownload = calendarHref ? calendarFileName(titleNorm) : null
             const forceUnknownDirector = /films from uk'?s students? encampments/i.test(titleNorm)
@@ -251,7 +266,7 @@ export default function ListingsTable({ items }: { items: Item[] }) {
                             </div>
                             {(i.bookingUrl || calendarHref) ? (
                               <div className="pt-1">
-                                <div className="flex flex-col md:flex-row md:items-center md:space-x-3 space-y-2 md:space-y-0">
+                                <div className="flex w-full flex-row items-center md:flex-col md:items-start md:space-y-2">
                                   {i.bookingUrl ? (
                                     <a href={i.bookingUrl} target="_blank" className="underline whitespace-nowrap">Book tickets</a>
                                   ) : null}
@@ -259,7 +274,7 @@ export default function ListingsTable({ items }: { items: Item[] }) {
                                     <a
                                       href={calendarHref}
                                       download={calendarDownload || undefined}
-                                      className="underline whitespace-nowrap"
+                                      className="underline whitespace-nowrap ml-auto md:ml-0"
                                     >
                                       Add to calendar
                                     </a>

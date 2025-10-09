@@ -14,6 +14,7 @@ export const CINEMAS = [
   { key: 'barbican', label: 'Barbican' },
   { key: 'rio', label: 'Rio Cinema' },
   { key: 'cinelumiere', label: 'Ciné Lumière' },
+  { key: 'nickel', label: 'The Nickel' },
 ] as const
 
 export type FiltersHandle = {

@@ -88,7 +88,7 @@ Add to `.env.local` (see `.env.example` for the full list and defaults):
   - `GET /api/preview/castle` → runs `scripts/cinemas/castle.mjs`
 
 ## Cinema Keys
-- `bfi` (BFI Southbank), `princecharles` (Prince Charles Cinema), `ica` (ICA), `castle` (The Castle Cinema), `garden` (The Garden Cinema), `genesis` (Genesis Cinema), `closeup` (Close‑Up), `barbican` (Barbican), `rio` (Rio Cinema)
+- `bfi` (BFI Southbank), `princecharles` (Prince Charles Cinema), `ica` (ICA), `castle` (The Castle Cinema), `garden` (The Garden Cinema), `genesis` (Genesis Cinema), `closeup` (Close‑Up), `barbican` (Barbican), `rio` (Rio Cinema), `cinelumiere` (Ciné Lumière), `nickel` (The Nickel)
 
 ## Requirements
 - Node: 20+ (uses global `fetch`, Next 14, and modern Intl APIs)

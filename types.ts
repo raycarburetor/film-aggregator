@@ -1,4 +1,4 @@
-export type CinemaKey = 'bfi' | 'princecharles' | 'ica' | 'castle' | 'garden' | 'genesis' | 'closeup' | 'barbican' | 'rio' | 'cinelumiere'
+export type CinemaKey = 'bfi' | 'princecharles' | 'ica' | 'castle' | 'garden' | 'genesis' | 'closeup' | 'barbican' | 'rio' | 'cinelumiere' | 'nickel'
 
 export type Screening = {
   id: string

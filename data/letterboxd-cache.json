@@ -735,6 +735,10 @@
     "url": "https://letterboxd.com/film/a-brighter-summer-day/",
     "updatedAt": "2025-09-11T14:01:05.340Z"
   },
+  "16307": {
+    "url": "https://letterboxd.com/film/the-wicker-man/",
+    "updatedAt": "2025-10-09T18:37:39.032Z"
+  },
   "16448": {
     "url": "https://letterboxd.com/film/waiting-for-guffman/",
     "updatedAt": "2025-09-11T13:59:42.097Z"
@@ -839,6 +843,10 @@
     "url": "https://letterboxd.com/film/draculas-dog/",
     "updatedAt": "2025-10-06T11:59:39.442Z"
   },
+  "26762": {
+    "url": "https://letterboxd.com/film/the-outfit/",
+    "updatedAt": "2025-10-09T18:37:22.561Z"
+  },
   "26774": {
     "url": "https://letterboxd.com/film/the-blood-on-satans-claw/",
     "updatedAt": "2025-10-06T11:50:14.102Z"
@@ -859,6 +867,10 @@
     "url": "https://letterboxd.com/film/inception/",
     "updatedAt": "2025-09-11T14:01:06.442Z"
   },
+  "27274": {
+    "url": "https://letterboxd.com/film/frankenhooker/",
+    "updatedAt": "2025-10-09T18:37:44.795Z"
+  },
   "27324": {
     "url": "https://letterboxd.com/film/pulse-2001/",
     "updatedAt": "2025-10-06T11:50:10.057Z"
@@ -870,6 +882,10 @@
   "27432": {
     "url": "https://letterboxd.com/film/killer-of-sheep/",
     "updatedAt": "2025-09-11T13:58:29.969Z"
+  },
+  "27813": {
+    "url": "https://letterboxd.com/film/basket-case/",
+    "updatedAt": "2025-10-09T18:37:45.662Z"
   },
   "27958": {
     "url": "https://letterboxd.com/film/cruising/",
@@ -886,6 +902,10 @@
   "28292": {
     "url": "https://letterboxd.com/film/follow-the-fleet/",
     "updatedAt": "2025-09-11T14:02:25.800Z"
+  },
+  "28671": {
+    "url": "https://letterboxd.com/film/habit/",
+    "updatedAt": "2025-10-09T18:37:18.037Z"
   },
   "29415": {
     "url": "https://letterboxd.com/film/la-bete-humaine/",
@@ -922,6 +942,10 @@
   "32015": {
     "url": "https://letterboxd.com/film/i-am-cuba/",
     "updatedAt": "2025-09-11T13:58:33.198Z"
+  },
+  "32575": {
+    "url": "https://letterboxd.com/film/putney-swope/",
+    "updatedAt": "2025-10-09T18:37:19.395Z"
   },
   "32687": {
     "url": "https://letterboxd.com/film/gabrielle/",
@@ -1003,6 +1027,10 @@
     "url": "https://letterboxd.com/film/trouble-every-day/",
     "updatedAt": "2025-09-11T14:01:38.329Z"
   },
+  "41039": {
+    "url": "https://letterboxd.com/film/the-worlds-greatest-sinner/",
+    "updatedAt": "2025-10-09T18:37:23.568Z"
+  },
   "41428": {
     "url": "https://letterboxd.com/film/tetsuo-the-iron-man/",
     "updatedAt": "2025-10-06T11:57:01.759Z"
@@ -1055,6 +1083,10 @@
     "url": "https://letterboxd.com/film/dust-in-the-wind/",
     "updatedAt": "2025-09-11T14:03:19.000Z"
   },
+  "46756": {
+    "url": "https://letterboxd.com/film/the-temptation-of-st-tony/",
+    "updatedAt": "2025-10-09T18:37:21.420Z"
+  },
   "49049": {
     "url": "https://letterboxd.com/film/dredd/",
     "updatedAt": "2025-09-11T14:00:05.603Z"
@@ -1071,9 +1103,17 @@
     "url": "https://letterboxd.com/film/a-city-of-sadness/",
     "updatedAt": "2025-09-11T14:03:28.127Z"
   },
+  "50162": {
+    "url": "https://letterboxd.com/film/964-pinocchio/",
+    "updatedAt": "2025-10-09T18:37:26.231Z"
+  },
   "53023": {
     "url": "https://letterboxd.com/film/happiness-1965/",
     "updatedAt": "2025-09-11T14:59:30.520Z"
+  },
+  "53897": {
+    "url": "https://letterboxd.com/film/score-1973/",
+    "updatedAt": "2025-10-09T19:00:56.133Z"
   },
   "54008": {
     "url": "https://letterboxd.com/film/sugar-hill/",
@@ -1103,6 +1143,10 @@
     "url": "https://letterboxd.com/film/raining-stones/",
     "updatedAt": "2025-10-06T11:51:43.119Z"
   },
+  "63022": {
+    "url": "https://letterboxd.com/film/the-thrill-killers/",
+    "updatedAt": "2025-10-09T18:37:35.830Z"
+  },
   "63153": {
     "url": "https://letterboxd.com/film/rosa-la-rose-public-girl/",
     "updatedAt": "2025-09-11T14:02:40.671Z"
@@ -1123,17 +1167,33 @@
     "url": "https://letterboxd.com/film/the-master-2012/",
     "updatedAt": "2025-09-11T14:00:14.769Z"
   },
+  "70422": {
+    "url": "https://letterboxd.com/film/the-lickerish-quartet/",
+    "updatedAt": "2025-10-09T18:37:29.917Z"
+  },
   "71138": {
     "url": "https://letterboxd.com/film/female-prisoner-701-scorpion/",
     "updatedAt": "2025-09-11T14:01:43.344Z"
+  },
+  "71853": {
+    "url": "https://letterboxd.com/film/def-by-temptation/",
+    "updatedAt": "2025-10-09T18:37:27.462Z"
   },
   "72190": {
     "url": "https://letterboxd.com/film/world-war-z/",
     "updatedAt": "2025-09-11T14:01:58.534Z"
   },
+  "72349": {
+    "url": "https://letterboxd.com/film/eyes-of-fire/",
+    "updatedAt": "2025-10-09T18:37:42.616Z"
+  },
   "72445": {
     "url": "https://letterboxd.com/film/boat-people/",
     "updatedAt": "2025-10-06T11:48:34.925Z"
+  },
+  "74081": {
+    "url": "https://letterboxd.com/film/devil-story/",
+    "updatedAt": "2025-10-09T18:37:28.526Z"
   },
   "76072": {
     "url": "https://letterboxd.com/film/poor-cow/",
@@ -1155,9 +1215,17 @@
     "url": "https://letterboxd.com/film/amour/",
     "updatedAt": "2025-09-11T14:01:53.584Z"
   },
+  "87297": {
+    "url": "https://letterboxd.com/film/re-wind/",
+    "updatedAt": "2025-10-09T18:37:25.105Z"
+  },
   "87392": {
     "url": "https://letterboxd.com/film/sambizanga/",
     "updatedAt": "2025-10-06T12:03:32.454Z"
+  },
+  "87905": {
+    "url": "https://letterboxd.com/film/tenement/",
+    "updatedAt": "2025-10-09T18:37:33.807Z"
   },
   "94196": {
     "url": "https://letterboxd.com/film/zarafa/",
@@ -1214,6 +1282,10 @@
   "114570": {
     "url": "https://letterboxd.com/film/the-hunters-1977/",
     "updatedAt": "2025-10-06T11:55:52.442Z"
+  },
+  "114584": {
+    "url": "https://letterboxd.com/film/torture-dungeon/",
+    "updatedAt": "2025-10-09T18:37:43.952Z"
   },
   "114645": {
     "url": "https://letterboxd.com/film/days-of-36/",
@@ -1295,9 +1367,17 @@
     "url": "https://letterboxd.com/film/the-book-of-life-2014/",
     "updatedAt": "2025-10-06T11:51:51.180Z"
   },
+  "242789": {
+    "url": "https://letterboxd.com/film/body-fever/",
+    "updatedAt": "2025-10-09T18:37:37.802Z"
+  },
   "242826": {
     "url": "https://letterboxd.com/film/manthan-1976/",
     "updatedAt": "2025-10-06T11:50:26.522Z"
+  },
+  "246133": {
+    "url": "https://letterboxd.com/film/entertainment/",
+    "updatedAt": "2025-10-09T18:37:16.730Z"
   },
   "263640": {
     "url": "https://letterboxd.com/film/cathy-come-home/",
@@ -1895,6 +1975,10 @@
     "url": "https://letterboxd.com/film/from-ground-zero/",
     "updatedAt": "2025-09-11T14:36:36.339Z"
   },
+  "1330747": {
+    "url": "https://letterboxd.com/film/odyssey-2025/",
+    "updatedAt": "2025-10-09T18:37:32.580Z"
+  },
   "1339173": {
     "url": "https://letterboxd.com/film/honey-bunch/",
     "updatedAt": "2025-09-11T14:02:06.510Z"
@@ -1910,6 +1994,10 @@
   "1352624": {
     "url": "https://letterboxd.com/film/the-mastermind-2025/",
     "updatedAt": "2025-10-06T11:51:02.731Z"
+  },
+  "1355281": {
+    "url": "https://letterboxd.com/film/the-last-sacrifice-2024/",
+    "updatedAt": "2025-10-09T18:37:41.489Z"
   },
   "1357567": {
     "url": "https://letterboxd.com/film/the-long-quiet/",

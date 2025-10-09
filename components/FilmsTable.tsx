@@ -13,6 +13,7 @@ const CINEMA_LABELS: Record<string, string> = {
   barbican: 'Barbican',
   rio: 'Rio Cinema',
   cinelumiere: 'Ciné Lumière',
+  nickel: 'The Nickel',
 }
 
 function formatTime(iso: string) {

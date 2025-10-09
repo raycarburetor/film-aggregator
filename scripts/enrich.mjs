@@ -89,8 +89,8 @@ export async function enrichWithTMDb(items, region='GB') {
       if (String(it.cinema) === 'ica' && !hasSiteAnchor) {
         continue
       }
-      async function searchTmdb(withYear) {
-        const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-GB&query=${q}&include_adult=false${(withYear && yearHint) ? `&year=${yearHint}` : ''}`
+      async function searchTmdb(withYear, includeAdult) {
+        const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-GB&query=${q}&include_adult=${includeAdult}${(withYear && yearHint) ? `&year=${yearHint}` : ''}`
         const res = await fetchFn(url)
         if (!res.ok) return []
         const data = await res.json()
@@ -124,9 +124,10 @@ export async function enrichWithTMDb(items, region='GB') {
         } catch {}
         return null
       }
-      let results = await searchTmdb(true)
+      const allowAdult = Boolean(it.director && yearHint)
+      let results = await searchTmdb(true, allowAdult)
       // If year-filtered search yields nothing, fall back to unfiltered to avoid missing "Killer of Sheep"-style year discrepancies
-      if (!results.length) results = await searchTmdb(false)
+      if (!results.length) results = await searchTmdb(false, allowAdult)
 
       function yearFrom(s) { return (s && /^\d{4}-/.test(s)) ? Number(s.slice(0,4)) : undefined }
 
@@ -351,6 +352,10 @@ export async function enrichWithTMDb(items, region='GB') {
 
       // Apply enrichment details from TMDb
       it.tmdbId = m.id
+      const tmdbTitle = (m.title || m.original_title || '').trim()
+      if (tmdbTitle && /^[^a-z]*$/.test(String(it.filmTitle || ''))) {
+        it.filmTitle = tmdbTitle
+      }
       it.releaseDate = det.release_date || m.release_date || it.releaseDate
       it.synopsis = det.overview || it.synopsis
       it.genres = (det.genres || []).map(g => g.name)
