@@ -607,6 +607,10 @@
     "url": "https://letterboxd.com/film/friday/",
     "updatedAt": "2025-09-11T14:00:50.914Z"
   },
+  "10707": {
+    "url": "https://letterboxd.com/film/the-squid-and-the-whale/",
+    "updatedAt": "2025-10-12T12:36:06.431Z"
+  },
   "11075": {
     "url": "https://letterboxd.com/film/audition/",
     "updatedAt": "2025-09-13T11:55:53.723Z"
@@ -754,6 +758,10 @@
   "18498": {
     "url": "https://letterboxd.com/film/ghoulies/",
     "updatedAt": "2025-10-06T11:57:08.438Z"
+  },
+  "18627": {
+    "url": "https://letterboxd.com/film/son-of-godzilla/",
+    "updatedAt": "2025-10-12T12:35:45.433Z"
   },
   "18898": {
     "url": "https://letterboxd.com/film/looking-for-eric/",
@@ -947,6 +955,10 @@
     "url": "https://letterboxd.com/film/putney-swope/",
     "updatedAt": "2025-10-09T18:37:19.395Z"
   },
+  "32646": {
+    "url": "https://letterboxd.com/film/safe/",
+    "updatedAt": "2025-10-12T12:36:08.769Z"
+  },
   "32687": {
     "url": "https://letterboxd.com/film/gabrielle/",
     "updatedAt": "2025-10-06T12:03:47.687Z"
@@ -962,6 +974,10 @@
   "33560": {
     "url": "https://letterboxd.com/film/totally-fucked-up/",
     "updatedAt": "2025-10-06T12:01:40.488Z"
+  },
+  "34148": {
+    "url": "https://letterboxd.com/film/imitation-of-life-1959/",
+    "updatedAt": "2025-10-12T12:35:53.285Z"
   },
   "34647": {
     "url": "https://letterboxd.com/film/enter-the-void/",
@@ -1046,6 +1062,10 @@
   "42135": {
     "url": "https://letterboxd.com/film/querelle/",
     "updatedAt": "2025-09-11T14:02:27.098Z"
+  },
+  "42236": {
+    "url": "https://letterboxd.com/film/fellinis-casanova/",
+    "updatedAt": "2025-10-12T12:36:07.678Z"
   },
   "42741": {
     "url": "https://letterboxd.com/film/a-cop-1972/",
@@ -1447,6 +1467,14 @@
     "url": "https://letterboxd.com/film/small-talk-2016/",
     "updatedAt": "2025-09-11T14:03:49.289Z"
   },
+  "475215": {
+    "url": "https://letterboxd.com/film/mirai/",
+    "updatedAt": "2025-10-12T12:35:50.147Z"
+  },
+  "490458": {
+    "url": "https://letterboxd.com/film/the-metropolitan-opera-la-boheme-2014/",
+    "updatedAt": "2025-10-12T12:36:04.963Z"
+  },
   "500895": {
     "url": "https://letterboxd.com/film/i-was-at-home-but/",
     "updatedAt": "2025-09-11T14:04:35.173Z"
@@ -1595,6 +1623,10 @@
     "url": "https://letterboxd.com/film/little-nicholas-happy-as-can-be/",
     "updatedAt": "2025-09-11T14:59:37.891Z"
   },
+  "896536": {
+    "url": "https://letterboxd.com/film/the-legend-of-ochi/",
+    "updatedAt": "2025-10-12T12:35:51.481Z"
+  },
   "944931": {
     "url": "https://letterboxd.com/film/heidi-rescue-of-the-lynx/",
     "updatedAt": "2025-09-11T14:02:54.715Z"
@@ -1710,6 +1742,10 @@
   "1104937": {
     "url": "https://letterboxd.com/film/kill-the-jockey/",
     "updatedAt": "2025-09-11T14:03:00.812Z"
+  },
+  "1117857": {
+    "url": "https://letterboxd.com/film/in-your-dreams-2025/",
+    "updatedAt": "2025-10-12T12:36:01.105Z"
   },
   "1119539": {
     "url": "https://letterboxd.com/film/imago-2025/",
@@ -2003,6 +2039,10 @@
     "url": "https://letterboxd.com/film/the-long-quiet/",
     "updatedAt": "2025-10-06T11:51:27.781Z"
   },
+  "1360718": {
+    "url": "https://letterboxd.com/film/lilla-spoket-laban-spokar-igen/",
+    "updatedAt": "2025-10-12T12:35:59.378Z"
+  },
   "1361565": {
     "url": "https://letterboxd.com/film/valley-of-the-shadow-of-death/",
     "updatedAt": "2025-09-11T14:02:22.526Z"
@@ -2191,6 +2231,10 @@
     "url": "https://letterboxd.com/film/the-memory-blocks/",
     "updatedAt": "2025-10-06T11:48:50.392Z"
   },
+  "1509881": {
+    "url": "https://letterboxd.com/film/in-time-donal-lunny/",
+    "updatedAt": "2025-10-12T12:35:48.994Z"
+  },
   "1510306": {
     "url": "https://letterboxd.com/film/with-hasan-in-gaza/",
     "updatedAt": "2025-10-06T11:55:17.187Z"
@@ -2226,6 +2270,10 @@
   "1527411": {
     "url": "https://letterboxd.com/film/ackroyd-harvey-the-art-of-activism/",
     "updatedAt": "2025-09-11T13:58:55.150Z"
+  },
+  "1539493": {
+    "url": "https://letterboxd.com/film/big-mama-thornton-i-cant-be-anyone-but-me/",
+    "updatedAt": "2025-10-12T12:35:44.057Z"
   },
   "1540803": {
     "url": "https://letterboxd.com/film/afterlives-2025/",

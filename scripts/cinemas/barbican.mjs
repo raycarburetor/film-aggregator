@@ -41,80 +41,191 @@ export async function fetchBarbican() {
 
       const rows = await page.evaluate(() => {
         const out = []
-        const articles = Array.from(document.querySelectorAll('article._cinema-listing'))
-        function cleanHref(href) { try { const u = new URL(href, location.origin); u.hash=''; return u.toString() } catch { return href } }
+        const cards = Array.from(document.querySelectorAll('.cinema-listing-card'))
+        if (!cards.length) return out
+
+        function cleanHref(href) {
+          try {
+            const u = new URL(href, location.origin)
+            u.hash = ''
+            return u.toString()
+          } catch {
+            return href
+          }
+        }
+        function fallbackDay() {
+          const url = new URL(location.href)
+          const explicit = url.searchParams.get('day')
+          if (explicit && /^\d{4}-\d{2}-\d{2}$/.test(explicit)) return explicit
+          const today = new Date()
+          const yyyy = today.getFullYear()
+          const mm = String(today.getMonth() + 1).padStart(2, '0')
+          const dd = String(today.getDate()).padStart(2, '0')
+          return `${yyyy}-${mm}-${dd}`
+        }
+        const fallback = fallbackDay()
+        const fallbackMatch = fallback.match(/^(\d{4})-(\d{2})-(\d{2})$/)
+        const fallbackParts = fallbackMatch
+          ? { year: Number(fallbackMatch[1]), month: Number(fallbackMatch[2]), day: Number(fallbackMatch[3]) }
+          : { year: new Date().getFullYear(), month: new Date().getMonth() + 1, day: new Date().getDate() }
+        const monthMap = {
+          jan: 1,
+          january: 1,
+          feb: 2,
+          february: 2,
+          mar: 3,
+          march: 3,
+          apr: 4,
+          april: 4,
+          may: 5,
+          jun: 6,
+          june: 6,
+          jul: 7,
+          july: 7,
+          aug: 8,
+          august: 8,
+          sep: 9,
+          sept: 9,
+          september: 9,
+          oct: 10,
+          october: 10,
+          nov: 11,
+          november: 11,
+          dec: 12,
+          december: 12,
+        }
+        function resolveDateFromHeading(text) {
+          if (!text) return null
+          const match = text.match(/(\d{1,2})\s+([A-Za-z]+)/)
+          if (!match) return null
+          const day = Number(match[1])
+          const month = monthMap[match[2].toLowerCase()]
+          if (!day || !month) return null
+          let year = fallbackParts.year
+          const candidate = new Date(year, month - 1, day)
+          const fallbackDate = new Date(fallbackParts.year, fallbackParts.month - 1, fallbackParts.day)
+          const diff = candidate.getTime() - fallbackDate.getTime()
+          const msInDay = 24 * 3600 * 1000
+          if (diff > 200 * msInDay) {
+            year -= 1
+          } else if (diff < -200 * msInDay) {
+            year += 1
+          }
+          return { year, month, day }
+        }
+        function parseTime(text) {
+          if (!text) return null
+          const cleaned = text.replace(/\s+/g, ' ').trim().toLowerCase()
+          if (!cleaned) return null
+          if (cleaned.includes('midnight')) return { hour: 0, minute: 0 }
+          if (cleaned.includes('midday') || cleaned.includes('noon')) return { hour: 12, minute: 0 }
+          const normalized = cleaned.replace(/(\d)[.\u00B7](\d)/g, '$1:$2')
+          const match = normalized.match(/(\d{1,2})(?::(\d{2}))?\s*(am|pm)?/)
+          if (!match) return null
+          let hour = Number(match[1])
+          const minute = match[2] ? Number(match[2]) : 0
+          const suffix = match[3]
+          if (Number.isNaN(hour) || Number.isNaN(minute)) return null
+          if (suffix === 'am') {
+            if (hour === 12) hour = 0
+          } else if (suffix === 'pm') {
+            if (hour !== 12) hour += 12
+          }
+          if (hour > 23 || minute > 59) return null
+          return { hour, minute }
+        }
+        function makeISO(dateParts, timeParts) {
+          if (!dateParts || !timeParts) return null
+          const { year, month, day } = dateParts
+          const { hour, minute } = timeParts
+          const dt = new Date(year, month - 1, day, hour, minute, 0, 0)
+          if (Number.isNaN(dt.getTime())) return null
+          return dt.toISOString()
+        }
         function extractYear(scope) {
           try {
-            const em = scope.querySelector('div._film-metadata em')
-            const tx = (em?.textContent || '').trim()
-            const m = tx.match(/\b(19|20)\d{2}\b/)
-            return m ? Number(m[0]) : undefined
-          } catch { return undefined }
+            const text = (scope?.textContent || '').replace(/\s+/g, ' ')
+            const matches = text.match(/\b(19|20)\d{2}\b/g)
+            if (!matches || !matches.length) return undefined
+            for (const val of matches) {
+              const year = Number(val)
+              if (!Number.isNaN(year) && year >= 1895 && year <= fallbackParts.year + 1) return year
+            }
+          } catch {}
+          return undefined
         }
         function extractDirector(scope) {
           try {
-            const meta = scope.querySelector('div._film-metadata')
-            if (!meta) return undefined
-            const text = (meta.textContent || '').replace(/\s+/g, ' ').trim()
-            const rejectRuntime = (s) => /\b(runtime|\d+\s*(?:h|hr|hrs|hour|hours)\b|\b\d+\s*(?:m|min|mins|minutes)\b)/i.test(String(s))
-            // 1) Prefer labeled dt/dd pairs
-            const dts = Array.from(meta.querySelectorAll('dt'))
-            for (const dt of dts) {
-              const label = (dt.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase()
-              if (/^director(?:s)?\b/.test(label)) {
-                const dd = dt.nextElementSibling
-                const val = (dd?.textContent || '').replace(/\s+/g, ' ').trim()
-                if (val && !rejectRuntime(val)) return val
-              }
-            }
-            // 2) Look for "Directed by NAME"
+            const text = (scope?.textContent || '').replace(/\s+/g, ' ').trim()
+            if (!text) return undefined
+            const rejectRuntime = (s) =>
+              /\b(runtime|\d+\s*(?:h|hr|hrs|hour|hours)\b|\b\d+\s*(?:m|min|mins|minutes)\b)/i.test(String(s))
             let m = text.match(/Directed by\s*([^|•·\n]+?)(?:\s*(?:\||•|·|$))/i)
             if (m && m[1] && !rejectRuntime(m[1])) return m[1].trim()
-            // 3) Look for "Director: NAME"
             m = text.match(/Director(?:s)?\s*:\s*([^|•·\n]+?)(?:\s*(?:\||•|·|$))/i)
             if (m && m[1] && !rejectRuntime(m[1])) return m[1].trim()
-            // 4) Look for "Dir. NAME" or "Dir: NAME"
             m = text.match(/\bDir(?:ector)?s?\.?\s*:\s*([^|•·\n]+?)(?:\s*(?:\||•|·|$))/i)
             if (m && m[1] && !rejectRuntime(m[1])) return m[1].trim()
-            m = text.match(/\bDir(?:ector)?s?\.?\s+([^|•·\n]+?)(?:\s*(?:\||•|·|$))/i)
+            m = text.match(/\bDir(?:ector)?s?\b\.?\s+([^|•·\n]+?)(?:\s*(?:\||•|·|$))/i)
             if (m && m[1] && !rejectRuntime(m[1])) return m[1].trim()
           } catch {}
           return undefined
         }
-        for (const a of articles) {
-          const titleEl = a.querySelector('h2._title a[href]')
+
+        for (const card of cards) {
+          const titleEl = card.querySelector('.cinema-listing-card__title a[href]')
           const title = (titleEl?.textContent || '').replace(/\s+/g, ' ').trim()
           const filmUrl = titleEl ? cleanHref(titleEl.getAttribute('href') || '') : ''
-          const websiteYear = extractYear(a)
-          const director = extractDirector(a)
-          const instRoot = a.querySelector('div._film-instances')
-          // Only collect actual screening times, not the header's date time element
-          const times = Array.from(instRoot?.querySelectorAll('.instance-listing__button time[datetime]') || [])
-          for (const t of times) {
-            const dt = t.getAttribute('datetime') || ''
-            const d = new Date(dt)
-            if (isNaN(d.getTime())) continue
-            out.push({
-              title,
-              filmUrl,
-              start: d.toISOString(),
-              websiteYear,
-              director,
-            })
+          const content = card.querySelector('.cinema-listing-card__content') || card
+          const websiteYear = extractYear(content)
+          const director = extractDirector(content)
+          const instLists = Array.from(card.querySelectorAll('.cinema-instance-list'))
+          for (const inst of instLists) {
+            const headingText = (inst.querySelector('.cinema-instance-list__title')?.textContent || '').trim()
+            const dateParts = resolveDateFromHeading(headingText) || fallbackParts
+            const instances = Array.from(inst.querySelectorAll('.cinema-instance-list__instance'))
+            for (const instance of instances) {
+              const anchor = instance.querySelector('a[href]')
+              const bookingHref = anchor ? cleanHref(anchor.getAttribute('href') || '') : ''
+              const rawText = (anchor?.textContent || instance.textContent || '').replace(/\s+/g, ' ').trim()
+              const timeParts = parseTime(rawText)
+              const iso = makeISO(dateParts, timeParts)
+              if (!iso) continue
+              out.push({
+                title,
+                filmUrl,
+                bookingUrl: bookingHref,
+                start: iso,
+                websiteYear,
+                director,
+              })
+            }
           }
         }
         return out
       })
       for (const r of rows) {
         if (!r.title || !r.start) continue
+        const filmHref = r.filmUrl
+          ? (r.filmUrl.startsWith('http') ? r.filmUrl : new URL(r.filmUrl, base).toString())
+          : undefined
+        const bookingHref = r.bookingUrl
+          ? (r.bookingUrl.startsWith('http') ? r.bookingUrl : new URL(r.bookingUrl, base).toString())
+          : undefined
+        const normalizedYear =
+          typeof r.websiteYear === 'number' &&
+          r.websiteYear >= 1895 &&
+          r.websiteYear <= new Date(r.start).getFullYear() + 1
+            ? r.websiteYear
+            : undefined
         screenings.push({
           id: `barbican-${r.title}-${r.start}`.replace(/\W+/g, ''),
           filmTitle: r.title,
           cinema: 'barbican',
           screeningStart: r.start,
-          bookingUrl: r.filmUrl ? (r.filmUrl.startsWith('http') ? r.filmUrl : new URL(r.filmUrl, base).toString()) : base,
-          filmUrl: r.filmUrl ? (r.filmUrl.startsWith('http') ? r.filmUrl : new URL(r.filmUrl, base).toString()) : undefined,
-          websiteYear: (typeof r.websiteYear === 'number' && r.websiteYear >= 1895 && r.websiteYear <= new Date(r.start).getFullYear()) ? r.websiteYear : undefined,
+          bookingUrl: bookingHref || filmHref || base,
+          filmUrl: filmHref,
+          websiteYear: normalizedYear,
           director: r.director || undefined,
         })
       }
@@ -139,7 +250,7 @@ export async function fetchBarbican() {
             return labs.some(el => /director/i.test((el.textContent||'').trim()))
           }, { timeout: 12000 })
         } catch {}
-        const dir = await dpage.evaluate(() => {
+        const detail = await dpage.evaluate(() => {
           function cleanName(name, title) {
             try {
               let s = String(name || '').replace(/\s{2,}/g, ' ').trim()
@@ -174,78 +285,80 @@ export async function fetchBarbican() {
             const m = String(text||'').match(re)
             return m ? cleanName(m[1], title) : null
           }
-          function fromSidebarList() {
-            try {
-              const scopes = Array.from(document.querySelectorAll('div.sidebar-item .label-value-list, .sidebar-item .label-value-list, .label-value-list'))
-              const getValueText = (el) => {
-                if (!el) return ''
-                const anchors = Array.from(el.querySelectorAll('a')).map(a => (a.textContent || '').trim()).filter(Boolean)
-                if (anchors.length) return anchors.join(', ')
-                return (el.textContent || '').replace(/\s+/g, ' ').trim()
-              }
-              for (const scope of scopes) {
-                // First try strict dt/dd pairing if present
-                const dts = Array.from(scope.querySelectorAll('.label-value-list__label'))
-                const vls = Array.from(scope.querySelectorAll('.label-value-list__value'))
-                // Pair by nextElementSibling when possible
-                for (const dt of dts) {
-                  const label = (dt.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase()
-                  if (!/^director(?:s|\(s\))?\b/.test(label)) continue
-                  // Prefer within the same row container
-                  let row = dt.closest('.label-value-list__row') || dt.parentElement
-                  let dd = row ? row.querySelector('.label-value-list__value') : null
-                  if (!dd) dd = dt.nextElementSibling
-                  // Walk forward until we find a matching value element or another label
-                  while (dd && !(dd.classList?.contains('label-value-list__value'))) {
-                    if (dd.classList?.contains('label-value-list__label')) break
-                    dd = dd.nextElementSibling
-                  }
-                  const raw = getValueText(dd)
-                  if (raw) return raw
-                }
-                // Fallback: index-based pairing
-                const minLen = Math.min(dts.length, vls.length)
-                for (let i = 0; i < minLen; i++) {
-                  const label = (dts[i].textContent || '').replace(/\s+/g, ' ').trim().toLowerCase()
-                  if (!/^director(?:s|\(s\))?\b/.test(label)) continue
-                  const raw = getValueText(vls[i])
-                  if (raw) return raw
-                }
-                // Last resort: any row containing a label with 'Director' and a sibling value
-                const rows = Array.from(scope.querySelectorAll('.label-value-list__row, .label-value-list > *'))
-                for (const r of rows) {
-                  const lab = r.querySelector('.label-value-list__label')
-                  const val = r.querySelector('.label-value-list__value')
-                  const ltxt = (lab?.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase()
-                  if (lab && val && /^director(?:s|\(s\))?\b/.test(ltxt)) {
-                    const raw = getValueText(val)
-                    if (raw) return raw
-                  }
-                }
-              }
-            } catch {}
-            return undefined
+          function getValueText(el) {
+            if (!el) return ''
+            const anchors = Array.from(el.querySelectorAll('a')).map(a => (a.textContent || '').trim()).filter(Boolean)
+            if (anchors.length) return anchors.join(', ')
+            return (el.textContent || '').replace(/\s+/g, ' ').trim()
           }
-          function fromJSONLD() {
+          function collectEntries() {
+            const entries = []
+            const scopes = Array.from(document.querySelectorAll('div.sidebar-item .label-value-list, .sidebar-item .label-value-list, .label-value-list'))
+            for (const scope of scopes) {
+              const rows = Array.from(scope.querySelectorAll('.label-value-list__row'))
+              if (rows.length) {
+                for (const r of rows) {
+                  const lab = (r.querySelector('.label-value-list__label')?.textContent || '').replace(/\s+/g, ' ').trim()
+                  const val = getValueText(r.querySelector('.label-value-list__value'))
+                  if (lab || val) entries.push({ label: lab, value: val })
+                }
+              } else {
+                const labs = Array.from(scope.querySelectorAll('.label-value-list__label'))
+                for (const labEl of labs) {
+                  const lab = (labEl.textContent || '').replace(/\s+/g, ' ').trim()
+                  let valEl = labEl.nextElementSibling
+                  while (valEl && !(valEl.classList?.contains('label-value-list__value'))) {
+                    if (valEl.classList?.contains('label-value-list__label')) break
+                    valEl = valEl.nextElementSibling
+                  }
+                  const val = getValueText(valEl)
+                  if (lab || val) entries.push({ label: lab, value: val })
+                }
+              }
+            }
+            return entries
+          }
+          function extractYearValue(value) {
+            if (!value) return null
+            const match = String(value).match(/\b(19|20)\d{2}\b/)
+            if (!match) return null
+            const year = Number(match[0])
+            const now = new Date()
+            if (!Number.isNaN(year) && year >= 1895 && year <= now.getFullYear() + 1) return year
+            return null
+          }
+          function extractFromJSONLD() {
             try {
               const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
               for (const s of scripts) {
                 const data = JSON.parse(s.textContent || 'null')
                 const arr = Array.isArray(data) ? data : [data]
                 for (const obj of arr) {
-                  const d = obj?.director
-                  if (!d) continue
-                  if (typeof d === 'string') return d
-                  if (Array.isArray(d)) {
-                    const name = d.map(x => x?.name || '').filter(Boolean).join(', ')
-                    if (name) return name
-                  } else if (typeof d === 'object') {
-                    if (d?.name) return d.name
+                  if (!obj || typeof obj !== 'object') continue
+                  let director
+                  const dNode = obj.director
+                  if (typeof dNode === 'string') director = dNode
+                  else if (Array.isArray(dNode)) {
+                    const name = dNode.map(x => x?.name || '').filter(Boolean).join(', ')
+                    if (name) director = name
+                  } else if (dNode && typeof dNode === 'object' && dNode.name) {
+                    director = dNode.name
                   }
+                  let releaseYear = null
+                  const dateFields = [obj.datePublished, obj.dateCreated, obj.startDate, obj.endDate]
+                  for (const val of dateFields) {
+                    if (typeof val !== 'string') continue
+                    const year = extractYearValue(val)
+                    if (year) { releaseYear = year; break }
+                  }
+                  if (!releaseYear && typeof obj?.year === 'number') {
+                    releaseYear = extractYearValue(String(obj.year))
+                  }
+                  if (director || releaseYear) return { director, releaseYear }
                 }
               }
             } catch {}
-            return undefined
+            return { director: null, releaseYear: null }
           }
           function fromLabels() {
             const scope = document
@@ -269,19 +382,49 @@ export async function fetchBarbican() {
             return nameFromInlineStats(body, t)
           }
           const t = document.querySelector('h1, .title, .film-title')?.textContent || ''
-          // Priority: sidebar label-value list, then JSON-LD, then generic labels
-          let d = fromSidebarList() || fromJSONLD() || fromLabels()
-          d = cleanName(d, t)
-          return d
+          const entries = collectEntries()
+          const jsonLd = extractFromJSONLD()
+          const lowerEntries = entries.map(({ label, value }) => ({
+            label,
+            labelLower: (label || '').toLowerCase(),
+            value,
+          }))
+          const sidebarDirector = lowerEntries.find(e => /^director(?:s|\(s\))?\b/.test(e.labelLower))
+          let director = sidebarDirector ? sidebarDirector.value : null
+          if (!director) {
+            const jsonDirector = jsonLd.director
+            director = jsonDirector || fromLabels()
+          }
+          director = cleanName(director, t)
+
+          let releaseYear = null
+          const sidebarYear = lowerEntries.find(
+            e => /\brelease\s*year\b/.test(e.labelLower) || e.labelLower === 'year'
+          )
+          if (sidebarYear) releaseYear = extractYearValue(sidebarYear.value)
+          if (!releaseYear) {
+            if (jsonLd.releaseYear) releaseYear = jsonLd.releaseYear
+          }
+          if (!releaseYear) {
+            const body = (document.body.textContent || '').replace(/\s+/g, ' ')
+            releaseYear = extractYearValue(body)
+          }
+          return { director, releaseYear: releaseYear ?? null }
         })
-        if (dir) dMap.set(url, dir)
+        if (detail && (detail.director || detail.releaseYear)) dMap.set(url, detail)
       } catch {}
     }
     if (dMap.size) {
       for (const s of screenings) {
-        const d = dMap.get(s.filmUrl)
-        // Prefer list-level metadata director; only fill if missing
-        if (d && !s.director) s.director = d
+        const detail = dMap.get(s.filmUrl)
+        if (!detail) continue
+        if (detail.director && !s.director) s.director = detail.director
+        if (
+          typeof detail.releaseYear === 'number' &&
+          (typeof s.websiteYear !== 'number' || Math.abs(s.websiteYear - detail.releaseYear) >= 1)
+        ) {
+          s.websiteYear = detail.releaseYear
+        }
       }
     }
   } catch {}

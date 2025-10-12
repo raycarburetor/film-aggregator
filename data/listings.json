@@ -16507,5 +16507,1703 @@
     "screeningStart": "2025-10-31T12:00:00.000Z",
     "bookingUrl": "https://ticketlab.co.uk/event/id/35394",
     "filmUrl": "https://ticketlab.co.uk/event/id/35394"
+  },
+  {
+    "id": "barbicanMembersScreeningAHouseofDynamite20251012T100000000Z",
+    "filmTitle": "Members' Screening: A House of Dynamite",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-12T10:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3118402",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/members-screening-a-house-of-dynamite",
+    "websiteYear": 2025,
+    "director": "Kathryn Bigelow",
+    "tmdbId": 1290159,
+    "releaseDate": "2025-10-02",
+    "synopsis": "When a single, unattributed missile is launched at the United States, a race begins to determine who is responsible and how to respond.",
+    "genres": [
+      "War",
+      "Thriller"
+    ],
+    "imdbId": "tt32376165",
+    "letterboxdRating": 3.39
+  },
+  {
+    "id": "barbicanHappyendRecordedQA20251012T113000000Z",
+    "filmTitle": "Happyend + Recorded Q&A",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-12T11:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3131001",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/happyend-recorded-qa",
+    "websiteYear": 2025,
+    "director": "Neo Sora",
+    "tmdbId": 730251,
+    "releaseDate": "2025-01-23",
+    "synopsis": "In a near-future Japanese city bracing for a devastating earthquake, a group of teenage friends navigate personal struggles and fractured bonds amid rising tension.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt29279903",
+    "letterboxdRating": 3.93
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251012T121500000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-12T12:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3126001",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251012T153000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-12T15:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3124603",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251012T180000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-12T18:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3126601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanPlainclothes20251012T133000000Z",
+    "filmTitle": "Plainclothes",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-12T13:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3125803",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/plainclothes",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime"
+    ],
+    "imdbId": "tt27550504",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "barbicanPlainclothes20251012T154500000Z",
+    "filmTitle": "Plainclothes",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-12T15:45:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3126802",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/plainclothes",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime"
+    ],
+    "imdbId": "tt27550504",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "barbicanDanceUmbrellaSundayShortsScreenTalk20251012T143000000Z",
+    "filmTitle": "Dance Umbrella: Sunday Shorts + ScreenTalk",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-12T14:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/2910601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/dance-umbrella-sunday-shorts-screentalk",
+    "websiteYear": 2025
+  },
+  {
+    "id": "barbicanAHouseofDynamite20251012T164000000Z",
+    "filmTitle": "A House of Dynamite",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-12T16:40:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3125001",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/a-house-of-dynamite",
+    "websiteYear": 2025,
+    "director": "Kathryn Bigelow",
+    "tmdbId": 1290159,
+    "releaseDate": "2025-10-02",
+    "synopsis": "When a single, unattributed missile is launched at the United States, a race begins to determine who is responsible and how to respond.",
+    "genres": [
+      "War",
+      "Thriller"
+    ],
+    "imdbId": "tt32376165",
+    "letterboxdRating": 3.39
+  },
+  {
+    "id": "barbicanAHouseofDynamite20251012T184500000Z",
+    "filmTitle": "A House of Dynamite",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-12T18:45:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3124401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/a-house-of-dynamite",
+    "websiteYear": 2025,
+    "director": "Kathryn Bigelow",
+    "tmdbId": 1290159,
+    "releaseDate": "2025-10-02",
+    "synopsis": "When a single, unattributed missile is launched at the United States, a race begins to determine who is responsible and how to respond.",
+    "genres": [
+      "War",
+      "Thriller"
+    ],
+    "imdbId": "tt32376165",
+    "letterboxdRating": 3.39
+  },
+  {
+    "id": "barbicanUrchin20251012T191000000Z",
+    "filmTitle": "Urchin",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-12T19:10:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3126402",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/urchin",
+    "websiteYear": 2025,
+    "director": "Harris Dickinson",
+    "tmdbId": 1283320,
+    "releaseDate": "2025-10-03",
+    "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt35715953",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "barbicanSeniorCommunityScreeningxMarsmTheTaleofDayes20251013T100000000Z",
+    "filmTitle": "Senior Community Screening x Marsm: The Tale of Daye's...",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-13T10:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3060201",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/senior-community-screening-the-tale-of-dayes-family",
+    "websiteYear": 2024,
+    "director": "Karim El Shenawy"
+  },
+  {
+    "id": "barbicanParentBabyScreeningUrchin20251013T101500000Z",
+    "filmTitle": "Parent & Baby Screening: Urchin",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-13T10:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3119401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/parent-baby-screening-urchin",
+    "websiteYear": 2025,
+    "director": "Harris Dickinson",
+    "tmdbId": 1283320,
+    "releaseDate": "2025-10-03",
+    "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt35715953",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251013T133000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-13T13:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3125802",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251013T164000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-13T16:40:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3124604",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251013T191500000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-13T19:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3125602",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanUrchin20251013T140000000Z",
+    "filmTitle": "Urchin",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-13T14:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3127801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/urchin",
+    "websiteYear": 2025,
+    "director": "Harris Dickinson",
+    "tmdbId": 1283320,
+    "releaseDate": "2025-10-03",
+    "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt35715953",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "barbicanUrchin20251013T170000000Z",
+    "filmTitle": "Urchin",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-13T17:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3127202",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/urchin",
+    "websiteYear": 2025,
+    "director": "Harris Dickinson",
+    "tmdbId": 1283320,
+    "releaseDate": "2025-10-03",
+    "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt35715953",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "barbicanPlainclothes20251013T170000000Z",
+    "filmTitle": "Plainclothes",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-13T17:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3134601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/plainclothes",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime"
+    ],
+    "imdbId": "tt27550504",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "barbicanPlainclothes20251013T195500000Z",
+    "filmTitle": "Plainclothes",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-13T19:55:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3128002",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/plainclothes",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime"
+    ],
+    "imdbId": "tt27550504",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "barbicanAHouseofDynamite20251013T193000000Z",
+    "filmTitle": "A House of Dynamite",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-13T19:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3125201",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/a-house-of-dynamite",
+    "websiteYear": 2025,
+    "director": "Kathryn Bigelow",
+    "tmdbId": 1290159,
+    "releaseDate": "2025-10-02",
+    "synopsis": "When a single, unattributed missile is launched at the United States, a race begins to determine who is responsible and how to respond.",
+    "genres": [
+      "War",
+      "Thriller"
+    ],
+    "imdbId": "tt32376165",
+    "letterboxdRating": 3.39
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251014T164000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-14T16:40:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3125202",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251014T191500000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-14T19:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3124802",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanUrchin20251014T170000000Z",
+    "filmTitle": "Urchin",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-14T17:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3127203",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/urchin",
+    "websiteYear": 2025,
+    "director": "Harris Dickinson",
+    "tmdbId": 1283320,
+    "releaseDate": "2025-10-03",
+    "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt35715953",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "barbicanUrchin20251014T195500000Z",
+    "filmTitle": "Urchin",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-14T19:55:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3127802",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/urchin",
+    "websiteYear": 2025,
+    "director": "Harris Dickinson",
+    "tmdbId": 1283320,
+    "releaseDate": "2025-10-03",
+    "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt35715953",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "barbicanPlainclothes20251014T171500000Z",
+    "filmTitle": "Plainclothes",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-14T17:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3127204",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/plainclothes",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime"
+    ],
+    "imdbId": "tt27550504",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "barbicanAHouseofDynamite20251014T193000000Z",
+    "filmTitle": "A House of Dynamite",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-14T19:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3124402",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/a-house-of-dynamite",
+    "websiteYear": 2025,
+    "director": "Kathryn Bigelow",
+    "tmdbId": 1290159,
+    "releaseDate": "2025-10-02",
+    "synopsis": "When a single, unattributed missile is launched at the United States, a race begins to determine who is responsible and how to respond.",
+    "genres": [
+      "War",
+      "Thriller"
+    ],
+    "imdbId": "tt32376165",
+    "letterboxdRating": 3.39
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251015T164000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-15T16:40:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3125203",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251015T191500000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-15T19:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3124803",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanPlainclothes20251015T170000000Z",
+    "filmTitle": "Plainclothes",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-15T17:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3130202",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/plainclothes",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime"
+    ],
+    "imdbId": "tt27550504",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "barbicanPlainclothes20251015T195500000Z",
+    "filmTitle": "Plainclothes",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-15T19:55:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3128401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/plainclothes",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime"
+    ],
+    "imdbId": "tt27550504",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "barbicanUrchin20251015T171000000Z",
+    "filmTitle": "Urchin",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-15T17:10:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3126202",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/urchin",
+    "websiteYear": 2025,
+    "director": "Harris Dickinson",
+    "tmdbId": 1283320,
+    "releaseDate": "2025-10-03",
+    "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt35715953",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "barbicanAHouseofDynamite20251015T193000000Z",
+    "filmTitle": "A House of Dynamite",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-15T19:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3124403",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/a-house-of-dynamite",
+    "websiteYear": 2025,
+    "director": "Kathryn Bigelow",
+    "tmdbId": 1290159,
+    "releaseDate": "2025-10-02",
+    "synopsis": "When a single, unattributed missile is launched at the United States, a race begins to determine who is responsible and how to respond.",
+    "genres": [
+      "War",
+      "Thriller"
+    ],
+    "imdbId": "tt32376165",
+    "letterboxdRating": 3.39
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251016T133000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-16T13:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3126801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251016T164000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-16T16:40:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3124804",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanOneBattleAfterAnother20251016T190000000Z",
+    "filmTitle": "One Battle After Another",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-16T19:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3126201",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/one-battle-after-another",
+    "websiteYear": 2025,
+    "director": "Paul Thomas Anderson",
+    "tmdbId": 1054867,
+    "releaseDate": "2025-09-23",
+    "synopsis": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt30144839",
+    "letterboxdRating": 4.38
+  },
+  {
+    "id": "barbicanUrchin20251016T141500000Z",
+    "filmTitle": "Urchin",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-16T14:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3127803",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/urchin",
+    "websiteYear": 2025,
+    "director": "Harris Dickinson",
+    "tmdbId": 1283320,
+    "releaseDate": "2025-10-03",
+    "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt35715953",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "barbicanUrchin20251016T164500000Z",
+    "filmTitle": "Urchin",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-16T16:45:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3127401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/urchin",
+    "websiteYear": 2025,
+    "director": "Harris Dickinson",
+    "tmdbId": 1283320,
+    "releaseDate": "2025-10-03",
+    "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt35715953",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "barbicanPlainclothes20251016T164500000Z",
+    "filmTitle": "Plainclothes",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-16T16:45:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3126602",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/plainclothes",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime"
+    ],
+    "imdbId": "tt27550504",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "barbicanHappyendRecordedQA20251016T190000000Z",
+    "filmTitle": "Happyend + Recorded Q&A",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-16T19:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3128201",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/happyend-recorded-qa",
+    "websiteYear": 2025,
+    "director": "Neo Sora",
+    "tmdbId": 730251,
+    "releaseDate": "2025-01-23",
+    "synopsis": "In a near-future Japanese city bracing for a devastating earthquake, a group of teenage friends navigate personal struggles and fractured bonds amid rising tension.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt29279903",
+    "letterboxdRating": 3.93
+  },
+  {
+    "id": "barbicanAHouseofDynamite20251016T194500000Z",
+    "filmTitle": "A House of Dynamite",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-16T19:45:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3125401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/a-house-of-dynamite",
+    "websiteYear": 2025,
+    "director": "Kathryn Bigelow",
+    "tmdbId": 1290159,
+    "releaseDate": "2025-10-02",
+    "synopsis": "When a single, unattributed missile is launched at the United States, a race begins to determine who is responsible and how to respond.",
+    "genres": [
+      "War",
+      "Thriller"
+    ],
+    "imdbId": "tt32376165",
+    "letterboxdRating": 3.39
+  },
+  {
+    "id": "barbicanFrankenstein20251017T165000000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-17T16:50:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3129001",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanFrankenstein20251017T194500000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-17T19:45:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3129201",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanFamilyFilmClubTheWizardofOz20251018T100000000Z",
+    "filmTitle": "Family Film Club: The Wizard of Oz",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-18T10:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3078201",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-club-the-wizard-of-oz",
+    "websiteYear": 1939,
+    "director": "Victor Flemming"
+  },
+  {
+    "id": "barbicanParentBabyScreeningUrchin20251018T101500000Z",
+    "filmTitle": "Parent & Baby Screening: Urchin",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-18T10:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3128601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/parent-baby-screening-urchin",
+    "websiteYear": 2025,
+    "director": "Harris Dickinson",
+    "tmdbId": 1283320,
+    "releaseDate": "2025-10-03",
+    "synopsis": "A young addict living on the streets of London is given a shot at redemption, but his road to recovery soon curdles into a strange odyssey from which he may never escape.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt35715953",
+    "letterboxdRating": 3.54
+  },
+  {
+    "id": "barbicanFrankenstein20251018T130000000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-18T13:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3129401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanFrankenstein20251018T160000000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-18T16:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3129601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanFrankenstein20251018T190000000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-18T19:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3128802",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanMETOperaLiveinHDLaSonnambula20251018T170000000Z",
+    "filmTitle": "MET Opera Live in HD: La Sonnambula",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-18T17:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/2927801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/met-opera-live-in-hd-la-sonnambula",
+    "websiteYear": 2025
+  },
+  {
+    "id": "barbicanMembersScreeningPlainclothes20251019T100000000Z",
+    "filmTitle": "Members' Screening: Plainclothes",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-19T10:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3126002",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/members-screening-plainclothes",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime"
+    ],
+    "imdbId": "tt27550504",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "barbicanPerfectBlue4KRestoration20251019T140000000Z",
+    "filmTitle": "Perfect Blue [4K Restoration]",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-19T14:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3112601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/perfect-blue-4k-restoration",
+    "websiteYear": 2025,
+    "director": "Kon Satoshi"
+  },
+  {
+    "id": "barbicanLFFPreviewTheMastermind20251019T160000000Z",
+    "filmTitle": "LFF Preview: The Mastermind",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-19T16:00:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/lff-preview-the-mastermind",
+    "websiteYear": 2025,
+    "director": "Kelly Reichardt",
+    "tmdbId": 1352624,
+    "releaseDate": "2025-10-16",
+    "synopsis": "In a sedate corner of Massachusetts circa 1970, an unemployed carpenter turned amateur art thief plans his first big heist. When things go haywire, his life unravels.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "imdbId": "tt33455099",
+    "letterboxdRating": 3.26
+  },
+  {
+    "id": "barbicanFrankenstein20251019T183000000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-19T18:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3130201",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanParentandBabyScreeningPlainclothes20251020T101500000Z",
+    "filmTitle": "Parent and Baby Screening: Plainclothes",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-20T10:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3128801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/parent-and-baby-screening-plainclothes",
+    "websiteYear": 2025,
+    "director": "Carmen Emmi",
+    "tmdbId": 1255718,
+    "releaseDate": "2025-09-19",
+    "synopsis": "In 1990s New York, an undercover police officer receives an assignment to lure and arrest gay men. However, he's surprised to discover a scintillating connection with one of his targets. As their secret connection deepens and internal pressure to deliver arrests intensifies, he finds himself torn between duty and desire.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime"
+    ],
+    "imdbId": "tt27550504",
+    "letterboxdRating": 3.74
+  },
+  {
+    "id": "barbicanTheMastermindScreenTalkxTheObserver20251020T170000000Z",
+    "filmTitle": "The Mastermind + ScreenTalk x The Observer",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-20T17:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3135801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/the-mastermind-screentalk-x-the-observer",
+    "websiteYear": 2025,
+    "director": "Kelly Reichardt",
+    "tmdbId": 1352624,
+    "releaseDate": "2025-10-16",
+    "synopsis": "In a sedate corner of Massachusetts circa 1970, an unemployed carpenter turned amateur art thief plans his first big heist. When things go haywire, his life unravels.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "imdbId": "tt33455099",
+    "letterboxdRating": 3.26
+  },
+  {
+    "id": "barbicanFrankenstein20251021T163000000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-21T16:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3128803",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanFrankenstein20251021T193000000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-21T19:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3129801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanFrankenstein20251022T163000000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-22T16:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3130001",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanFrankenstein20251022T193000000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-22T19:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3129002",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanAnimationatWarHeroicTimes20251022T172000000Z",
+    "filmTitle": "Animation at War: Heroic Times",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-22T17:20:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3003801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/animation-at-war-heroic-times",
+    "websiteYear": 2025
+  },
+  {
+    "id": "barbicanFrankenstein20251023T131500000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-23T13:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3130401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanFrankenstein20251023T161500000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-23T16:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3130601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanFrankenstein20251023T191500000Z",
+    "filmTitle": "Frankenstein",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-23T19:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3130801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/frankenstein",
+    "websiteYear": 2025,
+    "director": "Guillermo del Toro",
+    "tmdbId": 1062722,
+    "releaseDate": "2025-10-17",
+    "synopsis": "Dr. Victor Frankenstein, a brilliant but egotistical scientist, brings a creature to life in a monstrous experiment that ultimately leads to the undoing of both the creator and his tragic creation.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Science Fiction"
+    ],
+    "imdbId": "tt1312221",
+    "letterboxdRating": 3.63
+  },
+  {
+    "id": "barbicanNTLiveMrsWarrensProfession20251023T170000000Z",
+    "filmTitle": "NT Live: Mrs Warren's Profession",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-23T17:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/2986001",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/nt-live-mrs-warrens-profession",
+    "websiteYear": 2025
+  },
+  {
+    "id": "barbicanDocnRollFilmFestivalIWasaTeenageSexPistol20251023T171000000Z",
+    "filmTitle": "Doc n' Roll Film Festival: I Was a Teenage Sex Pistol +...",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-23T17:10:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3064201",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/doc-n-roll-film-festival-i-was-a-teenage-sex-pistol",
+    "websiteYear": 2025,
+    "director": "Nick Mead & Andre Relis"
+  },
+  {
+    "id": "barbicanDocnRollFilmFestivalBigMamaThorntonICantbe20251024T172000000Z",
+    "filmTitle": "Doc'n Roll Film Festival: Big Mama Thornton: I Can't be...",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-24T17:20:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3092001",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/docn-roll-film-festival-big-mama-thornton-i-cant-be",
+    "websiteYear": 2025,
+    "director": "Robert Clem",
+    "tmdbId": 1539493,
+    "releaseDate": "2025-10-24",
+    "synopsis": "Inducted into the Rock & Roll Hall of Fame in 2024, Alabama-born Willie Mae “Big Mama” Thornton defied the gender norms of her time to become one of the greatest blues singers of her generation. Known for her powerful voice and uncompromising style, she rose to fame with the original recording of “Hound Dog” and later wrote “Ball & Chain,” a song that gained iconic status through Janis Joplin’s rendition.",
+    "genres": [
+      "Music",
+      "Documentary"
+    ]
+  },
+  {
+    "id": "barbicanFamilyFilmWeekHolaFrida20251025T100000000Z",
+    "filmTitle": "Family Film Week: Hola Frida!",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-25T10:00:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-hola-frida",
+    "websiteYear": 2025,
+    "director": "Karine Vézina & André Kadi"
+  },
+  {
+    "id": "barbicanFamilyFilmWeekSonofGodzillaintro20251025T120000000Z",
+    "filmTitle": "Family Film Week: Son of Godzilla + intro",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-25T12:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/2930401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-son-of-godzilla-intro",
+    "websiteYear": 1967,
+    "director": "Jun Fukuda",
+    "tmdbId": 18627,
+    "releaseDate": "1967-12-16",
+    "synopsis": "Reporter Goro Maki stumbles upon scientists conducting weather experiments on Sollgel Island in the South Seas. He discovers the island is inhabited by giant mantis and a woman named Saeko who's been cast away since the death of her father. The pair soon find a helpless infant monster that Godzilla must adopt and learn to raise as one of his own.",
+    "genres": [
+      "Adventure",
+      "Family",
+      "Science Fiction"
+    ],
+    "imdbId": "tt0061856",
+    "letterboxdRating": 2.68
+  },
+  {
+    "id": "barbicanSonofGodzillaintroductionbyToshikoKurata20251025T151500000Z",
+    "filmTitle": "Son of Godzilla + introduction by Toshiko Kurata",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-25T15:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/2930402",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/son-of-godzilla-introduction-by-toshiko-kurata",
+    "websiteYear": 1967,
+    "director": "Jun Fukuda",
+    "tmdbId": 18627,
+    "releaseDate": "1967-12-16",
+    "synopsis": "Reporter Goro Maki stumbles upon scientists conducting weather experiments on Sollgel Island in the South Seas. He discovers the island is inhabited by giant mantis and a woman named Saeko who's been cast away since the death of her father. The pair soon find a helpless infant monster that Godzilla must adopt and learn to raise as one of his own.",
+    "genres": [
+      "Adventure",
+      "Family",
+      "Science Fiction"
+    ],
+    "imdbId": "tt0061856",
+    "letterboxdRating": 2.68
+  },
+  {
+    "id": "barbicanDocnRollFilmFestivalParaVivirScreenTalks20251025T170000000Z",
+    "filmTitle": "Doc'n Roll Film Festival: Para Vivir + ScreenTalks",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-25T17:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3065201",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/docn-roll-film-festival-para-vivir-screentalks",
+    "websiteYear": 2025,
+    "director": "Fabien Pisani",
+    "tmdbId": 1339284,
+    "releaseDate": "2025-06-21",
+    "synopsis": "Many recognize and admire the work and voice of Pablo Milanés. Few know the story of how he became an emblematic figure of Cuba and Latin America.This is a portrait of the artist, the battles he had to fight and the complex time he went through and how he enriched it with his singing.",
+    "genres": [
+      "Documentary",
+      "Music"
+    ],
+    "imdbId": "tt32033583"
+  },
+  {
+    "id": "barbicanFamilyFilmWeekAnimalFriendsShortsProgramme20251026T113000000Z",
+    "filmTitle": "Family Film Week: Animal Friends Shorts Programme",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-26T11:30:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-animal-friends-shorts-programme",
+    "websiteYear": 2025
+  },
+  {
+    "id": "barbicanSilentFilmLiveMusicTheCabinetofDrCaligari20251026T130000000Z",
+    "filmTitle": "Silent Film & Live Music: The Cabinet of Dr Caligari",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-26T13:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3120801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/silent-film-live-music-the-cabinet-of-dr-caligari",
+    "websiteYear": 1920,
+    "director": "Robert Wiene",
+    "tmdbId": 234,
+    "releaseDate": "1920-02-27",
+    "synopsis": "Francis, a young man, recalls in his memory the horrible experiences he and his fiancée Jane recently went through. Francis and his friend Alan visit The Cabinet of Dr. Caligari, an exhibit where the mysterious doctor shows the somnambulist Cesare, and awakens him for some moments from his death-like sleep.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt0010323",
+    "letterboxdRating": 4.07
+  },
+  {
+    "id": "barbicanSilentFilmLiveMusicTheCabinetofDrCaligari20251026T150000000Z",
+    "filmTitle": "Silent Film & Live Music: The Cabinet of Dr Caligari",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-26T15:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3023801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/silent-film-live-music-the-cabinet-of-dr-caligari",
+    "websiteYear": 1920,
+    "director": "Robert Wiene",
+    "tmdbId": 234,
+    "releaseDate": "1920-02-27",
+    "synopsis": "Francis, a young man, recalls in his memory the horrible experiences he and his fiancée Jane recently went through. Francis and his friend Alan visit The Cabinet of Dr. Caligari, an exhibit where the mysterious doctor shows the somnambulist Cesare, and awakens him for some moments from his death-like sleep.",
+    "genres": [
+      "Drama",
+      "Horror",
+      "Thriller",
+      "Crime"
+    ],
+    "imdbId": "tt0010323",
+    "letterboxdRating": 4.07
+  },
+  {
+    "id": "barbicanDocnRollFilmFestivalInTimeDnalLunnyScreenTalk20251026T171500000Z",
+    "filmTitle": "Doc'n Roll Film Festival: In Time: Dónal Lunny + ScreenTalk",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-26T17:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3064601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/docn-roll-film-festival-in-time-donal-lunny-screentalk",
+    "websiteYear": 2025,
+    "director": "Nuala O'Connor",
+    "tmdbId": 1509881,
+    "releaseDate": "2025-07-11",
+    "synopsis": "A cinematic portrait of Dónal Lunny, legendary musician and cultural pioneer, tracing his groundbreaking journey through Irish traditional music and revealing how his life and artistry helped shape the sound of a changing nation.",
+    "genres": [
+      "Documentary",
+      "Music"
+    ]
+  },
+  {
+    "id": "barbicanSeniorCommunityScreeningMirai20251027T110000000Z",
+    "filmTitle": "Senior Community Screening: Mirai",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-27T11:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3077001",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/senior-community-screening-mirai",
+    "websiteYear": 2018,
+    "director": "Mamoru Hosoda",
+    "tmdbId": 475215,
+    "releaseDate": "2018-06-16",
+    "synopsis": "Unhappy after his new baby sister displaces him, four-year-old Kun begins meeting people and pets from his family's history in their unique house in order to help him become the big brother he was meant to be.",
+    "genres": [
+      "Animation",
+      "Family",
+      "Fantasy",
+      "Adventure",
+      "Drama"
+    ],
+    "imdbId": "tt6900448",
+    "letterboxdRating": 3.61
+  },
+  {
+    "id": "barbicanFamilyFilmWeekTheLegendofOchi20251027T134500000Z",
+    "filmTitle": "Family Film Week: The Legend of Ochi",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-27T13:45:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-the-legend-of-ochi",
+    "websiteYear": 2025,
+    "director": "Isaiah Saxon",
+    "tmdbId": 896536,
+    "releaseDate": "2025-04-18",
+    "synopsis": "In a remote village on the island of Carpathia, a shy farm girl named Yuri is raised to fear an elusive animal species known as ochi. But when Yuri discovers a wounded baby ochi has been left behind, she escapes on a quest to bring him home.",
+    "genres": [
+      "Family",
+      "Fantasy",
+      "Adventure"
+    ],
+    "imdbId": "tt8866456",
+    "letterboxdRating": 2.97
+  },
+  {
+    "id": "barbicanRelaxedScreeningsWildWomen20251027T183000000Z",
+    "filmTitle": "Relaxed Screenings: Wild Women",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-27T18:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3085001",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/relaxed-screenings-wild-women",
+    "websiteYear": 2025
+  },
+  {
+    "id": "barbicanImitationofLife12withIntroductionReception20251027T190000000Z",
+    "filmTitle": "Imitation of Life (12) with Introduction + Reception",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-27T19:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3041601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/imitation-of-life-12-with-introduction-reception",
+    "websiteYear": 1959,
+    "director": "Douglas Sirk",
+    "tmdbId": 34148,
+    "releaseDate": "1959-06-26",
+    "synopsis": "In 1940s New York, a white widow who dreams of being on Broadway has a chance encounter with a black single mother, who becomes her maid.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "imdbId": "tt0052918",
+    "letterboxdRating": 4.01
+  },
+  {
+    "id": "barbicanFamilyFilmWeekAnimatedAdventureShortsMusic20251028T103000000Z",
+    "filmTitle": "Family Film Week: Animated Adventure Shorts + Music",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-28T10:30:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-animated-adventure-shorts-music",
+    "websiteYear": 2025
+  },
+  {
+    "id": "barbicanFamilyFilmWeekKpopDemonHunters20251028T111500000Z",
+    "filmTitle": "Family Film Week: Kpop Demon Hunters",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-28T11:15:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-kpop-demon-hunters",
+    "websiteYear": 2025,
+    "director": "Maggie Kang and Chris Appelhans"
+  },
+  {
+    "id": "barbicanFamilyFilmWeekZogBarbicanLibraryRhymeTime20251029T103000000Z",
+    "filmTitle": "Family Film Week: Zog + Barbican Library Rhyme Time",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-29T10:30:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-zog-barbican-library-rhyme-time",
+    "websiteYear": 2018,
+    "director": "Max Lang, Daniel Snaddon"
+  },
+  {
+    "id": "barbicanFamilyFilmWeekTheSecretofKellsiru20251029T140000000Z",
+    "filmTitle": "Family Film Week: The Secret of Kells + Éiru",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-29T14:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3082801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-the-secret-of-kells-eiru",
+    "websiteYear": 2025
+  },
+  {
+    "id": "barbicanDystopiaisNottheFutureDoppelgngers20251029T204500000Z",
+    "filmTitle": "Dystopia is Not the Future: Doppelgängers³",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-29T20:45:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3034601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/dystopia-is-not-the-future-doppelgangers3",
+    "websiteYear": 2025,
+    "director": "Nelly Ben Hayoun-Stépanian"
+  },
+  {
+    "id": "barbicanFamilyFilmWeekETTheExtraTerrestrialIntroduction20251030T140000000Z",
+    "filmTitle": "Family Film Week: E.T. The Extra Terrestrial + Introduction",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-30T14:00:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-e-t-the-extra-terrestrial-introduction",
+    "websiteYear": 1982,
+    "director": "Steven Spielberg",
+    "tmdbId": 601,
+    "releaseDate": "1982-06-11",
+    "synopsis": "An alien is left behind on Earth and saved by the 10-year-old Elliott who decides to keep him hidden in his home. While a task force hunts for the extra-terrestrial, Elliott, his brother, and his little sister Gertie form an emotional bond with their new friend, and try to help him find his way home.",
+    "genres": [
+      "Science Fiction",
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ],
+    "imdbId": "tt0083866"
+  },
+  {
+    "id": "barbicanExperimentsinFilmBothSidesNow1020251030T190000000Z",
+    "filmTitle": "Experiments in Film: Both Sides Now 10",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-30T19:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3041401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/experiments-in-film-both-sides-now-10",
+    "websiteYear": 2025
+  },
+  {
+    "id": "barbicanFamilyFilmWeekLittleGhostLabanBackAgainActivity20251031T103000000Z",
+    "filmTitle": "Family Film Week: Little Ghost Laban: Back Again + Activity",
+    "cinema": "barbican",
+    "screeningStart": "2025-10-31T10:30:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-little-ghost-laban-back-again-activity",
+    "websiteYear": 2024,
+    "director": "Lasse Persson",
+    "tmdbId": 1360718,
+    "releaseDate": "2024-10-11",
+    "synopsis": "Laban is not like other ghosts, he is afraid of the dark. Laban wants nothing more than to be scary, but no matter how hard he tries, he only manages to scare himself. In the basement of the castle Gomorronsol, Laban lives with his mother and father Spöke and his daring little sister Labolina, who can imitate all the sounds in the world. The castle also houses people: the king and queen, as well as Princess Busan and little prince Bus, who are Laban's very best friends.",
+    "genres": [
+      "Animation",
+      "Family",
+      "Fantasy"
+    ],
+    "imdbId": "tt32810662"
+  },
+  {
+    "id": "barbicanFamilyFilmWeekTalesfromtheMagicGarden20251101T110000000Z",
+    "filmTitle": "Family Film Week: Tales from the Magic Garden",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-01T11:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3083601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-tales-from-the-magic-garden",
+    "websiteYear": 2025,
+    "director": "Patrik Pass Jr. and Jean-Claude Rozec"
+  },
+  {
+    "id": "barbicanFamilyFilmWeekKpopDemonHunters20251101T131500000Z",
+    "filmTitle": "Family Film Week: Kpop Demon Hunters",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-01T13:15:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-kpop-demon-hunters",
+    "websiteYear": 2025,
+    "director": "Maggie Kang and Chris Appelhans"
+  },
+  {
+    "id": "barbicanDocnRollFilmFestivalMonkinPiecesScreenTalk20251101T181500000Z",
+    "filmTitle": "Doc'n Roll Film Festival: Monk in Pieces + ScreenTalk",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-01T18:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3065001",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/docn-roll-film-festival-monk-in-pieces-screentalk",
+    "websiteYear": 2025,
+    "director": "Billy Shebar & David C. Roberts"
+  },
+  {
+    "id": "barbicanFamilyFilmWeekSpecialPreviewInYourDreams20251102T110000000Z",
+    "filmTitle": "Family Film Week: Special Preview: In Your Dreams",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-02T11:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3082802",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-special-preview-in-your-dreams",
+    "websiteYear": 2025,
+    "director": "Alex Woo",
+    "tmdbId": 1117857,
+    "releaseDate": "2025-11-07",
+    "synopsis": "Stevie and her little brother Elliot journey into the wildly absurd landscape of their own dreams to ask the Sandman to grant them the perfect family.",
+    "genres": [
+      "Comedy",
+      "Adventure",
+      "Animation",
+      "Fantasy",
+      "Family"
+    ],
+    "imdbId": "tt27604215"
+  },
+  {
+    "id": "barbicanFamilyFilmWeekSpecialPreviewInYourDreams20251102T113000000Z",
+    "filmTitle": "Family Film Week: Special Preview: In Your Dreams",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-02T11:30:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/family-film-week-special-preview-in-your-dreams",
+    "websiteYear": 2025,
+    "director": "Alex Woo",
+    "tmdbId": 1117857,
+    "releaseDate": "2025-11-07",
+    "synopsis": "Stevie and her little brother Elliot journey into the wildly absurd landscape of their own dreams to ask the Sandman to grant them the perfect family.",
+    "genres": [
+      "Comedy",
+      "Adventure",
+      "Animation",
+      "Fantasy",
+      "Family"
+    ],
+    "imdbId": "tt27604215"
+  },
+  {
+    "id": "barbicanLandCinemaGardenFilmsScreenTalk20251105T190000000Z",
+    "filmTitle": "Land Cinema: Garden Films + ScreenTalk",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-05T19:00:00.000Z",
+    "bookingUrl": "https://www.barbican.org.uk/",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/land-cinema-garden-films-screentalk",
+    "websiteYear": 2025
+  },
+  {
+    "id": "barbicanRBOLiveLaFilleMalGardee20251105T191500000Z",
+    "filmTitle": "RBO Live: La Fille Mal Gardee",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-05T19:15:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/2900401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/rbo-live-la-fille-mal-gardee",
+    "websiteYear": 2025,
+    "tmdbId": 1483671,
+    "releaseDate": "2025-11-05",
+    "genres": []
+  },
+  {
+    "id": "barbicanMETOperaLiveinHDLaBohme20251108T180000000Z",
+    "filmTitle": "MET Opera Live in HD: La Bohème",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-08T18:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/2927602",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/met-opera-live-in-hd-la-boheme",
+    "websiteYear": 2025,
+    "tmdbId": 490458,
+    "releaseDate": "2014-04-05",
+    "synopsis": "A new generation of rising stars shines in Franco Zeffirelli’s classic production of Puccini’s most popular opera. Vittorio Grigolo is the poor poet Rodolfo who falls head over heels for his neighbor, the seamstress Mimì, sung by the radiant Kristine Opolais. Susanna Phillips is the flirtatious Musetta, Massimo Cavaletti is her sweetheart Marcello, and Patrick Carfizzi as Schaunard and Oren Gradus as Colline complete the ensemble. Stefano Ranzani conducts.",
+    "genres": [
+      "Drama",
+      "Music"
+    ],
+    "imdbId": "tt3656688"
+  },
+  {
+    "id": "barbicanNoahBaumbachTheSquidandtheWhale20251108T180000000Z",
+    "filmTitle": "Noah Baumbach: The Squid and the Whale",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-08T18:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3122401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/noah-baumbach-the-squid-and-the-whale",
+    "websiteYear": 2005,
+    "director": "Noah Baumbach",
+    "tmdbId": 10707,
+    "releaseDate": "2005-10-05",
+    "synopsis": "Based on the true childhood experiences of Noah Baumbach and his brother, The Squid and the Whale tells the touching story of two young boys dealing with their parents' divorce in Brooklyn in the 1980s.",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "imdbId": "tt0367089",
+    "letterboxdRating": 3.7
+  },
+  {
+    "id": "barbicanOliviaLaingTheSilverBookFellinisCasanova20251109T140000000Z",
+    "filmTitle": "Olivia Laing: The Silver Book: Fellini's Casanova",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-09T14:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3023401",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/olivia-laing-the-silver-book-fellinis-casanova",
+    "websiteYear": 1976,
+    "director": "Federico Fellini",
+    "tmdbId": 42236,
+    "releaseDate": "1976-12-10",
+    "synopsis": "Casanova is a libertine, collecting seductions and sexual feats. But he is really interested in someone, and is he really an interesting person? Is he really alive?",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "imdbId": "tt0074291",
+    "letterboxdRating": 3.62
+  },
+  {
+    "id": "barbicanNoahBaumbachFrancesHa20251109T170000000Z",
+    "filmTitle": "Noah Baumbach: Frances Ha",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-09T17:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3122601",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/noah-baumbach-frances-ha",
+    "websiteYear": 2012,
+    "director": "Noah Baumbach"
+  },
+  {
+    "id": "barbicanSeniorCommunityScreeningLateShift20251110T110000000Z",
+    "filmTitle": "Senior Community Screening: Late Shift",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-10T11:00:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3077201",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/senior-community-screening-late-shift",
+    "websiteYear": 2025,
+    "director": "Petra Volpe"
+  },
+  {
+    "id": "barbicanRelaxedScreeningSafe20251110T181000000Z",
+    "filmTitle": "Relaxed Screening: Safe",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-10T18:10:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3113001",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/relaxed-screening-safe",
+    "websiteYear": 1995,
+    "director": "Todd Haynes",
+    "tmdbId": 32646,
+    "releaseDate": "1995-06-23",
+    "synopsis": "Carol White, a Los Angeles housewife in the late 1980s, comes down with a debilitating illness with no clear diagnosis.",
+    "genres": [
+      "Drama"
+    ],
+    "imdbId": "tt0114323",
+    "letterboxdRating": 3.96
+  },
+  {
+    "id": "barbicanFleshWaxGlasspt12ByGeorgeFinlayRamsay20251110T183000000Z",
+    "filmTitle": "Flesh, Wax & Glass pt. 1 & 2 By George Finlay Ramsay",
+    "cinema": "barbican",
+    "screeningStart": "2025-11-10T18:30:00.000Z",
+    "bookingUrl": "https://tickets.barbican.org.uk/choose-seats/3062801",
+    "filmUrl": "https://www.barbican.org.uk/whats-on/2025/event/flesh-wax-glass-pt-1-2-by-george-finlay-ramsay",
+    "websiteYear": 2025,
+    "director": "George Finlay Ramsay"
   }
 ]
