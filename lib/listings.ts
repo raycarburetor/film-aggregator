@@ -51,19 +51,32 @@ export function filterParamsFromSearchParams(sp: Record<string, string | undefin
   return { q, window, cinemas, genres, minYear, maxYear, decades, minLb, start, end, startTimeMin, startTimeMax }
 }
 
+let lastGoodDbListings: Screening[] | null = null
+
 export async function loadAllListings(): Promise<Screening[]> {
-  // Prefer Postgres if configured; fall back to local JSON
+  const fallbackToLastGood = () => {
+    if (lastGoodDbListings && lastGoodDbListings.length) {
+      console.warn('[listings] using last-known-good DB snapshot due to error/empty response')
+      return lastGoodDbListings
+    }
+    const items = Array.isArray(data) ? (data as any as Screening[]) : []
+    return normalizeAndSanitize(items)
+  }
+
+  // Prefer Postgres if configured; retain prior DB snapshot if it fails.
   try {
     const dbItems = await getAllListings()
     if (dbItems && Array.isArray(dbItems) && dbItems.length) {
-      return normalizeAndSanitize(dbItems)
+      const normalized = normalizeAndSanitize(dbItems)
+      lastGoodDbListings = normalized
+      return normalized
     }
+    console.warn('[listings] getAllListings returned no rows; keeping previous data')
+    return fallbackToLastGood()
   } catch (e) {
-    // swallow; fall back to JSON
-    console.warn('[listings] getAllListings failed; using listings.json')
+    console.warn('[listings] getAllListings failed; keeping previous data instead of wiping', e)
+    return fallbackToLastGood()
   }
-  const items = Array.isArray(data) ? (data as any as Screening[]) : []
-  return normalizeAndSanitize(items)
 }
 
 function normalizeAndSanitize(items: Screening[]): Screening[] {
