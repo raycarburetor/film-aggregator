@@ -6,6 +6,13 @@ import MobileSearch from '@/components/MobileSearch'
 import MobileFiltersPanel from '@/components/MobileFiltersPanel'
 import type { Screening } from '@/types'
 
+// Force per-request rendering. Without this, Next.js's Full Route Cache can
+// cache the rendered RSC payload under the pathname alone (query string
+// ignored), causing whichever filtered variant lands in the cache first to
+// be served to every user visiting `/`. All API routes set this; the page
+// must too.
+export const dynamic = 'force-dynamic'
+
 export default async function Page({ searchParams }: { searchParams: Record<string, string | undefined> }) {
   // Load all listings once. Prefer the cached path; fall back to a direct
   // load if the cached loader throws (e.g. when it refused to cache an empty
