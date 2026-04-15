@@ -95,7 +95,15 @@ const CACHE_SECONDS = (() => {
 })()
 
 export const loadAllListingsCached = unstable_cache(
-  async () => await loadAllListings(),
+  async () => {
+    const items = await loadAllListings()
+    // Refuse to cache an empty result: unstable_cache would otherwise hold it
+    // for the full revalidate window, serving a dead site for minutes after a
+    // transient cold-start failure. Throwing propagates the miss; the next
+    // request falls through to the direct loader via the caller's try/catch.
+    if (!items.length) throw new Error('loadAllListings returned empty; refusing to cache')
+    return items
+  },
   ['all_listings'],
   { revalidate: CACHE_SECONDS }
 )

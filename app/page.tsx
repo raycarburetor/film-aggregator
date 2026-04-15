@@ -1,13 +1,21 @@
 import Filters from '@/components/Filters'
 import WatchlistFilterClient from '@/components/WatchlistFilterClient'
 import TimeTabs from '@/components/TimeTabs'
-import { applyFilters, filterParamsFromSearchParams, getAllGenres, loadAllListingsCached } from '@/lib/listings'
+import { applyFilters, filterParamsFromSearchParams, getAllGenres, loadAllListings, loadAllListingsCached } from '@/lib/listings'
 import MobileSearch from '@/components/MobileSearch'
 import MobileFiltersPanel from '@/components/MobileFiltersPanel'
+import type { Screening } from '@/types'
 
 export default async function Page({ searchParams }: { searchParams: Record<string, string | undefined> }) {
-  // Load all listings once (cached), then filter in-process
-  const all = await loadAllListingsCached()
+  // Load all listings once. Prefer the cached path; fall back to a direct
+  // load if the cached loader throws (e.g. when it refused to cache an empty
+  // snapshot after a cold-start transient).
+  let all: Screening[]
+  try {
+    all = await loadAllListingsCached()
+  } catch {
+    all = await loadAllListings()
+  }
   const params = filterParamsFromSearchParams(searchParams)
   const items = applyFilters(all, params)
   // Genres should be a stable list based on all upcoming
