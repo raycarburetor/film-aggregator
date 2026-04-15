@@ -1,32 +1,60 @@
 import { Screening } from '@/types'
 
-export function startOfDayISO(d = new Date()) {
-  const x = new Date(d); x.setHours(0,0,0,0); return x.toISOString()
-}
 export function addDaysISO(d: Date, days: number) {
   const x = new Date(d); x.setDate(x.getDate()+days); return x.toISOString()
 }
-export function addMonthsISO(d: Date, months: number) {
-  const x = new Date(d); x.setMonth(x.getMonth()+months); return x.toISOString()
+
+// Midnight in Europe/London for a specific calendar day, returned as a Date.
+// `daysFromToday` shifts the target day forward by that many London days.
+// Handles BST/GMT transitions because we compute the offset at the target
+// instant, not at `now`.
+function londonMidnight(now: Date, daysFromToday: number): Date {
+  const key = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/London',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(now)
+  const [y, m, d] = key.split('-').map(Number)
+  const guessUtc = Date.UTC(y, m - 1, d + daysFromToday, 0, 0, 0)
+  const offsetMin = londonOffsetMinutes(new Date(guessUtc))
+  return new Date(guessUtc - offsetMin * 60_000)
 }
+
+function londonOffsetMinutes(date: Date): number {
+  try {
+    const fmt = new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Europe/London',
+      timeZoneName: 'shortOffset',
+    })
+    const parts = fmt.formatToParts(date)
+    const tz = parts.find((p) => p.type === 'timeZoneName')?.value || ''
+    const m = tz.match(/([+-])(\d{1,2})(?::?(\d{2}))?/)
+    if (m) {
+      const sign = m[1] === '-' ? -1 : 1
+      return sign * (Number(m[2] || 0) * 60 + Number(m[3] || 0))
+    }
+  } catch {}
+  return 0
+}
+
 export function filterByTimeWindow(items: Screening[], window: 'today'|'week'|'month'|'all') {
-  // Always exclude past screenings relative to now; "all" means all upcoming
+  // Always exclude past screenings relative to now; "all" means all upcoming.
+  // Day boundaries are computed in Europe/London so the filter behaves the
+  // same on Vercel (UTC runtime) as it does locally.
   const now = new Date()
   const start = now
   if (window==='all') return items.filter(i => new Date(i.screeningStart) >= start)
   let end: Date
   if (window==='today') {
-    const sod = new Date(startOfDayISO(now))
-    end = new Date(addDaysISO(sod, 1))
+    end = londonMidnight(now, 1)
   } else if (window==='week') {
-    const sod = new Date(startOfDayISO(now))
-    end = new Date(addDaysISO(sod, 7))
+    end = londonMidnight(now, 7)
   } else {
     // Treat "This Month" as a 30-day rolling horizon from today.
-    // Use an exclusive upper bound at start-of-day + 31 so that the
+    // Exclusive upper bound at London midnight + 31 days so that the
     // 30th day is included (t < end).
-    const sod = new Date(startOfDayISO(now))
-    end = new Date(addDaysISO(sod, 31))
+    end = londonMidnight(now, 31)
   }
   return items.filter(i => {
     const t = new Date(i.screeningStart)

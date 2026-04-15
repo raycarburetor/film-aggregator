@@ -54,6 +54,7 @@ async function main() {
     'aggregate-garden-only.mjs',
     'aggregate-genesis-only.mjs',
     'aggregate-ica-only.mjs',
+    'aggregate-nickel-only.mjs',
     'aggregate-pcc-only.mjs',
     'aggregate-rio-only.mjs',
     'aggregate-cinelumiere-only.mjs',

@@ -35,6 +35,8 @@
     "aggregate:closeup": "node scripts/aggregate-closeup-only.mjs",
     "aggregate:barbican": "node scripts/aggregate-barbican-only.mjs",
     "aggregate:barbican:db": "node scripts/aggregate-barbican-only.mjs && node scripts/db-seed.mjs && node scripts/db-prune.mjs",
+    "aggregate:nickel": "node scripts/aggregate-nickel-only.mjs",
+    "aggregate:nickel:db": "node scripts/aggregate-nickel-only.mjs && node scripts/db-seed.mjs && node scripts/db-prune.mjs",
     "aggregate:bfi": "node scripts/aggregate-bfi-only.mjs",
     "aggregate:bfi:db": "node scripts/aggregate-bfi-only.mjs && node scripts/db-seed.mjs && node scripts/db-prune.mjs",
     "aggregate:closeup:db": "node scripts/aggregate-closeup-only.mjs && node scripts/db-seed.mjs && node scripts/db-prune.mjs",
