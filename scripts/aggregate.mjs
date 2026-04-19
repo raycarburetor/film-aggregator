@@ -16,6 +16,7 @@ import { fetchCloseUp } from './cinemas/closeup.mjs'
 import { fetchBarbican } from './cinemas/barbican.mjs'
 import { fetchCineLumiere } from './cinemas/cinelumiere.mjs'
 import { fetchNickel } from './cinemas/nickel.mjs'
+import { fetchRegentStreet } from './cinemas/regentstreet.mjs'
 import { enrichWithTMDb, enrichWithLetterboxd, propagateByDirectorYear } from './enrich.mjs'
 
 function isNonFilmEvent(title) {
@@ -58,6 +59,7 @@ let items = [
   ...(await fetchBarbican()),
   ...(await fetchCineLumiere()),
   ...(await fetchNickel()),
+  ...(await fetchRegentStreet()),
 ]
 
 // Drop obvious non-film events

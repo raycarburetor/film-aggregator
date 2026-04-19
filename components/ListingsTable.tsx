@@ -28,6 +28,7 @@ const CINEMA_LABELS: Record<string, string> = {
   rio: 'Rio Cinema',
   cinelumiere: 'Ciné Lumière',
   nickel: 'The Nickel',
+  regentstreet: 'Regent Street Cinema',
 }
 
 const CINEMA_ADDRESSES: Record<string, string> = {
@@ -40,6 +41,7 @@ const CINEMA_ADDRESSES: Record<string, string> = {
   ica: 'The Mall, London SW1Y 5AH',
   nickel: '117-119 Clerkenwell Rd, London EC1R 5BY',
   princecharles: '7 Leicester Pl, London WC2H 7BY',
+  regentstreet: '307 Regent St, London W1B 2HW',
   rio: '107 Kingsland High St, London E8 2PB',
 }
 

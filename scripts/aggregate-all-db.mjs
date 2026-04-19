@@ -58,6 +58,7 @@ async function main() {
     'aggregate-pcc-only.mjs',
     'aggregate-rio-only.mjs',
     'aggregate-cinelumiere-only.mjs',
+    'aggregate-regentstreet-only.mjs',
   ]
   // Run each scraper independently: one failing cinema must not prevent the
   // rest of the pipeline. Previously a single crash aborted the whole job,
