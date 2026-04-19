@@ -47,7 +47,7 @@ async function main() {
   // During scraping, skip Letterboxd enrichment for speed; we’ll update ratings from DB afterwards
   const scrapeEnv = { LETTERBOXD_ENABLE: 'false' }
   const steps = [
-    // 'aggregate-bfi-only.mjs', // temporarily disabled per request
+    'aggregate-bfi-only.mjs',
     'aggregate-barbican-only.mjs',
     'aggregate-castle-only.mjs',
     'aggregate-closeup-only.mjs',
@@ -63,26 +63,6 @@ async function main() {
     console.log(`[ALL] Running ${s} (LB disabled during scrape) ...`)
     const tag = s.split('-')[1]?.toUpperCase() || s
     await runNode(s, scrapeEnv, tag)
-  }
-
-  // Strip any lingering BFI items from data/listings.json before seeding
-  try {
-    const fs = await import('node:fs/promises')
-    const listingsPath = path.join(__dirname, '..', 'data', 'listings.json')
-    const raw = await fs.readFile(listingsPath, 'utf8').catch(()=> '[]')
-    const arr = JSON.parse(raw)
-    if (Array.isArray(arr)) {
-      const before = arr.length
-      const filtered = arr.filter(i => (i && i.cinema !== 'bfi'))
-      if (filtered.length !== before) {
-        await fs.writeFile(listingsPath, JSON.stringify(filtered, null, 2), 'utf8')
-        console.log(`[ALL] Removed ${before - filtered.length} BFI items from listings.json before DB sync`)
-      } else {
-        console.log('[ALL] No BFI items to remove from listings.json')
-      }
-    }
-  } catch (e) {
-    console.warn('[ALL] Failed to strip BFI from listings.json:', e?.message || e)
   }
 
   console.log('[ALL] Seeding DB ...')
