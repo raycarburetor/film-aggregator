@@ -13,6 +13,7 @@
     "aggregate": "node scripts/aggregate.mjs",
     "aggregate:db": "node scripts/aggregate.mjs && node scripts/db-seed.mjs && node scripts/db-prune.mjs",
     "db:prune": "node scripts/db-prune.mjs",
+    "db:purge-past": "node scripts/db-purge-past.mjs",
     "aggregate:db:prune": "node scripts/aggregate.mjs && node scripts/db-seed.mjs && node scripts/db-prune.mjs",
     "enrich:omdb": "node scripts/enrich-omdb-only.mjs",
     "enrich:letterboxd": "node scripts/enrich-letterboxd-only.mjs",

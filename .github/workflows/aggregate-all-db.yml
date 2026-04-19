@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: '0 10 * * *'
   workflow_dispatch:
+    inputs:
+      force_prune:
+        description: 'Bypass db-prune safety guards (age/max-delete-%) for this run'
+        type: boolean
+        required: false
+        default: false
 
 jobs:
   aggregate:
@@ -18,6 +24,7 @@ jobs:
       TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
       OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      PRUNE_FORCE: ${{ inputs.force_prune && '1' || '' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

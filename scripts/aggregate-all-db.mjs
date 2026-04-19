@@ -94,7 +94,15 @@ async function main() {
     console.warn(`[ALL] Skipping DB prune because ${failed.length} scraper(s) failed; stale rows for failed cinemas preserved.`)
   } else {
     console.log('[ALL] Pruning DB ...')
-    await runNode('db-prune.mjs', {}, 'DB-PRUNE')
+    try {
+      await runNode('db-prune.mjs', {}, 'DB-PRUNE')
+    } catch (e) {
+      // Prune guards (mtime, max-delete-%) abort with non-zero exit. Treat as
+      // non-fatal so the rest of the pipeline still runs; the seed already
+      // completed so the UI sees fresh rows alongside any stale survivors.
+      console.error(`[ALL] db-prune exited non-zero — continuing. ${e?.message || e}`)
+      failed.push({ script: 'db-prune.mjs', error: e?.message || String(e) })
+    }
   }
 
   // Letterboxd HTTP enrichment (chunked)
@@ -107,7 +115,7 @@ async function main() {
   await runNode('enrich-letterboxd-db-http.mjs', {}, 'LB')
 
   if (failed.length) {
-    console.error(`[ALL] Done with ${failed.length} scraper failure(s):`)
+    console.error(`[ALL] Done with ${failed.length} failure(s):`)
     for (const f of failed) console.error(`  - ${f.script}: ${f.error}`)
     process.exitCode = 1
   } else {
