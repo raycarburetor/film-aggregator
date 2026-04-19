@@ -2,7 +2,8 @@ import type { Screening, CinemaKey } from '@/types'
 import { filterByTimeWindow, parseNum, isClearlyNonFilm, londonDayKey, londonMinutesOfDay } from '@/lib/filters'
 import { getAllListings } from '@/lib/db'
 import { unstable_cache } from 'next/cache'
-import data from '@/data/listings.json'
+import { promises as fs } from 'node:fs'
+import path from 'node:path'
 
 export type FilterParams = {
   q?: string
@@ -53,13 +54,26 @@ export function filterParamsFromSearchParams(sp: Record<string, string | undefin
 
 let lastGoodDbListings: Screening[] | null = null
 
+async function readBundledFallback(): Promise<Screening[]> {
+  // Optional on-disk fallback at data/listings.json. The file is gitignored
+  // and may be absent in deployed builds — return [] silently in that case.
+  try {
+    const p = path.join(process.cwd(), 'data', 'listings.json')
+    const txt = await fs.readFile(p, 'utf8')
+    const parsed = JSON.parse(txt)
+    return Array.isArray(parsed) ? (parsed as Screening[]) : []
+  } catch {
+    return []
+  }
+}
+
 export async function loadAllListings(): Promise<Screening[]> {
-  const fallbackToLastGood = () => {
+  const fallbackToLastGood = async () => {
     if (lastGoodDbListings && lastGoodDbListings.length) {
       console.warn('[listings] using last-known-good DB snapshot due to error/empty response')
       return lastGoodDbListings
     }
-    const items = Array.isArray(data) ? (data as any as Screening[]) : []
+    const items = await readBundledFallback()
     return normalizeAndSanitize(items)
   }
 

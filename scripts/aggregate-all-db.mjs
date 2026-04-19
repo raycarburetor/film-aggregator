@@ -59,16 +59,43 @@ async function main() {
     'aggregate-rio-only.mjs',
     'aggregate-cinelumiere-only.mjs',
   ]
+  // Run each scraper independently: one failing cinema must not prevent the
+  // rest of the pipeline. Previously a single crash aborted the whole job,
+  // leaving the DB unchanged and the UI serving stale rows for days.
+  const failed = []
   for (const s of steps) {
     console.log(`[ALL] Running ${s} (LB disabled during scrape) ...`)
     const tag = s.split('-')[1]?.toUpperCase() || s
-    await runNode(s, scrapeEnv, tag)
+    try {
+      await runNode(s, scrapeEnv, tag)
+    } catch (e) {
+      failed.push({ script: s, error: e?.message || String(e) })
+      console.error(`[ALL] ${s} FAILED — continuing with remaining scrapers. Error: ${e?.message || e}`)
+    }
+  }
+
+  if (failed.length === steps.length) {
+    // If literally nothing scraped, don't touch the DB — the existing rows
+    // are a better answer than wiping to empty.
+    console.error('[ALL] All scrapers failed; skipping DB seed/prune to preserve existing rows.')
+    process.exitCode = 1
+    return
   }
 
   console.log('[ALL] Seeding DB ...')
   await runNode('db-seed.mjs', {}, 'DB-SEED')
-  console.log('[ALL] Pruning DB ...')
-  await runNode('db-prune.mjs', {}, 'DB-PRUNE')
+
+  if (failed.length) {
+    // Skip the unscoped prune on partial failure. Otherwise we would delete
+    // rows for every cinema whose scraper crashed (their ids are absent
+    // from listings.json), wiping them from the UI until the next clean run.
+    // Upsert-only: stale rows for failed cinemas persist, which is the
+    // lesser evil compared to showing nothing.
+    console.warn(`[ALL] Skipping DB prune because ${failed.length} scraper(s) failed; stale rows for failed cinemas preserved.`)
+  } else {
+    console.log('[ALL] Pruning DB ...')
+    await runNode('db-prune.mjs', {}, 'DB-PRUNE')
+  }
 
   // Letterboxd HTTP enrichment (chunked)
   const chunk = argNum('--chunk', 100)
@@ -79,7 +106,13 @@ async function main() {
   console.log(`[ALL] Letterboxd HTTP enrichment: chunk=${chunk} force=${force} ...`)
   await runNode('enrich-letterboxd-db-http.mjs', {}, 'LB')
 
-  console.log('[ALL] Done.')
+  if (failed.length) {
+    console.error(`[ALL] Done with ${failed.length} scraper failure(s):`)
+    for (const f of failed) console.error(`  - ${f.script}: ${f.error}`)
+    process.exitCode = 1
+  } else {
+    console.log('[ALL] Done.')
+  }
 }
 
 main().catch((e) => { console.error('[ALL] failed:', e); process.exitCode = 1 })

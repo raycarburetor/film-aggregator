@@ -24,3 +24,7 @@ tmp-*.html
 tmp-*.json
 tmp-*.txt
 .tmp-*.log
+
+# Scraper output: never commit — the DB is source of truth and a stale
+# local file has previously been used to seed prod, wiping fresh data.
+data/listings.json

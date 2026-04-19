@@ -68,8 +68,17 @@ async function main() {
 
     const file = path.join(root, 'data', 'listings.json')
     const txt = await fs.readFile(file, 'utf8')
-    const json = JSON.parse(txt)
+    let json = JSON.parse(txt)
     if (!Array.isArray(json)) throw new Error('data/listings.json is not an array')
+
+    // Optional scope: only seed rows for a single cinema. Used by per-cinema
+    // aggregate scripts so a local run can't clobber other cinemas' rows.
+    const scope = (process.env.CINEMA_SCOPE || '').trim().toLowerCase() || null
+    if (scope) {
+      const before = json.length
+      json = json.filter(it => String(it?.cinema || '').toLowerCase() === scope)
+      console.log(`[db-seed] CINEMA_SCOPE=${scope}: seeding ${json.length}/${before} rows`)
+    }
 
     const insertSql = `
       insert into ${table} (
