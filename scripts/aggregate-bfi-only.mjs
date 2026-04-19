@@ -21,7 +21,11 @@ try {
 // Remove current BFI items
 existing = Array.isArray(existing) ? existing.filter(i => i?.cinema !== 'bfi') : []
 
-function isNonFilmEvent(title) {
+function isNonFilmEvent(title, venue) {
+  // No venue extracted → almost always a standalone talk/panel at BFI.
+  if (!venue) return true
+  // Blue Room is a function/event room, not a cinema screen.
+  if (venue === 'Blue Room') return true
   if (!title) return false
   const s = String(title)
   const patterns = [
@@ -40,12 +44,24 @@ function isNonFilmEvent(title) {
     /\bworkshop\b/i,
     /\bbook\s+(?:talk|launch|reading)\b/i,
     /\bwftv\b/i,
+    // Talks, conversations and curated events hosted in cinema screens
+    /\bin conversation\b/i,
+    /\bsip and paint\b/i,
+    /\bmeet the projectionists\b/i,
+    /\blive in 3D\b/i,
+    /\btowards counter-cinema\b/i,
+    /\bin the scene:\b/i,
+    /\bnew writings\b/i,
+    /\bcreative minds\b/i,
+    /\bwords, songs and screens\b/i,
+    /\bfuture forward\b/i,
+    /\ban introduction to\b/i,
   ]
   return patterns.some((re) => re.test(s))
 }
 
 let bfi = await fetchBFI()
-bfi = bfi.filter(i => !isNonFilmEvent(i.filmTitle))
+bfi = bfi.filter(i => !isNonFilmEvent(i.filmTitle, i.venue))
 await enrichWithTMDb(bfi, region)
 {
   const mergedTmp = [...existing, ...bfi]
