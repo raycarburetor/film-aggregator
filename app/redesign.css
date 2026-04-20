@@ -600,7 +600,7 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
 .ic-rating__num {
   font-family: var(--ic-f-mono);
   font-size: 12px;
-  color: var(--ic-accent-bright);
+  color: var(--ic-muted-2);
   font-variant-numeric: tabular-nums;
   min-width: 32px;
   text-align: right;
@@ -639,6 +639,7 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
 }
 .ic-film__genres-full { color: var(--ic-muted); font-size: 15px; }
 
+.ic-film__showtimes .ic-label { margin-bottom: 0; }
 .ic-showlist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
 .ic-showlist__row {
   display: grid;
@@ -649,8 +650,8 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
   border-top: 1px solid var(--ic-hair);
 }
 .ic-showlist__row:first-child { border-top: 0; }
-.ic-showlist__cinema { font-size: 15px; color: var(--ic-fg-2); letter-spacing: 0.01em; }
-.ic-showlist__times { display: flex; flex-wrap: wrap; gap: 6px 10px; }
+.ic-showlist__cinema { font-size: 15px; color: var(--ic-fg-2); letter-spacing: 0.01em; padding-top: 10px; }
+.ic-showlist__times { display: flex; flex-wrap: wrap; gap: 6px 10px; padding-bottom: 10px; }
 .ic-time-link {
   font-family: var(--ic-f-mono);
   font-size: 15px;
