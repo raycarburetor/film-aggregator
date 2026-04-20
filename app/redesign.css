@@ -305,7 +305,7 @@ body:has(.ic-app) {
 .ic-chipgrid { display: flex; flex-wrap: wrap; gap: 4px; }
 .ic-sqchip {
   padding: 6px 10px;
-  font-size: 13px;
+  font-size: 15px;
   border: 1px solid var(--ic-hair);
   color: var(--ic-fg-2);
   transition: border-color 120ms, background 120ms, color 120ms;
@@ -352,6 +352,7 @@ body:has(.ic-app) {
 
 /* Calendar */
 .ic-cal { width: 280px; padding: 14px; }
+.ic-cal__swipe { display: none; }
 .ic-cal__head {
   display: flex;
   align-items: center;
@@ -779,15 +780,36 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
     padding: 0;
   }
   .ic-controlbar__spacer { display: none; }
+  /* Chrome-free tabs: inactive cells are plain typographic labels,
+     only the active item carries a red fill. Calendar is the 4th cell. */
   .ic-tabs {
-    flex-wrap: wrap;
-    padding: 20px var(--ic-gutter) 4px;
+    flex-wrap: nowrap;
+    gap: 0;
+    margin: 16px var(--ic-gutter) 8px;
+    border: 0;
   }
+  .ic-tabs > .ic-tab,
+  .ic-tabs__date { flex: 1 1 0; min-width: 0; }
+  .ic-tabs__date > .ic-tab { width: 100%; justify-content: center; }
+  .ic-app .ic-tabs .ic-tab {
+    border: 0 !important;
+    background: transparent;
+    justify-content: center;
+  }
+  .ic-app .ic-tabs .ic-tab.is-active {
+    background: var(--ic-accent);
+    color: var(--ic-fg);
+  }
+  .ic-tab__date { display: none; }
+  /* Search: thin box, subtle at rest; mid-grey on focus; accent when filled. */
   .ic-search {
     min-width: 0;
     width: calc(100% - (var(--ic-gutter) * 2));
     margin: 4px var(--ic-gutter) 10px;
+    border: 1px solid var(--ic-hair);
   }
+  .ic-search:focus-within { border-color: var(--ic-muted); }
+  .ic-search:has(input:not(:placeholder-shown)) { border-color: var(--ic-accent); }
   /* Prevent iOS Safari auto-zoom on focus — inputs must be ≥16px */
   .ic-search input,
   .ic-input-group input { font-size: 16px; }
@@ -883,8 +905,13 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
     line-height: 1;
     color: var(--ic-muted);
     padding: 4px 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   .ic-mobilesheet__close:hover { color: var(--ic-fg); }
+  .ic-mobilesheet__close--apply { color: var(--ic-fg); }
+  .ic-mobilesheet__close--apply:hover { color: var(--ic-fg); }
   .ic-mobilesheet__body {
     flex: 1;
     overflow-y: auto;
@@ -923,6 +950,25 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
     border: 0;
     border-top: 1px solid var(--ic-fg);
     animation: icSheetIn 200ms ease;
+    z-index: 60 !important;
+  }
+  /* Calendar sheet: grabber + swipe affordance on mobile */
+  .ic-cal__swipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    margin: -8px 0 4px;
+    touch-action: none;
+    cursor: grab;
+  }
+  .ic-cal__grabber {
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--ic-muted-2);
+    opacity: 0.7;
   }
   @keyframes icSheetIn {
     from { transform: translateY(100%); }
@@ -1020,7 +1066,7 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
     gap: 6px;
     padding: 0;
   }
-  .ic-showlist__cinema { font-size: 14px; }
+  .ic-showlist__cinema { font-size: 14px; padding-bottom: 4px; }
   .ic-time-link { font-size: 14px; padding: 4px 7px; }
 
   /* Main padding */

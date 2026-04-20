@@ -549,14 +549,38 @@ function MobileFilterSheet({
             <h2 className="ic-mobilesheet__title">Filters</h2>
             {activeCount > 0 && <button className="ic-linkbtn" onClick={clearAll}>Clear all</button>}
           </div>
-          <button className="ic-mobilesheet__close" onClick={onClose} aria-label="Close filters">×</button>
+          <button
+            className={cx('ic-mobilesheet__close', activeCount > 0 && 'ic-mobilesheet__close--apply')}
+            onClick={onClose}
+            aria-label={activeCount > 0 ? 'Apply filters' : 'Close filters'}
+          >
+            {activeCount > 0 ? (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <polyline points="5 12 10 17 19 7" />
+              </svg>
+            ) : '×'}
+          </button>
         </header>
         <div className="ic-mobilesheet__body">
+          <section className="ic-mobilesheet__section">
+            <WatchlistFilterBody
+              value={filters.watchlist}
+              onChange={(v) => setFilters(prev => ({ ...prev, watchlist: v }))}
+              loading={watchlistLoading}
+              error={watchlistError}
+            />
+          </section>
           <section className="ic-mobilesheet__section">
             <CinemaFilterBody
               value={filters.cinemas}
               onChange={(v) => setFilters(prev => ({ ...prev, cinemas: v }))}
               availableCounts={availableCounts}
+            />
+          </section>
+          <section className="ic-mobilesheet__section">
+            <RatingFilterBody
+              value={filters.minLb}
+              onChange={(v) => setFilters(prev => ({ ...prev, minLb: v }))}
             />
           </section>
           <section className="ic-mobilesheet__section">
@@ -570,20 +594,6 @@ function MobileFilterSheet({
             <DecadeFilterBody
               value={filters.decades}
               onChange={(v) => setFilters(prev => ({ ...prev, decades: v }))}
-            />
-          </section>
-          <section className="ic-mobilesheet__section">
-            <RatingFilterBody
-              value={filters.minLb}
-              onChange={(v) => setFilters(prev => ({ ...prev, minLb: v }))}
-            />
-          </section>
-          <section className="ic-mobilesheet__section">
-            <WatchlistFilterBody
-              value={filters.watchlist}
-              onChange={(v) => setFilters(prev => ({ ...prev, watchlist: v }))}
-              loading={watchlistLoading}
-              error={watchlistError}
             />
           </section>
         </div>
@@ -611,7 +621,7 @@ function SearchBox({ value, onChange }: { value: string; onChange: (v: string) =
   )
 }
 
-function MiniCalendar({ selected, onPick, onClear }: { selected: string | null; onPick: (d: string) => void; onClear: () => void }) {
+function MiniCalendar({ selected, onPick, onClear, onClose }: { selected: string | null; onPick: (d: string) => void; onClear: () => void; onClose?: () => void }) {
   const today = new Date()
   const [month, setMonth] = useState(selected ? new Date(selected + 'T12:00:00Z') : today)
   const y = month.getFullYear()
@@ -625,6 +635,45 @@ function MiniCalendar({ selected, onPick, onClear }: { selected: string | null; 
     d.setDate(d.getDate() + 60)
     return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
   })()
+
+  const rootRef = useRef<HTMLDivElement>(null)
+  const dragRef = useRef<{ startY: number; startT: number; lastY: number; lastT: number; dy: number; active: boolean }>({
+    startY: 0, startT: 0, lastY: 0, lastT: 0, dy: 0, active: false,
+  })
+  function onDragStart(e: React.TouchEvent) {
+    if (!onClose) return
+    const t = e.touches[0]
+    const now = performance.now()
+    dragRef.current = { startY: t.clientY, startT: now, lastY: t.clientY, lastT: now, dy: 0, active: true }
+    const el = rootRef.current
+    if (el) el.style.transition = 'none'
+  }
+  function onDragMove(e: React.TouchEvent) {
+    if (!dragRef.current.active) return
+    const t = e.touches[0]
+    const dy = Math.max(0, t.clientY - dragRef.current.startY)
+    dragRef.current.dy = dy
+    dragRef.current.lastY = t.clientY
+    dragRef.current.lastT = performance.now()
+    const el = rootRef.current
+    if (el) el.style.transform = `translateY(${dy}px)`
+  }
+  function onDragEnd() {
+    if (!dragRef.current.active) return
+    dragRef.current.active = false
+    const el = rootRef.current
+    const { dy, lastT, startT, startY, lastY } = dragRef.current
+    const dt = Math.max(1, lastT - startT)
+    const velocity = (lastY - startY) / dt
+    const shouldClose = dy > 100 || velocity > 0.6
+    if (el) el.style.transition = 'transform 200ms ease'
+    if (shouldClose) {
+      if (el) el.style.transform = 'translateY(100%)'
+      setTimeout(() => onClose?.(), 200)
+    } else {
+      if (el) el.style.transform = ''
+    }
+  }
 
   function cell(d: number) {
     const ymd = `${y}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`
@@ -642,7 +691,17 @@ function MiniCalendar({ selected, onPick, onClear }: { selected: string | null; 
   }
 
   return (
-    <div className="ic-popover ic-cal">
+    <div ref={rootRef} className="ic-popover ic-cal">
+      <div
+        className="ic-cal__swipe"
+        onTouchStart={onDragStart}
+        onTouchMove={onDragMove}
+        onTouchEnd={onDragEnd}
+        onTouchCancel={onDragEnd}
+        aria-hidden="true"
+      >
+        <span className="ic-cal__grabber" />
+      </div>
       <div className="ic-cal__head">
         <button className="ic-cal__nav" onClick={() => setMonth(new Date(y, m - 1, 1))} aria-label="Previous month">‹</button>
         <div className="ic-cal__title">{month.toLocaleString('en-GB', { month: 'long', year: 'numeric' })}</div>
@@ -671,8 +730,8 @@ function TimeTabs({ value, onChange, customDay, onPickDay, onClearDay }: {
 }) {
   const tabs: { key: 'today' | 'week' | 'month'; label: string }[] = [
     { key: 'today', label: 'Today' },
-    { key: 'week', label: 'This Week' },
-    { key: 'month', label: 'This Month' },
+    { key: 'week', label: '7 Days' },
+    { key: 'month', label: '30 Days' },
   ]
   const [showCal, setShowCal] = useState(false)
   const calRef = useRef<HTMLDivElement>(null)
@@ -708,6 +767,7 @@ function TimeTabs({ value, onChange, customDay, onPickDay, onClearDay }: {
             selected={customDay}
             onPick={(d) => { onPickDay(d); setShowCal(false) }}
             onClear={() => { onClearDay(); setShowCal(false) }}
+            onClose={() => setShowCal(false)}
           />
         )}
       </div>
