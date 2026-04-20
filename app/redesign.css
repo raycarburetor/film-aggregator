@@ -400,7 +400,7 @@ body:has(.ic-app) {
 .ic-list { display: flex; flex-direction: column; gap: 0; }
 
 /* Day section */
-.ic-day { padding: 0 0 20px; }
+.ic-day { padding: 0 0 16px; }
 .ic-day__head {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -748,7 +748,7 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
 @media (max-width: 768px) {
   :root {
     --ic-gutter: 16px;
-    --ic-header-h: 54px;
+    --ic-header-h: 52px;
   }
 
   /* Extend the header hair line to the gutter; drop dividers between tabs/search/filters */
@@ -831,14 +831,10 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
   }
   .ic-mobilesheet__panel {
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-height: 92vh;
+    inset: 0;
     display: flex;
     flex-direction: column;
     background: var(--ic-bg);
-    border-top: 1px solid var(--ic-fg);
     animation: icSheetIn 220ms ease;
   }
   .ic-mobilesheet__head {
@@ -891,7 +887,7 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
     padding: 0 var(--ic-gutter);
     padding-bottom: max(28px, env(safe-area-inset-bottom));
   }
-  .ic-mobilesheet__section { padding: 18px 0; }
+  .ic-mobilesheet__section { padding: 18px 0 10px; }
   .ic-mobilesheet__section .ic-popover__head { margin-bottom: 10px; }
   /* Let cinema checklist flow naturally; the sheet body handles scrolling. */
   .ic-mobilesheet__section .ic-checklist {
@@ -979,11 +975,12 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
+    gap: 8px;
     text-align: left;
   }
   .ic-rating__num { display: none; }
   .ic-film__right .ic-rating { padding-top: 2px; }
+  .ic-film__ratinglink { pointer-events: none; }
   .ic-film__screenings {
     flex-direction: column;
     align-items: flex-start;
