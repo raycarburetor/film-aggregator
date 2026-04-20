@@ -747,7 +747,7 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
    All rules below are scoped inside media queries so desktop is unaffected. */
 @media (max-width: 768px) {
   :root {
-    --ic-gutter: 16px;
+    --ic-gutter: 12px;
     --ic-header-h: 52px;
   }
 
@@ -964,7 +964,7 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
   }
   .ic-film__main { grid-area: main; }
   .ic-film__title-row { gap: 8px; margin-bottom: 4px; padding-right: 22px; }
-  .ic-film__title { font-size: 20px; line-height: 1.15; }
+  .ic-film__title { font-size: 22px; line-height: 1.15; }
   .ic-film__year { font-size: 12px; margin-left: 6px; }
   .ic-film__meta { gap: 8px; font-size: 13px; }
   .ic-film__director { font-size: 14px; }
@@ -1034,7 +1034,7 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
 @media (max-width: 420px) {
   .ic-wordmark__title { font-size: 24px; }
   .ic-day__date { font-size: 30px; }
-  .ic-film__title { font-size: 18px; }
+  .ic-film__title { font-size: 20px; }
   .ic-app .ic-film__head { padding: 10px 6px; gap: 8px 10px; grid-template-columns: 70px 1fr; }
   .ic-film__poster { width: 70px; height: 98px; font-size: 26px; }
 }
