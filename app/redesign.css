@@ -787,6 +787,9 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
     width: calc(100% - (var(--ic-gutter) * 2));
     margin: 4px var(--ic-gutter) 10px;
   }
+  /* Prevent iOS Safari auto-zoom on focus — inputs must be ≥16px */
+  .ic-search input,
+  .ic-input-group input { font-size: 16px; }
 
   /* The filter bar is empty on mobile (chips + trigger both moved/hidden) */
   .ic-filterbar { display: none; }
