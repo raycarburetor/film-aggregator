@@ -353,9 +353,7 @@ export async function enrichWithTMDb(items, region='GB') {
       // Apply enrichment details from TMDb
       it.tmdbId = m.id
       const tmdbTitle = (m.title || m.original_title || '').trim()
-      if (tmdbTitle && /^[^a-z]*$/.test(String(it.filmTitle || ''))) {
-        it.filmTitle = tmdbTitle
-      }
+      if (tmdbTitle) it.filmTitle = tmdbTitle
       it.releaseDate = det.release_date || m.release_date || it.releaseDate
       it.synopsis = det.overview || it.synopsis
       it.genres = (det.genres || []).map(g => g.name)
@@ -363,6 +361,8 @@ export async function enrichWithTMDb(items, region='GB') {
       // Director should only ever be populated by TMDb
       it.director = dir || undefined
       it.imdbId = det.external_ids?.imdb_id || it.imdbId
+      const poster = det.poster_path || m.poster_path
+      if (poster) it.posterPath = poster
     } catch {}
   }
   // After attempting per-item TMDb matching, propagate enrichment across
@@ -417,6 +417,7 @@ export function propagateByDirectorYear(items) {
         if (!tgt.synopsis && src.synopsis) tgt.synopsis = src.synopsis
         if ((!Array.isArray(tgt.genres) || !tgt.genres.length) && Array.isArray(src.genres)) tgt.genres = src.genres.slice()
         if (!tgt.imdbId && src.imdbId) tgt.imdbId = src.imdbId
+        if (!tgt.posterPath && src.posterPath) tgt.posterPath = src.posterPath
         // Always normalize director to TMDb-provided value for consistency
         if (src.director) tgt.director = src.director
       } catch {}
