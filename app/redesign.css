@@ -449,8 +449,8 @@ body:has(.ic-app) {
 }
 .ic-film:last-child { border-bottom: 0; }
 .ic-film:hover { background: var(--ic-bg-3); }
-.ic-film.is-open { background: var(--ic-bg-2); }
-.ic-film.is-open:hover { background: var(--ic-bg-2); }
+.ic-film.is-open { background: var(--ic-bg-3); }
+.ic-film.is-open:hover { background: var(--ic-bg-3); }
 
 .ic-app .ic-film__head {
   display: grid;
@@ -1008,12 +1008,16 @@ a.ic-film__director:hover { color: var(--ic-accent-bright); text-decoration: und
   .ic-film__synopsis p { font-size: 14px; }
   .ic-film__genres-section { display: block; }
   .ic-film__genres-section p { font-size: 14px; }
+  /* Reorder drawer on mobile: synopsis → genres → showtimes */
+  .ic-film__synopsis { order: 1; }
+  .ic-film__genres-section { order: 2; }
+  .ic-film__showtimes { order: 3; }
 
   /* Showlist: stack cinema name above its times */
   .ic-showlist__row {
     grid-template-columns: 1fr;
     gap: 6px;
-    padding: 10px 0;
+    padding: 0;
   }
   .ic-showlist__cinema { font-size: 14px; }
   .ic-time-link { font-size: 14px; padding: 4px 7px; }
