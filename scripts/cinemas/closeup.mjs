@@ -3,12 +3,14 @@ import { chromium as pwChromium } from 'playwright'
 
 /**
  * Scrape Close-Up Film Centre programme.
- * Listing page exposes a JS var `shows` containing JSON describing upcoming shows.
- * For each item, visit the detail page and extract a release year (YYYY) from
- * div#film_program_support.inner_block_2_l. If a valid year is not found, skip the item.
+ * Drive the crawl off the programme HTML (not the `var shows` blob, which only
+ * exposes currently-bookable screenings and occasionally emits wrong slugs such
+ * as `/histoire-s-du-cinema/`). We enumerate every `/film_programmes/YYYY/<prog>/<film>/`
+ * link from the listing page and each programme hub, then parse the Calendar
+ * table on each film detail page for screening dates + booking URLs.
  */
 export async function fetchCloseUp() {
-  const browser = await pwChromium.launch({ headless: true })
+  const browser = await pwChromium.launch({ headless: process.env.CLOSEUP_HEADED ? false : true })
   const ctx = await browser.newContext({
     userAgent:
       'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
@@ -17,50 +19,78 @@ export async function fetchCloseUp() {
   })
   const page = await ctx.newPage()
 
-  const START_URL = 'https://www.closeupfilmcentre.com/film_programmes/'
-  let items = []
+  const BASE = 'https://www.closeupfilmcentre.com'
+  const START_URL = `${BASE}/film_programmes/`
+
+  async function waitReady(p) {
+    try { await p.waitForLoadState('networkidle', { timeout: 15000 }) } catch {}
+    try { await p.waitForFunction(() => !/just a moment/i.test(document.title), null, { timeout: 60000 }) } catch {}
+    try { await p.waitForLoadState('networkidle', { timeout: 10000 }) } catch {}
+  }
+
+  // Normalize a `/film_programmes/...` href: drop trailing slash and rewrite
+  // the broken `histoire-s-du-cinema` slug that `shows.film_url` sometimes emits.
+  function normalize(href) {
+    return String(href)
+      .replace(/\/$/, '')
+      .replace('/histoire-s-du-cinema/', '/histoires-du-cinema/')
+      .replace(/\/histoire-s-du-cinema$/, '/histoires-du-cinema')
+  }
+
+  const items = []
   try {
     await page.goto(START_URL, { waitUntil: 'domcontentloaded', timeout: 60000 })
-    try { await page.waitForLoadState('networkidle', { timeout: 10000 }) } catch {}
+    await waitReady(page)
 
-    const raw = await page.evaluate(() => {
-      // Find the script content that defines `shows = '...json...'`
-      const scripts = Array.from(document.querySelectorAll('script'))
-      for (const s of scripts) {
-        const txt = s.textContent || ''
-        if (/var\s+shows\s*=/.test(txt)) return txt
-      }
-      return ''
-    })
-    let shows = []
-    try {
-      // Extract JSON string from: var shows = '...';
-      const m = raw.match(/var\s+shows\s*=\s*'([\s\S]*?)'\s*;/)
-      if (m) {
-        const jsonStr = m[1]
-        shows = JSON.parse(jsonStr)
-      }
-    } catch {}
+    const listingLinks = await page.evaluate(() =>
+      Array.from(document.querySelectorAll('a[href^="/film_programmes/"]'))
+        .map(a => a.getAttribute('href'))
+        .filter(Boolean)
+    )
 
-    // Detail pass: fetch release year for each unique film_url
+    const filmRe = /^\/film_programmes\/\d{4}\/[^/]+\/[^/]+\/?$/
+    const progRe = /^\/film_programmes\/\d{4}\/[^/]+\/?$/
+
+    const filmPaths = new Set()
+    const progPaths = new Set()
+    for (const href of listingLinks) {
+      if (filmRe.test(href)) filmPaths.add(normalize(href))
+      else if (progRe.test(href)) progPaths.add(normalize(href))
+    }
+
+    // Visit each programme hub to discover any films not linked from the front page.
+    const hub = await ctx.newPage()
+    for (const progPath of progPaths) {
+      const url = `${BASE}${progPath}/`
+      try {
+        await hub.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 })
+        await waitReady(hub)
+        const hubLinks = await hub.evaluate(() =>
+          Array.from(document.querySelectorAll('a[href^="/film_programmes/"]'))
+            .map(a => a.getAttribute('href'))
+            .filter(Boolean)
+        )
+        for (const href of hubLinks) {
+          if (filmRe.test(href)) filmPaths.add(normalize(href))
+        }
+      } catch {}
+    }
+    await hub.close()
+
     const dpage = await ctx.newPage()
-    const detailYear = new Map()
-    const detailTitle = new Map()
-    const detailDirector = new Map()
-    const uniqueUrls = Array.from(new Set((shows || []).map(s => s.film_url).filter(Boolean)))
-    for (const rel of uniqueUrls) {
-      const url = new URL(rel, START_URL).toString()
+    for (const filmPath of filmPaths) {
+      const url = `${BASE}${filmPath}/`
       try {
         await dpage.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 })
-        const yearAndTitle = await dpage.evaluate(() => {
+        await waitReady(dpage)
+
+        const data = await dpage.evaluate(() => {
           function valid(y) { const n = Number(y); const Y = new Date().getFullYear() + 1; return n >= 1895 && n <= Y }
           function cleanName(name, title) {
             try {
               let s = String(name || '').replace(/\s{2,}/g, ' ').trim()
               if (!s) return null
               const norm = (x) => String(x||'').normalize('NFD').replace(/\p{Diacritic}+/gu,'').toLowerCase()
-              // If the string begins with the film title (possibly glued without
-              // whitespace due to inline elements), strip that prefix first.
               if (title) {
                 const esc = String(title||'').replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
                 s = s.replace(new RegExp('^\\s*' + esc + '(?:\\s*)', 'i'), '').trim()
@@ -87,12 +117,11 @@ export async function fetchCloseUp() {
             return m ? cleanName(m[1], title) : null
           }
           function pickDirector() {
-            // Try JSON-LD first
             try {
               const scripts = Array.from(document.querySelectorAll('script[type="application/ld+json"]'))
               for (const s of scripts) {
-                const data = JSON.parse(s.textContent || 'null')
-                const arr = Array.isArray(data) ? data : [data]
+                const dj = JSON.parse(s.textContent || 'null')
+                const arr = Array.isArray(dj) ? dj : [dj]
                 for (const obj of arr) {
                   const d = obj?.director
                   if (!d) continue
@@ -107,10 +136,8 @@ export async function fetchCloseUp() {
                 }
               }
             } catch {}
-            // Labels / free text — use the inline stats line only: "Name, Country, YYYY, NN min"
             const scope = document.querySelector('div#film_program_support.inner_block_2_l, #film_program_support') || document
             try {
-              // Look for the first paragraph/div that contains year+minutes; ignore preceding title <p>
               const blocks = Array.from(scope.querySelectorAll('p, div'))
               const rawTitle = (document.querySelector('h1, title')?.textContent || '')
               const pageTitle = rawTitle.replace(/^CLOSE[-\s]*UP\s*\|\s*/i, '').trim()
@@ -120,10 +147,9 @@ export async function fetchCloseUp() {
                 const ym = s.match(/\b(19|20)\d{2}\b/)
                 if (!ym || ym.index == null) return undefined
                 let head = s.slice(0, ym.index)
-                // Strip leading film title if glued in front
                 if (pageTitle) {
                   const esc = pageTitle.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')
-                  head = head.replace(new RegExp('^\n?\r?\s*'+esc+'\s*','i'),'').trim()
+                  head = head.replace(new RegExp('^\\s*'+esc+'\\s*','i'),'').trim()
                 }
                 head = head.replace(/[“”"']/g,'').replace(/[\s,:;\-–—]*$/,'').trim()
                 const parts = head.split(',').map(p=>p.trim()).filter(Boolean)
@@ -134,14 +160,13 @@ export async function fetchCloseUp() {
               }
               for (const el of blocks) {
                 const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
-                // Relax: require a plausible 4-digit year; minutes may not always be present
                 if (!/\b(19|20)\d{2}\b/.test(tx)) continue
                 const name = directorFromStats(tx)
                 if (name) return name
               }
             } catch {}
-            // Fallbacks: labeled text or generic "directed by" phrases
-            const nodes = Array.from(scope.querySelectorAll('p, div, li, dt, dd, .meta, .details'))
+            const scope2 = document.querySelector('div#film_program_support.inner_block_2_l, #film_program_support') || document
+            const nodes = Array.from(scope2.querySelectorAll('p, div, li, dt, dd, .meta, .details'))
             for (const el of nodes) {
               const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
               if (/^director[s]?\b/i.test(tx) || /directed\s+by/i.test(tx)) {
@@ -158,8 +183,8 @@ export async function fetchCloseUp() {
             const m = body.match(/directed\s+by\s*([^.;|\n]+)(?:[.;|\n]|$)/i)
             return m ? m[1].trim() : undefined
           }
+
           const scope = document.querySelector('div#film_program_support.inner_block_2_l, #film_program_support') || document
-          let years = []
           let scheduleYear
           try {
             const h1 = scope.querySelector('h1')
@@ -170,21 +195,6 @@ export async function fetchCloseUp() {
           } catch {}
           let year
           if (scope) {
-            // Detect programme hub pages (no per-film stats line) by a standalone
-            // paragraph that just reads "Programme:" in bold. For these, we keep
-            // the listing but do not attach a director/year for enrichment.
-            let programmeOnly = false
-            try {
-              programmeOnly = Array.from(scope.querySelectorAll('p'))
-                .some(p => {
-                  const strong = p.querySelector('strong')
-                  if (!strong) return false
-                  const lab = (strong.textContent || '').replace(/\s+/g,' ').trim()
-                  const all = (p.textContent || '').replace(/\s+/g,' ').trim()
-                  return /^programme\s*:?$/i.test(lab) && /^programme\s*:?$/i.test(all)
-                })
-            } catch {}
-            // Strict pass: look for "..., YYYY, NN min" within the support block
             try {
               const blocks = Array.from(scope.querySelectorAll('p, div'))
               for (const el of blocks) {
@@ -194,7 +204,6 @@ export async function fetchCloseUp() {
               }
             } catch {}
             const paras = Array.from(scope.querySelectorAll('p, div'))
-            // Heuristic A: a paragraph containing "YYYY ... N min"
             if (!year) {
               for (const el of paras) {
                 const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
@@ -205,7 +214,6 @@ export async function fetchCloseUp() {
                 }
               }
             }
-            // Heuristic B: a paragraph containing ", YYYY" pattern (director, year)
             if (!year) {
               for (const el of paras) {
                 const tx = (el.textContent || '').replace(/\s+/g, ' ').trim()
@@ -213,84 +221,92 @@ export async function fetchCloseUp() {
                 if (m && valid(Number(m[1]))) { year = Number(m[1]); break }
               }
             }
-            // Heuristic C: any year in scope excluding the header schedule year; prefer earliest
             if (!year) {
               const txt = (scope.textContent || '').replace(/\s+/g, ' ').trim()
-              years = Array.from(txt.matchAll(/\b(19|20)\d{2}\b/g)).map(m => Number(m[0])).filter(valid)
+              const years = Array.from(txt.matchAll(/\b(19|20)\d{2}\b/g)).map(m => Number(m[0])).filter(valid)
               if (years.length) {
                 const sorted = years.slice().sort((a,b) => a - b)
                 const cap = typeof scheduleYear === 'number' ? scheduleYear : new Date().getFullYear()
                 year = sorted.find(y => y !== scheduleYear && y <= cap)
               }
             }
-            if (programmeOnly) {
-              // Force programme pages to report no film year even if a stray
-              // page-level year (e.g., schedule header) was detected earlier.
-              year = -1 // sentinel for programme-only pages (no film stats line)
-            }
           }
-          // Use title without the site prefix for all comparisons/cleanup
+
           const rawTitle = document.querySelector('h1, title')?.textContent?.trim() || ''
-          const ttl = rawTitle.replace(/^CLOSE[-\s]*UP\s*\|\s*/i, '')
+          const ttl = rawTitle.replace(/^CLOSE[-\s]*UP\s*\|\s*/i, '').trim()
           let director = pickDirector()
           if (!director) {
             const plain = (scope?.textContent || document.body.textContent || '').replace(/\s+/g,' ').trim()
             director = nameFromInlineStats(plain, ttl)
           }
-          director = (year === -1) ? undefined : cleanName(director, ttl)
-          return { year, title: ttl, director }
+          director = cleanName(director, ttl)
+
+          // Calendar table: find a <table> whose header row contains Date + Time.
+          const screenings = []
+          const tables = Array.from(document.querySelectorAll('table'))
+          for (const t of tables) {
+            const rows = Array.from(t.querySelectorAll('tr'))
+            if (!rows.length) continue
+            const headers = Array.from(rows[0].querySelectorAll('th, td'))
+              .map(c => (c.textContent || '').trim().toLowerCase())
+            if (!headers.includes('date') || !headers.includes('time')) continue
+            const titleIdx = headers.indexOf('title')
+            const dateIdx = headers.indexOf('date')
+            const timeIdx = headers.indexOf('time')
+            const bookIdx = headers.indexOf('book')
+            for (let i = 1; i < rows.length; i++) {
+              const cells = Array.from(rows[i].querySelectorAll('th, td'))
+              if (!cells.length) continue
+              const rowTitle = titleIdx >= 0 ? (cells[titleIdx]?.textContent || '').replace(/\s+/g,' ').trim() : ''
+              const date = dateIdx >= 0 ? (cells[dateIdx]?.textContent || '').replace(/\s+/g,' ').trim() : ''
+              const time = timeIdx >= 0 ? (cells[timeIdx]?.textContent || '').replace(/\s+/g,' ').trim() : ''
+              const anchor = bookIdx >= 0 ? cells[bookIdx]?.querySelector('a[href]') : rows[i].querySelector('a[href*="ticketsource"]')
+              const bookUrl = anchor?.getAttribute('href') || ''
+              if (date && time) screenings.push({ rowTitle, date, time, bookUrl })
+            }
+            break
+          }
+
+          return { title: ttl, year, director, screenings }
         })
-        if (yearAndTitle?.year) detailYear.set(url, yearAndTitle.year)
-        if (yearAndTitle?.title) detailTitle.set(url, yearAndTitle.title)
-        if (yearAndTitle?.director) detailDirector.set(url, yearAndTitle.director)
+
+        const ttl = data?.title || ''
+        const year = data?.year
+        const director = data?.director
+        for (const sc of data?.screenings || []) {
+          const dm = sc.date.match(/(\d{1,2})\.(\d{1,2})\.(\d{2,4})/)
+          const tm = sc.time.match(/^(\d{1,2}):(\d{2})\s*(am|pm)?$/i)
+          if (!dm || !tm) continue
+          const d = Number(dm[1])
+          const mo = Number(dm[2])
+          const yrRaw = Number(dm[3])
+          const yr = yrRaw < 100 ? 2000 + yrRaw : yrRaw
+          let h = Number(tm[1])
+          const min = Number(tm[2])
+          const mer = (tm[3] || '').toLowerCase()
+          if (mer === 'pm' && h < 12) h += 12
+          if (mer === 'am' && h === 12) h = 0
+          const when = new Date(yr, mo - 1, d, h, min)
+          if (isNaN(when.getTime())) continue
+          const iso = when.toISOString()
+          const filmTitle = ttl || sc.rowTitle
+          if (!filmTitle) continue
+          const bookingUrl = sc.bookUrl ? new URL(sc.bookUrl, url).toString() : url
+          items.push({
+            id: `closeup-${filmTitle}-${iso}`.replace(/\W+/g, ''),
+            filmTitle,
+            cinema: 'closeup',
+            screeningStart: iso,
+            bookingUrl,
+            filmUrl: url,
+            websiteYear: typeof year === 'number' ? year : undefined,
+            releaseDate: typeof year === 'number' ? `${year}-01-01` : undefined,
+            director: director || undefined,
+          })
+        }
       } catch {}
     }
-
-    const parsed = []
-    for (const s of shows || []) {
-      try {
-        const filmUrl = new URL(s.film_url, START_URL).toString()
-        const y = detailYear.get(filmUrl)
-        // Parse "YYYY-MM-DD HH:MM:SS" as local Europe/London wall time
-        const m = String(s.show_time || '').match(/^(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})(?::(\d{2}))?$/)
-        if (!m) continue
-        const when = new Date(Number(m[1]), Number(m[2])-1, Number(m[3]), Number(m[4]), Number(m[5]), Number(m[6]||'0'))
-        if (isNaN(when.getTime())) continue
-        const iso = when.toISOString()
-        // Prefer detail page title (cleaner encoding), then fallback to list title
-        let rawTitle = (detailTitle.get(filmUrl) || '')
-        if (!rawTitle) rawTitle = s.title || ''
-        // Clean site prefix only; do NOT strip a leading segment before a colon
-        // because many film titles legitimately contain a colon (e.g.,
-        // "Mishima: A Life in Four Chapters").
-        let title = rawTitle.replace(/^CLOSE[-\s]*UP\s*\|\s*/i, '')
-        parsed.push({
-          id: `closeup-${(title || 'film')}-${iso}`.replace(/\W+/g, ''),
-          filmTitle: title,
-          cinema: 'closeup',
-          screeningStart: iso,
-          bookingUrl: s.blink ? String(s.blink) : filmUrl,
-          filmUrl,
-          websiteYear: (typeof y === 'number' && y >= 0) ? y : undefined,
-          // Leave releaseDate undefined for programme-only pages; UI will show '—'.
-          releaseDate: (typeof y === 'number' && y >= 0) ? `${y}-01-01` : undefined,
-          // Only attach director for normal film pages (y >= 0). Programme pages
-          // (y === -1) leave director undefined.
-          director: (typeof y === 'number' && y >= 0) ? detailDirector.get(filmUrl) : undefined,
-          // Mark programme-only pages so enrichment can skip safely.
-          programmeOnly: (y === -1) ? true : undefined,
-        })
-      } catch {}
-    }
-
-    // Apply horizon filter
-    const now = Date.now()
-    const horizonDays = Number(process.env.CLOSEUP_HORIZON_DAYS || process.env.DEFAULT_HORIZON_DAYS || 30)
-    const maxTs = now + horizonDays * 24 * 60 * 60 * 1000
-    items = parsed.filter(s => {
-      const t = new Date(s.screeningStart).getTime()
-      return t >= now && t <= maxTs
-    })
+    await dpage.close()
   } catch (e) {
     try {
       const html = await page.content()
@@ -299,7 +315,16 @@ export async function fetchCloseUp() {
     } catch {}
   }
 
+  // Horizon filter: drop past + beyond-horizon screenings.
+  const now = Date.now()
+  const horizonDays = Number(process.env.CLOSEUP_HORIZON_DAYS || process.env.DEFAULT_HORIZON_DAYS || 30)
+  const maxTs = now + horizonDays * 24 * 60 * 60 * 1000
+  const filtered = items.filter(s => {
+    const t = new Date(s.screeningStart).getTime()
+    return t >= now && t <= maxTs
+  })
+
   await browser.close()
-  console.log('[CLOSEUP] screenings collected:', items.length)
-  return items
+  console.log('[CLOSEUP] screenings collected:', filtered.length, '(from', items.length, 'raw)')
+  return filtered
 }
