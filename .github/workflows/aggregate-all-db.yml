@@ -13,11 +13,13 @@ on:
 
 jobs:
   aggregate:
-    runs-on: ubuntu-latest
+    # Pinned: ubuntu-latest moved to 26.04, which Playwright 1.55 can't install on.
+    runs-on: ubuntu-24.04
     environment:
       name: Production
     permissions:
       contents: read
+      actions: write # for the keepalive step below
     env:
       NODE_ENV: production
       PGSSLMODE: no-verify
@@ -26,6 +28,15 @@ jobs:
       DATABASE_URL: ${{ secrets.DATABASE_URL }}
       PRUNE_FORCE: ${{ inputs.force_prune && '1' || '' }}
     steps:
+      # GitHub auto-disables scheduled workflows after 60 days without repo
+      # activity (this happened Oct 2026 and the site went empty). Re-enabling
+      # via the API on every run resets that timer.
+      - name: Keep scheduled workflow enabled
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/aggregate-all-db.yml/enable"
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
