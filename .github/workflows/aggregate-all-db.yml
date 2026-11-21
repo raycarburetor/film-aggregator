@@ -52,11 +52,8 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      # BFI and Close-Up sit behind Cloudflare, which challenges Azure runner
-      # IPs hard and rejects headless Chromium. SCRAPER_HEADED makes those two
-      # scrapers (scripts/scraper-browser.mjs) launch headed; xvfb-run gives
-      # them a virtual display. Other scrapers are unaffected and stay headless.
+      # Note: BFI and Close-Up sit behind Cloudflare, which challenges runner
+      # IPs hard. Headed Chromium under xvfb-run was tried (scrape-probe run
+      # 44954514458) and did worse than headless, so stay headless here.
       - name: Aggregate all cinemas and sync DB
-        env:
-          SCRAPER_HEADED: '1'
-        run: xvfb-run -a npm run aggregate:all:db
+        run: npm run aggregate:all:db
