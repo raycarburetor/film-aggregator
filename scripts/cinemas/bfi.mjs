@@ -1,7 +1,5 @@
-import { chromium as pwChromium } from 'playwright-extra'
-import stealth from 'puppeteer-extra-plugin-stealth'
-
-pwChromium.use(stealth())
+import { launchScraperBrowser } from '../scraper-browser.mjs'
+import { londonDate } from '../london-time.mjs'
 
 // Scrape BFI Southbank via the A–Z "filmsindex" listing and per-film article
 // pages. AudienceView's old search endpoint is aggressively Cloudflare-gated
@@ -44,7 +42,7 @@ function parsePerformances(text) {
     const yr = Number(m[4])
     const hh = Number(m[5])
     const mm = Number(m[6])
-    const when = new Date(yr, mo, day, hh, mm)
+    const when = londonDate(yr, mo + 1, day, hh, mm)
     if (isNaN(when.getTime())) continue
     // Extract venue from up to ~80 chars after the time, collapsing whitespace.
     const after = text.slice(m.index + m[0].length, m.index + m[0].length + 80)
@@ -86,13 +84,7 @@ function extractDirector(text) {
 }
 
 export async function fetchBFI() {
-  const browser = await pwChromium.launch({ headless: true })
-  const ctx = await browser.newContext({
-    userAgent:
-      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-    locale: 'en-GB',
-    timezoneId: 'Europe/London',
-  })
+  const { browser, ctx } = await launchScraperBrowser()
   const page = await ctx.newPage()
 
   const horizonDays = Number(
@@ -105,10 +97,17 @@ export async function fetchBFI() {
   const cutoff = new Date(now.getTime() + horizonDays * 24 * 60 * 60 * 1000)
 
   // 1) Load A–Z index and harvest film article URLs.
-  const indexCleared = await gotoAndClear(page, FILMS_INDEX_URL)
+  let indexCleared = await gotoAndClear(page, FILMS_INDEX_URL)
   if (!indexCleared) {
+    // One retry: a fresh navigation often gets a lighter challenge.
+    console.log('[BFI] filmsindex challenge did not clear; retrying once')
+    await page.waitForTimeout(5000)
+    indexCleared = await gotoAndClear(page, FILMS_INDEX_URL)
+  }
+  if (!indexCleared) {
+    const title = await page.title().catch(() => '')
     await browser.close()
-    console.log('[BFI] filmsindex did not clear Cloudflare')
+    console.log('[BFI] filmsindex did not clear Cloudflare (title: %j)', title)
     return []
   }
 
@@ -148,10 +147,11 @@ export async function fetchBFI() {
 
   // 2) Visit each film page and parse performances.
   const screenings = []
+  let blocked = 0
   for (const film of slice) {
     try {
       const ok = await gotoAndClear(page, film.url)
-      if (!ok) continue
+      if (!ok) { blocked++; continue }
       // Give any server-rendered perf block a moment.
       await page.waitForTimeout(300)
       const detail = await page.evaluate(() => ({
@@ -175,7 +175,7 @@ export async function fetchBFI() {
           filmUrl: film.url,
         }
         if (year) {
-          const sy = p.when.getFullYear()
+          const sy = p.when.getUTCFullYear()
           if (year <= sy + 1) screening.websiteYear = year
         }
         if (director) screening.director = director
@@ -186,6 +186,6 @@ export async function fetchBFI() {
   }
 
   await browser.close()
-  console.log('[BFI] screenings collected:', screenings.length)
+  console.log('[BFI] screenings collected:', screenings.length, '| film pages blocked:', blocked)
   return screenings
 }

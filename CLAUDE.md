@@ -27,7 +27,9 @@ Scraper previews: `node scripts/preview-*.mjs` or the dev-only HTTP routes `GET 
 
 **Type flow.** `types.ts` defines `Screening` and `CinemaKey` used across scrapers, DB mapping (`lib/db.ts`), filters (`lib/filters.ts`), and UI. `lib/db.ts` converts snake_case columns (see `scripts/db-seed.mjs` for the schema) to camelCase and coerces `timestamptz` → ISO string, `text[]`/delimited-string → `string[]` for genres. SSL auto-enables for Supabase/Neon/Vercel hosts.
 
-**Scraper conventions.** Each `scripts/cinemas/<key>.mjs` exports a `fetch<Key>()` returning `Screening[]`. All times are parsed in `Europe/London`; IDs must be stable (typically derived from film page slug + start time) so seeds upsert cleanly. Detail pages are visited to capture `websiteYear` and a candidate `director` used by TMDb matching.
+**Scraper conventions.** Each `scripts/cinemas/<key>.mjs` exports a `fetch<Key>()` returning `Screening[]`. All times are parsed in `Europe/London`; IDs must be stable (typically derived from film page slug + start time) so seeds upsert cleanly. Detail pages are visited to capture `websiteYear` and a candidate `director` used by TMDb matching. Build instants with `scripts/london-time.mjs::londonDate` — never `new Date(y, m, d, h, mm)`, which uses the host TZ (UTC on CI, so BST times land an hour late).
+
+**Cloudflare-fronted sites (BFI, Close-Up)** launch via `scripts/scraper-browser.mjs` (stealth, UA matched to the real browser/OS, headed when `SCRAPER_HEADED=1`; CI runs it under `xvfb-run`). Cloudflare challenges GitHub's runner IPs far harder than a home connection, so "works locally, 0 in CI" usually means a challenge, not a markup change. `node scripts/probe-cf-scrapers.mjs` (and the `scrape-probe.yml` workflow) runs just these two with no DB writes.
 
 **Orchestrator is fail-soft.** `scripts/aggregate-all-db.mjs` runs each cinema script in a subprocess and continues on failure:
 - If **all** scrapers fail, DB seed/prune is skipped (preserves existing rows rather than wiping to empty).

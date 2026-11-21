@@ -1,5 +1,6 @@
 // scripts/cinemas/closeup.mjs
-import { chromium as pwChromium } from 'playwright'
+import { launchScraperBrowser, isHeaded, isPastChallenge } from '../scraper-browser.mjs'
+import { londonDate } from '../london-time.mjs'
 
 /**
  * Scrape Close-Up Film Centre programme.
@@ -10,12 +11,8 @@ import { chromium as pwChromium } from 'playwright'
  * table on each film detail page for screening dates + booking URLs.
  */
 export async function fetchCloseUp() {
-  const browser = await pwChromium.launch({ headless: process.env.CLOSEUP_HEADED ? false : true })
-  const ctx = await browser.newContext({
-    userAgent:
-      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-    locale: 'en-GB',
-    timezoneId: 'Europe/London',
+  const { browser, ctx } = await launchScraperBrowser({
+    headed: isHeaded(process.env.CLOSEUP_HEADED),
   })
   const page = await ctx.newPage()
 
@@ -38,9 +35,19 @@ export async function fetchCloseUp() {
   }
 
   const items = []
+  let blockedPages = 0
   try {
     await page.goto(START_URL, { waitUntil: 'domcontentloaded', timeout: 60000 })
     await waitReady(page)
+    if (!(await isPastChallenge(page))) {
+      console.log('[CLOSEUP] programme listing still on Cloudflare challenge; retrying once')
+      await page.waitForTimeout(5000)
+      await page.goto(START_URL, { waitUntil: 'domcontentloaded', timeout: 60000 })
+      await waitReady(page)
+    }
+    if (!(await isPastChallenge(page))) {
+      console.log('[CLOSEUP] programme listing did not clear Cloudflare (title: %j)', await page.title().catch(() => ''))
+    }
 
     const listingLinks = await page.evaluate(() =>
       Array.from(document.querySelectorAll('a[href^="/film_programmes/"]'))
@@ -83,6 +90,7 @@ export async function fetchCloseUp() {
       try {
         await dpage.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 })
         await waitReady(dpage)
+        if (!(await isPastChallenge(dpage))) { blockedPages++; continue }
 
         const data = await dpage.evaluate(() => {
           function valid(y) { const n = Number(y); const Y = new Date().getFullYear() + 1; return n >= 1895 && n <= Y }
@@ -286,7 +294,7 @@ export async function fetchCloseUp() {
           const mer = (tm[3] || '').toLowerCase()
           if (mer === 'pm' && h < 12) h += 12
           if (mer === 'am' && h === 12) h = 0
-          const when = new Date(yr, mo - 1, d, h, min)
+          const when = londonDate(yr, mo, d, h, min)
           if (isNaN(when.getTime())) continue
           const iso = when.toISOString()
           const filmTitle = ttl || sc.rowTitle
@@ -307,6 +315,7 @@ export async function fetchCloseUp() {
       } catch {}
     }
     await dpage.close()
+    console.log('[CLOSEUP] film pages:', filmPaths.size, '| blocked by Cloudflare:', blockedPages)
   } catch (e) {
     try {
       const html = await page.content()

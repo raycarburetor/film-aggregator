@@ -1,0 +1,42 @@
+name: Scrape probe (BFI + Close-Up, no DB)
+
+# Runs only the Cloudflare-fronted scrapers on a GitHub runner, where they are
+# challenged much harder than locally. No secrets, no DB writes.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/cinemas/bfi.mjs
+      - scripts/cinemas/closeup.mjs
+      - scripts/scraper-browser.mjs
+      - scripts/probe-cf-scrapers.mjs
+      - .github/workflows/scrape-probe.yml
+
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        mode: [headed, headless]
+    env:
+      BFI_MAX_DETAIL_PAGES: '40'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Probe (headed under Xvfb)
+        if: matrix.mode == 'headed'
+        env:
+          SCRAPER_HEADED: '1'
+        run: xvfb-run -a node scripts/probe-cf-scrapers.mjs
+      - name: Probe (headless)
+        if: matrix.mode == 'headless'
+        run: node scripts/probe-cf-scrapers.mjs
