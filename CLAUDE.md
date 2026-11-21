@@ -21,7 +21,7 @@ Scraper previews: `node scripts/preview-*.mjs` or the dev-only HTTP routes `GET 
 
 ## Architecture
 
-**Two data sources, one loader.** The app prefers Postgres when `DATABASE_URL` is set, else falls back to `data/listings.json`. All reads go through `lib/listings.ts::loadAllListingsCached` (wrapped in `unstable_cache`, TTL `LISTINGS_CACHE_SECONDS`, default 300s). `app/page.tsx` and `app/api/listings/route.ts` both call this same helper and then apply filters in-process — the page does **not** self-HTTP its own API.
+**Two data sources, one loader.** The app prefers Postgres when `DATABASE_URL` is set, else falls back to `data/listings.json`. The page reads through `lib/listings.ts::loadAllListingsCached` (a per-instance in-memory TTL memo, `LISTINGS_CACHE_SECONDS`, default 300s; deliberately **not** `unstable_cache`, whose Vercel Data Cache stopped revalidating and served a stale, all-past snapshot); `app/api/listings/route.ts` calls the uncached `loadAllListings`. Both apply filters in-process — the page does **not** self-HTTP its own API.
 
 **Node runtime is mandatory for the API route.** `app/api/listings/route.ts` declares `runtime = 'nodejs'` because `pg` can't run on Edge. Keep it that way.
 

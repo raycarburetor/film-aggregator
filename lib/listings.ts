@@ -1,7 +1,6 @@
 import type { Screening, CinemaKey } from '@/types'
 import { filterByTimeWindow, parseNum, isClearlyNonFilm, londonDayKey, londonMinutesOfDay } from '@/lib/filters'
 import { getAllListings } from '@/lib/db'
-import { unstable_cache } from 'next/cache'
 import { promises as fs } from 'node:fs'
 import path from 'node:path'
 
@@ -108,19 +107,28 @@ const CACHE_SECONDS = (() => {
   return Number.isFinite(n) && n > 0 ? Math.floor(n) : 300
 })()
 
-export const loadAllListingsCached = unstable_cache(
-  async () => {
-    const items = await loadAllListings()
-    // Refuse to cache an empty result: unstable_cache would otherwise hold it
-    // for the full revalidate window, serving a dead site for minutes after a
-    // transient cold-start failure. Throwing propagates the miss; the next
-    // request falls through to the direct loader via the caller's try/catch.
-    if (!items.length) throw new Error('loadAllListings returned empty; refusing to cache')
-    return items
-  },
-  ['all_listings'],
-  { revalidate: CACHE_SECONDS }
-)
+// Per-instance in-memory cache. This used to be Next's `unstable_cache`, but on
+// Vercel its persistent Data Cache stopped revalidating and kept serving a
+// weeks-old snapshot to the homepage (all screenings in the past → empty site)
+// while the uncached API route returned fresh rows. A plain TTL memo can never
+// be staler than CACHE_SECONDS and resets on every deploy/cold start.
+let memo: { items: Screening[]; at: number } | null = null
+let inflight: Promise<Screening[]> | null = null
+
+export async function loadAllListingsCached(): Promise<Screening[]> {
+  if (memo && Date.now() - memo.at < CACHE_SECONDS * 1000) return memo.items
+  if (!inflight) {
+    inflight = loadAllListings()
+      .then(items => {
+        // Don't cache an empty result, so a transient failure isn't pinned
+        // for the whole TTL.
+        if (items.length) memo = { items, at: Date.now() }
+        return items
+      })
+      .finally(() => { inflight = null })
+  }
+  return inflight
+}
 
 export function applyFilters(items: Screening[], params: FilterParams): Screening[] {
   const hideBFI = String(process.env.HIDE_BFI ?? process.env.NEXT_PUBLIC_HIDE_BFI ?? 'false').toLowerCase() === 'true'
